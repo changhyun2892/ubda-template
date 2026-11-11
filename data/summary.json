@@ -1,0 +1,35 @@
+{
+  "company_id": "SY",
+  "name": "삼양식품",
+  "name_en": "Samyang Foods",
+  "stock_code": "003230",
+  "industry": "food",
+  "industry_name": "식품",
+  "categories": [
+    "라면"
+  ],
+  "competitors": [
+    "농심",
+    "오뚜기",
+    "팔도"
+  ],
+  "dashboard_url": "",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 2351785163786,
+    "operating_profit": 524188406060,
+    "net_income": 388673674725,
+    "operating_margin_pct": 22.289,
+    "revenue_growth_pct": 36.0975,
+    "debt_ratio_pct": 72.7429
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 126,
+    "불일치": 0,
+    "미확인": 0
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 8,
+  "updated_at": "2026-11-12 01:14 KST"
+}
