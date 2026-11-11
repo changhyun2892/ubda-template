@@ -8,12 +8,13 @@
 /* ---------------- 1) 데이터 읽기 ---------------- */
 // 주소 dashboard.html?c=<기업폴더> → companies/<기업폴더>/ 의 파일을 읽음
 const SLUG = (new URLSearchParams(location.search).get('c') || '').replace(/[^a-z0-9_-]/gi, '');
-const BASE = `companies/${SLUG}/`;
-const FILES = Object.fromEntries(Object.entries({
+const FILE_MAP = {
   company: 'company.json', summary: 'data/summary.json', verify: 'data/verify_report.json', log: 'data/update_log.json',
   fin: 'data/financials.csv', qtr: 'data/quarterly.csv', met: 'data/metrics.csv', ledger: 'data/audit_ledger.csv',
   reg: 'data/source_registry.csv', status: 'data/research_status.csv', kpi: 'data/manual/kpi_values.csv', stock: 'data/stock_daily.csv',
-}).map(([k, v]) => [k, BASE + v]));
+  reports: 'data/raw/dart_reports.csv',
+};
+const COMPARE_KEYS = ['company', 'summary', 'fin', 'met', 'qtr', 'ledger', 'reg'];
 
 function parseCSV(text) {
   const rows = []; let row = [], cell = '', q = false;
@@ -31,9 +32,9 @@ function parseCSV(text) {
   return rows.filter((r) => r.length > 1 || r[0] !== '').map((r) => Object.fromEntries(head.map((h, i) => [h, r[i] ?? ''])));
 }
 
-async function loadAll() {
+async function loadAll(slug = SLUG, keys = Object.keys(FILE_MAP)) {
   const out = {};
-  await Promise.all(Object.entries(FILES).map(async ([k, url]) => {
+  await Promise.all(keys.map((k) => [k, `companies/${slug}/${FILE_MAP[k]}`]).map(async ([k, url]) => {
     try {
       const r = await fetch(url, { cache: 'no-cache' });
       if (!r.ok) throw new Error(r.status);
@@ -41,7 +42,7 @@ async function loadAll() {
       out[k] = url.endsWith('.json') ? JSON.parse(t) : parseCSV(t);
     } catch (e) { out[k] = url.endsWith('.json') ? null : []; }
   }));
-  if (out.company?.industry) {
+  if (keys.includes('status') && out.company?.industry) {
     try { out.industry = await (await fetch(`industries/${out.company.industry}.json`, { cache: 'no-cache' })).json(); } catch (e) { out.industry = null; }
   }
   return out;
@@ -49,7 +50,9 @@ async function loadAll() {
 
 /* ---------------- 2) 계산·형식 도우미 ---------------- */
 let D = {}; // 읽은 데이터
-const S = { page: 'overview', year: null, qmetric: 'revenue', stockMode: 'index', ledgerFilter: 'all' };
+const S = { page: 'overview', year: null, qmetric: 'revenue', stockMode: 'index', ledgerFilter: 'all', period: 'annual', cmp: null, edit: false };
+let INDEX = null; // companies/index.json (기업 비교·질의용)
+const OTHER = {}; // 다른 기업 데이터 캐시
 const N = (s) => (s === undefined || s === null || s === '' ? null : Number(s));
 const nf = (d) => new Intl.NumberFormat('ko-KR', { minimumFractionDigits: d, maximumFractionDigits: d });
 const fmt = (v, d = 1) => (v === null || v === undefined || Number.isNaN(v) ? '데이터 없음' : nf(d).format(v));
@@ -204,17 +207,20 @@ function showMetric(y, k) {
 
 /* ---------------- 5) 페이지 ---------------- */
 const PAGES = [
+  ['screen', '메인 스크린', '발표용 관제 화면 · F 키 전체 화면 · Esc 나가기'],
   ['overview', '개요', '핵심 지표와 실적 흐름'],
+  ['compare', '기업 비교', '같은 기준(DART 재무)으로 다른 기업과 비교 — 사업 구성 차이에 유의'],
   ['pl', '손익 추이', '연간 손익과 비용 구조'],
   ['quarterly', '분기 실적', '분기별 단일 실적 (Q4 = 연간 − 3분기 누적)'],
   ['ratios', '재무비율', '수익성·안정성·활동성 — 산식과 입력값 공개'],
   ['bs', '재무상태·현금', '자산·부채·자본과 현금흐름'],
   ['stock', '주가', '주가와 시장지수, 정기공시 시점'],
   ['industry', '산업 KPI', '산업별로 추가 확인할 지표의 확보 현황'],
+  ['dart', 'DART 자동 업데이트', '정기보고서를 평일마다 확인해 자동 반영 · 원문 대조 전 값은 따로 표시'],
   ['audit', '출처·검증', '자동 점검 결과, 검증 장부, 출처 목록'],
 ];
 
-const card = (cls, title, sub, body, foot = '') => `<div class="card ${cls}"><h3>${esc(title)}</h3>${sub ? `<p class="sub">${esc(sub)}</p>` : ''}${body}${foot ? `<p class="foot">${foot}</p>` : ''}</div>`;
+const card = (cls, title, sub, body, foot = '') => `<div class="card ${cls}" data-k="${esc(title)}"><h3>${esc(title)}</h3>${sub ? `<p class="sub">${esc(sub)}</p>` : ''}${body}${foot ? `<p class="foot">${foot}</p>` : ''}</div>`;
 const noData = () => `<div class="empty"><b>아직 재무 데이터가 없습니다</b>GitHub 저장소 → Actions → '데이터 업데이트' → Run workflow 를 실행하세요.<br>DART_API_KEY가 Secrets에 등록되어 있어야 합니다.</div>`;
 
 function kpiCard(label, value, sub, onclick) {
@@ -238,7 +244,7 @@ function pageOverview() {
   const vr = D.verify?.counts || {};
   const latest = [...D.reg].filter((r) => r.type === 'DART 정기보고서').sort((a, b) => (a.source_date < b.source_date ? 1 : -1)).slice(0, 5);
   return `<div class="kpis">${k}</div><div class="grid">
-    ${card('w4', '매출액·영업이익 추이', '막대: 억원 · 선: 영업이익률(%) · 막대를 누르면 출처', legend([['매출액', COLORS()[1]], ['영업이익', COLORS()[0]], ['영업이익률', COLORS()[3]]]) + '<div class="chart" id="c1"></div>')}
+    ${card('w4', '매출액·영업이익 추이', '막대: 억원 · 선: 영업이익률(%) · 막대를 누르면 출처', `<div class="seg" style="margin-bottom:6px"><button data-per="annual" aria-pressed="${S.period === 'annual'}">연간</button><button data-per="quarter" aria-pressed="${S.period === 'quarter'}">분기</button></div>` + legend([['매출액', COLORS()[1]], ['영업이익', COLORS()[0]], ['영업이익률', COLORS()[3]]]) + '<div class="chart" id="c1"></div>', S.period === 'quarter' ? 'Q4 = 사업보고서 연간 − 3분기 누적 (연말 결산조정 포함)' : '')}
     ${card('w2', '데이터 검증 현황', '값마다 출처와 대조 상태를 기록', `<table class="tbl"><tbody>
       <tr><td>${badge('원문 대조 일치')}</td><td>${sm['원문 대조 일치'] ?? 0}</td></tr>
       <tr><td>${badge('자동 수집 · 원문 대조 전')}</td><td>${sm['자동 수집 · 원문 대조 전'] ?? 0}</td></tr>
@@ -254,6 +260,15 @@ function pageOverview() {
 }
 function drawOverview() {
   const Y = YEARS(); const el = $('#c1'); if (!el) return;
+  if (S.period === 'quarter') {
+    const ps = [...new Set(D.qtr.map((r) => r.period))].sort();
+    const qv = (p, m) => N(D.qtr.find((r) => r.period === p && r.metric === m)?.value ?? null);
+    const qr = (p, m) => D.qtr.find((r) => r.period === p && r.metric === m);
+    barLine(el, ps.map((p) => p.slice(2).replace('-', ' ')), [{ name: '매출액', color: COLORS()[1], values: ps.map((p) => qv(p, 'revenue')) }, { name: '영업이익', color: COLORS()[0], values: ps.map((p) => qv(p, 'operating_profit')) }],
+      { name: '영업이익률', color: COLORS()[3], unit: '%', values: ps.map((p) => { const r = qv(p, 'revenue'), o = qv(p, 'operating_profit'); return r && o !== null ? (o / r) * 100 : null; }) },
+      { onClick: (i, j) => { const r = qr(ps[i], j === '1' ? 'operating_profit' : 'revenue'); if (r) openPanel(`<div class="panel-head"><h2>${r.period} ${esc(r.label)}</h2><button class="x">✕</button></div><div class="ev-val">${eok(N(r.value))}</div><div class="formula">${esc(r.method)}</div>${evidenceHTML(r.audit_id)}`); } });
+    return;
+  }
   barLine(el, Y.map(String), [{ name: '매출액', color: COLORS()[1], values: Y.map((y) => fin(y, 'revenue')) }, { name: '영업이익', color: COLORS()[0], values: Y.map((y) => fin(y, 'operating_profit')) }],
     { name: '영업이익률', color: COLORS()[3], unit: '%', values: Y.map((y) => met(y, 'operating_margin_pct')) },
     { onClick: (i, j) => (j === 'L' ? showMetric(Y[i], 'operating_margin_pct') : showFin(Y[i], ['revenue', 'operating_profit'][+j])) });
@@ -366,8 +381,149 @@ function pageAudit() {
   </div>`;
 }
 
-const DRAW = { overview: drawOverview, pl: drawPL, quarterly: drawQuarterly, bs: drawBS, stock: drawStock };
-const RENDER = { overview: pageOverview, pl: pagePL, quarterly: pageQuarterly, ratios: pageRatios, bs: pageBS, stock: pageStock, industry: pageIndustry, audit: pageAudit };
+/* ---------- 기업 비교 (다른 기업 폴더의 같은 형식 데이터를 읽어 비교) ---------- */
+const CMP_ROWS = [
+  ['revenue', '매출액', 'won'], ['operating_profit', '영업이익', 'won'], ['net_income', '당기순이익', 'won'],
+  ['operating_margin_pct', '영업이익률', 'pct'], ['net_margin_pct', '순이익률', 'pct'], ['revenue_growth_pct', '매출 증가율', 'pct'],
+  ['cost_ratio_pct', '매출원가율', 'pct'], ['sga_ratio_pct', '판관비율', 'pct'], ['debt_ratio_pct', '부채비율', 'pct'],
+  ['current_ratio_pct', '유동비율', 'pct'], ['roe_pct', 'ROE', 'pct'], ['operating_cashflow', '영업활동현금흐름', 'won'],
+];
+const valOf = (DD, y, k, t) => (t === 'won' ? N(DD.fin.find((r) => +r.year === y && r.metric === k)?.value) : N(DD.met.find((r) => +r.year === y && r.metric === k)?.value));
+async function loadOther(slug) {
+  if (!OTHER[slug]) OTHER[slug] = await loadAll(slug, COMPARE_KEYS);
+  return OTHER[slug];
+}
+function cmpCandidates() {
+  const all = (INDEX?.companies || []).filter((c) => c.slug !== SLUG && c.has_data);
+  const ind = D.company.industry;
+  return [...all.filter((c) => c.industry === ind), ...all.filter((c) => c.industry !== ind)];
+}
+function pageCompare() {
+  if (!D.fin.length) return noData();
+  const cands = cmpCandidates();
+  if (!cands.length) return '<div class="empty"><b>비교할 다른 기업이 없습니다</b>기업을 하나 더 추가하면 이 화면에서 비교할 수 있습니다.</div>';
+  if (!S.cmp || !cands.some((c) => c.slug === S.cmp)) S.cmp = cands[0].slug;
+  const O = OTHER[S.cmp];
+  const pick = `<div class="seg">${cands.map((c) => `<button data-cmp="${esc(c.slug)}" aria-pressed="${c.slug === S.cmp}">${esc(c.name)}${c.industry !== D.company.industry ? ' (다른 산업)' : ''}</button>`).join('')}</div>`;
+  if (!O) { loadOther(S.cmp).then(() => S.page === 'compare' && render()); return `${pick}<div class="empty" style="margin-top:12px">비교 기업 데이터를 불러오는 중…</div>`; }
+  const me = D.company.name, other = O.company?.name || S.cmp;
+  const Y = [...new Set([...YEARS(), ...O.fin.map((r) => +r.year)])].sort().filter((y) => YEARS().includes(y) && O.fin.some((r) => +r.year === y));
+  const show = (v, t) => (v === null ? '–' : t === 'won' ? fmt(v / 1e8, 0) : fmt(v, 1) + '%');
+  const scopeA = D.fin[0]?.scope, scopeB = O.fin[0]?.scope;
+  const warn = scopeA !== scopeB ? `<div class="note warn">재무제표 범위가 다릅니다: ${esc(me)} ${esc(scopeA)} / ${esc(other)} ${esc(scopeB)}. 직접 비교에 주의하세요.</div>` : '';
+  return `<div style="margin-bottom:10px">${pick}</div>${warn}<div class="grid">
+    ${card('w3', '매출액 비교', '억원 · 막대를 누르면 산식과 출처', legend([[me, COLORS()[0]], [other, COLORS()[1]]]) + '<div class="chart" id="cp1"></div>')}
+    ${card('w3', '영업이익률 비교', '% · 회사마다 비용 분류가 다를 수 있음', legend([[me, COLORS()[0]], [other, COLORS()[1]]]) + '<div class="chart" id="cp2"></div>')}
+    ${card('w6', '지표 비교표', `${esc(me)} vs ${esc(other)} · 억원 / % · 셀을 누르면 두 회사 값의 출처`, `<div class="tbl-wrap"><table class="tbl"><thead><tr><th>지표</th>${Y.map((y) => `<th>${y} ${esc(me)}</th><th>${y} ${esc(other)}</th>`).join('')}</tr></thead><tbody>
+      ${CMP_ROWS.map(([k, l, t]) => `<tr><td>${esc(l)}</td>${Y.map((y) => `<td data-act="cmp:${y}:${k}" style="cursor:pointer">${show(valOf(D, y, k, t), t)}</td><td data-act="cmp:${y}:${k}" style="cursor:pointer;color:var(--muted)">${show(valOf(O, y, k, t), t)}</td>`).join('')}</tr>`).join('')}
+    </tbody></table></div>`, '두 회사의 사업 구성(제품군·해외 비중·관계사 구조)이 달라 수익성 차이를 경쟁력 차이로 단정할 수 없습니다. 같은 DART 연결 계정 기준의 비교입니다.')}
+  </div>`;
+}
+function drawCompare() {
+  const O = OTHER[S.cmp]; if (!O || !$('#cp1')) return;
+  const Y = YEARS().filter((y) => O.fin.some((r) => +r.year === y));
+  barLine($('#cp1'), Y.map(String), [{ name: D.company.name, color: COLORS()[0], values: Y.map((y) => valOf(D, y, 'revenue', 'won')) }, { name: O.company.name, color: COLORS()[1], values: Y.map((y) => valOf(O, y, 'revenue', 'won')) }], null, { onClick: (i) => showCmp(Y[i], 'revenue') });
+  barLine($('#cp2'), Y.map(String), [{ name: D.company.name, color: COLORS()[0], values: Y.map((y) => valOf(D, y, 'operating_margin_pct', 'pct')) }, { name: O.company.name, color: COLORS()[1], values: Y.map((y) => valOf(O, y, 'operating_margin_pct', 'pct')) }], null, { fmt: (v) => fmt(v, 0) + '%', tipFmt: (v) => pct(v), onClick: (i) => showCmp(Y[i], 'operating_margin_pct') });
+}
+function showCmp(y, k) {
+  const O = OTHER[S.cmp]; const [, l, t] = CMP_ROWS.find((r) => r[0] === k) || [k, k, 'won'];
+  const side = (DD) => {
+    const v = valOf(DD, y, k, t);
+    const ids = t === 'won' ? [`F-${y}-${k}`] : (DD.met.find((r) => +r.year === y && r.metric === k)?.input_audit_ids || '').split(';').filter(Boolean);
+    const led = new Map(DD.ledger.map((r) => [r.audit_id, r])); const reg = new Map(DD.reg.map((r) => [r.source_id, r]));
+    const f = t === 'pct' ? DD.met.find((r) => +r.year === y && r.metric === k)?.formula : '';
+    return `<div class="ev-box"><b>${esc(DD.company.name)}</b><div class="ev-val" style="font-size:18px">${v === null ? '데이터 없음' : t === 'won' ? eok(v) : pct(v, 2)}</div>${f ? `<div class="formula">${esc(f)}</div>` : ''}
+      ${ids.map((id) => { const a = led.get(id); const s = a && reg.get(a.source_id); return a ? `<div style="margin-top:4px"><small>${esc(id)}</small> ${badge(a.result)}${s ? ` · <a href="${esc(s.source_url)}" target="_blank" rel="noopener">원문</a>` : ''}</div>` : ''; }).join('')}</div>`;
+  };
+  openPanel(`<div class="panel-head"><h2>${y}년 ${esc(l)}</h2><button class="x" aria-label="닫기">✕</button></div>${side(D)}${side(O)}<p class="foot">같은 DART 계정 기준 값입니다. 차이의 원인은 수치만으로 확정하지 않습니다.</p>`);
+}
+
+/* ---------- DART 자동 업데이트 ---------- */
+function pageDart() {
+  const reps = [...D.reports].sort((a, b) => (a.rcept_dt < b.rcept_dt ? 1 : -1));
+  const lg = D.log?.dart || {};
+  const auto = D.ledger.filter((r) => r.result === '자동 수집 · 원문 대조 전').length;
+  const corr = reps.filter((r) => r.is_correction === 'Y').length;
+  return `<div class="kpis">
+    ${kpiCard('반영한 정기보고서', `${reps.length}<small>건</small>`, `정정보고서 ${corr}건 포함`, '')}
+    ${kpiCard('마지막 확인', `<small>${esc(lg.checked_at || '기록 없음')}</small>`, `상태 ${esc(lg.status || '-')}`, '')}
+    ${kpiCard('원문 대조 전 값', `${auto}<small>개</small>`, '공식 API 값 · 사람 대조 대기', '')}
+    ${kpiCard('자동 실행', '<small>평일 16:40</small>', 'GitHub Actions → Render 자동 배포', '')}
+  </div><div class="grid">
+    ${card('w6', '정기보고서 처리 기록', '새 보고서·정정보고서가 올라오면 해당 기간을 다시 받아 덮어씁니다', `<div class="tbl-wrap" style="max-height:460px"><table class="tbl"><thead><tr><th class="l">보고서</th><th>접수일</th><th>구분</th><th>처리</th><th class="l">내용</th></tr></thead><tbody>
+      ${reps.map((r) => `<tr><td class="l"><a href="${esc(r.viewer_url)}" target="_blank" rel="noopener">${esc(r.report_nm)}</a></td><td>${esc(r.rcept_dt)}</td><td>${r.is_correction === 'Y' ? '<span class="st st-warn">정정</span>' : esc(r.report_type)}</td><td>${badge(r.status === '반영' ? '통과' : '경고')} ${esc(r.status)}</td><td class="l">${esc(r.message)}</td></tr>`).join('') || '<tr><td colspan="5">기록 없음</td></tr>'}
+    </tbody></table></div>`, '값은 OpenDART 단일회사 전체 재무제표 API를 그대로 쓰며, 사람이 사업보고서 원문과 대조하기 전까지 &#39;자동 · 대조 전&#39;으로 표시합니다.')}
+    ${card('w6', '최근 실행 결과', '', `<ul style="margin:0;padding-left:18px">${(lg.new_reports || []).slice(-8).map((x) => `<li>${esc(x)}</li>`).join('') || '<li>이번 실행에서 새로 반영한 보고서 없음</li>'}</ul>${(lg.errors || []).length ? `<div class="note warn" style="margin-top:8px">${lg.errors.map(esc).join('<br>')}</div>` : ''}`)}
+  </div>`;
+}
+
+/* ---------- 메인 스크린 (발표용 어두운 화면, 같은 데이터·차트 사용) ---------- */
+function pageScreen() {
+  if (!D.fin.length) return noData();
+  const Y = YEARS(), y = Y[Y.length - 1];
+  const k = (l, v, sub) => `<div class="sc-kpi"><span>${esc(l)}</span><b>${v}</b><small>${sub}</small></div>`;
+  const vm = (key) => met(y, key);
+  const last = D.stock[D.stock.length - 1];
+  const yr0 = D.stock.find((r) => r.date.startsWith(String(y)));
+  const yrEnd = [...D.stock].reverse().find((r) => r.date.startsWith(String(y)));
+  const sret = yr0 && yrEnd ? (N(yrEnd.close) / N(yr0.close) - 1) * 100 : null;
+  const vr = D.verify?.counts || {};
+  return `<div class="sc-head"><div class="sc-eyebrow">BUSINESS MONITOR</div><div class="sc-title">${esc(D.company.name)} 경영 모니터링</div>
+    <div class="sc-meta">${Y[0]}–${y} · ${esc(D.fin[0]?.scope || '')} 재무제표 · DART · 업데이트 ${esc(D.summary?.updated_at || '-')}</div><button class="sc-exit" data-page="overview">나가기 (Esc)</button></div>
+  <div class="sc-kpis">
+    ${k(`${y} 매출액`, fin(y, 'revenue') === null ? '–' : fmt(fin(y, 'revenue') / 1e8, 0) + '<i>억원</i>', `전년 대비 ${vm('revenue_growth_pct') === null ? '–' : (vm('revenue_growth_pct') > 0 ? '+' : '') + fmt(vm('revenue_growth_pct')) + '%'}`)}
+    ${k(`${y} 영업이익`, fin(y, 'operating_profit') === null ? '–' : fmt(fin(y, 'operating_profit') / 1e8, 0) + '<i>억원</i>', `전년 대비 ${vm('op_growth_pct') === null ? '–' : (vm('op_growth_pct') > 0 ? '+' : '') + fmt(vm('op_growth_pct')) + '%'}`)}
+    ${k('영업이익률', vm('operating_margin_pct') === null ? '–' : fmt(vm('operating_margin_pct')) + '<i>%</i>', `순이익률 ${pct(vm('net_margin_pct'))}`)}
+    ${k('부채비율', vm('debt_ratio_pct') === null ? '–' : fmt(vm('debt_ratio_pct')) + '<i>%</i>', `유동비율 ${pct(vm('current_ratio_pct'))}`)}
+    ${k('주가', last ? fmt(N(last.close), 0) + '<i>원</i>' : '–', last ? `${esc(last.date)} · ${y}년 ${sret === null ? '–' : (sret > 0 ? '+' : '') + fmt(sret) + '%'}` : '주가 없음')}
+  </div>
+  <div class="sc-grid">
+    <div class="sc-card"><h3>연간 매출·영업이익 <small>억원 / 영업이익률 %</small></h3>${legend([['매출액', '#2F80D8'], ['영업이익', '#F2A03D'], ['영업이익률', '#4FC3F7']])}<div class="chart" id="s1"></div></div>
+    <div class="sc-card"><h3>분기 영업이익 <small>억원 / 이익률 %</small></h3>${legend([['영업이익', '#F2A03D'], ['영업이익률', '#4FC3F7']])}<div class="chart" id="s2"></div></div>
+    <div class="sc-card"><h3>주가 vs 시장지수 <small>시작일 = 100</small></h3>${legend([['주가', '#F2A03D'], ['시장지수', '#4FC3F7']])}<div class="chart" id="s3"></div></div>
+    <div class="sc-card"><h3>현금흐름 <small>억원</small></h3>${legend([['영업활동현금흐름', '#7CC36A'], ['유형자산 취득', '#E0574F']])}<div class="chart" id="s4"></div></div>
+  </div>
+  <div class="sc-foot">값 ${D.ledger.length}개 출처 기록 · 자동 점검 통과 ${vr['통과'] ?? '-'} · 실패 ${vr['실패'] ?? 0} · 경고 ${vr['경고'] ?? 0} · 수업용 분석이며 투자 추천이 아닙니다</div>`;
+}
+function drawScreen() {
+  const Y = YEARS(); const h = Math.max(170, Math.round((innerHeight - 370) / 2));
+  barLine($('#s1'), Y.map(String), [{ name: '매출액', color: '#2F80D8', values: Y.map((y) => fin(y, 'revenue')) }, { name: '영업이익', color: '#F2A03D', values: Y.map((y) => fin(y, 'operating_profit')) }], { name: '영업이익률', color: '#4FC3F7', unit: '%', values: Y.map((y) => met(y, 'operating_margin_pct')) }, { h });
+  const ps = [...new Set(D.qtr.map((r) => r.period))].sort().slice(-12);
+  const qv = (p, m) => N(D.qtr.find((r) => r.period === p && r.metric === m)?.value ?? null);
+  barLine($('#s2'), ps.map((p) => p.slice(2).replace('-', ' ')), [{ name: '영업이익', color: '#F2A03D', values: ps.map((p) => qv(p, 'operating_profit')) }], { name: '영업이익률', color: '#4FC3F7', unit: '%', values: ps.map((p) => { const r = qv(p, 'revenue'), o = qv(p, 'operating_profit'); return r && o !== null ? (o / r) * 100 : null; }) }, { h });
+  const xs = D.stock.map((r) => r.date), c = D.stock.map((r) => N(r.close)), kk = D.stock.map((r) => N(r.index_close));
+  const b0 = c.find((v) => v !== null), k0 = kk.find((v) => v !== null);
+  lineChart($('#s3'), xs, [{ name: '주가', color: '#F2A03D', values: c.map((v) => (v === null ? null : (v / b0) * 100)) }, { name: '시장지수', color: '#4FC3F7', values: kk.map((v) => (v === null || !k0 ? null : (v / k0) * 100)) }], [], { h });
+  barLine($('#s4'), Y.map(String), [{ name: '영업활동현금흐름', color: '#7CC36A', values: Y.map((y) => fin(y, 'operating_cashflow')) }, { name: '유형자산 취득', color: '#E0574F', values: Y.map((y) => fin(y, 'capex')) }], null, { h });
+}
+
+/* ---------- 편집 모드: 카드를 끌어 순서 변경, 이 브라우저에만 저장 ---------- */
+const store = {
+  get(k) { try { return JSON.parse(localStorage.getItem('ubda:' + k)); } catch (e) { return null; } },
+  set(k, v) { try { if (v === null) localStorage.removeItem('ubda:' + k); else localStorage.setItem('ubda:' + k, JSON.stringify(v)); } catch (e) { /* 저장 불가 환경 */ } },
+};
+function applyOrder() {
+  const order = store.get(`order:${SLUG}:${S.page}`); if (!order) return;
+  document.querySelectorAll('#workspace .grid').forEach((g) => {
+    const cards = [...g.children]; cards.sort((a, b) => { const ia = order.indexOf(a.dataset.k), ib = order.indexOf(b.dataset.k); return (ia < 0 ? 999 : ia) - (ib < 0 ? 999 : ib); });
+    cards.forEach((c) => g.append(c));
+  });
+}
+function enableEdit() {
+  const page = $('#workspace .page'); if (!page || !S.edit) return;
+  page.classList.add('editing');
+  page.insertAdjacentHTML('afterbegin', '<div class="edit-banner">배치 편집 — 카드를 끌어 순서를 바꾸세요 (이 브라우저에만 저장). <button data-edit="reset">기본 배치로</button> <button data-edit="done">완료</button></div>');
+  let drag = null;
+  page.querySelectorAll('.grid > .card').forEach((c) => {
+    c.draggable = true;
+    c.addEventListener('dragstart', (e) => { drag = c; c.classList.add('dragging'); e.dataTransfer.effectAllowed = 'move'; });
+    c.addEventListener('dragend', () => { c.classList.remove('dragging'); drag = null; store.set(`order:${SLUG}:${S.page}`, [...page.querySelectorAll('.grid > .card')].map((x) => x.dataset.k)); });
+    c.addEventListener('dragover', (e) => { e.preventDefault(); if (!drag || drag === c || drag.parentNode !== c.parentNode) return; const r = c.getBoundingClientRect(); c.parentNode.insertBefore(drag, (e.clientY - r.top) / r.height > 0.5 || (e.clientX - r.left) / r.width > 0.5 ? c.nextSibling : c); });
+  });
+}
+
+const DRAW = { screen: drawScreen, compare: drawCompare, overview: drawOverview, pl: drawPL, quarterly: drawQuarterly, bs: drawBS, stock: drawStock };
+const RENDER = { screen: pageScreen, compare: pageCompare, dart: pageDart, overview: pageOverview, pl: pagePL, quarterly: pageQuarterly, ratios: pageRatios, bs: pageBS, stock: pageStock, industry: pageIndustry, audit: pageAudit };
 
 function render() {
   const [id, title, desc] = PAGES.find((p) => p[0] === S.page);
@@ -375,21 +531,31 @@ function render() {
   document.querySelectorAll('.nav-btn').forEach((b) => b.setAttribute('aria-current', b.dataset.page === id ? 'page' : 'false'));
   const Y = YEARS();
   $('#topFilters').innerHTML = id === 'overview' && Y.length ? `<div class="seg">${Y.map((y) => `<button data-year="${y}" aria-pressed="${y === S.year}">${y}</button>`).join('')}</div>` : '';
+  document.body.classList.toggle('screen-mode', id === 'screen');
+  const editable = !['screen', 'audit', 'dart'].includes(id);
+  $('#editBtn').hidden = !editable; $('#editBtn').setAttribute('aria-pressed', String(S.edit && editable));
+  if (!editable) S.edit = false;
   $('#workspace').innerHTML = `<div class="page">${RENDER[id]()}</div>`;
+  applyOrder();
   DRAW[id]?.();
+  enableEdit();
   try { history.replaceState(null, '', location.search + '#' + id); } catch (e) { /* 미리보기 환경 */ }
 }
 
 function onClick(e) {
-  const t = e.target.closest('[data-page],[data-year],[data-act],[data-q],[data-sm],[data-lf]'); if (!t) return;
-  if (t.dataset.page) { S.page = t.dataset.page; $('#app').classList.remove('nav-open'); closePanel(); render(); }
+  const t = e.target.closest('[data-page],[data-year],[data-act],[data-q],[data-sm],[data-lf],[data-per],[data-cmp],[data-edit]'); if (!t) return;
+  if (S.edit && t.closest('.chart')) return; // 편집 중에는 차트 클릭 끔
+  if (t.dataset.per) { S.period = t.dataset.per; render(); return; }
+  if (t.dataset.cmp) { S.cmp = t.dataset.cmp; closePanel(); render(); return; }
+  if (t.dataset.edit) { if (t.dataset.edit === 'reset') store.set(`order:${SLUG}:${S.page}`, null); if (t.dataset.edit === 'done') S.edit = false; render(); return; }
+  if (t.dataset.page) { S.page = t.dataset.page; $('#app').classList.remove('nav-open'); if (!t.closest('#panel')) closePanel(); render(); }
   else if (t.dataset.year) { S.year = +t.dataset.year; render(); }
   else if (t.dataset.q) { S.qmetric = t.dataset.q; render(); }
   else if (t.dataset.sm) { S.stockMode = t.dataset.sm; render(); }
   else if (t.dataset.lf) { S.ledgerFilter = t.dataset.lf; render(); }
   else if (t.dataset.act) {
     const [k, a, b] = t.dataset.act.split(':');
-    if (k === 'fin') showFin(+a, b); else if (k === 'met') showMetric(+a, b);
+    if (k === 'fin') showFin(+a, b); else if (k === 'met') showMetric(+a, b); else if (k === 'cmp') showCmp(+a, b);
     else if (k === 'aud') openPanel(`<div class="panel-head"><h2>${esc(a)}</h2><button class="x">✕</button></div>${evidenceHTML(a)}`);
     e.stopPropagation();
   }
@@ -414,7 +580,13 @@ function onClick(e) {
   const h = location.hash.slice(1); if (PAGES.some((p) => p[0] === h)) S.page = h;
   document.addEventListener('click', onClick);
   $('#menuBtn').addEventListener('click', () => $('#app').classList.toggle('nav-open'));
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closePanel(); });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') { if (S.page === 'screen') { if (document.fullscreenElement) return; S.page = 'overview'; render(); } else closePanel(); }
+    if ((e.key === 'f' || e.key === 'F') && S.page === 'screen' && !e.target.closest('input,textarea')) { try { document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen(); } catch (er) { /* 미지원 */ } }
+  });
+  $('#editBtn').addEventListener('click', () => { S.edit = !S.edit; render(); });
+  $('#askBtn')?.addEventListener('click', () => window.openQuery?.());
+  try { INDEX = await (await fetch('companies/index.json', { cache: 'no-cache' })).json(); } catch (e) { INDEX = null; }
   let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => DRAW[S.page]?.(), 150); });
   render();
 })();

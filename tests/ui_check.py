@@ -21,7 +21,7 @@ from playwright.sync_api import sync_playwright
 
 ROOT = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(__file__).resolve().parent.parent
 SHOTS = Path(sys.argv[2]) if len(sys.argv) > 2 else None
-PAGES = ["overview", "pl", "quarterly", "ratios", "bs", "stock", "industry", "audit"]
+PAGES = ["overview", "compare", "pl", "quarterly", "ratios", "bs", "stock", "industry", "dart", "audit", "screen"]
 fails: list[str] = []
 
 
@@ -79,8 +79,14 @@ def main() -> int:
                     if label == "모바일":
                         pg.click("#menuBtn")
                         pg.wait_for_timeout(300)
+                    if pid != "screen" and "screen-mode" in (pg.get_attribute("body", "class") or ""):
+                        pg.keyboard.press("Escape")
+                        pg.wait_for_timeout(200)
+                        if label == "모바일":
+                            pg.click("#menuBtn")
+                            pg.wait_for_timeout(300)
                     pg.click(f'.nav-btn[data-page="{pid}"]')
-                    pg.wait_for_timeout(250)
+                    pg.wait_for_timeout(700 if pid == "compare" else 250)
                     title = pg.inner_text("#pageTitle")
                     charts = pg.locator(".chart").count()
                     svgs = pg.locator(".chart svg").count()
@@ -90,6 +96,38 @@ def main() -> int:
                     if SHOTS:
                         pg.screenshot(path=str(SHOTS / f"{slug}_{label}_{pid}.png"), full_page=label == "PC")
                 if has_data and label == "PC":
+                    pg.keyboard.press("Escape")  # 메인 스크린에서 나가기
+                    pg.wait_for_timeout(300)
+                    ok("메인 스크린 → Esc로 개요 복귀", pg.inner_text("#pageTitle") == "개요")
+                    pg.click('.nav-btn[data-page="screen"]')
+                    pg.wait_for_timeout(300)
+                    ok("메인 스크린 KPI 5개·차트 4개", pg.locator(".sc-kpi").count() == 5 and pg.locator(".sc-card .chart svg").count() == 4)
+                    if SHOTS:
+                        pg.screenshot(path=str(SHOTS / f"{slug}_screen.png"))
+                    pg.keyboard.press("Escape")
+                    pg.wait_for_timeout(200)
+                    pg.click('[data-per="quarter"]')
+                    pg.wait_for_timeout(200)
+                    ok("개요 연간→분기 전환", pg.locator("#c1 text").filter(has_text="Q").count() > 0)
+                    pg.click('[data-per="annual"]')
+                    pg.click("#editBtn")
+                    pg.wait_for_timeout(200)
+                    ok("배치 편집 모드 표시", pg.locator(".edit-banner").count() == 1 and pg.locator(".grid > .card[draggable=true]").count() > 0)
+                    pg.click('[data-edit="done"]')
+                    pg.click("#askBtn")
+                    pg.wait_for_timeout(200)
+                    chips = pg.locator("[data-ask]")
+                    for i in range(chips.count()):
+                        chips.nth(i).click()
+                        pg.wait_for_timeout(250)
+                    n_calc = pg.locator(".ans:not(.unk)").count()
+                    n_unk = pg.locator(".ans.unk").count()
+                    ok("데이터 질의 예시 답변", n_calc >= 4 and pg.locator(".ans").count() == chips.count(), f"계산 {n_calc} · 미확인 {n_unk}")
+                    if SHOTS:
+                        pg.screenshot(path=str(SHOTS / f"{slug}_query.png"))
+                    pg.click('.nav-btn[data-page="compare"]')
+                    pg.wait_for_timeout(800)
+                    ok("기업 비교 차트 2개", pg.locator("#cp1 svg, #cp2 svg").count() == 2)
                     pg.click('.nav-btn[data-page="overview"]')
                     pg.wait_for_timeout(200)
                     pg.locator(".chart .bar").first.click()

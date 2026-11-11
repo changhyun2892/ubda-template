@@ -20,6 +20,8 @@
       <button class="menu-btn" id="menuBtn" aria-label="메뉴 열기">☰</button>
       <div class="page-title"><h1 id="pageTitle">경영분석</h1><p id="pageDesc"></p></div>
       <div id="topFilters"></div>
+      <button class="tb-btn" id="editBtn" aria-pressed="false" title="카드를 끌어 배치 변경">배치 편집</button>
+      <button class="tb-btn primary" id="askBtn" title="질문하면 CSV로 계산해 답합니다">데이터 질의</button>
     </header>
     <div class="scope" id="scope"></div>
     <section class="workspace" id="workspace" aria-live="polite"><div class="empty">데이터를 불러오는 중…</div></section>
@@ -29,5 +31,6 @@
 <div class="tip" id="tip" role="tooltip"></div>
 <noscript>이 대시보드는 JavaScript가 필요합니다.</noscript>
 <script src="assets/app.js"></script>
+<script src="assets/query.js"></script>
 </body>
 </html>
