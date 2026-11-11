@@ -1,0 +1,31 @@
+{
+ "id": "retail",
+ "name": "유통",
+ "color": "#ef4444",
+ "kpis": [
+  {
+   "key": "store_count",
+   "label": "점포 수",
+   "where": "사업보고서, IR",
+   "caution": "업태별 구분"
+  },
+  {
+   "key": "online_share",
+   "label": "온라인 매출 비중",
+   "where": "IR 자료",
+   "caution": "총매출/순매출 기준 구분"
+  },
+  {
+   "key": "sss_growth",
+   "label": "기존점 성장률",
+   "where": "IR 자료",
+   "caution": "공시 여부 확인"
+  },
+  {
+   "key": "gross_merchandise",
+   "label": "총매출액(GMV)",
+   "where": "IR 자료",
+   "caution": "회계상 매출(순액)과 다름"
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "id": "bank",
+ "name": "은행·금융",
+ "color": "#3b82f6",
+ "kpis": [
+  {
+   "key": "nim",
+   "label": "순이자마진(NIM)",
+   "where": "IR 실적발표 자료, 사업보고서 영업의 현황",
+   "caution": "은행 단독/그룹 기준 구분"
+  },
+  {
+   "key": "delinquency_rate",
+   "label": "연체율",
+   "where": "IR 자료",
+   "caution": "기준(1개월 이상 등) 표시"
+  },
+  {
+   "key": "npl_ratio",
+   "label": "고정이하여신비율",
+   "where": "사업보고서 자산건전성",
+   "caution": "분기말 기준"
+  },
+  {
+   "key": "cet1_ratio",
+   "label": "CET1 비율",
+   "where": "IR 자료, 사업보고서 자본적정성",
+   "caution": "바젤III 기준"
+  },
+  {
+   "key": "cost_income_ratio",
+   "label": "영업이익경비율(CIR)",
+   "where": "IR 자료",
+   "caution": "산식이 회사마다 다를 수 있음"
+  },
+  {
+   "key": "loan_growth",
+   "label": "원화대출금 증가율",
+   "where": "IR 자료",
+   "caution": "가계/기업 구분"
+  }
+ ]
+}

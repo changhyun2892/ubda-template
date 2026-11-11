@@ -1,0 +1,55 @@
+{
+ "id": "food",
+ "name": "식품",
+ "color": "#f59e0b",
+ "kpis": [
+  {
+   "key": "product_segment_revenue",
+   "label": "제품군별 매출",
+   "where": "사업보고서 II. 사업의 내용 > 주요 제품 매출 / 매출실적",
+   "caution": "회사 전체 매출과 제품군(예: 면스낵) 매출을 혼동하지 말 것"
+  },
+  {
+   "key": "export_revenue",
+   "label": "수출·해외 매출",
+   "where": "사업보고서 매출실적의 내수/수출 구분, 연결주석 지역별 정보",
+   "caution": "수출 비중이 제품군 기준인지 회사 전체 기준인지 표시"
+  },
+  {
+   "key": "overseas_entities",
+   "label": "해외법인 매출",
+   "where": "연결재무제표 주석 > 종속기업 요약재무정보",
+   "caution": "내부거래 제거 전 금액일 수 있음"
+  },
+  {
+   "key": "raw_material_prices",
+   "label": "주요 원재료 가격",
+   "where": "사업보고서 II. 주요 원재료 가격변동추이",
+   "caution": "회사가 공시한 매입단가 — 국제 시세와 다름"
+  },
+  {
+   "key": "capacity_utilization",
+   "label": "생산능력·가동률",
+   "where": "사업보고서 II. 생산 및 설비",
+   "caution": "가동률 산식(시간/수량)을 원문대로 기록"
+  },
+  {
+   "key": "market_share",
+   "label": "시장점유율",
+   "where": "사업보고서 시장점유율 기재란 또는 외부 조사기관",
+   "caution": "출처·조사기관·기준(금액/수량)을 반드시 표시"
+  },
+  {
+   "key": "fx_rate",
+   "label": "환율",
+   "where": "한국은행 ECOS (무료 API 키)",
+   "caution": "수출 기업만 의미 있음"
+  },
+  {
+   "key": "search_interest",
+   "label": "검색 관심도",
+   "where": "Google Trends·네이버 데이터랩 CSV",
+   "caution": "관심도 지수이며 판매량이 아님"
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "id": "platform",
+ "name": "IT·플랫폼",
+ "color": "#06b6d4",
+ "kpis": [
+  {
+   "key": "segment_revenue",
+   "label": "사업부문별 매출",
+   "where": "사업보고서 부문정보, IR",
+   "caution": "광고·커머스·콘텐츠 등"
+  },
+  {
+   "key": "mau",
+   "label": "월간 활성 이용자(MAU)",
+   "where": "IR 자료",
+   "caution": "회사 자체 집계 — 외부 검증 불가 표시"
+  },
+  {
+   "key": "rd_ratio",
+   "label": "연구개발비 비중",
+   "where": "사업보고서 연구개발 활동",
+   "caution": ""
+  }
+ ]
+}

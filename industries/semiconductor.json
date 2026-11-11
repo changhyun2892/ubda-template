@@ -1,0 +1,37 @@
+{
+ "id": "semiconductor",
+ "name": "반도체·전자",
+ "color": "#8b5cf6",
+ "kpis": [
+  {
+   "key": "segment_revenue",
+   "label": "사업부문별 매출·영업이익",
+   "where": "사업보고서 부문정보 주석",
+   "caution": "부문 간 내부거래 확인"
+  },
+  {
+   "key": "memory_price",
+   "label": "메모리 가격",
+   "where": "외부 시장조사(DRAMeXchange 등) — 무료 범위 제한",
+   "caution": "유료 데이터 여부 표시"
+  },
+  {
+   "key": "capex_plan",
+   "label": "설비투자",
+   "where": "사업보고서 투자계획, IR",
+   "caution": "계획과 실적 구분"
+  },
+  {
+   "key": "inventory_days",
+   "label": "재고자산 회전일수",
+   "where": "재무제표에서 계산 가능",
+   "caution": "공통 재무로 계산"
+  },
+  {
+   "key": "capacity",
+   "label": "생산능력",
+   "where": "사업보고서 생산 및 설비",
+   "caution": "단위(웨이퍼 등) 원문대로"
+  }
+ ]
+}

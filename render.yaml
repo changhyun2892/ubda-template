@@ -1,0 +1,8 @@
+# Render 정적 사이트 설정 (무료). 빌드 과정 없음 — 저장소 폴더를 그대로 공개합니다.
+# 이름은 Render 계정 안에서 겹치지 않게 기업별로 바꾸세요 (예: orion-dashboard).
+services:
+  - type: web
+    name: ubda-dashboard
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .

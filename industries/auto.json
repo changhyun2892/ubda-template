@@ -1,0 +1,37 @@
+{
+ "id": "auto",
+ "name": "자동차",
+ "color": "#10b981",
+ "kpis": [
+  {
+   "key": "sales_volume",
+   "label": "판매대수 (국내/해외)",
+   "where": "월별 판매실적 공시, IR",
+   "caution": "도매/소매 판매 구분"
+  },
+  {
+   "key": "production_volume",
+   "label": "생산대수",
+   "where": "사업보고서 생산실적",
+   "caution": "공장별 구분"
+  },
+  {
+   "key": "model_mix",
+   "label": "차종별 구성 (SUV·친환경차 비중)",
+   "where": "IR 자료",
+   "caution": "비중 산식 표시"
+  },
+  {
+   "key": "overseas_sales",
+   "label": "해외 판매 비중",
+   "where": "IR, 사업보고서",
+   "caution": "지역별 구분"
+  },
+  {
+   "key": "asp",
+   "label": "대당 평균 판매가격",
+   "where": "IR 자료",
+   "caution": "공시 여부 확인 — 없으면 미공개"
+  }
+ ]
+}

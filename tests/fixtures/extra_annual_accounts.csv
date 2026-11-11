@@ -1,0 +1,21 @@
+bsns_year,sj_div,account_id,account_nm,value,evidence
+2025,BS,ifrs-full_Inventories,재고자산,245011080334,vuldak financials.csv A0013
+2024,BS,ifrs-full_Inventories,재고자산,148020437103,vuldak financials.csv A0014
+2023,BS,ifrs-full_Inventories,재고자산,142175085782,vuldak financials.csv A0015
+2025,BS,ifrs-full_CurrentAssets,유동자산,872933619483,vuldak financials.csv A0019
+2024,BS,ifrs-full_CurrentAssets,유동자산,676663603748,vuldak financials.csv A0020
+2023,BS,ifrs-full_CurrentAssets,유동자산,492073951173,vuldak financials.csv A0021
+2025,BS,ifrs-full_CurrentLiabilities,유동부채,555472302432,vuldak financials.csv A0022
+2024,BS,ifrs-full_CurrentLiabilities,유동부채,492425282678,vuldak financials.csv A0023
+2023,BS,ifrs-full_CurrentLiabilities,유동부채,402005197765,vuldak financials.csv A0024
+2025,BS,ifrs-full_Equity,자본총계,1271540001153,vuldak financials.csv A0031
+2024,BS,ifrs-full_Equity,자본총계,828033342607,vuldak financials.csv A0032
+2023,BS,ifrs-full_Equity,자본총계,576790316113,vuldak financials.csv A0033
+2025,CF,ifrs-full_PurchaseOfPropertyPlantAndEquipment,유형자산의 취득,-448988219606,vuldak financials.csv A0037
+2024,CF,ifrs-full_PurchaseOfPropertyPlantAndEquipment,유형자산의 취득,-228450369489,vuldak financials.csv A0038
+2023,CF,ifrs-full_PurchaseOfPropertyPlantAndEquipment,유형자산의 취득,-44996342023,vuldak financials.csv A0039
+2022,BS,ifrs-full_Inventories,재고자산,110337462516,vuldak financials.csv A0047
+2022,BS,ifrs-full_CurrentAssets,유동자산,348640276501,vuldak financials.csv A0049
+2022,BS,ifrs-full_CurrentLiabilities,유동부채,225328097793,vuldak financials.csv A0050
+2022,BS,ifrs-full_Equity,자본총계,454763741502,vuldak financials.csv A0053
+2022,CF,ifrs-full_PurchaseOfPropertyPlantAndEquipment,유형자산의 취득,-86894413646,vuldak financials.csv A0055
