@@ -2,8 +2,8 @@
 """
 1단계 · DART 정기보고서 수집 → data/raw/
 
-    DART_API_KEY=발급키 python scripts/collect_dart.py
-    (Windows: set DART_API_KEY=발급키  →  py scripts\\collect_dart.py)
+    DART_API_KEY=발급키 python scripts/collect_dart.py --company <기업폴더>
+    (Windows: set DART_API_KEY=발급키  →  py scripts\\collect_dart.py --company ottogi)
 
 기존 불닭 대시보드의 update_dart.py를 기업 무관하게 바꾼 것입니다.
  1. company.json의 stock_code로 DART 고유번호(corp_code)를 찾는다 (처음 한 번, data/raw/dart_meta.json에 저장).

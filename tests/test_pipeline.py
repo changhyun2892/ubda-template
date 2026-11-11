@@ -30,23 +30,29 @@ def ok(name, cond, detail=""):
     print(("  ✔ " if cond else "  ✘ ") + name + (f" — {detail}" if detail else ""))
 
 
+SLUG = "t"  # 테스트용 기업 폴더 이름
+
+
 def workdir(company: dict | None = None) -> Path:
     d = Path(tempfile.mkdtemp(prefix="ubda_test_"))
     for n in ("scripts", "industries"):
         shutil.copytree(REPO / n, d / n)
-    # 저장소의 company.json이 어떤 기업이든, 테스트는 항상 픽스처(삼양식품) 설정으로 실행
+    c = d / "companies" / SLUG
+    c.mkdir(parents=True)
+    # 저장소의 실제 기업 설정과 무관하게, 테스트는 항상 픽스처(삼양식품) 설정으로 실행
     cfg = {"company_id": "SY", "name": "삼양식품", "stock_code": "003230", "yahoo_ticker": "003230.KS", "market_index": "^KS11",
            "fs_div": "auto", "start_year": 2023, "industry": "food", "categories": ["라면"], "competitors": []}
     cfg.update(company or {})
-    (d / "company.json").write_text(json.dumps(cfg, ensure_ascii=False), encoding="utf-8")
-    shutil.copy(HERE / "fixtures" / "expectations_sy.json", d / "verify_expectations.json")
+    (c / "company.json").write_text(json.dumps(cfg, ensure_ascii=False), encoding="utf-8")
+    shutil.copy(HERE / "fixtures" / "expectations_sy.json", c / "verify_expectations.json")
     return d
 
 
 def run(d: Path, script: str, base: str, key="TESTKEY") -> subprocess.CompletedProcess:
     env = {**os.environ, "DART_BASE_URL": base + "/api", "YAHOO_HOSTS": base, "DART_API_KEY": key,
            "NO_PROXY": "127.0.0.1,localhost", "no_proxy": "127.0.0.1,localhost"}
-    return subprocess.run([sys.executable, str(d / "scripts" / script)], env=env, capture_output=True, text=True, cwd=d, timeout=120)
+    env.pop("UBDA_COMPANY", None)
+    return subprocess.run([sys.executable, str(d / "scripts" / script), "--company", SLUG], env=env, capture_output=True, text=True, cwd=d, timeout=120)
 
 
 def rows(p: Path):
@@ -64,29 +70,34 @@ def main() -> int:
         r = run(d, s, base)
         ok(f"{s} 정상 종료", r.returncode == 0, (r.stdout + r.stderr).strip().splitlines()[-1] if (r.stdout + r.stderr).strip() else "")
     v = run(d, "verify_data.py", base)
-    rep = json.loads((d / "data" / "verify_report.json").read_text(encoding="utf-8"))
+    rep = json.loads((d / "companies" / SLUG / "data" / "verify_report.json").read_text(encoding="utf-8"))
     fails = [f"{x['name']}: {x['detail']}" for x in rep["results"] if x["state"] == "실패"]
     ok("검증 실패 0건", v.returncode == 0 and not fails, "; ".join(fails[:3]) or str(rep["counts"]))
     exp = next((x for x in rep["results"] if x["name"] == "사람이 대조한 기준값과 일치"), {})
     ok("사람이 원문 대조한 기준값 48개 모두 일치", exp.get("detail") == "48/48개", exp.get("detail", ""))
-    fin = rows(d / "data" / "financials.csv")
+    fin = rows(d / "companies" / SLUG / "data" / "financials.csv")
     ok("연간 연도 2022~2025", sorted({r["year"] for r in fin}) == ["2022", "2023", "2024", "2025"])
-    q = rows(d / "data" / "quarterly.csv")
+    q = rows(d / "companies" / SLUG / "data" / "quarterly.csv")
     ok("분기 실적 12개 이상 (2023Q1~2025Q4)", len({r["period"] for r in q}) >= 12, f"{len({r['period'] for r in q})}개")
     capex = next(r for r in fin if r["year"] == "2025" and r["metric"] == "capex")
-    met = {(r["year"], r["metric"]): r for r in rows(d / "data" / "metrics.csv")}
+    met = {(r["year"], r["metric"]): r for r in rows(d / "companies" / SLUG / "data" / "metrics.csv")}
     ok("2025 영업이익률 22.29%", round(float(met[("2025", "operating_margin_pct")]["value"]), 2) == 22.29, met[("2025", "operating_margin_pct")]["value"])
     ok("2022 증가율은 전기 자료 없어 빈칸", met[("2022", "revenue_growth_pct")]["value"] == "")
     fcf = int(met[("2025", "simple_fcf")]["value"])
     ok("음수로 온 유형자산 취득액을 절대값으로 FCF 계산", fcf == 309287213625 - 448988219606, f"capex 원값 {capex['value']} · FCF {fcf:,}")
-    st = rows(d / "data" / "research_status.csv")
+    st = rows(d / "companies" / SLUG / "data" / "research_status.csv")
     ok("식품 산업 KPI 8개가 '미확인'으로 표시 (임의 생성 없음)", sum(1 for r in st if r["status"] == "미확인") == 8)
-    sm = json.loads((d / "data" / "summary.json").read_text(encoding="utf-8"))
+    sm = json.loads((d / "companies" / SLUG / "data" / "summary.json").read_text(encoding="utf-8"))
     ok("summary.json에 산업·카테고리·핵심 KPI", sm["industry"] == "food" and sm["categories"] == ["라면"] and sm["kpis"]["revenue"] == 2351785163786)
-    stock = rows(d / "data" / "stock_daily.csv")
+    stock = rows(d / "companies" / SLUG / "data" / "stock_daily.csv")
     ok("주가 940행 + 코스피 지수", len(stock) == 940 and stock[0]["index_close"] != "", f"{len(stock)}행")
-    reg = rows(d / "data" / "source_registry.csv")
+    reg = rows(d / "companies" / SLUG / "data" / "source_registry.csv")
     ok("정기공시가 아닌 공시는 제외", not any("주요사항" in r["title"] for r in reg))
+
+    r = subprocess.run([sys.executable, str(d / "scripts" / "build_index.py")], capture_output=True, text=True, cwd=d)
+    idx = json.loads((d / "companies" / "index.json").read_text(encoding="utf-8"))
+    types = sorted(n["type"] for n in idx["graph"]["nodes"])
+    ok("기업 목록·그래프 생성 (CORE→산업→카테고리→기업)", types == ["category", "company", "core", "industry"] and idx["companies"][0]["has_data"], str(types))
 
     print("\n[2] 다시 실행 — 새 보고서가 없으면 재무 API를 다시 부르지 않음")
     before = data.calls["/api/fnlttSinglAcntAll.json"]
@@ -95,13 +106,13 @@ def main() -> int:
     ok("재무 API 추가 호출 없음", data.calls["/api/fnlttSinglAcntAll.json"] == before)
 
     print("\n[3] 사람 대조 기록 반영과 불일치 감지")
-    man = d / "data" / "manual" / "audit_overrides.csv"
+    man = d / "companies" / SLUG / "data" / "manual" / "audit_overrides.csv"
     with man.open("a", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
         w.writerow(["F-2025-revenue", "원문 대조 일치", "2351785163786", "사업보고서 p.48 연결 IS", "2026-11-12", "사용자", ""])
         w.writerow(["F-2024-revenue", "원문 대조 일치", "1700000000000", "사업보고서 p.48", "2026-11-12", "사용자", ""])
     run(d, "build_dataset.py", base)
-    led = {r["audit_id"]: r for r in rows(d / "data" / "audit_ledger.csv")}
+    led = {r["audit_id"]: r for r in rows(d / "companies" / SLUG / "data" / "audit_ledger.csv")}
     ok("대조 일치 기록이 재빌드 후에도 유지", led["F-2025-revenue"]["result"] == "원문 대조 일치")
     ok("대조값과 다르면 '불일치'", led["F-2024-revenue"]["result"] == "불일치", led["F-2024-revenue"]["note"])
     ok("불일치가 있으면 검증 실패(종료코드 1)", run(d, "verify_data.py", base).returncode == 1)
@@ -110,7 +121,7 @@ def main() -> int:
     d4 = workdir()
     for s in ("collect_dart.py", "build_dataset.py"):
         run(d4, s, base)
-    kp = d4 / "data" / "manual" / "kpi_values.csv"
+    kp = d4 / "companies" / SLUG / "data" / "manual" / "kpi_values.csv"
     with kp.open("a", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
         w.writerow(["export_revenue", "2025", "2025", "면스낵 수출", "100", "KRW", "제품군", "", "", "자동 수집 · 원문 대조 전", "", ""])
@@ -127,7 +138,7 @@ def main() -> int:
     d5 = workdir({"company_id": "TS", "name": "테스트식품", "stock_code": "123456", "yahoo_ticker": "123456.KS"})
     run(d5, "collect_dart.py", base)
     run(d5, "build_dataset.py", base)
-    f5 = rows(d5 / "data" / "financials.csv")
+    f5 = rows(d5 / "companies" / SLUG / "data" / "financials.csv")
     ok("범위 '별도'로 기록", f5 and all(r["scope"] == "별도" for r in f5 if r["value"]), f"{len(f5)}행")
     v5 = run(d5, "verify_data.py", base)
     ok("다른 회사에는 삼양 기준값을 적용하지 않음", "기준 파일은 SY용" in v5.stdout)
@@ -135,7 +146,7 @@ def main() -> int:
     print("\n[6] 실패해도 사이트가 깨지지 않음")
     d6 = workdir({"stock_code": "000000"})
     r6 = run(d6, "collect_dart.py", base)
-    log = json.loads((d6 / "data" / "update_log.json").read_text(encoding="utf-8"))
+    log = json.loads((d6 / "companies" / SLUG / "data" / "update_log.json").read_text(encoding="utf-8"))
     ok("없는 종목코드 → 경고만, 종료코드 0", r6.returncode == 0 and log["dart"]["status"] == "실패", log["dart"]["message"][:60])
     d7 = workdir()
     r7 = run(d7, "collect_dart.py", base, key="")

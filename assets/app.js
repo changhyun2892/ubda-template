@@ -6,11 +6,14 @@
 'use strict';
 
 /* ---------------- 1) 데이터 읽기 ---------------- */
-const FILES = {
+// 주소 dashboard.html?c=<기업폴더> → companies/<기업폴더>/ 의 파일을 읽음
+const SLUG = (new URLSearchParams(location.search).get('c') || '').replace(/[^a-z0-9_-]/gi, '');
+const BASE = `companies/${SLUG}/`;
+const FILES = Object.fromEntries(Object.entries({
   company: 'company.json', summary: 'data/summary.json', verify: 'data/verify_report.json', log: 'data/update_log.json',
   fin: 'data/financials.csv', qtr: 'data/quarterly.csv', met: 'data/metrics.csv', ledger: 'data/audit_ledger.csv',
   reg: 'data/source_registry.csv', status: 'data/research_status.csv', kpi: 'data/manual/kpi_values.csv', stock: 'data/stock_daily.csv',
-};
+}).map(([k, v]) => [k, BASE + v]));
 
 function parseCSV(text) {
   const rows = []; let row = [], cell = '', q = false;
@@ -374,7 +377,7 @@ function render() {
   $('#topFilters').innerHTML = id === 'overview' && Y.length ? `<div class="seg">${Y.map((y) => `<button data-year="${y}" aria-pressed="${y === S.year}">${y}</button>`).join('')}</div>` : '';
   $('#workspace').innerHTML = `<div class="page">${RENDER[id]()}</div>`;
   DRAW[id]?.();
-  try { history.replaceState(null, '', '#' + id); } catch (e) { /* 미리보기 환경 */ }
+  try { history.replaceState(null, '', location.search + '#' + id); } catch (e) { /* 미리보기 환경 */ }
 }
 
 function onClick(e) {
@@ -397,7 +400,7 @@ function onClick(e) {
   tip.el = $('#tip');
   D = await loadAll();
   const c = D.company;
-  if (!c) { $('#workspace').innerHTML = '<div class="empty"><b>company.json을 읽지 못했습니다</b>index.html을 더블클릭하지 말고 로컬 서버로 여세요: <code>python -m http.server 8000</code></div>'; return; }
+  if (!SLUG || !c) { $('#workspace').innerHTML = `<div class="empty"><b>${SLUG ? `기업 '${esc(SLUG)}'을(를) 찾지 못했습니다` : '기업이 지정되지 않았습니다'}</b><a href="index.html">전체 기업 목록으로 이동</a><br><small>로컬에서는 파일을 더블클릭하지 말고 <code>python -m http.server 8000</code>으로 여세요.</small></div>`; $('#brandName').textContent = '경영분석'; return; }
   if (c.theme_color) { document.documentElement.style.setProperty('--accent', c.theme_color); document.documentElement.style.setProperty('--accent-soft', c.theme_color + '1a'); }
   document.title = `${c.name} 경영분석`;
   $('#brandMark').textContent = c.name.slice(0, 1);
@@ -407,7 +410,7 @@ function onClick(e) {
   const Y = YEARS(); S.year = Y[Y.length - 1] ?? null;
   const fsScope = D.fin[0]?.scope || '-';
   $('#scope').innerHTML = `<span><b>${esc(c.name)}</b> ${esc(c.stock_code || '')}</span><span>재무 <b>${esc(fsScope)}</b> 기준 · DART</span><span>기간 <b>${Y.length ? `${Y[0]}~${Y[Y.length - 1]}` : '-'}</b></span><span>업데이트 ${esc(D.summary?.updated_at || '-')}</span>`;
-  $('#navFoot').innerHTML = `수업용 경영분석이며 투자 추천이 아닙니다.<br>UBDA 템플릿 · 정적 CSV`;
+  $('#navFoot').innerHTML = `<a href="index.html">← 전체 기업</a><br><br>수업용 경영분석이며 투자 추천이 아닙니다.<br>UBDA · 정적 CSV`;
   const h = location.hash.slice(1); if (PAGES.some((p) => p[0] === h)) S.page = h;
   document.addEventListener('click', onClick);
   $('#menuBtn').addEventListener('click', () => $('#app').classList.toggle('nav-open'));

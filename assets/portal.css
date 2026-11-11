@@ -1,0 +1,25 @@
+/* 기업 목록 화면 (3D 포털 전 단계) */
+body.portal { overflow-y: auto; }
+.p-head { position: sticky; top: 0; z-index: 5; background: var(--panel); border-bottom: 1px solid var(--line); padding: 12px 24px; display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+.p-brand { display: flex; gap: 10px; align-items: center; margin-right: auto; }
+.p-brand b { display: block; font-size: 15px; }
+.p-brand small { color: var(--muted); font-size: 11.5px; }
+.p-search { border: 1px solid var(--line); border-radius: var(--r-sm); padding: 7px 12px; min-width: 260px; background: var(--sunk); }
+.p-main { max-width: 1180px; margin: 0 auto; padding: 18px 24px 40px; }
+.p-meta { color: var(--muted); font-size: 12px; margin: 0 0 14px; }
+.p-ind { margin-bottom: 22px; }
+.p-ind h2 { font-size: 16px; margin: 0 0 8px; display: flex; align-items: center; gap: 8px; }
+.p-ind h2 i { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+.p-cat { font-size: 12.5px; color: var(--muted); margin: 10px 0 6px; font-weight: 600; }
+.p-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+.p-card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 14px; display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: inherit; border-top: 3px solid var(--c, var(--line)); transition: transform .15s, box-shadow .15s; }
+.p-card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,.07); }
+.p-card .t { display: flex; align-items: baseline; gap: 8px; }
+.p-card .t b { font-size: 15px; }
+.p-card .t small { color: var(--dim); font-size: 11.5px; }
+.p-kpi { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; font-size: 11px; color: var(--muted); }
+.p-kpi b { display: block; font-size: 14px; color: var(--fg); font-variant-numeric: tabular-nums; }
+.p-badges { display: flex; flex-wrap: wrap; gap: 4px; }
+.p-open { margin-top: auto; font-size: 12px; font-weight: 600; color: var(--c, var(--s2)); }
+.p-foot { text-align: center; font-size: 11px; color: var(--dim); padding: 20px; }
+@media (max-width: 600px) { .p-head { padding: 10px 14px; } .p-search { min-width: 0; width: 100%; } .p-main { padding: 14px; } }

@@ -200,7 +200,7 @@ def main() -> int:
     ly = years[-1] if years else None
     pick = lambda k: next((r["value"] for r in met_rows if r["year"] == ly and r["metric"] == k), "")  # noqa: E731
     summary = {
-        "company_id": cid, "name": cname, "name_en": cfg.get("name_en", ""), "stock_code": cfg.get("stock_code", ""),
+        "slug": cfg["slug"], "company_id": cid, "name": cname, "dashboard_path": f"dashboard.html?c={cfg['slug']}", "name_en": cfg.get("name_en", ""), "stock_code": cfg.get("stock_code", ""),
         "industry": industry.get("id", cfg["industry"]), "industry_name": industry.get("name", ""), "categories": cfg.get("categories", []),
         "competitors": cfg.get("competitors", []), "dashboard_url": cfg.get("dashboard_url", ""), "latest_year": ly,
         "kpis": None if ly is None else {"revenue": F[ly].get("revenue"), "operating_profit": F[ly].get("operating_profit"), "net_income": F[ly].get("net_income"),

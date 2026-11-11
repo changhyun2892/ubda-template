@@ -9,20 +9,27 @@
 - 실행하지 않은 코드, 확인하지 않은 값은 완료라고 말하지 않는다.
 - DART API 키는 채팅으로 받지 않는다. 사용자가 GitHub Secrets에 직접 넣는다.
 
+## 구조
+저장소는 `changhyun2892/ubda-template` **하나**이고, 기업마다 `companies/<영문폴더>/`를 하나씩 둔다. 기업별 저장소는 만들지 않는다.
+DART_API_KEY와 Render 연결은 이미 한 번 해 두었으므로 기업을 추가할 때마다 다시 요청하지 않는다.
+
 ## 순서
-1. **기업 식별 (AI 판단)**: 웹 검색으로 정식 회사명, 종목코드 6자리, 시장(코스피 `.KS` / 코스닥 `.KQ`)을 확인한다. 지주사와 사업회사가 나뉘어 있으면 어느 쪽인지 사용자에게 한 번 묻는다. 산업 id는 `industries/`에서 고르고, 카테고리(여러 개 가능)와 경쟁사 2~4개를 정한다.
-2. **저장소 준비**: 사용자가 GitHub에 빈 Public 저장소 `<영문약칭>-dashboard`를 만들어 둔다(Claude 앱 권한 필요). `add_repo`(push)로 연결하고, ubda-template 내용을 `.git` 없이 복사한다.
-3. **설정**: `company.json`을 새 기업 값으로 채운다(dashboard_url은 비움). `verify_expectations.json`은 company_id만 바꾸고 checks를 `[]`로 비운다. **`data/`에서 `manual/`을 뺀 나머지(템플릿 기준 기업인 삼양식품의 데이터)는 모두 지운다**. 지우지 않으면 새 기업 이름으로 삼양식품 숫자가 표시된다. `data/manual/*.csv`는 헤더만 남긴다.
-4. **로컬 점검 후 push**: `python tests/test_pipeline.py`(26개 통과), `python tests/ui_check.py`(빈 상태 화면)를 실행한 뒤 커밋하고 push한다.
-5. **사용자 요청**: 새 저장소 Settings → Secrets and variables → Actions에 `DART_API_KEY`를 등록하고, Actions → 데이터 업데이트 → Run workflow를 눌러 달라고 한다.
-6. **결과 확인**: `git pull` 후 `data/update_log.json`, `data/verify_report.json`(실패·경고), `data/financials.csv`(`계정 미발견`)를 확인한다. 계정명 차이로 못 찾은 계정이면 `collect_dart.py`의 ACCOUNTS를 보완한다(템플릿에도 반영할지 묻는다).
-7. **산업 KPI 조사**: `industries/<industry>.json`의 KPI마다 최신 사업보고서(`source_registry.csv`의 DART 뷰어 URL)를 WebFetch로 열어 해당 표를 찾는다. 찾은 값은 `data/manual/kpi_values.csv`에 넣는다.
+1. **기업 식별 (AI 판단)**: 웹 검색으로 정식 회사명, 종목코드 6자리, 시장(코스피 `.KS` / 코스닥 `.KQ`)을 확인한다. 지주사와 사업회사가 나뉘어 있으면 어느 쪽인지 사용자에게 한 번 묻는다. 산업 id는 `industries/`에서 고르고(없는 산업이면 새 json을 추가), 카테고리(여러 개 가능)와 경쟁사 2~4개를 정한다. 이미 `companies/`에 있는 기업이면 새로 만들지 않고 알린다.
+2. **기업 폴더 만들기**: `companies/<영문폴더>/` 아래에 다음을 만든다.
+   - `company.json`: 기존 기업 파일을 참고해 작성한다(dashboard_url은 비움).
+   - `verify_expectations.json`: `{"company_id": "...", "checks": []}`
+   - `data/manual/kpi_values.csv`, `data/manual/audit_overrides.csv`: 헤더만 둔다(다른 기업 파일의 첫 줄을 복사).
+   - 다른 기업 폴더의 `data/` 파일은 절대 복사하지 않는다(다른 회사 숫자가 섞임).
+3. **로컬 점검**: `python tests/test_pipeline.py`(27개 통과), `python scripts/build_index.py`, `python tests/ui_check.py`(새 기업은 '데이터 없음' 안내가 나오면 정상)를 실행한다.
+4. **push**: 커밋하고 push하면 Actions가 자동으로 실행되어 모든 기업을 수집하고 커밋한다(2~3분). 실행 상태는 `https://api.github.com/repos/changhyun2892/ubda-template/actions/runs?per_page=3`으로 확인한다.
+5. **결과 확인**: `git pull` 후 `companies/<기업>/data/update_log.json`, `verify_report.json`(실패·경고), `financials.csv`(`계정 미발견`)를 확인한다. 계정명 차이로 못 찾은 계정이면 `scripts/collect_dart.py`의 ACCOUNTS를 보완한다(모든 기업에 적용되므로 기존 기업 점검도 다시 확인).
+6. **산업 KPI 조사**: `industries/<industry>.json`의 KPI마다 최신 사업보고서를 읽는다. `source_registry.csv`에 DART 뷰어 URL이 있고, KIND 원문 `kind.krx.co.kr/external/...htm`이 WebFetch로 읽기 쉽다. 찾은 값은 `companies/<기업>/data/manual/kpi_values.csv`에 넣는다.
    - 상태는 `자동 수집 · 원문 대조 전`(AI가 옮긴 값)으로 둔다. `원문 대조 일치`는 사람이 확인했을 때만 쓴다.
    - 원문의 백만원·천원 단위는 KRW로 환산하고, note에 원래 단위를 적는다.
+   - 회사 전체 매출과 제품군 매출을 구분해 scope에 적는다. 관계사(예: 제조 자회사)를 통한 매출 구조도 note에 남긴다.
    - 검색 관심도는 사용자가 CSV를 내려받아야 하며, 판매량으로 해석하지 않는다.
-   - 입력한 뒤 `build_dataset.py`와 `verify_data.py`를 실행해 실패가 없을 때 push한다.
-8. **배포**: 사용자에게 Render → New → Static Site → 저장소 연결(Build Command 비움, Publish Directory `.`)을 요청한다. 받은 주소를 `company.json`의 `dashboard_url`에 넣고 push한다.
-9. **보고**: 결론을 먼저 쓴다. 수집 연도와 점검 결과, 산업 KPI 확보 수와 미확인 목록, 사용자가 할 일(원문 대조 기록법, Render)을 정리하고, 실행하지 않은 것은 따로 표시한다.
+   - 입력한 뒤 `python scripts/run_all.py --only <기업> --steps build,verify`로 실패가 없는지 확인하고 push한다.
+7. **보고**: 결론을 먼저 쓴다. 대시보드 주소(`<사이트>/dashboard.html?c=<기업>`), 수집 연도와 점검 결과, 산업 KPI 확보 수와 미확인 목록, 사용자가 할 일(원문 대조 기록법)을 정리하고, 실행하지 않은 것은 따로 표시한다.
 
 ## 사람이 원문 대조한 기록
-`data/manual/audit_overrides.csv`에 audit_id(예: F-2025-revenue), result(`원문 대조 일치`), verified_value(원 단위), source_location(예: 사업보고서 p.48 연결 손익계산서), checked_on, checked_by를 적는다. 나중에 정정공시로 값이 바뀌면 자동으로 `불일치`가 표시된다.
+`companies/<기업>/data/manual/audit_overrides.csv`에 audit_id(예: F-2025-revenue), result(`원문 대조 일치`), verified_value(원 단위), source_location(예: 사업보고서 p.48 연결 손익계산서), checked_on, checked_by를 적는다. 나중에 정정공시로 값이 바뀌면 자동으로 `불일치`가 표시된다.

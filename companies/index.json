@@ -1,0 +1,147 @@
+{
+ "updated_at": "2026-11-12 01:27 KST",
+ "industries": {
+  "auto": {
+   "name": "자동차",
+   "color": "#10b981"
+  },
+  "bank": {
+   "name": "은행·금융",
+   "color": "#3b82f6"
+  },
+  "food": {
+   "name": "식품",
+   "color": "#f59e0b"
+  },
+  "platform": {
+   "name": "IT·플랫폼",
+   "color": "#06b6d4"
+  },
+  "retail": {
+   "name": "유통",
+   "color": "#ef4444"
+  },
+  "semiconductor": {
+   "name": "반도체·전자",
+   "color": "#8b5cf6"
+  }
+ },
+ "companies": [
+  {
+   "slug": "ottogi",
+   "company_id": "OT",
+   "name": "오뚜기",
+   "name_en": "Ottogi",
+   "stock_code": "007310",
+   "industry": "food",
+   "categories": [
+    "라면"
+   ],
+   "competitors": [
+    "농심",
+    "삼양식품",
+    "팔도",
+    "CJ제일제당"
+   ],
+   "theme_color": "#a87200",
+   "dashboard_path": "dashboard.html?c=ottogi",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
+   "slug": "samyang",
+   "company_id": "SY",
+   "name": "삼양식품",
+   "name_en": "Samyang Foods",
+   "stock_code": "003230",
+   "industry": "food",
+   "categories": [
+    "라면"
+   ],
+   "competitors": [
+    "농심",
+    "오뚜기",
+    "팔도"
+   ],
+   "theme_color": "#d4262c",
+   "dashboard_path": "dashboard.html?c=samyang",
+   "has_data": true,
+   "latest_year": 2025,
+   "kpis": {
+    "revenue": 2351785163786,
+    "operating_profit": 524188406060,
+    "net_income": 388673674725,
+    "operating_margin_pct": 22.289,
+    "revenue_growth_pct": 36.0975,
+    "debt_ratio_pct": 72.7429
+   },
+   "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 126,
+    "불일치": 0,
+    "미확인": 0
+   },
+   "industry_kpis_found": 0,
+   "industry_kpis_total": 8,
+   "updated_at": "2026-11-12 01:27 KST"
+  }
+ ],
+ "graph": {
+  "nodes": [
+   {
+    "id": "core",
+    "type": "core",
+    "label": "경영분석 CORE"
+   },
+   {
+    "id": "ind:food",
+    "type": "industry",
+    "label": "식품",
+    "color": "#f59e0b"
+   },
+   {
+    "id": "co:ottogi",
+    "type": "company",
+    "label": "오뚜기",
+    "slug": "ottogi",
+    "url": "dashboard.html?c=ottogi"
+   },
+   {
+    "id": "cat:food:라면",
+    "type": "category",
+    "label": "라면",
+    "industry": "food"
+   },
+   {
+    "id": "co:samyang",
+    "type": "company",
+    "label": "삼양식품",
+    "slug": "samyang",
+    "url": "dashboard.html?c=samyang"
+   }
+  ],
+  "links": [
+   {
+    "source": "core",
+    "target": "ind:food"
+   },
+   {
+    "source": "ind:food",
+    "target": "cat:food:라면"
+   },
+   {
+    "source": "cat:food:라면",
+    "target": "co:ottogi"
+   },
+   {
+    "source": "cat:food:라면",
+    "target": "co:samyang"
+   }
+  ]
+ }
+}

@@ -3,31 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>경영분석 대시보드</title>
-<meta name="description" content="DART 공시 기반 기업 경영분석 대시보드 (UBDA 템플릿). 수업용 분석이며 투자 추천이 아닙니다.">
+<title>UBDA 경영분석 — 전체 기업</title>
+<meta name="description" content="DART 공시 기반 기업 경영분석 대시보드 모음 (UBDA). 수업용 분석이며 투자 추천이 아닙니다.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23444'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/portal.css">
 </head>
-<body>
-<div id="app" class="app">
-  <nav class="nav" aria-label="메뉴">
-    <div class="brand"><div class="brand-mark" id="brandMark">·</div><div><b id="brandName">불러오는 중</b><small id="brandSub"></small></div></div>
-    <ul class="nav-list" id="navList"></ul>
-    <div class="nav-foot" id="navFoot"></div>
-  </nav>
-  <main class="center">
-    <header class="topbar">
-      <button class="menu-btn" id="menuBtn" aria-label="메뉴 열기">☰</button>
-      <div class="page-title"><h1 id="pageTitle">경영분석</h1><p id="pageDesc"></p></div>
-      <div id="topFilters"></div>
-    </header>
-    <div class="scope" id="scope"></div>
-    <section class="workspace" id="workspace" aria-live="polite"><div class="empty">데이터를 불러오는 중…</div></section>
-  </main>
-  <aside class="panel" id="panel" aria-label="근거 패널"><div class="panel-in" id="panelIn"></div></aside>
-</div>
-<div class="tip" id="tip" role="tooltip"></div>
-<noscript>이 대시보드는 JavaScript가 필요합니다.</noscript>
-<script src="assets/app.js"></script>
+<body class="portal">
+<!-- 기업 목록 화면. 다음 단계에서 3D 뉴런 포털로 교체할 자리입니다 (같은 companies/index.json을 읽음). -->
+<header class="p-head">
+  <div class="p-brand"><div class="brand-mark" style="background:#1c1a17">U</div><div><b>UBDA 경영분석</b><small>DART 공시 기반 기업 대시보드</small></div></div>
+  <input id="q" class="p-search" type="search" placeholder="기업·산업·카테고리 검색" aria-label="검색">
+</header>
+<main class="p-main">
+  <p class="p-meta" id="meta">불러오는 중…</p>
+  <div id="list"></div>
+</main>
+<footer class="p-foot">수업용 경영분석이며 투자 추천이 아닙니다 · 재무 데이터: 금융감독원 OpenDART · 주가: Yahoo Finance</footer>
+<script src="assets/portal.js"></script>
 </body>
 </html>

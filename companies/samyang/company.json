@@ -1,5 +1,5 @@
 {
-  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 새 기업은 이 파일만 고치면 됩니다. 처음 값은 검증용 기준 기업(삼양식품)입니다.",
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(samyang)이 기업 주소(slug)입니다.",
   "company_id": "SY",
   "name": "삼양식품",
   "name_en": "Samyang Foods",
@@ -9,8 +9,14 @@
   "fs_div": "auto",
   "start_year": 2023,
   "industry": "food",
-  "categories": ["라면"],
-  "competitors": ["농심", "오뚜기", "팔도"],
+  "categories": [
+    "라면"
+  ],
+  "competitors": [
+    "농심",
+    "오뚜기",
+    "팔도"
+  ],
   "theme_color": "#d4262c",
   "dashboard_url": "",
   "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용으로 함께 수집됨"

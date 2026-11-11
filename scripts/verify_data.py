@@ -2,7 +2,7 @@
 """
 3단계 · 데이터 점검 → 화면 출력 + data/verify_report.json
 
-    python scripts/verify_data.py        (Windows: py scripts\\verify_data.py)
+    python scripts/verify_data.py --company <기업폴더>
 
 data/ 파일을 읽기만 하고 고치지 않습니다. 결과는 통과 / 실패 / 경고 / 미실행으로 나눕니다.
  - 실패: 숫자가 서로 맞지 않거나 출처가 없는 값 → 반드시 확인
@@ -15,7 +15,7 @@ import json
 import sys
 from collections import defaultdict
 
-from ubda_common import (DATA, ROOT, ST_AUTO, ST_MISMATCH, ST_UNCONFIRMED, ST_UNDISCLOSED, ST_VERIFIED,
+from ubda_common import (CDIR, DATA, ST_AUTO, ST_MISMATCH, ST_UNCONFIRMED, ST_UNDISCLOSED, ST_VERIFIED,
                          load_config, now_kst, num, read_csv)
 
 results: list[dict] = []
@@ -115,7 +115,7 @@ def main() -> int:
     check("미확인·미공개 항목에 숫자 없음 (추정값 금지)", not estimated, ", ".join(estimated[:5]))
 
     # 7) 이미 사람이 원문 대조한 기준값과 비교 (verify_expectations.json, 같은 기업일 때만)
-    ep = ROOT / "verify_expectations.json"
+    ep = CDIR / "verify_expectations.json"
     if ep.exists():
         exp = json.loads(ep.read_text(encoding="utf-8"))
         if exp.get("company_id") == cfg["company_id"]:
