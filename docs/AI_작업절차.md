@@ -12,7 +12,7 @@
 ## 순서
 1. **기업 식별 (AI 판단)**: 웹 검색으로 정식 회사명, 종목코드 6자리, 시장(코스피 `.KS` / 코스닥 `.KQ`)을 확인한다. 지주사와 사업회사가 나뉘어 있으면 어느 쪽인지 사용자에게 한 번 묻는다. 산업 id는 `industries/`에서 고르고, 카테고리(여러 개 가능)와 경쟁사 2~4개를 정한다.
 2. **저장소 준비**: 사용자가 GitHub에 빈 Public 저장소 `<영문약칭>-dashboard`를 만들어 둔다(Claude 앱 권한 필요). `add_repo`(push)로 연결하고, ubda-template 내용을 `.git` 없이 복사한다.
-3. **설정**: `company.json`을 새 기업 값으로 채운다(dashboard_url은 비움). `verify_expectations.json`은 company_id만 바꾸고 checks를 `[]`로 비운다. `data/manual/*.csv`는 헤더만 남긴다.
+3. **설정**: `company.json`을 새 기업 값으로 채운다(dashboard_url은 비움). `verify_expectations.json`은 company_id만 바꾸고 checks를 `[]`로 비운다. **`data/`에서 `manual/`을 뺀 나머지(템플릿 기준 기업인 삼양식품의 데이터)는 모두 지운다**. 지우지 않으면 새 기업 이름으로 삼양식품 숫자가 표시된다. `data/manual/*.csv`는 헤더만 남긴다.
 4. **로컬 점검 후 push**: `python tests/test_pipeline.py`(26개 통과), `python tests/ui_check.py`(빈 상태 화면)를 실행한 뒤 커밋하고 push한다.
 5. **사용자 요청**: 새 저장소 Settings → Secrets and variables → Actions에 `DART_API_KEY`를 등록하고, Actions → 데이터 업데이트 → Run workflow를 눌러 달라고 한다.
 6. **결과 확인**: `git pull` 후 `data/update_log.json`, `data/verify_report.json`(실패·경고), `data/financials.csv`(`계정 미발견`)를 확인한다. 계정명 차이로 못 찾은 계정이면 `collect_dart.py`의 ACCOUNTS를 보완한다(템플릿에도 반영할지 묻는다).
