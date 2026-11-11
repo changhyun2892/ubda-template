@@ -99,6 +99,13 @@ def main() -> int:
     types = sorted(n["type"] for n in idx["graph"]["nodes"])
     ok("기업 목록·그래프 생성 (CORE→산업→카테고리→기업)", types == ["category", "company", "core", "industry"] and idx["companies"][0]["has_data"], str(types))
 
+    r = run(d, "collect_business_text.py", base)
+    bt = d / "companies" / SLUG / "data" / "raw" / "business_2025.txt"
+    txt = bt.read_text(encoding="utf-8") if bt.exists() else ""
+    ok("사업보고서 'II. 사업의 내용'만 텍스트로 저장 (표 구분 유지)", "면스낵 수출 | 1,234 |" in txt and "재무에 관한 사항" not in txt and "회사의 개요" not in txt, r.stdout.strip()[-80:])
+    r = run(d, "collect_business_text.py", base)
+    ok("같은 보고서는 다시 받지 않음", "이미 저장됨" in r.stdout)
+
     print("\n[2] 다시 실행 — 새 보고서가 없으면 재무 API를 다시 부르지 않음")
     before = data.calls["/api/fnlttSinglAcntAll.json"]
     r = run(d, "collect_dart.py", base)

@@ -2,7 +2,7 @@
 """
 모든 기업을 한 번에 처리 → companies/<기업>/data/ + companies/index.json
 
-    python scripts/run_all.py                    모든 기업: 수집 → 주가 → 계산 → 점검 → 기업 목록
+    python scripts/run_all.py                    모든 기업: 수집 → 사업보고서 본문 → 주가 → 계산 → 점검 → 기업 목록
     python scripts/run_all.py --only ottogi      한 기업만
     python scripts/run_all.py --steps build,verify   수집 없이 계산·점검만 (인터넷 없이 가능)
 
@@ -18,7 +18,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-STEPS = {"collect": "collect_dart.py", "stock": "update_stock.py", "build": "build_dataset.py", "verify": "verify_data.py"}
+STEPS = {"collect": "collect_dart.py", "text": "collect_business_text.py", "stock": "update_stock.py", "build": "build_dataset.py", "verify": "verify_data.py"}
 
 
 def arg(name: str, default: str | None = None) -> str | None:
@@ -26,7 +26,7 @@ def arg(name: str, default: str | None = None) -> str | None:
 
 
 def main() -> int:
-    steps = (arg("--steps") or "collect,stock,build,verify").split(",")
+    steps = (arg("--steps") or "collect,text,stock,build,verify").split(",")
     only = arg("--only")
     slugs = []
     for p in sorted((ROOT / "companies").glob("*/company.json")):

@@ -87,6 +87,19 @@ def make_handler(d: Data):
                     return self._json({"status": "013", "message": "조회된 데이타가 없습니다."})
                 its = d.items.get((p["bsns_year"], p["reprt_code"]), [])
                 return self._json({"status": "000", "list": its} if its else {"status": "013", "message": "조회된 데이타가 없습니다."})
+            if u.path == "/api/document.xml":
+                xml = ("<DOCUMENT><BODY><SECTION-1><TITLE ATOC=\"Y\">I. 회사의 개요</TITLE><P>개요</P></SECTION-1>"
+                       "<SECTION-1><TITLE ATOC=\"Y\">II. 사업의 내용</TITLE><SECTION-2><TITLE ATOC=\"Y\">4. 매출 및 수주상황</TITLE>"
+                       "<P>(단위 : 백만원)</P><TABLE><TR><TH>구분</TH><TH>제71기</TH></TR><TR><TD>면스낵 수출</TD><TD>1,234</TD></TR></TABLE></SECTION-2></SECTION-1>"
+                       "<SECTION-1><TITLE ATOC=\"Y\">III. 재무에 관한 사항</TITLE><P>재무</P></SECTION-1></BODY></DOCUMENT>")
+                buf = io.BytesIO()
+                with zipfile.ZipFile(buf, "w") as z:
+                    z.writestr(f"{p['rcept_no']}.xml", xml.encode("utf-8"))
+                    z.writestr(f"{p['rcept_no']}_00760.xml", "<DOCUMENT>감사보고서</DOCUMENT>".encode("utf-8"))
+                self.send_response(200)
+                self.end_headers()
+                self.wfile.write(buf.getvalue())
+                return
             if u.path.startswith("/v8/finance/chart/"):
                 sym = urllib.parse.unquote(u.path.rsplit("/", 1)[1])
                 ts, cl, vol = [], [], []
