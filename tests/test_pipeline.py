@@ -34,12 +34,12 @@ def workdir(company: dict | None = None) -> Path:
     d = Path(tempfile.mkdtemp(prefix="ubda_test_"))
     for n in ("scripts", "industries"):
         shutil.copytree(REPO / n, d / n)
-    for n in ("company.json", "verify_expectations.json"):
-        shutil.copy(REPO / n, d / n)
-    if company:
-        cfg = json.loads((d / "company.json").read_text(encoding="utf-8"))
-        cfg.update(company)
-        (d / "company.json").write_text(json.dumps(cfg, ensure_ascii=False), encoding="utf-8")
+    # 저장소의 company.json이 어떤 기업이든, 테스트는 항상 픽스처(삼양식품) 설정으로 실행
+    cfg = {"company_id": "SY", "name": "삼양식품", "stock_code": "003230", "yahoo_ticker": "003230.KS", "market_index": "^KS11",
+           "fs_div": "auto", "start_year": 2023, "industry": "food", "categories": ["라면"], "competitors": []}
+    cfg.update(company or {})
+    (d / "company.json").write_text(json.dumps(cfg, ensure_ascii=False), encoding="utf-8")
+    shutil.copy(HERE / "fixtures" / "expectations_sy.json", d / "verify_expectations.json")
     return d
 
 

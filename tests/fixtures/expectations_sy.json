@@ -1,0 +1,294 @@
+{
+ "_설명": "이미 사람이 사업보고서 원문과 대조한 값. 자동 수집값이 이와 다르면 verify_data.py가 '실패'로 표시한다. 새 기업은 처음엔 비워 두고, 원문 대조를 마친 값만 추가한다.",
+ "company_id": "SY",
+ "checks": [
+  {
+   "year": 2022,
+   "metric": "capex",
+   "value": 86894413646,
+   "evidence": "vuldak-dashboard financials.csv A0055 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2022,
+   "metric": "cost_of_sales",
+   "value": 657814038196,
+   "evidence": "vuldak-dashboard financials.csv A0044 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2022,
+   "metric": "current_assets",
+   "value": 348640276501,
+   "evidence": "vuldak-dashboard financials.csv A0049 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2022,
+   "metric": "current_liabilities",
+   "value": 225328097793,
+   "evidence": "vuldak-dashboard financials.csv A0050 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2022,
+   "metric": "inventories",
+   "value": 110337462516,
+   "evidence": "vuldak-dashboard financials.csv A0047 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2022,
+   "metric": "operating_cashflow",
+   "value": 47787143112,
+   "evidence": "vuldak-dashboard financials.csv A0054 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2022,
+   "metric": "operating_profit",
+   "value": 90375676138,
+   "evidence": "vuldak-dashboard financials.csv A0046 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2022,
+   "metric": "revenue",
+   "value": 909036571591,
+   "evidence": "vuldak-dashboard financials.csv A0043 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2022,
+   "metric": "sga",
+   "value": 160846857257,
+   "evidence": "vuldak-dashboard financials.csv A0045 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2022,
+   "metric": "total_assets",
+   "value": 924929490964,
+   "evidence": "vuldak-dashboard financials.csv A0051 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2022,
+   "metric": "total_equity",
+   "value": 454763741502,
+   "evidence": "vuldak-dashboard financials.csv A0053 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2022,
+   "metric": "total_liabilities",
+   "value": 470165749462,
+   "evidence": "vuldak-dashboard financials.csv A0052 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2023,
+   "metric": "capex",
+   "value": 44996342023,
+   "evidence": "vuldak-dashboard financials.csv A0039 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2023,
+   "metric": "cost_of_sales",
+   "value": 776182562968,
+   "evidence": "vuldak-dashboard financials.csv A0006 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2023,
+   "metric": "current_assets",
+   "value": 492073951173,
+   "evidence": "vuldak-dashboard financials.csv A0021 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2023,
+   "metric": "current_liabilities",
+   "value": 402005197765,
+   "evidence": "vuldak-dashboard financials.csv A0024 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2023,
+   "metric": "inventories",
+   "value": 142175085782,
+   "evidence": "vuldak-dashboard financials.csv A0015 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2023,
+   "metric": "operating_cashflow",
+   "value": 168099691095,
+   "evidence": "vuldak-dashboard financials.csv A0036 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2023,
+   "metric": "operating_profit",
+   "value": 147514090779,
+   "evidence": "vuldak-dashboard financials.csv A0012 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2023,
+   "metric": "revenue",
+   "value": 1192914607980,
+   "evidence": "vuldak-dashboard financials.csv A0003 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2023,
+   "metric": "sga",
+   "value": 269217954233,
+   "evidence": "vuldak-dashboard financials.csv A0009 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2023,
+   "metric": "total_assets",
+   "value": 1170302770895,
+   "evidence": "vuldak-dashboard financials.csv A0027 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2023,
+   "metric": "total_equity",
+   "value": 576790316113,
+   "evidence": "vuldak-dashboard financials.csv A0033 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2023,
+   "metric": "total_liabilities",
+   "value": 593512454782,
+   "evidence": "vuldak-dashboard financials.csv A0030 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2024,
+   "metric": "capex",
+   "value": 228450369489,
+   "evidence": "vuldak-dashboard financials.csv A0038 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2024,
+   "metric": "cost_of_sales",
+   "value": 1004797694924,
+   "evidence": "vuldak-dashboard financials.csv A0005 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2024,
+   "metric": "current_assets",
+   "value": 676663603748,
+   "evidence": "vuldak-dashboard financials.csv A0020 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2024,
+   "metric": "current_liabilities",
+   "value": 492425282678,
+   "evidence": "vuldak-dashboard financials.csv A0023 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2024,
+   "metric": "inventories",
+   "value": 148020437103,
+   "evidence": "vuldak-dashboard financials.csv A0014 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2024,
+   "metric": "operating_cashflow",
+   "value": 357904674484,
+   "evidence": "vuldak-dashboard financials.csv A0035 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2024,
+   "metric": "operating_profit",
+   "value": 344569150443,
+   "evidence": "vuldak-dashboard financials.csv A0011 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2024,
+   "metric": "revenue",
+   "value": 1728015003746,
+   "evidence": "vuldak-dashboard financials.csv A0002 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2024,
+   "metric": "sga",
+   "value": 378648158379,
+   "evidence": "vuldak-dashboard financials.csv A0008 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2024,
+   "metric": "total_assets",
+   "value": 1594782196967,
+   "evidence": "vuldak-dashboard financials.csv A0026 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2024,
+   "metric": "total_equity",
+   "value": 828033342607,
+   "evidence": "vuldak-dashboard financials.csv A0032 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2024,
+   "metric": "total_liabilities",
+   "value": 766748854360,
+   "evidence": "vuldak-dashboard financials.csv A0029 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2025,
+   "metric": "capex",
+   "value": 448988219606,
+   "evidence": "vuldak-dashboard financials.csv A0037 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2025,
+   "metric": "cost_of_sales",
+   "value": 1298756616303,
+   "evidence": "vuldak-dashboard financials.csv A0004 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2025,
+   "metric": "current_assets",
+   "value": 872933619483,
+   "evidence": "vuldak-dashboard financials.csv A0019 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2025,
+   "metric": "current_liabilities",
+   "value": 555472302432,
+   "evidence": "vuldak-dashboard financials.csv A0022 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2025,
+   "metric": "inventories",
+   "value": 245011080334,
+   "evidence": "vuldak-dashboard financials.csv A0013 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2025,
+   "metric": "operating_cashflow",
+   "value": 309287213625,
+   "evidence": "vuldak-dashboard financials.csv A0034 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2025,
+   "metric": "operating_profit",
+   "value": 524188406060,
+   "evidence": "vuldak-dashboard financials.csv A0010 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2025,
+   "metric": "revenue",
+   "value": 2351785163786,
+   "evidence": "vuldak-dashboard financials.csv A0001 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2025,
+   "metric": "sga",
+   "value": 528840141423,
+   "evidence": "vuldak-dashboard financials.csv A0007 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2025,
+   "metric": "total_assets",
+   "value": 2196495586892,
+   "evidence": "vuldak-dashboard financials.csv A0025 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2025,
+   "metric": "total_equity",
+   "value": 1271540001153,
+   "evidence": "vuldak-dashboard financials.csv A0031 (사람이 원문 대조한 값)"
+  },
+  {
+   "year": 2025,
+   "metric": "total_liabilities",
+   "value": 924955585739,
+   "evidence": "vuldak-dashboard financials.csv A0028 (사람이 원문 대조한 값)"
+  }
+ ]
+}
