@@ -1,0 +1,38 @@
+{
+  "slug": "ottogi",
+  "company_id": "OT",
+  "name": "오뚜기",
+  "dashboard_path": "dashboard.html?c=ottogi",
+  "name_en": "Ottogi",
+  "stock_code": "007310",
+  "industry": "food",
+  "industry_name": "식품",
+  "categories": [
+    "라면"
+  ],
+  "competitors": [
+    "농심",
+    "삼양식품",
+    "팔도",
+    "CJ제일제당"
+  ],
+  "dashboard_url": "",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 3674545422005,
+    "operating_profit": 177251297728,
+    "net_income": 72135661488,
+    "operating_margin_pct": 4.8238,
+    "revenue_growth_pct": 3.8265,
+    "debt_ratio_pct": 65.2941
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 126,
+    "불일치": 0,
+    "미확인": 0
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 8,
+  "updated_at": "2026-11-12 01:34 KST"
+}
