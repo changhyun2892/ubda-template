@@ -351,16 +351,57 @@ function drawStock() {
   else lineChart($('#c6'), xs, [{ name: '종가(원)', color: COLORS()[0], values: c }], mk, { fmt: (v) => fmt(v, 0) });
 }
 
-function pageIndustry() {
+/* 산업 KPI: kpi_values.csv에 값이 있으면 KPI별 차트+표, 없으면 '미확인'과 찾을 곳 */
+const kpiFmt = (v, u) => (v === null ? '–' : u === 'KRW' ? fmt(v / 1e8, 0) + '억원' : u === '%' ? fmt(v, 2) + '%' : `${fmt(v, v % 1 ? 2 : 0)} ${u}`);
+function kpiGroups() {
   const st = D.status.filter((r) => r.group !== '공통 재무');
+  return st.map((s) => ({ s, rows: D.kpi.filter((r) => r.kpi_key === s.key) }));
+}
+function pageIndustry() {
   const ind = D.industry;
-  return `<div class="note">이 산업(<b>${esc(ind?.name || D.company.industry)}</b>)에서 추가로 확인할 지표입니다. 공시·IR에서 찾은 값만 <code>data/manual/kpi_values.csv</code>에 출처와 함께 넣고, 찾지 못하면 '미확인', 회사가 공개하지 않으면 '미공개'로 둡니다. 추정값은 넣지 않습니다.</div>
-  <div class="grid">${card('w6', '산업 KPI 확보 현황', '', `<div class="tbl-wrap"><table class="tbl"><thead><tr><th>지표</th><th>상태</th><th class="l">결과</th><th class="l">찾을 곳</th><th class="l">주의</th></tr></thead><tbody>
-    ${st.map((r) => `<tr><td>${esc(r.label)}</td><td>${badge(r.status)}</td><td class="l">${esc(r.result)}</td><td class="l">${esc(r.where)}</td><td class="l">${esc(r.caution)}</td></tr>`).join('') || '<tr><td colspan="5">산업 KPI 목록 없음</td></tr>'}
-    </tbody></table></div>`)}
-  ${card('w6', '입력된 산업 KPI 값', `${D.kpi.length}행`, D.kpi.length ? `<div class="tbl-wrap"><table class="tbl"><thead><tr><th>지표</th><th>기간</th><th class="l">항목</th><th>값</th><th>단위</th><th>상태</th><th class="l">출처</th></tr></thead><tbody>
-    ${D.kpi.map((r) => `<tr><td>${esc(st.find((s) => s.key === r.kpi_key)?.label || r.kpi_key)}</td><td>${esc(r.period || r.year)}</td><td class="l">${esc(r.item)} ${r.scope ? `<small>(${esc(r.scope)})</small>` : ''}</td><td>${r.value === '' ? '–' : r.unit === 'KRW' ? fmt(N(r.value) / 1e8) + '억' : fmt(N(r.value), 2)}</td><td>${r.unit === 'KRW' ? '' : esc(r.unit)}</td><td>${badge(r.status)}</td><td class="l">${r.source_url ? `<a href="${esc(r.source_url)}" target="_blank" rel="noopener">${esc(r.source_location || '원문')}</a>` : '<span class="pill na">출처 없음</span>'}</td></tr>`).join('')}
-    </tbody></table></div>` : '<div class="empty"><b>아직 입력된 산업 KPI가 없습니다</b>AI 스킬이 공시 원문에서 찾아 출처와 함께 채웁니다.</div>')}</div>`;
+  const G = kpiGroups();
+  const got = G.filter((g) => g.rows.length);
+  const miss = G.filter((g) => !g.rows.length);
+  const cardFor = (g, i) => {
+    const units = [...new Set(g.rows.map((r) => r.unit))];
+    const periods = [...new Set(g.rows.map((r) => r.period || r.year))].sort();
+    const items = [...new Set(g.rows.map((r) => r.item))];
+    const chartable = units.length === 1 && g.rows.some((r) => r.value !== '');
+    const val = (it, p) => g.rows.find((r) => r.item === it && (r.period || r.year) === p);
+    const scope = [...new Set(g.rows.map((r) => r.scope).filter(Boolean))].join(' / ');
+    const notes = [...new Set(g.rows.map((r) => r.note).filter(Boolean))];
+    const st = g.rows.every((r) => r.status === '원문 대조 일치') ? '원문 대조 일치' : g.rows.some((r) => r.status === '불일치') ? '불일치' : '자동 수집 · 원문 대조 전';
+    return card('w3', g.s.label, `${scope} · ${chartable ? (units[0] === 'KRW' ? '억원' : units[0]) : '단위가 섞여 표로 표시'}`,
+      `<div style="margin-bottom:4px">${badge(st)}</div>${chartable ? legend(periods.map((p, j) => [String(p), COLORS()[(j + 1) % 5]])) + `<div class="chart" id="k${i}"></div>` : ''}
+      <div class="tbl-wrap" style="max-height:220px"><table class="tbl"><thead><tr><th>항목</th>${periods.map((p) => `<th>${esc(p)}</th>`).join('')}</tr></thead><tbody>
+      ${items.map((it) => `<tr class="click" data-act="kpi:${esc(g.s.key)}:${items.indexOf(it)}"><td class="l">${esc(it)}</td>${periods.map((p) => { const r = val(it, p); return `<td>${r ? kpiFmt(N(r.value), r.unit) : '–'}</td>`; }).join('')}</tr>`).join('')}
+      </tbody></table></div>`, notes.map(esc).join('<br>'));
+  };
+  return `<div class="note">${esc(ind?.name || D.company.industry)} 산업에서 추가로 보는 지표입니다. 사업보고서 원문에서 옮긴 값만 출처와 함께 표시하고, 찾지 못한 지표는 '미확인'으로 둡니다 (추정값 없음). 행을 누르면 원문 위치가 보입니다.</div>
+  <div class="grid">${got.map(cardFor).join('')}
+  ${card('w6', `확보 현황 · ${got.length}/${G.length}`, '미확인 지표는 아래 위치에서 찾을 수 있습니다', `<div class="tbl-wrap"><table class="tbl"><thead><tr><th>지표</th><th>상태</th><th class="l">결과</th><th class="l">찾을 곳</th><th class="l">주의</th></tr></thead><tbody>
+    ${[...got, ...miss].map((g) => `<tr><td>${esc(g.s.label)}</td><td>${badge(g.s.status)}</td><td class="l">${esc(g.s.result)}</td><td class="l">${esc(g.s.where)}</td><td class="l">${esc(g.s.caution)}</td></tr>`).join('') || '<tr><td colspan="5">산업 KPI 목록 없음</td></tr>'}
+    </tbody></table></div>`)}</div>`;
+}
+function drawIndustry() {
+  kpiGroups().filter((g) => g.rows.length).forEach((g, i) => {
+    const el = $(`#k${i}`); if (!el) return;
+    const periods = [...new Set(g.rows.map((r) => r.period || r.year))].sort();
+    const items = [...new Set(g.rows.map((r) => r.item))];
+    const u = g.rows[0].unit;
+    const v = (it, p) => { const r = g.rows.find((x) => x.item === it && (x.period || x.year) === p); return r ? N(r.value) : null; };
+    barLine(el, items.map((it) => (it.length > 9 ? it.slice(0, 8) + '…' : it)), periods.map((p, j) => ({ name: String(p), color: COLORS()[(j + 1) % 5], values: items.map((it) => v(it, p)) })), null,
+      { fmt: u === 'KRW' ? (x) => fmt(x / 1e8, 0) : (x) => fmt(x, 0), tipFmt: (x) => kpiFmt(x, u), onClick: (ii) => showKpi(g.s.key, ii) });
+  });
+}
+function showKpi(key, ii) {
+  const rows = D.kpi.filter((r) => r.kpi_key === key); const item = [...new Set(rows.map((r) => r.item))][ii];
+  const rs = rows.filter((r) => r.item === item); const s = D.status.find((x) => x.key === key);
+  openPanel(`<div class="panel-head"><h2>${esc(s?.label || key)} · ${esc(item)}</h2><button class="x" aria-label="닫기">✕</button></div>
+    ${rs.map((r) => `<dl class="ev-box"><dt>${esc(r.period || r.year)}</dt><dd><b style="font-size:16px">${kpiFmt(N(r.value), r.unit)}</b> ${badge(r.status)}</dd>
+      <dt>범위</dt><dd>${esc(r.scope)}</dd><dt>원문 위치</dt><dd>${r.source_url ? `<a href="${esc(r.source_url)}" target="_blank" rel="noopener">${esc(r.source_location)}</a>` : esc(r.source_location)}</dd>
+      ${r.note ? `<dt>메모</dt><dd>${esc(r.note)}</dd>` : ''}<dt>입력</dt><dd>${esc(r.checked_on)}</dd></dl>`).join('')}
+    ${s?.caution ? `<div class="note warn" style="margin-top:8px">${esc(s.caution)}</div>` : ''}`);
 }
 
 function pageAudit() {
@@ -522,7 +563,7 @@ function enableEdit() {
   });
 }
 
-const DRAW = { screen: drawScreen, compare: drawCompare, overview: drawOverview, pl: drawPL, quarterly: drawQuarterly, bs: drawBS, stock: drawStock };
+const DRAW = { industry: drawIndustry, screen: drawScreen, compare: drawCompare, overview: drawOverview, pl: drawPL, quarterly: drawQuarterly, bs: drawBS, stock: drawStock };
 const RENDER = { screen: pageScreen, compare: pageCompare, dart: pageDart, overview: pageOverview, pl: pagePL, quarterly: pageQuarterly, ratios: pageRatios, bs: pageBS, stock: pageStock, industry: pageIndustry, audit: pageAudit };
 
 function render() {
@@ -555,7 +596,7 @@ function onClick(e) {
   else if (t.dataset.lf) { S.ledgerFilter = t.dataset.lf; render(); }
   else if (t.dataset.act) {
     const [k, a, b] = t.dataset.act.split(':');
-    if (k === 'fin') showFin(+a, b); else if (k === 'met') showMetric(+a, b); else if (k === 'cmp') showCmp(+a, b);
+    if (k === 'fin') showFin(+a, b); else if (k === 'met') showMetric(+a, b); else if (k === 'cmp') showCmp(+a, b); else if (k === 'kpi') showKpi(a, +b);
     else if (k === 'aud') openPanel(`<div class="panel-head"><h2>${esc(a)}</h2><button class="x">✕</button></div>${evidenceHTML(a)}`);
     e.stopPropagation();
   }

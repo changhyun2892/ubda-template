@@ -38,7 +38,7 @@
   const KPI_WORDS = [
     [/수출|해외\s*매출/, ['export_revenue', 'overseas_sales']], [/해외\s*법인|법인/, ['overseas_entities']], [/제품군|품목|제품별|부문별|사업부/, ['product_segment_revenue', 'segment_revenue']],
     [/원재료|원료|밀가루|팜유/, ['raw_material_prices']], [/가동률|생산\s*능력|생산량/, ['capacity_utilization', 'capacity', 'production_volume']],
-    [/점유율/, ['market_share']], [/환율/, ['fx_rate']], [/검색|관심도|트렌드/, ['search_interest']], [/브랜드/, ['brand_sales']],
+    [/점유율/, ['market_share']], [/판매\s*경로|채널|대형\s*마트|편의점|특약점|대리점/, ['sales_channels']], [/환율/, ['fx_rate']], [/검색|관심도|트렌드/, ['search_interest']], [/브랜드/, ['brand_sales']],
     [/NIM|순이자마진/i, ['nim']], [/연체율/, ['delinquency_rate']], [/판매\s*대수|판매량/, ['sales_volume']], [/점포/, ['store_count']], [/MAU|이용자/i, ['mau']],
   ];
 

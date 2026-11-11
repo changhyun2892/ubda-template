@@ -114,6 +114,19 @@ def main() -> int:
     estimated = [f"{r['kpi_key']} {r['year']}" for r in kpis if r.get("status") in (ST_UNCONFIRMED, ST_UNDISCLOSED) and r.get("value") not in ("", None)]
     check("미확인·미공개 항목에 숫자 없음 (추정값 금지)", not estimated, ", ".join(estimated[:5]))
 
+    # 6-1) 합계 검산: 연결 기준 구성 매출(부문·지역·판매경로)의 합 = 연결 매출액 (원문 숫자끼리 맞는지)
+    groups = defaultdict(list)
+    for r in kpis:
+        if r.get("unit") == "KRW" and "연결" in (r.get("scope") or "") and r.get("value") not in ("", None) and r.get("kpi_key") in ("product_segment_revenue", "export_revenue", "sales_channels", "segment_revenue"):
+            groups[(r["kpi_key"], int(r["year"]))].append(num(r["value"]))
+    for (k, y), vals in sorted(groups.items()):
+        rev = F.get(y, {}).get("revenue")
+        if rev is None:
+            continue
+        s = sum(vals)
+        diff = abs(s - rev) / rev
+        check(f"{y} {k} 합계 = 연결 매출액", diff <= 0.001, f"합계 {s:,} / 매출 {rev:,} (차이 {diff:.3%}, 원문 단위 반올림은 0.1% 이내 허용)", warn_only=True)
+
     # 7) 이미 사람이 원문 대조한 기준값과 비교 (verify_expectations.json, 같은 기업일 때만)
     ep = CDIR / "verify_expectations.json"
     if ep.exists():
