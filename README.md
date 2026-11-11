@@ -5,6 +5,7 @@ DART 공시를 바탕으로 만든 기업별 경영분석 대시보드를 **저�
 
 > 수업용 경영분석이며 투자 추천이 아닙니다. 원본인 `vuldak-dashboard`는 수정하지 않았습니다.
 
+- **공개 주소: https://ubda-template.onrender.com/** (Render 정적 사이트, push하면 자동 재배포)
 - 첫 화면 `index.html`: 산업 → 카테고리 → 기업 순서의 기업 목록입니다. 다음 단계에서 3D 뉴런 포털로 교체합니다.
 - 기업 대시보드: `dashboard.html?c=<기업폴더>` (예: `dashboard.html?c=ottogi`)
 
@@ -19,7 +20,7 @@ DART 공시를 바탕으로 만든 기업별 경영분석 대시보드를 **저�
 
 **처음 한 번만** 사람이 하면 되는 일:
 - 저장소 Secrets에 `DART_API_KEY` 등록 (완료)
-- Render 정적 사이트 1개 연결 (Build Command 비움, Publish Directory `.`)
+- Render 정적 사이트 1개 연결 (완료 — https://ubda-template.onrender.com/)
 
 ## 내 컴퓨터에서 보기 / 실행
 
