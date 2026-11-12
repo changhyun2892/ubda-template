@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-12 11:33 KST",
+ "updated_at": "2026-11-12 11:41 KST",
  "industries": {
   "auto": {
    "name": "자동차",
@@ -61,7 +61,7 @@
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-12 11:33 KST"
+   "updated_at": "2026-11-12 11:40 KST"
   },
   {
    "slug": "lottewellfood",
@@ -82,18 +82,25 @@
    ],
    "theme_color": "#8f1d3a",
    "dashboard_path": "dashboard.html?c=lottewellfood",
-   "has_data": false,
-   "latest_year": null,
-   "kpis": null,
+   "has_data": true,
+   "latest_year": 2025,
+   "kpis": {
+    "revenue": 4215952626184,
+    "operating_profit": 109519157887,
+    "net_income": 71390131647,
+    "operating_margin_pct": 2.5977,
+    "revenue_growth_pct": 4.2455,
+    "debt_ratio_pct": 100.0237
+   },
    "verification": {
     "원문 대조 일치": 0,
-    "자동 수집 · 원문 대조 전": 0,
+    "자동 수집 · 원문 대조 전": 126,
     "불일치": 0,
     "미확인": 0
    },
    "industry_kpis_found": 0,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-12 11:22 KST"
+   "updated_at": "2026-11-12 11:40 KST"
   },
   {
    "slug": "nongshim",
@@ -132,7 +139,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-12 11:23 KST"
+   "updated_at": "2026-11-12 11:40 KST"
   },
   {
    "slug": "orion",
@@ -152,18 +159,25 @@
    ],
    "theme_color": "#1d4f91",
    "dashboard_path": "dashboard.html?c=orion",
-   "has_data": false,
-   "latest_year": null,
-   "kpis": null,
+   "has_data": true,
+   "latest_year": 2025,
+   "kpis": {
+    "revenue": 3332442536373,
+    "operating_profit": 558258027192,
+    "net_income": 390597563174,
+    "operating_margin_pct": 16.7522,
+    "revenue_growth_pct": 7.3479,
+    "debt_ratio_pct": 17.5465
+   },
    "verification": {
     "원문 대조 일치": 0,
-    "자동 수집 · 원문 대조 전": 0,
+    "자동 수집 · 원문 대조 전": 119,
     "불일치": 0,
-    "미확인": 0
+    "미확인": 2
    },
    "industry_kpis_found": 0,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-12 11:28 KST"
+   "updated_at": "2026-11-12 11:41 KST"
   },
   {
    "slug": "ottogi",
@@ -201,7 +215,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-12 11:28 KST"
+   "updated_at": "2026-11-12 11:41 KST"
   },
   {
    "slug": "samyang",
@@ -238,7 +252,7 @@
    },
    "industry_kpis_found": 0,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-12 11:28 KST"
+   "updated_at": "2026-11-12 11:41 KST"
   }
  ],
  "graph": {

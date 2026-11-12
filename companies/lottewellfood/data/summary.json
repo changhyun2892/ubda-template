@@ -18,15 +18,22 @@
     "해태제과"
   ],
   "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=lottewellfood",
-  "latest_year": null,
-  "kpis": null,
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 4215952626184,
+    "operating_profit": 109519157887,
+    "net_income": 71390131647,
+    "operating_margin_pct": 2.5977,
+    "revenue_growth_pct": 4.2455,
+    "debt_ratio_pct": 100.0237
+  },
   "verification": {
     "원문 대조 일치": 0,
-    "자동 수집 · 원문 대조 전": 0,
+    "자동 수집 · 원문 대조 전": 126,
     "불일치": 0,
     "미확인": 0
   },
   "industry_kpis_found": 0,
   "industry_kpis_total": 8,
-  "updated_at": "2026-11-12 11:22 KST"
+  "updated_at": "2026-11-12 11:40 KST"
 }

@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-12 11:12:48 KST",
+ "started_at": "2026-11-12 11:40:09 KST",
  "steps": [
   "collect",
   "text",
@@ -10,11 +10,11 @@
  "companies": {
   "binggrae": {
    "collect": {
-    "sec": 287.1,
+    "sec": 1.0,
     "result": 0
    },
    "text": {
-    "sec": 21.8,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
@@ -32,15 +32,15 @@
   },
   "lottewellfood": {
    "collect": {
-    "sec": 300.0,
-    "result": "시간 초과"
+    "sec": 34.9,
+    "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 2.5,
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.5,
     "result": 0
    },
    "build": {
@@ -49,12 +49,12 @@
    },
    "verify": {
     "sec": 0.1,
-    "result": 1
+    "result": 0
    }
   },
   "nongshim": {
    "collect": {
-    "sec": 1.1,
+    "sec": 1.0,
     "result": 0
    },
    "text": {
@@ -76,15 +76,15 @@
   },
   "orion": {
    "collect": {
-    "sec": 300.0,
-    "result": "시간 초과"
+    "sec": 29.5,
+    "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 2.4,
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -93,12 +93,12 @@
    },
    "verify": {
     "sec": 0.1,
-    "result": 1
+    "result": 0
    }
   },
   "ottogi": {
    "collect": {
-    "sec": 1.0,
+    "sec": 0.7,
     "result": 0
    },
    "text": {
@@ -120,7 +120,7 @@
   },
   "samyang": {
    "collect": {
-    "sec": 1.0,
+    "sec": 0.7,
     "result": 0
    },
    "text": {
@@ -141,11 +141,6 @@
    }
   }
  },
- "finished_at": "2026-11-12 11:28:03 KST",
- "failed": [
-  "lottewellfood:collect",
-  "lottewellfood:verify",
-  "orion:collect",
-  "orion:verify"
- ]
+ "finished_at": "2026-11-12 11:41:25 KST",
+ "failed": []
 }
