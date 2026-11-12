@@ -137,11 +137,31 @@ def fetch_items(key: str, cc: str, rep: dict, fs_pref: str) -> tuple[list[dict],
     return [], ""
 
 
+def norm(nm: str) -> str:
+    nm = re.sub(r"\s+", "", nm or "")
+    return re.sub(r"^[ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩ\dIVX]+\.", "", nm)
+
+
+def pick_sga(items: list[dict], sj: tuple, ids: tuple, name_re: str) -> dict | None:
+    """판매비와관리비. 합계 계정이 없고 '판매비'·'관리비'를 따로 적는 회사(예: 오리온)는 두 계정을 더한다."""
+    it = pick(items, sj, ids, name_re)
+    if it and re.match(r"^판매비(와|및)관리비$", norm(it.get("account_nm"))):
+        return it
+    cand = [i for i in items if i.get("sj_div") in sj]
+    s = next((i for i in cand if norm(i.get("account_nm")) == "판매비"), None)
+    a = next((i for i in cand if norm(i.get("account_nm")) == "관리비"), None)
+    if s and a:
+        add = lambda k: None if num(s.get(k)) is None or num(a.get(k)) is None else num(s.get(k)) + num(a.get(k))  # noqa: E731
+        return {**s, "account_id": f"{s.get('account_id', '')}+{a.get('account_id', '')}", "account_nm": "판매비 + 관리비 (합산)",
+                "thstrm_amount": add("thstrm_amount"), "thstrm_add_amount": add("thstrm_add_amount")}
+    return it
+
+
 def to_rows(items: list[dict], rep: dict, fs: str) -> list[dict]:
     rows, ts = [], now_kst()
     used = items[0].get("rcept_no") or rep["rcept_no"]
     for metric, label, sj, ids, name_re in ACCOUNTS:
-        it = pick(items, sj, ids, name_re)
+        it = pick_sga(items, sj, ids, name_re) if metric == "sga" else pick(items, sj, ids, name_re)
         val = num(it.get("thstrm_amount")) if it else None
         cum = num(it.get("thstrm_add_amount")) if it else None
         if metric in FLOW and rep["reprt_code"] == "11011":

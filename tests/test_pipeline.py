@@ -107,6 +107,20 @@ def main() -> int:
     r = run(d, "collect_business_text.py", base)
     ok("같은 보고서는 다시 받지 않음", "이미 저장됨" in r.stdout)
 
+    sys.path.insert(0, str(d / "scripts"))
+    os.environ["UBDA_COMPANY"] = SLUG
+    import importlib
+    os.chdir(d)
+    cd = importlib.import_module("collect_dart")
+    rep = {"bsns_year": "2025", "reprt_code": "11011", "report_type": "사업보고서", "rcept_no": "1", "rcept_dt": "20260301", "report_nm": "사업보고서 (2025.12)"}
+    items = [{"sj_div": "CIS", "account_id": "dart_TotalSellingGeneralAdministrativeExpenses", "account_nm": "판매비", "thstrm_amount": "100"},
+             {"sj_div": "CIS", "account_id": "dart_AdministrativeExpense", "account_nm": "관리비", "thstrm_amount": "40"}]
+    sga = next(r for r in cd.to_rows(items, rep, "CFS") if r["metric"] == "sga")
+    ok("판매비·관리비를 따로 적는 회사는 합산 (오리온 사례)", sga["value"] == 140 and "합산" in sga["account_nm"], f"{sga['value']} · {sga['account_nm']}")
+    items2 = [{"sj_div": "IS", "account_id": "dart_TotalSellingGeneralAdministrativeExpenses", "account_nm": "판매비와관리비", "thstrm_amount": "90"}, items[1]]
+    ok("판매비와관리비 합계 계정이 있으면 그대로", next(r for r in cd.to_rows(items2, rep, "CFS") if r["metric"] == "sga")["value"] == 90)
+    os.chdir(REPO)
+
     print("\n[2] 다시 실행 — 새 보고서가 없으면 재무 API를 다시 부르지 않음")
     before = data.calls["/api/fnlttSinglAcntAll.json"]
     r = run(d, "collect_dart.py", base)
