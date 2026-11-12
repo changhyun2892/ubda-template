@@ -1,0 +1,39 @@
+{
+  "slug": "nongshim",
+  "company_id": "NS",
+  "name": "농심",
+  "dashboard_path": "dashboard.html?c=nongshim",
+  "name_en": "Nongshim",
+  "stock_code": "004370",
+  "industry": "food",
+  "industry_name": "식품",
+  "categories": [
+    "라면",
+    "스낵·과자"
+  ],
+  "competitors": [
+    "오뚜기",
+    "삼양식품",
+    "팔도",
+    "오리온"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=nongshim",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 3514315500097,
+    "operating_profit": 183933032197,
+    "net_income": 170054449646,
+    "operating_margin_pct": 5.2338,
+    "revenue_growth_pct": 2.198,
+    "debt_ratio_pct": 35.0008
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 126,
+    "불일치": 0,
+    "미확인": 0
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 9,
+  "updated_at": "2026-11-12 09:44 KST"
+}

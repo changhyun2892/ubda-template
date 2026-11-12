@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-12 09:41 KST",
+ "updated_at": "2026-11-12 09:44 KST",
  "industries": {
   "auto": {
    "name": "자동차",
@@ -46,13 +46,25 @@
    ],
    "theme_color": "#b5121b",
    "dashboard_path": "dashboard.html?c=nongshim",
-   "has_data": false,
-   "latest_year": null,
-   "kpis": null,
-   "verification": null,
-   "industry_kpis_found": null,
-   "industry_kpis_total": null,
-   "updated_at": ""
+   "has_data": true,
+   "latest_year": 2025,
+   "kpis": {
+    "revenue": 3514315500097,
+    "operating_profit": 183933032197,
+    "net_income": 170054449646,
+    "operating_margin_pct": 5.2338,
+    "revenue_growth_pct": 2.198,
+    "debt_ratio_pct": 35.0008
+   },
+   "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 126,
+    "불일치": 0,
+    "미확인": 0
+   },
+   "industry_kpis_found": 0,
+   "industry_kpis_total": 9,
+   "updated_at": "2026-11-12 09:44 KST"
   },
   {
    "slug": "ottogi",
@@ -90,7 +102,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-12 09:16 KST"
+   "updated_at": "2026-11-12 09:44 KST"
   },
   {
    "slug": "samyang",
@@ -127,7 +139,7 @@
    },
    "industry_kpis_found": 0,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-12 09:16 KST"
+   "updated_at": "2026-11-12 09:44 KST"
   }
  ],
  "graph": {
