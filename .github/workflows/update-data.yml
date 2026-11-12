@@ -59,7 +59,8 @@ jobs:
             echo "변경 없음"
           else
             git commit -m "데이터 업데이트 $(TZ=Asia/Seoul date '+%Y-%m-%d %H:%M')"
-            git pull --rebase origin main
+            # 다른 실행이 먼저 데이터를 올렸으면, 자동 생성 파일은 이번(더 최신) 실행 결과를 우선한다
+            git pull --rebase -X theirs origin main
             git push
           fi
 

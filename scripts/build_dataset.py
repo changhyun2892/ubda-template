@@ -56,8 +56,9 @@ def main() -> int:
     ind_path = ROOT / "industries" / f"{cfg['industry']}.json"
     industry = json.loads(ind_path.read_text(encoding="utf-8")) if ind_path.exists() else {"id": cfg["industry"], "name": cfg["industry"], "kpis": []}
 
-    raw = read_csv(RAW / "dart_financials.csv")
-    reports = read_csv(RAW / "dart_reports.csv")
+    min_year = int(cfg.get("start_year", 0)) - 1  # 전년 대비 계산용 1년 포함, 그 이전(옛 보고서 기재정정 등)은 제외
+    raw = [r for r in read_csv(RAW / "dart_financials.csv") if int(r["bsns_year"]) >= min_year]
+    reports = [r for r in read_csv(RAW / "dart_reports.csv") if int(r["bsns_year"]) >= min_year]
     MANUAL.mkdir(parents=True, exist_ok=True)
     if not (MANUAL / "kpi_values.csv").exists():
         write_csv(MANUAL / "kpi_values.csv", KPI_COLS, [])

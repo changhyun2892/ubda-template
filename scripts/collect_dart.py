@@ -106,6 +106,8 @@ def list_reports(key: str, cc: str, start_year: int) -> list[dict]:
         m = re.search(r"(사업|반기|분기)보고서\s*\((\d{4})\.(\d{2})\)", nm)
         if not m or m.group(3) not in REPRT:
             continue
+        if int(m.group(2)) < start_year - 1:
+            continue  # 분석 기간 밖(예: 몇 년 지난 옛 보고서의 기재정정)은 건너뛴다. start_year-1은 전년 대비 계산용
         code, rtype = REPRT[m.group(3)]
         reps.append({"rcept_no": r["rcept_no"], "rcept_dt": r.get("rcept_dt", ""), "report_nm": nm, "bsns_year": m.group(2), "reprt_code": code,
                      "report_type": rtype, "is_correction": "Y" if nm.startswith("[") else "N", "viewer_url": viewer(r["rcept_no"])})
