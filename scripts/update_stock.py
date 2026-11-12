@@ -13,6 +13,7 @@ from __future__ import annotations
 import json
 import os
 import sys
+import tempfile
 import time
 import urllib.parse
 import urllib.request
@@ -31,13 +32,13 @@ def fetch(ticker: str, start_year: int) -> dict:
     for host in HOSTS:
         url = f"{host}/v8/finance/chart/{urllib.parse.quote(ticker)}?period1={p1}&period2={p2}&interval=1d"
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (ubda dashboard data updater)"})
-        for attempt in range(3):
+        for attempt in range(2):
             try:
-                with urllib.request.urlopen(req, timeout=30) as r:
+                with urllib.request.urlopen(req, timeout=15) as r:
                     return json.load(r)
             except Exception as e:  # noqa: BLE001
                 last = e
-                time.sleep(2 * (attempt + 1))
+                time.sleep(2)
     raise RuntimeError(f"주가 요청 실패: {last}")
 
 
@@ -67,7 +68,13 @@ def main() -> int:
         if len(rows) < 20:
             raise RuntimeError(f"받은 행이 너무 적음 ({len(rows)}행) — 티커가 맞는지 확인")
         try:
-            idx = parse(fetch(index, int(cfg["start_year"])))
+            # 같은 실행 안에서는 시장지수를 한 번만 받음 (기업마다 반복 요청하지 않게)
+            cache = os.path.join(tempfile.gettempdir(), f"ubda_index_{index.strip('^')}_{cfg['start_year']}_{time.strftime('%Y%m%d%H')}.json")
+            if os.path.exists(cache):
+                idx = json.load(open(cache, encoding="utf-8"))
+            else:
+                idx = parse(fetch(index, int(cfg["start_year"])))
+                json.dump(idx, open(cache, "w", encoding="utf-8"))
         except Exception as e:  # noqa: BLE001 — 지수는 실패해도 주가는 저장
             print(f"[경고] 지수 수집 실패: {e}", file=sys.stderr)
             idx = {}

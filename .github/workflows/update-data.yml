@@ -35,7 +35,7 @@ jobs:
     name: 수집 → 계산 → 점검 → 커밋
     needs: test
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -44,11 +44,13 @@ jobs:
       - name: 모든 기업 수집 → 계산 → 점검 → 기업 목록
         id: verify
         continue-on-error: true
+        timeout-minutes: 35
         env:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
         run: python scripts/run_all.py
 
-      - name: 바뀐 데이터 커밋
+      - name: 바뀐 데이터 커밋 (수집이 중간에 멈춰도 받은 만큼 저장)
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
