@@ -1,0 +1,37 @@
+{
+  "slug": "haitai",
+  "company_id": "HT",
+  "name": "해태제과",
+  "dashboard_path": "dashboard.html?c=haitai",
+  "name_en": "Haitai Confectionery & Foods",
+  "stock_code": "101530",
+  "industry": "food",
+  "industry_name": "식품",
+  "categories": [
+    "스낵·과자"
+  ],
+  "competitors": [
+    "오리온",
+    "롯데웰푸드",
+    "크라운제과"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=haitai",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 641386567732,
+    "operating_profit": 42328087980,
+    "net_income": 23396241441,
+    "operating_margin_pct": 6.5995,
+    "revenue_growth_pct": 1.9374,
+    "debt_ratio_pct": 129.4987
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 182,
+    "불일치": 0,
+    "미확인": 0
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 8,
+  "updated_at": "2026-11-12 15:15 KST"
+}

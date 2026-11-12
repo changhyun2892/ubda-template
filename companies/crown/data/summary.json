@@ -1,0 +1,37 @@
+{
+  "slug": "crown",
+  "company_id": "CR",
+  "name": "크라운제과",
+  "dashboard_path": "dashboard.html?c=crown",
+  "name_en": "Crown Confectionery",
+  "stock_code": "264900",
+  "industry": "food",
+  "industry_name": "식품",
+  "categories": [
+    "스낵·과자"
+  ],
+  "competitors": [
+    "오리온",
+    "롯데웰푸드",
+    "해태제과"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=crown",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 444838419779,
+    "operating_profit": 15265165837,
+    "net_income": 12326322962,
+    "operating_margin_pct": 3.4316,
+    "revenue_growth_pct": 1.5376,
+    "debt_ratio_pct": 56.0152
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 126,
+    "불일치": 0,
+    "미확인": 0
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 8,
+  "updated_at": "2026-11-12 15:14 KST"
+}
