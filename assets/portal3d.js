@@ -167,7 +167,7 @@ function flyTo(id, dist) {
     const side = new THREE.Vector3().crossVectors(out, up).normalize();
     dir = out.multiplyScalar(n.type === 'industry' ? 0.9 : 0.55).addScaledVector(side, n.type === 'industry' ? 0.25 : 0.75).addScaledVector(up, 0.35).normalize();
   }
-  const d = dist ?? { core: 165, industry: 70, category: 48, company: 30 }[n.type] * (MOBILE ? 1.25 : 1);
+  const d = dist ?? { core: 165, industry: 70, category: 48, company: 30 }[n.type] * (MOBILE ? 1.5 : 1);
   const pos = n.id === 'core' ? HOME.pos.clone() : target.clone().addScaledVector(dir, d);
   fly = { start: performance.now(), dur: REDUCED ? 0.01 : 1.1, p0: camera.position.clone(), p1: pos, t0: controls.target.clone(), t1: n.id === 'core' ? HOME.target.clone() : target };
   controls.autoRotate = false;
@@ -221,8 +221,11 @@ function companyCard(c) {
     : '<div class="badges"><span class="warn">데이터 수집 전</span></div>';
 }
 function setOffset() {
-  const open = !$('#info').hidden && !MOBILE;
-  if (open) camera.setViewOffset(innerWidth, innerHeight, 175, 0, innerWidth, innerHeight); else camera.clearViewOffset();
+  // 패널이 장면을 가리지 않게: 데스크톱은 오른쪽 패널만큼 왼쪽으로, 모바일은 아래 패널만큼 위로 장면을 옮김
+  const box = $('#info');
+  if (box.hidden) { camera.clearViewOffset(); return; }
+  if (MOBILE) camera.setViewOffset(innerWidth, innerHeight, 0, Math.round(Math.min(box.offsetHeight, innerHeight * 0.52) / 2 + 10), innerWidth, innerHeight);
+  else camera.setViewOffset(innerWidth, innerHeight, 175, 0, innerWidth, innerHeight);
 }
 function showInfo(n) {
   const box = $('#info'); box.hidden = n.type === 'core'; setOffset();
@@ -244,6 +247,7 @@ function showInfo(n) {
   box.innerHTML = `<button class="x" aria-label="닫기">✕</button>${html}`;
   box.querySelector('.x').onclick = () => { box.hidden = true; setOffset(); };
   box.querySelectorAll('[data-go]').forEach((b) => (b.onclick = () => select(b.dataset.go)));
+  setOffset();
 }
 
 // 검색: 기업·카테고리·산업 이름, 종목코드, 영문명
