@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-12 11:41 KST",
+ "updated_at": "2026-11-12 11:47 KST",
  "industries": {
   "auto": {
    "name": "자동차",
@@ -61,7 +61,7 @@
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-12 11:40 KST"
+   "updated_at": "2026-11-12 11:44 KST"
   },
   {
    "slug": "lottewellfood",
@@ -100,7 +100,7 @@
    },
    "industry_kpis_found": 0,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-12 11:40 KST"
+   "updated_at": "2026-11-12 11:44 KST"
   },
   {
    "slug": "nongshim",
@@ -139,7 +139,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-12 11:40 KST"
+   "updated_at": "2026-11-12 11:44 KST"
   },
   {
    "slug": "orion",
@@ -177,7 +177,7 @@
    },
    "industry_kpis_found": 0,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-12 11:41 KST"
+   "updated_at": "2026-11-12 11:47 KST"
   },
   {
    "slug": "ottogi",
@@ -215,7 +215,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-12 11:41 KST"
+   "updated_at": "2026-11-12 11:47 KST"
   },
   {
    "slug": "samyang",
@@ -252,7 +252,7 @@
    },
    "industry_kpis_found": 0,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-12 11:41 KST"
+   "updated_at": "2026-11-12 11:47 KST"
   }
  ],
  "graph": {

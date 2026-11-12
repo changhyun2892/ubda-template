@@ -2,7 +2,7 @@ year,metric,label,value,unit,formula,input_audit_ids,note
 2022,operating_margin_pct,영업이익률,16.2414,%,영업이익 ÷ 매출액 × 100,F-2022-operating_profit;F-2022-revenue,
 2022,net_margin_pct,순이익률,13.8626,%,당기순이익 ÷ 매출액 × 100,F-2022-net_income;F-2022-revenue,
 2022,cost_ratio_pct,매출원가율,62.0232,%,매출원가 ÷ 매출액 × 100,F-2022-cost_of_sales;F-2022-revenue,
-2022,sga_ratio_pct,판관비율,16.7791,%,판매비와관리비 ÷ 매출액 × 100,F-2022-sga;F-2022-revenue,
+2022,sga_ratio_pct,판관비율,21.7355,%,판매비와관리비 ÷ 매출액 × 100,F-2022-sga;F-2022-revenue,
 2022,revenue_growth_pct,매출 증가율,,%,(당기 매출 ÷ 전기 매출 − 1) × 100,F-2022-revenue;F-2021-revenue,전기 자료 없음 → 계산 불가
 2022,op_growth_pct,영업이익 증가율,,%,(당기 영업이익 ÷ 전기 영업이익 − 1) × 100 · 전기 적자면 비교 불가,F-2022-operating_profit;F-2021-operating_profit,전기 자료 없음 → 계산 불가
 2022,debt_ratio_pct,부채비율,27.7526,%,부채총계 ÷ 자본총계 × 100,F-2022-total_liabilities;F-2022-total_equity,
@@ -17,7 +17,7 @@ year,metric,label,value,unit,formula,input_audit_ids,note
 2023,operating_margin_pct,영업이익률,16.907,%,영업이익 ÷ 매출액 × 100,F-2023-operating_profit;F-2023-revenue,
 2023,net_margin_pct,순이익률,13.2189,%,당기순이익 ÷ 매출액 × 100,F-2023-net_income;F-2023-revenue,
 2023,cost_ratio_pct,매출원가율,61.2887,%,매출원가 ÷ 매출액 × 100,F-2023-cost_of_sales;F-2023-revenue,
-2023,sga_ratio_pct,판관비율,16.5643,%,판매비와관리비 ÷ 매출액 × 100,F-2023-sga;F-2023-revenue,
+2023,sga_ratio_pct,판관비율,21.8043,%,판매비와관리비 ÷ 매출액 × 100,F-2023-sga;F-2023-revenue,
 2023,revenue_growth_pct,매출 증가율,1.3612,%,(당기 매출 ÷ 전기 매출 − 1) × 100,F-2023-revenue;F-2022-revenue,
 2023,op_growth_pct,영업이익 증가율,5.5151,%,(당기 영업이익 ÷ 전기 영업이익 − 1) × 100 · 전기 적자면 비교 불가,F-2023-operating_profit;F-2022-operating_profit,
 2023,debt_ratio_pct,부채비율,19.1478,%,부채총계 ÷ 자본총계 × 100,F-2023-total_liabilities;F-2023-total_equity,

@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-12 11:40:09 KST",
+ "started_at": "2026-11-12 11:44:34 KST",
  "steps": [
   "collect",
   "text",
@@ -10,7 +10,7 @@
  "companies": {
   "binggrae": {
    "collect": {
-    "sec": 1.0,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
@@ -18,7 +18,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.6,
+    "sec": 0.4,
     "result": 0
    },
    "build": {
@@ -32,15 +32,15 @@
   },
   "lottewellfood": {
    "collect": {
-    "sec": 34.9,
+    "sec": 1.3,
     "result": 0
    },
    "text": {
-    "sec": 2.5,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
-    "sec": 0.5,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -54,7 +54,7 @@
   },
   "nongshim": {
    "collect": {
-    "sec": 1.0,
+    "sec": 1.3,
     "result": 0
    },
    "text": {
@@ -76,11 +76,11 @@
   },
   "orion": {
    "collect": {
-    "sec": 29.5,
+    "sec": 150.1,
     "result": 0
    },
    "text": {
-    "sec": 2.4,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
@@ -98,7 +98,7 @@
   },
   "ottogi": {
    "collect": {
-    "sec": 0.7,
+    "sec": 1.1,
     "result": 0
    },
    "text": {
@@ -120,7 +120,7 @@
   },
   "samyang": {
    "collect": {
-    "sec": 0.7,
+    "sec": 1.3,
     "result": 0
    },
    "text": {
@@ -128,7 +128,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
@@ -141,6 +141,6 @@
    }
   }
  },
- "finished_at": "2026-11-12 11:41:25 KST",
+ "finished_at": "2026-11-12 11:47:13 KST",
  "failed": []
 }

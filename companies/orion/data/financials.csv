@@ -9,7 +9,7 @@ OR,2022,net_income,당기순이익,398308074971,KRW,연결,20230315001259,https:
 OR,2022,operating_cashflow,영업활동현금흐름,546192637197,KRW,연결,20230315001259,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230315001259,영업활동현금흐름,F-2022-operating_cashflow,자동 수집 · 원문 대조 전
 OR,2022,operating_profit,영업이익,466654503027,KRW,연결,20230315001259,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230315001259,영업이익(손실),F-2022-operating_profit,자동 수집 · 원문 대조 전
 OR,2022,revenue,매출액,2873246771346,KRW,연결,20230315001259,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230315001259,수익(매출액),F-2022-revenue,자동 수집 · 원문 대조 전
-OR,2022,sga,판매비와관리비,482105168774,KRW,연결,20230315001259,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230315001259,판매비,F-2022-sga,자동 수집 · 원문 대조 전
+OR,2022,sga,판매비와관리비,624513315470,KRW,연결,20230315001259,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230315001259,판매비 + 관리비 (합산),F-2022-sga,자동 수집 · 원문 대조 전
 OR,2022,total_assets,자산총계,3371683914220,KRW,연결,20230315001259,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230315001259,자산총계,F-2022-total_assets,자동 수집 · 원문 대조 전
 OR,2022,total_equity,자본총계,2639228832700,KRW,연결,20230315001259,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230315001259,자본총계,F-2022-total_equity,자동 수집 · 원문 대조 전
 OR,2022,total_liabilities,부채총계,732455081520,KRW,연결,20230315001259,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230315001259,부채총계,F-2022-total_liabilities,자동 수집 · 원문 대조 전
@@ -23,7 +23,7 @@ OR,2023,net_income,당기순이익,384981955249,KRW,연결,20240313000527,https:
 OR,2023,operating_cashflow,영업활동현금흐름,436961973545,KRW,연결,20240313000527,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240313000527,영업활동현금흐름,F-2023-operating_cashflow,자동 수집 · 원문 대조 전
 OR,2023,operating_profit,영업이익,492391149504,KRW,연결,20240313000527,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240313000527,영업이익,F-2023-operating_profit,자동 수집 · 원문 대조 전
 OR,2023,revenue,매출액,2912358051475,KRW,연결,20240313000527,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240313000527,매출액,F-2023-revenue,자동 수집 · 원문 대조 전
-OR,2023,sga,판매비와관리비,482412666488,KRW,연결,20240313000527,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240313000527,판매비,F-2023-sga,자동 수집 · 원문 대조 전
+OR,2023,sga,판매비와관리비,635019846858,KRW,연결,20240313000527,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240313000527,판매비 + 관리비 (합산),F-2023-sga,자동 수집 · 원문 대조 전
 OR,2023,total_assets,자산총계,3521385127842,KRW,연결,20240313000527,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240313000527,자산총계,F-2023-total_assets,자동 수집 · 원문 대조 전
 OR,2023,total_equity,자본총계,2955476949348,KRW,연결,20240313000527,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240313000527,자본총계,F-2023-total_equity,자동 수집 · 원문 대조 전
 OR,2023,total_liabilities,부채총계,565908178494,KRW,연결,20240313000527,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240313000527,부채총계,F-2023-total_liabilities,자동 수집 · 원문 대조 전
