@@ -1,0 +1,25 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(nongshim)이 기업 주소(slug)입니다.",
+  "company_id": "NS",
+  "name": "농심",
+  "name_en": "Nongshim",
+  "stock_code": "004370",
+  "yahoo_ticker": "004370.KS",
+  "market_index": "^KS11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "food",
+  "categories": [
+    "라면",
+    "스낵·과자"
+  ],
+  "competitors": [
+    "오뚜기",
+    "삼양식품",
+    "팔도",
+    "오리온"
+  ],
+  "theme_color": "#b5121b",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=nongshim",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용. 라면·스낵을 함께 하는 회사라 회사 전체 매출을 라면 매출로 해석하지 말 것"
+}

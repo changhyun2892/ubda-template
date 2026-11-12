@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-12 09:16 KST",
+ "updated_at": "2026-11-12 09:41 KST",
  "industries": {
   "auto": {
    "name": "자동차",
@@ -27,6 +27,33 @@
   }
  },
  "companies": [
+  {
+   "slug": "nongshim",
+   "company_id": "NS",
+   "name": "농심",
+   "name_en": "Nongshim",
+   "stock_code": "004370",
+   "industry": "food",
+   "categories": [
+    "라면",
+    "스낵·과자"
+   ],
+   "competitors": [
+    "오뚜기",
+    "삼양식품",
+    "팔도",
+    "오리온"
+   ],
+   "theme_color": "#b5121b",
+   "dashboard_path": "dashboard.html?c=nongshim",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
   {
    "slug": "ottogi",
    "company_id": "OT",
@@ -117,17 +144,30 @@
     "color": "#f59e0b"
    },
    {
-    "id": "co:ottogi",
+    "id": "co:nongshim",
     "type": "company",
-    "label": "오뚜기",
-    "slug": "ottogi",
-    "url": "dashboard.html?c=ottogi"
+    "label": "농심",
+    "slug": "nongshim",
+    "url": "dashboard.html?c=nongshim"
    },
    {
     "id": "cat:food:라면",
     "type": "category",
     "label": "라면",
     "industry": "food"
+   },
+   {
+    "id": "cat:food:스낵·과자",
+    "type": "category",
+    "label": "스낵·과자",
+    "industry": "food"
+   },
+   {
+    "id": "co:ottogi",
+    "type": "company",
+    "label": "오뚜기",
+    "slug": "ottogi",
+    "url": "dashboard.html?c=ottogi"
    },
    {
     "id": "co:samyang",
@@ -145,6 +185,18 @@
    {
     "source": "ind:food",
     "target": "cat:food:라면"
+   },
+   {
+    "source": "cat:food:라면",
+    "target": "co:nongshim"
+   },
+   {
+    "source": "ind:food",
+    "target": "cat:food:스낵·과자"
+   },
+   {
+    "source": "cat:food:스낵·과자",
+    "target": "co:nongshim"
    },
    {
     "source": "cat:food:라면",
