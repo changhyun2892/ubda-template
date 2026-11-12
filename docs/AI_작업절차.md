@@ -23,7 +23,7 @@ DART_API_KEY와 Render 연결은 이미 한 번 해 두었으므로 기업을 �
    - 다른 기업 폴더의 `data/` 파일은 절대 복사하지 않는다(다른 회사 숫자가 섞임).
 3. **로컬 점검**: `python tests/test_pipeline.py`(27개 통과), `python scripts/build_index.py`, `python tests/ui_check.py`(새 기업은 '데이터 없음' 안내가 나오면 정상)를 실행한다.
 4. **push**: 커밋하고 push하면 Actions가 자동으로 실행되어 모든 기업을 수집하고 커밋한다(2~3분). 실행 상태는 `https://api.github.com/repos/changhyun2892/ubda-template/actions/runs?per_page=3`으로 확인한다.
-5. **결과 확인**: `git pull` 후 `companies/<기업>/data/update_log.json`, `verify_report.json`(실패·경고), `financials.csv`(`계정 미발견`)를 확인한다. 계정명 차이로 못 찾은 계정이면 `scripts/collect_dart.py`의 ACCOUNTS를 보완한다(모든 기업에 적용되므로 기존 기업 점검도 다시 확인).
+5. **결과 확인** (`companies/_runs/last_run.json`에 기업·단계별 소요 시간과 결과가 남는다. 판관비 등 손익 계정을 못 찾으면 `raw/unmatched_accounts.json`에 그 보고서의 계정 이름 목록이 남는다): `git pull` 후 `companies/<기업>/data/update_log.json`, `verify_report.json`(실패·경고), `financials.csv`(`계정 미발견`)를 확인한다. 계정명 차이로 못 찾은 계정이면 `scripts/collect_dart.py`의 ACCOUNTS를 보완한다(모든 기업에 적용되므로 기존 기업 점검도 다시 확인).
 6. **산업 KPI 조사 (기본으로 함께 진행 — 사용자 지시 2026-11-12: 따로 묻지 말고 한 번에)**: `industries/<industry>.json`의 KPI마다 최신 사업보고서를 읽는다. `source_registry.csv`에 DART 뷰어 URL이 있고, KIND 원문 `kind.krx.co.kr/external/...htm`이 WebFetch로 읽기 쉽다. 찾은 값은 `companies/<기업>/data/manual/kpi_values.csv`에 넣는다.
    - 상태는 `자동 수집 · 원문 대조 전`(AI가 옮긴 값)으로 둔다. `원문 대조 일치`는 사람이 확인했을 때만 쓴다.
    - 원문의 백만원·천원 단위는 KRW로 환산하고, note에 원래 단위를 적는다.
