@@ -118,6 +118,10 @@ def main() -> int:
     sga = next(r for r in cd.to_rows(items, rep, "CFS") if r["metric"] == "sga")
     ok("판매비·관리비를 따로 적는 회사는 합산 (오리온 사례)", sga["value"] == 140 and "합산" in sga["account_nm"], f"{sga['value']} · {sga['account_nm']}")
     items2 = [{"sj_div": "IS", "account_id": "dart_TotalSellingGeneralAdministrativeExpenses", "account_nm": "판매비와관리비", "thstrm_amount": "90"}, items[1]]
+    items3 = [{"sj_div": "CIS", "account_id": "ifrs-full_SellingExpense", "account_nm": "판매비", "thstrm_amount": "100"},
+              {"sj_div": "CIS", "account_id": "ifrs-full_GeneralAndAdministrativeExpense", "account_nm": "일반관리비", "thstrm_amount": "30"}]
+    sga3 = next(r for r in cd.to_rows(items3, rep, "CFS") if r["metric"] == "sga")
+    ok("'판매비'+'일반관리비'도 합산 (오리온 2024~)", sga3["value"] == 130, f"{sga3['value']} · {sga3['account_nm']}")
     ok("판매비와관리비 합계 계정이 있으면 그대로", next(r for r in cd.to_rows(items2, rep, "CFS") if r["metric"] == "sga")["value"] == 90)
     os.chdir(REPO)
 

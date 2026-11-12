@@ -148,11 +148,12 @@ def pick_sga(items: list[dict], sj: tuple, ids: tuple, name_re: str) -> dict | N
     if it and re.match(r"^판매비(와|및)관리비$", norm(it.get("account_nm"))):
         return it
     cand = [i for i in items if i.get("sj_div") in sj]
-    s = next((i for i in cand if norm(i.get("account_nm")) == "판매비"), None)
-    a = next((i for i in cand if norm(i.get("account_nm")) == "관리비"), None)
+    s = next((i for i in cand if norm(i.get("account_nm")) == "판매비" or i.get("account_id") in ("ifrs-full_SellingExpense", "ifrs_SellingExpense")), None)
+    a = next((i for i in cand if norm(i.get("account_nm")) in ("관리비", "일반관리비")
+              or i.get("account_id") in ("ifrs-full_AdministrativeExpense", "ifrs-full_GeneralAndAdministrativeExpense", "ifrs_AdministrativeExpense")), None)
     if s and a:
         add = lambda k: None if num(s.get(k)) is None or num(a.get(k)) is None else num(s.get(k)) + num(a.get(k))  # noqa: E731
-        return {**s, "account_id": f"{s.get('account_id', '')}+{a.get('account_id', '')}", "account_nm": "판매비 + 관리비 (합산)",
+        return {**s, "account_id": f"{s.get('account_id', '')}+{a.get('account_id', '')}", "account_nm": f"{(s.get('account_nm') or '').strip()} + {(a.get('account_nm') or '').strip()} (합산)",
                 "thstrm_amount": add("thstrm_amount"), "thstrm_add_amount": add("thstrm_add_amount")}
     return it
 
