@@ -1,7 +1,7 @@
 {
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-12 15:26 KST",
+    "checked_at": "2026-11-12 17:39 KST",
     "rows": 941,
     "last_date": "2026-11-12",
     "last_close": 128700,
@@ -10,10 +10,12 @@
   },
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-12 15:26 KST",
+    "checked_at": "2026-11-12 17:39 KST",
     "corp_code": "01258507",
-    "reports_total": 20,
-    "new_reports": [],
+    "reports_total": 21,
+    "new_reports": [
+      "분기보고서 (2026.09) (20261112) — 반영 (14/14개 계정 · CFS)"
+    ],
     "errors": []
   },
   "business_text": {
