@@ -46,12 +46,6 @@
    "caution": "출처·조사기관·기준(금액/수량)을 반드시 표시"
   },
   {
-   "key": "fx_rate",
-   "label": "환율",
-   "where": "한국은행 ECOS (무료 API 키)",
-   "caution": "수출 기업만 의미 있음"
-  },
-  {
    "key": "search_interest",
    "label": "검색 관심도",
    "where": "Google Trends·네이버 데이터랩 CSV",

@@ -1,0 +1,25 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(lottewellfood)이 기업 주소(slug)입니다.",
+  "company_id": "LW",
+  "name": "롯데웰푸드",
+  "name_en": "LOTTE WELLFOOD",
+  "stock_code": "280360",
+  "yahoo_ticker": "280360.KS",
+  "market_index": "^KS11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "food",
+  "categories": [
+    "스낵·과자",
+    "아이스크림"
+  ],
+  "competitors": [
+    "오리온",
+    "빙그레",
+    "크라운제과",
+    "해태제과"
+  ],
+  "theme_color": "#8f1d3a",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=lottewellfood",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용. 2023년 롯데푸드 합병(옛 롯데제과). 합병 전후 비교에 주의"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "lottewellfood",
+  "company_id": "LW",
+  "name": "롯데웰푸드",
+  "dashboard_path": "dashboard.html?c=lottewellfood",
+  "name_en": "LOTTE WELLFOOD",
+  "stock_code": "280360",
+  "industry": "food",
+  "industry_name": "식품",
+  "categories": [
+    "스낵·과자",
+    "아이스크림"
+  ],
+  "competitors": [
+    "오리온",
+    "빙그레",
+    "크라운제과",
+    "해태제과"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=lottewellfood",
+  "latest_year": null,
+  "kpis": null,
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 0,
+    "불일치": 0,
+    "미확인": 0
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 8,
+  "updated_at": "2026-11-12 10:49 KST"
+}

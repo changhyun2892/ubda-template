@@ -1,0 +1,24 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(orion)이 기업 주소(slug)입니다.",
+  "company_id": "OR",
+  "name": "오리온",
+  "name_en": "Orion",
+  "stock_code": "271560",
+  "yahoo_ticker": "271560.KS",
+  "market_index": "^KS11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "food",
+  "categories": [
+    "스낵·과자"
+  ],
+  "competitors": [
+    "롯데웰푸드",
+    "크라운제과",
+    "해태제과",
+    "농심"
+  ],
+  "theme_color": "#1d4f91",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=orion",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용. 지주사 오리온홀딩스(001800)가 아닌 사업회사 오리온(271560). 중국·베트남·러시아 법인 비중이 커서 연결 매출의 상당 부분이 해외"
+}
