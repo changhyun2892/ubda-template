@@ -1,0 +1,23 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(binggrae)이 기업 주소(slug)입니다.",
+  "company_id": "CR",
+  "name": "크라운제과",
+  "name_en": "Crown Confectionery",
+  "stock_code": "264900",
+  "yahoo_ticker": "264900.KS",
+  "market_index": "^KS11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "food",
+  "categories": [
+    "스낵·과자"
+  ],
+  "competitors": [
+    "오리온",
+    "롯데웰푸드",
+    "해태제과"
+  ],
+  "theme_color": "#c8102e",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=crown",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용. 지주사 크라운해태홀딩스(005740)가 아닌 사업회사. 해태제과식품과 같은 그룹."
+}

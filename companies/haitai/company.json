@@ -1,0 +1,23 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(binggrae)이 기업 주소(slug)입니다.",
+  "company_id": "HT",
+  "name": "해태제과",
+  "name_en": "Haitai Confectionery & Foods",
+  "stock_code": "101530",
+  "yahoo_ticker": "101530.KS",
+  "market_index": "^KS11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "food",
+  "categories": [
+    "스낵·과자"
+  ],
+  "competitors": [
+    "오리온",
+    "롯데웰푸드",
+    "크라운제과"
+  ],
+  "theme_color": "#e4002b",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=haitai",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용. 정식 회사명 해태제과식품. 2020년 아이스크림 사업(해태아이스크림)을 빙그레에 매각. 2026-10-20 기준 거래정지 표시가 있어 주가가 최신이 아닐 수 있음."
+}
