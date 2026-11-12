@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-12 09:44 KST",
+ "updated_at": "2026-11-12 10:21 KST",
  "industries": {
   "auto": {
    "name": "자동차",
@@ -62,9 +62,9 @@
     "불일치": 0,
     "미확인": 0
    },
-   "industry_kpis_found": 0,
+   "industry_kpis_found": 7,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-12 09:44 KST"
+   "updated_at": "2026-11-12 10:20 KST"
   },
   {
    "slug": "ottogi",
