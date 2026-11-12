@@ -22,7 +22,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 STEPS = {"collect": "collect_dart.py", "text": "collect_business_text.py", "stock": "update_stock.py", "build": "build_dataset.py", "verify": "verify_data.py"}
 # 단계별 제한 시간(초). 넘기면 그 단계만 중단하고 다음으로 진행 — 한 곳이 막혀도 전체가 멈추지 않게
-LIMIT = {"collect": 300, "text": 300, "stock": 90, "build": 120, "verify": 60}
+LIMIT = {"collect": 600, "text": 300, "stock": 90, "build": 120, "verify": 60}
 
 
 def arg(name: str, default: str | None = None) -> str | None:

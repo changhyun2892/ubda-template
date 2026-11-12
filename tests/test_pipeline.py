@@ -113,6 +113,22 @@ def main() -> int:
     ok("재실행 시 새로 반영 0건", "새로 반영 0건" in r.stdout, r.stdout.strip().splitlines()[0])
     ok("재무 API 추가 호출 없음", data.calls["/api/fnlttSinglAcntAll.json"] == before)
 
+    print("\n[2-1] 수집이 중간에 끊겨도 받은 보고서는 남고, 다음 실행이 이어서 받음")
+    dd = workdir()
+    env = {**os.environ, "DART_BASE_URL": base + "/api", "YAHOO_HOSTS": base, "DART_API_KEY": "TESTKEY", "NO_PROXY": "127.0.0.1,localhost", "no_proxy": "127.0.0.1,localhost"}
+    pr = subprocess.Popen([sys.executable, str(dd / "scripts" / "collect_dart.py"), "--company", SLUG], env=env, cwd=dd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    rp = dd / "companies" / SLUG / "data" / "raw" / "dart_reports.csv"
+    import time as _t
+    for _ in range(100):  # 보고서 몇 건이 저장될 때까지 기다렸다가 강제 종료
+        if rp.exists() and len(rows(rp)) >= 3:
+            break
+        _t.sleep(0.1)
+    pr.kill(); pr.wait()
+    n_mid = len(rows(rp)) if rp.exists() else 0
+    r = run(dd, "collect_dart.py", base)
+    n_end = len(rows(rp))
+    ok("강제 종료 전 받은 보고서가 저장됨", 0 < n_mid < n_end, f"중간 {n_mid}건 → 재실행 후 {n_end}건")
+
     print("\n[3] 사람 대조 기록 반영과 불일치 감지")
     man = d / "companies" / SLUG / "data" / "manual" / "audit_overrides.csv"
     with man.open("a", encoding="utf-8", newline="") as f:

@@ -156,6 +156,12 @@ def to_rows(items: list[dict], rep: dict, fs: str) -> list[dict]:
     return rows
 
 
+def save(fins: list[dict], done: dict) -> None:
+    fins.sort(key=lambda r: (r["bsns_year"], ORDER.get(r["reprt_code"], 9), r["metric"]))
+    write_csv(FINS, FIN_COLS, fins)
+    write_csv(REPORTS, REPORT_COLS, sorted(done.values(), key=lambda r: (r["rcept_dt"], r["rcept_no"])))
+
+
 def main() -> int:
     cfg = load_config()
     key = os.environ.get("DART_API_KEY", "").strip()
@@ -194,13 +200,12 @@ def main() -> int:
                 st, msg = "재무 데이터 없음", "fnlttSinglAcntAll 결과 없음"
             done[rep["rcept_no"]] = {**rep, "status": st, "message": msg, "processed_at": now_kst()}
             added.append(f"{rep['report_nm']} ({rep['rcept_dt']}) — {st} ({msg})")
+            save(fins, done)  # 보고서 한 건마다 저장 → 중간에 끊겨도 다음 실행이 이어서 받음
             time.sleep(0.4)
         except DartError as e:
             errors.append(f"{rep['report_nm']}: {e}")  # done에 넣지 않음 → 다음 실행 때 재시도
 
-    fins.sort(key=lambda r: (r["bsns_year"], ORDER.get(r["reprt_code"], 9), r["metric"]))
-    write_csv(FINS, FIN_COLS, fins)
-    write_csv(REPORTS, REPORT_COLS, sorted(done.values(), key=lambda r: (r["rcept_dt"], r["rcept_no"])))
+    save(fins, done)
     write_log("dart", {"status": "성공" if not errors else "일부 실패", "checked_at": started, "corp_code": cc, "reports_total": len(done),
                        "new_reports": added, "errors": errors[:5]})
     print(f"정기보고서 {len(found)}건 확인 · 새로 반영 {len(added)}건 · 오류 {len(errors)}건")
