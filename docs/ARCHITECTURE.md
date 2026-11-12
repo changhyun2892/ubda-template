@@ -12,7 +12,7 @@
  ③ 기업별 대시보드 (dashboard.html?c=기업, 같은 저장소·같은 Render 사이트)
         │  companies/<기업>/data/summary.json → companies/index.json (기업 목록 + 그래프)
         ▼
- ④ 3D 뉴런형 포털 (index.html 자리, 다음 단계)                 ← companies/index.json의 graph를 그대로 그림
+ ④ 3D 뉴런형 포털 (index.html, Three.js)                       ← companies/index.json을 읽어 노드·연결선 자동 생성
         CORE → 산업(industries/*.json) → 카테고리(company.json categories) → 기업 → 대시보드 열기
 ```
 
@@ -33,7 +33,7 @@
 - 기업이 여러 카테고리에 속하면(예: 롯데웰푸드 = 스낵·아이스크림) 기업 노드는 1개이고 연결선만 2개다.
 - `companies[]`: 정보 패널에 쓸 핵심 KPI, 검증 현황, 산업 KPI 확보 수
 
-React Force Graph 3D의 `graphData`는 `{nodes, links}` 형식이라 거의 그대로 넣을 수 있다.
+구조가 정해진 나무(CORE→산업→카테고리→기업)라 자동 배치 라이브러리 대신 Three.js로 위치를 직접 계산한다(산업=구 표면 피보나치 배치, 하위=부모 바깥 고리). 빛 번짐은 UnrealBloomPass, 신경 신호는 연결선을 따라 움직이는 빛 알갱이. 기업이 여러 카테고리에 속하면 노드 1개 + 추가 연결선.
 
 ## 산업 모듈 확장
 

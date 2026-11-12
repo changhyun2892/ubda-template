@@ -2,24 +2,30 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>UBDA 경영분석 — 전체 기업</title>
-<meta name="description" content="DART 공시 기반 기업 경영분석 대시보드 모음 (UBDA). 수업용 분석이며 투자 추천이 아닙니다.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23444'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/styles.css">
-<link rel="stylesheet" href="assets/portal.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>UBDA 경영분석 — 기업 네트워크</title>
+<meta name="description" content="DART 공시 기반 기업 경영분석 대시보드를 산업 → 카테고리 → 기업의 3D 네트워크로 탐색합니다. 수업용 분석이며 투자 추천이 아닙니다.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230B1A2E'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%234FC3F7'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/portal3d.css">
+<script type="importmap">
+{ "imports": { "three": "./assets/vendor/three/build/three.module.min.js", "three/addons/": "./assets/vendor/three/jsm/" } }
+</script>
 </head>
-<body class="portal">
-<!-- 기업 목록 화면. 다음 단계에서 3D 뉴런 포털로 교체할 자리입니다 (같은 companies/index.json을 읽음). -->
-<header class="p-head">
-  <div class="p-brand"><div class="brand-mark" style="background:#1c1a17">U</div><div><b>UBDA 경영분석</b><small>DART 공시 기반 기업 대시보드</small></div></div>
-  <input id="q" class="p-search" type="search" placeholder="기업·산업·카테고리 검색" aria-label="검색">
+<body>
+<div id="scene" aria-label="기업 네트워크 3D 화면"></div>
+<header class="hud-top">
+  <div class="brand"><span class="dot"></span><div><b>UBDA 경영분석</b><small>산업 → 카테고리 → 기업 네트워크</small></div></div>
+  <div class="search">
+    <input id="q" type="search" placeholder="기업·산업·카테고리 검색" aria-label="검색" autocomplete="off">
+    <ul id="sugg" role="listbox" hidden></ul>
+  </div>
+  <nav class="hud-links"><button id="resetBtn" title="처음 화면으로">전체 보기</button><a href="list.html">목록 보기</a></nav>
 </header>
-<main class="p-main">
-  <p class="p-meta" id="meta">불러오는 중…</p>
-  <div id="list"></div>
-</main>
-<footer class="p-foot">수업용 경영분석이며 투자 추천이 아닙니다 · 재무 데이터: 금융감독원 OpenDART · 주가: Yahoo Finance</footer>
-<script src="assets/portal.js"></script>
+<aside class="info" id="info" hidden aria-live="polite"></aside>
+<div class="hint" id="hint">드래그: 회전 · 휠/두 손가락: 확대 · 구체를 누르면 펼쳐집니다</div>
+<div class="legend" id="legend"></div>
+<div class="fallback" id="fallback" hidden><b>3D 화면을 표시할 수 없습니다</b><p>이 기기나 브라우저에서 WebGL을 사용할 수 없습니다.</p><a href="list.html">목록 화면으로 이동</a></div>
+<footer class="foot">수업용 경영분석이며 투자 추천이 아닙니다 · 재무: 금융감독원 OpenDART · 주가: Yahoo Finance</footer>
+<script type="module" src="assets/portal3d.js"></script>
 </body>
 </html>

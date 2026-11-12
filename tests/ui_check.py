@@ -41,13 +41,52 @@ def main() -> int:
     root = f"http://127.0.0.1:{srv.server_address[1]}/"
     slugs = sorted(p.parent.name for p in (ROOT / "companies").glob("*/company.json"))
     with sync_playwright() as p:
-        b = p.chromium.launch(executable_path="/usr/bin/google-chrome" if Path("/usr/bin/google-chrome").exists() else None)
-        # 기업 목록
-        print("\n[기업 목록 index.html]")
+        b = p.chromium.launch(executable_path="/usr/bin/google-chrome" if Path("/usr/bin/google-chrome").exists() else None,
+                              args=["--use-gl=angle", "--use-angle=swiftshader", "--enable-unsafe-swiftshader"])  # 화면 없는 환경에서도 WebGL
+        # 3D 포털 (index.html)
+        for label, vp in (("PC", {"width": 1366, "height": 860}), ("모바일", {"width": 390, "height": 844})):
+            print(f"\n[3D 포털 index.html · {label}]")
+            pg = b.new_page(viewport=vp)
+            errs = []
+            pg.on("pageerror", lambda e: errs.append(str(e)))
+            pg.on("console", lambda m: errs.append(m.text) if m.type == "error" else None)
+            pg.goto(root)
+            pg.wait_for_function("window.__portal", timeout=20000)
+            ok("WebGL 화면 표시 (대체 화면 아님)", pg.locator("canvas").count() == 1 and not pg.is_visible("#fallback"))
+            n_ind = len(list((ROOT / "industries").glob("*.json")))
+            ok("산업 노드 이름표 = industries/*.json 수", pg.locator(".lbl.industry").count() == n_ind, f"{pg.locator('.lbl.industry').count()}/{n_ind}")
+            first = sorted(slugs)[0]
+            ind = __import__("json").loads((ROOT / "companies" / first / "company.json").read_text(encoding="utf-8"))
+            cat = (ind.get("categories") or ["기타"])[0]
+            for nid in (f"ind:{ind['industry']}", f"cat:{ind['industry']}:{cat}", f"co:{first}"):
+                pg.wait_for_function("!__portal.flying")
+                pg.wait_for_timeout(300)
+                pt = pg.evaluate(f"__portal.screenOf({__import__('json').dumps(nid)})")
+                pg.mouse.click(pt["x"], pt["y"])
+                pg.wait_for_timeout(300)
+                ok(f"구체 클릭 → {nid} 선택", pg.evaluate("__portal.selected") == nid)
+            pg.wait_for_function("!__portal.flying")
+            ok("기업 정보 패널 + 대시보드 열기", "대시보드 열기" in pg.inner_text("#info"))
+            if SHOTS:
+                SHOTS.mkdir(parents=True, exist_ok=True)
+                pg.screenshot(path=str(SHOTS / f"3d_{label}.png"))
+            pg.click("#resetBtn")
+            pg.fill("#q", ind["name"][:2])
+            pg.wait_for_timeout(150)
+            pg.keyboard.press("Enter")
+            pg.wait_for_timeout(300)
+            ok("검색 → 기업으로 이동", (pg.evaluate("__portal.selected") or "").startswith("co:"), pg.evaluate("__portal.selected"))
+            pg.click("text=대시보드 열기")
+            pg.wait_for_selector(".page", timeout=10000)
+            ok("대시보드로 이동", "dashboard.html?c=" in pg.url, pg.url.split("/")[-1])
+            ok(f"3D {label} 자바스크립트 오류 없음", not errs, "; ".join(errs[:3]))
+            pg.close()
+        # 기업 목록 (목록형)
+        print("\n[기업 목록 list.html]")
         pg = b.new_page(viewport={"width": 1366, "height": 860})
         errs = []
         pg.on("pageerror", lambda e: errs.append(str(e)))
-        pg.goto(root)
+        pg.goto(root + "list.html")
         pg.wait_for_selector(".p-card, .empty", timeout=10000)
         ok("기업 카드 표시", pg.locator(".p-card").count() >= len(slugs), f"{pg.locator('.p-card').count()}개 / 기업 {len(slugs)}개")
         if SHOTS:
