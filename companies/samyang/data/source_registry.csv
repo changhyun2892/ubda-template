@@ -15,3 +15,5 @@ source_id,title,source_url,source_date,type,status,note
 20260318001082,삼양식품 사업보고서 (2025.12),https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001082,20260318,DART 정기보고서,반영,14/14개 계정 · CFS
 20260513000571,삼양식품 분기보고서 (2026.03),https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260513000571,20260513,DART 정기보고서,반영,14/14개 계정 · CFS
 20260814003053,삼양식품 반기보고서 (2026.06),https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003053,20260814,DART 정기보고서,반영,14/14개 계정 · CFS
+K017,연결재무제표 주석 > 종속기업 요약재무정보 (sy2024:t112:r6),https://kind.krx.co.kr/external/2025/03/18/001592/20250318007395/11011.htm,,산업 KPI 출처,,overseas_entities
+K018,연결재무제표 주석 > 종속기업 요약재무정보 (인쇄 p.53 종속기업 요약재무정보 매출열),sources/annual_report_2025.pdf,,산업 KPI 출처,,overseas_entities
