@@ -1,0 +1,151 @@
+{
+ "started_at": "2026-11-12 11:12:48 KST",
+ "steps": [
+  "collect",
+  "text",
+  "stock",
+  "build",
+  "verify"
+ ],
+ "companies": {
+  "binggrae": {
+   "collect": {
+    "sec": 287.1,
+    "result": 0
+   },
+   "text": {
+    "sec": 21.8,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.6,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "lottewellfood": {
+   "collect": {
+    "sec": 300.0,
+    "result": "시간 초과"
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.3,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 1
+   }
+  },
+  "nongshim": {
+   "collect": {
+    "sec": 1.1,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.3,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "orion": {
+   "collect": {
+    "sec": 300.0,
+    "result": "시간 초과"
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.2,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 1
+   }
+  },
+  "ottogi": {
+   "collect": {
+    "sec": 1.0,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.3,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "samyang": {
+   "collect": {
+    "sec": 1.0,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.3,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  }
+ },
+ "finished_at": "2026-11-12 11:28:03 KST",
+ "failed": [
+  "lottewellfood:collect",
+  "lottewellfood:verify",
+  "orion:collect",
+  "orion:verify"
+ ]
+}
