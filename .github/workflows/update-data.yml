@@ -8,7 +8,7 @@ name: 데이터 업데이트
 on:
   push:
     branches: [main]
-    paths: ["companies/*/company.json", "companies/*/verify_expectations.json", "companies/*/data/manual/**", "scripts/**", "industries/**"]
+    paths: ["companies/*/company.json", "companies/*/verify_expectations.json", "companies/*/data/manual/**", "scripts/**", "industries/**", "tests/**", ".github/workflows/**"]
   schedule:
     - cron: "40 7 * * 1-5"
   workflow_dispatch: {}
