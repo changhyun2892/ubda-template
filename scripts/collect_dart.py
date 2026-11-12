@@ -162,6 +162,11 @@ def to_rows(items: list[dict], rep: dict, fs: str) -> list[dict]:
     used = items[0].get("rcept_no") or rep["rcept_no"]
     for metric, label, sj, ids, name_re in ACCOUNTS:
         it = pick_sga(items, sj, ids, name_re) if metric == "sga" else pick(items, sj, ids, name_re)
+        if it is None and metric in FLOW:  # 못 찾은 손익 계정: 원인 확인용으로 그 보고서의 손익 계정 이름을 남김
+            dump = RAW / "unmatched_accounts.json"
+            d = json.loads(dump.read_text(encoding="utf-8")) if dump.exists() else {}
+            d[f"{rep['bsns_year']}-{rep['reprt_code']}-{metric}"] = [f"{i.get('sj_div')} | {i.get('account_id')} | {(i.get('account_nm') or '').strip()}" for i in items if i.get("sj_div") in sj][:60]
+            dump.write_text(json.dumps(d, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
         val = num(it.get("thstrm_amount")) if it else None
         cum = num(it.get("thstrm_add_amount")) if it else None
         if metric in FLOW and rep["reprt_code"] == "11011":
