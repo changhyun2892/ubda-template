@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-13 13:18:08 KST",
+ "started_at": "2026-11-13 13:44:56 KST",
  "steps": [
   "collect",
   "text",
@@ -10,7 +10,29 @@
  "companies": {
   "emart": {
    "collect": {
-    "sec": 1.5,
+    "sec": 1.1,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.7,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "hanon": {
+   "collect": {
+    "sec": 1.3,
     "result": 0
    },
    "text": {
@@ -30,31 +52,9 @@
     "result": 0
    }
   },
-  "hanon": {
-   "collect": {
-    "sec": 1.4,
-    "result": 0
-   },
-   "text": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.2,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 1
-   }
-  },
   "kakao": {
    "collect": {
-    "sec": 1.4,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
@@ -62,7 +62,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -76,7 +76,7 @@
   },
   "lgdisplay": {
    "collect": {
-    "sec": 1.2,
+    "sec": 1.1,
     "result": 0
    },
    "text": {
@@ -84,7 +84,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -98,7 +98,7 @@
   },
   "mobis": {
    "collect": {
-    "sec": 1.6,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
@@ -106,7 +106,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.4,
     "result": 0
    },
    "build": {
@@ -120,7 +120,7 @@
   },
   "nongshim": {
    "collect": {
-    "sec": 1.2,
+    "sec": 1.1,
     "result": 0
    },
    "text": {
@@ -128,7 +128,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.4,
     "result": 0
    },
    "build": {
@@ -142,7 +142,7 @@
   },
   "samsungsds": {
    "collect": {
-    "sec": 1.1,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
@@ -150,7 +150,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -164,7 +164,7 @@
   },
   "skhynix": {
    "collect": {
-    "sec": 1.2,
+    "sec": 1.0,
     "result": 0
    },
    "text": {
@@ -172,7 +172,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -185,8 +185,6 @@
    }
   }
  },
- "finished_at": "2026-11-13 13:18:22 KST",
- "failed": [
-  "hanon:verify"
- ]
+ "finished_at": "2026-11-13 13:45:10 KST",
+ "failed": []
 }
