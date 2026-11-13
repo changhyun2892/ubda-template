@@ -1,0 +1,36 @@
+{
+  "slug": "netmarble",
+  "company_id": "NM",
+  "name": "넷마블",
+  "dashboard_path": "dashboard.html?c=netmarble",
+  "name_en": "Netmarble",
+  "stock_code": "251270",
+  "industry": "platform",
+  "industry_name": "IT·플랫폼",
+  "categories": [
+    "게임"
+  ],
+  "competitors": [
+    "크래프톤",
+    "엔씨소프트"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=netmarble",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 2835074411896,
+    "operating_profit": 352478352483,
+    "net_income": 230818642770,
+    "operating_margin_pct": 12.4328,
+    "revenue_growth_pct": 6.4304,
+    "debt_ratio_pct": 47.3587
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 108,
+    "불일치": 0,
+    "미확인": 4
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 9,
+  "updated_at": "2026-11-13 12:40 KST"
+}

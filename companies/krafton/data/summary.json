@@ -1,0 +1,36 @@
+{
+  "slug": "krafton",
+  "company_id": "KR",
+  "name": "크래프톤",
+  "dashboard_path": "dashboard.html?c=krafton",
+  "name_en": "KRAFTON",
+  "stock_code": "259960",
+  "industry": "platform",
+  "industry_name": "IT·플랫폼",
+  "categories": [
+    "게임"
+  ],
+  "competitors": [
+    "엔씨소프트",
+    "넷마블"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=krafton",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 3326553694966,
+    "operating_profit": 1054380980188,
+    "net_income": 733703643561,
+    "operating_margin_pct": 31.6959,
+    "revenue_growth_pct": 22.7613,
+    "debt_ratio_pct": 31.3121
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 107,
+    "불일치": 0,
+    "미확인": 7
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 9,
+  "updated_at": "2026-11-13 12:39 KST"
+}
