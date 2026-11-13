@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-13 13:45 KST",
+ "updated_at": "2026-11-13 13:49 KST",
  "industries": {
   "auto": {
    "name": "자동차",
@@ -97,6 +97,30 @@
    "industry_kpis_found": 4,
    "industry_kpis_total": 8,
    "updated_at": "2026-11-13 13:44 KST"
+  },
+  {
+   "slug": "bnkfg",
+   "company_id": "BN",
+   "name": "BNK금융지주",
+   "name_en": "BNK Financial Group",
+   "stock_code": "138930",
+   "industry": "bank",
+   "categories": [
+    "지방 금융지주"
+   ],
+   "competitors": [
+    "JB금융지주",
+    "iM금융지주"
+   ],
+   "theme_color": "#d6001c",
+   "dashboard_path": "dashboard.html?c=bnkfg",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
   },
   {
    "slug": "crown",
@@ -242,6 +266,31 @@
    "industry_kpis_found": 4,
    "industry_kpis_total": 8,
    "updated_at": "2026-11-13 13:45 KST"
+  },
+  {
+   "slug": "hanafg",
+   "company_id": "HF",
+   "name": "하나금융지주",
+   "name_en": "Hana Financial Group",
+   "stock_code": "086790",
+   "industry": "bank",
+   "categories": [
+    "시중 금융지주"
+   ],
+   "competitors": [
+    "KB금융",
+    "신한지주",
+    "우리금융지주"
+   ],
+   "theme_color": "#008485",
+   "dashboard_path": "dashboard.html?c=hanafg",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
   },
   {
    "slug": "hanmisemi",
@@ -424,6 +473,78 @@
    "updated_at": "2026-11-13 13:45 KST"
   },
   {
+   "slug": "ibk",
+   "company_id": "IB",
+   "name": "기업은행",
+   "name_en": "Industrial Bank of Korea",
+   "stock_code": "024110",
+   "industry": "bank",
+   "categories": [
+    "국책은행"
+   ],
+   "competitors": [
+    "KB금융",
+    "신한지주"
+   ],
+   "theme_color": "#004c97",
+   "dashboard_path": "dashboard.html?c=ibk",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
+   "slug": "imfg",
+   "company_id": "IM",
+   "name": "iM금융지주",
+   "name_en": "iM Financial Group",
+   "stock_code": "139130",
+   "industry": "bank",
+   "categories": [
+    "지방 금융지주"
+   ],
+   "competitors": [
+    "BNK금융지주",
+    "JB금융지주"
+   ],
+   "theme_color": "#00a5a8",
+   "dashboard_path": "dashboard.html?c=imfg",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
+   "slug": "jbfg",
+   "company_id": "JB",
+   "name": "JB금융지주",
+   "name_en": "JB Financial Group",
+   "stock_code": "175330",
+   "industry": "bank",
+   "categories": [
+    "지방 금융지주"
+   ],
+   "competitors": [
+    "BNK금융지주",
+    "iM금융지주"
+   ],
+   "theme_color": "#0b3d91",
+   "dashboard_path": "dashboard.html?c=jbfg",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
    "slug": "kakao",
    "company_id": "KK",
    "name": "카카오",
@@ -457,6 +578,55 @@
    "industry_kpis_found": 3,
    "industry_kpis_total": 9,
    "updated_at": "2026-11-13 13:45 KST"
+  },
+  {
+   "slug": "kakaobank",
+   "company_id": "KA",
+   "name": "카카오뱅크",
+   "name_en": "KakaoBank",
+   "stock_code": "323410",
+   "industry": "bank",
+   "categories": [
+    "인터넷은행"
+   ],
+   "competitors": [
+    "KB금융",
+    "신한지주"
+   ],
+   "theme_color": "#ffcd00",
+   "dashboard_path": "dashboard.html?c=kakaobank",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
+   "slug": "kbfg",
+   "company_id": "KB",
+   "name": "KB금융",
+   "name_en": "KB Financial Group",
+   "stock_code": "105560",
+   "industry": "bank",
+   "categories": [
+    "시중 금융지주"
+   ],
+   "competitors": [
+    "신한지주",
+    "하나금융지주",
+    "우리금융지주"
+   ],
+   "theme_color": "#ffbc00",
+   "dashboard_path": "dashboard.html?c=kbfg",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
   },
   {
    "slug": "kgm",
@@ -1120,6 +1290,31 @@
    "updated_at": "2026-11-13 13:45 KST"
   },
   {
+   "slug": "shinhan",
+   "company_id": "SN",
+   "name": "신한지주",
+   "name_en": "Shinhan Financial Group",
+   "stock_code": "055550",
+   "industry": "bank",
+   "categories": [
+    "시중 금융지주"
+   ],
+   "competitors": [
+    "KB금융",
+    "하나금융지주",
+    "우리금융지주"
+   ],
+   "theme_color": "#0046ff",
+   "dashboard_path": "dashboard.html?c=shinhan",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
    "slug": "shinsegae",
    "company_id": "SS",
    "name": "신세계",
@@ -1190,6 +1385,31 @@
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
    "updated_at": "2026-11-13 13:45 KST"
+  },
+  {
+   "slug": "woorifg",
+   "company_id": "WR",
+   "name": "우리금융지주",
+   "name_en": "Woori Financial Group",
+   "stock_code": "316140",
+   "industry": "bank",
+   "categories": [
+    "시중 금융지주"
+   ],
+   "competitors": [
+    "KB금융",
+    "신한지주",
+    "하나금융지주"
+   ],
+   "theme_color": "#0067ac",
+   "dashboard_path": "dashboard.html?c=woorifg",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
   }
  ],
  "graph": {
@@ -1238,6 +1458,25 @@
     "industry": "food"
    },
    {
+    "id": "ind:bank",
+    "type": "industry",
+    "label": "은행·금융",
+    "color": "#3b82f6"
+   },
+   {
+    "id": "co:bnkfg",
+    "type": "company",
+    "label": "BNK금융지주",
+    "slug": "bnkfg",
+    "url": "dashboard.html?c=bnkfg"
+   },
+   {
+    "id": "cat:bank:지방 금융지주",
+    "type": "category",
+    "label": "지방 금융지주",
+    "industry": "bank"
+   },
+   {
     "id": "co:crown",
     "type": "company",
     "label": "크라운제과",
@@ -1276,6 +1515,19 @@
     "label": "해태제과",
     "slug": "haitai",
     "url": "dashboard.html?c=haitai"
+   },
+   {
+    "id": "co:hanafg",
+    "type": "company",
+    "label": "하나금융지주",
+    "slug": "hanafg",
+    "url": "dashboard.html?c=hanafg"
+   },
+   {
+    "id": "cat:bank:시중 금융지주",
+    "type": "category",
+    "label": "시중 금융지주",
+    "industry": "bank"
    },
    {
     "id": "ind:semiconductor",
@@ -1349,6 +1601,33 @@
     "industry": "retail"
    },
    {
+    "id": "co:ibk",
+    "type": "company",
+    "label": "기업은행",
+    "slug": "ibk",
+    "url": "dashboard.html?c=ibk"
+   },
+   {
+    "id": "cat:bank:국책은행",
+    "type": "category",
+    "label": "국책은행",
+    "industry": "bank"
+   },
+   {
+    "id": "co:imfg",
+    "type": "company",
+    "label": "iM금융지주",
+    "slug": "imfg",
+    "url": "dashboard.html?c=imfg"
+   },
+   {
+    "id": "co:jbfg",
+    "type": "company",
+    "label": "JB금융지주",
+    "slug": "jbfg",
+    "url": "dashboard.html?c=jbfg"
+   },
+   {
     "id": "ind:platform",
     "type": "industry",
     "label": "IT·플랫폼",
@@ -1366,6 +1645,26 @@
     "type": "category",
     "label": "포털·플랫폼",
     "industry": "platform"
+   },
+   {
+    "id": "co:kakaobank",
+    "type": "company",
+    "label": "카카오뱅크",
+    "slug": "kakaobank",
+    "url": "dashboard.html?c=kakaobank"
+   },
+   {
+    "id": "cat:bank:인터넷은행",
+    "type": "category",
+    "label": "인터넷은행",
+    "industry": "bank"
+   },
+   {
+    "id": "co:kbfg",
+    "type": "company",
+    "label": "KB금융",
+    "slug": "kbfg",
+    "url": "dashboard.html?c=kbfg"
    },
    {
     "id": "co:kgm",
@@ -1536,6 +1835,13 @@
     "industry": "semiconductor"
    },
    {
+    "id": "co:shinhan",
+    "type": "company",
+    "label": "신한지주",
+    "slug": "shinhan",
+    "url": "dashboard.html?c=shinhan"
+   },
+   {
     "id": "co:shinsegae",
     "type": "company",
     "label": "신세계",
@@ -1548,6 +1854,13 @@
     "label": "SK하이닉스",
     "slug": "skhynix",
     "url": "dashboard.html?c=skhynix"
+   },
+   {
+    "id": "co:woorifg",
+    "type": "company",
+    "label": "우리금융지주",
+    "slug": "woorifg",
+    "url": "dashboard.html?c=woorifg"
    }
   ],
   "links": [
@@ -1576,6 +1889,18 @@
     "target": "co:binggrae"
    },
    {
+    "source": "core",
+    "target": "ind:bank"
+   },
+   {
+    "source": "ind:bank",
+    "target": "cat:bank:지방 금융지주"
+   },
+   {
+    "source": "cat:bank:지방 금융지주",
+    "target": "co:bnkfg"
+   },
+   {
     "source": "ind:food",
     "target": "cat:food:스낵·과자"
    },
@@ -1598,6 +1923,14 @@
    {
     "source": "cat:food:스낵·과자",
     "target": "co:haitai"
+   },
+   {
+    "source": "ind:bank",
+    "target": "cat:bank:시중 금융지주"
+   },
+   {
+    "source": "cat:bank:시중 금융지주",
+    "target": "co:hanafg"
    },
    {
     "source": "core",
@@ -1644,6 +1977,22 @@
     "target": "co:hyundaidept"
    },
    {
+    "source": "ind:bank",
+    "target": "cat:bank:국책은행"
+   },
+   {
+    "source": "cat:bank:국책은행",
+    "target": "co:ibk"
+   },
+   {
+    "source": "cat:bank:지방 금융지주",
+    "target": "co:imfg"
+   },
+   {
+    "source": "cat:bank:지방 금융지주",
+    "target": "co:jbfg"
+   },
+   {
     "source": "core",
     "target": "ind:platform"
    },
@@ -1654,6 +2003,18 @@
    {
     "source": "cat:platform:포털·플랫폼",
     "target": "co:kakao"
+   },
+   {
+    "source": "ind:bank",
+    "target": "cat:bank:인터넷은행"
+   },
+   {
+    "source": "cat:bank:인터넷은행",
+    "target": "co:kakaobank"
+   },
+   {
+    "source": "cat:bank:시중 금융지주",
+    "target": "co:kbfg"
    },
    {
     "source": "cat:auto:완성차",
@@ -1772,12 +2133,20 @@
     "target": "co:semco"
    },
    {
+    "source": "cat:bank:시중 금융지주",
+    "target": "co:shinhan"
+   },
+   {
     "source": "cat:retail:백화점",
     "target": "co:shinsegae"
    },
    {
     "source": "cat:semiconductor:메모리 반도체",
     "target": "co:skhynix"
+   },
+   {
+    "source": "cat:bank:시중 금융지주",
+    "target": "co:woorifg"
    }
   ]
  }

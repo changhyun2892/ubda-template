@@ -1,0 +1,23 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(kbfg)이 기업 주소(slug)입니다.",
+  "company_id": "KB",
+  "name": "KB금융",
+  "name_en": "KB Financial Group",
+  "stock_code": "105560",
+  "yahoo_ticker": "105560.KS",
+  "market_index": "^KS11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "bank",
+  "categories": [
+    "시중 금융지주"
+  ],
+  "competitors": [
+    "신한지주",
+    "하나금융지주",
+    "우리금융지주"
+  ],
+  "theme_color": "#ffbc00",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=kbfg",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용. 은행·금융지주는 매출 대신 순이자이익·순수수료이익 등으로 손익 구조가 다름."
+}
