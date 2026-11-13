@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-13 13:18:09 KST",
+ "started_at": "2026-11-13 13:44:58 KST",
  "steps": [
   "collect",
   "text",
@@ -32,7 +32,7 @@
   },
   "gsretail": {
    "collect": {
-    "sec": 0.9,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -40,7 +40,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
@@ -49,12 +49,12 @@
    },
    "verify": {
     "sec": 0.1,
-    "result": 1
+    "result": 0
    }
   },
   "hlmando": {
    "collect": {
-    "sec": 0.9,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -62,7 +62,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
@@ -76,7 +76,7 @@
   },
   "kgm": {
    "collect": {
-    "sec": 0.9,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -98,7 +98,7 @@
   },
   "lgelec": {
    "collect": {
-    "sec": 0.7,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -106,7 +106,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
@@ -128,7 +128,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
@@ -150,7 +150,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
@@ -164,7 +164,7 @@
   },
   "samyang": {
    "collect": {
-    "sec": 0.9,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -185,8 +185,6 @@
    }
   }
  },
- "finished_at": "2026-11-13 13:18:21 KST",
- "failed": [
-  "gsretail:verify"
- ]
+ "finished_at": "2026-11-13 13:45:09 KST",
+ "failed": []
 }
