@@ -6,8 +6,8 @@ KA,2023,credit_loss,신용손실충당금전입액,248348000000,KRW,별도,20240
 KA,2023,current_assets,유동자산,,KRW,별도,20240320001487,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320001487,,F-2023-current_assets,미확인
 KA,2023,current_liabilities,유동부채,,KRW,별도,20240320001487,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320001487,,F-2023-current_liabilities,미확인
 KA,2023,deposits,예수부채,47142842000000,KRW,별도,20240320001487,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320001487,예수부채,F-2023-deposits,자동 수집 · 원문 대조 전
-KA,2023,general_admin,일반관리비,-435542000000,KRW,별도,20240320001487,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320001487,5. 판매비와관리비,F-2023-general_admin,자동 수집 · 원문 대조 전
-KA,2023,interest_expense,이자비용,-932200000000,KRW,별도,20240320001487,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320001487,1. 이자비용,F-2023-interest_expense,자동 수집 · 원문 대조 전
+KA,2023,general_admin,일반관리비,435542000000,KRW,별도,20240320001487,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320001487,5. 판매비와관리비,F-2023-general_admin,자동 수집 · 원문 대조 전
+KA,2023,interest_expense,이자비용,932200000000,KRW,별도,20240320001487,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320001487,1. 이자비용,F-2023-interest_expense,자동 수집 · 원문 대조 전
 KA,2023,interest_income,이자수익,2048170000000,KRW,별도,20240320001487,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320001487,1. 이자수익,F-2023-interest_income,자동 수집 · 원문 대조 전
 KA,2023,inventories,재고자산,,KRW,별도,20240320001487,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320001487,,F-2023-inventories,미확인
 KA,2023,loans,대출채권,38649038000000,KRW,별도,20240320001487,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320001487,대출채권,F-2023-loans,자동 수집 · 원문 대조 전

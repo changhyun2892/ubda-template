@@ -2,12 +2,12 @@ company_id,year,metric,label,value,unit,scope,source_id,source_url,account_nm,au
 SN,2023,capex,유형자산의 취득 (지출액),261444000000,KRW,연결,20240502000081,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240502000081,유형자산의 취득,F-2023-capex,자동 수집 · 원문 대조 전
 SN,2023,cash,현금및현금성자산,,KRW,연결,20240502000081,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240502000081,,F-2023-cash,미확인
 SN,2023,cost_of_sales,매출원가,,KRW,연결,20240502000081,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240502000081,,F-2023-cost_of_sales,미확인
-SN,2023,credit_loss,신용손실충당금전입액,-2244503000000,KRW,연결,20240502000081,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240502000081,신용손실충당금전입액,F-2023-credit_loss,자동 수집 · 원문 대조 전
+SN,2023,credit_loss,신용손실충당금전입액,2244503000000,KRW,연결,20240502000081,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240502000081,신용손실충당금전입액,F-2023-credit_loss,자동 수집 · 원문 대조 전
 SN,2023,current_assets,유동자산,,KRW,연결,20240502000081,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240502000081,,F-2023-current_assets,미확인
 SN,2023,current_liabilities,유동부채,,KRW,연결,20240502000081,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240502000081,,F-2023-current_liabilities,미확인
 SN,2023,deposits,예수부채,381512664000000,KRW,연결,20240502000081,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240502000081,예수부채,F-2023-deposits,자동 수집 · 원문 대조 전
-SN,2023,general_admin,일반관리비,-5895337000000,KRW,연결,20240502000081,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240502000081,일반관리비,F-2023-general_admin,자동 수집 · 원문 대조 전
-SN,2023,interest_expense,이자비용,-16761289000000,KRW,연결,20240502000081,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240502000081,이자비용,F-2023-interest_expense,자동 수집 · 원문 대조 전
+SN,2023,general_admin,일반관리비,5895337000000,KRW,연결,20240502000081,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240502000081,일반관리비,F-2023-general_admin,자동 수집 · 원문 대조 전
+SN,2023,interest_expense,이자비용,16761289000000,KRW,연결,20240502000081,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240502000081,이자비용,F-2023-interest_expense,자동 수집 · 원문 대조 전
 SN,2023,interest_income,이자수익,27579211000000,KRW,연결,20240502000081,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240502000081,이자수익,F-2023-interest_income,자동 수집 · 원문 대조 전
 SN,2023,inventories,재고자산,,KRW,연결,20240502000081,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240502000081,,F-2023-inventories,미확인
 SN,2023,loans,대출채권,411739562000000,KRW,연결,20240502000081,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240502000081,상각후원가측정대출채권,F-2023-loans,자동 수집 · 원문 대조 전
