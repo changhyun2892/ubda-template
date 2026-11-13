@@ -1,6 +1,6 @@
-# HL만도 사업보고서 (2025.12) — I. 회사의 개요 (본문 텍스트)
+# HL만도 사업보고서 (2025.12) — I. 회사의 개요 + 상세표-1 연결대상 종속회사 현황(상세) (본문 텍스트)
 # 접수번호 20260318000883 · 접수일 20260318 · 원문 https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000883
-# OpenDART document.xml에서 자동 추출 (2026-11-13 17:59 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
+# OpenDART document.xml에서 자동 추출 (2026-11-13 18:17 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
 
 ## I. 회사의 개요
 
@@ -879,3 +879,245 @@ IT 시스템 및 소프트웨어 임대업 |
 [표 끝]
 
 4. 정관상 사업목적 변경해당 사항 없습니다.
+
+## 1. 연결대상 종속회사 현황(상세)
+
+[표]
+
+☞ 본문 위치로 이동
+ |
+
+[표 끝]
+
+[표]
+
+[표]
+
+ |
+(단위 : 백만원) |
+
+[표 끝]
+
+[표]
+
+상호 |
+설립일 |
+주소 |
+주요사업 |
+최근사업연도말자산총액 |
+지배관계 근거 |
+주요종속회사 여부 |
+
+HL Mando AmericaCorporation |
+1996.01.30 |
+4201 Northpark Drive Opelika,AL 36801, USA |
+자동차 부품의제조 및 판매 |
+ 708,562 |
+의결권의 과반수 초과(회계기준서 1027호) |
+해당(자산총액 750억원 이상) |
+
+Alabama PlatingTechnology, LLC |
+2019.03.07 |
+3509 45thST. SW, Lanett, AL 36863, USA |
+자동차 부품의제조 및 판매 |
+ 14,013 |
+의결권의 과반수 초과(회계기준서 1027호) |
+해당없음 |
+
+Higher Life VenturesManagement LLC |
+2023.03.11 |
+1503 Grant Rd. Suite 201, Mountain View,CA 94040, USA |
+투자 및 자문서비스 |
+ 368 |
+의결권의 과반수 초과(회계기준서 1027호) |
+해당없음 |
+
+Higher Life Ventures Fund I LP |
+2023.03.09 |
+1209 Orange Street Wilmington,Delaware 19801, USA |
+기타 금융투자 |
+ 46,378 |
+의결권의 과반수 초과(회계기준서 1027호) |
+해당없음 |
+
+HL Mando (Suzhou)Automotive System Co., Ltd |
+2002.07.28 |
+No.328, Mayun Road, SuzhouNew District, Jiangsu, Suzhou, China |
+자동차 부품의제조 및 판매 |
+ 802,050 |
+의결권의 과반수 초과(회계기준서 1027호) |
+해당(자산총액 750억원 이상) |
+
+HL Mando (Beijing)Automotive System Co., Ltd |
+2003.01.14 |
+No.15, Yunxi 7th Street, EconomicDevelopment Zone, C District,Miyun County, Beijing, China |
+자동차 부품의제조 및 판매 |
+641,234 |
+의결권의 과반수 초과(회계기준서 1027호) |
+해당(자산총액 750억원 이상) |
+
+HL Mando (Tianjin)Automotive System Co., Ltd |
+2004.12.08 |
+No.20, Hengyuan Road, YAT-SENScientific Industrial Park,Wuqing, Tianjin, China |
+자동차 부품의제조 및 판매 |
+ 54,750 |
+의결권의 과반수 초과(회계기준서 1027호) |
+해당없음 |
+
+HL Mando(Ningbo)Automotive System Co., Ltd |
+2011.03.10 |
+No.718, Binhai 2 RoadHangzhou BayNew Zone, Cixi City,Zhejiang, China |
+자동차 부품의제조 및 판매 |
+ 371,906 |
+의결권의 과반수 초과(회계기준서 1027호) |
+해당(자산총액 750억원 이상) |
+
+HL Mando (Beijing)Automotive SystemR&D Center Co., Ltd |
+2003.06.19 |
+No.35, Xi Tong Road,Miyun EconomicDevelopment Zone,Beijing, China |
+자동차 부품기술의 연구개발 |
+ 48,948 |
+의결권의 과반수 초과(회계기준서 1027호) |
+해당없음 |
+
+HL Mando (Beijing)Trading Co., Ltd |
+2007.06.13 |
+No.36, Xi Tong Road,Miyun EconomicDevelopment Zone,Beijing, China |
+자동차 부품 및용품 판매 |
+10,738 |
+의결권의 과반수 초과(회계기준서 1027호) |
+해당없음 |
+
+HL Mando AnandIndia Private Limited |
+2006.11.29 |
+S1A & S5 Sipcot Industrial Park,Vengadu Village,Pillaipakkam PostSriperumbudur Taluk,Tamil Nadu,602 105, India |
+자동차 부품의제조 및 판매 |
+459,148 |
+의결권의 과반수 초과(회계기준서 1027호) |
+해당(자산총액 750억원 이상) |
+
+HL Mando SofttechIndia Private, Ltd |
+2005.07.22 |
+1st Floor, MPD Towers, BuildingBlock-II, Zone-6, DLF QutubEnclave Phase-VGurgaon, Haryana, 122 002, India |
+자동차 부품기술의 연구개발 |
+ 26,261 |
+의결권의 과반수 초과(회계기준서 1027호) |
+해당없음 |
+
+HL Mando CorporationEurope GmbH |
+2010.04.16 |
+Heinrich-Hopf-Strasse 15D-65936 Frankfurtam Main, Germany |
+자동차 부품 및용품 판매 |
+ 50,638 |
+의결권의 과반수 초과(회계기준서 1027호) |
+해당없음 |
+
+HL Mando CorporationPoland Sp. z o. o. |
+2011.05.24 |
+58-306, ul.Uczniowska 36,Walbrzych, Poland |
+자동차 부품의제조 및 판매 |
+ 287,746 |
+의결권의 과반수 초과(회계기준서 1027호) |
+해당(자산총액 750억원 이상) |
+
+HL Mando Corporationdo Brasil Industryand CommercialAuto Parts Ltda |
+2010.07.15 |
+Ave Stanley, 2888,Limeira-SP, Brasil |
+자동차 부품의제조 및 판매 |
+ 71,609 |
+의결권의 과반수 초과(회계기준서 1027호) |
+해당없음 |
+
+HL Mando Corporation
+
+Mexico, S.A. de C.V.
+
+ |
+2015.06.22 |
+BLVD. Campestre No.301 EntreCalle Agata y Oro, Zona Industrial,Arteaga, Coahuila, Mexico,CP25350 |
+자동차 부품의제조 및 판매 |
+ 604,018 |
+의결권의 과반수 초과(회계기준서 1027호) |
+해당(자산총액 750억원 이상) |
+
+Luan Automotive Mexico, S. De R.L. De C.V. |
+2023.09.20 |
+Boulevard Campestre No. 301, Arteaga, Coahuila de Zaragoza, Mexico, C.P. 25350 |
+자동차 부품의제조 및 판매 |
+ 31,601 |
+의결권의 과반수 초과(회계기준서 1027호) |
+해당없음 |
+
+Maysan Mando OtomotivParcalari San. Ve Tic. A.S. |
+1997.08.15 |
+Demirtas Dumlupınarosb Mh. Hanımeli Sk.No.10, 16110, Osmangazi Bursa, Turkiye |
+자동차부품 제조판매업 |
+167,329 |
+의결권의 과반수 초과(회계기준서 1027호) |
+해당(자산총액 750억원 이상) |
+
+주식회사 에이치엘클레무브 |
+2008.11.26 |
+인천광역시 연수구 하모니로 224 |
+자동차 부품의제조 및 판매,연구개발 |
+800,253 |
+의결권의 과반수 초과(회계기준서 1027호) |
+해당(자산총액 750억원 이상) |
+
+HL Klemove(Suzhou) Co., Ltd |
+2011.07.28 |
+No.160 Kunlunshan RoadSuzhou District P.R.China |
+자동차부품 제조판매업 |
+453,908 |
+의결권의 과반수 초과(회계기준서 1027호) |
+해당(자산총액 750억원 이상) |
+
+HL KlemoveIndia Private Limited |
+2015.05.14 |
+Plot G 58-60, SIPCOT Industrial Park,Vallam Vadagal Sriperumbudur,Kancheepuram Dist 602 105, India |
+자동차부품 제조판매업 |
+ 106,831 |
+의결권의 과반수 초과(회계기준서 1027호) |
+해당(자산총액 750억원 이상) |
+
+HL Klemove MexicoCorporation S.A. DE C.V |
+2022.07.11 |
+Monterrey, Nuevo Leon, Mexico |
+자동차부품 제조판매업 |
+ 164,835 |
+의결권의 과반수 초과(회계기준서 1027호) |
+해당(자산총액 750억원 이상) |
+
+HL KlemoveAmerica Corporation |
+2022.12.01 |
+California 230 East Caribbean DriveSunnyvale, CA 94089 |
+자동차 부품기술의 연구개발 |
+ 2,028 |
+의결권의 과반수 초과(회계기준서 1027호) |
+해당없음 |
+
+Muirwoods Air Mobility Fund |
+2023.09.14 |
+서울시 강남구 영동대로 621 |
+기타 금융투자회사 |
+ 1,875 |
+의결권의 과반수 초과(회계기준서 1027호) |
+해당없음 |
+
+만도브로제 주식회사 |
+2011.04.25 |
+인천광역시 연수구 첨단대로 60번길 75 |
+자동차부품 제조판매업 |
+ 187,236 |
+의결권의 과반수 초과(회계기준서 1027호) |
+해당(자산총액 750억원 이상) |
+
+Mando Brose (Zhangjiagang)Electric Motors Co.,Ltd. |
+2017.09.30 |
+No. 1202, Fuxin Road, Development Zone, Zhangjiagang City, Jiangsu, China |
+자동차부품 제조판매업 |
+ 94,808 |
+의결권의 과반수 초과(회계기준서 1027호) |
+해당(자산총액 750억원 이상) |
+
+[표 끝]

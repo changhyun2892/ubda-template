@@ -1,6 +1,6 @@
-# 크래프톤 [기재정정]사업보고서 (2025.12) — I. 회사의 개요 (본문 텍스트)
+# 크래프톤 [기재정정]사업보고서 (2025.12) — I. 회사의 개요 + 상세표-1 연결대상 종속회사 현황(상세) (본문 텍스트)
 # 접수번호 20260515002689 · 접수일 20260515 · 원문 https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002689
-# OpenDART document.xml에서 자동 추출 (2026-11-13 18:00 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
+# OpenDART document.xml에서 자동 추출 (2026-11-13 18:20 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
 
 ## I. 회사의 개요
 
@@ -1919,5 +1919,627 @@ ADFEST 2025 INNOVA LOTUS 부문 INNOVA 수상 |
 11 |
 위 항에 관련된 부대사업일체 |
 영위 |
+
+[표 끝]
+
+## 1. 연결대상 종속회사 현황(상세)
+
+[표]
+
+☞ 본문 위치로 이동
+ |
+
+[표 끝]
+
+[표]
+
+[표]
+
+ |
+(단위 : 백만원) |
+
+[표 끝]
+
+[표]
+
+상호 |
+설립일 |
+주소 |
+주요사업 |
+최근사업연도말자산총액 |
+지배관계 근거 |
+주요종속회사 여부 |
+
+라이징윙스㈜ |
+2012.05.16 |
+서울시 강남구 영동대로82길 7(대치동, 한석빌딩) |
+모바일게임,어플리케이션 개발 및 판매 |
+9,800 |
+의결권 과반수 소유 (K-IFRS 1110호) |
+해당없음 |
+
+㈜블루홀스튜디오 |
+2020.12.02 |
+경기도 성남시 분당구 분당내곡로 117(백현동, 그레이츠 판교) |
+소프트웨어 개발 및 공급 |
+19,596 |
+상동 |
+해당없음 |
+
+㈜드림모션 |
+2016.07.07 |
+경기도 성남시 분당구 황새울로335번길 10, 4층 401호(서현동, 멜로즈프라자) |
+소프트웨어 개발 및 공급 |
+7,541 |
+상동 |
+해당없음 |
+
+옴니크래프트랩스㈜ |
+2021.07.28 |
+경기도 성남시 분당구 분당내곡로 117(백현동, 그레이츠 판교) |
+소프트웨어 개발 및 판매 |
+9,545 |
+상동 |
+해당없음 |
+
+㈜5민랩 |
+2013.09.24 |
+서울시 마포구 양화로 19, 1호, 8층(합정동, 합정오피스빌딩) |
+게임소프트웨어 개발 및 공급 |
+8,223 |
+상동 |
+해당없음 |
+
+㈜렐루게임즈 |
+2023.06.01 |
+경기도 성남시 분당구 성남대로 151, 2층 225호, 226호(구미동, 분당엠코헤리츠) |
+소프트웨어 개발 및 공급 |
+10,690 |
+상동 |
+해당없음 |
+
+㈜플라이웨이게임즈 |
+2023.09.12 |
+서울시 서초구 강남대로 327, 18층(서초동, 대륭서초타워) |
+소프트웨어 개발 및 공급 |
+15,143 |
+상동 |
+해당없음 |
+
+㈜인조이스튜디오 |
+2024.12.02 |
+경기도 성남시 분당구 분당내곡로 117(백현동, 그레이츠 판교) |
+게임 소프트웨어 개발 |
+17,282 |
+상동 |
+해당없음 |
+
+㈜조프소프트 |
+2018.11.02 |
+서울시 강남구 테헤란로5길 7, 8층 120호 (역삼동, 케이지타워) |
+게임 소프트웨어 개발 및 공급 |
+1,742 |
+상동 |
+해당없음 |
+
+㈜넵튠 |
+2012.01.31 |
+서울특별시 강남구 언주로 508, 11층(역삼동, 공무원연금공단 서울상록회관) |
+게임 소프트웨어 개발 및 공급 |
+338,010 |
+실질지배력보유 (K-IFRS 1110호) |
+해당 |
+
+㈜님블뉴런 |
+2013.03.29 |
+경기도 성남시 분당구 황새울로 246 도담빌딩 12층 |
+게임 소프트웨어 개발 및 공급 |
+7,874 |
+상동 |
+해당없음 |
+
+㈜플레이하드 |
+2016.05.31 |
+서울특별시 마포구 양화로 19, 제2호 제2층(합정동, 합정오피스빌딩) |
+게임 소프트웨어 개발 및 공급 |
+6,276 |
+상동 |
+해당없음 |
+
+트리플라㈜ |
+2021.05.18 |
+서울특별시 강남구 테헤란로107길 6, 5층 |
+게임 소프트웨어 개발 및 공급 |
+18,332 |
+상동 |
+해당없음 |
+
+㈜엔크로키 |
+2019.10.15 |
+서울특별시 강남구 테헤란로 82길 15 |
+게임 소프트웨어 개발 및 공급 |
+898 |
+상동 |
+해당없음 |
+
+㈜팬텀 |
+2019.09.09 |
+서울특별시 마포구 와우산로29가길 69, 3층 |
+게임 소프트웨어 개발 및 공급 |
+12,797 |
+상동 |
+해당없음 |
+
+프리티비지㈜ |
+2021.03.18 |
+경상북도 김천시 혁신로 185, 2층 231-5호(율곡동) |
+게임 소프트웨어 개발 및 공급 |
+2,178 |
+상동 |
+해당없음 |
+
+㈜이케이게임즈 |
+2014.02.21 |
+경기도 성남시 분당구 돌마로 75, 804호(금곡동, 미금프라자) |
+게임 소프트웨어 개발 및 공급 |
+4,127 |
+상동 |
+해당없음 |
+
+㈜나인비 게임즈 |
+2025.07.25 |
+서울특별시 성동구 광나루로6길 42(성수동2가, 동흥빌딩) |
+소프트웨어 개발 및 공급 |
+90 |
+의결권 과반수 소유 (K-IFRS 1110호) |
+해당없음 |
+
+㈜룬샷게임즈 |
+2025.12.09 |
+서울특별시 강남구 테헤란로 231(역삼동) |
+소프트웨어 개발 및 공급 |
+500 |
+상동 |
+해당없음 |
+
+㈜올리브트리게임즈 |
+2025.12.09 |
+경기도 성남시 분당구 분당내곡로 117(백현동, 그레이츠 판교) |
+소프트웨어 개발 및 공급 |
+500 |
+상동 |
+해당없음 |
+
+En Masse Entertainment, Inc. |
+2010.10.29 |
+2121 Park Place, STE 250, El Segundo, CA 90245, USA |
+게임 소프트웨어 공급 |
+10,484 |
+상동 |
+해당없음 |
+
+Krafton Americas, Inc. |
+2017.09.14 |
+2121 Park Place, STE 250, El Segundo, CA 90245, USA |
+게임 소프트웨어 개발 및 공급 |
+54,016 |
+상동 |
+해당없음 |
+
+KRAFTON EUROPE B.V. |
+2017.11.22 |
+Strawinskylaan 667, 1077 XX Amsterdam, The Netherlands |
+게임 소프트웨어 개발 및 공급 |
+45,973 |
+상동 |
+해당없음 |
+
+KRAFTON CHINA |
+2018.05.09 |
+53F, Sinar Mas PlazaNo 501 East Dong Daming Rd., Hongkou District. Shanghai, China |
+게임 개발 및 공급 |
+12,951 |
+상동 |
+해당없음 |
+
+PUBG Mad Glory, LLC |
+2012.07.27 |
+25 W. Main Street Madison WI, 53703, USA |
+소프트웨어 개발 및 공급 |
+31,323 |
+상동 |
+해당없음 |
+
+KP PTE. LTD. |
+2019.02.18 |
+111 Somerset Road 06-07 111 Somerset 238164, Singapore |
+컨설팅 자문 및 투자 |
+6,378 |
+상동 |
+해당없음 |
+
+Striking Distance Studios, Inc. |
+2019.05.06 |
+6111 Bollinger Canyon Road, Suite 150, San Ramon, CA, 94583, USA |
+소프트웨어 개발 |
+61,668 |
+상동 |
+해당없음 |
+
+KRAFTON JAPAN, Inc. |
+2019.09.02 |
+8F, Bizcore Shibuya, 1-3-15, Shibuya, Shibuya-ku, Tokyo, JAPAN |
+게임 개발 및 서비스 |
+7,787 |
+상동 |
+해당없음 |
+
+PUBG Entertainment, Inc. |
+2020.02.10 |
+2121 Park Place, STE 250, El Segundo, CA 90245, USA |
+영상물 제작 |
+2,469 |
+상동 |
+해당없음 |
+
+KRAFTON Ventures, Inc. |
+2020.02.10 |
+2121 Park Place, STE 250, El Segundo, CA 90245, USA |
+투자 |
+2,608 |
+상동 |
+해당없음 |
+
+Krafton Ventures, L.L.C. |
+2020.01.21 |
+2121 Park Place, STE 250, El Segundo, CA 90245, USA |
+투자 |
+77 |
+상동 |
+해당없음 |
+
+Krafton Ventures Fund, L.P. |
+2020.01.21 |
+2121 Park Place, STE 250, El Segundo, CA 90245, USA |
+투자 |
+4,574 |
+상동 |
+해당없음 |
+
+Striking Distance Studios Spain, S.L. |
+2020.04.23 |
+Plaza Espana 3, 4º, 1, CP 50004, Zaragoza, Spain |
+게임 소프트웨어 개발 |
+3,683 |
+상동 |
+해당없음 |
+
+En Masse Entertainment Texas, Inc. |
+2012.04.26 |
+211 East 7th Street Suite 620 Austin, TX 78701-3218, USA |
+게임 소프트웨어 개발 |
+14 |
+상동 |
+해당없음 |
+
+KRAFTON INDIA PRIVATE LIMITED |
+2020.11.21 |
+Near Kantiveera Stadium, 19th Floor, Workspace Central Bangalore, Bagamane PallaviTower, No 20, 1st Cross Road, Sampangiram Nagar, Bengaluru, Bengaluru Urban, Karnataka, 560027, India |
+게임 소프트웨어 개발 및 공급 |
+25,916 |
+상동 |
+해당없음 |
+
+SDS Interactive Canada Inc. |
+2021.01.15 |
+Suite 2500, 666 Burrard Street, Vancouver Bc V6C 2X8, Canada |
+게임 소프트웨어 개발 |
+1,670 |
+상동 |
+해당없음 |
+
+Krafton Global GP, LLC |
+2021.11.04 |
+2121 Park Place, STE 250, El Segundo, CA 90245, USA |
+기타전문서비스 |
+293 |
+상동 |
+해당없음 |
+
+Krafton Global, LP |
+2021.11.04 |
+2121 Park Place, STE 250, El Segundo, CA 90245, USA |
+기타전문서비스 |
+869 |
+상동 |
+해당없음 |
+
+Unknown Worlds Entertainment, Inc. |
+2003.12.31 |
+2121 Park Place, STE 250, El Segundo, CA 90245, USA |
+게임 소프트웨어 개발 |
+145,106 |
+상동 |
+해당 |
+
+Neon Giant AB |
+2017.07.13 |
+Svartbacksgatan 10, 753 20 Uppsala, Sweden |
+게임 소프트웨어 개발 |
+2,461 |
+상동 |
+해당없음 |
+
+KRAFTON MONTREAL STUDIO, INC. |
+2022.11.28 |
+800-606 rue Cathcart Montreal Quebec H3B1K9 Canada |
+게임 소프트웨어 개발 |
+15,088 |
+상동 |
+해당없음 |
+
+VECTOR NORTH s.r.o. |
+2023.02.23 |
+Purkynova 2121/3, Nove Mesto, 110 00 Praha 1, Czech Republic |
+게임 소프트웨어 개발 |
+3,893 |
+상동 |
+해당없음 |
+
+Tango Gameworks, Inc |
+2024.10.09 |
+Sumitomo Fudosan Mita First building 6F, 4-2-8, Shibaura, Minato-ku, Tokyo |
+게임 소프트웨어 개발 |
+11,277 |
+상동 |
+해당없음 |
+
+Blue Ocean Capital Fund I, L.P. |
+2023.11.01 |
+100 KING STREET WEST, 6200, TORONTO ON M5X 1B8, CANADA |
+투자 |
+2,442 |
+상동 |
+해당없음 |
+
+StoryCraft LLC |
+2025.02.13 |
+2121 Park Place, Suite 250, El Segundo, CA 90245 |
+기타 전문서비스 |
+46 |
+상동 |
+해당없음 |
+
+Nautilus Mobile App Private Limited |
+2013.03.16 |
+101-104, Metro House, Mangaldas Road, Pune, Pune, Maharashtra, India, 411001 |
+게임 소프트웨어 개발 |
+8,836 |
+상동 |
+해당없음 |
+
+Blue Ocean Games Fund I Inc. |
+2025.06.17 |
+251 Luttle Falls Drive, Wilmington, New Castle County, Delaware 19808, USA |
+투자 |
+156 |
+상동 |
+해당없음 |
+
+Eleventh Hour Games, Inc |
+2021.10.19 |
+874 Walker Road, Suite C, City of Dover, County of Kent, State of Delaware 19904 |
+게임 소프트웨어 개발 |
+16,122 |
+상동 |
+해당없음 |
+
+ADKRAFTON, Inc. |
+2018.06.14 |
+8F, Bizcore Shibuya, 1-3-15, Shibuya, Shibuya-ku, Tokyo, JAPAN |
+지주회사 |
+330,895 |
+상동 |
+해당 |
+
+ADK Holdings Inc. |
+2018.06.14 |
+23-1 Toranomon 1 cho-me, Minatoku, Tokyo, JAPAN |
+투자 |
+1,097,188 |
+상동 |
+해당 |
+
+ADK Marketing Solutions Inc. |
+1956.03.19 |
+23-1 Toranomon 1 cho-me, Minatoku, Tokyo, JAPAN |
+광고대행 |
+904,705 |
+상동 |
+해당 |
+
+ADK Creative One Inc. |
+2019.01.01 |
+23-1 Toranomon 1 cho-me, Minatoku, Tokyo, JAPAN |
+영화·비디오물 및 방송프로그램 제작 |
+96,810 |
+상동 |
+해당 |
+
+ADK Emotions Inc. |
+2019.01.04 |
+23-1 Toranomon 1 cho-me, Minatoku, Tokyo, JAPAN |
+영상물 제작 및 배급 |
+126,680 |
+상동 |
+해당 |
+
+ADK Communications Inc. |
+1980.12.01 |
+2 Chome-10-1 Toranomon, Minato City, Tokyo, JAPAN |
+광고 대행 |
+8,630 |
+상동 |
+해당없음 |
+
+ADK Direct Inc. |
+1999.08.05 |
+23-1 Toranomon 1 cho-me, Minatoku, Tokyo, JAPAN |
+광고 대행 |
+4,437 |
+상동 |
+해당없음 |
+
+ADK Digital Communications Inc. |
+2011.08.01 |
+23-1 Toranomon 1 cho-me, Minatoku, Tokyo, JAPAN |
+광고 대행 |
+57,647 |
+상동 |
+해당없음 |
+
+ADK Digital Operations Inc. |
+2019.07.26 |
+23-1 Toranomon 1 cho-me, Minatoku, Tokyo, JAPAN |
+기타 사업지원 서비스 |
+2,510 |
+상동 |
+해당없음 |
+
+ADK AviC Performance Design Inc. |
+2024.05.01 |
+23-1 Toranomon 1 cho-me, Minatoku, Tokyo, JAPAN |
+광고 대행 |
+538 |
+상동 |
+해당없음 |
+
+CHERRY Inc. |
+2018.07.02 |
+2-26-2 Jingumae 5-chome Shibuya-ku, Tokyo |
+광고 대행 |
+5,591 |
+상동 |
+해당없음 |
+
+kind Co., Ltd. |
+1996.01.22 |
+601, 30-12, Sakuragaoka-cho, Sibuya-ku,Tokyo |
+컴퓨터 프로그래밍 서비스 |
+4,974 |
+상동 |
+해당없음 |
+
+Croco Advertising Co., Ltd. |
+2019.06.17 |
+Room 2202, 2F, Building2, No.20 Xuhong Middle Road, Xuhui District, Shanghai, CHINA |
+광고 대행 |
+1,657 |
+상동 |
+해당없음 |
+
+ADK Emotions Singapore Pte. Ltd. |
+1997.05.22 |
+78 Shenton Way, No. 20-03, Singapore |
+영화·비디오물 및 방송프로그램 배급 |
+3,651 |
+상동 |
+해당없음 |
+
+A-Bridge Inc. |
+2018.12.03 |
+23-1 Toranomon 1 cho-me, Minatoku, Tokyo, JAPAN |
+경영 서비스 |
+11,591 |
+상동 |
+해당없음 |
+
+ADK Social Media Marketing Inc. |
+2024.03.22 |
+8-21 3Chome, Toranomon, Minato City, Tokyo, JAPAN |
+광고 대행 |
+696 |
+상동 |
+해당없음 |
+
+Eiken Co., Ltd. |
+1969.03.10 |
+6-chome-56-7, Minamisenju, Arakawa City,Tokyo, JAPAN |
+영화·비디오물 및 방송프로그램 제작 |
+8,523 |
+상동 |
+해당없음 |
+
+Studio Kai Inc. |
+2019.06.10 |
+5-chome-33-11 Honcho, Nakano City, Tokyo Japan |
+영화·비디오물 및 방송프로그램 제작 |
+17,393 |
+상동 |
+해당없음 |
+
+Nihon Ad Systems Inc. |
+1975.10.01 |
+23-1 Toranomon 1 cho-me, Minatoku, Tokyo, JAPAN |
+영상물 제작 및 배급 |
+7,910 |
+상동 |
+해당없음 |
+
+Right Song Music Publishing Co., LTD. |
+1982.10.25 |
+23-1 Toranomon 1 cho-me, Minatoku, Tokyo 105-6312, Japan |
+음악 및 기타 오디오물 출판 |
+838 |
+상동 |
+해당없음 |
+
+ADK Emotions NY Inc. |
+2013.01.18 |
+156 Fifth Avenue, Suite 934, New York, NY 10010-7761, U.S.A. |
+기타 전문 서비스 |
+21,915 |
+상동 |
+해당없음 |
+
+PT. ADK Connect Emotions Indonesia |
+2020.07.06 |
+Prudential Centre 22nd Floor Unit S-06, Jl.Casablanca Raya Kav.88 Jakarta, Indonesia |
+영화·비디오물 및 방송프로그램 배급 |
+1,410 |
+상동 |
+해당없음 |
+
+PT. IMMG Indonesia |
+2002.09.06 |
+JL. KEMANG NO.5 Kel. Bangka, Kec. Mampang Prapantan, Kota |
+영화·비디오물 및 방송프로그램 배급 |
+1,903 |
+상동 |
+해당없음 |
+
+ADK Emotions Beijing Co.,Ltd. |
+2011.02.09 |
+Room 2003, No. 20 Shijingshan Road, Shijingshan District, Beijing, China |
+영화·비디오물 및 방송프로그램 배급 |
+11,952 |
+상동 |
+해당없음 |
+
+Eiken Enterprise Co., Ltd. |
+1975.01.29 |
+6-56-7 Minami-Senju Arakawa-Ku Tokyo |
+영화·비디오물 및 방송프로그램 제작 |
+524 |
+상동 |
+해당없음 |
+
+CRAFT.AI, INC. |
+2025.11.04 |
+251 Little Falls Drive, City of Wilmington, Country of New Castle, Delaware 19808 |
+인공지능 및 로봇시스템 개발 |
+- |
+상동 |
+해당없음 |
 
 [표 끝]

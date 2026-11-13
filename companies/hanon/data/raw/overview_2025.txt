@@ -1,6 +1,6 @@
-# 한온시스템 사업보고서 (2025.12) — I. 회사의 개요 (본문 텍스트)
+# 한온시스템 사업보고서 (2025.12) — I. 회사의 개요 + 상세표-1 연결대상 종속회사 현황(상세) (본문 텍스트)
 # 접수번호 20260318000645 · 접수일 20260318 · 원문 https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000645
-# OpenDART document.xml에서 자동 추출 (2026-11-13 17:59 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
+# OpenDART document.xml에서 자동 추출 (2026-11-13 18:16 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
 
 ## I. 회사의 개요
 
@@ -1319,3 +1319,407 @@ D |
 라. 정관상 사업목적 추가 현황표
 
 - 해당 사항 없음
+
+## 1. 연결대상 종속회사 현황(상세)
+
+[표]
+
+☞ 본문 위치로 이동
+ |
+
+[표 끝]
+
+[표]
+
+[표]
+
+ |
+(단위 : 백만원) |
+
+[표 끝]
+
+[표]
+
+상호 |
+설립일 |
+주소 |
+주요사업 |
+최근사업연도말자산총액 |
+지배관계 근거 |
+주요종속회사 여부 |
+
+Hanon Beijing |
+2002.11.29 |
+No. 6, Caixiang West Rd, Caiyuan Industrial Area, Nancai Town, Shunyi Distrct, Beijing, 101300, China |
+자동차 부품 제조 판매 |
+215,008 |
+지분 50%초과보유 |
+해당 (자산총액 750억 이상) |
+
+Hanon Dalian |
+2004.08.23 |
+No.89 Huaihezhong Road of E.T.D.Z, Dalian Municipality, China |
+자동차 부품 제조 판매 |
+311,318 |
+지분 50%초과보유 |
+해당 (자산총액 750억 이상) |
+
+Hanon Shanghai |
+2008.07.14 |
+20th Floor, Hongwell International Plaza No. 1602 West Zhongshan Road, Shanghai, China |
+자동차 부품 개발 기술자문 및 수출업 |
+15,001 |
+지분 50%초과보유 |
+미해당 (자산총액 750억 미만) |
+
+Hanon Chongqing |
+2005.06.15 |
+No.6 Li Jie Road, Li Jia, New Northern Zone, Chongqing, PRC 401122 |
+자동차 부품 제조 판매 |
+8,977 |
+지분 50%초과보유 |
+미해당 (자산총액 750억 미만) |
+
+Hanon Nanchang |
+1996.03.29 |
+No.1 Industry Road, 300# Xiaolan Economy Development Zone, Nanchang, Jiangxi Province, China |
+자동차 부품 제조 판매 |
+54,204 |
+지분 50%초과보유 |
+미해당 (자산총액 750억 이상) |
+
+Hanon Nanjing |
+2007.05.29 |
+№199 Qing Shui Ting Road (West). Jiangning Development Zone, Nanjing, China |
+자동차 부품 제조 판매 |
+40,476 |
+지분 50%초과보유 |
+미해당 (자산총액 750억 미만) |
+
+Hanon Yancheng |
+2013.11.15 |
+No.105 Yandu East Road Yancheng Economic-Technological Development District, Yancheng, Jiangsu Province,China, 224005 |
+자동차 부품 제조 판매 |
+36,493 |
+지분50%초과보유 |
+미해당 (자산총액 750억 미만) |
+
+Hanon New Chongqing |
+2016.05.09 |
+No. 19 Yinglong Road, Longxing Town, Yubei District, Chongqing City |
+자동차 부품 제조 판매 |
+7,635 |
+손자회사 (Hanon Beijing 83.25% 보유) |
+미해당 (자산총액 750억 미만) |
+
+CSG JV |
+2018.01.15 |
+No.1 Jianshe Road Huaxi Industrial Park, Banan District, Chongqing, China |
+자동차 부품 제조 판매 |
+94,445 |
+중대한 지배력 보유 |
+해당 (자산총액 750억 이상) |
+
+FHAC JV |
+2018.08.20 |
+Chaoqiang Xi Street, East of Zhuoyue Road, South of Chengyuan Road, Hi-tech Industry Development Zone, Changchun, Jilin, China |
+자동차 부품 제조 판매 |
+89,461 |
+지분 50%초과보유 |
+해당 (자산총액 750억 이상) |
+
+HASI
+
+ |
+1997.03.21 |
+Keelakaranai Village, Malrosapuram Post, Maraimalai Nagar, Chengal pattu-603204, Kancheepuram District, Tamilnadu, India |
+자동차 부품 제조 판매 |
+203,590 |
+지분 50%초과보유 |
+해당 (자산총액 750억 이상) |
+
+Hanon Bhiwadi |
+1991.12.06 |
+Visteon Climate Systems India Ltd. SP -812-A, Industrial Area, Phase-II, Bhiwadi, Rajasthan, India 301019 |
+자동차 부품 제조 판매 |
+73,005 |
+지분 50%초과보유 |
+미해당 (자산총액 750억 미만) |
+
+Hanon Japan |
+2012.12.05 |
+Hiroshima Sangyou Bunka Center 8F 16-35, Hijiyamahonmachi, Minami-ku Hiroshima 732-0816 Japan |
+자동차 부품 개발 기술자문 및 수출업 |
+46,640 |
+지분 50%초과보유 |
+미해당 (자산총액 750억 미만) |
+
+Hanon Thailand |
+1996.07.31 |
+Eastern Seaboard Industrial Estate, 64/4 Moo 4, Tambol Pluakdaeng, Amphur Pluakdaeng, Rayong 21140, Thailand |
+자동차 부품 제조 판매 |
+238,613 |
+지분 50%초과보유 |
+해당 (자산총액 750억 이상) |
+
+Hanon Slovakia |
+2007.07.16 |
+Ludovita Stura 1033/78, 01901 ILAVA, Slovak Republic |
+자동차 부품 제조 판매 |
+1,145,794 |
+지분 50%초과보유 |
+해당 (자산총액 750억 이상) |
+
+Hanon Turkey |
+2005.08.17 |
+Makine lhtisas OSB. 6th Street No: 5 41455 Dilovasi - Kocaeli, Turkey |
+자동차 부품 제조 판매 |
+254,617 |
+지분 50%초과보유 |
+해당 (자산총액 750억 이상) |
+
+Hanon Portugal |
+2012.12.11 |
+Estrada Nacional No. 252-KM 12, Palmela, 2951-503, Portugal |
+자동차 부품 제조 판매 |
+554,981 |
+지분 50%초과보유 |
+해당 (자산총액 750억 이상) |
+
+Hanon Autopal Services |
+1993.02.18 |
+Luzicka 984/14, 741 01 Novy Jicin, Czech Republic |
+자동차 부품 연구 |
+97,789 |
+지분 50%초과보유 |
+해당 (자산총액 750억 미만) |
+
+Hanon Autopal |
+2003.12.15 |
+Luzicka 14, Cz-74111 Novy Jicin, Czech Republic |
+자동차 부품 제조 판매 |
+507,410 |
+지분 50%초과보유 |
+해당 (자산총액 750억 이상) |
+
+Hanon Charleville |
+1997.05.31 |
+Z.I. de Montjoly - BP 228F-08102, Charleville-Mezieres, Cedex, France |
+자동차 부품 제조 판매 |
+124,397 |
+손자회사 (Hanon Netherlands 100% 소유) |
+해당 (자산총액 750억 이상) |
+
+Hanon Hungary |
+1990.08.16 |
+Aszalvolgyi ut 9-11, Szekesfehervar, 8000, Hungary |
+자동차 부품 제조 판매 |
+486,888 |
+지분 50%초과보유 |
+해당 (자산총액 750억 이상) |
+
+Hanon UK |
+2012.07.24 |
+Springfield Lyons Approach, Chelmsford, Essex, CM2 5LB., United Kingdom |
+자동차 부품 개발 기술자문 및 수출업 |
+1,471 |
+지분 50%초과보유 |
+미해당 (자산총액 750억 미만) |
+
+Hanon Deutschland |
+2012.11.22 |
+Visteonstraße 4-10, 50170 Kerpen, Germany |
+자동차 부품 연구 |
+613,751 |
+지분 50%초과보유 |
+해당 (자산총액 750억 이상) |
+
+Hanon Netherlands |
+2012.11.09 |
+
+Nieuw Eyckholt 282
+
+6419 DJ Heerlen, Netherlands
+
+ |
+자동차 부품 판매 |
+1,766,354 |
+지분 50%초과보유 |
+해당 (자산총액 750억 이상) |
+
+Hanon Auto Parts Hungary |
+2018.11.05 |
+2651 Retsag, Ipari Park 4, Hungary |
+자동차 부품 제조 판매 |
+47,828 |
+지분 50%초과보유 |
+미해당 (자산총액 750억 미만) |
+
+Hanon Alabama |
+2003.02.14 |
+676 Halla-Bama Drive, Shorter, AL 36075 U.S.A. |
+자동차 부품 제조 판매 |
+1,152,494 |
+지분 50%초과보유 |
+해당 (자산총액 750억 이상) |
+
+Hanon USA |
+2012.10.12 |
+39600 Lewis Drive, Novi, MI. 48377, U.S. |
+자동차 부품 제조 판매 및 연구 |
+1,219,123 |
+지분 50%초과보유 |
+해당 (자산총액 750억 이상) |
+
+Hanon Canada |
+1989.06.20 |
+360 University Ave., Belleville, Ontario, Canada K8N 5T6 |
+자동차 부품 제조 판매 |
+79,267 |
+지분 50%초과보유 |
+해당 (자산총액 750억 미만) |
+
+Hanon Coclisa |
+1984.12.12 |
+Av. Laguna de Tamiahua No. 7325, Col. Partido Doblado, Cd. Juarez, Chihuahua,Mexico C.P. 32340 |
+자동차 부품 제조 판매 |
+174,488 |
+지분 50%초과보유 |
+해당 (자산총액 750억 이상) |
+
+Hanon Mexicana |
+1992.04.09 |
+Prolongacion Circuito El Marques Sur 57-1 Parque Industrial El Marques Queretaro, Mexico C.P. 76246 |
+자동차 부품 제조 판매 |
+222,072 |
+지분 50%초과보유 |
+해당 (자산총액 750억 이상) |
+
+Hanon Brazil |
+2013.09.05 |
+Rodovia Dom Pedro I, Km 87 - Pista Norte, areas 27A e 28A. Atibaia, SP. Zip Code: 12952-821 Brasil |
+자동차 부품 제조 판매 |
+48,791 |
+지분 50%초과보유 |
+미해당 (자산총액 750억 미만) |
+
+Hanon South Africa |
+2015.06.16 |
+3rdFloor, Regus House Fairview Office Park, Ring Road Port Elizabeth Eastern Cape, Republic of South Africa |
+자동차 부품 제조 판매 |
+16,341 |
+지분 50%초과보유 |
+미해당 (자산총액 750억 미만) |
+
+Hanon EFP Corporation |
+
+2018.08.08
+
+ |
+195, Sinilseo-ro, Daedeok-gu, DaejeonKorea |
+지주회사 |
+1,480,246 |
+지분 50%초과보유 |
+해당 (자산총액 750억 이상) |
+
+Hanon EFP Deutschland GmbH. |
+
+2018.08.29
+
+ |
+Visteonstr. 4-10, 50170 Kerpen, Germany |
+자동차 부품 제조 판매 및 연구 |
+592,529 |
+손자회사 (EFP Corporation 100% 소유) |
+해당 (자산총액 750억 이상) |
+
+Hanon EFP Mexico |
+2018.11.05 |
+Ave. Del Charro #1715, CP 32410 Parque Industrial Omega Cd. Juarez, Chihuahua, Mexico |
+자동차 부품 제조 판매 |
+183,629 |
+손자회사 (EFP Corporation 100% 소유) |
+해당 (자산총액 750억 이상) |
+
+Hanon EFP Mexico Service |
+2018.11.05 |
+Ave. Del Charro #1715, CP 32410 Parque Industrial Omega Cd. Juarez, Chihuahua, Mexico |
+용역서비스 |
+1,101 |
+손자회사 (EFP Corporation 100% 소유) |
+미해당 (자산총액 750억 미만) |
+
+Hanon EFP Canada |
+2019.01.08 |
+800 Tesma Way, Concord, ON, Canada |
+자동차 부품 제조 판매 및 연구 |
+1,015,926 |
+손자회사 (EFP Corporation 100% 소유) |
+해당 (자산총액 750억 이상) |
+
+Hanon EFP Korea |
+2019.03.29 |
+20, Asanvalleyseo-ro, Dunpo-myeon, Asan-si, Chungcheongnam-do, Republic of Korea |
+자동차 부품 제조 판매 |
+112,876 |
+손자회사 (EFP Corporation 100% 소유) |
+해당 (자산총액 750억 미만) |
+
+Hanon EFP Italia Campiglione |
+2019.03.29 |
+Via Cristoforo Colombo 1, 10128 Torino, Italy |
+자동차 부품 제조 판매 및 연구 |
+218,961 |
+손자회사 (EFP Corporation 100% 소유) |
+해당 (자산총액 750억 이상) |
+
+Hanon EFP Italia Benevento |
+2019.03.29 |
+Loc. Olivola Via E. Ferrari SNC, 82100 Benevento (BN), Italy |
+자동차 부품 제조 판매 |
+13,525 |
+손자회사 (EFP Corporation 100% 소유) |
+미해당 (자산총액 750억 미만) |
+
+Hanon Systems Plovdiv EOOD |
+2019.03.29 |
+Rakovski Industrial Zone - Magna Powertrain Plant, 4142 Stryama village, Rakovski Municipality, Plovdiv Region, Bulgaria |
+자동차 부품 제조 판매 |
+151,670 |
+증손자회사 (EFP Deutschland 100% 소유) |
+해당 (자산총액 750억 이상) |
+
+Hanon EFP Changzhou |
+2019.03.29 |
+Plant 4# and 8#, No.6 Environmental Protection 1st Road, Environmental Protection Industrial Park, Xinbei District, Changzhou, Jiangsu, China |
+자동차 부품 제조 판매 |
+281,560 |
+손자회사 (EFP Corporation 100% 소유) |
+해당 (자산총액 750억 이상) |
+
+Hanon Thermal Technology |
+2021.03.31 |
+Kladno - Krocehlavy, Unhostska 2747, the Czech Republic |
+자동차 부품 제조 판매 |
+159,720 |
+지분 50%초과보유 |
+해당 (자산총액 750억 이상) |
+
+Powertrain Cooling de Mexico |
+
+2021.05.07
+
+ |
+Ave. Santiago Poniente 200, Lote 1. Manzana 5, Ciudad Satelite, San Luis Potosi, SLP, Mexico 78423 |
+
+자동차 부품 제조 판매
+
+ |
+33,919 |
+손자회사 (Hanon Netherlands 100% 소유) |
+
+미해당 (자산총액 750억 미만)
+
+ |
+
+[표 끝]

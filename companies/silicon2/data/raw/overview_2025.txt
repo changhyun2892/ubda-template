@@ -1,6 +1,6 @@
-# 실리콘투 사업보고서 (2025.12) — I. 회사의 개요 (본문 텍스트)
+# 실리콘투 사업보고서 (2025.12) — I. 회사의 개요 + 상세표-1 연결대상 종속회사 현황(상세) (본문 텍스트)
 # 접수번호 20260320001024 · 접수일 20260320 · 원문 https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320001024
-# OpenDART document.xml에서 자동 추출 (2026-11-13 18:01 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
+# OpenDART document.xml에서 자동 추출 (2026-11-13 18:23 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
 
 ## I. 회사의 개요
 
@@ -1429,3 +1429,145 @@ Grand View Research
 . 
 향후 재고 관리 체계 확립 및 안정적인 매입 거래처 확보 등 사업성이 확보되는 시점에 맞춰 추진할 계획입니다
 .
+
+## 1. 연결대상 종속회사 현황(상세)
+
+[표]
+
+☞ 본문 위치로 이동
+ |
+
+[표 끝]
+
+[표]
+
+[표]
+
+ |
+(단위 : 원) |
+
+[표 끝]
+
+[표]
+
+상호 |
+설립일 |
+주소 |
+주요사업 |
+최근사업연도말자산총액 |
+지배관계 근거 |
+주요종속회사 여부 |
+
+Stylekorean Inc. |
+2015.04.28 |
+10928 Bloomfield Ave, Santa Fe Springs, CA 90670 |
+화장품유통판매업 |
+178,097,545,751 |
+의결권의 과반수 소유 (K-iFRS 1110호) |
+해당 |
+
+STYLEKOREANMY SDN. BHD |
+2022.06.02 |
+19, Jalan 8/91, Taman Shamelin Perkasa, 56100 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia |
+화장품유통판매업 |
+13,141,898,399 |
+의결권의 과반수 소유 (K-iFRS 1110호) |
+비해당 |
+
+STYLEKOREANEU B.V. |
+2023.03.13 |
+Keizersgracht 555, 1017 DR Amsterdam, Netherlands |
+화장품유통판매업 |
+3,986,310,629 |
+의결권의 과반수 소유 (K-iFRS 1110호) |
+비해당 |
+
+SKO Sp. z o.o. |
+2023.01.30 |
+UL.SWIDNICKA,numer36,lokal 12, kod poczt. 50-068,poczta WROCLAW |
+물류대행업 |
+150,561,012,296 |
+의결권의 과반수 소유 (K-iFRS 1110호) |
+해당 |
+
+MOIDA LLC |
+2023.08.07 |
+119331,MOSCOW CITY, Russia VN.TER.G. MUNICIPAL DISTRICT LOMONOSOVSKY,PR-KT VERNADSKY, D. 29, ROOM 1/14 |
+화장품유통판매업 |
+140,195,415 |
+의결권의 과반수 소유 (K-iFRS 1110호) |
+비해당 |
+
+STYLEKORAN VIETNAM CO.,LTD |
+2019.06.06 |
+No. 9, Thuy Phuong Street, Duc Thang Ward, Bac Tu Liem District, Ha Noi |
+화장품유통판매업 |
+9,095,777,633 |
+의결권의 과반수 소유 (K-iFRS 1110호) |
+비해당 |
+
+STYLEKOREAN UK LIMITED. |
+2024.06.15 |
+SOVEREIGN HOUSE, GRAHAM ROAD, HARROW, LONDON, ENGLAND, HA3 5RF |
+화장품유통판매업 |
+32,525,921,109 |
+의결권의 과반수 소유 (K-iFRS 1110호) |
+비해당 |
+
+STYLEKOREAN FR SAS. |
+2024.07.10 |
+16 rue Portalis 75008 Paris |
+화장품유통판매업 |
+4,951,684,499 |
+의결권의 과반수 소유 (K-iFRS 1110호) |
+비해당 |
+
+STYLEKOREAN SG PTE. LTD. |
+2024.06.26 |
+111 SOMERSET ROAD, #06-01S, 111 SOMERSET, SINGAPORE (238164) |
+화장품유통판매업 |
+423,957,452 |
+의결권의 과반수 소유 (K-iFRS 1110호) |
+비해당 |
+
+STYLEKOREAN MIDDLE EAST FZE |
+2025.04.28 |
+Plot No. S60305, Street S1500, Jebel Ali Industrial Second, Jebel Ali Freezone South, Dubai |
+화장품유통판매업 |
+ 25,015,236,444 |
+의결권의 과반수 소유 (K-iFRS 1110호) |
+비해당 |
+
+Stylekorean Italy S.r.l. |
+2025.06.25 |
+via pietro cossa No.2,Milano(20122) |
+화장품유통판매업 |
+ 1,423,001,465 |
+의결권의 과반수 소유 (K-iFRS 1110호) |
+비해당 |
+
+Stylekorean MX S. DE R.L. DE C.V. |
+2025.07.22 |
+AVENIDA PASEO DE LA REFORMA 222 num.ext. TORRE 2 PISO 24 num. int.DEPARTAMENTO EF Juarez Cuauhtemoc Ciudadde Mexico |
+화장품유통판매업 |
+ 5,756,811,489 |
+의결권의 과반수 소유 (K-iFRS 1110호) |
+비해당 |
+
+MOIDA Germany GmbH |
+2025.10.28 |
+Edisonstraße 63, 1. Stock, 12459 Berlin |
+화장품유통판매업 |
+ 590,620,811 |
+의결권의 과반수 소유 (K-iFRS 1110호) |
+비해당 |
+
+STYLEKOREAN MIDDLE EAST TRADING CO. LLC |
+2025.11.28 |
+303-293, Westburry Tower 1, Marasi Dr. Street, Business Bay, Dubai, Dubai |
+화장품유통판매업 |
+ 116,174,968 |
+의결권의 과반수 소유 (K-iFRS 1110호) |
+비해당 |
+
+[표 끝]
