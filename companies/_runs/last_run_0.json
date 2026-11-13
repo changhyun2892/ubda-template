@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-13 20:10:15 KST",
+ "started_at": "2026-11-13 20:19:43 KST",
  "steps": [
   "collect",
   "text",
@@ -10,7 +10,7 @@
  "companies": {
   "amorepacific": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.0,
     "result": 0
    },
    "text": {
@@ -18,7 +18,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.5,
     "result": 0
    },
    "build": {
@@ -32,7 +32,7 @@
   },
   "bnkfg": {
    "collect": {
-    "sec": 0.7,
+    "sec": 0.9,
     "result": 0
    },
    "text": {
@@ -40,7 +40,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -54,7 +54,7 @@
   },
   "emart": {
    "collect": {
-    "sec": 0.7,
+    "sec": 0.9,
     "result": 0
    },
    "text": {
@@ -62,7 +62,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -76,28 +76,6 @@
   },
   "hanmisemi": {
    "collect": {
-    "sec": 0.7,
-    "result": 0
-   },
-   "text": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.2,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.3,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "hdksoe": {
-   "collect": {
     "sec": 0.8,
     "result": 0
    },
@@ -106,11 +84,33 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
+    "sec": 0.2,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.2,
+    "result": 0
+   }
+  },
+  "hdksoe": {
+   "collect": {
+    "sec": 0.7,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
     "sec": 0.3,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -120,7 +120,7 @@
   },
   "ibk": {
    "collect": {
-    "sec": 0.7,
+    "sec": 0.9,
     "result": 0
    },
    "text": {
@@ -128,7 +128,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -142,7 +142,7 @@
   },
   "kakao": {
    "collect": {
-    "sec": 0.8,
+    "sec": 0.7,
     "result": 0
    },
    "text": {
@@ -150,7 +150,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -164,7 +164,7 @@
   },
   "kia": {
    "collect": {
-    "sec": 0.7,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -172,7 +172,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -186,7 +186,7 @@
   },
   "lgelec": {
    "collect": {
-    "sec": 0.7,
+    "sec": 0.9,
     "result": 0
    },
    "text": {
@@ -194,7 +194,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -216,7 +216,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -230,7 +230,7 @@
   },
   "nongshim": {
    "collect": {
-    "sec": 0.7,
+    "sec": 0.9,
     "result": 0
    },
    "text": {
@@ -238,7 +238,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -252,7 +252,7 @@
   },
   "samsungheavy": {
    "collect": {
-    "sec": 0.7,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -260,7 +260,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -282,7 +282,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -296,7 +296,7 @@
   },
   "wontech": {
    "collect": {
-    "sec": 0.7,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -304,7 +304,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.5,
     "result": 0
    },
    "build": {
@@ -317,6 +317,6 @@
    }
   }
  },
- "finished_at": "2026-11-13 20:10:34 KST",
+ "finished_at": "2026-11-13 20:20:05 KST",
  "failed": []
 }
