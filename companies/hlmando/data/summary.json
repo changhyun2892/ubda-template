@@ -1,0 +1,36 @@
+{
+  "slug": "hlmando",
+  "company_id": "MD",
+  "name": "HL만도",
+  "dashboard_path": "dashboard.html?c=hlmando",
+  "name_en": "HL Mando",
+  "stock_code": "204320",
+  "industry": "auto",
+  "industry_name": "자동차",
+  "categories": [
+    "자동차부품"
+  ],
+  "competitors": [
+    "현대모비스",
+    "한온시스템"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=hlmando",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 9454812581023,
+    "operating_profit": 357120974882,
+    "net_income": 122802266761,
+    "operating_margin_pct": 3.7771,
+    "revenue_growth_pct": 6.856,
+    "debt_ratio_pct": 148.1592
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 126,
+    "불일치": 0,
+    "미확인": 0
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 7,
+  "updated_at": "2026-11-13 09:55 KST"
+}

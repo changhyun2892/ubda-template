@@ -1,0 +1,36 @@
+{
+  "slug": "kia",
+  "company_id": "KI",
+  "name": "기아",
+  "dashboard_path": "dashboard.html?c=kia",
+  "name_en": "Kia",
+  "stock_code": "000270",
+  "industry": "auto",
+  "industry_name": "자동차",
+  "categories": [
+    "완성차"
+  ],
+  "competitors": [
+    "현대차",
+    "KG모빌리티"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=kia",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 114140919000000,
+    "operating_profit": 9078148000000,
+    "net_income": 7554174000000,
+    "operating_margin_pct": 7.9535,
+    "revenue_growth_pct": 6.2282,
+    "debt_ratio_pct": 61.7557
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 126,
+    "불일치": 0,
+    "미확인": 0
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 7,
+  "updated_at": "2026-11-13 09:56 KST"
+}

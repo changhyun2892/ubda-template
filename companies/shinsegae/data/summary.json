@@ -1,0 +1,36 @@
+{
+  "slug": "shinsegae",
+  "company_id": "SS",
+  "name": "신세계",
+  "dashboard_path": "dashboard.html?c=shinsegae",
+  "name_en": "Shinsegae",
+  "stock_code": "004170",
+  "industry": "retail",
+  "industry_name": "유통",
+  "categories": [
+    "백화점"
+  ],
+  "competitors": [
+    "롯데쇼핑",
+    "현대백화점"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=shinsegae",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 6929498818333,
+    "operating_profit": 479961762138,
+    "net_income": 64603501354,
+    "operating_margin_pct": 6.9264,
+    "revenue_growth_pct": 5.4652,
+    "debt_ratio_pct": 140.9078
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 126,
+    "불일치": 0,
+    "미확인": 0
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 6,
+  "updated_at": "2026-11-13 09:56 KST"
+}
