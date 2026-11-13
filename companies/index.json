@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-13 15:42 KST",
+ "updated_at": "2026-11-13 16:11 KST",
  "industries": {
   "auto": {
    "name": "자동차",
@@ -54,13 +54,25 @@
    ],
    "theme_color": "#1c3f94",
    "dashboard_path": "dashboard.html?c=amorepacific",
-   "has_data": false,
-   "latest_year": null,
-   "kpis": null,
-   "verification": null,
-   "industry_kpis_found": null,
-   "industry_kpis_total": null,
-   "updated_at": ""
+   "has_data": true,
+   "latest_year": 2025,
+   "kpis": {
+    "revenue": 4252820221496,
+    "operating_profit": 335826547063,
+    "net_income": 247316269750,
+    "operating_margin_pct": 7.8966,
+    "revenue_growth_pct": 9.4646,
+    "debt_ratio_pct": 26.488
+   },
+   "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 126,
+    "불일치": 0,
+    "미확인": 0
+   },
+   "industry_kpis_found": 0,
+   "industry_kpis_total": 9,
+   "updated_at": "2026-11-13 15:50 KST"
   },
   {
    "slug": "apr",
@@ -78,13 +90,25 @@
    ],
    "theme_color": "#ff3b6b",
    "dashboard_path": "dashboard.html?c=apr",
-   "has_data": false,
-   "latest_year": null,
-   "kpis": null,
-   "verification": null,
-   "industry_kpis_found": null,
-   "industry_kpis_total": null,
-   "updated_at": ""
+   "has_data": true,
+   "latest_year": 2025,
+   "kpis": {
+    "revenue": 1527344973381,
+    "operating_profit": 365520628934,
+    "net_income": 289654813287,
+    "operating_margin_pct": 23.9318,
+    "revenue_growth_pct": 111.323,
+    "debt_ratio_pct": 73.113
+   },
+   "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 122,
+    "불일치": 0,
+    "미확인": 4
+   },
+   "industry_kpis_found": 0,
+   "industry_kpis_total": 8,
+   "updated_at": "2026-11-13 15:49 KST"
   },
   {
    "slug": "bgfretail",
@@ -119,7 +143,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:43 KST"
   },
   {
    "slug": "binggrae",
@@ -155,7 +179,7 @@
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:43 KST"
   },
   {
    "slug": "bnkfg",
@@ -191,7 +215,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:50 KST"
   },
   {
    "slug": "classys",
@@ -208,13 +232,25 @@
    ],
    "theme_color": "#7c3aed",
    "dashboard_path": "dashboard.html?c=classys",
-   "has_data": false,
-   "latest_year": null,
-   "kpis": null,
-   "verification": null,
-   "industry_kpis_found": null,
-   "industry_kpis_total": null,
-   "updated_at": ""
+   "has_data": true,
+   "latest_year": 2025,
+   "kpis": {
+    "revenue": 336819637856,
+    "operating_profit": 170600874067,
+    "net_income": 131970250448,
+    "operating_margin_pct": 50.6505,
+    "revenue_growth_pct": 38.6437,
+    "debt_ratio_pct": 27.7293
+   },
+   "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 126,
+    "불일치": 0,
+    "미확인": 0
+   },
+   "industry_kpis_found": 0,
+   "industry_kpis_total": 8,
+   "updated_at": "2026-11-13 15:56 KST"
   },
   {
    "slug": "cosmax",
@@ -231,13 +267,25 @@
    ],
    "theme_color": "#00a0e9",
    "dashboard_path": "dashboard.html?c=cosmax",
-   "has_data": false,
-   "latest_year": null,
-   "kpis": null,
-   "verification": null,
-   "industry_kpis_found": null,
-   "industry_kpis_total": null,
-   "updated_at": ""
+   "has_data": true,
+   "latest_year": 2025,
+   "kpis": {
+    "revenue": 2398757972848,
+    "operating_profit": 195791661624,
+    "net_income": 131076173228,
+    "operating_margin_pct": 8.1622,
+    "revenue_growth_pct": 10.7414,
+    "debt_ratio_pct": 247.0956
+   },
+   "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 126,
+    "불일치": 0,
+    "미확인": 0
+   },
+   "industry_kpis_found": 0,
+   "industry_kpis_total": 9,
+   "updated_at": "2026-11-13 15:49 KST"
   },
   {
    "slug": "crown",
@@ -274,7 +322,7 @@
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:43 KST"
   },
   {
    "slug": "emart",
@@ -310,7 +358,7 @@
    },
    "industry_kpis_found": 2,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:50 KST"
   },
   {
    "slug": "gsretail",
@@ -345,7 +393,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:56 KST"
   },
   {
    "slug": "haitai",
@@ -382,7 +430,7 @@
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:49 KST"
   },
   {
    "slug": "hanafg",
@@ -419,7 +467,7 @@
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:43 KST"
   },
   {
    "slug": "hanmisemi",
@@ -455,7 +503,7 @@
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:50 KST"
   },
   {
    "slug": "hanon",
@@ -491,7 +539,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:56 KST"
   },
   {
    "slug": "hanwhaocean",
@@ -509,13 +557,25 @@
    ],
    "theme_color": "#f37321",
    "dashboard_path": "dashboard.html?c=hanwhaocean",
-   "has_data": false,
-   "latest_year": null,
-   "kpis": null,
-   "verification": null,
-   "industry_kpis_found": null,
-   "industry_kpis_total": null,
-   "updated_at": ""
+   "has_data": true,
+   "latest_year": 2025,
+   "kpis": {
+    "revenue": 12783512278323,
+    "operating_profit": 1167590137928,
+    "net_income": 1245921538208,
+    "operating_margin_pct": 9.1336,
+    "revenue_growth_pct": 18.6294,
+    "debt_ratio_pct": 226.1683
+   },
+   "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 130,
+    "불일치": 0,
+    "미확인": 1
+   },
+   "industry_kpis_found": 0,
+   "industry_kpis_total": 10,
+   "updated_at": "2026-11-13 15:56 KST"
   },
   {
    "slug": "hdhhi",
@@ -533,13 +593,25 @@
    ],
    "theme_color": "#00539b",
    "dashboard_path": "dashboard.html?c=hdhhi",
-   "has_data": false,
-   "latest_year": null,
-   "kpis": null,
-   "verification": null,
-   "industry_kpis_found": null,
-   "industry_kpis_total": null,
-   "updated_at": ""
+   "has_data": true,
+   "latest_year": 2025,
+   "kpis": {
+    "revenue": 17580633257000,
+    "operating_profit": 2037510103000,
+    "net_income": 1415484565000,
+    "operating_margin_pct": 11.5895,
+    "revenue_growth_pct": 21.3591,
+    "debt_ratio_pct": 180.0697
+   },
+   "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 126,
+    "불일치": 0,
+    "미확인": 0
+   },
+   "industry_kpis_found": 0,
+   "industry_kpis_total": 10,
+   "updated_at": "2026-11-13 15:50 KST"
   },
   {
    "slug": "hdksoe",
@@ -558,13 +630,25 @@
    ],
    "theme_color": "#003a70",
    "dashboard_path": "dashboard.html?c=hdksoe",
-   "has_data": false,
-   "latest_year": null,
-   "kpis": null,
-   "verification": null,
-   "industry_kpis_found": null,
-   "industry_kpis_total": null,
-   "updated_at": ""
+   "has_data": true,
+   "latest_year": 2025,
+   "kpis": {
+    "revenue": 29933215227000,
+    "operating_profit": 3904489578000,
+    "net_income": 2928395265000,
+    "operating_margin_pct": 13.044,
+    "revenue_growth_pct": 17.2078,
+    "debt_ratio_pct": 133.862
+   },
+   "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 126,
+    "불일치": 0,
+    "미확인": 0
+   },
+   "industry_kpis_found": 0,
+   "industry_kpis_total": 10,
+   "updated_at": "2026-11-13 15:56 KST"
   },
   {
    "slug": "hlmando",
@@ -600,7 +684,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:56 KST"
   },
   {
    "slug": "hyundai",
@@ -636,7 +720,7 @@
    },
    "industry_kpis_found": 8,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:56 KST"
   },
   {
    "slug": "hyundaidept",
@@ -672,7 +756,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:50 KST"
   },
   {
    "slug": "ibk",
@@ -708,7 +792,7 @@
    },
    "industry_kpis_found": 2,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:57 KST"
   },
   {
    "slug": "imfg",
@@ -744,7 +828,7 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:56 KST"
   },
   {
    "slug": "jbfg",
@@ -780,7 +864,7 @@
    },
    "industry_kpis_found": 1,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:56 KST"
   },
   {
    "slug": "kakao",
@@ -815,7 +899,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:50 KST"
   },
   {
    "slug": "kakaobank",
@@ -851,7 +935,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:57 KST"
   },
   {
    "slug": "kbfg",
@@ -888,7 +972,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:56 KST"
   },
   {
    "slug": "kgm",
@@ -924,7 +1008,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:56 KST"
   },
   {
    "slug": "kia",
@@ -960,7 +1044,7 @@
    },
    "industry_kpis_found": 8,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:50 KST"
   },
   {
    "slug": "kolmar",
@@ -977,13 +1061,25 @@
    ],
    "theme_color": "#e60012",
    "dashboard_path": "dashboard.html?c=kolmar",
-   "has_data": false,
-   "latest_year": null,
-   "kpis": null,
-   "verification": null,
-   "industry_kpis_found": null,
-   "industry_kpis_total": null,
-   "updated_at": ""
+   "has_data": true,
+   "latest_year": 2025,
+   "kpis": {
+    "revenue": 2722419169325,
+    "operating_profit": 239594740448,
+    "net_income": 168220449431,
+    "operating_margin_pct": 8.8008,
+    "revenue_growth_pct": 11.0256,
+    "debt_ratio_pct": 107.3812
+   },
+   "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 126,
+    "불일치": 0,
+    "미확인": 0
+   },
+   "industry_kpis_found": 0,
+   "industry_kpis_total": 9,
+   "updated_at": "2026-11-13 16:04 KST"
   },
   {
    "slug": "krafton",
@@ -1019,7 +1115,7 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:56 KST"
   },
   {
    "slug": "lgdisplay",
@@ -1055,7 +1151,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:56 KST"
   },
   {
    "slug": "lgelec",
@@ -1091,7 +1187,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:50 KST"
   },
   {
    "slug": "lghh",
@@ -1108,13 +1204,25 @@
    ],
    "theme_color": "#a50034",
    "dashboard_path": "dashboard.html?c=lghh",
-   "has_data": false,
-   "latest_year": null,
-   "kpis": null,
-   "verification": null,
-   "industry_kpis_found": null,
-   "industry_kpis_total": null,
-   "updated_at": ""
+   "has_data": true,
+   "latest_year": 2025,
+   "kpis": {
+    "revenue": 6355489977342,
+    "operating_profit": 170688596929,
+    "net_income": -85778983809,
+    "operating_margin_pct": 2.6857,
+    "revenue_growth_pct": -6.7004,
+    "debt_ratio_pct": 23.3216
+   },
+   "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 126,
+    "불일치": 0,
+    "미확인": 0
+   },
+   "industry_kpis_found": 0,
+   "industry_kpis_total": 9,
+   "updated_at": "2026-11-13 16:11 KST"
   },
   {
    "slug": "lotteshopping",
@@ -1152,7 +1260,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:56 KST"
   },
   {
    "slug": "lottewellfood",
@@ -1191,7 +1299,7 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:56 KST"
   },
   {
    "slug": "mobis",
@@ -1227,7 +1335,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:50 KST"
   },
   {
    "slug": "naver",
@@ -1262,7 +1370,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 16:11 KST"
   },
   {
    "slug": "ncsoft",
@@ -1298,7 +1406,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:56 KST"
   },
   {
    "slug": "netmarble",
@@ -1334,7 +1442,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:56 KST"
   },
   {
    "slug": "nongshim",
@@ -1373,7 +1481,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:50 KST"
   },
   {
    "slug": "orion",
@@ -1411,7 +1519,7 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 16:11 KST"
   },
   {
    "slug": "ottogi",
@@ -1449,7 +1557,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:56 KST"
   },
   {
    "slug": "samsungelec",
@@ -1486,7 +1594,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:56 KST"
   },
   {
    "slug": "samsungheavy",
@@ -1504,13 +1612,25 @@
    ],
    "theme_color": "#1428a0",
    "dashboard_path": "dashboard.html?c=samsungheavy",
-   "has_data": false,
-   "latest_year": null,
-   "kpis": null,
-   "verification": null,
-   "industry_kpis_found": null,
-   "industry_kpis_total": null,
-   "updated_at": ""
+   "has_data": true,
+   "latest_year": 2025,
+   "kpis": {
+    "revenue": 10650010702818,
+    "operating_profit": 862210880029,
+    "net_income": 535753735212,
+    "operating_margin_pct": 8.0959,
+    "revenue_growth_pct": 7.5424,
+    "debt_ratio_pct": 265.0482
+   },
+   "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 124,
+    "불일치": 0,
+    "미확인": 1
+   },
+   "industry_kpis_found": 0,
+   "industry_kpis_total": 10,
+   "updated_at": "2026-11-13 15:57 KST"
   },
   {
    "slug": "samsungsds",
@@ -1546,7 +1666,7 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 16:11 KST"
   },
   {
    "slug": "samyang",
@@ -1583,7 +1703,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:56 KST"
   },
   {
    "slug": "semco",
@@ -1619,7 +1739,7 @@
    },
    "industry_kpis_found": 8,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:56 KST"
   },
   {
    "slug": "shinhan",
@@ -1656,7 +1776,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:57 KST"
   },
   {
    "slug": "shinsegae",
@@ -1692,7 +1812,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 16:11 KST"
   },
   {
    "slug": "silicon2",
@@ -1710,13 +1830,25 @@
    ],
    "theme_color": "#111827",
    "dashboard_path": "dashboard.html?c=silicon2",
-   "has_data": false,
-   "latest_year": null,
-   "kpis": null,
-   "verification": null,
-   "industry_kpis_found": null,
-   "industry_kpis_total": null,
-   "updated_at": ""
+   "has_data": true,
+   "latest_year": 2025,
+   "kpis": {
+    "revenue": 1116287364104,
+    "operating_profit": 205361951857,
+    "net_income": 168584659656,
+    "operating_margin_pct": 18.3969,
+    "revenue_growth_pct": 61.4246,
+    "debt_ratio_pct": 55.0944
+   },
+   "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 131,
+    "불일치": 0,
+    "미확인": 0
+   },
+   "industry_kpis_found": 0,
+   "industry_kpis_total": 9,
+   "updated_at": "2026-11-13 16:02 KST"
   },
   {
    "slug": "skhynix",
@@ -1752,7 +1884,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 15:56 KST"
   },
   {
    "slug": "wontech",
@@ -1769,13 +1901,25 @@
    ],
    "theme_color": "#0f766e",
    "dashboard_path": "dashboard.html?c=wontech",
-   "has_data": false,
-   "latest_year": null,
-   "kpis": null,
-   "verification": null,
-   "industry_kpis_found": null,
-   "industry_kpis_total": null,
-   "updated_at": ""
+   "has_data": true,
+   "latest_year": 2025,
+   "kpis": {
+    "revenue": 156838102870,
+    "operating_profit": 51685459840,
+    "net_income": 35220975207,
+    "operating_margin_pct": 32.9547,
+    "revenue_growth_pct": 36.0797,
+    "debt_ratio_pct": 38.0431
+   },
+   "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 131,
+    "불일치": 0,
+    "미확인": 0
+   },
+   "industry_kpis_found": 0,
+   "industry_kpis_total": 8,
+   "updated_at": "2026-11-13 16:04 KST"
   },
   {
    "slug": "woorifg",
@@ -1812,7 +1956,7 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-13 15:12 KST"
+   "updated_at": "2026-11-13 16:11 KST"
   }
  ],
  "graph": {
