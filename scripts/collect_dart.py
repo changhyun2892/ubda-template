@@ -68,7 +68,7 @@ BANK_ACCOUNTS = [
      ("ifrs-full_ImpairmentLossImpairmentGainAndReversalOfImpairmentLossDeterminedInAccordanceWithIFRS9",
       "ifrs-full_AdditionalAllowanceRecognisedInProfitOrLossAllowanceAccountForCreditLossesOfFinancialAssets"), r"^(금융자산)?신용손실.*(전입액|충당금)"),
     ("net_income_owners", "지배주주 순이익", ("IS", "CIS"), ("ifrs-full_ProfitLossAttributableToOwnersOfParent",), r"^지배(기업|주주)(의)?(소유주|주주)?(에게귀속되는)?(당기|분기|반기)?순이익"),
-    ("loans", "대출채권", ("BS",), (), r"^(상각후원가측정)?(원화)?대출채권(및수취채권)?$"),
+    ("loans", "대출채권", ("BS",), ("ifrs-full_LoansAndAdvancesToCustomers", "ifrs-full_Loans"), r"^(상각후원가측정)?(원화)?대출(채권|금)(및(수취채권|기타금융자산))?$"),
     ("deposits", "예수부채", ("BS",), ("ifrs-full_Deposits", "ifrs-full_DepositsFromCustomers"), r"^예수부채$"),
 ]
 BANK_FLOW = {"interest_income", "interest_expense", "net_interest_income", "net_fee_income", "general_admin", "credit_loss", "net_income_owners"}
@@ -180,7 +180,7 @@ def to_rows(items: list[dict], rep: dict, fs: str) -> list[dict]:
     used = items[0].get("rcept_no") or rep["rcept_no"]
     for metric, label, sj, ids, name_re in ACCOUNTS:
         it = pick_sga(items, sj, ids, name_re) if metric == "sga" else pick(items, sj, ids, name_re)
-        if it is None and metric in FLOW:  # 못 찾은 손익 계정: 원인 확인용으로 그 보고서의 손익 계정 이름을 남김
+        if it is None and (metric in FLOW or metric in ("loans", "deposits")):  # 못 찾은 계정: 원인 확인용으로 그 보고서의 해당 재무제표 계정 이름을 남김
             dump = RAW / "unmatched_accounts.json"
             d = json.loads(dump.read_text(encoding="utf-8")) if dump.exists() else {}
             d[f"{rep['bsns_year']}-{rep['reprt_code']}-{metric}"] = [f"{i.get('sj_div')} | {i.get('account_id')} | {(i.get('account_nm') or '').strip()}" for i in items if i.get("sj_div") in sj][:60]

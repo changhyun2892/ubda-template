@@ -53,22 +53,33 @@ def main() -> int:
     if not reps:
         print("[안내] 사업보고서 기록이 없습니다 — collect_dart.py를 먼저 실행하세요.")
         return 0
-    rep = sorted(reps, key=lambda r: (r["bsns_year"], r["rcept_dt"]))[-1]
+    ordered = sorted(reps, key=lambda r: (r["bsns_year"], r["rcept_dt"]), reverse=True)
+    rep = ordered[0]
     out = RAW / f"business_{rep['bsns_year']}.txt"
     meta = RAW / "business_text.json"
     m = json.loads(meta.read_text(encoding="utf-8")) if meta.exists() else {}
-    if out.exists() and m.get(rep["bsns_year"], {}).get("rcept_no") == rep["rcept_no"]:
+    if out.exists() and m.get(rep["bsns_year"], {}).get("rcept_no") == rep["rcept_no"] or (
+            out.exists() and m.get(rep["bsns_year"], {}).get("fallback_for") == rep["rcept_no"]):  # 최신본 원본이 없어 이전 제출본을 이미 쓴 경우
         print(f"이미 저장됨: {out.name} ({rep['report_nm']})")
         return 0
     if not key:
         print("[경고] DART_API_KEY 없음 — 사업보고서 본문 저장을 건너뜁니다.", file=sys.stderr)
         return 0
     try:
-        body = dart_get("document.xml", {"crtfc_key": key, "rcept_no": rep["rcept_no"]}, raw=True)
-        try:
-            z = zipfile.ZipFile(io.BytesIO(body))
-        except zipfile.BadZipFile:
-            raise DartError("원본파일 대신 오류 응답: " + body[:200].decode("utf-8", "replace")) from None
+        # 최신 사업보고서(정정 포함)부터 시도. 원본파일이 없다는 응답(status 014)이면 같은 연도의 그 이전 제출본으로 넘어간다
+        z, tried = None, []
+        for cand in [r for r in ordered if r["bsns_year"] == rep["bsns_year"]]:
+            body = dart_get("document.xml", {"crtfc_key": key, "rcept_no": cand["rcept_no"]}, raw=True)
+            try:
+                z = zipfile.ZipFile(io.BytesIO(body))
+                rep = cand
+                break
+            except zipfile.BadZipFile:
+                tried.append(f"{cand['report_nm']}({cand['rcept_no']}): " + body[:160].decode("utf-8", "replace"))
+        if z is None:
+            raise DartError("원본파일 대신 오류 응답: " + " / ".join(tried))
+        if tried:
+            print("[안내] 최신 제출본 원본파일이 없어 이전 제출본을 사용: " + rep["report_nm"])
         # 본문은 보통 '<접수번호>.xml' (첨부·감사보고서는 '_00760' 같은 꼬리가 붙음)
         names = sorted(z.namelist(), key=lambda n: (n != f"{rep['rcept_no']}.xml", len(n)))
         txt = ""
@@ -94,7 +105,8 @@ def main() -> int:
             f"# 접수번호 {rep['rcept_no']} · 접수일 {rep['rcept_dt']} · 원문 {rep['viewer_url']}\n"
             f"# OpenDART document.xml에서 자동 추출 ({now}). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.\n\n")
     out.write_text(head + txt + "\n", encoding="utf-8")
-    m[rep["bsns_year"]] = {"rcept_no": rep["rcept_no"], "report_nm": rep["report_nm"], "viewer_url": rep["viewer_url"], "saved_at": now, "chars": len(txt)}
+    m[rep["bsns_year"]] = {"fallback_for": ordered[0]["rcept_no"]} if rep is not ordered[0] else {}
+    m[rep["bsns_year"]].update({"rcept_no": rep["rcept_no"], "report_nm": rep["report_nm"], "viewer_url": rep["viewer_url"], "saved_at": now, "chars": len(txt)})
     meta.write_text(json.dumps(m, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     write_log("business_text", {"status": "성공", "checked_at": now, "report": rep["report_nm"], "chars": len(txt)})
     print(f"저장: {out.name} ({len(txt):,}자)")

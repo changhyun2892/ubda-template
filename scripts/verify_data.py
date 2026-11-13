@@ -39,7 +39,10 @@ def restated_evidence(y: int, m: str) -> str:
     rows = {}
     for r in read_csv(CDIR / "data" / "raw" / "dart_financials.csv"):
         if int(r["bsns_year"]) == y and r["metric"] == m and not (m == "cost_of_sales" and r.get("account_nm", "").strip() == "영업비용"):
-            rows[r["reprt_code"]] = (num(r["value"]), num(r["value_cumulative"]))
+            v, cum = num(r["value"]), num(r["value_cumulative"])
+            if m in ("interest_expense", "general_admin", "credit_loss"):  # build_dataset과 같게 금액 기준
+                v, cum = (None if v is None else abs(v)), (None if cum is None else abs(cum))
+            rows[r["reprt_code"]] = (v, cum)
     q1, h1, q3 = rows.get("11013"), rows.get("11012"), rows.get("11014")
     out = []
     for name, prev, cur in (("반기", q1, h1), ("3분기", h1, q3)):

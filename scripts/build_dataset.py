@@ -31,6 +31,7 @@ from ubda_common import (DATA, RAW, ROOT, ST_AUTO, ST_MISMATCH, ST_UNCONFIRMED, 
 
 MANUAL = DATA / "manual"
 FLOW = ["revenue", "cost_of_sales", "sga", "operating_profit", "net_income"]
+EXPENSE_ABS = {"interest_expense", "general_admin", "credit_loss"}  # 은행 비용 계정: 회사·보고서마다 부호가 달라 금액(절댓값)으로 통일
 BANK_FLOW = ["interest_income", "interest_expense", "net_interest_income", "net_fee_income", "general_admin", "credit_loss", "net_income_owners"]
 STATUS_RANK = {ST_VERIFIED: 4, ST_AUTO: 3, ST_UNDISCLOSED: 2, ST_UNCONFIRMED: 1, ST_MISMATCH: 0}
 KPI_COLS = ["kpi_key", "year", "period", "item", "value", "unit", "scope", "source_url", "source_location", "status", "checked_on", "note"]
@@ -101,6 +102,8 @@ def main() -> int:
             v = num(r["value"]) if r else None
             if m == "capex" and v is not None:
                 v = abs(v)  # 회사마다 음수(유출)·양수로 표기가 달라 '지출 금액'으로 통일
+            if m in EXPENSE_ABS and v is not None:
+                v = abs(v)  # 은행 비용 계정도 회사마다 부호가 달라(BNK·JB는 음수) '비용 금액'으로 통일
             aid = f"F-{y}-{m}"
             loc = f"{r['report_nm']} · {r['fs_div']} · {r['sj_div']} · {r['account_nm']}" if r and r["account_nm"] else "계정 미발견"
             st = audit(aid, "financials.csv", "" if v is None else v, r if v is not None else None, loc, "OpenDART fnlttSinglAcntAll 값 그대로")
@@ -133,12 +136,16 @@ def main() -> int:
                 v = num(r["value"]) if r else None
                 if v is None:
                     continue
+                if m in EXPENSE_ABS:
+                    v = abs(v)
                 aid = f"Q-{y}Q{q}-{m}"
                 st = audit(aid, "quarterly.csv", v, r, f"{r['report_nm']} · {r['account_nm']} 3개월", method)
                 q_rows.append({"year": y, "quarter": q, "period": f"{y}-Q{q}", "metric": m, "label": labels.get(m, m), "value": v, "method": method,
                                "source_ids": r["rcept_no"], "audit_id": aid, "status": st})
             a, c3 = by.get((str(y), "11011", m)), by.get((str(y), "11014", m))
             av, cv = (num(a["value"]) if a else None), (num(c3["value_cumulative"]) if c3 else None)
+            if m in EXPENSE_ABS:  # 보고서마다 부호가 달라도 금액 기준으로 맞춘 뒤 Q4 계산
+                av, cv = (None if av is None else abs(av)), (None if cv is None else abs(cv))
             if av is not None and cv is not None:
                 aid = f"Q-{y}Q4-{m}"
                 st = audit(aid, "quarterly.csv", av - cv, a, f"{a['report_nm']} 연간 − {c3['report_nm']} 누적", "연간 − 3분기 누적 (결산조정 포함)")
