@@ -1,5 +1,5 @@
 group,key,label,status,result,where,caution
-공통 재무,annual_financials,연간 재무제표 (DART),자동 수집 · 원문 대조 전,3개 연도 · 원문 대조 0 · 자동 42 · 불일치 0 · 계정 없음 27,OpenDART 단일회사 전체 재무제표 API,자동값은 사업보고서 원문 대조 전입니다. 대조 결과는 data/manual/audit_overrides.csv에 기록
+공통 재무,annual_financials,연간 재무제표 (DART),자동 수집 · 원문 대조 전,3개 연도 · 원문 대조 0 · 자동 45 · 불일치 0 · 계정 없음 24,OpenDART 단일회사 전체 재무제표 API,자동값은 사업보고서 원문 대조 전입니다. 대조 결과는 data/manual/audit_overrides.csv에 기록
 공통 재무,quarterly,분기 단일 실적,자동 수집 · 원문 대조 전,12개 분기,1분기·반기·3분기·사업보고서,Q4는 연간 − 3분기 누적이라 결산조정이 섞입니다
 은행·금융,nim,순이자마진(NIM),미확인,1행 · 2025,사업보고서 II. 영업의 현황 / 수익구조,"그룹·은행 기준 구분, 원화/전체 구분"
 은행·금융,loan_deposit_ratio,예대율,미확인,1행 · 2025,사업보고서 II. 영업의 현황 / 유동성,원화예대율 등 규제 산식 기준 표시

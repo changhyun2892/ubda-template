@@ -10,7 +10,7 @@ IB,2023,general_admin,일반관리비,2685598000000,KRW,연결,20240430000630,ht
 IB,2023,interest_expense,이자비용,10437491000000,KRW,연결,20240430000630,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240430000630,이자비용,F-2023-interest_expense,자동 수집 · 원문 대조 전
 IB,2023,interest_income,이자수익,18364055000000,KRW,연결,20240430000630,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240430000630,이자수익,F-2023-interest_income,자동 수집 · 원문 대조 전
 IB,2023,inventories,재고자산,,KRW,연결,20240430000630,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240430000630,,F-2023-inventories,미확인
-IB,2023,loans,대출채권,,KRW,연결,20240430000630,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240430000630,,F-2023-loans,미확인
+IB,2023,loans,대출채권,315882890000000,KRW,연결,20240430000630,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240430000630,상각후원가대출채권,F-2023-loans,자동 수집 · 원문 대조 전
 IB,2023,net_fee_income,순수수료이익,476972000000,KRW,연결,20240430000630,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240430000630,순수수료손익,F-2023-net_fee_income,자동 수집 · 원문 대조 전
 IB,2023,net_income,당기순이익,2675188000000,KRW,연결,20240430000630,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240430000630,연결당기순이익,F-2023-net_income,자동 수집 · 원문 대조 전
 IB,2023,net_income_owners,지배주주 순이익,2669685000000,KRW,연결,20240430000630,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240430000630,지배기업 주주지분 당기순이익,F-2023-net_income_owners,자동 수집 · 원문 대조 전
@@ -33,7 +33,7 @@ IB,2024,general_admin,일반관리비,2813350000000,KRW,연결,20250318001325,ht
 IB,2024,interest_expense,이자비용,11062971000000,KRW,연결,20250318001325,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318001325,이자비용,F-2024-interest_expense,자동 수집 · 원문 대조 전
 IB,2024,interest_income,이자수익,18954860000000,KRW,연결,20250318001325,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318001325,이자수익,F-2024-interest_income,자동 수집 · 원문 대조 전
 IB,2024,inventories,재고자산,,KRW,연결,20250318001325,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318001325,,F-2024-inventories,미확인
-IB,2024,loans,대출채권,,KRW,연결,20250318001325,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318001325,,F-2024-loans,미확인
+IB,2024,loans,대출채권,343900399000000,KRW,연결,20250318001325,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318001325,상각후원가대출채권,F-2024-loans,자동 수집 · 원문 대조 전
 IB,2024,net_fee_income,순수수료이익,472055000000,KRW,연결,20250318001325,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318001325,순수수료손익,F-2024-net_fee_income,자동 수집 · 원문 대조 전
 IB,2024,net_income,당기순이익,2654338000000,KRW,연결,20250318001325,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318001325,연결당기순이익,F-2024-net_income,자동 수집 · 원문 대조 전
 IB,2024,net_income_owners,지배주주 순이익,2644524000000,KRW,연결,20250318001325,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318001325,지배기업 주주지분 당기순이익,F-2024-net_income_owners,자동 수집 · 원문 대조 전
@@ -56,7 +56,7 @@ IB,2025,general_admin,일반관리비,3182639000000,KRW,연결,20260318000761,ht
 IB,2025,interest_expense,이자비용,10014775000000,KRW,연결,20260318000761,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000761,이자비용,F-2025-interest_expense,자동 수집 · 원문 대조 전
 IB,2025,interest_income,이자수익,17764200000000,KRW,연결,20260318000761,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000761,이자수익,F-2025-interest_income,자동 수집 · 원문 대조 전
 IB,2025,inventories,재고자산,,KRW,연결,20260318000761,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000761,,F-2025-inventories,미확인
-IB,2025,loans,대출채권,,KRW,연결,20260318000761,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000761,,F-2025-loans,미확인
+IB,2025,loans,대출채권,357806218000000,KRW,연결,20260318000761,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000761,상각후원가대출채권,F-2025-loans,자동 수집 · 원문 대조 전
 IB,2025,net_fee_income,순수수료이익,431629000000,KRW,연결,20260318000761,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000761,순수수료손익,F-2025-net_fee_income,자동 수집 · 원문 대조 전
 IB,2025,net_income,당기순이익,2718868000000,KRW,연결,20260318000761,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000761,연결당기순이익,F-2025-net_income,자동 수집 · 원문 대조 전
 IB,2025,net_income_owners,지배주주 순이익,2711103000000,KRW,연결,20260318000761,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000761,지배기업주주지분 당기순이익,F-2025-net_income_owners,자동 수집 · 원문 대조 전

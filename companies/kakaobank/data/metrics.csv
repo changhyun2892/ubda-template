@@ -1,4 +1,5 @@
 year,metric,label,value,unit,formula,input_audit_ids,note
+2023,op_growth_pct,영업이익 증가율,,%,(당기 영업이익 ÷ 전기 영업이익 − 1) × 100 · 전기 적자면 비교 불가,F-2023-operating_profit;F-2022-operating_profit,전기 자료 없음 → 계산 불가
 2023,debt_ratio_pct,부채비율,790.665,%,부채총계 ÷ 자본총계 × 100,F-2023-total_liabilities;F-2023-total_equity,
 2023,equity_ratio_pct,자기자본비율,11.2276,%,자본총계 ÷ 자산총계 × 100,F-2023-total_equity;F-2023-total_assets,
 2023,roe_pct,ROE,,%,당기순이익 ÷ 평균 자본총계 × 100 (평균 = (기초+기말)÷2),F-2023-net_income;F-2023-total_equity;F-2022-net_income;F-2022-total_equity,전기 자료 없음 → 계산 불가
@@ -11,6 +12,7 @@ year,metric,label,value,unit,formula,input_audit_ids,note
 2023,loan_deposit_pct,단순 예대율(계산),81.9828,%,대출채권 ÷ 예수부채 × 100 · 규제 예대율(원화예대율) 산식이 아님,F-2023-loans;F-2023-deposits,
 2023,nii_growth_pct,순이자이익 증가율,,%,(당기 순이자이익 ÷ 전기 순이자이익 − 1) × 100,F-2023-net_interest_income;F-2022-net_interest_income,전기 자료 없음 → 계산 불가
 2023,ni_growth_pct,순이익 증가율,,%,(당기 순이익 ÷ 전기 순이익 − 1) × 100 · 전기 적자면 비교 불가,F-2023-net_income;F-2022-net_income,전기 자료 없음 → 계산 불가
+2024,op_growth_pct,영업이익 증가율,26.8337,%,(당기 영업이익 ÷ 전기 영업이익 − 1) × 100 · 전기 적자면 비교 불가,F-2024-operating_profit;F-2023-operating_profit,
 2024,debt_ratio_pct,부채비율,860.3062,%,부채총계 ÷ 자본총계 × 100,F-2024-total_liabilities;F-2024-total_equity,
 2024,equity_ratio_pct,자기자본비율,10.4133,%,자본총계 ÷ 자산총계 × 100,F-2024-total_equity;F-2024-total_assets,
 2024,roe_pct,ROE,6.9532,%,당기순이익 ÷ 평균 자본총계 × 100 (평균 = (기초+기말)÷2),F-2024-net_income;F-2024-total_equity;F-2023-net_income;F-2023-total_equity,
@@ -23,6 +25,7 @@ year,metric,label,value,unit,formula,input_audit_ids,note
 2024,loan_deposit_pct,단순 예대율(계산),80.9586,%,대출채권 ÷ 예수부채 × 100 · 규제 예대율(원화예대율) 산식이 아님,F-2024-loans;F-2024-deposits,
 2024,nii_growth_pct,순이자이익 증가율,13.7486,%,(당기 순이자이익 ÷ 전기 순이자이익 − 1) × 100,F-2024-net_interest_income;F-2023-net_interest_income,
 2024,ni_growth_pct,순이익 증가율,23.9927,%,(당기 순이익 ÷ 전기 순이익 − 1) × 100 · 전기 적자면 비교 불가,F-2024-net_income;F-2023-net_income,
+2025,op_growth_pct,영업이익 증가율,7.0015,%,(당기 영업이익 ÷ 전기 영업이익 − 1) × 100 · 전기 적자면 비교 불가,F-2025-operating_profit;F-2024-operating_profit,
 2025,debt_ratio_pct,부채비율,1032.0191,%,부채총계 ÷ 자본총계 × 100,F-2025-total_liabilities;F-2025-total_equity,
 2025,equity_ratio_pct,자기자본비율,8.8338,%,자본총계 ÷ 자산총계 × 100,F-2025-total_equity;F-2025-total_assets,
 2025,roe_pct,ROE,7.2277,%,당기순이익 ÷ 평균 자본총계 × 100 (평균 = (기초+기말)÷2),F-2025-net_income;F-2025-total_equity;F-2024-net_income;F-2024-total_equity,

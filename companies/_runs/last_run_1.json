@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-13 14:49:04 KST",
+ "started_at": "2026-11-13 14:55:51 KST",
  "steps": [
   "collect",
   "text",
@@ -10,7 +10,7 @@
  "companies": {
   "binggrae": {
    "collect": {
-    "sec": 1.1,
+    "sec": 1.4,
     "result": 0
    },
    "text": {
@@ -18,7 +18,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.8,
+    "sec": 0.4,
     "result": 0
    },
    "build": {
@@ -32,7 +32,7 @@
   },
   "gsretail": {
    "collect": {
-    "sec": 0.9,
+    "sec": 1.3,
     "result": 0
    },
    "text": {
@@ -40,7 +40,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.4,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
@@ -54,7 +54,7 @@
   },
   "hanon": {
    "collect": {
-    "sec": 1.7,
+    "sec": 1.3,
     "result": 0
    },
    "text": {
@@ -62,7 +62,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
@@ -76,7 +76,7 @@
   },
   "ibk": {
    "collect": {
-    "sec": 70.2,
+    "sec": 485.1,
     "result": 0
    },
    "text": {
@@ -84,7 +84,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.4,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -98,7 +98,7 @@
   },
   "kakaobank": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.4,
     "result": 0
    },
    "text": {
@@ -106,7 +106,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
@@ -120,7 +120,7 @@
   },
   "krafton": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
@@ -128,7 +128,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
@@ -142,7 +142,7 @@
   },
   "lottewellfood": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.5,
     "result": 0
    },
    "text": {
@@ -150,7 +150,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
@@ -164,7 +164,7 @@
   },
   "netmarble": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
@@ -172,7 +172,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
@@ -186,7 +186,7 @@
   },
   "samsungelec": {
    "collect": {
-    "sec": 1.0,
+    "sec": 1.4,
     "result": 0
    },
    "text": {
@@ -194,7 +194,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
@@ -208,7 +208,7 @@
   },
   "shinhan": {
    "collect": {
-    "sec": 0.8,
+    "sec": 2.2,
     "result": 0
    },
    "text": {
@@ -216,7 +216,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
@@ -229,6 +229,6 @@
    }
   }
  },
- "finished_at": "2026-11-13 14:50:28 KST",
+ "finished_at": "2026-11-13 15:04:15 KST",
  "failed": []
 }
