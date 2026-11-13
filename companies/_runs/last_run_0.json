@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-13 15:12:27 KST",
+ "started_at": "2026-11-13 15:43:39 KST",
  "steps": [
   "collect",
   "text",
@@ -8,13 +8,13 @@
   "verify"
  ],
  "companies": {
-  "bgfretail": {
+  "amorepacific": {
    "collect": {
-    "sec": 1.6,
+    "sec": 354.6,
     "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 41.5,
     "result": 0
    },
    "stock": {
@@ -30,9 +30,31 @@
     "result": 0
    }
   },
+  "bnkfg": {
+   "collect": {
+    "sec": 1.5,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.2,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
   "emart": {
    "collect": {
-    "sec": 1.2,
+    "sec": 1.4,
     "result": 0
    },
    "text": {
@@ -74,53 +96,141 @@
     "result": 0
    }
   },
-  "hyundaidept": {
+  "hdksoe": {
+   "collect": {
+    "sec": 348.7,
+    "result": 0
+   },
+   "text": {
+    "sec": 47.4,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.2,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "ibk": {
+   "collect": {
+    "sec": 1.6,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.2,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "kakaobank": {
+   "collect": {
+    "sec": 1.5,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.2,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "kolmar": {
+   "collect": {
+    "sec": 403.3,
+    "result": 0
+   },
+   "text": {
+    "sec": 38.3,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.3,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "lghh": {
+   "collect": {
+    "sec": 361.0,
+    "result": 0
+   },
+   "text": {
+    "sec": 42.9,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.2,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "naver": {
+   "collect": {
+    "sec": 4.0,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.2,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "orion": {
    "collect": {
     "sec": 1.2,
-    "result": 0
-   },
-   "text": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.2,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "kakao": {
-   "collect": {
-    "sec": 1.4,
-    "result": 0
-   },
-   "text": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.2,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "kia": {
-   "collect": {
-    "sec": 1.4,
     "result": 0
    },
    "text": {
@@ -140,9 +250,9 @@
     "result": 0
    }
   },
-  "lotteshopping": {
+  "samsungsds": {
    "collect": {
-    "sec": 1.1,
+    "sec": 2.7,
     "result": 0
    },
    "text": {
@@ -162,53 +272,9 @@
     "result": 0
    }
   },
-  "ncsoft": {
+  "shinsegae": {
    "collect": {
-    "sec": 1.3,
-    "result": 0
-   },
-   "text": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.2,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "ottogi": {
-   "collect": {
-    "sec": 1.1,
-    "result": 0
-   },
-   "text": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.2,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "semco": {
-   "collect": {
-    "sec": 1.7,
+    "sec": 3.7,
     "result": 0
    },
    "text": {
@@ -230,7 +296,7 @@
   },
   "woorifg": {
    "collect": {
-    "sec": 1.3,
+    "sec": 1.8,
     "result": 0
    },
    "text": {
@@ -251,6 +317,6 @@
    }
   }
  },
- "finished_at": "2026-11-13 15:12:48 KST",
+ "finished_at": "2026-11-13 16:11:25 KST",
  "failed": []
 }

@@ -1,0 +1,35 @@
+{
+  "slug": "amorepacific",
+  "company_id": "AP",
+  "name": "아모레퍼시픽",
+  "dashboard_path": "dashboard.html?c=amorepacific",
+  "name_en": "Amorepacific",
+  "stock_code": "090430",
+  "industry": "cosmetics",
+  "industry_name": "화장품",
+  "categories": [
+    "브랜드사"
+  ],
+  "competitors": [
+    "LG생활건강"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=amorepacific",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 4252820221496,
+    "operating_profit": 335826547063,
+    "net_income": 247316269750,
+    "operating_margin_pct": 7.8966,
+    "revenue_growth_pct": 9.4646,
+    "debt_ratio_pct": 26.488
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 126,
+    "불일치": 0,
+    "미확인": 0
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 9,
+  "updated_at": "2026-11-13 15:50 KST"
+}

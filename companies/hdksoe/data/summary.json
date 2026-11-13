@@ -1,0 +1,37 @@
+{
+  "slug": "hdksoe",
+  "company_id": "KS",
+  "name": "HD한국조선해양",
+  "dashboard_path": "dashboard.html?c=hdksoe",
+  "name_en": "HD Korea Shipbuilding & Offshore Engineering",
+  "stock_code": "009540",
+  "industry": "shipbuilding",
+  "industry_name": "조선",
+  "categories": [
+    "조선 중간지주"
+  ],
+  "competitors": [
+    "HD현대중공업",
+    "한화오션",
+    "삼성중공업"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=hdksoe",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 29933215227000,
+    "operating_profit": 3904489578000,
+    "net_income": 2928395265000,
+    "operating_margin_pct": 13.044,
+    "revenue_growth_pct": 17.2078,
+    "debt_ratio_pct": 133.862
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 126,
+    "불일치": 0,
+    "미확인": 0
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 10,
+  "updated_at": "2026-11-13 15:56 KST"
+}

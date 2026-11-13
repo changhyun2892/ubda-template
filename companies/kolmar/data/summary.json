@@ -1,0 +1,35 @@
+{
+  "slug": "kolmar",
+  "company_id": "KM",
+  "name": "한국콜마",
+  "dashboard_path": "dashboard.html?c=kolmar",
+  "name_en": "Kolmar Korea",
+  "stock_code": "161890",
+  "industry": "cosmetics",
+  "industry_name": "화장품",
+  "categories": [
+    "ODM"
+  ],
+  "competitors": [
+    "코스맥스"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=kolmar",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 2722419169325,
+    "operating_profit": 239594740448,
+    "net_income": 168220449431,
+    "operating_margin_pct": 8.8008,
+    "revenue_growth_pct": 11.0256,
+    "debt_ratio_pct": 107.3812
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 126,
+    "불일치": 0,
+    "미확인": 0
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 9,
+  "updated_at": "2026-11-13 16:04 KST"
+}

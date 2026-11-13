@@ -1,0 +1,35 @@
+{
+  "slug": "lghh",
+  "company_id": "LH",
+  "name": "LG생활건강",
+  "dashboard_path": "dashboard.html?c=lghh",
+  "name_en": "LG H&H",
+  "stock_code": "051900",
+  "industry": "cosmetics",
+  "industry_name": "화장품",
+  "categories": [
+    "브랜드사"
+  ],
+  "competitors": [
+    "아모레퍼시픽"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=lghh",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 6355489977342,
+    "operating_profit": 170688596929,
+    "net_income": -85778983809,
+    "operating_margin_pct": 2.6857,
+    "revenue_growth_pct": -6.7004,
+    "debt_ratio_pct": 23.3216
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 126,
+    "불일치": 0,
+    "미확인": 0
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 9,
+  "updated_at": "2026-11-13 16:11 KST"
+}
