@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-13 12:56:30 KST",
+ "started_at": "2026-11-13 13:18:07 KST",
  "steps": [
   "collect",
   "text",
@@ -10,7 +10,29 @@
  "companies": {
   "crown": {
    "collect": {
-    "sec": 0.9,
+    "sec": 1.1,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.5,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "hanmisemi": {
+   "collect": {
+    "sec": 1.1,
     "result": 0
    },
    "text": {
@@ -30,31 +52,9 @@
     "result": 0
    }
   },
-  "hanmisemi": {
-   "collect": {
-    "sec": 0.8,
-    "result": 0
-   },
-   "text": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.2,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
   "hyundaidept": {
    "collect": {
-    "sec": 0.7,
+    "sec": 1.0,
     "result": 0
    },
    "text": {
@@ -76,7 +76,7 @@
   },
   "krafton": {
    "collect": {
-    "sec": 0.7,
+    "sec": 1.0,
     "result": 0
    },
    "text": {
@@ -98,7 +98,7 @@
   },
   "lottewellfood": {
    "collect": {
-    "sec": 0.9,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
@@ -106,7 +106,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -120,7 +120,7 @@
   },
   "netmarble": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.1,
     "result": 0
    },
    "text": {
@@ -142,7 +142,7 @@
   },
   "samsungelec": {
    "collect": {
-    "sec": 0.9,
+    "sec": 1.1,
     "result": 0
    },
    "text": {
@@ -164,7 +164,7 @@
   },
   "shinsegae": {
    "collect": {
-    "sec": 0.7,
+    "sec": 1.0,
     "result": 0
    },
    "text": {
@@ -172,7 +172,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -185,6 +185,6 @@
    }
   }
  },
- "finished_at": "2026-11-13 12:56:41 KST",
+ "finished_at": "2026-11-13 13:18:19 KST",
  "failed": []
 }

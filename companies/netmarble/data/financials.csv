@@ -1,7 +1,6 @@
 company_id,year,metric,label,value,unit,scope,source_id,source_url,account_nm,audit_id,status
 NM,2022,capex,유형자산의 취득 (지출액),38656419848,KRW,연결,20230321001358,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230321001358,유형자산의 취득,F-2022-capex,자동 수집 · 원문 대조 전
 NM,2022,cash,현금및현금성자산,502997969607,KRW,연결,20230321001358,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230321001358,현금및현금성자산,F-2022-cash,자동 수집 · 원문 대조 전
-NM,2022,cost_of_sales,매출원가,2782096874521,KRW,연결,20230321001358,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230321001358,영업비용,F-2022-cost_of_sales,자동 수집 · 원문 대조 전
 NM,2022,current_assets,유동자산,997344674257,KRW,연결,20230321001358,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230321001358,유동자산,F-2022-current_assets,자동 수집 · 원문 대조 전
 NM,2022,current_liabilities,유동부채,2293992289893,KRW,연결,20230321001358,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230321001358,유동부채,F-2022-current_liabilities,자동 수집 · 원문 대조 전
 NM,2022,inventories,재고자산,2835774099,KRW,연결,20230321001358,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230321001358,재고자산,F-2022-inventories,자동 수집 · 원문 대조 전
@@ -13,9 +12,9 @@ NM,2022,sga,판매비와관리비,,KRW,연결,20230321001358,https://dart.fss.or
 NM,2022,total_assets,자산총계,8935573715860,KRW,연결,20230321001358,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230321001358,자산총계,F-2022-total_assets,자동 수집 · 원문 대조 전
 NM,2022,total_equity,자본총계,5621808454658,KRW,연결,20230321001358,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230321001358,자본총계,F-2022-total_equity,자동 수집 · 원문 대조 전
 NM,2022,total_liabilities,부채총계,3313765261202,KRW,연결,20230321001358,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230321001358,부채총계,F-2022-total_liabilities,자동 수집 · 원문 대조 전
+NM,2022,cost_of_sales,매출원가,,KRW,,,,,F-2022-cost_of_sales,미확인
 NM,2023,capex,유형자산의 취득 (지출액),36162240588,KRW,연결,20240320001885,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320001885,유형자산의 취득,F-2023-capex,자동 수집 · 원문 대조 전
 NM,2023,cash,현금및현금성자산,430338258320,KRW,연결,20240320001885,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320001885,현금및현금성자산,F-2023-cash,자동 수집 · 원문 대조 전
-NM,2023,cost_of_sales,매출원가,2570523784080,KRW,연결,20240320001885,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320001885,Ⅱ.영업비용,F-2023-cost_of_sales,자동 수집 · 원문 대조 전
 NM,2023,current_assets,유동자산,905788023108,KRW,연결,20240320001885,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320001885,유동자산,F-2023-current_assets,자동 수집 · 원문 대조 전
 NM,2023,current_liabilities,유동부채,1905547737533,KRW,연결,20240320001885,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320001885,유동부채,F-2023-current_liabilities,자동 수집 · 원문 대조 전
 NM,2023,inventories,재고자산,2721582674,KRW,연결,20240320001885,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320001885,재고자산,F-2023-inventories,자동 수집 · 원문 대조 전
@@ -27,9 +26,9 @@ NM,2023,sga,판매비와관리비,,KRW,연결,20240320001885,https://dart.fss.or
 NM,2023,total_assets,자산총계,7915865389294,KRW,연결,20240320001885,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320001885,자산총계,F-2023-total_assets,자동 수집 · 원문 대조 전
 NM,2023,total_equity,자본총계,5079044788538,KRW,연결,20240320001885,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320001885,자본총계,F-2023-total_equity,자동 수집 · 원문 대조 전
 NM,2023,total_liabilities,부채총계,2836820600756,KRW,연결,20240320001885,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320001885,부채총계,F-2023-total_liabilities,자동 수집 · 원문 대조 전
+NM,2023,cost_of_sales,매출원가,2570523784080,KRW,연결,20240320001885,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320001885,Ⅱ.영업비용,F-2023-cost_of_sales,자동 수집 · 원문 대조 전
 NM,2024,capex,유형자산의 취득 (지출액),17265014217,KRW,연결,20250321001686,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321001686,유형자산의 취득,F-2024-capex,자동 수집 · 원문 대조 전
 NM,2024,cash,현금및현금성자산,577864115437,KRW,연결,20250321001686,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321001686,현금및현금성자산,F-2024-cash,자동 수집 · 원문 대조 전
-NM,2024,cost_of_sales,매출원가,2448155954722,KRW,연결,20250321001686,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321001686,Ⅱ.영업비용,F-2024-cost_of_sales,자동 수집 · 원문 대조 전
 NM,2024,current_assets,유동자산,1114816595237,KRW,연결,20250321001686,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321001686,유동자산,F-2024-current_assets,자동 수집 · 원문 대조 전
 NM,2024,current_liabilities,유동부채,1348239156045,KRW,연결,20250321001686,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321001686,유동부채,F-2024-current_liabilities,자동 수집 · 원문 대조 전
 NM,2024,inventories,재고자산,2118851906,KRW,연결,20250321001686,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321001686,재고자산,F-2024-inventories,자동 수집 · 원문 대조 전
@@ -41,9 +40,9 @@ NM,2024,sga,판매비와관리비,,KRW,연결,20250321001686,https://dart.fss.or
 NM,2024,total_assets,자산총계,8177066253496,KRW,연결,20250321001686,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321001686,자산총계,F-2024-total_assets,자동 수집 · 원문 대조 전
 NM,2024,total_equity,자본총계,5473860209795,KRW,연결,20250321001686,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321001686,자본총계,F-2024-total_equity,자동 수집 · 원문 대조 전
 NM,2024,total_liabilities,부채총계,2703206043701,KRW,연결,20250321001686,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321001686,부채총계,F-2024-total_liabilities,자동 수집 · 원문 대조 전
+NM,2024,cost_of_sales,매출원가,2448155954722,KRW,연결,20250321001686,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321001686,Ⅱ.영업비용,F-2024-cost_of_sales,자동 수집 · 원문 대조 전
 NM,2025,capex,유형자산의 취득 (지출액),47294479759,KRW,연결,20260318001170,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001170,유형자산의 취득,F-2025-capex,자동 수집 · 원문 대조 전
 NM,2025,cash,현금및현금성자산,688942929318,KRW,연결,20260318001170,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001170,현금및현금성자산,F-2025-cash,자동 수집 · 원문 대조 전
-NM,2025,cost_of_sales,매출원가,2482596059413,KRW,연결,20260318001170,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001170,Ⅱ.영업비용,F-2025-cost_of_sales,자동 수집 · 원문 대조 전
 NM,2025,current_assets,유동자산,1256530943428,KRW,연결,20260318001170,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001170,유동자산,F-2025-current_assets,자동 수집 · 원문 대조 전
 NM,2025,current_liabilities,유동부채,1900644823693,KRW,연결,20260318001170,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001170,유동부채,F-2025-current_liabilities,자동 수집 · 원문 대조 전
 NM,2025,inventories,재고자산,1521893175,KRW,연결,20260318001170,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001170,재고자산,F-2025-inventories,자동 수집 · 원문 대조 전
@@ -55,3 +54,4 @@ NM,2025,sga,판매비와관리비,,KRW,연결,20260318001170,https://dart.fss.or
 NM,2025,total_assets,자산총계,8093652130179,KRW,연결,20260318001170,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001170,자산총계,F-2025-total_assets,자동 수집 · 원문 대조 전
 NM,2025,total_equity,자본총계,5492482877191,KRW,연결,20260318001170,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001170,자본총계,F-2025-total_equity,자동 수집 · 원문 대조 전
 NM,2025,total_liabilities,부채총계,2601169252988,KRW,연결,20260318001170,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001170,부채총계,F-2025-total_liabilities,자동 수집 · 원문 대조 전
+NM,2025,cost_of_sales,매출원가,2482596059413,KRW,연결,20260318001170,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001170,Ⅱ.영업비용,F-2025-cost_of_sales,자동 수집 · 원문 대조 전

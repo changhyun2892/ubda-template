@@ -1,15 +1,14 @@
 {
- "checked_at": "2026-11-13 12:56 KST",
+ "checked_at": "2026-11-13 13:18 KST",
  "counts": {
-  "통과": 42,
-  "경고": 1,
-  "미실행": 4
+  "통과": 39,
+  "미실행": 5
  },
  "results": [
   {
-   "state": "경고",
+   "state": "미실행",
    "name": "2022 매출−원가−판관비 = 영업이익",
-   "detail": "차이 -1,102,409,520,985원 (기타영업손익 계정이 있는지 원문 확인)"
+   "detail": "계정 일부 없음 (업종 특성일 수 있음)"
   },
   {
    "state": "미실행",
@@ -63,11 +62,6 @@
   },
   {
    "state": "통과",
-   "name": "2023 cost_of_sales 분기 합 = 연간",
-   "detail": ""
-  },
-  {
-   "state": "통과",
    "name": "2023 net_income 분기 합 = 연간",
    "detail": ""
   },
@@ -83,11 +77,6 @@
   },
   {
    "state": "통과",
-   "name": "2024 cost_of_sales 분기 합 = 연간",
-   "detail": ""
-  },
-  {
-   "state": "통과",
    "name": "2024 net_income 분기 합 = 연간",
    "detail": ""
   },
@@ -99,11 +88,6 @@
   {
    "state": "통과",
    "name": "2024 revenue 분기 합 = 연간",
-   "detail": ""
-  },
-  {
-   "state": "통과",
-   "name": "2025 cost_of_sales 분기 합 = 연간",
    "detail": ""
   },
   {
