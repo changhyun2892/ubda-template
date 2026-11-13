@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-13 13:50:26 KST",
+ "started_at": "2026-11-13 14:18:21 KST",
  "steps": [
   "collect",
   "text",
@@ -32,7 +32,7 @@
   },
   "emart": {
    "collect": {
-    "sec": 1.1,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -54,7 +54,7 @@
   },
   "hanmisemi": {
    "collect": {
-    "sec": 1.2,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -76,7 +76,7 @@
   },
   "hyundaidept": {
    "collect": {
-    "sec": 1.0,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -98,7 +98,7 @@
   },
   "kakao": {
    "collect": {
-    "sec": 1.2,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -120,7 +120,7 @@
   },
   "kia": {
    "collect": {
-    "sec": 1.1,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -142,7 +142,7 @@
   },
   "lotteshopping": {
    "collect": {
-    "sec": 1.1,
+    "sec": 1.0,
     "result": 0
    },
    "text": {
@@ -164,7 +164,7 @@
   },
   "ncsoft": {
    "collect": {
-    "sec": 1.1,
+    "sec": 1.0,
     "result": 0
    },
    "text": {
@@ -186,7 +186,7 @@
   },
   "ottogi": {
    "collect": {
-    "sec": 1.3,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -208,7 +208,7 @@
   },
   "semco": {
    "collect": {
-    "sec": 1.0,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -230,15 +230,15 @@
   },
   "woorifg": {
    "collect": {
-    "sec": 386.5,
+    "sec": 45.0,
     "result": 0
    },
    "text": {
-    "sec": 82.6,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
@@ -251,6 +251,6 @@
    }
   }
  },
- "finished_at": "2026-11-13 13:58:31 KST",
+ "finished_at": "2026-11-13 14:19:21 KST",
  "failed": []
 }
