@@ -1,0 +1,35 @@
+{
+  "slug": "cosmax",
+  "company_id": "CX",
+  "name": "코스맥스",
+  "dashboard_path": "dashboard.html?c=cosmax",
+  "name_en": "Cosmax",
+  "stock_code": "192820",
+  "industry": "cosmetics",
+  "industry_name": "화장품",
+  "categories": [
+    "ODM"
+  ],
+  "competitors": [
+    "한국콜마"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=cosmax",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 2398757972848,
+    "operating_profit": 195791661624,
+    "net_income": 131076173228,
+    "operating_margin_pct": 8.1622,
+    "revenue_growth_pct": 10.7414,
+    "debt_ratio_pct": 247.0956
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 126,
+    "불일치": 0,
+    "미확인": 0
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 9,
+  "updated_at": "2026-11-13 15:49 KST"
+}
