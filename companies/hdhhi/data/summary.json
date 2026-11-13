@@ -1,0 +1,36 @@
+{
+  "slug": "hdhhi",
+  "company_id": "HH",
+  "name": "HD현대중공업",
+  "dashboard_path": "dashboard.html?c=hdhhi",
+  "name_en": "HD Hyundai Heavy Industries",
+  "stock_code": "329180",
+  "industry": "shipbuilding",
+  "industry_name": "조선",
+  "categories": [
+    "조선소"
+  ],
+  "competitors": [
+    "한화오션",
+    "삼성중공업"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=hdhhi",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 17580633257000,
+    "operating_profit": 2037510103000,
+    "net_income": 1415484565000,
+    "operating_margin_pct": 11.5895,
+    "revenue_growth_pct": 21.3591,
+    "debt_ratio_pct": 180.0697
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 126,
+    "불일치": 0,
+    "미확인": 0
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 10,
+  "updated_at": "2026-11-13 15:50 KST"
+}

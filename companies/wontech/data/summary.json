@@ -1,0 +1,35 @@
+{
+  "slug": "wontech",
+  "company_id": "WT",
+  "name": "원텍",
+  "dashboard_path": "dashboard.html?c=wontech",
+  "name_en": "Wontech",
+  "stock_code": "336570",
+  "industry": "beauty_device",
+  "industry_name": "미용기기",
+  "categories": [
+    "미용 의료기기"
+  ],
+  "competitors": [
+    "클래시스"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=wontech",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 156838102870,
+    "operating_profit": 51685459840,
+    "net_income": 35220975207,
+    "operating_margin_pct": 32.9547,
+    "revenue_growth_pct": 36.0797,
+    "debt_ratio_pct": 38.0431
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 131,
+    "불일치": 0,
+    "미확인": 0
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 8,
+  "updated_at": "2026-11-13 16:04 KST"
+}
