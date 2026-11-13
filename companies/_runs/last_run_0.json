@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-13 16:20:53 KST",
+ "started_at": "2026-11-13 17:36:31 KST",
  "steps": [
   "collect",
   "text",
@@ -10,7 +10,7 @@
  "companies": {
   "amorepacific": {
    "collect": {
-    "sec": 1.7,
+    "sec": 0.9,
     "result": 0
    },
    "text": {
@@ -18,7 +18,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.4,
     "result": 0
    },
    "build": {
@@ -32,7 +32,7 @@
   },
   "bnkfg": {
    "collect": {
-    "sec": 1.9,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -54,7 +54,7 @@
   },
   "emart": {
    "collect": {
-    "sec": 1.3,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -76,7 +76,7 @@
   },
   "hanmisemi": {
    "collect": {
-    "sec": 2.2,
+    "sec": 2.1,
     "result": 0
    },
    "text": {
@@ -98,7 +98,7 @@
   },
   "hdksoe": {
    "collect": {
-    "sec": 1.3,
+    "sec": 1.0,
     "result": 0
    },
    "text": {
@@ -120,7 +120,7 @@
   },
   "ibk": {
    "collect": {
-    "sec": 1.4,
+    "sec": 0.7,
     "result": 0
    },
    "text": {
@@ -142,7 +142,7 @@
   },
   "kakaobank": {
    "collect": {
-    "sec": 4.5,
+    "sec": 3.0,
     "result": 0
    },
    "text": {
@@ -164,7 +164,7 @@
   },
   "kolmar": {
    "collect": {
-    "sec": 1.5,
+    "sec": 0.7,
     "result": 0
    },
    "text": {
@@ -186,7 +186,7 @@
   },
   "lghh": {
    "collect": {
-    "sec": 1.3,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -208,7 +208,7 @@
   },
   "naver": {
    "collect": {
-    "sec": 3.3,
+    "sec": 4.7,
     "result": 0
    },
    "text": {
@@ -230,7 +230,7 @@
   },
   "orion": {
    "collect": {
-    "sec": 2.4,
+    "sec": 0.9,
     "result": 0
    },
    "text": {
@@ -252,7 +252,7 @@
   },
   "samsungsds": {
    "collect": {
-    "sec": 1.3,
+    "sec": 0.7,
     "result": 0
    },
    "text": {
@@ -274,7 +274,7 @@
   },
   "shinsegae": {
    "collect": {
-    "sec": 2.2,
+    "sec": 0.9,
     "result": 0
    },
    "text": {
@@ -296,7 +296,7 @@
   },
   "woorifg": {
    "collect": {
-    "sec": 1.4,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -317,6 +317,6 @@
    }
   }
  },
- "finished_at": "2026-11-13 16:21:28 KST",
+ "finished_at": "2026-11-13 17:36:55 KST",
  "failed": []
 }
