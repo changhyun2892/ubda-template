@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-13 15:43:39 KST",
+ "started_at": "2026-11-13 16:12:28 KST",
  "steps": [
   "collect",
   "text",
@@ -10,11 +10,11 @@
  "companies": {
   "amorepacific": {
    "collect": {
-    "sec": 354.6,
+    "sec": 96.8,
     "result": 0
    },
    "text": {
-    "sec": 41.5,
+    "sec": 8.3,
     "result": 0
    },
    "stock": {
@@ -32,7 +32,7 @@
   },
   "bnkfg": {
    "collect": {
-    "sec": 1.5,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -54,7 +54,7 @@
   },
   "emart": {
    "collect": {
-    "sec": 1.4,
+    "sec": 1.0,
     "result": 0
    },
    "text": {
@@ -76,7 +76,7 @@
   },
   "hanmisemi": {
    "collect": {
-    "sec": 1.2,
+    "sec": 1.7,
     "result": 0
    },
    "text": {
@@ -98,11 +98,11 @@
   },
   "hdksoe": {
    "collect": {
-    "sec": 348.7,
+    "sec": 87.9,
     "result": 0
    },
    "text": {
-    "sec": 47.4,
+    "sec": 10.7,
     "result": 0
    },
    "stock": {
@@ -120,7 +120,7 @@
   },
   "ibk": {
    "collect": {
-    "sec": 1.6,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -142,7 +142,7 @@
   },
   "kakaobank": {
    "collect": {
-    "sec": 1.5,
+    "sec": 2.9,
     "result": 0
    },
    "text": {
@@ -164,15 +164,15 @@
   },
   "kolmar": {
    "collect": {
-    "sec": 403.3,
+    "sec": 110.8,
     "result": 0
    },
    "text": {
-    "sec": 38.3,
+    "sec": 3.7,
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
@@ -186,11 +186,11 @@
   },
   "lghh": {
    "collect": {
-    "sec": 361.0,
+    "sec": 99.6,
     "result": 0
    },
    "text": {
-    "sec": 42.9,
+    "sec": 2.8,
     "result": 0
    },
    "stock": {
@@ -208,7 +208,7 @@
   },
   "naver": {
    "collect": {
-    "sec": 4.0,
+    "sec": 2.2,
     "result": 0
    },
    "text": {
@@ -230,7 +230,7 @@
   },
   "orion": {
    "collect": {
-    "sec": 1.2,
+    "sec": 1.1,
     "result": 0
    },
    "text": {
@@ -238,7 +238,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
@@ -252,7 +252,7 @@
   },
   "samsungsds": {
    "collect": {
-    "sec": 2.7,
+    "sec": 1.5,
     "result": 0
    },
    "text": {
@@ -274,7 +274,7 @@
   },
   "shinsegae": {
    "collect": {
-    "sec": 3.7,
+    "sec": 1.0,
     "result": 0
    },
    "text": {
@@ -317,6 +317,6 @@
    }
   }
  },
- "finished_at": "2026-11-13 16:11:25 KST",
+ "finished_at": "2026-11-13 16:19:48 KST",
  "failed": []
 }
