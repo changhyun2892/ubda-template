@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-13 09:54:46 KST",
+ "started_at": "2026-11-13 10:13:18 KST",
  "steps": [
   "collect",
   "text",
@@ -10,7 +10,7 @@
  "companies": {
   "bgfretail": {
    "collect": {
-    "sec": 1.0,
+    "sec": 1.6,
     "result": 0
    },
    "text": {
@@ -18,7 +18,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.5,
+    "sec": 0.4,
     "result": 0
    },
    "build": {
@@ -32,7 +32,7 @@
   },
   "gsretail": {
    "collect": {
-    "sec": 0.9,
+    "sec": 1.5,
     "result": 0
    },
    "text": {
@@ -40,7 +40,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -54,11 +54,11 @@
   },
   "hlmando": {
    "collect": {
-    "sec": 37.9,
+    "sec": 1.3,
     "result": 0
    },
    "text": {
-    "sec": 2.4,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
@@ -76,11 +76,11 @@
   },
   "kia": {
    "collect": {
-    "sec": 36.8,
+    "sec": 1.3,
     "result": 0
    },
    "text": {
-    "sec": 2.7,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
@@ -98,7 +98,7 @@
   },
   "lottewellfood": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.5,
     "result": 0
    },
    "text": {
@@ -120,7 +120,29 @@
   },
   "ottogi": {
    "collect": {
-    "sec": 0.7,
+    "sec": 1.1,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.2,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "shinsegae": {
+   "collect": {
+    "sec": 1.3,
     "result": 0
    },
    "text": {
@@ -139,31 +161,9 @@
     "sec": 0.1,
     "result": 0
    }
-  },
-  "shinsegae": {
-   "collect": {
-    "sec": 37.7,
-    "result": 0
-   },
-   "text": {
-    "sec": 2.6,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.2,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
   }
  },
- "finished_at": "2026-11-13 09:56:53 KST",
+ "finished_at": "2026-11-13 10:13:32 KST",
  "failed": [
   "gsretail:verify"
  ]
