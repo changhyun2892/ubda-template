@@ -1,0 +1,36 @@
+{
+  "slug": "hyundaidept",
+  "company_id": "HD",
+  "name": "현대백화점",
+  "dashboard_path": "dashboard.html?c=hyundaidept",
+  "name_en": "Hyundai Department Store",
+  "stock_code": "069960",
+  "industry": "retail",
+  "industry_name": "유통",
+  "categories": [
+    "백화점"
+  ],
+  "competitors": [
+    "롯데쇼핑",
+    "신세계"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=hyundaidept",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 4230320613000,
+    "operating_profit": 377947571000,
+    "net_income": 141528509000,
+    "operating_margin_pct": 8.9343,
+    "revenue_growth_pct": 1.0198,
+    "debt_ratio_pct": 78.2644
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 126,
+    "불일치": 0,
+    "미확인": 0
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 6,
+  "updated_at": "2026-11-13 10:00 KST"
+}
