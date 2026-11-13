@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-13 17:36 KST",
+    "checked_at": "2026-11-13 18:00 KST",
     "corp_code": "00760971",
     "reports_total": 16,
     "new_reports": [],
@@ -9,13 +9,13 @@
   },
   "business_text": {
     "status": "성공",
-    "checked_at": "2026-11-13 12:39 KST",
+    "checked_at": "2026-11-13 18:00 KST",
     "report": "[기재정정]사업보고서 (2025.12)",
     "chars": 37163
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-13 17:36 KST",
+    "checked_at": "2026-11-13 18:00 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 199100,

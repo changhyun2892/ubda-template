@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-13 17:36:31 KST",
+ "started_at": "2026-11-13 17:59:32 KST",
  "steps": [
   "collect",
   "text",
@@ -10,11 +10,11 @@
  "companies": {
   "apr": {
    "collect": {
-    "sec": 2.2,
+    "sec": 3.1,
     "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 2.2,
     "result": 0
    },
    "stock": {
@@ -32,11 +32,11 @@
   },
   "classys": {
    "collect": {
-    "sec": 1.0,
+    "sec": 0.7,
     "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 2.2,
     "result": 0
    },
    "stock": {
@@ -54,11 +54,11 @@
   },
   "gsretail": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.0,
     "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 3.2,
     "result": 0
    },
    "stock": {
@@ -80,7 +80,7 @@
     "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 2.7,
     "result": 0
    },
    "stock": {
@@ -98,15 +98,15 @@
   },
   "hlmando": {
    "collect": {
-    "sec": 0.7,
+    "sec": 1.0,
     "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 35.3,
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -120,11 +120,11 @@
   },
   "imfg": {
    "collect": {
-    "sec": 0.7,
+    "sec": 1.3,
     "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 2.4,
     "result": 0
    },
    "stock": {
@@ -132,7 +132,7 @@
     "result": 0
    },
    "build": {
-    "sec": 0.2,
+    "sec": 0.1,
     "result": 0
    },
    "verify": {
@@ -142,11 +142,11 @@
   },
   "kbfg": {
    "collect": {
-    "sec": 1.0,
+    "sec": 1.6,
     "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 5.3,
     "result": 0
    },
    "stock": {
@@ -164,11 +164,11 @@
   },
   "krafton": {
    "collect": {
-    "sec": 1.1,
+    "sec": 1.0,
     "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 3.0,
     "result": 0
    },
    "stock": {
@@ -186,11 +186,11 @@
   },
   "lotteshopping": {
    "collect": {
-    "sec": 2.0,
+    "sec": 4.1,
     "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 49.9,
     "result": 0
    },
    "stock": {
@@ -212,7 +212,7 @@
     "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 2.4,
     "result": 0
    },
    "stock": {
@@ -220,7 +220,7 @@
     "result": 0
    },
    "build": {
-    "sec": 0.2,
+    "sec": 0.1,
     "result": 0
    },
    "verify": {
@@ -230,11 +230,11 @@
   },
   "ottogi": {
    "collect": {
-    "sec": 1.4,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 2.8,
     "result": 0
    },
    "stock": {
@@ -252,11 +252,11 @@
   },
   "samyang": {
    "collect": {
-    "sec": 0.7,
+    "sec": 2.3,
     "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 2.5,
     "result": 0
    },
    "stock": {
@@ -274,15 +274,15 @@
   },
   "silicon2": {
    "collect": {
-    "sec": 1.5,
+    "sec": 1.3,
     "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 2.4,
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -295,6 +295,6 @@
    }
   }
  },
- "finished_at": "2026-11-13 17:36:52 KST",
+ "finished_at": "2026-11-13 18:01:53 KST",
  "failed": []
 }
