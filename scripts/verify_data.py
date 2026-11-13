@@ -33,6 +33,23 @@ def close(a: float, b: float, tol: float = 1e-6) -> bool:
     return abs(a - b) <= tol * max(1.0, abs(a), abs(b))
 
 
+def restated_evidence(y: int, m: str) -> str:
+    """같은 해 반기·3분기 보고서의 누적값이 앞 보고서 값 + 이번 3개월 값과 다르면, 뒤 보고서가 앞 분기를 재작성한 것.
+    근거 문자열을 돌려주고, 재작성이 보이지 않으면 빈 문자열."""
+    rows = {}
+    for r in read_csv(CDIR / "data" / "raw" / "dart_financials.csv"):
+        if int(r["bsns_year"]) == y and r["metric"] == m and not (m == "cost_of_sales" and r.get("account_nm", "").strip() == "영업비용"):
+            rows[r["reprt_code"]] = (num(r["value"]), num(r["value_cumulative"]))
+    q1, h1, q3 = rows.get("11013"), rows.get("11012"), rows.get("11014")
+    out = []
+    for name, prev, cur in (("반기", q1, h1), ("3분기", h1, q3)):
+        if prev and cur and None not in (prev[1], cur[0], cur[1]):
+            expect = prev[1] + cur[0]
+            if abs(cur[1] - expect) > 0.001 * max(abs(cur[1]), 1):
+                out.append(f"{name}보고서 누적 {cur[1]:,} ≠ 앞 보고서 누적+3개월 {expect:,}")
+    return "; ".join(out)
+
+
 def main() -> int:
     cfg = load_config()
     need = ["financials.csv", "quarterly.csv", "metrics.csv", "audit_ledger.csv", "source_registry.csv", "research_status.csv", "summary.json"]
@@ -77,7 +94,12 @@ def main() -> int:
             elif abs(s - a) <= 0.005 * abs(a):  # 0.5% 이내: 후속 보고서의 재분류·정정 가능성 → 사람 확인
                 check(f"{y} {m} 분기 합 = 연간", False, f"차이 {s - a:,}원 — 이후 보고서에서 분기값이 재분류·정정됐을 수 있음. 원문 비교열 확인", warn_only=True)
             else:
-                check(f"{y} {m} 분기 합 = 연간", False, f"분기합 {s:,} / 연간 {a:,}")
+                ev = restated_evidence(y, m)
+                if ev:  # 같은 해 뒤 보고서가 앞 분기를 다시 계산(중단영업 재분류 등) — 공시 원문끼리 기준이 달라 생긴 차이
+                    check(f"{y} {m} 분기 합 = 연간", False, f"분기합 {s:,} / 연간 {a:,} — 보고서 간 재작성 감지: {ev}. "
+                          "각 값은 원문과 같으나 기준이 섞임(분기 화면 해석 주의)", warn_only=True)
+                else:
+                    check(f"{y} {m} 분기 합 = 연간", False, f"분기합 {s:,} / 연간 {a:,}")
 
     # 4) 재무비율 재계산
     recompute = {
