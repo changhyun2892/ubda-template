@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-13 19:05:57 KST",
+ "started_at": "2026-11-13 19:58:07 KST",
  "steps": [
   "collect",
   "text",
@@ -10,7 +10,7 @@
  "companies": {
   "amorepacific": {
    "collect": {
-    "sec": 1.1,
+    "sec": 0.9,
     "result": 0
    },
    "text": {
@@ -32,7 +32,7 @@
   },
   "bnkfg": {
    "collect": {
-    "sec": 2.0,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -54,7 +54,7 @@
   },
   "emart": {
    "collect": {
-    "sec": 1.0,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -76,7 +76,7 @@
   },
   "hanmisemi": {
    "collect": {
-    "sec": 3.0,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -98,7 +98,7 @@
   },
   "hdksoe": {
    "collect": {
-    "sec": 1.0,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -120,7 +120,7 @@
   },
   "ibk": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.0,
     "result": 0
    },
    "text": {
@@ -186,7 +186,7 @@
   },
   "lghh": {
    "collect": {
-    "sec": 1.6,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -282,7 +282,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.4,
     "result": 0
    },
    "build": {
@@ -317,6 +317,6 @@
    }
   }
  },
- "finished_at": "2026-11-13 19:06:25 KST",
+ "finished_at": "2026-11-13 19:58:30 KST",
  "failed": []
 }
