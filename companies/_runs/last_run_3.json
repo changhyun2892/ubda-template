@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-13 09:54:44 KST",
+ "started_at": "2026-11-13 10:13:19 KST",
  "steps": [
   "collect",
   "text",
@@ -10,7 +10,7 @@
  "companies": {
   "emart": {
    "collect": {
-    "sec": 1.1,
+    "sec": 0.9,
     "result": 0
    },
    "text": {
@@ -32,7 +32,7 @@
   },
   "hanon": {
    "collect": {
-    "sec": 1.2,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -54,15 +54,15 @@
   },
   "kgm": {
    "collect": {
-    "sec": 291.9,
+    "sec": 31.7,
     "result": 0
    },
    "text": {
-    "sec": 31.6,
+    "sec": 2.2,
     "result": 0
    },
    "stock": {
-    "sec": 0.4,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -76,15 +76,15 @@
   },
   "lotteshopping": {
    "collect": {
-    "sec": 340.6,
+    "sec": 37.3,
     "result": 0
    },
    "text": {
-    "sec": 52.1,
+    "sec": 2.9,
     "result": 0
    },
    "stock": {
-    "sec": 0.4,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -98,7 +98,7 @@
   },
   "orion": {
    "collect": {
-    "sec": 1.0,
+    "sec": 0.7,
     "result": 0
    },
    "text": {
@@ -120,11 +120,11 @@
   },
   "semco": {
    "collect": {
-    "sec": 300.4,
+    "sec": 42.8,
     "result": 0
    },
    "text": {
-    "sec": 33.7,
+    "sec": 2.3,
     "result": 0
    },
    "stock": {
@@ -141,7 +141,7 @@
    }
   }
  },
- "finished_at": "2026-11-13 10:12:21 KST",
+ "finished_at": "2026-11-13 10:15:23 KST",
  "failed": [
   "hanon:verify",
   "lotteshopping:verify",

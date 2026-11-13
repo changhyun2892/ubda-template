@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-13 10:00 KST",
+    "checked_at": "2026-11-13 10:13 KST",
     "corp_code": "00120526",
     "reports_total": 16,
     "new_reports": [
@@ -26,16 +26,16 @@
   },
   "business_text": {
     "status": "성공",
-    "checked_at": "2026-11-13 10:05 KST",
+    "checked_at": "2026-11-13 10:14 KST",
     "report": "사업보고서 (2025.12)",
     "chars": 71904
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-13 10:06 KST",
+    "checked_at": "2026-11-13 10:14 KST",
     "rows": 942,
     "last_date": "2026-11-13",
-    "last_close": 78700,
+    "last_close": 78900,
     "source": "Yahoo Finance 023530.KS 일봉 (비수정 종가)",
     "index": "^KS11"
   }
