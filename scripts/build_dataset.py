@@ -31,6 +31,7 @@ from ubda_common import (DATA, RAW, ROOT, ST_AUTO, ST_MISMATCH, ST_UNCONFIRMED, 
 
 MANUAL = DATA / "manual"
 FLOW = ["revenue", "cost_of_sales", "sga", "operating_profit", "net_income"]
+BANK_FLOW = ["interest_income", "interest_expense", "net_interest_income", "net_fee_income", "general_admin", "credit_loss", "net_income_owners"]
 STATUS_RANK = {ST_VERIFIED: 4, ST_AUTO: 3, ST_UNDISCLOSED: 2, ST_UNCONFIRMED: 1, ST_MISMATCH: 0}
 KPI_COLS = ["kpi_key", "year", "period", "item", "value", "unit", "scope", "source_url", "source_location", "status", "checked_on", "note"]
 OVR_COLS = ["audit_id", "result", "verified_value", "source_location", "checked_on", "checked_by", "note"]
@@ -108,10 +109,25 @@ def main() -> int:
                              "scope": {"CFS": "연결", "OFS": "별도"}.get(r["fs_div"], "") if r else "", "source_id": r["rcept_no"] if r else "",
                              "source_url": r["viewer_url"] if r else "", "account_nm": r["account_nm"] if r else "", "audit_id": aid, "status": st})
 
+    # 은행: 순이자이익 줄이 없는 회사(카카오뱅크 등)는 이자수익 − 이자비용으로 계산해 넣고 계산값임을 표시
+    if cfg.get("industry") == "bank":
+        for y in years:
+            ii, ie = F[y].get("interest_income"), F[y].get("interest_expense")
+            if F[y].get("net_interest_income") is None and ii is not None and ie is not None:
+                v = ii - abs(ie)
+                aid = f"F-{y}-net_interest_income"
+                ledger[:] = [x for x in ledger if x["audit_id"] != aid]
+                r = by.get((str(y), "11011", "interest_income"))
+                st = audit(aid, "financials.csv", v, r, "계산: 이자수익 − 이자비용 (손익계산서에 순이자이익 줄 없음)", "이자수익 − 이자비용(금액)")
+                F[y]["net_interest_income"] = v
+                for row in fin_rows:
+                    if row["year"] == y and row["metric"] == "net_interest_income":
+                        row.update(value=v, label="순이자이익 (계산: 이자수익−이자비용)", account_nm="계산", status=st)
+
     # ---------- 분기 단일 실적
     q_rows = []
     for y in sorted({int(r["bsns_year"]) for r in raw}):
-        for m in FLOW:
+        for m in FLOW + (BANK_FLOW if cfg.get("industry") == "bank" else []):
             for q, code, method in ((1, "11013", "1분기보고서 3개월"), (2, "11012", "반기보고서 3개월"), (3, "11014", "3분기보고서 3개월")):
                 r = by.get((str(y), code, m))
                 v = num(r["value"]) if r else None
@@ -148,6 +164,20 @@ def main() -> int:
         ("capex_to_revenue_pct", "설비투자 비중", "%", "유형자산 취득액 ÷ 매출액 × 100", lambda c, p: safe_div(c.get("capex"), c.get("revenue")), ["capex", "revenue"]),
         ("simple_fcf", "단순 잉여현금흐름", "KRW", "영업활동현금흐름 − 유형자산 취득액", lambda c, p: None if c.get("operating_cashflow") is None or c.get("capex") is None else c["operating_cashflow"] - c["capex"], ["operating_cashflow", "capex"]),
     ]
+    if cfg.get("industry") == "bank":  # 은행: 매출 기반 비율 대신 은행 지표 (비용 계정은 회사마다 부호가 달라 금액(절댓값)으로 통일)
+        ex = lambda v: None if v is None else abs(v)  # noqa: E731
+        toi = lambda c: None if None in (c.get("operating_profit"), c.get("general_admin"), c.get("credit_loss")) else c["operating_profit"] + ex(c["general_admin"]) + ex(c["credit_loss"])  # noqa: E731
+        bank_only = {"debt_ratio_pct", "equity_ratio_pct", "roe_pct", "roa_pct"}
+        DEFS = [d for d in DEFS if d[0] in bank_only] + [
+            ("total_operating_income", "총영업이익(계산)", "KRW", "영업이익 + 일반관리비 + 신용손실충당금전입액 (충당금 적립 전·경비 차감 전 이익, 비용은 금액 기준)", lambda c, p: toi(c), ["operating_profit", "general_admin", "credit_loss"]),
+            ("nii_share_pct", "순이자이익 비중", "%", "순이자이익 ÷ 총영업이익(계산) × 100", lambda c, p: safe_div(c.get("net_interest_income"), toi(c)), ["net_interest_income", "operating_profit", "general_admin", "credit_loss"]),
+            ("cir_pct", "영업이익경비율(CIR, 계산)", "%", "일반관리비 ÷ 총영업이익(계산) × 100 · 회사 공시 CIR과 산식이 다를 수 있음", lambda c, p: safe_div(ex(c.get("general_admin")), toi(c)), ["general_admin", "operating_profit", "credit_loss"]),
+            ("credit_cost_pct", "대손비용률(계산)", "%", "신용손실충당금전입액 ÷ 평균 대출채권 × 100 (평균 = (기초+기말)÷2)", lambda c, p: safe_div(ex(c.get("credit_loss")), avg(c.get("loans"), p.get("loans"))), ["credit_loss", "loans"]),
+            ("nii_to_assets_pct", "순이자이익/평균총자산(NIM 대용)", "%", "순이자이익 ÷ 평균 자산총계 × 100 · 공시 NIM(이자수익자산 기준)이 아님", lambda c, p: safe_div(c.get("net_interest_income"), avg(c.get("total_assets"), p.get("total_assets"))), ["net_interest_income", "total_assets"]),
+            ("loan_deposit_pct", "단순 예대율(계산)", "%", "대출채권 ÷ 예수부채 × 100 · 규제 예대율(원화예대율) 산식이 아님", lambda c, p: safe_div(c.get("loans"), c.get("deposits")), ["loans", "deposits"]),
+            ("nii_growth_pct", "순이자이익 증가율", "%", "(당기 순이자이익 ÷ 전기 순이자이익 − 1) × 100", None, ["net_interest_income"]),
+            ("ni_growth_pct", "순이익 증가율", "%", "(당기 순이익 ÷ 전기 순이익 − 1) × 100 · 전기 적자면 비교 불가", None, ["net_income"]),
+        ]
     met_rows = []
     for y in years:
         cur, prev = F[y], F.get(y - 1, {})
@@ -156,6 +186,10 @@ def main() -> int:
                 v = growth(cur.get("revenue"), prev.get("revenue"))
             elif key == "op_growth_pct":
                 v = growth(cur.get("operating_profit"), prev.get("operating_profit"))
+            elif key == "nii_growth_pct":
+                v = growth(cur.get("net_interest_income"), prev.get("net_interest_income"))
+            elif key == "ni_growth_pct":
+                v = growth(cur.get("net_income"), prev.get("net_income"))
             else:
                 v = fn(cur, prev)
                 if v is not None and unit == "%":

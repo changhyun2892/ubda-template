@@ -57,6 +57,21 @@ ACCOUNTS = [
     ("operating_cashflow", "영업활동현금흐름", ("CF",), ("ifrs-full_CashFlowsFromUsedInOperatingActivities", "ifrs_CashFlowsFromUsedInOperatingActivities"), r"^영업활동(으로인한)?현금흐름$"),
     ("capex", "유형자산의 취득", ("CF",), ("ifrs-full_PurchaseOfPropertyPlantAndEquipment", "ifrs_PurchaseOfPropertyPlantAndEquipment"), r"^유형자산의?취득$"),
 ]
+# 은행·금융지주 전용 계정 (industry == "bank"일 때만 추가). 2026-11 1차 수집에서 KB·하나·우리·BNK 손익계산서 계정명을 확인해 정함
+BANK_ACCOUNTS = [
+    ("interest_income", "이자수익", ("IS", "CIS"), ("ifrs-full_RevenueFromInterest",), r"^이자수익$"),
+    ("interest_expense", "이자비용", ("IS", "CIS"), ("ifrs-full_InterestExpense",), r"^이자비용$"),
+    ("net_interest_income", "순이자이익", ("IS", "CIS"), ("ifrs-full_InterestRevenueExpense",), r"^순이자(이익|손익)$"),
+    ("net_fee_income", "순수수료이익", ("IS", "CIS"), ("ifrs-full_FeeAndCommissionIncomeExpense",), r"^순수수료(이익|손익)$"),
+    ("general_admin", "일반관리비", ("IS", "CIS"), ("ifrs-full_SellingGeneralAndAdministrativeExpense", "ifrs-full_GeneralAndAdministrativeExpense"), r"^(일반관리비|판매비(와|및)(일반)?관리비)"),
+    ("credit_loss", "신용손실충당금전입액", ("IS", "CIS"),
+     ("ifrs-full_ImpairmentLossImpairmentGainAndReversalOfImpairmentLossDeterminedInAccordanceWithIFRS9",
+      "ifrs-full_AdditionalAllowanceRecognisedInProfitOrLossAllowanceAccountForCreditLossesOfFinancialAssets"), r"^(금융자산)?신용손실.*(전입액|충당금)"),
+    ("net_income_owners", "지배주주 순이익", ("IS", "CIS"), ("ifrs-full_ProfitLossAttributableToOwnersOfParent",), r"^지배(기업|주주)(의)?(소유주|주주)?(에게귀속되는)?(당기|분기|반기)?순이익"),
+    ("loans", "대출채권", ("BS",), (), r"^(상각후원가측정)?(원화)?대출채권(및수취채권)?$"),
+    ("deposits", "예수부채", ("BS",), ("ifrs-full_Deposits", "ifrs-full_DepositsFromCustomers"), r"^예수부채$"),
+]
+BANK_FLOW = {"interest_income", "interest_expense", "net_interest_income", "net_fee_income", "general_admin", "credit_loss", "net_income_owners"}
 FLOW = {"revenue", "cost_of_sales", "sga", "operating_profit", "net_income"}  # 기간 손익 (분기 단일값 계산 대상)
 
 REPORT_COLS = ["rcept_no", "rcept_dt", "report_nm", "bsns_year", "reprt_code", "report_type", "is_correction", "status", "message", "processed_at", "viewer_url"]
@@ -192,6 +207,9 @@ def save(fins: list[dict], done: dict) -> None:
 
 def main() -> int:
     cfg = load_config()
+    if cfg.get("industry") == "bank":  # 은행은 매출·매출원가 대신 이자·수수료·충당금 계정으로 손익을 본다
+        ACCOUNTS.extend(BANK_ACCOUNTS)
+        FLOW.update(BANK_FLOW)
     key = os.environ.get("DART_API_KEY", "").strip()
     started = now_kst()
     if not cfg.get("stock_code"):

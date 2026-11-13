@@ -6,38 +6,68 @@
   {
    "key": "nim",
    "label": "순이자마진(NIM)",
-   "where": "IR 실적발표 자료, 사업보고서 영업의 현황",
-   "caution": "은행 단독/그룹 기준 구분"
+   "where": "사업보고서 II. 영업의 현황 / 수익구조",
+   "caution": "그룹·은행 기준 구분, 원화/전체 구분"
+  },
+  {
+   "key": "loan_deposit_ratio",
+   "label": "예대율",
+   "where": "사업보고서 II. 영업의 현황 / 유동성",
+   "caution": "원화예대율 등 규제 산식 기준 표시"
+  },
+  {
+   "key": "npl_ratio",
+   "label": "고정이하여신비율(NPL)",
+   "where": "사업보고서 II. 자산건전성",
+   "caution": "분기말 기준, 그룹/은행 구분"
   },
   {
    "key": "delinquency_rate",
    "label": "연체율",
-   "where": "IR 자료",
-   "caution": "기준(1개월 이상 등) 표시"
+   "where": "사업보고서 II. 자산건전성",
+   "caution": "1개월 이상 연체 등 기준 표시"
   },
   {
-   "key": "npl_ratio",
-   "label": "고정이하여신비율",
-   "where": "사업보고서 자산건전성",
-   "caution": "분기말 기준"
+   "key": "npl_coverage",
+   "label": "대손충당금 적립률(NPL 커버리지)",
+   "where": "사업보고서 II. 자산건전성",
+   "caution": "대손준비금 포함 여부 표시"
   },
   {
-   "key": "cet1_ratio",
-   "label": "CET1 비율",
-   "where": "IR 자료, 사업보고서 자본적정성",
-   "caution": "바젤III 기준"
+   "key": "credit_cost",
+   "label": "대손비용률",
+   "where": "사업보고서 II. / IR",
+   "caution": "산식(대손비용÷평균여신) 표시"
+  },
+  {
+   "key": "capital_ratio",
+   "label": "BIS 자기자본비율·CET1",
+   "where": "사업보고서 II. 자본적정성",
+   "caution": "바젤III, 그룹/은행 구분"
   },
   {
    "key": "cost_income_ratio",
    "label": "영업이익경비율(CIR)",
-   "where": "IR 자료",
+   "where": "사업보고서 II. / IR",
    "caution": "산식이 회사마다 다를 수 있음"
   },
   {
-   "key": "loan_growth",
-   "label": "원화대출금 증가율",
-   "where": "IR 자료",
-   "caution": "가계/기업 구분"
+   "key": "roe_roa",
+   "label": "ROE·ROA(회사 공시)",
+   "where": "사업보고서 II. 수익성 지표",
+   "caution": "회사 산식 그대로 — 대시보드 계산값과 구분"
+  },
+  {
+   "key": "loan_mix",
+   "label": "원화대출 구성(가계·기업)",
+   "where": "사업보고서 II. 영업의 현황 > 대출금 현황",
+   "caution": "은행 단독 기준인지 표시"
+  },
+  {
+   "key": "segment_revenue",
+   "label": "부문별 이익(은행·카드·증권 등)",
+   "where": "사업보고서 II. 부문별 영업실적 / 연결주석 부문정보",
+   "caution": "부문 간 내부거래 조정 포함"
   }
  ]
 }

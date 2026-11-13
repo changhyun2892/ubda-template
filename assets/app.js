@@ -223,6 +223,13 @@ const PAGES = [
 const card = (cls, title, sub, body, foot = '') => `<div class="card ${cls}" data-k="${esc(title)}"><h3>${esc(title)}</h3>${sub ? `<p class="sub">${esc(sub)}</p>` : ''}${body}${foot ? `<p class="foot">${foot}</p>` : ''}</div>`;
 const noData = () => `<div class="empty"><b>아직 재무 데이터가 없습니다</b>GitHub 저장소 → Actions → '데이터 업데이트' → Run workflow 를 실행하세요.<br>DART_API_KEY가 Secrets에 등록되어 있어야 합니다.</div>`;
 
+/* 은행·금융지주: '매출액' 자리에 순이자이익, '영업이익률' 자리에 영업이익경비율(CIR)을 쓴다 */
+const BANK = () => D?.company?.industry === 'bank';
+const TOPK = () => (BANK() ? 'net_interest_income' : 'revenue');
+const TOPL = () => (BANK() ? '순이자이익' : '매출액');
+const TOPG = () => (BANK() ? 'nii_growth_pct' : 'revenue_growth_pct');
+const MRGK = () => (BANK() ? 'cir_pct' : 'operating_margin_pct');
+const MRGL = () => (BANK() ? '영업이익경비율(CIR)' : '영업이익률');
 function kpiCard(label, value, sub, onclick) {
   return `<button class="kpi" data-act="${esc(onclick || '')}"><span class="kpi-l">${esc(label)}</span><span class="kpi-v">${value}</span><span class="kpi-d">${sub}</span></button>`;
 }
@@ -231,11 +238,11 @@ const big = (v) => (v === null ? '<small>데이터 없음</small>' : `${fmt(v / 
 function pageOverview() {
   if (!D.fin.length) return noData();
   const y = S.year, Y = YEARS();
-  const rev = fin(y, 'revenue'), op = fin(y, 'operating_profit'), ni = fin(y, 'net_income');
+  const rev = fin(y, TOPK()), op = fin(y, 'operating_profit'), ni = fin(y, 'net_income');
   const k = [
-    kpiCard('매출액', big(rev), `${pill(met(y, 'revenue_growth_pct'))} 전년 대비`, `fin:${y}:revenue`),
+    kpiCard(TOPL(), big(rev), `${pill(met(y, TOPG()))} 전년 대비`, `fin:${y}:${TOPK()}`),
     kpiCard('영업이익', big(op), `${pill(met(y, 'op_growth_pct'))} 전년 대비`, `fin:${y}:operating_profit`),
-    kpiCard('영업이익률', met(y, 'operating_margin_pct') === null ? '<small>데이터 없음</small>' : `${fmt(met(y, 'operating_margin_pct'))}<small>%</small>`, `${pill(met(y - 1, 'operating_margin_pct') === null || met(y, 'operating_margin_pct') === null ? null : met(y, 'operating_margin_pct') - met(y - 1, 'operating_margin_pct'), '%p')} 전년 대비`, `met:${y}:operating_margin_pct`),
+    kpiCard(MRGL(), met(y, MRGK()) === null ? '<small>데이터 없음</small>' : `${fmt(met(y, MRGK()))}<small>%</small>`, `${pill(met(y - 1, MRGK()) === null || met(y, MRGK()) === null ? null : met(y, MRGK()) - met(y - 1, MRGK()), '%p')} 전년 대비`, `met:${y}:${MRGK()}`),
     kpiCard('당기순이익', big(ni), `${pill(growth(ni, fin(y - 1, 'net_income')))} 전년 대비`, `fin:${y}:net_income`),
   ].join('');
   const sm = D.summary?.verification || {};
@@ -244,7 +251,7 @@ function pageOverview() {
   const vr = D.verify?.counts || {};
   const latest = [...D.reg].filter((r) => r.type === 'DART 정기보고서').sort((a, b) => (a.source_date < b.source_date ? 1 : -1)).slice(0, 5);
   return `<div class="kpis">${k}</div><div class="grid">
-    ${card('w4', '매출액·영업이익 추이', '막대: 억원 · 선: 영업이익률(%) · 막대를 누르면 출처', `<div class="seg" style="margin-bottom:6px"><button data-per="annual" aria-pressed="${S.period === 'annual'}">연간</button><button data-per="quarter" aria-pressed="${S.period === 'quarter'}">분기</button></div>` + legend([['매출액', COLORS()[1]], ['영업이익', COLORS()[0]], ['영업이익률', COLORS()[3]]]) + '<div class="chart" id="c1"></div>', S.period === 'quarter' ? 'Q4 = 사업보고서 연간 − 3분기 누적 (연말 결산조정 포함)' : '')}
+    ${card('w4', `${TOPL()}·영업이익 추이`, `막대: 억원 · 선: ${MRGL()}(%) · 막대를 누르면 출처`, `<div class="seg" style="margin-bottom:6px"><button data-per="annual" aria-pressed="${S.period === 'annual'}">연간</button><button data-per="quarter" aria-pressed="${S.period === 'quarter'}">분기</button></div>` + legend([[TOPL(), COLORS()[1]], ['영업이익', COLORS()[0]], [MRGL(), COLORS()[3]]]) + '<div class="chart" id="c1"></div>', S.period === 'quarter' ? 'Q4 = 사업보고서 연간 − 3분기 누적 (연말 결산조정 포함)' : '')}
     ${card('w2', '데이터 검증 현황', '값마다 출처와 대조 상태를 기록', `<table class="tbl"><tbody>
       <tr><td>${badge('원문 대조 일치')}</td><td>${sm['원문 대조 일치'] ?? 0}</td></tr>
       <tr><td>${badge('자동 수집 · 원문 대조 전')}</td><td>${sm['자동 수집 · 원문 대조 전'] ?? 0}</td></tr>
@@ -264,17 +271,21 @@ function drawOverview() {
     const ps = [...new Set(D.qtr.map((r) => r.period))].sort();
     const qv = (p, m) => N(D.qtr.find((r) => r.period === p && r.metric === m)?.value ?? null);
     const qr = (p, m) => D.qtr.find((r) => r.period === p && r.metric === m);
-    barLine(el, ps.map((p) => p.slice(2).replace('-', ' ')), [{ name: '매출액', color: COLORS()[1], values: ps.map((p) => qv(p, 'revenue')) }, { name: '영업이익', color: COLORS()[0], values: ps.map((p) => qv(p, 'operating_profit')) }],
-      { name: '영업이익률', color: COLORS()[3], unit: '%', values: ps.map((p) => { const r = qv(p, 'revenue'), o = qv(p, 'operating_profit'); return r && o !== null ? (o / r) * 100 : null; }) },
-      { onClick: (i, j) => { const r = qr(ps[i], j === '1' ? 'operating_profit' : 'revenue'); if (r) openPanel(`<div class="panel-head"><h2>${r.period} ${esc(r.label)}</h2><button class="x">✕</button></div><div class="ev-val">${eok(N(r.value))}</div><div class="formula">${esc(r.method)}</div>${evidenceHTML(r.audit_id)}`); } });
+    barLine(el, ps.map((p) => p.slice(2).replace('-', ' ')), [{ name: TOPL(), color: COLORS()[1], values: ps.map((p) => qv(p, TOPK())) }, { name: '영업이익', color: COLORS()[0], values: ps.map((p) => qv(p, 'operating_profit')) }],
+      BANK() ? null : { name: '영업이익률', color: COLORS()[3], unit: '%', values: ps.map((p) => { const r = qv(p, 'revenue'), o = qv(p, 'operating_profit'); return r && o !== null ? (o / r) * 100 : null; }) },
+      { onClick: (i, j) => { const r = qr(ps[i], j === '1' ? 'operating_profit' : TOPK()); if (r) openPanel(`<div class="panel-head"><h2>${r.period} ${esc(r.label)}</h2><button class="x">✕</button></div><div class="ev-val">${eok(N(r.value))}</div><div class="formula">${esc(r.method)}</div>${evidenceHTML(r.audit_id)}`); } });
     return;
   }
-  barLine(el, Y.map(String), [{ name: '매출액', color: COLORS()[1], values: Y.map((y) => fin(y, 'revenue')) }, { name: '영업이익', color: COLORS()[0], values: Y.map((y) => fin(y, 'operating_profit')) }],
-    { name: '영업이익률', color: COLORS()[3], unit: '%', values: Y.map((y) => met(y, 'operating_margin_pct')) },
-    { onClick: (i, j) => (j === 'L' ? showMetric(Y[i], 'operating_margin_pct') : showFin(Y[i], ['revenue', 'operating_profit'][+j])) });
+  barLine(el, Y.map(String), [{ name: TOPL(), color: COLORS()[1], values: Y.map((y) => fin(y, TOPK())) }, { name: '영업이익', color: COLORS()[0], values: Y.map((y) => fin(y, 'operating_profit')) }],
+    { name: MRGL(), color: COLORS()[3], unit: '%', values: Y.map((y) => met(y, MRGK())) },
+    { onClick: (i, j) => (j === 'L' ? showMetric(Y[i], MRGK()) : showFin(Y[i], [TOPK(), 'operating_profit'][+j])) });
 }
 
-const PL = [['revenue', '매출액'], ['cost_of_sales', '매출원가'], ['sga', '판매비와관리비'], ['operating_profit', '영업이익'], ['net_income', '당기순이익']];
+const PL_BASE = [['revenue', '매출액'], ['cost_of_sales', '매출원가'], ['sga', '판매비와관리비'], ['operating_profit', '영업이익'], ['net_income', '당기순이익']];
+const PL_BANK = [['interest_income', '이자수익'], ['interest_expense', '이자비용'], ['net_interest_income', '순이자이익'], ['net_fee_income', '순수수료이익'], ['general_admin', '일반관리비'],
+  ['credit_loss', '신용손실충당금전입액'], ['operating_profit', '영업이익'], ['net_income', '당기순이익'], ['net_income_owners', '지배주주 순이익']];
+const PLROWS = () => (BANK() ? PL_BANK : PL_BASE);
+const PLKEYS = () => (BANK() ? ['nii_share_pct', 'cir_pct', 'credit_cost_pct'] : ['cost_ratio_pct', 'sga_ratio_pct', 'operating_margin_pct']);
 function finTable(items) {
   const Y = YEARS();
   return `<div class="tbl-wrap"><table class="tbl"><thead><tr><th>항목 (억원)</th>${Y.map((y) => `<th>${y}</th>`).join('')}<th>상태(${Y[Y.length - 1]})</th></tr></thead><tbody>
@@ -283,11 +294,11 @@ function finTable(items) {
 }
 function pagePL() {
   if (!D.fin.length) return noData();
-  return `<div class="grid">${card('w6', '연간 손익', '숫자를 누르면 출처·검증 상태가 오른쪽에 표시됩니다', finTable(PL))}
-    ${card('w6', '비용 구조', '매출액 대비 비율 (%) · 막대를 누르면 산식', legend([['매출원가율', COLORS()[1]], ['판관비율', COLORS()[2]], ['영업이익률', COLORS()[0]]]) + '<div class="chart" id="c2"></div>')}</div>`;
+  return `<div class="grid">${card('w6', '연간 손익', '숫자를 누르면 출처·검증 상태가 오른쪽에 표시됩니다', finTable(PLROWS()))}
+    ${card('w6', BANK() ? '수익·비용 구조' : '비용 구조', BANK() ? '% · 순이자이익 비중·CIR은 총영업이익(계산) 대비, 대손비용률은 평균 대출채권 대비' : '매출액 대비 비율 (%) · 막대를 누르면 산식', legend(PLKEYS().map((k, j) => [metRow(YEARS()[YEARS().length - 1], k)?.label || k, COLORS()[[1, 2, 0][j]]])) + '<div class="chart" id="c2"></div>')}</div>`;
 }
 function drawPL() {
-  const Y = YEARS(), keys = ['cost_ratio_pct', 'sga_ratio_pct', 'operating_margin_pct'];
+  const Y = YEARS(), keys = PLKEYS();
   barLine($('#c2'), Y.map(String), keys.map((k, j) => ({ name: metRow(Y[0], k)?.label || k, color: COLORS()[[1, 2, 0][j]], values: Y.map((y) => met(y, k)) })), null,
     { fmt: (v) => fmt(v, 0) + '%', tipFmt: (v) => pct(v), onClick: (i, j) => showMetric(Y[i], keys[+j]) });
 }
@@ -307,16 +318,17 @@ function drawQuarterly() {
   const q = (p, m) => N(D.qtr.find((r) => r.period === p && r.metric === m)?.value ?? null);
   const label = D.qtr.find((r) => r.metric === S.qmetric)?.label || S.qmetric;
   barLine(el, periods.map((p) => p.slice(2).replace('-', ' ')), [{ name: label, color: COLORS()[1], values: periods.map((p) => q(p, S.qmetric)) }],
-    { name: '영업이익률', color: COLORS()[0], unit: '%', values: periods.map((p) => { const r = q(p, 'revenue'), o = q(p, 'operating_profit'); return r && o !== null ? (o / r) * 100 : null; }) },
+    BANK() ? null : { name: '영업이익률', color: COLORS()[0], unit: '%', values: periods.map((p) => { const r = q(p, 'revenue'), o = q(p, 'operating_profit'); return r && o !== null ? (o / r) * 100 : null; }) },
     { onClick: (i) => { const r = D.qtr.find((x) => x.period === periods[i] && x.metric === S.qmetric); if (r) openPanel(`<div class="panel-head"><h2>${r.period} ${esc(r.label)}</h2><button class="x">✕</button></div><div class="ev-val">${eok(N(r.value))}</div><div class="formula">${esc(r.method)}</div>${evidenceHTML(r.audit_id)}`); } });
 }
 
-const RATIO_GROUPS = [['수익성', ['operating_margin_pct', 'net_margin_pct', 'cost_ratio_pct', 'sga_ratio_pct', 'roe_pct', 'roa_pct']], ['성장성', ['revenue_growth_pct', 'op_growth_pct']], ['안정성', ['debt_ratio_pct', 'current_ratio_pct', 'equity_ratio_pct']], ['활동성·투자', ['asset_turnover', 'inventory_turnover', 'capex_to_revenue_pct', 'simple_fcf']]];
+const RATIO_GROUPS_BANK = [['수익성', ['roe_pct', 'roa_pct', 'nii_to_assets_pct', 'nii_share_pct']], ['효율·건전성', ['cir_pct', 'credit_cost_pct']], ['성장성', ['nii_growth_pct', 'ni_growth_pct']], ['안정성·규모', ['debt_ratio_pct', 'equity_ratio_pct', 'loan_deposit_pct', 'total_operating_income']]];
+const RATIO_GROUPS_BASE = [['수익성', ['operating_margin_pct', 'net_margin_pct', 'cost_ratio_pct', 'sga_ratio_pct', 'roe_pct', 'roa_pct']], ['성장성', ['revenue_growth_pct', 'op_growth_pct']], ['안정성', ['debt_ratio_pct', 'current_ratio_pct', 'equity_ratio_pct']], ['활동성·투자', ['asset_turnover', 'inventory_turnover', 'capex_to_revenue_pct', 'simple_fcf']]];
 function pageRatios() {
   if (!D.met.length) return noData();
   const Y = YEARS();
   const val = (r) => (r.value === '' ? '<span class="pill na">계산 불가</span>' : r.unit === 'KRW' ? fmt(N(r.value) / 1e8) + '억' : fmt(N(r.value), r.unit === '회' ? 2 : 1) + (r.unit === '%' ? '%' : r.unit));
-  return `<div class="grid">${RATIO_GROUPS.map(([g, keys]) => card('w3', g, '행을 누르면 산식과 입력값 표시', `<div class="tbl-wrap"><table class="tbl"><thead><tr><th>지표</th>${Y.map((y) => `<th>${y}</th>`).join('')}</tr></thead><tbody>
+  return `<div class="grid">${(BANK() ? RATIO_GROUPS_BANK : RATIO_GROUPS_BASE).map(([g, keys]) => card('w3', g, '행을 누르면 산식과 입력값 표시', `<div class="tbl-wrap"><table class="tbl"><thead><tr><th>지표</th>${Y.map((y) => `<th>${y}</th>`).join('')}</tr></thead><tbody>
     ${keys.map((k) => { const r0 = metRow(Y[Y.length - 1], k); return r0 ? `<tr class="click" data-act="met:${Y[Y.length - 1]}:${k}"><td>${esc(r0.label)}</td>${Y.map((y) => `<td data-act="met:${y}:${k}">${val(metRow(y, k) || { value: '' })}</td>`).join('')}</tr>` : ''; }).join('')}
     </tbody></table></div>`)).join('')}</div><p class="foot">평균 잔액을 쓰는 지표(ROE·ROA·회전율)와 증가율은 첫 연도에 전기 자료가 없어 '계산 불가'로 둡니다.</p>`;
 }
@@ -325,7 +337,7 @@ function pageBS() {
   if (!D.fin.length) return noData();
   return `<div class="grid">${card('w3', '자산 = 부채 + 자본', '억원 · 막대를 누르면 출처', legend([['부채총계', COLORS()[3]], ['자본총계', COLORS()[1]]]) + '<div class="chart" id="c4"></div>')}
     ${card('w3', '현금흐름', '억원 · 단순 잉여현금흐름 = 영업활동현금흐름 − 유형자산 취득액', legend([['영업활동현금흐름', COLORS()[2]], ['유형자산 취득', COLORS()[3]], ['단순 FCF', COLORS()[0]]]) + '<div class="chart" id="c5"></div>')}
-    ${card('w6', '재무상태·현금흐름 표', '', finTable([['total_assets', '자산총계'], ['current_assets', '유동자산'], ['inventories', '재고자산'], ['cash', '현금및현금성자산'], ['total_liabilities', '부채총계'], ['current_liabilities', '유동부채'], ['total_equity', '자본총계'], ['operating_cashflow', '영업활동현금흐름'], ['capex', '유형자산 취득(지출액)']]))}</div>`;
+    ${card('w6', '재무상태·현금흐름 표', '', finTable(BANK() ? [['total_assets', '자산총계'], ['loans', '대출채권'], ['deposits', '예수부채'], ['total_liabilities', '부채총계'], ['total_equity', '자본총계'], ['operating_cashflow', '영업활동현금흐름']] : [['total_assets', '자산총계'], ['current_assets', '유동자산'], ['inventories', '재고자산'], ['cash', '현금및현금성자산'], ['total_liabilities', '부채총계'], ['current_liabilities', '유동부채'], ['total_equity', '자본총계'], ['operating_cashflow', '영업활동현금흐름'], ['capex', '유형자산 취득(지출액)']]))}</div>`;
 }
 function drawBS() {
   const Y = YEARS();
@@ -423,12 +435,15 @@ function pageAudit() {
 }
 
 /* ---------- 기업 비교 (다른 기업 폴더의 같은 형식 데이터를 읽어 비교) ---------- */
-const CMP_ROWS = [
+const CMP_BANK = [['net_interest_income', '순이자이익', 'won'], ['net_fee_income', '순수수료이익', 'won'], ['operating_profit', '영업이익', 'won'], ['net_income', '당기순이익', 'won'],
+  ['cir_pct', 'CIR(계산)', 'pct'], ['credit_cost_pct', '대손비용률(계산)', 'pct'], ['nii_to_assets_pct', '순이자이익/평균총자산', 'pct'], ['roe_pct', 'ROE', 'pct'], ['roa_pct', 'ROA', 'pct'], ['debt_ratio_pct', '부채비율', 'pct']];
+const CMP_BASE = [
   ['revenue', '매출액', 'won'], ['operating_profit', '영업이익', 'won'], ['net_income', '당기순이익', 'won'],
   ['operating_margin_pct', '영업이익률', 'pct'], ['net_margin_pct', '순이익률', 'pct'], ['revenue_growth_pct', '매출 증가율', 'pct'],
   ['cost_ratio_pct', '매출원가율', 'pct'], ['sga_ratio_pct', '판관비율', 'pct'], ['debt_ratio_pct', '부채비율', 'pct'],
   ['current_ratio_pct', '유동비율', 'pct'], ['roe_pct', 'ROE', 'pct'], ['operating_cashflow', '영업활동현금흐름', 'won'],
 ];
+const CMP_ROWS = () => (BANK() ? CMP_BANK : CMP_BASE);
 const valOf = (DD, y, k, t) => (t === 'won' ? N(DD.fin.find((r) => +r.year === y && r.metric === k)?.value) : N(DD.met.find((r) => +r.year === y && r.metric === k)?.value));
 async function loadOther(slug) {
   if (!OTHER[slug]) OTHER[slug] = await loadAll(slug, COMPARE_KEYS);
@@ -453,21 +468,21 @@ function pageCompare() {
   const scopeA = D.fin[0]?.scope, scopeB = O.fin[0]?.scope;
   const warn = scopeA !== scopeB ? `<div class="note warn">재무제표 범위가 다릅니다: ${esc(me)} ${esc(scopeA)} / ${esc(other)} ${esc(scopeB)}. 직접 비교에 주의하세요.</div>` : '';
   return `<div style="margin-bottom:10px">${pick}</div>${warn}<div class="grid">
-    ${card('w3', '매출액 비교', '억원 · 막대를 누르면 산식과 출처', legend([[me, COLORS()[0]], [other, COLORS()[1]]]) + '<div class="chart" id="cp1"></div>')}
-    ${card('w3', '영업이익률 비교', '% · 회사마다 비용 분류가 다를 수 있음', legend([[me, COLORS()[0]], [other, COLORS()[1]]]) + '<div class="chart" id="cp2"></div>')}
+    ${card('w3', `${TOPL()} 비교`, '억원 · 막대를 누르면 산식과 출처', legend([[me, COLORS()[0]], [other, COLORS()[1]]]) + '<div class="chart" id="cp1"></div>')}
+    ${card('w3', `${MRGL()} 비교`, '% · 회사마다 비용 분류가 다를 수 있음', legend([[me, COLORS()[0]], [other, COLORS()[1]]]) + '<div class="chart" id="cp2"></div>')}
     ${card('w6', '지표 비교표', `${esc(me)} vs ${esc(other)} · 억원 / % · 셀을 누르면 두 회사 값의 출처`, `<div class="tbl-wrap"><table class="tbl"><thead><tr><th>지표</th>${Y.map((y) => `<th>${y} ${esc(me)}</th><th>${y} ${esc(other)}</th>`).join('')}</tr></thead><tbody>
-      ${CMP_ROWS.map(([k, l, t]) => `<tr><td>${esc(l)}</td>${Y.map((y) => `<td data-act="cmp:${y}:${k}" style="cursor:pointer">${show(valOf(D, y, k, t), t)}</td><td data-act="cmp:${y}:${k}" style="cursor:pointer;color:var(--muted)">${show(valOf(O, y, k, t), t)}</td>`).join('')}</tr>`).join('')}
+      ${CMP_ROWS().map(([k, l, t]) => `<tr><td>${esc(l)}</td>${Y.map((y) => `<td data-act="cmp:${y}:${k}" style="cursor:pointer">${show(valOf(D, y, k, t), t)}</td><td data-act="cmp:${y}:${k}" style="cursor:pointer;color:var(--muted)">${show(valOf(O, y, k, t), t)}</td>`).join('')}</tr>`).join('')}
     </tbody></table></div>`, '두 회사의 사업 구성(제품군·해외 비중·관계사 구조)이 달라 수익성 차이를 경쟁력 차이로 단정할 수 없습니다. 같은 DART 연결 계정 기준의 비교입니다.')}
   </div>`;
 }
 function drawCompare() {
   const O = OTHER[S.cmp]; if (!O || !$('#cp1')) return;
   const Y = YEARS().filter((y) => O.fin.some((r) => +r.year === y));
-  barLine($('#cp1'), Y.map(String), [{ name: D.company.name, color: COLORS()[0], values: Y.map((y) => valOf(D, y, 'revenue', 'won')) }, { name: O.company.name, color: COLORS()[1], values: Y.map((y) => valOf(O, y, 'revenue', 'won')) }], null, { onClick: (i) => showCmp(Y[i], 'revenue') });
-  barLine($('#cp2'), Y.map(String), [{ name: D.company.name, color: COLORS()[0], values: Y.map((y) => valOf(D, y, 'operating_margin_pct', 'pct')) }, { name: O.company.name, color: COLORS()[1], values: Y.map((y) => valOf(O, y, 'operating_margin_pct', 'pct')) }], null, { fmt: (v) => fmt(v, 0) + '%', tipFmt: (v) => pct(v), onClick: (i) => showCmp(Y[i], 'operating_margin_pct') });
+  barLine($('#cp1'), Y.map(String), [{ name: D.company.name, color: COLORS()[0], values: Y.map((y) => valOf(D, y, TOPK(), 'won')) }, { name: O.company.name, color: COLORS()[1], values: Y.map((y) => valOf(O, y, TOPK(), 'won')) }], null, { onClick: (i) => showCmp(Y[i], TOPK()) });
+  barLine($('#cp2'), Y.map(String), [{ name: D.company.name, color: COLORS()[0], values: Y.map((y) => valOf(D, y, MRGK(), 'pct')) }, { name: O.company.name, color: COLORS()[1], values: Y.map((y) => valOf(O, y, MRGK(), 'pct')) }], null, { fmt: (v) => fmt(v, 0) + '%', tipFmt: (v) => pct(v), onClick: (i) => showCmp(Y[i], MRGK()) });
 }
 function showCmp(y, k) {
-  const O = OTHER[S.cmp]; const [, l, t] = CMP_ROWS.find((r) => r[0] === k) || [k, k, 'won'];
+  const O = OTHER[S.cmp]; const [, l, t] = CMP_ROWS().find((r) => r[0] === k) || [k, k, 'won'];
   const side = (DD) => {
     const v = valOf(DD, y, k, t);
     const ids = t === 'won' ? [`F-${y}-${k}`] : (DD.met.find((r) => +r.year === y && r.metric === k)?.input_audit_ids || '').split(';').filter(Boolean);
@@ -512,14 +527,14 @@ function pageScreen() {
   return `<div class="sc-head"><div class="sc-eyebrow">BUSINESS MONITOR</div><div class="sc-title">${esc(D.company.name)} 경영 모니터링</div>
     <div class="sc-meta">${Y[0]}–${y} · ${esc(D.fin[0]?.scope || '')} 재무제표 · DART · 업데이트 ${esc(D.summary?.updated_at || '-')}</div><button class="sc-exit" data-page="overview">나가기 (Esc)</button></div>
   <div class="sc-kpis">
-    ${k(`${y} 매출액`, fin(y, 'revenue') === null ? '–' : fmt(fin(y, 'revenue') / 1e8, 0) + '<i>억원</i>', `전년 대비 ${vm('revenue_growth_pct') === null ? '–' : (vm('revenue_growth_pct') > 0 ? '+' : '') + fmt(vm('revenue_growth_pct')) + '%'}`)}
+    ${k(`${y} ${TOPL()}`, fin(y, TOPK()) === null ? '–' : fmt(fin(y, TOPK()) / 1e8, 0) + '<i>억원</i>', `전년 대비 ${vm(TOPG()) === null ? '–' : (vm(TOPG()) > 0 ? '+' : '') + fmt(vm(TOPG())) + '%'}`)}
     ${k(`${y} 영업이익`, fin(y, 'operating_profit') === null ? '–' : fmt(fin(y, 'operating_profit') / 1e8, 0) + '<i>억원</i>', `전년 대비 ${vm('op_growth_pct') === null ? '–' : (vm('op_growth_pct') > 0 ? '+' : '') + fmt(vm('op_growth_pct')) + '%'}`)}
-    ${k('영업이익률', vm('operating_margin_pct') === null ? '–' : fmt(vm('operating_margin_pct')) + '<i>%</i>', `순이익률 ${pct(vm('net_margin_pct'))}`)}
-    ${k('부채비율', vm('debt_ratio_pct') === null ? '–' : fmt(vm('debt_ratio_pct')) + '<i>%</i>', `유동비율 ${pct(vm('current_ratio_pct'))}`)}
+    ${k(MRGL(), vm(MRGK()) === null ? '–' : fmt(vm(MRGK())) + '<i>%</i>', BANK() ? `대손비용률 ${pct(vm('credit_cost_pct'))}` : `순이익률 ${pct(vm('net_margin_pct'))}`)}
+    ${BANK() ? k('ROE', vm('roe_pct') === null ? '–' : fmt(vm('roe_pct')) + '<i>%</i>', `ROA ${pct(vm('roa_pct'))}`) : k('부채비율', vm('debt_ratio_pct') === null ? '–' : fmt(vm('debt_ratio_pct')) + '<i>%</i>', `유동비율 ${pct(vm('current_ratio_pct'))}`)}
     ${k('주가', last ? fmt(N(last.close), 0) + '<i>원</i>' : '–', last ? `${esc(last.date)} · ${y}년 ${sret === null ? '–' : (sret > 0 ? '+' : '') + fmt(sret) + '%'}` : '주가 없음')}
   </div>
   <div class="sc-grid">
-    <div class="sc-card"><h3>연간 매출·영업이익 <small>억원 / 영업이익률 %</small></h3>${legend([['매출액', '#2F80D8'], ['영업이익', '#F2A03D'], ['영업이익률', '#4FC3F7']])}<div class="chart" id="s1"></div></div>
+    <div class="sc-card"><h3>연간 ${TOPL()}·영업이익 <small>억원 / ${MRGL()} %</small></h3>${legend([[TOPL(), '#2F80D8'], ['영업이익', '#F2A03D'], [MRGL(), '#4FC3F7']])}<div class="chart" id="s1"></div></div>
     <div class="sc-card"><h3>분기 영업이익 <small>억원 / 이익률 %</small></h3>${legend([['영업이익', '#F2A03D'], ['영업이익률', '#4FC3F7']])}<div class="chart" id="s2"></div></div>
     <div class="sc-card"><h3>주가 vs 시장지수 <small>시작일 = 100</small></h3>${legend([['주가', '#F2A03D'], ['시장지수', '#4FC3F7']])}<div class="chart" id="s3"></div></div>
     <div class="sc-card"><h3>현금흐름 <small>억원</small></h3>${legend([['영업활동현금흐름', '#7CC36A'], ['유형자산 취득', '#E0574F']])}<div class="chart" id="s4"></div></div>
@@ -528,10 +543,10 @@ function pageScreen() {
 }
 function drawScreen() {
   const Y = YEARS(); const h = Math.max(170, Math.round((innerHeight - 370) / 2));
-  barLine($('#s1'), Y.map(String), [{ name: '매출액', color: '#2F80D8', values: Y.map((y) => fin(y, 'revenue')) }, { name: '영업이익', color: '#F2A03D', values: Y.map((y) => fin(y, 'operating_profit')) }], { name: '영업이익률', color: '#4FC3F7', unit: '%', values: Y.map((y) => met(y, 'operating_margin_pct')) }, { h });
+  barLine($('#s1'), Y.map(String), [{ name: TOPL(), color: '#2F80D8', values: Y.map((y) => fin(y, TOPK())) }, { name: '영업이익', color: '#F2A03D', values: Y.map((y) => fin(y, 'operating_profit')) }], { name: MRGL(), color: '#4FC3F7', unit: '%', values: Y.map((y) => met(y, MRGK())) }, { h });
   const ps = [...new Set(D.qtr.map((r) => r.period))].sort().slice(-12);
   const qv = (p, m) => N(D.qtr.find((r) => r.period === p && r.metric === m)?.value ?? null);
-  barLine($('#s2'), ps.map((p) => p.slice(2).replace('-', ' ')), [{ name: '영업이익', color: '#F2A03D', values: ps.map((p) => qv(p, 'operating_profit')) }], { name: '영업이익률', color: '#4FC3F7', unit: '%', values: ps.map((p) => { const r = qv(p, 'revenue'), o = qv(p, 'operating_profit'); return r && o !== null ? (o / r) * 100 : null; }) }, { h });
+  barLine($('#s2'), ps.map((p) => p.slice(2).replace('-', ' ')), [{ name: '영업이익', color: '#F2A03D', values: ps.map((p) => qv(p, 'operating_profit')) }], BANK() ? null : { name: '영업이익률', color: '#4FC3F7', unit: '%', values: ps.map((p) => { const r = qv(p, 'revenue'), o = qv(p, 'operating_profit'); return r && o !== null ? (o / r) * 100 : null; }) }, { h });
   const xs = D.stock.map((r) => r.date), c = D.stock.map((r) => N(r.close)), kk = D.stock.map((r) => N(r.index_close));
   const b0 = c.find((v) => v !== null), k0 = kk.find((v) => v !== null);
   lineChart($('#s3'), xs, [{ name: '주가', color: '#F2A03D', values: c.map((v) => (v === null ? null : (v / b0) * 100)) }, { name: '시장지수', color: '#4FC3F7', values: kk.map((v) => (v === null || !k0 ? null : (v / k0) * 100)) }], [], { h });
