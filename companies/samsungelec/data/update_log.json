@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-13 17:36 KST",
+    "checked_at": "2026-11-13 18:06 KST",
     "corp_code": "00126380",
     "reports_total": 15,
     "new_reports": [],
@@ -9,13 +9,13 @@
   },
   "business_text": {
     "status": "성공",
-    "checked_at": "2026-11-13 09:57 KST",
+    "checked_at": "2026-11-13 18:06 KST",
     "report": "사업보고서 (2025.12)",
     "chars": 41524
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-13 17:36 KST",
+    "checked_at": "2026-11-13 18:07 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 206000,
