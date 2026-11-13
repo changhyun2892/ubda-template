@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-13 14:49:05 KST",
+ "started_at": "2026-11-13 14:56:02 KST",
  "steps": [
   "collect",
   "text",
@@ -10,7 +10,7 @@
  "companies": {
   "bnkfg": {
    "collect": {
-    "sec": 1.2,
+    "sec": 1.7,
     "result": 0
    },
    "text": {
@@ -76,7 +76,7 @@
   },
   "imfg": {
    "collect": {
-    "sec": 0.9,
+    "sec": 1.3,
     "result": 0
    },
    "text": {
@@ -98,11 +98,11 @@
   },
   "kbfg": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
-    "sec": 4.9,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
@@ -120,7 +120,7 @@
   },
   "lgdisplay": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
@@ -142,7 +142,7 @@
   },
   "mobis": {
    "collect": {
-    "sec": 0.9,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
@@ -164,7 +164,7 @@
   },
   "nongshim": {
    "collect": {
-    "sec": 1.1,
+    "sec": 1.0,
     "result": 0
    },
    "text": {
@@ -186,7 +186,7 @@
   },
   "samsungsds": {
    "collect": {
-    "sec": 0.9,
+    "sec": 1.0,
     "result": 0
    },
    "text": {
@@ -208,7 +208,7 @@
   },
   "shinsegae": {
    "collect": {
-    "sec": 0.9,
+    "sec": 2.1,
     "result": 0
    },
    "text": {
@@ -229,6 +229,6 @@
    }
   }
  },
- "finished_at": "2026-11-13 14:49:24 KST",
+ "finished_at": "2026-11-13 14:56:19 KST",
  "failed": []
 }
