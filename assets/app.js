@@ -445,7 +445,7 @@ function pageCompare() {
   if (!cands.length) return '<div class="empty"><b>비교할 다른 기업이 없습니다</b>기업을 하나 더 추가하면 이 화면에서 비교할 수 있습니다.</div>';
   if (!S.cmp || !cands.some((c) => c.slug === S.cmp)) S.cmp = cands[0].slug;
   const O = OTHER[S.cmp];
-  const pick = `<div class="seg">${cands.map((c) => `<button data-cmp="${esc(c.slug)}" aria-pressed="${c.slug === S.cmp}">${esc(c.name)}${c.industry !== D.company.industry ? ' (다른 산업)' : ''}</button>`).join('')}</div>`;
+  const pick = `<div class="seg seg-wrap">${cands.map((c) => `<button data-cmp="${esc(c.slug)}" aria-pressed="${c.slug === S.cmp}">${esc(c.name)}${c.industry !== D.company.industry ? ' (다른 산업)' : ''}</button>`).join('')}</div>`;
   if (!O) { loadOther(S.cmp).then(() => S.page === 'compare' && render()); return `${pick}<div class="empty" style="margin-top:12px">비교 기업 데이터를 불러오는 중…</div>`; }
   const me = D.company.name, other = O.company?.name || S.cmp;
   const Y = [...new Set([...YEARS(), ...O.fin.map((r) => +r.year)])].sort().filter((y) => YEARS().includes(y) && O.fin.some((r) => +r.year === y));

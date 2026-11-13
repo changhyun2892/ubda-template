@@ -36,3 +36,5 @@ DART_API_KEY와 Render 연결은 이미 한 번 해 두었으므로 기업을 �
 
 ## 사람이 원문 대조한 기록
 `companies/<기업>/data/manual/audit_overrides.csv`에 audit_id(예: F-2025-revenue), result(`원문 대조 일치`), verified_value(원 단위), source_location(예: 사업보고서 p.48 연결 손익계산서), checked_on, checked_by를 적는다. 나중에 정정공시로 값이 바뀌면 자동으로 `불일치`가 표시된다.
+
+- **과거 연도 재작성 확인**: 사업보고서 표의 과거 연도 합계가 대시보드 연간 매출(그 해 보고서 값)과 다르면, 그 연도 행의 scope에서 "연결"을 빼고 "○○ 보고서 비교 표시(재작성)"로 적은 뒤 note에 두 값을 함께 남긴다. 숫자를 맞추려고 고치지 않는다.

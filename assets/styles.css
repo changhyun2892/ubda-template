@@ -193,3 +193,7 @@ body.screen-mode .chart line { stroke: #1E3A55 !important; }
 .sc-card h3 small { color: #9FB3C8; font-weight: 400; margin-left: 6px; }
 .sc-foot { text-align: center; font-size: 11px; color: #6E87A0; margin-top: 12px; }
 @media (max-width: 900px) { .sc-kpis { grid-template-columns: repeat(2, 1fr); } .sc-grid { grid-template-columns: 1fr; } .sc-kpi b { font-size: 22px; } }
+
+/* 비교 기업 버튼: 기업이 많아도 화면 밖으로 넘치지 않게 여러 줄로 */
+.seg.seg-wrap { flex-wrap: wrap; height: auto; max-width: 100%; }
+.seg.seg-wrap button { flex: 0 0 auto; }
