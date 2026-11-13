@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-13 17:36:31 KST",
+ "started_at": "2026-11-13 17:59:23 KST",
  "steps": [
   "collect",
   "text",
@@ -10,15 +10,15 @@
  "companies": {
   "amorepacific": {
    "collect": {
-    "sec": 0.9,
+    "sec": 1.0,
     "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 2.2,
     "result": 0
    },
    "stock": {
-    "sec": 0.4,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -36,7 +36,7 @@
     "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 2.8,
     "result": 0
    },
    "stock": {
@@ -58,7 +58,7 @@
     "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 2.8,
     "result": 0
    },
    "stock": {
@@ -76,11 +76,11 @@
   },
   "hanmisemi": {
    "collect": {
-    "sec": 2.1,
+    "sec": 1.9,
     "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 1.8,
     "result": 0
    },
    "stock": {
@@ -98,11 +98,11 @@
   },
   "hdksoe": {
    "collect": {
-    "sec": 1.0,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 2.4,
     "result": 0
    },
    "stock": {
@@ -120,11 +120,11 @@
   },
   "ibk": {
    "collect": {
-    "sec": 0.7,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 4.7,
     "result": 0
    },
    "stock": {
@@ -142,11 +142,11 @@
   },
   "kakaobank": {
    "collect": {
-    "sec": 3.0,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 2.3,
     "result": 0
    },
    "stock": {
@@ -164,11 +164,11 @@
   },
   "kolmar": {
    "collect": {
-    "sec": 0.7,
+    "sec": 0.9,
     "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 2.2,
     "result": 0
    },
    "stock": {
@@ -186,11 +186,11 @@
   },
   "lghh": {
    "collect": {
-    "sec": 0.8,
+    "sec": 0.9,
     "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 2.3,
     "result": 0
    },
    "stock": {
@@ -208,15 +208,15 @@
   },
   "naver": {
    "collect": {
-    "sec": 4.7,
+    "sec": 2.5,
     "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 2.5,
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -230,11 +230,11 @@
   },
   "orion": {
    "collect": {
-    "sec": 0.9,
+    "sec": 1.5,
     "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 2.8,
     "result": 0
    },
    "stock": {
@@ -252,11 +252,11 @@
   },
   "samsungsds": {
    "collect": {
-    "sec": 0.7,
+    "sec": 1.6,
     "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 2.8,
     "result": 0
    },
    "stock": {
@@ -274,11 +274,11 @@
   },
   "shinsegae": {
    "collect": {
-    "sec": 0.9,
+    "sec": 1.6,
     "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 3.1,
     "result": 0
    },
    "stock": {
@@ -296,11 +296,11 @@
   },
   "woorifg": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.8,
     "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 4.8,
     "result": 0
    },
    "stock": {
@@ -317,6 +317,6 @@
    }
   }
  },
- "finished_at": "2026-11-13 17:36:55 KST",
+ "finished_at": "2026-11-13 18:00:26 KST",
  "failed": []
 }
