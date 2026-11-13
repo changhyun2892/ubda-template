@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-13 12:56:30 KST",
+ "started_at": "2026-11-13 13:18:08 KST",
  "steps": [
   "collect",
   "text",
@@ -10,7 +10,7 @@
  "companies": {
   "emart": {
    "collect": {
-    "sec": 1.3,
+    "sec": 1.5,
     "result": 0
    },
    "text": {
@@ -18,7 +18,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.5,
+    "sec": 0.4,
     "result": 0
    },
    "build": {
@@ -32,7 +32,7 @@
   },
   "hanon": {
    "collect": {
-    "sec": 1.3,
+    "sec": 1.4,
     "result": 0
    },
    "text": {
@@ -40,7 +40,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
@@ -54,15 +54,15 @@
   },
   "kakao": {
    "collect": {
-    "sec": 411.3,
+    "sec": 1.4,
     "result": 0
    },
    "text": {
-    "sec": 56.1,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
-    "sec": 0.5,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
@@ -98,7 +98,7 @@
   },
   "mobis": {
    "collect": {
-    "sec": 1.2,
+    "sec": 1.6,
     "result": 0
    },
    "text": {
@@ -120,7 +120,7 @@
   },
   "nongshim": {
    "collect": {
-    "sec": 6.7,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
@@ -128,7 +128,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
@@ -142,15 +142,15 @@
   },
   "samsungsds": {
    "collect": {
-    "sec": 295.3,
+    "sec": 1.1,
     "result": 0
    },
    "text": {
-    "sec": 41.3,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
@@ -164,7 +164,7 @@
   },
   "skhynix": {
    "collect": {
-    "sec": 1.4,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
@@ -172,7 +172,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
@@ -185,7 +185,7 @@
    }
   }
  },
- "finished_at": "2026-11-13 13:10:11 KST",
+ "finished_at": "2026-11-13 13:18:22 KST",
  "failed": [
   "hanon:verify"
  ]
