@@ -1,11 +1,11 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-13 18:40 KST",
+    "checked_at": "2026-11-13 19:06 KST",
     "corp_code": "00120526",
-    "reports_total": 16,
+    "reports_total": 17,
     "new_reports": [
-      "분기보고서 (2026.09) (20261113) — 재무 데이터 대기"
+      "분기보고서 (2026.09) (20261113) — 반영 (14/14개 계정 · CFS)"
     ],
     "errors": []
   },
@@ -17,7 +17,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-13 18:40 KST",
+    "checked_at": "2026-11-13 19:06 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 77700,
