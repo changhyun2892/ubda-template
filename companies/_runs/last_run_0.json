@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-13 17:59:23 KST",
+ "started_at": "2026-11-13 18:14:39 KST",
  "steps": [
   "collect",
   "text",
@@ -10,11 +10,55 @@
  "companies": {
   "amorepacific": {
    "collect": {
-    "sec": 1.0,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
-    "sec": 2.2,
+    "sec": 34.0,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.6,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "bnkfg": {
+   "collect": {
+    "sec": 2.0,
+    "result": 0
+   },
+   "text": {
+    "sec": 46.3,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.4,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "emart": {
+   "collect": {
+    "sec": 1.1,
+    "result": 0
+   },
+   "text": {
+    "sec": 48.2,
     "result": 0
    },
    "stock": {
@@ -30,57 +74,13 @@
     "result": 0
    }
   },
-  "bnkfg": {
-   "collect": {
-    "sec": 0.8,
-    "result": 0
-   },
-   "text": {
-    "sec": 2.8,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.2,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "emart": {
-   "collect": {
-    "sec": 0.8,
-    "result": 0
-   },
-   "text": {
-    "sec": 2.8,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.2,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
   "hanmisemi": {
    "collect": {
-    "sec": 1.9,
+    "sec": 2.7,
     "result": 0
    },
    "text": {
-    "sec": 1.8,
+    "sec": 22.7,
     "result": 0
    },
    "stock": {
@@ -98,15 +98,15 @@
   },
   "hdksoe": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.1,
     "result": 0
    },
    "text": {
-    "sec": 2.4,
+    "sec": 39.2,
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -120,11 +120,11 @@
   },
   "ibk": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
-    "sec": 4.7,
+    "sec": 94.6,
     "result": 0
    },
    "stock": {
@@ -142,15 +142,15 @@
   },
   "kakaobank": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.5,
     "result": 0
    },
    "text": {
-    "sec": 2.3,
+    "sec": 22.3,
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -164,11 +164,11 @@
   },
   "kolmar": {
    "collect": {
-    "sec": 0.9,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
-    "sec": 2.2,
+    "sec": 31.7,
     "result": 0
    },
    "stock": {
@@ -186,15 +186,15 @@
   },
   "lghh": {
    "collect": {
-    "sec": 0.9,
+    "sec": 1.1,
     "result": 0
    },
    "text": {
-    "sec": 2.3,
+    "sec": 33.6,
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -208,11 +208,11 @@
   },
   "naver": {
    "collect": {
-    "sec": 2.5,
+    "sec": 1.1,
     "result": 0
    },
    "text": {
-    "sec": 2.5,
+    "sec": 43.6,
     "result": 0
    },
    "stock": {
@@ -230,15 +230,15 @@
   },
   "orion": {
    "collect": {
-    "sec": 1.5,
+    "sec": 1.0,
     "result": 0
    },
    "text": {
-    "sec": 2.8,
+    "sec": 30.3,
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.4,
     "result": 0
    },
    "build": {
@@ -252,15 +252,15 @@
   },
   "samsungsds": {
    "collect": {
-    "sec": 1.6,
+    "sec": 1.0,
     "result": 0
    },
    "text": {
-    "sec": 2.8,
+    "sec": 37.0,
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -274,15 +274,15 @@
   },
   "shinsegae": {
    "collect": {
-    "sec": 1.6,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
-    "sec": 3.1,
+    "sec": 43.1,
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.4,
     "result": 0
    },
    "build": {
@@ -296,15 +296,15 @@
   },
   "woorifg": {
    "collect": {
-    "sec": 1.8,
+    "sec": 1.3,
     "result": 0
    },
    "text": {
-    "sec": 4.8,
+    "sec": 71.9,
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -317,6 +317,6 @@
    }
   }
  },
- "finished_at": "2026-11-13 18:00:26 KST",
+ "finished_at": "2026-11-13 18:25:02 KST",
  "failed": []
 }

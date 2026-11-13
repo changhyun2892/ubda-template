@@ -1,6 +1,6 @@
-# HD한국조선해양 사업보고서 (2025.12) — I. 회사의 개요 (본문 텍스트)
+# HD한국조선해양 사업보고서 (2025.12) — I. 회사의 개요 + 상세표-1 연결대상 종속회사 현황(상세) (본문 텍스트)
 # 접수번호 20260320001032 · 접수일 20260320 · 원문 https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320001032
-# OpenDART document.xml에서 자동 추출 (2026-11-13 17:59 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
+# OpenDART document.xml에서 자동 추출 (2026-11-13 18:17 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
 
 ## I. 회사의 개요
 
@@ -2111,3 +2111,243 @@ GRC(Global R&D Center) 관리를 위한PM(Property Management) 사업 |
  |
 
 [표 끝]
+
+## 1. 연결대상 종속회사 현황(상세)
+
+[표]
+
+☞ 본문 위치로 이동
+ |
+
+[표 끝]
+
+[표]
+
+[표]
+
+ |
+(단위 : 백만원) |
+
+[표 끝]
+
+[표]
+
+상호 |
+설립일 |
+주소 |
+주요사업 |
+최근사업연도말자산총액 |
+지배관계 근거 |
+주요종속회사 여부 |
+
+HD현대중공업㈜ |
+2019.06.03 |
+울산광역시 동구 방어진순환도로 1000 (전하동, HD현대중공업) |
+선박 건조업 |
+26,199,062 |
+의결권의 과반수 소유 |
+○ |
+
+HD현대삼호㈜ |
+1998.11.04 |
+전라남도 영암군 삼호읍 대불로 93 |
+선박 건조업 |
+7,952,808 |
+의결권의 과반수 소유 |
+○ |
+
+HD현대이엔티㈜ |
+2004.12.03 |
+울산광역시 동구 문현6길 42 |
+기타엔지니어링 서비스업 |
+57,347 |
+의결권의 과반수 소유 |
+X |
+
+㈜HD현대스포츠 |
+2008.02.22 |
+울산광역시 동구 봉수로 507 (서부동, 현대스포츠클럽) |
+프로축구단 흥행사업 |
+19,255 |
+의결권의 과반수 소유 |
+X |
+
+HD현대에너지솔루션㈜ |
+2016.12.21 |
+경기도 성남시 분당구 분당수서로 477(정자동, HD현대그룹 글로벌R&D센터) |
+다이오드, 트랜지스터 및 유사 반도체소자 제조업 |
+518,866 |
+의결권의 과반수 소유 |
+○ |
+
+HD현대엔진 유한회사 |
+2007.07.05 |
+전라남도 영암군 삼호읍 자유무역로 173 |
+내연기관 제조업 |
+120,364 |
+의결권의 과반수 소유 |
+○ |
+
+씨마크서비스㈜ |
+2023.02.13 |
+강원도 강릉시 해안로 406번길 2 |
+호텔위탁운영업 |
+6,469 |
+의결권의 과반수 소유 |
+X |
+
+HD현대마린엔진㈜ |
+2001.06.15 |
+경상남도 창원시 성산구 적현로 222 |
+선박엔진 제조업 |
+783,778 |
+실질지배력보유 (지분율 35.1%) |
+○ |
+
+HD현대크랭크샤프트㈜ |
+2020.07.01 |
+경남 창원시 성산구 공단로 21 |
+선박엔진부품 제조업 |
+68,103 |
+의결권의 과반수 소유 |
+X |
+
+HD하이드로젠㈜ |
+2024.08.20 |
+경기도 성남시 분당구 분당수서로 477, 9층(정자동) |
+발전기 제조업 |
+172,439 |
+의결권의 과반수 소유 |
+○ |
+
+AMC사이언스㈜ |
+2024.11.28 |
+서울시 송파구 올림픽로43길 88, 6층(풍납동, 교육연구관) |
+신약 연구 및 개발업 |
+26,341 |
+의결권의 과반수 소유 |
+X |
+
+HD현대엠엔에스㈜ |
+2025.02.03 |
+울산광역시 울주군 온산읍 산암로 364 |
+선박 부품 제조업 |
+104,574 |
+의결권의 과반수 소유 |
+○ |
+
+HD Hyundai Asia Holdings Pte. Ltd. |
+2025.09.09 |
+9 TEMASEK BOULEVARD, #41-06, SUNTEC TOWER TWO, SINGAPORE 038989 |
+해외자회사 관리 |
+841,844 |
+의결권의 과반수 소유 |
+○ |
+
+HD Hyundai-Vietnam Shipbuilding Co., Ltd. |
+1996.09.30 |
+01 My Giang, Ninh Phuoc, Ninh Hoa,Khanh Hoa, Vietnam |
+선박 건조업 |
+713,306 |
+의결권의 과반수 소유 |
+○ |
+
+Hyundai Heavy Industries Miraflores Power Plant Inc. |
+2012.09.14 |
+Omega Building 2nd floor,Samuel Lewis Avenue and 53rd Street, Panama |
+기타제조업 |
+- |
+의결권의 과반수 소유 |
+X |
+
+HHI MAURITIUS LIMITED |
+2002.09.19 |
+10th Floor, Raffles Tower, 19 Cybercity,Ebene, Mauritius |
+기타제조업 |
+- |
+의결권의 과반수 소유 |
+X |
+
+Hyundai Arabia Company L.L.C |
+2012.11.10 |
+2nd Floor, Al-Noor Bldg. No.2, Prince Sultan bin Abdullaziz Road, Al-Jawhrah District, P.O.Box 32140, Al Khobar 31952, KSA |
+산업플랜트 건설업 |
+4,013 |
+의결권의 과반수 소유 |
+X |
+
+HD Hyundai Energy Solutions America, Inc. |
+2019.04.19 |
+4695 MacArthur Court, 11th fl,Newport Beach, CA 92660 |
+태양광모듈 판매업 |
+88,975 |
+의결권의 과반수 소유 |
+○ |
+
+HD Hyundai Technology Center India Private Limited |
+2019.09.08 |
+Plot No.A-2, MIDC Chakan Phase-II,Village-Khalumbre,Taluka-Khed Pune 410501 |
+연구개발업 |
+5,487 |
+의결권의 과반수 소유 |
+X |
+
+Pontos Investment LLC |
+2022.10.17 |
+6100 Atlantic Boulevard, 2nd floor,Norcross, GA 30071, USA |
+투자업 |
+57,681 |
+의결권의 과반수 소유 |
+X |
+
+HD Hyundai Europe Research andDevelopment Center GmbH |
+2023.03.22 |
+Peter-Muller-Strasse 14,40468 Dusseldorf, Germany |
+연구개발업 |
+2,366 |
+의결권의 과반수 소유 |
+X |
+
+Hyundai Heavy IndustriesArgentina S.R.L |
+2022.12.15 |
+Azcuenaga 1068, Buenos Aires, Argentina |
+건설업 |
+3,896 |
+의결권의 과반수 소유 |
+X |
+
+HD Hyundai Heavy IndustriesPhilippines, Inc. |
+2024.06.18 |
+Agila Southern Yard, Green Beach 1,Redondo Peninsula Sitio Agusuhin,Barangay Cawag,Subic Bay Freeport Zone, Zambales. |
+기타제조업 |
+627,036 |
+의결권의 과반수 소유 |
+○ |
+
+STX HI Malaysia Sdn. Bhd. |
+2010.06.16 |
+Kota Kinabalu, Sabah, Malaysia |
+산업플랜트 건설업 |
+29 |
+의결권의 과반수 소유 |
+X |
+
+Convion OY |
+2012.09.21 |
+Tekniikantie 12, Espoo, Finland |
+발전기 제조업 |
+18,696 |
+의결권의 과반수 소유 |
+X |
+
+HD Hyundai Eco Vina Co., Ltd |
+2006.11.20 |
+Dung Quat Economic Zone, Van Tuong commune, Quang Ngai Province , Viet Nam |
+기타제조업 |
+377,311 |
+의결권의 과반수 소유 |
+○ |
+
+[표 끝]
+
+※ 주요종속회사 판단기준 : 최근사업연도말 자산 총액 750억원 이상※ 최근 사업연도말 자산총액은 '25년 12월말 기준입니다.※ 지배관계의 근거 : 의결권의 과반수 소유(기업회계기준서 제1110호 문단 5~18), 실질지배력 보유(기업회계기준서 제1110호 문단 5~18)※ 종속회사 수 : 26개사(국내 : 12개사, 해외 : 14개사)※ 국내 상장사 종목기업 수 : 4개사 - HD한국조선해양㈜(009540), HD현대중공업㈜(329180), HD현대에너지솔루션㈜(322000), HD현대마린엔진㈜(071970)

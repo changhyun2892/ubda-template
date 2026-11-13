@@ -1,6 +1,6 @@
-# NAVER 사업보고서 (2025.12) — I. 회사의 개요 (본문 텍스트)
+# NAVER 사업보고서 (2025.12) — I. 회사의 개요 + 상세표-1 연결대상 종속회사 현황(상세) (본문 텍스트)
 # 접수번호 20260313001021 · 접수일 20260313 · 원문 https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313001021
-# OpenDART document.xml에서 자동 추출 (2026-11-13 18:00 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
+# OpenDART document.xml에서 자동 추출 (2026-11-13 18:21 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
 
 ## I. 회사의 개요
 
@@ -1546,3 +1546,793 @@ RSU, 스톡옵션 지급 |
 다. 사업목적 변경
 
 당사는 공시대상기간 중 정관상 사업목적을 변경한 바 없습니다.
+
+## 1. 연결대상 종속회사 현황(상세)
+
+[표]
+
+☞ 본문 위치로 이동
+ |
+
+[표 끝]
+
+[표]
+
+[표]
+
+ |
+(단위 : 백만원) |
+
+[표 끝]
+
+[표]
+
+상호 |
+설립일 |
+주소 |
+주요사업 |
+최근사업연도말자산총액 |
+지배관계 근거 |
+주요종속회사 여부 |
+
+네이버파이낸셜 주식회사 |
+2019-11-01 |
+경기도 성남시 분당구 정자일로 95, 7층 |
+전자금융업 |
+4,416,365 |
+의결권의 과반수를 소유 |
+해당 |
+
+WEBTOON Entertainment Inc |
+2016-09-09 |
+5700 Wilshire Blvd., Suite 220, Los Angeles, CA 90036 |
+모바일 컨텐츠 서비스 (미국) |
+2,903,270 |
+의결권의 과반수를 소유 |
+해당 |
+
+네이버클라우드 주식회사 |
+2009-05-01 |
+경기도 성남시 분당구 불정로 6 (정자동, 네이버 그린팩토리) |
+IT인프라 서비스 |
+2,328,935 |
+의결권의 과반수를 소유 |
+해당 |
+
+PROTON PARENT, INC. |
+2022-10-03 |
+251 Little Falls Drive, Wilmington, New Castle County, Delaware 19808 |
+기업 인수 목적 |
+1,974,301 |
+의결권의 과반수를 소유 |
+해당 |
+
+NAVER J.Hub Corporation |
+2018-07-12 |
+4-1-6, Shinjuku, Shinjuku-ku, Tokyo, JAPAN |
+투자 |
+1,924,219 |
+의결권의 과반수를 소유 |
+해당 |
+
+네이버웹툰 유한회사 |
+2020-05-29 |
+경기도 성남시 분당구 불정로 6, 6층~10층 |
+모바일 서비스 개발 |
+893,166 |
+의결권의 과반수를 소유 |
+해당 |
+
+Poshmark, Inc. |
+2011-01-28 |
+203 Redwood Shores Pkwy, 8th Floor, Redwood City, CA 94065 |
+커머스 플랫폼 (북미) |
+763,415 |
+의결권의 과반수를 소유 |
+해당 |
+
+LINE Digital Frontier Corporation |
+2018-07-02 |
+1-1-1 Nishi-Shinagawa, Shinagawa-ku, Tokyo, Japan |
+모바일 컨텐츠 서비스 |
+601,821 |
+의결권의 과반수를 소유 |
+해당 |
+
+NAVER France |
+2017-06-19 |
+89 rue Reaumur 75002 Paris |
+유럽사업 개발 및 R&D |
+500,042 |
+의결권의 과반수를 소유 |
+해당 |
+
+크림 주식회사 |
+2021-01-04 |
+경기도 성남시 분당구 분당내곡로 131, 7층 (백현동, 테크원타워) |
+스니커즈 중개 플랫폼 |
+325,270 |
+주주 구성상 지배력 행사 |
+해당 |
+
+LINE WORKS Corporation(구, Works Mobile Japan Corporation) |
+2015-06-03 |
+Tokyo, Shibuya City, Sakuragaokacho, 1-1, Shibuya Sakura stage, Shibuya tower 23F |
+웍스모바일 일본 사업 |
+254,142 |
+의결권의 과반수를 소유 |
+해당 |
+
+C-FUND Subfund 3 |
+2021-04-13 |
+101 Rue Reaumur 75002, Paris |
+투자 |
+190,533 |
+의결권의 과반수를 소유 |
+해당 |
+
+스노우 주식회사 |
+2016-08-01 |
+경기도 성남시 분당구 불정로 6, 15층 (정자동, 그린팩토리) |
+모바일플랫폼 서비스 |
+171,829 |
+의결권의 과반수를 소유 |
+해당 |
+
+알파넥스트미디어이노베이션펀드(구, 에스비넥스트미디어이노베이션펀드) |
+2016-12-13 |
+서울특별시 서초구 서초동 강남대로 465 |
+투자 (간접투자펀드) |
+165,098 |
+의결권의 과반수를 소유 |
+해당 |
+
+C-FUND Subfund 5 |
+2022-12-16 |
+101 Rue Reaumur 75002, Paris |
+투자 |
+126,471 |
+의결권의 과반수를 소유 |
+해당 |
+
+스튜디오엔 주식회사 |
+2018-08-08 |
+서울특별시 용산구 독서당로 122-1, 4층 |
+컨텐츠 서비스 |
+112,633 |
+의결권의 과반수를 소유 |
+해당 |
+
+N Investment Inc. |
+2022-06-23 |
+5700 Wilshire Blvd, Suite 220, LA, CA 90036 |
+투자 |
+107,935 |
+의결권의 과반수를 소유 |
+해당 |
+
+Naver Ventures Fund I, L.P. |
+2025-05-09 |
+203 Redwood Shores Pkwy, 8th Floor, Redwood City, CA 94065 |
+투자 |
+99,143 |
+의결권의 과반수를 소유 |
+해당 |
+
+엔테크서비스 주식회사 |
+2011-04-01 |
+경기도 성남시 분당구 황새울로 246, 에이동 2층 (수내동, 도담빌딩) |
+소프트웨어 개발 |
+84,719 |
+의결권의 과반수를 소유 |
+해당 |
+
+주식회사 문피아 |
+2012-12-27 |
+서울특별시 강남구 강남대로 308 두산랜드마크타워 12층 |
+웹소설 플랫폼 |
+83,745 |
+의결권의 과반수를 소유 |
+해당 |
+
+네이버랩스 주식회사 |
+2017-01-11 |
+경기도 성남시 분당구 정자일로 95, 18층 |
+R&D |
+81,183 |
+의결권의 과반수를 소유 |
+해당 |
+
+에스브이에이콘텐트미디어이호사모투자 합자회사 |
+2021-10-07 |
+서울시 서초구 강남대로 465, 비동 19층(서초동, 교보타워) |
+투자 |
+80,349 |
+의결권의 과반수를 소유 |
+해당 |
+
+SODA inc. |
+2018-07-13 |
+일본 도쿄도 시부야구 진구마에 6-27-8 5F |
+스니커즈 거래 플랫폼 운영 |
+78,642 |
+의결권의 과반수를 소유 |
+해당 |
+
+NAVER VIETNAM COMPANY LIMITED |
+2019-01-29 |
+4th Floor, Tower B, Viettel Building, 285 Cach Mang Thang Tam Str, Dist. 10, HCMC, Vietnam |
+모바일 서비스(베트남) |
+61,612 |
+의결권의 과반수를 소유 |
+미해당 |
+
+NAVER Cloud Asia Pacific Pte Ltd |
+2015-02-09 |
+8 Temasek Boulevard, #23-02, Suntec Tower Three, Singapore |
+IT 인프라 서비스(아시아) |
+61,230 |
+의결권의 과반수를 소유 |
+미해당 |
+
+티비티 글로벌 성장 제1호 투자조합 |
+2018-08-23 |
+서울특별시 강남구 도산대로 145, 8층(인우빌딩) |
+투자 (간접투자펀드) |
+57,824 |
+의결권의 과반수를 소유 |
+미해당 |
+
+에스브이에이소다사모투자 합자회사 |
+2020-12-22 |
+서울시 서초구 강남대로 465, 비동 19층(서초동, 교보타워) |
+투자 |
+49,258 |
+의결권의 과반수를 소유 |
+미해당 |
+
+NAVER U.Hub Inc |
+2016-06-29 |
+5700 Wilshire Blvd, Suite 220, LA, CA 90036 USA |
+모바일 서비스 (미국) |
+46,167 |
+의결권의 과반수를 소유 |
+미해당 |
+
+SNOW China Limited. |
+2016-08-30 |
+Units 04-05, 26/F, Railway Plaza, 39 Chatham Road South, Tsim Sha Tsui, Kowloon, Hong Kong |
+SNOW 서비스 (중국) |
+41,130 |
+의결권의 과반수를 소유 |
+미해당 |
+
+네이버아이앤에스 주식회사 |
+2009-02-06 |
+경기도 성남시 분당구 정자일로 95, 17층 |
+경영지원 서비스 |
+40,734 |
+의결권의 과반수를 소유 |
+미해당 |
+
+주식회사 그린웹서비스 |
+2010-01-04 |
+서울특별시 금천구 가산디지털1로 186 |
+네이버 서비스 운영지원 |
+40,583 |
+의결권의 과반수를 소유 |
+미해당 |
+
+Wattpad Webtoon Studios Corp.(캐나다) |
+2022-12-13 |
+36 Wellington St. E, 200 Toronto, Ontario, Canada M5E 1C7 |
+글로벌 컨텐츠 개발 |
+38,103 |
+의결권의 과반수를 소유 |
+미해당 |
+
+스프링캠프 초기전문 투자조합 제2호 |
+2020-05-15 |
+서울특별시 관악구 관악로 158, 3층 (봉천동, BS타워) |
+투자 |
+37,597 |
+의결권의 과반수를 소유 |
+미해당 |
+
+NAVER Cloud Japan Corporation |
+2017-12-27 |
+Tokyo, Shibuya City, Sakuragaokacho, 1-1, Shibuya Sakura stage, Shibuya tower 23F |
+IT 인프라 서비스 (일본) |
+37,029 |
+의결권의 과반수를 소유 |
+미해당 |
+
+C-Fund |
+2020-04-02 |
+101 Rue Reaumur 75002, Paris |
+투자 |
+35,180 |
+의결권의 과반수를 소유 |
+미해당 |
+
+Wattpad Corporation |
+2008-11-12 |
+36 Wellington St. E, 200 Toronto, Ontario, Canada M5E 1C74 |
+글로벌 웹소설 플랫폼 |
+34,126 |
+의결권의 과반수를 소유 |
+미해당 |
+
+주식회사 인컴즈 |
+2010-01-04 |
+강원도 춘천시 퇴계로 89 |
+네이버 서비스 운영지원 |
+32,887 |
+의결권의 과반수를 소유 |
+미해당 |
+
+NAVER-KTB 오디오콘텐츠 전문투자조합 |
+2017-04-25 |
+서울특별시 강남구 테헤란로 301(역삼동) 삼정빌딩 19층 |
+투자 (간접투자펀드) |
+31,375 |
+의결권의 과반수를 소유 |
+미해당 |
+
+엔아이티서비스 주식회사 |
+2014-09-01 |
+경기도 성남시 분당구 분당로 55, 2층 (서현동, 분당퍼스트타워) |
+소프트웨어 개발 |
+30,769 |
+의결권의 과반수를 소유 |
+미해당 |
+
+NAVER CLOUD AMERICA INC |
+2015-02-17 |
+2033 Gateway Place, Suite 500, San Jose, California 95110, USA |
+IT 인프라 서비스 (미국) |
+27,506 |
+의결권의 과반수를 소유 |
+미해당 |
+
+Poshmark Canada Inc. |
+2018-09-05 |
+151 W Hastings, Vancouver, Ontario, Canada, W6B 1H4 |
+커머스 플랫폼 (북미) |
+26,093 |
+의결권의 과반수를 소유 |
+미해당 |
+
+증권플러스비상장 주식회사 |
+2025-07-01 |
+서울특별시 서초구 강남대로 369, 17층(서초동 디에프타워) |
+소프트웨어 개발 및 공급 |
+24,005 |
+의결권의 과반수를 소유 |
+미해당 |
+
+NAVER CHINA CORPORATION |
+2004-10-20 |
+Room 12-1001, 10th Floor, Building 316, Nanhu Zhongyuan, Chaoyang District, Beijing,China |
+네이버 중국사업 운영 지원 |
+21,134 |
+의결권의 과반수를 소유 |
+미해당 |
+
+스프링캠프 초기전문 투자조합 제1호 |
+2017-05-17 |
+서울특별시 관악구 관악로 158, 3층 (봉천동, BS타워) |
+투자 (간접투자펀드) |
+21,097 |
+의결권의 과반수를 소유 |
+미해당 |
+
+페이머스스튜디오 주식회사 |
+2019-12-03 |
+서울특별시 송파구 송파대로 55, A동 601호(장지동, 서울복합물류) |
+의류, 잡화, 뉴스 제공업 |
+20,895 |
+의결권의 과반수를 소유 |
+미해당 |
+
+주식회사 컴파트너스 |
+2011-04-01 |
+인천광역시 부평구 경원대로 1373 |
+네이버 서비스 운영지원 |
+19,363 |
+의결권의 과반수를 소유 |
+미해당 |
+
+C-FUND Subfund 2 |
+2020-04-02 |
+101 Rue Reaumur 75002, Paris |
+투자 |
+16,402 |
+의결권의 과반수를 소유 |
+미해당 |
+
+NAVER Cloud Europe GmbH |
+2015-05-22 |
+Messe Turm 25. OG. Friedrich-Ebert-Anlage 49, 60308 Frankfurt am Main, Germany |
+IT 인프라 서비스 (유럽) |
+15,010 |
+의결권의 과반수를 소유 |
+미해당 |
+
+Chengdu NCC Technology Corporation |
+2022-02-17 |
+7th Floor,Tower D,CPIC Financial Tower,No.199, Tianfu 3rd street,Hi-tech Area,Chengdu, Sichuan Province ,China 610041 |
+네이버 중국사업 운영 지원 |
+14,639 |
+의결권의 과반수를 소유 |
+미해당 |
+
+네이버디지털헬스케어1호투자조합 |
+2025-12-12 |
+서울시 강남구 도산대로 145, 8층 (신사동, 인우빌딩) |
+투자 |
+12,195 |
+의결권의 과반수를 소유 |
+미해당 |
+
+Poshmark India Private Limited |
+2013-05-29 |
+h-63, Vijay Chowk, Laxmi Nagar, Delhi, East Delhi, Delhi, India, 110092 |
+커머스 플랫폼 (글로벌) |
+11,811 |
+의결권의 과반수를 소유 |
+미해당 |
+
+주식회사 스튜디오제이에이치에스 |
+2018-04-13 |
+경기도 고양시 일산동구 백마로 195, 10001-2호 |
+컨텐츠 제작 |
+11,286 |
+의결권의 과반수를 소유 |
+미해당 |
+
+SODA Singapore INT PTE. LTD, |
+2021-09-30 |
+114 LAVENDER STREET #05-77 CT HUB 2 SINGAPORE (338729) |
+스니커즈 거래 플랫폼 운영 |
+10,852 |
+의결권의 과반수를 소유 |
+미해당 |
+
+스튜디오리코 주식회사(구, 리코 주식회사) |
+2017-07-03 |
+경기도 성남시 분당내곡로 131, 7층 |
+모바일 컨텐츠 서비스 |
+10,461 |
+의결권의 과반수를 소유 |
+미해당 |
+
+SNOW China (Beijing) Co., Ltd. |
+2017-02-09 |
+Room 15-1001, 10th Floor, Building 316, Nanhu Zhongyuan, Chaoyang District, Beijing,China |
+SNOW 서비스 (중국) |
+8,136 |
+의결권의 과반수를 소유 |
+미해당 |
+
+주식회사 플레이스앤 |
+2014-10-24 |
+서울특별시 강남구 테헤란로20길 20, 8층 (역삼동, 삼정빌딩) |
+소프트웨어 개발 및 공급 |
+7,698 |
+의결권의 과반수를 소유 |
+미해당 |
+
+Do Ventures Annex Fund, LP |
+2020-09-16 |
+Appleby Global Services (Cayman) Limited, 71 Fort Street, PO Box 500, Grand Cayman, KY1-1106, Cayman Islands |
+투자 |
+7,655 |
+의결권의 과반수를 소유 |
+미해당 |
+
+Broccoli Entertainment Corporation |
+2017-02-21 |
+Room 16-1001, 10th Floor, Building 316, Nanhu Zhongyuan, Chaoyang District, Beijing, China |
+모바일 컨텐츠 서비스 (중국) |
+7,479 |
+의결권의 과반수를 소유 |
+미해당 |
+
+Wattpad Inc |
+2013-01-13 |
+1209 ORANGE ST, WILMINGTON, New Castle, DE, 19801 |
+글로벌 웹소설 플랫폼 지원 |
+7,172 |
+의결권의 과반수를 소유 |
+미해당 |
+
+네이버시너지펀드(구, 네이버-퀀텀콘텐츠1호펀드) |
+2020-12-03 |
+서울시 강남구 영동대로 511, 3608호 (삼성동, 트레이드타워) |
+투자 |
+5,871 |
+의결권의 과반수를 소유 |
+미해당 |
+
+SNOW Japan Corporation |
+2016-12-22 |
+22fl Sumitomo Fudosan Osaki Garden Tower, 1-1-1 Nishishinagawa, Shinagawa-ku, Tokyo, Japan |
+SNOW 서비스 (일본) |
+5,062 |
+의결권의 과반수를 소유 |
+미해당 |
+
+NAVER Arabia Regional Headquarter |
+2025-01-27 |
+3229, Financial Boulevard, 6789, Riyadh, Kingdom of Saudi Arabia |
+글로벌 사업 지원 |
+4,973 |
+의결권의 과반수를 소유 |
+미해당 |
+
+Yiruike Information Technology (Beijing) Co., Ltd. |
+2017-11-01 |
+Room 815, 8th Floor, building 9, Guanghua Road, Chaoyang District, Beijing, China |
+SNOW 서비스 (중국) |
+4,769 |
+의결권의 과반수를 소유 |
+미해당 |
+
+주식회사 엔비전스 |
+2009-02-17 |
+서울특별시 종로구 북촌로 71, 3층 (가회동) |
+전시 및 공연기획 사업 |
+4,677 |
+의결권의 과반수를 소유 |
+미해당 |
+
+스프링캠프 초기전문 투자조합 제4호 |
+2022-05-27 |
+서울특별시 관악구 관악로 158, 3층 (봉천동, BS타워) |
+투자 |
+3,920 |
+의결권의 과반수를 소유 |
+미해당 |
+
+세나클 |
+2018-11-19 |
+서울특별시 강남구 역삼로 212, 5층(역삼동, 동아빌딩) |
+소프트웨어 개발 및 공급 |
+3,227 |
+의결권의 과반수를 소유 |
+미해당 |
+
+네이버웹툰컴퍼니 주식회사 |
+2017-05-01 |
+경기도 성남시 분당구 불정로 6, 10층 |
+웹툰 컨텐츠 서비스 |
+2,665 |
+의결권의 과반수를 소유 |
+미해당 |
+
+크림페이 주식회사 |
+2025-01-10 |
+경기도 성남시 분당구 불정로 6, 11층(정자동, 그린팩토리) |
+금융 지원 서비스업 |
+2,520 |
+의결권의 과반수를 소유 |
+미해당 |
+
+주식회사 아실 |
+2018-04-19 |
+대구광역시 달서구 장산남로 21, 707호 (용산동, 법조빌딩) |
+온라인정보 제공 |
+2,506 |
+의결권의 과반수를 소유 |
+미해당 |
+
+네이버핸즈 주식회사 |
+2020-10-16 |
+경기도 성남시 분당구 불정로 6 (정자동) |
+장애인표준사업장 운영 |
+2,198 |
+의결권의 과반수를 소유 |
+미해당 |
+
+팹 주식회사 |
+2022-01-24 |
+서울특별시 영등포구 당산로37길 16, 1층(당산동4가, 씨에스로직스복합시설) |
+전자상거래업 |
+2,125 |
+의결권의 과반수를 소유 |
+미해당 |
+
+주식회사 오디언소리 |
+2011-04-20 |
+서울시 마포구 월드컵북로396, 비즈니스타워 8층 (상암동, 누리꿈스퀘어) |
+오디오 컨텐츠 서비스 |
+2,096 |
+의결권의 과반수를 소유 |
+미해당 |
+
+Webtoon Productions Inc. |
+2022-12-31 |
+1209 ORANGE ST, WILMINGTON, New Castle, DE, 19801 |
+글로벌 컨텐츠 개발 |
+2,059 |
+의결권의 과반수를 소유 |
+미해당 |
+
+네이버클라우드트러스트서비스 주식회사 |
+2023-05-02 |
+경기도 성남시 분당구 불정로 6 (정자동, 네이버 그린팩토리) |
+IT 인프라 서비스 |
+1,756 |
+의결권의 과반수를 소유 |
+미해당 |
+
+케이크 주식회사 |
+2020-10-08 |
+경기도 성남시 분당구 불정로 6, 15층 (정자동, 네이버 그린팩토리) |
+언어학습 어플리케이션 |
+1,584 |
+의결권의 과반수를 소유 |
+미해당 |
+
+Naver Ventures Management, LLC, |
+2025-05-09 |
+203 Redwood Shores Pkwy, 8th Floor, Redwood City, CA 94065 |
+투자 |
+1,334 |
+의결권의 과반수를 소유 |
+미해당 |
+
+SNOW VIETNAM COMPANY LIMITED |
+2019-11-05 |
+16 Nguyen Dang Giai, Thao Dien Ward, Thu Duc City, Ho Chi Minh City, Vietnam (Sentry P) |
+모바일 서비스 운영 |
+1,232 |
+의결권의 과반수를 소유 |
+미해당 |
+
+스프링캠프 상생 펀드 1호 |
+2023-04-27 |
+서울특별시 관악구 관악로 158, 3층 (봉천동, BS 타워) |
+투자 |
+955 |
+의결권의 과반수를 소유 |
+미해당 |
+
+Poshmark Limited |
+2021-04-26 |
+12 New Fetter Lane, London, United Kingdom EC4A 1JP. |
+커머스 플랫폼 (글로벌) |
+666 |
+의결권의 과반수를 소유 |
+미해당 |
+
+주식회사 세미콜론스튜디오 |
+2019-09-02 |
+서울특별시 강남구 테헤란로 151, 4층 420호(역삼동, 역삼하이츠빌딩) |
+정보통신서비스업 |
+651 |
+의결권의 과반수를 소유 |
+미해당 |
+
+Dongman Entertainment Corporation |
+2017-01-11 |
+No. 88, Room 1101, Unit 1, 10th Floor, Building 1, Compound No. 33, Guangshun North Street, Chaoyang District, Beijing, China |
+모바일 컨텐츠 서비스 (중국) |
+588 |
+의결권의 과반수를 소유 |
+미해당 |
+
+Poshmark Online Marketplace Private Limited |
+2021-07-09 |
+h-63, Vijay Chowk, Laxmi Nagar, Delhi, East Delhi, Delhi, India, 110092 |
+커머스 플랫폼 (글로벌) |
+583 |
+의결권의 과반수를 소유 |
+미해당 |
+
+SODA inc. |
+2024-06-03 |
+345 Lorton Avenue, Suite 306 Burlingame, California 94010, USA |
+스니커즈 거래 플랫폼 운영 |
+518 |
+의결권의 과반수를 소유 |
+미해당 |
+
+BootCamp Partnership Limited |
+2023-08-01 |
+36 Wellington St. E., 200, Toronto, Ontario, Canada, M5E 1C7 |
+영화유통 |
+339 |
+의결권의 과반수를 소유 |
+미해당 |
+
+Place&JAPAN Co., Ltd. |
+2015-05-01 |
+Room 403, 4th Floor, Tensho Office Higashi Shinjuku, Okubo, Shinjuku,Tokyo, Japan |
+소프트웨어 개발 및 공급 |
+324 |
+의결권의 과반수를 소유 |
+미해당 |
+
+주식회사 퍼플덕 |
+2021-12-30 |
+서울 마포구 월드컵북로4길 25, 4층 |
+방송 프로그램 제작 |
+179 |
+의결권의 과반수를 소유 |
+미해당 |
+
+Watong Entertainment Limited |
+2016-10-20 |
+Room 04-05 26F, Railway Plaza 39 Chatham Road South Tsim Sha Tsui Kowloon, HK |
+모바일 서비스(중국) |
+167 |
+의결권의 과반수를 소유 |
+미해당 |
+
+에이치제이앤알 |
+2024-11-05 |
+서울특별시 강남구 논현로79길 48-1, 2층 1007호(역삼동) |
+전자상거래업 |
+86 |
+의결권의 과반수를 소유 |
+미해당 |
+
+나매인 주식회사 |
+2020-02-18 |
+서울특별시 마포구 어울마당로5길 7, 5층 |
+스니커즈 커뮤니티 운영 |
+54 |
+의결권의 과반수를 소유 |
+미해당 |
+
+C-FUND Subfund 4 |
+2021-12-24 |
+101 Rue Reaumur 75002, Paris |
+투자 |
+38 |
+의결권의 과반수를 소유 |
+미해당 |
+
+Monokabu Inc. |
+2017-12-01 |
+7-22-17 Nishigotanda Shinagawa-ku Tokyo, 141-0031 Japan |
+스니커즈 거래 플랫폼 운영 |
+27 |
+의결권의 과반수를 소유 |
+미해당 |
+
+SNOW Inc. |
+2017-02-08 |
+5700 Wilshire Blvd., Suite 220, Los Angeles, CA 90036, USA |
+SNOW 서비스 (미국) |
+11 |
+의결권의 과반수를 소유 |
+미해당 |
+
+NW HOLDINGS INTERMEDIA, S.L.U |
+2025-09-02 |
+Street Roc Boronat Number 147, Floor 10, Barcelona |
+투자 |
+5 |
+의결권의 과반수를 소유 |
+미해당 |
+
+Wattpad Studios (Cell Phone Swap) Inc |
+2020-12-12 |
+36 Wellington St. E, 200 Toronto, Ontario, Canada M5E 1C7 |
+글로벌 웹소설 플랫폼 지원 |
+0 |
+의결권의 과반수를 소유 |
+미해당 |
+
+Naver Partners Fund I, L.P. |
+2025-10-20 |
+203 Redwood Shores Pkwy, 8th Floor, Redwood City, CA 94065 |
+투자 |
+0 |
+의결권의 과반수를 소유 |
+미해당 |
+
+[표 끝]

@@ -1,6 +1,6 @@
-# 오리온 사업보고서 (2025.12) — I. 회사의 개요 (본문 텍스트)
+# 오리온 사업보고서 (2025.12) — I. 회사의 개요 + 상세표-1 연결대상 종속회사 현황(상세) (본문 텍스트)
 # 접수번호 20260318001320 · 접수일 20260318 · 원문 https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001320
-# OpenDART document.xml에서 자동 추출 (2026-11-13 18:00 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
+# OpenDART document.xml에서 자동 추출 (2026-11-13 18:21 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
 
 ## I. 회사의 개요
 
@@ -1571,3 +1571,131 @@ Pan OrionCorp. Limited의 (주)리가켐바이오사이언스 주식 취득- 취
 영위 |
 
 [표 끝]
+
+## 1. 연결대상 종속회사 현황(상세)
+
+[표]
+
+☞ 본문 위치로 이동
+ |
+
+[표 끝]
+
+[표]
+
+[표]
+
+ |
+(단위 : 백만원) |
+
+[표 끝]
+
+[표]
+
+상호 |
+설립일 |
+주소 |
+주요사업 |
+최근사업연도말자산총액 |
+지배관계 근거 |
+주요종속회사 여부 |
+
+Pan Orion Corp.Limited (*1) |
+2008.07 |
+220A,2/F, Mirror Tower.61 Mody Road, Tsim Sha Tsui East Kowloon, Hong Kong |
+지주회사 |
+1,263,214 |
+의결권의과반수 소유 |
+○ 주요종속회사 해당(자산총액 750억원 이상) |
+
+Orion International Euro LLC |
+2007.01 |
+Moskovskiy settl., Kievskoe highway 22 km, area 6, str. 1,3rd floor, 2nd bld., office 18, Comcity BC, Moscow, Russia |
+과자류생산 / 판매 |
+324,034 |
+의결권의과반수 소유 |
+○ 주요종속회사 해당(자산총액 750억원 이상) |
+
+Orion Food Vina Co., Ltd |
+2005.09 |
+Lot E-13-CN, NA3 Road, My Phuoc 2 Industrial Zone,Ben Cat, Binh Duong Province, Viet Nam |
+과자류생산 / 판매 |
+483,180 |
+의결권의과반수 소유 |
+○ 주요종속회사 해당(자산총액 750억원 이상) |
+
+Orion Nutritionals Private Limited |
+2018.10 |
+9th Floor, Unit Nos. 912A, 912B, 912C and 913, IT/ITES Office space,Block No.02, Magnum Global Park, Sector-58, Gurugram, Haryana, 122011 |
+과자류 판매 |
+40,539 |
+의결권의과반수 소유 |
+- |
+
+Orion Food Co., Ltd |
+1995.12 |
+No.11 Quanxing Road, Langfang Economic and Technical Development Zone,Langfang, Hebei, 065001, China. |
+과자류생산 / 판매 |
+787,126 |
+의결권의과반수 소유 |
+○ 주요종속회사 해당(자산총액 750억원 이상) |
+
+Orion Food (Shanghai)Co., Ltd |
+1997.09 |
+No.5151,Waiqingsong Road, Qingpu Industrial Zone, Qingpu, Shanghai, 201700, China |
+과자류 생산 |
+237,293 |
+의결권의과반수 소유 |
+○ 주요종속회사 해당(자산총액 750억원 이상) |
+
+Orion Food (Guangzhou)Co., Ltd |
+2008.01 |
+No.15 Jingu South Road,Huadong, Huadu District, Guangzhou City, China |
+과자류 생산 |
+188,179 |
+의결권의과반수 소유 |
+○ 주요종속회사 해당(자산총액 750억원 이상) |
+
+Orion Food (Shenyang)Co., Ltd |
+2012.01 |
+No.15 Xiahuahu Road, Shenbei New District, Shenyang, Liaoning Province, 110127, China |
+과자류 생산 |
+203,379 |
+의결권의과반수 소유 |
+○ 주요종속회사 해당(자산총액 750억원 이상) |
+
+Orion Agro Co., Ltd |
+2008.05 |
+No.8 BaiHeRoad, Langfang Economic&Tecnical Development Zone, Hebei, 065001, China |
+음식료품제조업 |
+9,341 |
+의결권의과반수 소유 |
+- |
+
+Orion Agro DuoLun Co., Ltd |
+2015.03 |
+Room 203 Unit 3 Building 5, Long qiwan,Duolun street,Zhuoer Town Duolun Xilin Go League lnner Mongolia Autonomous Region |
+농산물가공 |
+6,546 |
+의결권의과반수 소유 |
+- |
+
+LangFang Green Eco Packaging Co., Ltd |
+2002.11 |
+No.6 Yueyang Road, LangFang ETDZ, Hebei Province, China |
+포장제조 |
+27,985 |
+의결권의과반수 소유 |
+- |
+
+ORION F&B US, INC |
+2021.03 |
+530 Technology DR, STE 100, Irvine, CA 92618, USA |
+과자류 도매업 |
+4,421 |
+의결권의과반수 소유 |
+- |
+
+[표 끝]
+
+(*1) 상기 주요 재무현황은 지배기업과 종속기업의 별도재무제표 기준입니다.

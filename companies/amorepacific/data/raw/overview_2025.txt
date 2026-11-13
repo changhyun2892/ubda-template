@@ -1,6 +1,6 @@
-# 아모레퍼시픽 사업보고서 (2025.12) — I. 회사의 개요 (본문 텍스트)
+# 아모레퍼시픽 사업보고서 (2025.12) — I. 회사의 개요 + 상세표-1 연결대상 종속회사 현황(상세) (본문 텍스트)
 # 접수번호 20260318000785 · 접수일 20260318 · 원문 https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000785
-# OpenDART document.xml에서 자동 추출 (2026-11-13 17:59 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
+# OpenDART document.xml에서 자동 추출 (2026-11-13 18:14 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
 
 ## I. 회사의 개요
 
@@ -1124,3 +1124,270 @@ N |
 [표 끝]
 
 주1) 상기 사업목적은 당사와 (주)에스트라의 합병에 따라 피합병법인의 기존사업을 계속적으로 영위하기 위해 정관에 사업목적을 추가한 사항입니다.주2) 상기 합병과 관련된 자세한 내용은 2021년 6월 21일에 공시한 주요사항보고서(회사합병결정) 및 2021년 9월 2일에 공시한 합병등 종료보고서 공시를 참고해주시기 바랍니다.
+
+## 1. 연결대상 종속회사 현황(상세)
+
+[표]
+
+☞ 본문 위치로 이동
+ |
+
+[표 끝]
+
+[표]
+
+[표]
+
+ |
+(단위 : 백만원) |
+
+[표 끝]
+
+[표]
+
+상호 |
+설립일 |
+주소 |
+주요사업 |
+최근사업연도말자산총액 |
+지배관계 근거 |
+주요종속회사 여부 |
+
+(주)위드림 |
+2014.09 |
+경기도 오산시 궐리사로8, 119호 |
+제품포장 및 시설관리 |
+2,648 |
+기업 의결권의 과반수 소유 |
+해당 없음 |
+
+(주)코어테크놀로지 |
+2019.05 |
+경기 오산시 가장산업서로 56-8(가장동) |
+설비설계 및 제작 |
+2,369 |
+기업 의결권의 과반수 소유 |
+해당 없음 |
+
+(주)코스비전 |
+2008.01 |
+대전광역시 대덕구 대화로 80 |
+화장품, 세정제, 유무기 화합물 제조 및 판매 |
+130,383 |
+기업 의결권의 과반수 소유 |
+해당(직전연도 자산총액이 750억원 이상인 종속회사) |
+
+(주)코스알엑스 |
+2013.12 |
+서울특별시 강남구 테헤란로 231 5층 (역삼동, 센터필드) |
+화장품 제조 및 판매 |
+272,067 |
+기업 의결권의 과반수 소유 |
+해당(직전연도 자산총액이 750억원 이상인 종속회사) |
+
+AMORE Cosmetics (Shanghai) Co.,Ltd. |
+2000.11 |
+No. 768, Boxue South Road, Malu Town, Jiading District, Shanghai, China 201801 |
+화장품 제조 및 판매 |
+375,464 |
+기업 의결권의 과반수 소유 |
+해당(직전연도 자산총액이 750억원 이상인 종속회사) |
+
+AMOREPACIFIC (Shanghai) R&I Center Co.,Ltd. |
+2012.10 |
+No. 768, Boxue South Road, Malu Town, Jiading District, Shanghai, China 201801 |
+연구개발 |
+5,402 |
+기업 의결권의 과반수 소유 |
+해당 없음 |
+
+AMOREPACIFIC Trading Co.,Ltd. |
+2003.03 |
+HKRI CentreOne, HKRI Taikoo Hui, 288 Shimen Road (No.1), Shanghai, P.R. China 200041 |
+화장품 판매 |
+122,864 |
+기업 의결권의 과반수 소유 |
+해당(직전연도 자산총액이 750억원 이상인 종속회사) |
+
+AMOREPACIFIC (SHANGHAI) COSMETICS CO., LTD |
+2018 |
+
+Room 431,No.458,North Fute Road,(Shanghai) Pilot Free Trade Zone, China
+
+ |
+화장품 판매 |
+397 |
+기업 의결권의 과반수 소유 |
+해당 없음 |
+
+AMOREPACIFIC Global Operations Limited. |
+2010.06 |
+15th Floor, Luk Kwok Centre, 72 Gloucester Road, Wanchai, Hong Kong |
+지주회사업 및 화장품 판매 |
+38,762 |
+기업 의결권의 과반수 소유 |
+해당 없음 |
+
+AMOREPACIFIC Hong Kong Co.,Limited |
+2005.01 |
+15th Floor, Luk Kwok Centre, 72 Gloucester Road, Wanchai, Hong Kong |
+화장품 판매 |
+46,598 |
+기업 의결권의 과반수 소유 |
+해당 없음 |
+
+AMOREPACIFIC Taiwan Co.,Ltd. |
+1989.06 |
+Amorepacific TAIWAN, Co., Ltd. 4F, No.106, Sec. 5, Xinyi Rd., Xinyi Dist., Taipei City 110, Taiwan (R.O.C) |
+화장품 판매 |
+36,434 |
+기업 의결권의 과반수 소유 |
+해당 없음 |
+
+AMOREPACIFIC US, INC. |
+1978.04 |
+1407 Broadway, Suite 210, New York, NY 10018 |
+화장품 판매 |
+196,952 |
+기업 의결권의 과반수 소유 |
+해당(직전연도 자산총액이 750억원 이상인 종속회사) |
+
+AMOREPACIFIC US Investment, Inc. |
+2022.08 |
+1209 North Orange Street, in the City of Wilmington, County of New Castle, Delaware 19801 |
+지주회사업 |
+78,151 |
+기업 의결권의 과반수 소유 |
+해당(직전연도 자산총액이 750억원 이상인 종속회사) |
+
+Tata's Natural Alchemy, LLC |
+2007.08 |
+1136 Wooster Road, Whiting, Vermont 05778, United States |
+화장품 제조 및 판매 |
+22,943 |
+기업 의결권의 과반수 소유 |
+해당 없음 |
+
+AMOREPACIFIC CANADA INC. |
+2015.12 |
+175 Bloor Street East, Suite 302, Toronto Ontario M4W 3R8, CANADA |
+화장품 판매 |
+21,971 |
+기업 의결권의 과반수 소유 |
+해당 없음 |
+
+AMOREPACIFIC GLOBAL OPERATION PTE. LTD. |
+2022.10 |
+8 Cross Street, Level 25, Manulife Tower, Singapore 048424 |
+지주회사업 |
+144,472 |
+기업 의결권의 과반수 소유 |
+해당(직전연도 자산총액이 750억원 이상인 종속회사) |
+
+AMOREPACIFIC SINGAPORE PTE Co Ltd. |
+2003.08 |
+8 Cross Street, Level 25, Manulife Tower, Singapore 048424 |
+화장품 판매 |
+31,417 |
+기업 의결권의 과반수 소유 |
+해당 없음 |
+
+AMOREPACIFIC MALAYSIA SDN. BHD. |
+2004.09 |
+Suite 13.01 Level 13, Centrepoint North, Mid Valley City, Lingkaran Syed Putra, Kuala Lumpur 59200, Malaysia |
+화장품 판매 |
+42,831 |
+기업 의결권의 과반수 소유 |
+해당 없음 |
+
+AMOREPACIFIC (Thailand) LIMITED |
+2010.11 |
+Unit 3, 35th Floor, CRC Tower, All Seasons Place 87/2, Witthayu Road, Pathumwan, Bangkok, Thailand |
+화장품 판매 |
+39,647 |
+기업 의결권의 과반수 소유 |
+해당 없음 |
+
+AMOREPACIFIC VIETNAM LTD. |
+2010.05 |
+18 floor, Riverfront Financial Center building, 3A-3B Ton Duc Thang, Sai Gon ward, Ho Chi Minh, Vietnam |
+화장품 판매 |
+20,430 |
+기업 의결권의 과반수 소유 |
+해당 없음 |
+
+PT. LANEIGE INDONESIA PACIFIC |
+2004.09 |
+Pacific Century Place Level 11 / Unit 1101-3, Sudirman Central Business District (SCBD) Lot 10, Jl. Jend. Sudirman Kav.52-53, Jakarta 12190, Indonesia |
+화장품 판매 |
+21,385 |
+기업 의결권의 과반수 소유 |
+해당 없음 |
+
+AMOREPACIFIC AUSTRALIA PTY LTD |
+2017.12 |
+Suite 5.01, 459 Little Collins Street, Melbourne, VIC 3000, Australia |
+화장품 판매 |
+16,350 |
+기업 의결권의 과반수 소유 |
+해당 없음 |
+
+AMOREPACIFIC PHILIPPINES, INC. |
+2018 |
+Unit 2205 The Podium West Tower 12 ADB Avenue, Ortigas Center, Mandaluyong City, 1550 Philippines |
+화장품 판매 |
+6,974 |
+기업 의결권의 과반수 소유 |
+해당 없음 |
+
+Innisfree Cosmetics India Private Limited |
+2012.11 |
+15th Floor, Tower B, Vatika Towers, Golf Course Road, Sector 54 Gurgaon 122002 |
+화장품 판매 |
+17,041 |
+기업 의결권의 과반수 소유 |
+해당 없음 |
+
+AMOREPACIFIC ME FZ-LLC |
+2016.05 |
+Po Box 333204 / 401, 4th Floor Building No.1B, Dubai Design District, Dubai, U.A.E |
+화장품 판매 |
+13 |
+기업 의결권의 과반수 소유 |
+해당 없음 |
+
+AMOREPACIFIC Japan Co.,Ltd. |
+2005.02 |
+18th Floor, Ebisu Prime Square, 1-1-39 Hiroo, Shibuya-ku, Tokyo 150-0012, Japan |
+화장품 판매 |
+48,755 |
+기업 의결권의 과반수 소유 |
+해당 없음 |
+
+AMOREPACIFIC EUROPE S.A.S |
+1990.09 |
+5F, 6 Rue Cambaceres, 75008 Paris, France |
+화장품 판매 |
+53,823 |
+기업 의결권의 과반수 소유 |
+해당 없음 |
+
+Amorepacific Russia LLC |
+2019.04 |
+119019, Moscow, int.ter.municipal district Arbat, Filippovsky lane, 8/1, space 3/1 |
+화장품 판매 |
+4,214 |
+기업 의결권의 과반수 소유 |
+해당 없음 |
+
+Amorepacific UK Limited |
+2023.04 |
+Soho 33 Broadwick Street London W1F 0DQ |
+화장품 판매 |
+27,514 |
+기업 의결권의 과반수 소유 |
+해당 없음 |
+
+[표 끝]
+
+주1) 상기 최근사업연도 말 자산총액은 2025년말 기준임.주2) AMOREPACIFIC Hong Kong Co.,Limited는 Billion-Wide Enterprise Limited의 재무정보를 포함하고 있습니다.주3) 당기말 현재 AMOREPACIFIC ME FZ-LLC은 청산절차를 진행중입니다.

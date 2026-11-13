@@ -1,6 +1,6 @@
-# 삼성에스디에스 사업보고서 (2025.12) — I. 회사의 개요 (본문 텍스트)
+# 삼성에스디에스 사업보고서 (2025.12) — I. 회사의 개요 + 상세표-1 연결대상 종속회사 현황(상세) (본문 텍스트)
 # 접수번호 20260310002989 · 접수일 20260310 · 원문 https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310002989
-# OpenDART document.xml에서 자동 추출 (2026-11-13 18:00 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
+# OpenDART document.xml에서 자동 추출 (2026-11-13 18:22 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
 
 ## I. 회사의 개요
 
@@ -1068,5 +1068,419 @@ LED조명사업 |
 35 |
 전 각항에 관련된 제반사업(수출입업 및 동대행업, 기술용역, 엔지니어링 서비스업. 전기통신공사업, 전기공사업, 정보통신공사업, 제조업 및 도ㆍ소매업, 기타 사업서비스업, 영화방송 및 공연산업, 보험 대리 및 중개업 등을 포함한 금융업 및 금융관련서비스업 등 제반사업) 및 투자 |
 영위 |
+
+[표 끝]
+
+## 1. 연결대상 종속회사 현황(상세)
+
+[표]
+
+☞ 본문 위치로 이동
+ |
+
+[표 끝]
+
+[표]
+
+[표]
+
+ |
+(단위 : 백만원) |
+
+[표 끝]
+
+[표]
+
+상호 |
+설립일 |
+주소 |
+주요사업 |
+최근사업연도말자산총액 |
+지배관계 근거 |
+주요종속회사 여부 |
+
+(주)시큐아이 |
+2000.03.20 |
+서울시 종로구 |
+정보보안서비스 |
+210,727 |
+기업의결권의 과반수 |
+해당 |
+
+(주)멀티캠퍼스 |
+2000.05.04 |
+서울시 강남구 |
+교육서비스 |
+296,325 |
+기업의결권의 과반수 |
+해당 |
+
+에스코어(주) |
+2007.05.17 |
+서울시 송파구 |
+IT서비스 |
+125,727 |
+기업의결권의 과반수 |
+해당 |
+
+오픈핸즈(주) |
+2010.10.15 |
+서울시 송파구 |
+IT서비스 |
+5,210 |
+기업의결권의 과반수 |
+해당없음 |
+
+(주)미라콤아이앤씨 |
+1998.12.08 |
+서울시 송파구 |
+IT서비스 |
+145,188 |
+기업의결권의 과반수 |
+해당 |
+
+(주)엠로 |
+2000.03.15 |
+서울시 영등포구 |
+AI S/W 개발 |
+111,905 |
+실질지배력 보유 |
+해당 |
+
+SVIC 50호 신기술사업투자조합 |
+2020.11.13 |
+서울시 서초구 |
+신기술사업자/벤처기업투자 |
+24,790 |
+기업의결권의 과반수 |
+해당없음 |
+
+SVIC 65호 신기술사업투자조합 |
+2024.02.08 |
+서울시 서초구 |
+신기술사업자/벤처기업투자 |
+22,337 |
+기업의결권의 과반수 |
+해당없음 |
+
+Samsung SDS America, Inc. |
+1997.02.18 |
+New Jersey, USA |
+IT서비스/물류 |
+1,303,970 |
+기업의결권의 과반수 |
+해당 |
+
+SAMSUNG SDS GSCL Canada., Ltd. |
+2016.02.23 |
+Toronto, Canada |
+물류 |
+23,344 |
+기업의결권의 과반수 |
+해당없음 |
+
+Samsung SDS Europe, Ltd. |
+2000.05.01 |
+Surrey, UK |
+IT서비스/물류 |
+526,100 |
+기업의결권의 과반수 |
+해당 |
+
+Samsung SDS Global SCL Hungary, Kft. |
+2013.06.11 |
+Budapest, Hungary |
+물류 |
+86,238 |
+기업의결권의 과반수 |
+해당 |
+
+Samsung SDS Global SCL Slovakia, S.R.O. |
+2013.06.01 |
+Voderady, Slovakia |
+물류 |
+158,648 |
+기업의결권의 과반수 |
+해당 |
+
+Samsung SDS Global SCL Poland Sp. Z.o.o. |
+2014.04.01 |
+Wronki, Poland |
+물류 |
+81,817 |
+기업의결권의 과반수 |
+해당 |
+
+Samsung GSCL Sweden AB |
+2017.02.20 |
+Kista, Sweden |
+물류 |
+10,115 |
+기업의결권의 과반수 |
+해당없음 |
+
+Samsung SDS Global SCL France SAS |
+2017.01.17 |
+Saint-Ouen, France |
+물류 |
+4,493 |
+기업의결권의 과반수 |
+해당없음 |
+
+Samsung SDS Global SCL Italy S.R.L. A Socio Unico |
+2017.05.04 |
+Milano, Italy |
+물류 |
+27,097 |
+기업의결권의 과반수 |
+해당없음 |
+
+Samsung SDS Global Supply Chain Logistics Spain S.L.U |
+2017.05.05 |
+Madrid, Spain |
+물류 |
+12,690 |
+기업의결권의 과반수 |
+해당없음 |
+
+Samsung SDS Global SCL Netherlands Cooperatief U.A. |
+2011.10.26 |
+Delft, Netherlands |
+물류 |
+217,826 |
+기업의결권의 과반수 |
+해당 |
+
+Samsung SDS Global SCL Germany GmbH |
+2017.05.29 |
+Schwalbach am Taunus, Germany |
+물류 |
+3,202 |
+기업의결권의 과반수 |
+해당없음 |
+
+Samsung SDS Global SCL Romania S.R.L |
+2017.10.06 |
+Bucurest, Romaina |
+물류 |
+393 |
+기업의결권의 과반수 |
+해당없음 |
+
+Samsung SDS Asia Pacific Pte, Ltd. |
+2006.08.17 |
+Singapore, Singapore |
+IT서비스/물류 |
+275,002 |
+기업의결권의 과반수 |
+해당 |
+
+Samsung Data Systems India Private Limited |
+2009.04.03 |
+New Delhi, India |
+IT서비스/물류 |
+331,089 |
+기업의결권의 과반수 |
+해당 |
+
+Samsung SDS Vietnam Co., Ltd. |
+2011.11.25 |
+Hanoi, Vietnam |
+IT서비스/물류 |
+343,228 |
+기업의결권의 과반수 |
+해당 |
+
+PT. Samsung SDS Global SCL Indonesia |
+2011.10.17 |
+Jakarta, Indonesia |
+물류 |
+48,429 |
+기업의결권의 과반수 |
+해당없음 |
+
+Samsung SDS Global SCL Philippines Co., Ltd.Inc. |
+2011.09.30 |
+Taguig, Philippines |
+물류 |
+32,464 |
+기업의결권의 과반수 |
+해당없음 |
+
+Samsung SDS Global SCL Thailand Co.,Ltd |
+2011.09.14 |
+Sriracha, Thailand |
+물류 |
+122,968 |
+기업의결권의 과반수 |
+해당 |
+
+Samsung SDS Malaysia Sdn.Bhd. |
+2011.08.26 |
+Selangor, Malaysia |
+IT서비스/물류 |
+53,164 |
+기업의결권의 과반수 |
+해당없음 |
+
+SAMSUNG SDS Global SCL Australia Pty.,Ltd. |
+2014.10.21 |
+Parramatta, Australia |
+물류 |
+51,476 |
+기업의결권의 과반수 |
+해당없음 |
+
+SDS-ACUTECH CO., Ltd. |
+2016.10.25 |
+Bangkok, Thailand |
+물류 |
+6,617 |
+실질지배력 보유 |
+해당없음 |
+
+ALS SDS Joint Stock Company |
+2016.12.28 |
+Hanoi, Vietnam |
+물류 |
+31,974 |
+기업의결권의 과반수 |
+해당없음 |
+
+SDS-MP Logistics Joint Stock Company |
+2018.02.06 |
+Ho Chi Minh, Vietnam |
+물류 |
+935 |
+기업의결권의 과반수 |
+해당없음 |
+
+Samsung SDS China Co., Ltd. |
+1999.09.06 |
+Beijing, China |
+IT서비스/물류 |
+879,856 |
+기업의결권의 과반수 |
+해당 |
+
+Samsung SDS Global SCL Hong Kong Limited |
+2011.11.29 |
+Hong Kong, Hong Kong |
+물류 |
+36,120 |
+기업의결권의 과반수 |
+해당없음 |
+
+Samsung SDS Global SCL Egypt |
+2013.04.18 |
+Beni Suef, Egypt |
+물류 |
+58,933 |
+기업의결권의 과반수 |
+해당없음 |
+
+Samsung SDS Global SCL South Africa (PTY) Ltd. |
+2014.04.16 |
+Durban, South Africa |
+물류 |
+17,132 |
+기업의결권의 과반수 |
+해당없음 |
+
+Samsung SDS Global SCL Nakliyat ve Lojistik Anonim Sirketi |
+2014.04.09 |
+Istanbul, Turkiye |
+물류 |
+22,350 |
+기업의결권의 과반수 |
+해당없음 |
+
+Samsung SDS Global Supply Chain Logistics Middle East DWC-LLC |
+2015.06.27 |
+Dubai, UAE |
+물류 |
+13,703 |
+기업의결권의 과반수 |
+해당없음 |
+
+Samsung SDS Latin America Tecnologia E Logistica LTDA. |
+2016.05.13 |
+Sao Paulo, Brazil |
+IT서비스/물류 |
+218,051 |
+기업의결권의 과반수 |
+해당 |
+
+INTE-SDS Logistics S.A. de C.V. |
+2018.05.29 |
+Manzanillo, Mexico |
+물류 |
+465 |
+기업의결권의 과반수 |
+해당없음 |
+
+Samsung SDS Rus Limited Liability Company |
+2013.04.17 |
+Moscow, Russia |
+IT서비스/물류 |
+38,665 |
+기업의결권의 과반수 |
+해당없음 |
+
+(주)인포와이즈 |
+2002.04.04 |
+서울시 영등포구 |
+S/W 자문/개발 |
+1,672 |
+실질지배력 보유 |
+해당없음 |
+
+LANGUAGE TESTING INTERNATIONAL, INC. |
+1992.08.01 |
+New York, USA |
+교육서비스 |
+33,955 |
+기업의결권의 과반수 |
+해당없음 |
+
+Samsung SDS Mexico, S.A. de C.V. |
+2001.01.23 |
+Mexico City, Mexico |
+IT서비스/물류 |
+186,209 |
+기업의결권의 과반수 |
+해당 |
+
+Samsung SDS Global SCL Panama S.A. |
+2014.05.30 |
+Panama City, Panama |
+물류 |
+25,601 |
+기업의결권의 과반수 |
+해당없음 |
+
+Samsung SDS Global SCL Chile Limitada |
+2014.12.30 |
+Santiago, Chile |
+물류 |
+29,990 |
+기업의결권의 과반수 |
+해당없음 |
+
+Samsung SDS Global SCL Peru S.A.C |
+2015.02.10 |
+Lima, Peru |
+물류 |
+15,145 |
+기업의결권의 과반수 |
+해당없음 |
+
+Samsung SDS Global SCL Colombia S.A.S |
+2015.01.09 |
+Bogota, Colombia |
+물류 |
+17,506 |
+기업의결권의 과반수 |
+해당없음 |
 
 [표 끝]
