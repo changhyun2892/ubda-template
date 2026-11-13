@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-13 13:18 KST",
+    "checked_at": "2026-11-13 13:45 KST",
     "corp_code": "00261443",
     "reports_total": 17,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-13 13:18 KST",
+    "checked_at": "2026-11-13 13:45 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 181000,
