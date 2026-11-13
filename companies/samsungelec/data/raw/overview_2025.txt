@@ -1,6 +1,6 @@
-# 삼성전자 사업보고서 (2025.12) — I. 회사의 개요 (본문 텍스트)
+# 삼성전자 사업보고서 (2025.12) — I. 회사의 개요 + 상세표-1 연결대상 종속회사 현황(상세) (본문 텍스트)
 # 접수번호 20260310002820 · 접수일 20260310 · 원문 https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310002820
-# OpenDART document.xml에서 자동 추출 (2026-11-13 18:06 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
+# OpenDART document.xml에서 자동 추출 (2026-11-13 18:15 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
 
 ## I. 회사의 개요
 
@@ -2618,5 +2618,2852 @@ DR 발행 |
 29 |
  각 항에 관련된 부대사업 및 투자 |
 영위 |
+
+[표 끝]
+
+## 1. 연결대상 종속회사 현황(상세)
+
+당사의 연결대상 종속기업은 2025년말 현재 308개사입니다. 전년말 대비 91개 기업이 증가하고 11개 기업이 감소하였습니다.
+
+[표]
+
+☞ 본문 위치로 이동
+ |
+
+[표 끝]
+
+[표]
+
+[표]
+
+ |
+(단위 : 백만원) |
+
+[표 끝]
+
+[표]
+
+상호 |
+설립일 |
+주소 |
+주요사업 |
+최근사업연도말자산총액 |
+지배관계 근거 |
+주요종속회사 여부 |
+
+Samsung Electronics America, Inc. (SEA) |
+1978. 07 |
+700 Sylvan Ave, Englewood Cliffs, New Jersey, USA, 07632 |
+전자제품 판매 |
+52,966,362 |
+의결권의 과반수 소유 (K-IFRS 1110호) |
+ O |
+
+Samsung International, Inc. (SII) |
+1983. 10 |
+9335 Airway Rd. #105, San Diego, California, USA |
+전자제품 생산 |
+2,413,940 |
+상동 |
+ O |
+
+Samsung Mexicana S.A. de C.V (SAMEX) |
+1988. 03 |
+Parque Ind., El Florido 1ra y 2da Secc, Tijuana, B.C., Mexico |
+전자제품 생산 |
+247,332 |
+상동 |
+ O |
+
+Samsung Electronics Home Appliances America, LLC (SEHA) |
+2017. 08 |
+284 Mawsons Way, Newberry, South Carolina, USA |
+가전제품 생산 |
+478,164 |
+상동 |
+ O |
+
+Samsung Research America, Inc (SRA) |
+1988. 10 |
+665 Clyde Ave., Mountain View, California, USA |
+R&D |
+1,388,428 |
+상동 |
+ O |
+
+SAMSUNG NEXT LLC (SNX) |
+2016. 08 |
+665 Clyde Ave., Mountain View, California, USA |
+해외자회사 관리 |
+430,480 |
+상동 |
+ O |
+
+SAMSUNG NEXT FUND LLC (SNXF) |
+2016. 08 |
+665 Clyde Ave., Mountain View, California, USA |
+신기술사업자, 벤처기업 투자 |
+518,891 |
+상동 |
+ O |
+
+NeuroLogica Corp. |
+2004. 02 |
+14 Electronics Ave., Danvers, Massachusetts, USA |
+의료기기 생산 및 판매 |
+314,504 |
+상동 |
+ O |
+
+Samsung Lennox HVAC North America, LLC |
+2001. 07 |
+776 Henrietta Creek Rd Roanoke TX 76262 |
+에어컨공조 판매 |
+180,427 |
+상동 |
+ O |
+
+Joyent, Inc. |
+2005. 03 |
+665 Clyde Ave., Mountain View, California, USA |
+클라우드서비스 |
+241,995 |
+상동 |
+ O |
+
+SmartThings, Inc. |
+2012. 04 |
+665 Clyde Ave., Mountain View, California, USA |
+스마트홈 플랫폼 |
+251,278 |
+상동 |
+ O |
+
+TeleWorld Solutions, Inc. (TWS) |
+2002. 05 |
+14850 Conference Center Dr Ste 250, Chantilly, Virginia, USA |
+네트워크장비 설치 및 최적화 |
+29,188 |
+상동 |
+ X |
+
+Xealth Inc. |
+2016. 03 |
+506 2nd Ave STE 1200, Seattle, WA, USA |
+디지털 헬스케어 플랫폼 |
+184,906 |
+상동 |
+ O |
+
+Samsung Semiconductor, Inc. (SSI) |
+1983. 07 |
+3655 N. 1st St., San Jose, California, USA |
+반도체ㆍ디스플레이 패널 판매 |
+27,146,631 |
+상동 |
+ O |
+
+Samsung Federal, Inc. (SFI) |
+2023. 05 |
+3655 N. 1st St., San Jose, California, USA |
+R&D |
+330 |
+상동 |
+ X |
+
+Samsung Austin Semiconductor LLC. (SAS) |
+1996. 02 |
+12100 Samsung Blvd., Austin, Texas, USA |
+반도체 생산 |
+29,787,509 |
+상동 |
+ O |
+
+Samsung Oak Holdings, Inc. (SHI) |
+2016. 06 |
+3655 N. 1st St., San Jose, California, USA |
+해외자회사 관리 |
+749,692 |
+상동 |
+ O |
+
+SEMES America, Inc. |
+1998. 10 |
+13400 Immanuel Rd., Pflugerville, Texas, USA |
+반도체 장비 서비스 |
+4,017 |
+상동 |
+ X |
+
+Samsung Display America Holdings, Inc. (SDAH) |
+2023. 05 |
+3655 N. 1st St., San Jose, California, USA |
+해외자회사 관리 |
+372,324 |
+상동 |
+ O |
+
+eMagin Corporation |
+2000. 03 |
+700 South Drive Suite # 201 Hopewell Junction, NY, USA |
+디스플레이 패널 개발 및 생산 |
+423,820 |
+상동 |
+ O |
+
+Samsung Electronics Canada, Inc. (SECA) |
+1980. 07 |
+2050 Derry Rd. West, Mississauga, Ontario, Canada |
+전자제품 판매 |
+1,346,024 |
+상동 |
+ O |
+
+AdGear Technologies Inc. |
+2010. 08 |
+481 Viger West #300, Montreal, Quebec, Canada |
+디지털광고 플랫폼 |
+184,753 |
+상동 |
+ O |
+
+Sonio Corporation |
+2022. 07 |
+1411 Broadway, 16th floor - New York USA -10018 |
+의료기기 생산 및 판매 |
+597 |
+상동 |
+ X |
+
+RAINBOW ROBOTICS USA Co., Ltd. |
+2023. 04 |
+125 Commerce Drive, Ste B, Schaumburg, IL 60173 |
+로봇 판매 |
+2,348 |
+상동 |
+ X |
+
+Samsung Eletronica da Amazonia Ltda. (SEDA) |
+1995. 01 |
+Av. Dr. Chucri Zaidan, 1240 Diamond Tower, Sao Paulo, Brazil |
+전자제품 생산 및 판매 |
+4,815,175 |
+상동 |
+ O |
+
+Samsung Electronics Mexico S.A. De C.V. (SEM) |
+1995. 07 |
+Col. Chapultepec Morales, Del. Miguel Hidalgo, Ciudad de Mexico, Mexico |
+전자제품 판매 |
+2,267,579 |
+상동 |
+ O |
+
+Samsung Electronics Digital Appliance Mexico, SA de CV (SEDAM) |
+2012. 12 |
+Av. Benito Juarez #119, Parque Industrial Qro, Sta. Rosa Jauregui C.P, Queretaro, Mexico |
+가전제품 생산 |
+1,196,932 |
+상동 |
+ O |
+
+Samsung Electronics Latinoamerica(Zona Libre), S. A. (SELA) |
+1989. 04 |
+Calle 50 Edificio PH Credicorp Bank Piso 16, Panama City, Panama |
+전자제품 판매 |
+809,836 |
+상동 |
+ O |
+
+Samsung Electronics Latinoamerica Miami, Inc. (SEMI) |
+1995. 05 |
+9800 NW 41st St. #200, Miami, Florida, USA |
+전자제품 판매 |
+803,422 |
+상동 |
+ O |
+
+Samsung Electronica Colombia S.A. (SAMCOL) |
+1997. 03 |
+Carrera 7 #114-43 Oficina 606, Bogota, Colombia |
+전자제품 판매 |
+588,960 |
+상동 |
+ O |
+
+Samsung Electronics Argentina S.A. (SEASA) |
+1996. 06 |
+Bouchard 710 Piso #8, Buenos Aires, Argentina |
+마케팅 및 서비스 |
+111,451 |
+상동 |
+ O |
+
+Samsung Electronics Chile Limitada (SECH) |
+2002. 12 |
+Cerro El Plomo 6000, Piso 6, Las Condes, Santiago, Chile |
+전자제품 판매 |
+681,058 |
+상동 |
+ O |
+
+Samsung Electronics Peru S.A.C. (SEPR) |
+2010. 04 |
+Av. Rivera Navarrete 501 Piso 6, San Isidro, Lima, Peru |
+전자제품 판매 |
+403,498 |
+상동 |
+ O |
+
+Samsung Electronics Venezuela, C.A. (SEVEN) |
+2010. 05 |
+Torre Kepler Piso 1, Av. Blandin Castellana, Municipio Chacao, Caracas, Venezuela |
+마케팅 및 서비스 |
+443 |
+상동 |
+ X |
+
+Samsung Electronics Panama. S.A. (SEPA) |
+2012. 07 |
+Torre C Piso 23 Torre de Las Americas, Panama City, Panama |
+컨설팅 |
+6,456 |
+상동 |
+ X |
+
+SEMCO LLC |
+2010. 09 |
+1800 East Point Drive, MO 65201-3508, Columbia |
+에어컨공조 생산 및 판매 |
+107,401 |
+상동 |
+ O |
+
+SEMCO Duct & Acoustical Products Inc |
+2004. 09 |
+1800 East Point Drive, MO 65201-3508, Columbia |
+에어컨공조 생산 및 판매 |
+9,496 |
+상동 |
+ X |
+
+Woods Air Movement Ltd. |
+2019. 01 |
+1209 Corporation Trust Center, Orange Street, City of Wilmington County of New Castle, Delawar, USA |
+에어컨공조 생산 및 판매 |
+14,057 |
+상동 |
+ X |
+
+Harman International Industries, Inc. |
+1980. 01 |
+400 Atlantic St., Stamford, Connecticut, USA |
+해외자회사 관리 |
+18,588,692 |
+상동 |
+ O |
+
+Harman Becker Automotive Systems, Inc. |
+1981. 06 |
+30001 Cabot Drive, Novi, Michigan, USA |
+오디오제품 생산, 판매, R&D |
+4,793,860 |
+상동 |
+ O |
+
+Harman da Amazonia Industria Eletronica e Participacoes Ltda. |
+2005. 07 |
+Av. Cupiuba 401, Distrito Industrial, Manaus, Amazonas, Brazil |
+오디오제품 생산, 판매 |
+277,050 |
+상동 |
+ O |
+
+Harman de Mexico, S. de R.L. de C.V. |
+1997. 02 |
+2290 Ave De Las Torres, Juarez, Chih, Mexico |
+오디오제품 생산 |
+442,096 |
+상동 |
+ O |
+
+Harman do Brasil Industria Eletronica e Participacoes Ltda. |
+1958. 11 |
+BR-386 KM 435, Nova Santa Rita, Rio Grande do Sul, Brazil |
+오디오제품 판매, R&D |
+404,751 |
+상동 |
+ O |
+
+Harman International Industries Canada Ltd. |
+2005. 05 |
+2900-550 Burrard St., Vancouver, British Columbia, Canada |
+오디오제품 판매 |
+268 |
+상동 |
+ X |
+
+Harman International Mexico, S. de R.L. de C.V. |
+2014. 12 |
+2290 Ave De Las Torres, Juarez, Chih, Mexico |
+오디오제품 판매 |
+63,098 |
+상동 |
+ X |
+
+Harman KG Holding, LLC |
+2009. 03 |
+400 Atlantic St., Stamford, Connecticut, USA |
+해외자회사 관리 |
+- |
+상동 |
+ X |
+
+Harman Professional, Inc. |
+2006. 07 |
+8500 Balboa Blvd., Northridge, California, USA |
+오디오제품 판매, R&D |
+876,327 |
+상동 |
+ O |
+
+Roon Labs, LLC. |
+2015. 01 |
+400 Atlantic Street, 4th Floor Stamford, CT 06901 |
+오디오제품판매 |
+66,935 |
+상동 |
+ X |
+
+Viper Holdings Corporation |
+2011. 05 |
+5541 Fermi Court, Carlsbad, CA, USA |
+해외자회사 관리 |
+-182,787 |
+상동 |
+ X |
+
+DEI Holdings, Inc. |
+1999. 11 |
+5541 Fermi Court, Carlsbad, CA, USA |
+해외자회사 관리 |
+- |
+상동 |
+ X |
+
+DEI Sales, Inc. |
+2004. 08 |
+5541 Fermi Court, Carlsbad, CA, USA |
+오디오제품 판매 |
+80,216 |
+상동 |
+ O |
+
+Sound United, LLC |
+2014. 02 |
+5541 Fermi Court, Carlsbad, CA, USA |
+오디오제품 판매 |
+1,084,076 |
+상동 |
+ O |
+
+Sound United Canada Inc. |
+1985. 11 |
+199 Bay Street Suite 4000 Toronto, ON M5L 1A9, Canada |
+오디오제품 판매 |
+25,238 |
+상동 |
+ X |
+
+Polk Audio, LLC |
+2014. 02 |
+5541 Fermi Court, Carlsbad, CA, USA |
+오디오제품 판매 |
+- |
+상동 |
+ X |
+
+D&M Holdings U.S. Inc. |
+2002. 12 |
+5541 Fermi Court, Carlsbad, CA, USA |
+오디오제품 판매 |
+424,508 |
+상동 |
+ O |
+
+Boston Acoustics, Inc. |
+2005. 08 |
+5541 Fermi Court, Carlsbad, CA, USA |
+오디오제품 판매 |
+49 |
+상동 |
+ X |
+
+D&M Premium Sound Solutions, LLC |
+2006. 11 |
+5541 Fermi Court, Carlsbad, CA, USA |
+오디오제품 판매 |
+- |
+상동 |
+ X |
+
+Denon Electronics (USA), LLC |
+2003. 02 |
+5541 Fermi Court, Carlsbad, CA, USA |
+오디오제품 판매 |
+- |
+상동 |
+ X |
+
+Digital Networks North America Inc. |
+2003. 03 |
+5541 Fermi Court, Carlsbad, CA, USA |
+오디오제품 판매 |
+40 |
+상동 |
+ X |
+
+Marantz America, LLC |
+2003. 10 |
+5541 Fermi Court, Carlsbad, CA, USA |
+오디오제품 판매 |
+15,899 |
+상동 |
+ X |
+
+D&M Sales & Marketing Americas, LLC |
+2008. 04 |
+5541 Fermi Court, Carlsbad, CA, USA |
+오디오제품 판매 |
+- |
+상동 |
+ X |
+
+The Speaker Company |
+2007. 09 |
+5541 Fermi Court, Carlsbad, CA, USA |
+오디오제품 판매 |
+- |
+상동 |
+ X |
+
+Definitive Technology, LLC |
+2014. 02 |
+5541 Fermi Court, Carlsbad, CA, USA |
+오디오제품 판매 |
+- |
+상동 |
+ X |
+
+Equity International, LLC |
+1993. 03 |
+5541 Fermi Court, Carlsbad, CA, USA |
+오디오제품 판매 |
+26,874 |
+상동 |
+ X |
+
+Beijing Integrated Circuit Industry International Fund, L.P |
+2014. 12 |
+89 Nexus Way, Cayman Bay, Grand Cayman, Cayman Islands |
+벤처기업 투자 |
+6,254 |
+상동 |
+ X |
+
+China Materialia New Materials 2016 Limited Partnership |
+2017. 09 |
+23 Lime Tree Bay Av., Grand Cayman, Cayman Islands |
+벤처기업 투자 |
+10,088 |
+상동 |
+ X |
+
+Samsung Electronics (UK) Ltd. (SEUK) |
+1995. 07 |
+2000 Hillswood Drive, Chertsey, Surrey, UK |
+전자제품 판매 |
+3,174,054 |
+상동 |
+ O |
+
+Samsung Electronics Ltd. (SEL) |
+1999. 01 |
+2000 Hillswood Drive, Chertsey, Surrey, UK |
+해외자회사 관리 |
+8,489 |
+상동 |
+ X |
+
+Samsung Semiconductor Europe Limited (SSEL) |
+1997. 04 |
+No.5 The Heights, Brooklands, Weybridge, Surrey, UK |
+반도체ㆍ디스플레이 패널 판매 |
+129,027 |
+상동 |
+ O |
+
+Samsung Electronics GmbH (SEG) |
+1984. 12 |
+Am Kronberger Hang 6, Schwalbach/Ts., Germany |
+전자제품 판매 |
+1,855,724 |
+상동 |
+ O |
+
+Samsung Electronics Holding GmbH (SEHG) |
+1982. 02 |
+Am Kronberger Hang 6, Schwalbach/Ts., Germany |
+해외자회사 관리 |
+584,013 |
+상동 |
+ O |
+
+Samsung Semiconductor Europe GmbH (SSEG) |
+1987. 12 |
+Koelner Str. 12, Eschborn, Germany |
+반도체ㆍ디스플레이 패널 판매 |
+1,348,591 |
+상동 |
+ O |
+
+Samsung Electronics France S.A.S (SEF) |
+1988. 01 |
+1 Rue Fructidor, Saint-Ouen, France |
+전자제품 판매 |
+1,271,734 |
+상동 |
+ O |
+
+Samsung Electronics Italia S.P.A. (SEI) |
+1991. 04 |
+Via Mike Bongiorno 9, Milano, Italy |
+전자제품 판매 |
+1,135,764 |
+상동 |
+ O |
+
+Samsung Electronics Iberia, S.A. (SESA) |
+1989. 01 |
+Parque Empresarial Omega Edf. C Av. de Barajas 32, Alcobendas, Madrid, Spain |
+전자제품 판매 |
+1,367,304 |
+상동 |
+ O |
+
+Samsung Electronics Portuguesa, Unipessoal, Lda. (SEP) |
+1982. 09 |
+Lagoas, Edificio 5B, Piso 0, Porto Salvo, Portugal |
+전자제품 판매 |
+394,832 |
+상동 |
+ O |
+
+Samsung Electronics Hungarian Private Co. Ltd. (SEH) |
+1989. 10 |
+Samsung ter 1, Jaszfenyszaru, Hungary |
+전자제품 생산 및 판매 |
+1,312,566 |
+상동 |
+ O |
+
+Samsung Electronics Europe Logistics B.V. (SELS) |
+1991. 05 |
+Olof Palmestraat 10, Delft, Netherlands |
+물류 |
+2,072,011 |
+상동 |
+ O |
+
+Samsung Electronics Benelux B.V. (SEBN) |
+1995. 07 |
+Evert van de Beekstraat 310, Schiphol, Netherlands |
+전자제품 판매 |
+1,722,642 |
+상동 |
+ O |
+
+Samsung Electronics Europe Holding Cooperatief U.A. (SEEH) |
+2008. 10 |
+Evert van de Beekstraat 310, Schiphol, Netherlands |
+해외자회사 관리 |
+9,351,798 |
+상동 |
+ O |
+
+Samsung Electronics Nordic Aktiebolag (SENA) |
+1992. 03 |
+Box 1235, 16428, Kista, Sweden |
+전자제품 판매 |
+737,814 |
+상동 |
+ O |
+
+Samsung Electronics Slovakia s.r.o (SESK) |
+2002. 06 |
+Hviezdoslavova 807, Galanta, Slovakia |
+TVㆍ모니터 생산 |
+1,440,105 |
+상동 |
+ O |
+
+Samsung Electronics Polska, SP.Zo.o (SEPOL) |
+1996. 04 |
+ul.Marynarska 15, Warszawa, Poland |
+전자제품 판매 |
+979,560 |
+상동 |
+ O |
+
+Samsung Electronics Poland Manufacturing SP.Zo.o (SEPM) |
+2010. 02 |
+ul. Mickiewicza 52, Wronki, Poland |
+가전제품 생산 |
+988,570 |
+상동 |
+ O |
+
+Samsung Electronics Romania LLC (SEROM) |
+2007. 09 |
+Sos. Pipera-Tunari, nr. 1/VII, Nord City Tower, Voluntari, Romania |
+전자제품 판매 |
+486,441 |
+상동 |
+ O |
+
+Samsung Electronics Austria GmbH (SEAG) |
+2002. 01 |
+Praterstraße 31, Vienna, Austria |
+전자제품 판매 |
+491,923 |
+상동 |
+ O |
+
+Samsung Electronics Switzerland GmbH (SESG) |
+2013. 05 |
+Binzallee 4, Zurich, Switzerland |
+전자제품 판매 |
+223,990 |
+상동 |
+ O |
+
+Samsung Electronics Czech and Slovak s.r.o. (SECZ) |
+2010. 01 |
+V Parku 14, Prague, Czech Republic |
+전자제품 판매 |
+436,315 |
+상동 |
+ O |
+
+SAMSUNG ELECTRONICS BALTICS SIA (SEB) |
+2001. 10 |
+Duntes iela 6, Riga, Latvia |
+전자제품 판매 |
+152,015 |
+상동 |
+ O |
+
+Samsung Electronics Greece S.M.S.A (SEGR) |
+2010. 04 |
+280 Kifissias Ave, Halandri 15232, Athens, Greece |
+전자제품 판매 |
+189,235 |
+상동 |
+ O |
+
+Samsung Electronics Air Conditioner Europe B.V. (SEACE) |
+2017. 04 |
+Evert van de Beekstraat 310, Schiphol, Netherlands |
+에어컨공조 판매 |
+356,069 |
+상동 |
+ O |
+
+Samsung Nanoradio Design Center (SNDC) |
+2004. 02 |
+Torshamnsgatan 48, 16440, Kista, Sweden |
+R&D |
+34,649 |
+상동 |
+ X |
+
+Samsung Denmark Research Center ApS (SDRC) |
+2012. 09 |
+c/o Novi Science park, Niels Jernes Vej 10, Aalborg Øst, Denmark |
+R&D |
+35,843 |
+상동 |
+ X |
+
+Samsung Cambridge Solution Centre Limited (SCSC) |
+2012. 09 |
+St. John's Houst, St. John's Innovation Park, Cowley Rd., Cambridge, UK |
+R&D |
+182,626 |
+상동 |
+ O |
+
+SAMSUNG Zhilabs, S.L. |
+2008. 11 |
+Numancia 69-73, 5F, Barcelona, Spain |
+네트워크Solution 개발, 판매 |
+18,906 |
+상동 |
+ X |
+
+FOODIENT LTD. |
+2012. 03 |
+483 Green Lanes, London, UK |
+R&D |
+9,492 |
+상동 |
+ X |
+
+Oxford Semantic Technologies Limited (OST) |
+2016. 12 |
+2 Littlegate Street, Oxford, England, OX1 1QT |
+R&D |
+33,986 |
+상동 |
+ X |
+
+Sonio SAS |
+2020. 04 |
+24, rue du Faubourg Saint-Jacques, 75014, Paris, France |
+R&D |
+19,983 |
+상동 |
+ X |
+
+Samsung Electronics Rus Company LLC (SERC) |
+2006. 10 |
+31 Novinsky Boulevard, Moscow, Russia |
+전자제품 판매 |
+955,125 |
+상동 |
+ O |
+
+Samsung Electronics Rus Kaluga LLC (SERK) |
+2007. 07 |
+1 Vladenie, Perviy Severniy proezd St., Koryakovo, Borovsk, Kaluga, Russia |
+TV 생산 |
+1,159,007 |
+상동 |
+ O |
+
+Samsung Electronics Ukraine Company LLC (SEUC) |
+2008. 09 |
+75A, Zhylianska St., Kiev, Ukraine |
+전자제품 판매 |
+364,144 |
+상동 |
+ O |
+
+Samsung R&D Institute Ukraine (SRUKR) |
+2022. 02 |
+57 Hetmana Pavla Skoropadskogo str., Holosiivskyi district, Kyiv, Ukraine |
+R&D |
+16,646 |
+상동 |
+ X |
+
+Samsung Electronics Central Eurasia LLP (SECE) |
+2008. 09 |
+BC Kaisar Plaza, 3rd floor, 115 Zheltoksan street, Almaly district, Almaty, Kazakhstan |
+전자제품 판매 |
+462,173 |
+상동 |
+ O |
+
+Samsung R&D Institute Rus LLC (SRR) |
+2011. 11 |
+12, building 1, Dvintsev St., Moscow, Russia |
+R&D |
+84,790 |
+상동 |
+ O |
+
+Samsung Electronics Caucasus Co. Ltd (SECC) |
+2014. 10 |
+1065 Bridge Plaza Biz Centre 12F, 6 Bakikhanov St., Baku, Azerbaijan |
+마케팅 |
+3,763 |
+상동 |
+ X |
+
+Samsung Electronics Uzbekistan Ltd. (SEUZ) |
+2022. 03 |
+Orient Business Center, 64, Oloy Bozori Berk Street, Yunusabad District, Tashkent, Uzbekistan |
+마케팅 |
+117,825 |
+상동 |
+ O |
+
+AKG Acoustics Gmbh |
+1947. 03 |
+Herrengasse 1, A-1010, Vienna, Austria |
+오디오제품 생산, 판매 |
+396,523 |
+상동 |
+ O |
+
+Apostera UA, LLC |
+2020. 10 |
+3 Sumska St., Kyiv, Ukraine |
+Connected Service Provider |
+1,912 |
+상동 |
+ X |
+
+Harman Audio Iberia Espana Sociedad Limitada |
+2012. 11 |
+C/ ERCILLA 17 3ºBILBAO48, Bizkaia, Spain |
+오디오제품 판매 |
+1,325 |
+상동 |
+ X |
+
+Harman Becker Automotive Systems GmbH |
+1990. 07 |
+16 Becker Goering St., Karlsbad, Germany |
+오디오제품 생산, 판매, R&D |
+4,602,134 |
+상동 |
+ O |
+
+Harman Becker Automotive Systems Italy S.R.L. |
+2005. 12 |
+17, Viale Luigi Majno, Milano (MI), Italy |
+오디오제품 판매 |
+827 |
+상동 |
+ X |
+
+Harman Becker Automotive Systems Manufacturing Kft |
+1994. 08 |
+19 Holland Fasor, Szekesfehervar, Hungary |
+오디오제품 생산, R&D |
+3,738,740 |
+상동 |
+ O |
+
+Harman Belgium SA |
+1967. 04 |
+4 Drukperstraat, Brussels, Belgium |
+오디오제품 판매 |
+4,576 |
+상동 |
+ X |
+
+Harman Finland Oy |
+1998. 07 |
+Korkeakoulunkatu 7, 33720, Tampere, Finland |
+Connected Service Provider |
+73 |
+상동 |
+ X |
+
+Harman Connected Services GmbH |
+2005. 12 |
+45 Wittener Str., Bochum, Germany |
+Connected Service Provider |
+8,218 |
+상동 |
+ X |
+
+Harman Connected Services Poland Sp.zoo |
+2007. 06 |
+UL Kasprzaka 6, Lodz, Poland |
+Connected Service Provider |
+22,744 |
+상동 |
+ X |
+
+Harman Consumer Nederland B.V. |
+1995. 12 |
+16 Danzigerkade, 1013 AP, Amsterdam, Netherlands |
+오디오제품 판매 |
+550,137 |
+상동 |
+ O |
+
+Harman Deutschland GmbH |
+1998. 03 |
+Parkring 3 B. Munich, Garching, Germany |
+오디오제품 판매 |
+4,436 |
+상동 |
+ X |
+
+Harman France SNC |
+1995. 11 |
+12 bis, rue des Colonnes-du-Trone, Paris, France |
+오디오제품 판매 |
+12,221 |
+상동 |
+ X |
+
+Harman Holding Gmbh & Co. KG |
+2002. 06 |
+16 Becker Goering St., Karlsbad, Germany |
+Management Company |
+6,665,107 |
+상동 |
+ O |
+
+Harman Hungary Financing Ltd. |
+2012. 06 |
+Holland Fasor 19, Szekesfehervar, Hungary |
+Financing Company |
+40,674 |
+상동 |
+ X |
+
+Harman Inc. & Co. KG |
+2012. 06 |
+16 Becker Goering St., Karlsbad, Germany |
+해외자회사 관리 |
+5,141,318 |
+상동 |
+ O |
+
+Harman International Estonia OU |
+2015. 05 |
+Parnu mnt 139a, Tallinna linn, Harju maakond, Estonia |
+R&D |
+3 |
+상동 |
+ X |
+
+Harman International Industries Limited |
+1980. 03 |
+Westside, Two London Rd, Apsley, Hemel Hempstead, Hertfordshire, UK |
+오디오제품 판매, R&D |
+79,031 |
+상동 |
+ O |
+
+Harman International Romania SRL |
+2015. 02 |
+5-7, Bdul. Dimitrie Pompeiu, Metroffice, Cladirea A parter, et. 2 si et. 4, Sec. 2, Bucharest, Romania |
+R&D |
+13,484 |
+상동 |
+ X |
+
+Harman Management Gmbh |
+2002. 04 |
+Becker Goering St. 16, Karlsbad, Germany |
+해외자회사 관리 |
+- |
+상동 |
+ X |
+
+Harman Professional Kft |
+2014. 12 |
+7630 Pecs, Uszogi Kiserdo Street 1/C, Hungary |
+오디오제품 생산, R&D |
+65,277 |
+상동 |
+ X |
+
+Harman Professional Denmark ApS |
+1987. 07 |
+Olof Palmes Alle 18., Aarhus, Denmark |
+오디오제품 판매, R&D |
+82,900 |
+상동 |
+ O |
+
+Red Bend Software SAS |
+2002. 10 |
+Immeuble 15 place Georges Pompidou, MontignyLe Bretonneux, France |
+소프트웨어 디자인 |
+2,294 |
+상동 |
+ X |
+
+Harman Connected Services OOO |
+1998. 11 |
+8 Kovalikhinskaya St., Nizhny Novgorod, Russia |
+Connected Service Provider |
+34,960 |
+상동 |
+ X |
+
+Harman RUS CIS LLC |
+2011. 08 |
+RS 12/1 Dvintsev street, Moscow, Russia |
+오디오제품 판매 |
+48,191 |
+상동 |
+ X |
+
+D&M Europe B.V |
+1991. 10 |
+Oude Stadsgracht 1, 5611 Dd Eindhoven, Netherland |
+오디오제품 판매 |
+225,388 |
+상동 |
+ O |
+
+D&M Audiovisual Ltd |
+1964. 04 |
+Dale Road, Worthing, West Sussex, UK |
+오디오제품 판매 |
+21,282 |
+상동 |
+ X |
+
+D&M France SAS |
+2000. 12 |
+199 bis rue de Colombes 92600 Asnieres, France |
+오디오제품 판매 |
+5,326 |
+상동 |
+ X |
+
+D&M Germany GmbH |
+1988. 03 |
+Poensgenstrabe 7, 413345, Nettetal, Germany |
+오디오제품 판매 |
+50,932 |
+상동 |
+ X |
+
+B&W Group Ltd |
+1966. 06 |
+Dale Road, Worthing, West Sussex, UK |
+오디오제품 생산 |
+374,135 |
+상동 |
+ O |
+
+B&W Group Belgium B.V |
+1981. 02 |
+Torhoutse Steebweg 246, Brugge 8200, Belgium |
+오디오제품 판매 |
+2,893 |
+상동 |
+ X |
+
+B&W Loudspeakers Nederland B.V |
+2000. 05 |
+Oude Stadsgracht 1, 5611 Dd Eindhoven, Netherland |
+오디오제품 판매 |
+1,899 |
+상동 |
+ X |
+
+B&W Loudspeakers Group Espana S.A |
+1993. 10 |
+c/ Rossello 362-364 Barcelona 8025, Spain |
+오디오제품 판매 |
+2,596 |
+상동 |
+ X |
+
+B&W Loudspeakers Ltd |
+2003. 09 |
+Dale Road, Worthing, West Sussex, UK |
+오디오제품 판매 |
+- |
+상동 |
+ X |
+
+B&W Group (Schweiz) GmbH |
+2002. 08 |
+Ifangstrasse 5, Schlieren Zurich CH-8952, Switzerland |
+오디오제품 판매 |
+1,585 |
+상동 |
+ X |
+
+B&W Group (Logistics) Ltd |
+2004. 10 |
+Dale Road, Worthing, West Sussex, UK |
+오디오제품 판매 |
+20 |
+상동 |
+ X |
+
+B&W Group Germany GmbH |
+1979. 10 |
+Poensgenstrabe 7, 413345, Nettetal, Germany |
+오디오제품 판매 |
+8,859 |
+상동 |
+ X |
+
+B&W Group France SARL |
+1998. 07 |
+199 bis rue de Colombes 92600 Asnieres, France |
+오디오제품 판매 |
+1,920 |
+상동 |
+ X |
+
+B&W Group Finland Oy |
+1992. 06 |
+Bulevardi 1A 00100 Helsinki, Finland |
+오디오제품 판매 |
+-29 |
+상동 |
+ X |
+
+Marantz Italy Srl |
+2001. 09 |
+Via Manfredi 98, Piacenza 29122, Italy |
+오디오제품 판매 |
+7,516 |
+상동 |
+ X |
+
+Bowers & Wilkins Ltd |
+2025. 02 |
+Dale Road, Worthing, West Sussex, UK |
+오디오제품 판매 |
+47,702 |
+상동 |
+ X |
+
+FlaktGroup Austria GmbH |
+1974. 02 |
+Obeltshamer Str. 12, A - 4673 Gaspoltshofen, Austria |
+에어컨공조 판매 |
+20,854 |
+상동 |
+ X |
+
+Flakt Woods SA |
+1939. 03 |
+Dobbelenbergstraat 7, B - 1130 Brussels, Belgium |
+에어컨공조 판매 |
+2 |
+상동 |
+ X |
+
+Flakt Elve NV |
+1959. 09 |
+Dobbelenbergstraat 7, B - 1130 Brussels, Belgium |
+에어컨공조 판매 |
+2 |
+상동 |
+ X |
+
+FlaktGroup Belgium N. V. |
+1988. 02 |
+Dobbelenbergstraat 7, B - 1130 Brussels, Belgium |
+에어컨공조 판매 |
+5,741 |
+상동 |
+ X |
+
+FlaktGroup Switzerland SA |
+2002. 01 |
+Boulevard du Pont-d’Arve 28, 1205 Geneve, Switzerland |
+해외자회사 관리 |
+1,316 |
+상동 |
+ X |
+
+FlaktGroup CZ a. s. |
+1992. 05 |
+Slovanska 781, CZ - 463 12 Liberec, Czech |
+에어컨공조 생산 및 판매 |
+48,527 |
+상동 |
+ X |
+
+FlaktGroup Holding GmbH |
+2015. 10 |
+Neue Hofe Herne, Bahnhofstr. 65-71, DE-44623 Herne, Germany |
+해외자회사 관리 |
+1,705,833 |
+상동 |
+ O |
+
+FlaktGroup Deutschland GmbH |
+1998. 12 |
+Neue Hofe Herne, Bahnhofstr. 65-71, DE-44623 Herne, Germany |
+에어컨공조 판매 |
+316,031 |
+상동 |
+ O |
+
+FlaktGroup Wurzen GmbH |
+1990. 08 |
+Luptitzer Straße 39, DE-04808 Wurzen, Germany |
+에어컨공조 생산 |
+98,681 |
+상동 |
+ O |
+
+SE Electronic GmbH |
+1986. 05 |
+Eythstr. 16, DE-73037 Goppingen, Germany |
+에어컨공조 생산 및 판매 |
+11,168 |
+상동 |
+ X |
+
+Woods Air Movement GmbH |
+2020. 02 |
+Neue Hofe Herne, Bahnhofstr. 65-71, DE-44623 Herne, Germany |
+에어컨공조 판매 |
+11 |
+상동 |
+ X |
+
+FlaktGroup A/S |
+2006. 07 |
+Stamholmen 175, 1., 2650 Hvidovre, Denmark |
+에어컨공조 판매 |
+721 |
+상동 |
+ X |
+
+FlaktGroup Eesti OU |
+2002. 04 |
+ Lelle tn 24-63, Harjumaa county, EE 11317 Tallinn, Kesklinna district, Estonia |
+에어컨공조 판매 |
+7,196 |
+상동 |
+ X |
+
+Ventilation Holding Finland OY |
+2007. 08 |
+Rydonnotko 1, 20360 Turku, Finland |
+해외자회사 관리 |
+1,061,065 |
+상동 |
+ O |
+
+FlaktGroup Finland OY |
+2013. 01 |
+Rydonnotko 1, 20360 Turku, Finland |
+에어컨공조 생산 및 판매 |
+22,176 |
+상동 |
+ X |
+
+FlaktGroup France SAS |
+1973. 12 |
+61, avenue de l'Europe, F - 59223 Roncq, France |
+에어컨공조 판매 |
+16,002 |
+상동 |
+ X |
+
+Woods Holdings Ltd. |
+2001. 08 |
+Axial Way, Cuckoo Farm Business Park, Colchester, Essex, UK |
+해외자회사 관리 |
+83,491 |
+상동 |
+ O |
+
+Flakt Woods Ltd. |
+1928. 10 |
+Axial Way, Cuckoo Farm Business Park, Colchester, Essex, UK |
+에어컨공조 생산 및 판매 |
+86,432 |
+상동 |
+ O |
+
+FlaktGroup UK Ltd. |
+2015. 11 |
+Dolphin House, Moreton Business Park; Moreton-on-Lugg; Hereford, UK |
+에어컨공조 판매 |
+31,850 |
+상동 |
+ X |
+
+FlaktGroup Ireland Ltd. |
+2000. 04 |
+Broomhill Business Park, Tallaght, IE-Dublin 24, Ireland |
+에어컨공조 판매 |
+20,041 |
+상동 |
+ X |
+
+FlaktGroup Italy S. p. A. |
+1965. 04 |
+Viale della Repubblica n.81/A - 20835 Muggio (MB), Italy |
+에어컨공조 판매 |
+8,366 |
+상동 |
+ X |
+
+FlaktGroup Baltics UAB |
+2001. 01 |
+Olimpieciu g. 3E-117, LT - 09235 Vilnius, Lithuania |
+에어컨공조 판매 |
+6,194 |
+상동 |
+ X |
+
+Flakt Woods ( Luxembourg) S. a. r. l |
+2002. 02 |
+1A rue Thomas Edison, L-1445 Strassen, Luxembourg |
+해외자회사 관리 |
+867,684 |
+상동 |
+ O |
+
+Flakt Woods ACS S. a. r. l |
+2010. 12 |
+1A rue Thomas Edison, L-1445 Strassen, Luxembourg |
+해외자회사 관리 |
+42,959 |
+상동 |
+ X |
+
+FlaktGroup Latvija SlA |
+2002. 03 |
+Bauskas street 58A-7, 1004 Riga, Latvia |
+에어컨공조 판매 |
+46 |
+상동 |
+ X |
+
+FlaktGroup Netherlands B. V. |
+1984. 07 |
+Laan van Londen 160 3317 DA DORDRECHT, Netherlands |
+에어컨공조 판매 |
+11,737 |
+상동 |
+ X |
+
+FlaktGroup Poland Sp. Z. o. o. |
+2001. 07 |
+u. Poludniowa 2, Oltarzew, 05-850 Ozarow Mazowiecki, Poland |
+에어컨공조 판매 |
+16,095 |
+상동 |
+ X |
+
+FlaktGroup Romania s. r. l |
+2007. 11 |
+Comuna Floresti, Str. Abatorului Nr. 1A, et. 4, Jud. Cluj, Romania |
+에어컨공조 판매 |
+3,569 |
+상동 |
+ X |
+
+Ventilation Holding Sweden AB |
+2007. 05 |
+Flaktgatan 1, 551 84 Jonkoping, Sweden |
+해외자회사 관리 |
+1,087 |
+상동 |
+ X |
+
+Fusilli HoldCo AB |
+2016. 06 |
+Flaktgatan 1, 551 84 Jonkoping, Sweden |
+해외자회사 관리 |
+990,271 |
+상동 |
+ O |
+
+FlaktGroup Sweden AB |
+1983. 12 |
+Flaktgatan 1, S-551 84 Jonkoping, Sweden |
+에어컨공조 생산 및 판매 |
+200,859 |
+상동 |
+ O |
+
+Forvaltnings bolaget Ljungarum HB |
+1990. 01 |
+Flaktgatan 1, S-551 84 Jonkoping, Sweden |
+해외자회사 관리 |
+20,366 |
+상동 |
+ X |
+
+Stromboli invetissements SAS |
+2007. 07 |
+23 rue du Roule, 75001 Paris, France |
+해외자회사 관리 |
+9,343 |
+상동 |
+ X |
+
+Samsung Gulf Electronics Co., Ltd. (SGE) |
+1995. 05 |
+Butterfly Building A, Dubai Media City, Dubai, UAE |
+전자제품 판매 |
+1,308,261 |
+상동 |
+ O |
+
+Samsung Electronics Turkiye (SETK) |
+1984. 12 |
+Flatofis Is Merkezi Otakcilar Caddesi No.78 Kat 3 No. B3 Eyup, Istanbul, Turkiye |
+전자제품 판매 |
+994,025 |
+상동 |
+ O |
+
+Samsung Electronics Industry and Commerce Ltd. (SETK-P) |
+2021. 02 |
+Flatofis Is Merkezi Otakcilar Caddesi No.78 Kat 3 No. B3 Eyup, Istanbul, Turkiye |
+전자제품 생산 |
+240,294 |
+상동 |
+ O |
+
+Samsung Electronics Levant Co.,Ltd. (SELV) |
+2009. 07 |
+Building 5, King Hussein Business Park, King Abdullah II St 242, Amman, Jordan |
+전자제품 판매 |
+262,851 |
+상동 |
+ O |
+
+Samsung Electronics Maghreb Arab (SEMAG) |
+2009. 11 |
+Lot N°9 Mandarouna 300 Route Sidi Maarouf, Casablanca, Morocco |
+전자제품 판매 |
+278,523 |
+상동 |
+ O |
+
+Samsung Electronics Egypt S.A.E (SEEG) |
+2012. 07 |
+62815 Piece No. 98, Engineering Sector, Kom Abu Radi, Al Wasta, BeniSuef, Egypt |
+전자제품 생산 및 판매 |
+1,426,155 |
+상동 |
+ O |
+
+Samsung Electronics Israel Ltd. (SEIL) |
+2012. 09 |
+Holland Building 1F, Europark, Yakum, Israel |
+마케팅 |
+27,537 |
+상동 |
+ X |
+
+Samsung Electronics Tunisia S.A.R.L (SETN) |
+2012. 09 |
+2eme etage Immeuble Adonis, rue du Lac D'annecy, Tunis, Tunisia |
+마케팅 |
+6,198 |
+상동 |
+ X |
+
+Samsung Electronics Pakistan(Private) Ltd. (SEPAK) |
+2012. 11 |
+No.4 1F Park Lane Tower 172 Turfail Rd., Cantt, Lahore, Pakistan |
+마케팅 |
+6,021 |
+상동 |
+ X |
+
+Samsung Electronics Middle East and North Africa (SEMENA) |
+2024. 05 |
+7421-King fahd road Al Olaya Dist. Riyadh KSA 12212 |
+해외자회사 관리 |
+2,323 |
+상동 |
+ X |
+
+Samsung Electronics Saudi Arabia Ltd. (SESAR) |
+2019. 11 |
+Hamad Tower, Olaya District, Riyadh, Saudi Arabia |
+전자제품 판매 |
+514,449 |
+상동 |
+ O |
+
+Samsung Semiconductor Israel R&D Center, Ltd. (SIRC) |
+2007. 10 |
+Derech Begin 146, Tel Aviv, Israel |
+R&D |
+238,473 |
+상동 |
+ O |
+
+Corephotonics Ltd. |
+2012. 01 |
+Derech Begin 146, Tel Aviv, Israel |
+R&D |
+134,321 |
+상동 |
+ O |
+
+Samsung Electronics South Africa(Pty) Ltd. (SSA) |
+1994. 06 |
+2929 William Nicol Drive, Bryanston, Johannesburg, South Africa |
+전자제품 판매 |
+935,316 |
+상동 |
+ O |
+
+Samsung Electronics South Africa Production (pty) Ltd. (SSAP) |
+2014. 07 |
+35 Umkhomazi Drive, La Mercy, Kwa-Zulu Natal, South Africa |
+TVㆍ모니터 생산 |
+75,606 |
+상동 |
+ O |
+
+Samsung Electronics West Africa Ltd. (SEWA) |
+2010. 03 |
+14th Floor, One-6 Temple, 16 Olu Holloway Street, Off Alfred Rewane, Ikoyi, Lagos, Nigeria |
+마케팅 |
+25,071 |
+상동 |
+ X |
+
+Samsung Electronics East Africa Ltd. (SEEA) |
+2011. 12 |
+Milford Suites 4F, Nairobi, Kenya |
+마케팅 |
+22,341 |
+상동 |
+ X |
+
+FlaktWoods LLC |
+2003. 01 |
+Office No. 1208, Smart Heights, Barsha Heights, United Arab Emirates |
+에어컨공조 판매 |
+37,390 |
+상동 |
+ X |
+
+FlaktGroup Havalandirma Sanayi A.S. |
+1987. 12 |
+Merdivenkoy Mahallesi, Dikyol Sokak No:2 Business Istanbul B blok, Kat:4 Daire:34 34732 Kadıkoy/ISTANBUL, Turkey |
+에어컨공조 생산 및 판매 |
+31,286 |
+상동 |
+ X |
+
+Harman Industries Holdings Mauritius Ltd. |
+2009. 10 |
+IFS Court Twenty Eight Cybercity, Ebene, Mauritius |
+해외자회사 관리 |
+105,833 |
+상동 |
+ O |
+
+Red Bend Ltd. |
+1998. 02 |
+4 HaCharash St., Neve Ne'eman Industrial Park, Hod Ha'Sharon, Israel |
+오디오제품 생산 |
+178,851 |
+상동 |
+ O |
+
+Samsung Asia Pte. Ltd. (SAPL) |
+2006. 07 |
+30 Pasir Panjang Rd., Mapletree Business City, Singapore |
+해외자회사 관리 |
+35,742,415 |
+상동 |
+ O |
+
+Samsung Electronics Singapore Pte. Ltd. (SESP) |
+2020. 10 |
+30 Pasir Panjang Rd., Mapletree Business City, Singapore |
+전자제품 판매 |
+824,731 |
+상동 |
+ O |
+
+Samsung Malaysia Electronics (SME) Sdn. Bhd. (SME) |
+2003. 05 |
+#E-09-01, Level 9, East Wing, No.1 Jalan 1/68F, Jalan Tun Razak, Kuala Lumpur, Malaysia |
+전자제품 판매 |
+745,469 |
+상동 |
+ O |
+
+Samsung Electronics Display (M) Sdn. Bhd. (SDMA) |
+1995. 03 |
+Tuanku Jaafar Industrial Park, Seremban, Negeri Sembilan, Malaysia |
+전자제품 생산 |
+33,391 |
+상동 |
+ X |
+
+Samsung Electronics (M) Sdn. Bhd. (SEMA) |
+1989. 09 |
+North Klang Straits, Area 21 Industrial Park, Port Klang, Selangor, Malaysia |
+가전제품 생산 |
+324,631 |
+상동 |
+ O |
+
+Samsung Vina Electronics Co., Ltd. (SAVINA) |
+1995. 01 |
+938 1A Highway, Linh Trung ward, Thu Duc Dist, Ho Chi Minh, Vietnam |
+전자제품 판매 |
+72,381 |
+상동 |
+ X |
+
+Samsung Electronics Vietnam Co., Ltd. (SEV) |
+2008. 03 |
+Yentrung Commune, Yenphong Dist, Bacninh, Vietnam |
+전자제품 생산 |
+7,975,597 |
+상동 |
+ O |
+
+Samsung Electronics Vietnam THAINGUYEN Co., Ltd. (SEVT) |
+2013. 03 |
+Yen Binh Industrial Park/Zone, Van Xuan Ward, Thai Nguyen, Vietnam |
+통신제품 생산 |
+14,049,410 |
+상동 |
+ O |
+
+Samsung Electronics HCMC CE Complex Co., Ltd. (SEHC) |
+2015. 02 |
+Lot I-11, D2 Road, Saigon Hi-Tech Park, District 9, Ho Chi Minh, Vietnam |
+전자제품 생산 및 판매 |
+5,263,351 |
+상동 |
+ O |
+
+Samsung Display Vietnam Co., Ltd. (SDV) |
+2014. 07 |
+Yenphong I I.P, Yentrung Commune, Yenphong Dist, Bacninh, Vietnam |
+디스플레이 패널 생산 |
+7,996,205 |
+상동 |
+ O |
+
+PT Samsung Electronics Indonesia (SEIN) |
+1991. 08 |
+Cikarang Industrial Estate, JL. Jababeka Raya Blok F29-33, Cikarang, Bekasi, West Java, Indonesia |
+전자제품 생산 및 판매 |
+935,649 |
+상동 |
+ O |
+
+PT Samsung Telecommunications Indonesia (STIN) |
+2003. 03 |
+Prudential Tower 23F Jl. Jend. Sudirman Kav 79, Jakarta, Indonesia |
+전자제품 판매 및 서비스 |
+70,996 |
+상동 |
+ X |
+
+Thai Samsung Electronics Co., Ltd. (TSE) |
+1988. 10 |
+313 Moo 1 Sukhaphiban 8 Rd, Sriracha Industry Park, T.Bung A.Sriracha Chonburi, Thailand |
+전자제품 생산 및 판매 |
+2,324,358 |
+상동 |
+ O |
+
+Laos Samsung Electronics Sole Co., Ltd (LSE) |
+2016. 09 |
+3F Kolao Tower 2, 23 Singha Rd., Vientiane, Laos |
+마케팅 |
+1,447 |
+상동 |
+ X |
+
+Samsung Electronics Philippines Corporation (SEPCO) |
+1996. 03 |
+7-10/F Science Hub Tower 4, Mckinley hill cyberpark, Pinagsama, Taguig City, Philippines |
+전자제품 판매 |
+390,602 |
+상동 |
+ O |
+
+Samsung Electronics Australia Pty. Ltd. (SEAU) |
+1987. 11 |
+Quad Samsung, 8 Parkview Drive, Homebush Bay 2127, Sydney, Australia |
+전자제품 판매 |
+653,110 |
+상동 |
+ O |
+
+Samsung Electronics New Zealand Limited (SENZ) |
+2013. 09 |
+24 The Warehouse Way, Northcote, Auckland, New Zealand |
+전자제품 판매 |
+230,280 |
+상동 |
+ O |
+
+Samsung India Electronics Private Ltd. (SIEL) |
+1995. 08 |
+Two Horizon Centre, Golf Course RD, Gurgaon, Haryana, India |
+전자제품 생산 및 판매 |
+10,369,065 |
+상동 |
+ O |
+
+Red Brick Lane Marketing Solutions Pvt. Ltd. |
+2012. 01 |
+6th Floor, Salarpuria Sattva Magnificia, Old Madras Road, Bengaluru, Karnataka, India |
+마케팅 |
+1,079 |
+상동 |
+ X |
+
+Samsung Display Noida Private Limited (SDN) |
+2019. 07 |
+B-1, Sector 81, Phase-II, NOIDA, Gautam Buddha Nagar, Uttar Pradesh, India |
+디스플레이 패널 생산 |
+719,091 |
+상동 |
+ O |
+
+Samsung R&D Institute India-Bangalore Private Limited (SRI-Bangalore) |
+2005. 05 |
+#2870, Phoenix Building, Bagmane Constellation Business Park, Outer Ring Road, Doddanekundi Circle, Marathahalli Post, Bangalore, Karnataka, India |
+R&D |
+851,931 |
+상동 |
+ O |
+
+Samsung R&D Institute BanglaDesh Limited (SRBD) |
+2010. 08 |
+Gualshan-1, Gulshan Ave., Dhaka, Bangladesh |
+R&D |
+27,753 |
+상동 |
+ X |
+
+Samsung Nepal Services Pvt, Ltd (SNSL) |
+2017. 11 |
+Ward No 1, Durbar Marg, Kathmandu Municipality, Kathmandu, Nepal |
+서비스 |
+872 |
+상동 |
+ X |
+
+Samsung Japan Corporation (SJC) |
+1975. 12 |
+Shinagawa Grand Central Tower, Konan, Minato, Tokyo, Japan |
+반도체ㆍ디스플레이 패널 판매 |
+1,967,890 |
+상동 |
+ O |
+
+Samsung R&D Institute Japan Co. Ltd. (SRJ) |
+1992. 08 |
+2-7, Sugasawa-cho, Tsurumi-ku, Yokohama, Kanagawa, Japan |
+R&D |
+115,903 |
+상동 |
+ O |
+
+Samsung Electronics Japan Co., Ltd. (SEJ) |
+2008. 09 |
+Iidabashi Grand Bloom, 2-10-2, Fujimi, Chiyoda-ku, Tokyo, Japan |
+전자제품 판매 |
+925,841 |
+상동 |
+ O |
+
+FlaktGroup India Private Ltd. |
+2012. 08 |
+315-A, 3rd Floor 98 Hemkunt Tower, Nehru Place NA, New Delhi- South Delhi DL 110019, India |
+에어컨공조 생산 및 판매 |
+40,478 |
+상동 |
+ X |
+
+FlaktGroup Singapore Pte. Ltd. |
+2000. 01 |
+18 Sin Ming Lane, #06-34 MidView City S , 573960, Singapore |
+에어컨공조 판매 |
+6,567 |
+상동 |
+ X |
+
+Harman International (India) Private Limited |
+2009. 01 |
+Plot No. 9, Phase I , Doddenakkundi Industrial Area, K.R. Puram Hobli, Bangalore, India |
+오디오제품 판매, R&D |
+478,874 |
+상동 |
+ O |
+
+Harman International Industries PTY Ltd. |
+2014. 12 |
+Warehouse 25 26-18, Roberna St., Moorabbin, Victoria, Australia |
+해외자회사 관리 |
+-5,024 |
+상동 |
+ X |
+
+Harman International (Thailand) Co., Ltd. |
+2024. 06 |
+191 Moo2 Tambol Takian Tia, Amphur Banglamung, Chonburi, Thailand |
+Connected Service Provider |
+42,827 |
+상동 |
+ X |
+
+Harman International Japan Co., Ltd. |
+1991. 06 |
+14F Sumitomo Fudosan Akihabara-ekimae, Kanda, Chiyoda, Tokyo, Japan |
+오디오제품 판매, R&D |
+106,926 |
+상동 |
+ O |
+
+Harman Singapore Pte. Ltd. |
+2007. 08 |
+108, Pasir Panjang Rd., #02-08 Golden Agri Plaza, Singapore |
+오디오제품 판매 |
+15,424 |
+상동 |
+ X |
+
+D&M Holdings, Inc. |
+2008. 06 |
+2-1 Nisshin-cho, Kawasaki-ku Kawasaki- shi, Kanagawa-ken 210 8569, Japan |
+오디오제품 생산, 판매, R&D |
+21,914 |
+상동 |
+ X |
+
+Sound United Australia Pty Ltd |
+2014. 04 |
+Level 3, 754 Pacific Highway, Chatswood NSW 2067, Australia |
+R&D |
+5,183 |
+상동 |
+ X |
+
+Sound United Sales & Marketing Australia Pty Limited |
+2017. 05 |
+Level 3, 754 Pacific Highway, Chatswood NSW 2067, Australia |
+오디오제품 판매 |
+13,658 |
+상동 |
+ X |
+
+Samsung (CHINA) Investment Co., Ltd. (SCIC) |
+1996. 03 |
+Fortune Financial Center, No5. Dongsanhuan Zhong Rd., Chaoyang, Beijing, China |
+전자제품 판매 |
+14,604,846 |
+상동 |
+ O |
+
+Samsung Electronics Hong Kong Co., Ltd. (SEHK) |
+1988. 09 |
+33F, Central Plaza, 18 Harbour Road, Wan Chai, Hong Kong |
+전자제품 판매 |
+1,235,014 |
+상동 |
+ O |
+
+Samsung Electronics Taiwan Co., Ltd. (SET) |
+1994. 11 |
+10F, No.399, Rui Guang Rd., Nei Hu, Taipei, Taiwan |
+전자제품 판매 |
+2,115,046 |
+상동 |
+ O |
+
+Suzhou Samsung Electronics Co., Ltd. (SSEC) |
+1995. 04 |
+No.501, SuHong East Rd., Suzhou Industrial Park, Suzhou, China |
+가전제품 생산 |
+758,755 |
+상동 |
+ O |
+
+Samsung Suzhou Electronics Export Co., Ltd. (SSEC-E) |
+1995. 04 |
+No.501, SuHong East Rd., Suzhou Industrial Park, Suzhou, China |
+가전제품 생산 |
+297,966 |
+상동 |
+ O |
+
+Samsung Electronics Suzhou Computer Co., Ltd. (SESC) |
+2002. 09 |
+No.198, Fangzhou Rd., Suzhou Industrial park, Suzhou, China |
+전자제품 생산, R&D |
+134,449 |
+상동 |
+ O |
+
+Tianjin Samsung Telecom Technology Co., Ltd. (TSTC) |
+2001. 03 |
+No.9 WeiWu Rd. Micro Electronic Industrial Park, Xiqing, Tianjin, China |
+통신제품 생산 |
+739,996 |
+상동 |
+ O |
+
+Beijing Samsung Telecom R&D Center (SRC-Beijing) |
+2000. 09 |
+RM1503, 15F, No.12, Taiyanggong Mid Rd, Chaoyang, Beijing, China |
+R&D |
+67,719 |
+상동 |
+ X |
+
+Samsung Electronics China R&D Center (SRC-Nanjing) |
+2004. 05 |
+8/F, Huijie Plaza, 268 Zhongshan Rd., Nanjing, China |
+R&D |
+35,894 |
+상동 |
+ X |
+
+Samsung Mobile R&D Center China-Guangzhou (SRC-Guangzhou) |
+2010. 01 |
+A3 Building, No.185 Kexue Ave., Science City, Luogang, Guangzhou, China |
+R&D |
+42,944 |
+상동 |
+ X |
+
+Samsung R&D Institute China-Shenzhen (SRC-Shenzhen) |
+2013. 03 |
+22F, Building 2C, Shenzhen Software Industry Base, Nanshan District, Shenzhen, China |
+R&D |
+36,820 |
+상동 |
+ X |
+
+Shanghai Samsung Semiconductor Co., Ltd. (SSS) |
+2001. 10 |
+3F, No.458, Fute North Rd., Shanghai, China |
+반도체ㆍ디스플레이 패널 판매 |
+9,474,930 |
+상동 |
+ O |
+
+Samsung (China) Semiconductor Co., Ltd. (SCS) |
+2012. 09 |
+No.1999, Xiaohe Rd., Changan, Xian, China |
+반도체 생산 |
+16,042,066 |
+상동 |
+ O |
+
+Samsung SemiConductor Xian Co., Ltd. (SSCX) |
+2016. 04 |
+8F Customs Clearance Center, No.5 Tonghai First Rd., Changan, Xian, China |
+반도체ㆍ디스플레이 패널 판매 |
+1,296,710 |
+상동 |
+ O |
+
+Samsung Electronics Suzhou Semiconductor Co., Ltd. (SESS) |
+1994. 12 |
+No.337, Fengli Street, Suzhou Industrial Park, Suzhou, China |
+반도체 임가공 |
+1,032,002 |
+상동 |
+ O |
+
+Tianjin Samsung LED Co., Ltd. (TSLED) |
+2009. 05 |
+No 1. Weisan Rd., Micro Electronic Industrial Park., Xiqing, Tianjin, China |
+LED 생산 |
+257,681 |
+상동 |
+ O |
+
+Samsung Semiconductor (China) R&D Co., Ltd. (SSCR) |
+2003. 04 |
+No.15, Jinjihu Rd., Suzhou Industrial Park, Suzhou, China |
+R&D |
+111,434 |
+상동 |
+ O |
+
+Samsung Display Dongguan Co., Ltd. (SDD) |
+2001. 11 |
+High Technology Industrial Zone, Houjie, Dongguan, China |
+디스플레이 패널 생산 |
+777,310 |
+상동 |
+ O |
+
+Samsung Display Tianjin Co., Ltd. (SDT) |
+2004. 06 |
+No.25, Mip Fourth Rd., Xiqing, Tianjin, China |
+디스플레이 패널 생산 |
+531,549 |
+상동 |
+ O |
+
+SEMES (XIAN) Co., Ltd. |
+2013. 07 |
+#A501, ZTE PLAZA, No.10 Tangyan South Rd., Gaoxin, Xian, China |
+반도체ㆍFPD 장비 서비스 |
+5,343 |
+상동 |
+ X |
+
+Samsung Semiconductor Investment L.P.Ⅰ |
+2021. 12 |
+#409, Building 2, No. 599, Wanzhen Road, Zhenxinxincun St., Jiading District, Shanghai, China |
+신기술사업자, 벤처기업 투자 |
+6,757 |
+상동 |
+ X |
+
+Harman (China) Technologies Co., Ltd. |
+2011. 03 |
+No.68, First Yinquan Rd., Zhengxing, Dandong, China |
+오디오제품 생산 |
+349,800 |
+상동 |
+ O |
+
+Harman (Suzhou) Audio and Infotainment Systems Co., Ltd. |
+2013. 03 |
+No. 95, Qiming Road, Suzhou Industrial Park, Jiangsu, China |
+오디오제품 판매 |
+2,612 |
+상동 |
+ X |
+
+Harman Automotive Electronic Systems (Suzhou) Co., Ltd. |
+2006. 09 |
+No.125, Fangzhou Rd., Suzhou Industrial Park, Suzhou, China |
+오디오제품 생산, R&D |
+729,930 |
+상동 |
+ O |
+
+Harman Commercial (Shanghai) Co., Ltd. |
+2010. 10 |
+Suite 2903B, Level 29, 288, West Nanjing Rd., Huangpu, Shanghai, China |
+오디오제품 판매 |
+126 |
+상동 |
+ X |
+
+Harman Holding Limited |
+2007. 05 |
+Flat/RM A 12F, Kiu Fu Commercial Building, 300 Lockhart Rd., Wan Chai, Hong Kong |
+오디오제품 판매 |
+689,803 |
+상동 |
+ O |
+
+Harman International (China) Holdings Co., Ltd. |
+2009. 06 |
+30F, No. 288, Nanjing Road West, Shanghai, China |
+오디오제품 판매, R&D |
+743,789 |
+상동 |
+ O |
+
+Harman Technology (Shenzhen) Co., Ltd. |
+2004. 09 |
+14F, China Merchants Bureau Port Building, Merchants St., Nanshan, Shenzhen, China |
+오디오제품 판매, R&D |
+42,110 |
+상동 |
+ X |
+
+Sound United Hong Kong Limited |
+2005. 12 |
+31/F Tower Two Times Square, Matheson Street, Causeway Bay, Hong Kong |
+해외자회사 관리 |
+1 |
+상동 |
+ X |
+
+Sound Electronics (Shenzhen) Co. Ltd. |
+2015. 08 |
+Unit 1402 b & 1402A, Tower 2, Qianhai Kerry Center, Hong Kong |
+R&D |
+3,488 |
+상동 |
+ X |
+
+D&M Sales & Marketing (H.K) Ltd. |
+2002. 03 |
+Suite 1107 11/F Ocean Center Harbor City, Kowloon, Hong Kong |
+오디오제품 판매 |
+33,102 |
+상동 |
+ X |
+
+D&M Digital Audio Trading (Shanghai) Ltd. |
+2003. 06 |
+Room 521 No.8 HuaJing Road, Waigaoqiao Free Trade Zone, Shanghai, China |
+해외자회사 관리 |
+213 |
+상동 |
+ X |
+
+Marantz Shanghai Trading Ltd. |
+2004. 01 |
+Room 277, The New Trade Bulilding No.2 Taizhong Road, Shanghai, China |
+해외자회사 관리 |
+4,053 |
+상동 |
+ X |
+
+D&M Shanghai Electronics Ltd. |
+2008. 06 |
+Room 803 No.5 Lane 91 Jianguo Rd, Shanghai, China |
+오디오제품 판매 |
+44,028 |
+상동 |
+ X |
+
+D&M Sales & Marketing Taiwan Ltd. |
+2007. 02 |
+11F-1 66 Sec 2 Jianguo Rd. N Taipei, Taiwan |
+오디오제품 판매 |
+154 |
+상동 |
+ X |
+
+Bowers & Wilkins Trading Zhuhai Company Ltd. |
+2015. 08 |
+No. 11 Building Hengli IndustrialPark No. 5 Free Trade Zone, Zhuhai, China |
+오디오제품 생산 |
+- |
+상동 |
+ X |
+
+B&W Group Asia Limited |
+2005. 05 |
+Rm 1110 11/F Ocean Center Harborcity 5 Canton Road Tsimshatsui, Hong Kong |
+오디오제품 판매 |
+67 |
+상동 |
+ X |
+
+삼성디스플레이㈜ |
+2012. 04 |
+경기도 용인시 기흥구 삼성로 1(농서동) |
+디스플레이 패널 생산 및 판매 |
+76,710,079 |
+상동 |
+ O |
+
+에스유머티리얼스㈜ |
+2011. 08 |
+충청남도 아산시 탕정면 탕정로 380-2 |
+디스플레이 패널 부품 생산 |
+37,986 |
+상동 |
+ X |
+
+스테코㈜ |
+1995. 06 |
+충청남도 천안시 서북구 3공단1로 20(백석동) |
+반도체 부품 생산 |
+137,168 |
+상동 |
+ O |
+
+세메스㈜ |
+1993. 01 |
+충청남도 천안시 서북구 직산읍 4산단5길 77 |
+반도체ㆍFPD 장비 생산, 판매 |
+2,637,216 |
+상동 |
+ O |
+
+삼성전자서비스㈜ |
+1998. 10 |
+경기도 수원시 영통구 삼성로 290(원천동) |
+전자제품 수리 서비스 |
+720,837 |
+상동 |
+ O |
+
+삼성전자서비스씨에스㈜ |
+2018. 10 |
+경기도 수원시 영통구 중부대로 324(매탄동) |
+고객상담서비스 |
+24,269 |
+상동 |
+ X |
+
+삼성전자판매㈜ |
+1996. 07 |
+경기도 성남시 분당구 황새울로311번길 28(서현동) |
+전자제품 판매 |
+1,166,771 |
+상동 |
+ O |
+
+삼성전자로지텍㈜ |
+1998. 04 |
+경기도 수원시 영통구 삼성로 290(원천동) |
+종합물류대행 |
+442,234 |
+상동 |
+ O |
+
+삼성메디슨㈜ |
+1985. 07 |
+강원특별자치도 홍천군 남면 한서로 3366(양덕원리) |
+의료기기 생산 및 판매 |
+857,183 |
+상동 |
+ O |
+
+주식회사 희망별숲 |
+2022. 12 |
+경기도 용인시 기흥구 서천로201번길 14(농서동, 프리미엄원희캐슬기흥서천) 2층 |
+식품 제조 가공 |
+13,832 |
+상동 |
+ X |
+
+㈜미래로시스템 |
+1994. 01 |
+경기도 용인시 기흥구 흥덕중앙로 120(영덕동) |
+반도체 소프트웨어 개발 및 공급 |
+54,691 |
+상동 |
+ X |
+
+㈜하만인터내셔널코리아 |
+2005. 01 |
+서울특별시 강남구 테헤란로 223(역삼동), 큰길타워 17층 |
+소프트웨어 개발 및 공급 |
+22,248 |
+상동 |
+ X |
+
+㈜레인보우로보틱스 |
+2011. 02 |
+대전광역시 유성구 엑스포로 339번길 10-19(문지동) |
+로봇ㆍ로봇 부품 생산 및 판매 |
+144,448 |
+상동 |
+ O |
+
+디앤엠세일즈앤마케팅코리아㈜ |
+1996. 02 |
+서울특별시 강남구 테헤란로 513(삼성동), 케이타워 11층 |
+오디오제품 판매 |
+12,436 |
+상동 |
+ X |
+
+SVIC 21호 신기술투자조합 |
+2011. 11 |
+서울특별시 서초구 서초대로74길 11(서초동), 삼성전자빌딩 29층 |
+신기술사업자, 벤처기업 투자 |
+90,935 |
+상동 |
+ O |
+
+SVIC 22호 신기술투자조합 |
+2011. 11 |
+서울특별시 서초구 서초대로74길 11(서초동), 삼성전자빌딩 29층 |
+신기술사업자, 벤처기업 투자 |
+14,593 |
+상동 |
+ X |
+
+SVIC 26호 신기술투자조합 |
+2014. 11 |
+서울특별시 서초구 서초대로74길 11(서초동), 삼성전자빌딩 29층 |
+신기술사업자, 벤처기업 투자 |
+21,712 |
+상동 |
+ X |
+
+SVIC 28호 신기술투자조합 |
+2015. 02 |
+서울특별시 서초구 서초대로74길 11(서초동), 삼성전자빌딩 29층 |
+신기술사업자, 벤처기업 투자 |
+234,445 |
+상동 |
+ O |
+
+SVIC 32호 신기술투자조합 |
+2016. 08 |
+서울특별시 서초구 서초대로74길 11(서초동), 삼성전자빌딩 29층 |
+신기술사업자, 벤처기업 투자 |
+119,535 |
+상동 |
+ O |
+
+SVIC 33호 신기술투자조합 |
+2016. 11 |
+서울특별시 서초구 서초대로74길 11(서초동), 삼성전자빌딩 29층 |
+신기술사업자, 벤처기업 투자 |
+190,421 |
+상동 |
+ O |
+
+SVIC 42호 신기술투자조합 |
+2018. 11 |
+서울특별시 서초구 서초대로74길 11(서초동), 삼성전자빌딩 29층 |
+신기술사업자, 벤처기업 투자 |
+15,039 |
+상동 |
+ X |
+
+SVIC 43호 신기술투자조합 |
+2018. 12 |
+서울특별시 서초구 서초대로74길 11(서초동), 삼성전자빌딩 29층 |
+신기술사업자, 벤처기업 투자 |
+16,905 |
+상동 |
+ X |
+
+SVIC 45호 신기술투자조합 |
+2019. 05 |
+서울특별시 서초구 서초대로74길 11(서초동), 삼성전자빌딩 29층 |
+신기술사업자, 벤처기업 투자 |
+105,839 |
+상동 |
+ O |
+
+SVIC 52호 신기술투자조합 |
+2021. 05 |
+서울특별시 서초구 서초대로74길 11(서초동), 삼성전자빌딩 29층 |
+신기술사업자, 벤처기업 투자 |
+115,312 |
+상동 |
+ O |
+
+SVIC 55호 신기술투자조합 |
+2021. 09 |
+서울특별시 서초구 서초대로74길 11(서초동), 삼성전자빌딩 29층 |
+신기술사업자, 벤처기업 투자 |
+158,841 |
+상동 |
+ O |
+
+SVIC 56호 신기술투자조합 |
+2021. 11 |
+서울특별시 서초구 서초대로74길 11(서초동), 삼성전자빌딩 29층 |
+신기술사업자, 벤처기업 투자 |
+41,522 |
+상동 |
+ X |
+
+SVIC 57호 신기술투자조합 |
+2022. 08 |
+서울특별시 서초구 서초대로74길 11(서초동), 삼성전자빌딩 29층 |
+신기술사업자, 벤처기업 투자 |
+168,426 |
+상동 |
+ O |
+
+SVIC 62호 신기술투자조합 |
+2023. 03 |
+서울특별시 서초구 서초대로74길 11(서초동), 삼성전자빌딩 29층 |
+신기술사업자, 벤처기업 투자 |
+13,032 |
+상동 |
+ X |
+
+SVIC 67호 신기술투자조합 |
+2024. 10 |
+서울특별시 서초구 서초대로74길 11(서초동), 삼성전자빌딩 29층 |
+신기술사업자, 벤처기업 투자 |
+142,289 |
+상동 |
+ O |
+
+SVIC 74호 신기술투자조합 |
+2025. 06 |
+서울특별시 서초구 서초대로74길 11(서초동), 삼성전자빌딩 29층 |
+신기술사업자, 벤처기업 투자 |
+39,525 |
+상동 |
+ X |
+
+SVIC 76호 신기술투자조합 |
+2025. 12 |
+서울특별시 서초구 서초대로74길 11(서초동), 삼성전자빌딩 29층 |
+신기술사업자, 벤처기업 투자 |
+1,502 |
+상동 |
+ X |
+
+반도체성장 전문투자형 사모 투자신탁 |
+2017. 03 |
+서울특별시 영등포구 여의나루로 76(여의도동), 한국거래소 별관 4층 |
+반도체산업 투자 |
+27,621 |
+상동 |
+ X |
+
+시스템반도체 상생 전문투자형 사모 투자신탁 |
+2020. 04 |
+서울특별시 영등포구 여의나루로 76(여의도동), 한국거래소 별관 4층 |
+반도체산업 투자 |
+52,634 |
+상동 |
+ X |
+
+반도체 생태계 일반 사모 투자신탁 |
+2023. 07 |
+서울특별시 영등포구 여의나루로 76(여의도동), 한국거래소 별관 4층 |
+반도체산업 투자 |
+31,446 |
+상동 |
+ X |
+
+[표 끝]
+
+[표]
+
+※ 주요 사업에 대한 상세 내역은 'Ⅱ.사업의 내용'을 참고하시기 바랍니다.※ 주요 종속기업 여부 판단기준은 최근사업연도말 자산총액 750억원 이상입니다. |
+
+[표 끝]
+
+(종속기업의 변동)
+
+[표]
+
+ |
+ |
+ |
+(단위 : 개사) |
+
+[표 끝]
+
+[표]
+
+구 분 |
+미주 |
+
+유럽
+
+ㆍ
+
+CIS
+
+ |
+
+중동
+ㆍ
+아프리카
+ |
+아시아(중국 제외) |
+중국 |
+국내 |
+합계 |
+변 동 내 역 |
+
+증 가 |
+감 소 |
+
+제54기(2022년말) |
+45 |
+72 |
+20 |
+32 |
+30 |
+33 |
+232 |
+- |
+- |
+
+제55기증감 |
+2 |
+△4 |
+- |
+- |
+- |
+2 |
+- |
+[미주: 4개사]ㆍSamsung Federal, Inc. (SFI)ㆍSamsung Display America Holdings, Inc. (SDAH)ㆍeMagin CorporationㆍRoon Labs, LLC.[국내: 2개사]ㆍSVIC 62호 신기술투자조합ㆍ반도체 생태계 일반 사모 투자신탁 |
+[미주: 2개사]ㆍDacor Holdings, Inc.ㆍDacor, Inc.[유럽ㆍCIS: 4개사]ㆍRed Bend Software Ltd.ㆍHarman Finance International GP S.a.r.lㆍHarman Finance International, SCAㆍHarman Automotive UK Limited |
+
+제55기(2023년말) |
+47 |
+68 |
+20 |
+32 |
+30 |
+35 |
+232 |
+- |
+- |
+
+제56기증감 |
+- |
+- |
+1 |
+- |
+△1 |
+△4 |
+△4 |
+[미주:1개사]ㆍSonio Corporation[유럽ㆍCIS: 2개사]ㆍOxford Semantic Technologies LimitedㆍSonio SAS[아시아(중국 제외): 1개사]ㆍHarman International (Thailand) Co., Ltd.[중동ㆍ아프리카 1개사]ㆍSamsung Electronics Middle east and North Africa (SEMENA)[국내: 1개사]ㆍSVIC 67호 신기술투자조합 |
+[미주:1개사]ㆍHarman Financial Group LLC[유럽ㆍCIS: 2개사]ㆍSamsung Display Slovakia, s.r.o., v likvidacii (SDSK)ㆍSamsung Electronics Overseas B.V. (SEO)[아시아(중국 제외): 1개사]ㆍDOWOOINSYS VINA COMPANY LIMITED[중국: 1개사]ㆍTianjin Samsung Electronics Co., Ltd. (TSEC)[국내: 5개사]ㆍ㈜도우인시스ㆍ지에프㈜ㆍSVIC 29호 신기술투자조합ㆍSVIC 40호 신기술투자조합ㆍSVIC 48호 신기술투자조합 |
+
+제56기(2024년말) |
+47 |
+68 |
+21 |
+32 |
+29 |
+31 |
+228 |
+ |
+ |
+
+제57기증감 |
+19 |
+46 |
+- |
+4 |
+8 |
+3 |
+80 |
+
+[미주:22개사]ㆍRAINBOW ROBOTICS USA Co., Ltd.ㆍHarman Connected Services US Midco, LLC
+
+ㆍViper Holdings Corporation
+
+ㆍDEI Holdings, Inc.
+
+ㆍDEI Sales, Inc.
+
+ㆍSound United, LLC
+
+ㆍSound United Canada Inc. 
+
+ㆍPolk Audio, LLC
+
+ㆍD&M Holdings U.S. Inc.
+
+ㆍBoston Acoustics, Inc.
+
+ㆍD&M Premium Sound Solutions, LLC
+
+ㆍDenon Electronics (USA), LLC
+
+ㆍDigital Networks North America Inc. 
+
+ㆍMarantz America, LLC
+
+ㆍD&M Sales & Marketing Americas, LLC 
+
+ㆍThe Speaker Company
+
+ㆍDefinitive Technology, LLC
+
+ㆍEquity International, LLC
+
+ㆍXealth Inc.
+
+ㆍSEMCO LLC 
+
+ㆍSEMCO Duct & Acoustical Products Inc 
+
+ㆍWoods Air Movement Ltd. 
+
+[유럽ㆍCIS: 49개사]
+
+ㆍD&M Europe B.V
+
+ㆍD&M Audiovisual Ltd
+
+ㆍD&M France SAS
+
+ㆍD&M Germany GmbH
+
+ㆍB&W Group Ltd
+
+ㆍB&W Group Belgium B.V 
+
+ㆍB&W Loudspeakers Nederland B.V 
+
+ㆍB&W Loudspeakers Group Espana S.A
+
+ㆍB&W Loudspeakers Ltd
+
+ㆍB&W Group (Schweiz) GmbH
+
+ㆍB&W Group (Logistics) Ltd
+
+ㆍB&W Group Germany GmbH
+
+ㆍB&W Group France SARL
+
+ㆍB&W Group Finland Oy
+
+ㆍMarantz Italy Srl
+
+ㆍBowers & Wilkins Ltd
+
+ㆍFlaktGroup Austria GmbH 
+
+ㆍFlakt Woods SA 
+
+ㆍFlakt Elve NV 
+
+ㆍFlaktGroup Belgium N. V. 
+
+ㆍFlaktGroup Switzerland SA 
+
+ㆍFlaktGroup CZ a. s. 
+
+ㆍFlaktGroup Holding GmbH 
+
+ㆍFlaktGroup Deutschland GmbH 
+
+ㆍFlaktGroup Wurzen GmbH 
+
+ㆍSE Electronic GmbH 
+
+ㆍWoods Air Movement GmbH 
+
+ㆍFlaktGroup A/S 
+
+ㆍFlaktGroup Eesti OU 
+
+ㆍVentilation Holding Finland OY 
+
+ㆍFlaktGroup Finland OY 
+
+ㆍFlaktGroup France SAS 
+
+ㆍWoods Holdings Ltd. 
+
+ㆍFlakt Woods Ltd. 
+
+ㆍFlaktGroup UK Ltd. 
+
+ㆍFlaktGroup Ireland Ltd. 
+
+ㆍFlaktGroup Italy S. p. A. 
+
+ㆍFlaktGroup Baltics UAB 
+
+ㆍFlakt Woods ( Luxembourg) S. a. r. l 
+
+ㆍFlakt Woods ACS S. a. r. l 
+
+ㆍFlaktGroup Latvija SlA 
+
+ㆍFlaktGroup Netherlands B. V. 
+
+ㆍFlaktGroup Poland Sp. Z. o. o. 
+
+ㆍFlaktGroup Romania s. r. l 
+
+ㆍVentilation Holding Sweden AB 
+
+ㆍFusilli HoldCo AB 
+
+ㆍFlaktGroup Sweden AB 
+
+ㆍForvaltnings bolaget Ljungarum HB 
+
+ㆍStromboli invetissements SAS 
+
+[아시아(중국 제외): 5개사]ㆍD&M Holdings, Inc. 
+
+ㆍSound United Australia Pty Ltd
+
+ㆍSound United Sales & Marketing Australia Pty Limited
+
+ㆍFlaktGroup India Private Ltd. 
+
+ㆍFlaktGroup Singapore Pte. Ltd. [중국: 9개사]
+
+ㆍSound United Hong Kong Limited
+
+ㆍSound Electronics (Shenzhen) Co. Ltd.
+
+ㆍD&M Sales & Marketing (H.K) Ltd.
+
+ㆍD&M Digital Audio Trading (Shanghai) Ltd.
+
+ㆍMarantz Shanghai Trading Ltd.
+
+ㆍD&M Shanghai Electronics Ltd.
+
+ㆍD&M Sales & Marketing Taiwan Ltd.
+
+ㆍBowers & Wilkins Trading Zhuhai Company Ltd.
+
+ㆍB&W Group Asia Limited
+
+[중동ㆍ아프리카: 2개사]
+
+ㆍFlaktWoods LLC 
+
+ㆍFlaktGroup Havalandirma Sanayi A.S. 
+
+[국내: 4개사]
+
+ㆍ㈜레인보우로보틱스 
+
+ㆍSVIC 74호 신기술투자조합
+
+ㆍ디앤엠세일즈앤마케팅코리아㈜
+
+ㆍSVIC 76호 신기술투자조합
+
+ |
+
+[미주: 3개사]
+
+ㆍHarman Connected Services, Inc.
+
+ㆍHarman Connected Services Engineering Corp.
+
+ㆍHarman Connected Services US Midco, LLC
+
+[유럽ㆍCIS: 3개사]
+
+ㆍStuder Professional Audio GmbH
+
+ㆍHarman Connected Services AB.
+
+ㆍHarman Connected Services UK Ltd.
+
+[아시아(중국 제외): 1개사]
+
+ㆍHarman Connected Services Corp. India Pvt. Ltd.
+
+[중국: 1개사]
+
+ㆍHarman Connected Services Solutions (Chengdu) Co., Ltd.
+
+[중동ㆍ아프리카: 2개사]
+
+ㆍHarman Connected Services Mauritius Pvt. Ltd.
+
+ㆍHarman Connected Services Morocco
+
+[국내: 1개사]
+
+ㆍSVIC 37호 신기술투자조합
+
+ |
+
+제57기(2025년말) |
+66 |
+114 |
+21 |
+36 |
+37 |
+34 |
+308 |
+ |
+ |
+
+[표 끝]
+
+[표]
+
+ |
+[△는 부(-)의 값임] |
 
 [표 끝]

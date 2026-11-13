@@ -1,6 +1,6 @@
-# 롯데웰푸드 사업보고서 (2025.12) — I. 회사의 개요 (본문 텍스트)
+# 롯데웰푸드 사업보고서 (2025.12) — I. 회사의 개요 + 상세표-1 연결대상 종속회사 현황(상세) (본문 텍스트)
 # 접수번호 20260312000907 · 접수일 20260312 · 원문 https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312000907
-# OpenDART document.xml에서 자동 추출 (2026-11-13 18:05 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
+# OpenDART document.xml에서 자동 추출 (2026-11-13 18:15 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
 
 ## I. 회사의 개요
 
@@ -1793,3 +1793,291 @@ D |
 ⑧ 미추진 사유
 
 해당사항 없습니다.
+
+## 1. 연결대상 종속회사 현황(상세)
+
+[표]
+
+☞ 본문 위치로 이동
+ |
+
+[표 끝]
+
+[표]
+
+[표]
+
+ |
+(단위 : 백만원) |
+
+[표 끝]
+
+[표]
+
+상호 |
+설립일 |
+주소 |
+주요사업 |
+최근사업연도말자산총액 |
+지배관계 근거 |
+주요종속회사 여부 |
+
+LOTTE QINGDAOFOODS CO., Ltd. |
+1996.08.28 |
+ N0. 149, Zhu Zhou Road, HightechIndustrial Park Laoshan, Qingdao, China |
+과자제조판매 |
+6,501 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+X |
+
+Lotte Confectionery(S.E.A) Pte. Ltd. |
+2011.05.11 |
+10 GENTING LANE, #07-00, JAY GEE MELWANI HOUSE, SINGAPORE 349583 |
+과자판매 |
+7,378 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+X |
+
+스위트위드㈜ |
+2016.04.01 |
+ 경기도 평택시 진위면 경기대로 1952 |
+식품소분업 |
+1,114 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+X |
+
+Lotte Confectionery RUS LLC |
+2007.04.13 |
+ Russia, Kaluga region, 249030, Obninsk, Kievskoe road, 106 |
+과자제조판매 |
+132,069 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+해당 |
+
+Lotte Confectionery Holdings(Europe) B.V. |
+2008.07.01 |
+Herikerbergweg 88, 1101CM Amsterdam, Netherlands |
+투자 |
+184,536 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+해당 |
+
+Chocolaterie Guylian N.V. |
+1967.06.30 |
+ Europark-Oost 1 9100 Sint-Niklass, Belgium |
+과자제조판매 |
+134,460 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+해당 |
+
+Chocolaterie GuylianDeutschland GmbH |
+1995.12.31 |
+ Diessemer Bruch 134, 47805 Krefeld, Germany |
+과자 판매 |
+5,489 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+X |
+
+Aimee BVBA |
+2003.03.26 |
+Bouwstraat 2, 9160 Lokeren, Belgium |
+과자 판매 |
+769 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+X |
+
+Guylian Iberia, LDA |
+2008.07.08 |
+ Rua Consiglieri Pedroso, 71-6th floor right, Queluz de Baixo, Portugal |
+과자 판매 |
+169 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+X |
+
+Guylian UK Ltd |
+2000.08.24 |
+ 3 Danebrook Court, Langford Lane Kidlington, Oxford, Great Britain |
+과자 판매 |
+17,595 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+X |
+
+Guylian USA, Inc |
+1994.03.17 |
+560 SYLVAN AVENUE, Suite 2105, Englewood Cliffs, NJ, U.S.A. |
+과자 판매 |
+9 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+X |
+
+Lotte Kolson (Private) Ltd |
+1975.03.11 |
+ Plot# L-14 Block 21, F.B. Industrial Area, Scheme 16, Karachi, Pakistan |
+과자제조판매 |
+54,548 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+X |
+
+LOTTE Rakhat JSC |
+1942.03.01 |
+ Republic of Kazakhstan 050002, Almaty Zenkov Street, 2a |
+과자제조판매 |
+211,074 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+해당 |
+
+Rakhat-Shymkent LLP |
+2000.06.20 |
+ Kazakhstan, Shymkent City, Klara Zetkin str., 63 |
+과자제조판매 |
+77,571 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+X |
+
+Rakhat-ShymkentTrading House LLP |
+2001.05.01 |
+ Kazakhstan, Shymkent City, Zhibek Zholy str., 60 |
+과자 판매 |
+23,415 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+X |
+
+Rakhat-Astana LLP |
+1999.12.13 |
+Kazakhstan, Astana City, Jahansha Dosmuhameduli, 46 |
+과자 판매 |
+1,103 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+X |
+
+Rakhat-Aktobe LLP |
+2000.05.01 |
+ Kazakhstan, Aktobe City, Moldagulova ave., 6/1, apt.2 |
+과자 판매 |
+1,508 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+X |
+
+Rakhat-Aktau LLP |
+1999.12.01 |
+ Kazakhstan, Aktau City, Basa ORS, building 2 |
+과자 판매 |
+832 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+X |
+
+Rakhat-Oral LLP |
+2000.07.01 |
+Kazakhstan, Oral City, Vokzalnaya str., 2 |
+과자 판매 |
+1,200 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+X |
+
+Rakhat-Taldykorgan LLP |
+2000.05.05 |
+ Kazakhstan, Taldykorgan City, Tynyshbekova str., 88 |
+과자 판매 |
+244 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+X |
+
+Rakhat-Karaganda LLP |
+2000.07.31 |
+ Kazakhstan, Karaganda City, Molokova 104/2 |
+과자 판매 |
+869 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+X |
+
+Almaty Sweets LLC |
+1998.10.01 |
+ Kyrgyzstan, Byshkek City, Dan Syaopin str., 306 |
+과자 판매 |
+2,019 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+X |
+
+Rakhat TR |
+2002.11.08 |
+ Kazakhstan, Almaty City, R.Zorge str., 1/18 |
+운수업 |
+1,836 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+X |
+
+L&M Confectionery Pte. Ltd.(주1) |
+2016.05.09 |
+ 111 SOMERSET ROAD, #06-07L, 111 SOMERSET, SINGAPORE 238164 |
+투자 |
+18,809 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+X |
+
+Lotte India Co., Ltd.(주1)(주2) |
+1954.03.26 |
+ 4/169, Rajiv Gandhi Salai (OMR Road), Kandanchavadi, Chennai - 600096 TamilNadu |
+과자 및 아이스크림제조판매 |
+304,073 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+해당 |
+
+L&M Mayson Company Limited(주1) |
+2017.07.26 |
+No.98(C,D,E), Than Lwin Street, Shwe ThanLwin Industrial Zone, Hlaing Tharyar Township, yangon Region, Myanmar. |
+과자제조판매 |
+61,456 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+X |
+
+한국투자 노블푸드 신기술사업투자조합 1호 |
+2022.01.18 |
+ 서울특별시 영등포구 의사당대로 88 |
+투자 |
+12,286 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+X |
+
+한국투자 그린테크 신기술조합 |
+2022.10.31 |
+ 서울특별시 영등포구 의사당대로 88 |
+투자 |
+21,866 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+X |
+
+롯데용인씨케이 주식회사 |
+2021.11.08 |
+ 경기도 용인시 기흥구 중부대로874번길 2-1 |
+도시락 및 식사용조리식품 제조 |
+6,023 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+X |
+
+롯데평택씨케이 주식회사 |
+2021.11.08 |
+ 경기도 평택시 세교산단로101번길 47 |
+도시락 및 식사용조리식품 제조 |
+15,509 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+X |
+
+롯데부산씨케이 주식회사 |
+2021.11.08 |
+ 경상남도 양산시 어곡공단4길 31 |
+도시락 및 식사용조리식품 제조 |
+4,833 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+X |
+
+롯데광주씨케이 주식회사 |
+2021.11.08 |
+ 광주광역시 북구 하서로 270 |
+도시락 및 식사용조리식품 제조 |
+4,518 |
+지분 과반수 이상 보유 회계기준서 제1110호 |
+X |
+
+[표 끝]
+
+(주1) L&M Confectionery Pte., Ltd., Lotte India Co., Ltd. 및 L&M Mayson Company Limited는 3월 결산법인이며, 최근 사업연도말 자산총액은 2025년 12월 31일 기준입니다.(주2) 당기 중 Lotte India Co., Ltd.가 HAVMOR ICE CREAM PRIVATE LIMITED를 흡수합병하였습니다. 회계상 간주합병일은 3월 31일이며 합병등기 기준일은 7월 1일입니다.※ 주요종속회사 기준 : 최근 사업연도말 자산총액이 지배회사 자산총액의 10%이상이거나 자산총액이 750억 이상

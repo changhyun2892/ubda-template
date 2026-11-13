@@ -1,6 +1,6 @@
-# 한화오션 [기재정정]사업보고서 (2025.12) — I. 회사의 개요 (본문 텍스트)
+# 한화오션 [기재정정]사업보고서 (2025.12) — I. 회사의 개요 + 상세표-1 연결대상 종속회사 현황(상세) (본문 텍스트)
 # 접수번호 20260317000644 · 접수일 20260317 · 원문 https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000644
-# OpenDART document.xml에서 자동 추출 (2026-11-13 18:01 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
+# OpenDART document.xml에서 자동 추출 (2026-11-13 18:14 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
 
 ## I. 회사의 개요
 
@@ -1675,5 +1675,203 @@ D |
 8) 미추진 사유해당 사항 없습니다. 
 
  |
+
+[표 끝]
+
+## 1. 연결대상 종속회사 현황(상세)
+
+[표]
+
+☞ 본문 위치로 이동
+ |
+
+[표 끝]
+
+[표]
+
+[표]
+
+ |
+(단위 : 백만원) |
+
+[표 끝]
+
+[표]
+
+상호 |
+설립일 |
+주소 |
+주요사업 |
+최근사업연도말자산총액 |
+지배관계 근거 |
+주요종속회사 여부 |
+
+한화해양공정(산동)유한공사 |
+2005.09 |
+Qingdao Street 2-1,Yantai Economic & Technical Development Zone, Shandong Prov. China |
+선박블럭 및 부품제작 |
+343,445 |
+의결권의 과반수 소유(기업회계기준서 제1110호 문단번호 5~18) |
+O |
+
+DSME Kazakhstan LLP |
+2014.09 |
+050020, 2F, Business Center'Khan-Tengri', Khazhi Mukana 22/6,Almaty City, Kazakhstan |
+해양프로젝트 계약관리 |
+1,075 |
+의결권의 과반수 소유(기업회계기준서 제1110호 문단번호 5~18) |
+x |
+
+한화오션에코텍(주) |
+2007.11 |
+전남 광양시 광양읍 율촌산단 3로 111 |
+선박블럭 및 기자재 등 제작 |
+420,622 |
+의결권의 과반수 소유(기업회계기준서 제1110호 문단번호 5~18) |
+O |
+
+Hanwha Ocean USA Holdings Corp. |
+2023.01 |
+5051 Westheimer Rd, Suite 1400Houston, TX 77056 |
+종합해양 서비스 등 |
+473,389 |
+의결권의 과반수 소유(기업회계기준서 제1110호 문단번호 5~18) |
+O |
+
+Hanwha Ocean Europe Ltd |
+2024.06 |
+C402, Westfield London Shopping Centre, Ariel way,London W12 7FD, UK |
+영업지원 |
+2,061 |
+의결권의 과반수 소유(기업회계기준서 제1110호 문단번호 5~18) |
+x |
+
+Hanwha Ocean USA International LLC |
+2023.01 |
+Galleria Tower II, 5051 Westheimer Rd. Suite 1400Houston, TX 77056 |
+투자업 |
+477,926 |
+의결권의 과반수 소유(기업회계기준서 제1110호 문단번호 5~18) |
+O |
+
+Hanwha Ocean Americas LLC |
+2024.04 |
+Suite 1400, Galleria Tower II, 5051 Westheimer Rd.Houston, TX, USA |
+마케팅 |
+1,621 |
+실질지배력(기업회계기준서 1110호 7) |
+x |
+
+Hanwha Ocean Global Operation Center LLC |
+2024.05 |
+580 Westlake park Blbd.Houston, TX, USA |
+해양 서비스 |
+3,152 |
+의결권의 과반수 소유(기업회계기준서 1110호 문단번호 5~18) |
+x |
+
+Hanwha Drilling LLC |
+2024.02 |
+190 Elgin Avenue, George Town, Grand Cayman KY1-9008,Cayman Islands |
+시추업 |
+168,515 |
+의결권의 과반수 소유(기업회계기준서 1110호 문단번호 5~18) |
+O |
+
+Tidal Action LLC |
+2024.02 |
+190 Elgin Avenue, George Town, Grand Cayman KY1-9008,Cayman Islands |
+시추업 |
+145,496 |
+의결권의 과반수 소유(기업회계기준서 1110호 문단번호 5~18) |
+O |
+
+Hanwha Ocean Global Project Center B.V. |
+2024.09 |
+Taurusavenue 1, Zuidtoren Building (12th floor), 2132 LS Hoofddorp |
+해양설계 |
+0 |
+실질지배력(기업회계기준서 1110호 7) |
+x |
+
+Hanwha ocean Global Engineering Center India Private Limited |
+2025.05 |
+5th Floor, Tower B, Knowledge Boulevarde, A8A, Noida Sector 62, Noida, Gautam Buddha Nagar- 201309, Uttar Pradesh |
+해양설계 |
+0 |
+실질지배력(기업회계기준서 1110호 7) |
+x |
+
+Hanwha Ocean Brazil LTDA |
+2025.05 |
+at Avenida Rio Branco n° 43, 20° andar, Sala 2001, 5 (parte), Centro, Rio de Janeiro |
+마케팅 |
+0 |
+실질지배력(기업회계기준서 1110호 7) |
+x |
+
+한화오션엔지니어링㈜ |
+2024.12 |
+경남 거제시 거제대로 3370 |
+품질검사 |
+18,766 |
+의결권의 과반수 소유(기업회계기준서 제1110호 문단번호 5~18) |
+x |
+
+천장산풍력 주식회사 |
+2020.02 |
+경북 영천시 호국로 240 |
+민간개발 |
+4,086 |
+의결권의 과반수 소유(기업회계기준서 제1110호 문단번호 5~18) |
+x |
+
+고군산해상풍력 주식회사 |
+2024.04 |
+서울특별시 중구 청계천로 86 |
+개발사업 |
+94 |
+의결권의 과반수 소유(기업회계기준서 제1110호 문단번호 5~18) |
+x |
+
+보령녹도풍력 주식회사 |
+2022.05 |
+충남 보령시 한내로 62, 213호(명천동) |
+풍력발전 |
+927 |
+의결권의 과반수 소유(기업회계기준서 제1110호 문단번호 5~18) |
+x |
+
+영광칠해해상풍력 주식회사 |
+2023.03 |
+서울특별시 중구 청계천로 86 |
+민간개발 |
+9,654 |
+의결권의 과반수 소유(기업회계기준서 제1110호 문단번호 5~18) |
+x |
+
+오션이앤아이주식회사 |
+2025.05 |
+경상남도 거제시 옥포로 122(옥포동) |
+운송 및 창고업 |
+0 |
+실질지배력(기업회계기준서 1110호 7) |
+x |
+
+Hanwha Ocean USA Investment LLC. |
+2025.05 |
+251 Little Falls Drive, Wilmington, DE, 19808, USA |
+투자업 |
+0 |
+실질지배력(기업회계기준서 1110호 7) |
+x |
+
+Hanwha Ocean Namibia Pty. Ltd. |
+2025.05 |
+P.O. BOX 81588, Olympia, Windhoek, Namibia |
+해양프로젝트 계약관리 및 영업지원 |
+0 |
+실질지배력(기업회계기준서 1110호 7) |
+x |
 
 [표 끝]

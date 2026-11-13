@@ -1,6 +1,6 @@
-# SK하이닉스 사업보고서 (2025.12) — I. 회사의 개요 (본문 텍스트)
+# SK하이닉스 사업보고서 (2025.12) — I. 회사의 개요 + 상세표-1 연결대상 종속회사 현황(상세) (본문 텍스트)
 # 접수번호 20260317000635 · 접수일 20260317 · 원문 https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000635
-# OpenDART document.xml에서 자동 추출 (2026-11-13 18:08 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
+# OpenDART document.xml에서 자동 추출 (2026-11-13 18:15 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
 
 ## I. 회사의 개요
 
@@ -2134,3 +2134,471 @@ AI 데이터센터용 고용량 SSD PS1012 U.2 개발 |
 (2) 사업목적 변경 내용당사는 공시대상기간 중 정관상 사업목적을 변경하지 않았습니다.
 
 (3) 사업목적 추가 내용당사는 공시대상기간 중 정관상 사업목적을 추가하지 않았습니다.
+
+## 1. 연결대상 종속회사 현황(상세)
+
+[표]
+
+☞ 본문 위치로 이동
+ |
+
+[표 끝]
+
+[표]
+
+[표]
+
+ |
+(단위 : 백만원) |
+
+[표 끝]
+
+[표]
+
+상호 |
+설립일 |
+주소 |
+주요사업 |
+최근사업연도말자산총액 |
+지배관계 근거 |
+주요종속회사 여부 |
+
+에스케이하이이엔지㈜ |
+2001.04 |
+경기도 이천시 부발읍 경충대로 2091 |
+건설공사 및 서비스 |
+156,321 |
+기업 의결권의 과반수 소유 (기업회계기준서 1110호) |
+O |
+
+에스케이하이스텍㈜ |
+2008.03 |
+경기도 이천시 부발읍 경충대로 2091 |
+사업지원 및 서비스 |
+95,292 |
+상동 |
+O |
+
+행복모아㈜ |
+2016.10 |
+충청북도 청주시 흥덕구 2순환로742번길 40(화계동) |
+반도체 의류 제조,및 서비스 |
+54,798 |
+상동 |
+X |
+
+SK hynix System ic Inc. |
+2017.05 |
+충청북도 청주시 흥덕구 대신로 215(향정동) |
+반도체 제조 및 판매 |
+480,620 |
+상동 |
+O |
+
+SK hynix America Inc. |
+1983.03 |
+3101 North First Street, San Jose, CA 95134, U.S.A |
+반도체 판매 |
+11,796,744 |
+상동 |
+O |
+
+SK hynix Deutschland GmbH |
+1989.03 |
+Main Airport Center Unterschweinstiege 2-14 60549, Frankfurt am Main, Germany |
+반도체 판매 |
+102,068 |
+상동 |
+O |
+
+SK hynix Asia Pte.Ltd. |
+1991.09 |
+9 Straits View #12-07/12 Marina One West Tower Singapore 018937 |
+반도체 판매 |
+722,275 |
+상동 |
+O |
+
+SK hynix Semiconductor HongKong Ltd. |
+1995.04 |
+Suite 4401-02 & 11-12, 44/F, One Island East, 18 Westlands Road, Taikoo Place, Quarry Bay, Hong Kong |
+반도체 판매 |
+1,083,795 |
+상동 |
+O |
+
+SK hynix U.K. Ltd. |
+1995.07 |
+Unit 4, Horizon Business Village, 1 Brooklands Road, Weybridge, Surrey KT13 0TJ |
+반도체 판매 |
+562,832 |
+상동 |
+O |
+
+SK hynix Semiconductor Taiwan Inc. |
+1996.07 |
+10F. No.308, Zhifu Rd., Zhongshan Dist., Taipei City 10466, Taiwan |
+반도체 판매 |
+885,042 |
+상동 |
+O |
+
+SK hynix Japan Inc. |
+1996.09 |
+23F SHIROYAMA TRUST TOWER, 4-3-1 Toranomon, Minatoku, Tokyo |
+반도체 판매 |
+1,002,948 |
+상동 |
+O |
+
+SK hynix Semiconductor India Private Limited |
+2006.11 |
+Unit No. 3D, Uppals Plaza M6, 3rd Floor, Plot No. 6 Jasola District Centre, New Delhi 110025, INDIA |
+반도체 판매 |
+35,119 |
+상동 |
+X |
+
+SK hynix(Wuxi) Semiconductor Sales Ltd. |
+2010.08 |
+Lot K7, Wuxi High-tech Zone Comprehensive Bonded Zone in New District, Wuxi, Jiangsu Province, China(214028) |
+반도체 판매 |
+3,598,755 |
+상동 |
+O |
+
+SK hynix Semiconductor (China) Ltd. |
+2005.04 |
+Lot K7, Wuxi High-tech Zone Comprehensive Bonded Zone in New District, Wuxi, Jiangsu Province, China(214028) |
+반도체 제조 |
+9,229,620 |
+상동 |
+O |
+
+SK hynix Semiconductor (Chongqing) Ltd. |
+2013.09 |
+Xiyong Comperhensive Bonded Zone B Block v2-4/02, Shapingba strict, Chongqing, China |
+반도체 제조 |
+1,386,504 |
+상동 |
+O |
+
+SK hynix memory solutions America, Inc. |
+2012.08 |
+3103 North First Street, San Jose, CA 95134, U.S.A |
+반도체 연구개발 |
+214,395 |
+상동 |
+O |
+
+SK hynix memory solutions Taiwan, Inc. |
+2013.08 |
+6F-1. Mo. 6. Taiyuen 1st(Taiyuen Hi-tech Industrial Park) Zhubei City, Hsinchu County 302, Taiwan |
+반도체 연구개발 |
+12,942 |
+상동 |
+X |
+
+SK APTECH Ltd. |
+2013.09 |
+Suite 4401-02 & 11-12, 44/F, One Island East, 18 Westlands Road, Taikoo Place, Quarry Bay, Hong Kong |
+해외투자법인 |
+435,446 |
+상동 |
+O |
+
+SK hynix Ventures Hong Kong Limited |
+2016.03 |
+Suite 4401-02 & 11-12, 44/F, One Island East, 18 Westlands Road, Taikoo Place, Quarry Bay, Hong Kong |
+해외투자법인 |
+53,850 |
+상동 |
+X |
+
+SK hynix (Wuxi) Investment Ltd. |
+2018.05 |
+Xindalu 32, Xinwuqu, Wuxi, Jiangsu Province, China |
+해외투자법인 |
+775,569 |
+상동 |
+O |
+
+SK hynix (Wuxi) Industry Development Ltd. |
+2018.07 |
+Xindalu 32, Xinwuqu, Wuxi, Jiangsu Province, China |
+해외병원자산법인 |
+444,817 |
+상동 |
+O |
+
+SK hynix Happiness (Wuxi) Hospital Management Ltd. |
+2018.07 |
+Xindalu 32, Xinwuqu, Wuxi, Jiangsu Province, China |
+해외병원운영법인 |
+19,145 |
+상동 |
+X |
+
+행복나래㈜ |
+2000.07 |
+서울 중구 서소문로 89-31 |
+산업자재유통 |
+169,306 |
+상동 |
+O |
+
+SUZHOU HAPPYNARAE Co., Ltd |
+2013.01 |
+Room 1103, 2, 88 Huachi Street, Suzhou, Industrial Park |
+해외 산업자재유통 |
+18,885 |
+상동 |
+X |
+
+CHONGQING HAPPYNARAE Co., Ltd |
+2015.01 |
+Room 1301, No. 12 jinmaoshidai Bilding 18 Qixia Road Qibesenter, Liangjiang New District, Chongqing, China |
+해외 산업자재유통 |
+6,996 |
+상동 |
+X |
+
+SK hynix cleaning(Wuxi) Ltd. |
+2018.09 |
+K-7 plot, New District Free Trade Zone Wuxi, Jiangsu, China |
+기업 건물 관리 등 |
+2,400 |
+상동 |
+X |
+
+SK hynix (Wuxi) Education Technology Co., Ltd |
+2019.06 |
+No.32, Xinda road, Xinwu district, Wuxi, Jiangsu Province, China（214028） |
+교육법인 |
+21,854 |
+상동 |
+X |
+
+Gauss Labs Inc. |
+2020.08 |
+3500 South Dupont Highway, City of Dover, County of Kent, Delaware 19901 |
+정보통신업 |
+28,141 |
+상동 |
+X |
+
+SK hynix NAND Product Solutions Corp. |
+2021.02 |
+1209 Orange Street, Wilmington, County of New Castle, Delaware 19801 |
+반도체 판매및 연구개발 |
+7,151,888 |
+상동 |
+O |
+
+SK hynix NAND Product Solutions Taiwan Co., Ltd. |
+2021.06 |
+22F, Taipei Nan Shan Plaza, No. 100, Songren Rd., Xinyi Dist., Taipei 11073, Taiwan |
+반도체 연구개발및 판매 |
+13,169 |
+상동 |
+X |
+
+SK hynix NAND Product Solutions Canada Ltd. |
+2021.04 |
+C/O DELOITTE LEGAL CANADA LLP 300-939 GRANVILLE STREET VANCOUVER BC V6Z 1L3 CANADA |
+반도체 연구개발 |
+65,181 |
+상동 |
+X |
+
+SK hynix NAND Product Solutions Mexico, S. DE R.L. DE C.V. |
+2021.05 |
+Paseo de la Reforma 404 Piso 6, Colonia Juarez, CP.06600, Mexico City |
+반도체 연구개발 |
+59,471 |
+상동 |
+X |
+
+SK hynix Semiconductor (Dalian) Co., Ltd. |
+2021.05 |
+109-1 Huaihe Rd East, Room 111, Jinzhou District, Dalian, Liaoning, China |
+반도체 제조 |
+7,726,090 |
+상동 |
+O |
+
+SK hynix NAND Product Solutions UK Limited |
+2021.05 |
+Unit 4, Horizon Business Village, 1 Brooklands Road, Weybridge, Surrey, KT13 0TJ, United Kingdom |
+반도체 판매 |
+436,693 |
+상동 |
+O |
+
+SK hynix NAND Product Solutions Israel Ltd. |
+2021.06 |
+20 Lincoln St., Tel Aviv_6713412 c/o H-F & Co., Law Offices |
+반도체 판매 |
+211 |
+상동 |
+X |
+
+SK hynix NAND Product Solutions International LLC |
+2021.03 |
+1209 Orange Street, Wilmington, County of New Castle, Delaware 19801 |
+반도체 판매 |
+1,149,128 |
+상동 |
+O |
+
+SK hynix NAND Product Solutions Asia Pacific LLC |
+2021.03 |
+1209 Orange Street, Wilmington, County of New Castle, Delaware 19801 |
+반도체 판매 |
+2,060,853 |
+상동 |
+O |
+
+SK hynix NAND Product Solutions Singapore Pte. Ltd. |
+2021.05 |
+9 Straits View #12-07/12 Marina One West Tower Singapore 018937 |
+반도체 판매 |
+3,661 |
+상동 |
+X |
+
+SK hynix NAND Product Solutions Malaysia Sdn. Bhd. |
+2021.06 |
+LEVEL 11, MENARA LGB, 1, JALAN WAN KADIR, TAMAN TUN DR ISMAIL, 60000 KUALALUMPUR, WILAYAH PERSEKUTUAN (KL). |
+반도체 판매 |
+8 |
+상동 |
+X |
+
+SK hynix (Wuxi) Education Service Development Co., Ltd. |
+2021.07 |
+Lot K7, Wuxi High-tech Zone Comprehensive Bonded Zone in New District, Wuxi |
+교육법인 |
+2 |
+상동 |
+X |
+
+HappyNarae America LLC |
+2021.07 |
+Suite 305, 2915 Premiere Parkway, Duluth, Georgia 30097 |
+해외 산업자재유통 |
+349 |
+상동 |
+X |
+
+HappyNarae Hungary Kft |
+2021.08 |
+Mezzanine floor door 1, Karolina ut 16, Budapest |
+해외 산업자재유통 |
+0 |
+상동 |
+X |
+
+SK hynix NAND Product Solutions Poland sp. z o.o. |
+2021.07 |
+Firoga ul. Slowackiego 173 Gdansk, Pomorskie 80-298, Poland |
+반도체 연구개발 |
+30,955 |
+상동 |
+X |
+
+SK hynix NAND Product Solutions (Beijing) Co., Ltd. |
+2021.08 |
+36 North 3rd Ring East Road, 3/F, Tower A, Global Trade Centre, Beijing, Beijing, 100010, China |
+반도체 판매 |
+156,532 |
+상동 |
+O |
+
+SK hynix NAND Product Solutions (Shanghai) Co., Ltd. |
+2021.09 |
+751, Ziri Road, ZiZhu Science Park Minhang District Shanghai, 200241 China |
+반도체 연구개발 |
+41,215 |
+상동 |
+X |
+
+Intel NDTM US LLC |
+2021.02 |
+1209 Orange Street, Wilmington, DE 19801 |
+반도체 연구개발 |
+52,198 |
+상동 |
+X |
+
+SK hynix semiconductor storage technology (Dalian) Co., Ltd. |
+2021.07 |
+109-2 Huaihe E Rd, Jinzhou District, Dalian, Liaoning, China |
+반도체 생산지원 |
+2,047,804 |
+상동 |
+O |
+
+에스케이키파운드리㈜ |
+2020.09 |
+충청북도 청주시 흥덕구 대신로 215 |
+반도체 판매및 생산 등 |
+844,234 |
+상동 |
+O |
+
+SK KEYFOUNDRY, INC. |
+2020.10 |
+100 Century Center Court, Suite 200 San Jose, California 95112 |
+반도체 판매 |
+3,919 |
+상동 |
+X |
+
+SK KEYFOUNDRY SHANGHAI CO.,LTD. |
+2020.11 |
+Room 321(BRIDGE+), Ascendas Plaza, 333 Tian Yao Qiao Road, Xuhui District, Shanghai. |
+반도체 판매 |
+878 |
+상동 |
+X |
+
+에스케이파워텍㈜ |
+2017.12 |
+서울시 금천구 디지털로 130 |
+반도체 제조 |
+99,837 |
+상동 |
+O |
+
+SK hynix Semiconductor West Lafayette LLC |
+2024.08 |
+1209 Orange Street, County of New Castle, Wilmington, Delaware 19801 |
+반도체 제조 |
+296,457 |
+상동 |
+O |
+
+SK hynix memory solutions Poland sp. z o.o. |
+2024.09 |
+Juliusza Slowackiego 224, 80-298 Gdansk, Poland |
+반도체 연구개발 |
+10,365 |
+상동 |
+X |
+
+MMT 특정금전신탁 |
+- |
+- |
+특정금전신탁 |
+0 |
+상동 |
+X |
+
+[표 끝]
+
+[표]
+
+※ 주요 종속회사 판단기준: 직전 사업연도말 자산총액 750억원 이상 또는 지배회사 자산총액의 10% 이상 |
+
+[표 끝]

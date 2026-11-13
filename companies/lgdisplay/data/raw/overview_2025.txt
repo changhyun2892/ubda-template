@@ -1,6 +1,6 @@
-# LG디스플레이 사업보고서 (2025.12) — I. 회사의 개요 (본문 텍스트)
+# LG디스플레이 사업보고서 (2025.12) — I. 회사의 개요 + 상세표-1 연결대상 종속회사 현황(상세) (본문 텍스트)
 # 접수번호 20260311003822 · 접수일 20260311 · 원문 https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311003822
-# OpenDART document.xml에서 자동 추출 (2026-11-13 18:04 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
+# OpenDART document.xml에서 자동 추출 (2026-11-13 18:15 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
 
 ## I. 회사의 개요
 
@@ -765,3 +765,187 @@ TFT-LCD, LTPS-LCD 및 OLED 등의 기술을 활용한Display 및 관련 제품�
 [표 끝]
 
 주1) 태양에너지를 이용한 사업은 2007년 연구개발을 시작하였으나 중국업체와의 경쟁 심화 및 자사 기술 방식의 수익구조 열위로 2010년 사업중단을 결정하였으며 현재 사업 추진 현황이 없습니다.주2) 2026년 3월 19일 개최 예정인 제41기 정기주주총회 안건으로 사업목적에 소방시설공사업을 추가하는 내용이 포함된 정관 변경의 건이 상정되어 있는바, 정기주주총회 결과에 따라 사업목적이 추가될 수 있습니다.
+
+## 1. 연결대상 종속회사 현황(상세)
+
+[표]
+
+☞ 본문 위치로 이동
+ |
+
+[표 끝]
+
+[표]
+
+[표]
+
+ |
+(단위 : 백만원) |
+
+[표 끝]
+
+[표]
+
+상호 |
+설립일 |
+주소 |
+주요사업 |
+최근사업연도말자산총액 |
+지배관계 근거 |
+주요종속회사 여부 |
+
+LG Display America, Inc. |
+1999.09.24 |
+2540 North First Street, Suite 400, San Jose, CA 95131, U.S.A |
+Display 제품의 판매 |
+1,487,248 |
+실질적 지배력 보유 |
+해당(*2) |
+
+LG Display Japan Co., Ltd. |
+1999.10.12 |
+Kyobashi Trust Tower 12F, 2-1-3 Kyobashi, Chuo-ku, Tokyo, Japan |
+Display 제품의 판매 |
+191,871 |
+위와 같음 |
+해당(*2) |
+
+LG Display Germany GmbH |
+1999.10.15 |
+Alfred-Herrhausen-Alle 3-5, in 65760 Eschborn |
+Display 제품의 판매 |
+350,748 |
+위와 같음 |
+해당(*2) |
+
+LG Display Taiwan Co., Ltd. |
+1999.04.12 |
+9F., No. 89, Sec.2, Tiding Blvd., Neihu Dist., Taipei City, 11493, Taiwan, R.O.C. |
+Display 제품의 판매 |
+537,470 |
+위와 같음 |
+해당(*2) |
+
+LG Display Nanjing Co., Ltd. |
+2002.07.15 |
+No.1, LG Road, LG Industrial Park, Nanjing Economic & Technological Development Zone, Nanjing, 210046, China |
+Display 제품의 생산 |
+3,831,510 |
+위와 같음 |
+해당(*1)(*2) |
+
+LG Display Shanghai Co., Ltd. |
+2003.01.16 |
+Room 316, floor 3, No.38, Yinglun Road, China (Shanghai) pilot Free Trade Zone |
+Display 제품의 판매 |
+135,277 |
+위와 같음 |
+해당(*2) |
+
+LG Display Shenzhen Co., Ltd. |
+2007.07.27 |
+Unit 607, Talfook Chong Comprehensive Building, Shihua Road, Futian Free Trade Zone, Shenzhen, Guangdong, P.R.C |
+Display 제품의 판매 |
+37,974 |
+위와 같음 |
+해당사항없음 |
+
+LG Display Singapore Pte. Ltd. |
+2008.11.04 |
+8 Temasek Boulevard #25-01 Suntec Tower 3 Singapore 038988 |
+Display 제품의 판매 |
+2,466,916 |
+위와 같음 |
+해당(*2) |
+
+L&T Display Technology (Fujian) Limited |
+2009.12.07 |
+Optoelectronic Park, Rongqiao Economic and Technological Development Zone, Fuqing City, Fujian Province, 350301, China |
+LCD모듈, LCD 모니터 set 생산 및 판매 |
+302,144 |
+위와 같음 |
+해당(*2) |
+
+LG Display Yantai Co., Ltd. |
+2010.03.17 |
+No.2 Beijing Middle Road, Development Zone, Yantai, Shan Dong, China |
+Display 제품의 생산 |
+541,269 |
+위와 같음 |
+해당(*2) |
+
+㈜나눔누리 |
+2012.03.21 |
+경상북도 구미시 인동22길 57-10 |
+청소, 세차, 헬스키퍼, 카페 등 |
+6,015 |
+위와 같음 |
+해당사항없음 |
+
+UNIFIED INNOVATIVE TECHNOLOGY, LLC |
+2014.03.12 |
+103 Foulk Road, Suite 202, Wilmington, DE 19803, U.S.A |
+특허 관리 |
+546 |
+위와 같음 |
+해당사항없음 |
+
+Global OLED Technology LLC |
+2009.12.18 |
+107 Carpenter Drive, Suite 225, Sterling, VA 20164, U.S.A |
+OLED 특허 자산 운영 |
+30,865 |
+위와 같음 |
+해당사항없음 |
+
+LG Display Guangzhou Trading Co., Ltd. |
+2015.04.28 |
+No.57 Kaitai Road, Science City of Guangzhou High-tech Industrial Development Zone, 510663, China. |
+Display 제품의 판매 |
+3,577,488 |
+위와 같음 |
+해당(*1)(*2) |
+
+LG Display Vietnam Haiphong Co., Ltd. |
+2016.05.05 |
+E Lot, Trang Due IP. Dinh Vu-Cat Hai Economic Zone, Hong Phong Commune, An Duong Dist., Hai Phong City, Vietnam |
+Display 제품의 생산 |
+5,630,201 |
+위와 같음 |
+해당(*1)(*2) |
+
+Suzhou Lehui Display Co., Ltd. |
+2016.07.01 |
+No.225 Jinfeng Road, Suzhou New District, Jiangsu, China |
+LCD모듈 및 LCD 모니터 set 생산 및 판매 |
+208,225 |
+위와 같음 |
+해당(*2) |
+
+LG DISPLAY FUND I LLC |
+2018.05.01 |
+251 Little Falls Drive, City of Wilmington, county of New Castle, 19808, U.S.A. |
+벤처기업 투자 및 기술확보 목적 투자 |
+98,043 |
+위와 같음 |
+해당(*2) |
+
+LG Display High-Tech (China) Co., Ltd. |
+2018.07.11 |
+No.57 Kaitai Road, Science City of Guangzhou High-tech Industrial Development Zone, 510663, China. |
+Display 제품의 생산 및 판매 |
+7,575,519 |
+위와 같음 |
+해당(*1)(*2) |
+
+MMT(특정금전신탁) |
+- |
+한국 서울 |
+특정금전신탁 |
+0 |
+위와 같음 |
+해당사항없음 |
+
+[표 끝]
+
+※ 지배관계 근거 : 기업회계기준서 제1110호 「연결재무제표」문단 5~18 참고※ 주요종속회사 여부 판단기준(*1) 최근사업연도말 종속회사의 개별재무제표 상 자산총액이 지배회사 개별재무제표 상 자산총액의 10% 이상(*2) 최근사업연도 종속회사의 자산총액이 750억 원 이상

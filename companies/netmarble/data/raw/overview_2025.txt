@@ -1,6 +1,6 @@
-# 넷마블 사업보고서 (2025.12) — I. 회사의 개요 (본문 텍스트)
+# 넷마블 사업보고서 (2025.12) — I. 회사의 개요 + 상세표-1 연결대상 종속회사 현황(상세) (본문 텍스트)
 # 접수번호 20260318001170 · 접수일 20260318 · 원문 https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001170
-# OpenDART document.xml에서 자동 추출 (2026-11-13 18:06 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
+# OpenDART document.xml에서 자동 추출 (2026-11-13 18:15 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
 
 ## I. 회사의 개요
 
@@ -3004,3 +3004,569 @@ WTT Interactive Services Ltd.(구,JOYGAME Interactive Services Ltd.) |
 (8) 미추진 사유
 
 해당사항이 없습니다.
+
+## 1. 연결대상 종속회사 현황(상세)
+
+[표]
+
+☞ 본문 위치로 이동
+ |
+
+[표 끝]
+
+[표]
+
+[표]
+
+ |
+(단위 : 백만원) |
+
+[표 끝]
+
+[표]
+
+상호 |
+설립일 |
+주소 |
+주요사업 |
+최근사업연도말자산총액 |
+지배관계 근거 |
+주요종속회사 여부 |
+
+넷마블몬스터㈜ |
+2000.08.07 |
+서울특별시 구로구 디지털로26길 38(구로동, 지타워) |
+게임소프트웨어개발 및 공급업 |
+64,350 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+넷마블네오㈜ |
+2012.06.08 |
+서울특별시 구로구 디지털로26길 38(구로동, 지타워) |
+게임소프트웨어개발 및 공급업 |
+176,608 |
+의결권의 과반수 소유 |
+해당 (주2) |
+
+넷마블넥서스㈜ |
+2013.01.17 |
+서울특별시 구로구 디지털로26길 38(구로동, 지타워) |
+게임소프트웨어개발 및 공급업 |
+154,064 |
+의결권의 과반수 소유 |
+해당 (주2) |
+
+넷마블엔투㈜ |
+2011.09.30 |
+서울특별시 구로구 디지털로26길 38(구로동, 지타워) |
+게임소프트웨어개발 및 공급업 |
+84,991 |
+의결권의 과반수 소유 |
+해당 (주2) |
+
+㈜미디어웹 |
+1999.10.26 |
+서울특별시 금천구 가산디지털1로 149 13,14층(가산동, 신한이노플렉스) |
+PC방 유통업 |
+13,807 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+잼팟㈜ |
+2014.11.20 |
+서울특별시 영등포구 문래로28길 25, 7층(문래동3가) |
+게임소프트웨어개발 및 공급업 |
+5,906 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+엔탑자산관리㈜ |
+2016.02.26 |
+서울특별시 구로구 디지털로26길 38(구로동, 지타워) |
+자산관리 및 운용업 |
+68,564 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+지타워㈜ |
+2016.07.14 |
+서울특별시 구로구 디지털로26길 38(구로동, 지타워) |
+부동산개발업 |
+1,147 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+지타운피에프브이㈜ |
+2019.01.15 |
+서울특별시 구로구 디지털로26길 38(구로동, 지타워) |
+부동산개발업 |
+240,826 |
+의결권의 과반수 소유 |
+해당 (주2) |
+
+구로발게임즈㈜ |
+2015.11.27 |
+서울특별시 구로구 디지털로26길 38(구로동, 지타워) |
+게임소프트웨어개발 및 공급업 |
+693 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+아이지에스㈜ |
+2005.01.24 |
+서울특별시 영등포구 문래로28길 25, 세미콜론문래 엔타워 7층, 8층 일부(문래동3가) |
+게임운영업 |
+20,922 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+엠엔비㈜ |
+2016.12.12 |
+서울특별시 구로구 디지털로26길 38, 29층(구로동, 지타워) |
+광고,마케팅대행업 |
+4,563 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+넷마블에프앤씨㈜ |
+2014.03.05 |
+서울특별시 구로구 디지털로26길 38(구로동, 지타워) |
+게임소프트웨어개발 및 공급업 |
+105,306 |
+의결권의 과반수 소유 |
+해당 (주2) |
+
+㈜키링 |
+2013.12.12 |
+
+서울특별시 구로구 디지털로 306, 6층 614호(구로동, 대륭포스트타워2 차)
+
+ |
+애니메이션 컨텐츠제작 및 유통업 |
+568 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+조인핸즈네트워크㈜ |
+2021.01.05 |
+
+서울특별시 구로구 디지털로26길 38(구로동, 지타워)
+
+ |
+인력공급업 |
+2,138 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+메타버스엔터테인먼트㈜ |
+2021.08.20 |
+경기도 안양시 만안구 새빛공원로 76(석수동) |
+소프트웨어 자문 개발 및 공급업 |
+41,745 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+에이투지-아이피 투자조합 |
+2021.10.08 |
+
+서울특별시 강남구 테헤란로87길 36(삼성동, 도심공항타워)602호
+
+ |
+투자조합 |
+15,325 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+지타워플러스㈜ |
+2023.09.26 |
+서울특별시 구로구 디지털로26길 38, 지하1층(구로동, G-Tower) |
+서비스업 |
+2,550 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+마브렉스㈜ |
+2022.01.27 |
+서울특별시 구로구 디지털로26길 38, 12층(구로동, G-Tower) |
+컴퓨터 프로그래밍, 시스템 통합 및 관리업 |
+4,064 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+메타버스랩스㈜(구,메타버스월드㈜) |
+2018.05.09 |
+서울특별시 구로구 디지털로31길 41, 707-씨-16호(구로동, 이앤씨벤처드림타워 6차) |
+게임소프트웨어개발 및 공급업 |
+521 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+스튜디오그리고㈜ |
+2022.02.04 |
+
+서울특별시 구로구 디지털로31길 41, 511호
+
+(구로동, 이앤씨벤처드림타워6차)
+
+ |
+인쇄물 출판업 |
+466 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+Netmarble Japan Inc. |
+2001.08.13 |
+7th Fl, Ginsen-ShimbashiⅡ Bldg., 5-1-9, Shimbashi, Minato-ku, Tokyo Japan 105-0004 |
+게임퍼블리싱 및 운영업 |
+5,689 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+Netmarble (Thailand) Co., Ltd. |
+2010.06.25 |
+
+No.9, G-Tower Grand Rama 9, 15 Floor, Room GS03, Rama 9 Road, 
+
+Huaykwang, Huaykwang, Bangkok 10310, Thailand
+
+ |
+게임퍼블리싱 및 운영업 |
+2,419 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+Netmarble Joybomb Inc. |
+2012.07.30 |
+5F, No.57, Zhouzi St., Neihu Dist. Taipei City 11493, Taiwan (R.O.C) |
+게임퍼블리싱 및 운영업 |
+12,656 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+Netmarble Hongkong Limited |
+2013.03.12 |
+Units 04-05, 26/F, Railway Plaza, 39 Chatham Road South, Tsim Sha Tsui, Kowloon, Hong Kong |
+게임퍼블리싱 및 운영업 |
+25,167 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+Netmarble (Beijing) Limited |
+2011.09.15 |
+
+Room 5208, Building No. 5, BeijingWest Parknzi, 1,
+
+ Fu Wailiangjiadian, Haidian District, Beijing, PRC
+
+ |
+게임퍼블리싱 및 운영업 |
+8,795 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+INTERNET GAME SOLUTION & CONSULTING PHILIPPINES INC.(구, IGS&C Philippines Inc.) |
+2014.04.02 |
+
+Unit1006-10/F AIC Burgundy Empire Tower, ADB Avenue Corner,
+
+ Saphir Street, Ortigas Center, Pasig, Metro Manila. Philippines
+
+ |
+게임운영업 |
+547 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+Joybomb Hong Kong Ltd. |
+2015.04.09 |
+
+31/F TOWER TWO TIMES SQUARE 1 MATHESON STREET 
+
+CAUSEWAY BAY HK
+
+ |
+게임퍼블리싱 및 운영업 |
+6,020 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+IGS China |
+2016.10.17 |
+
+1802,1803,1805,1806,1807, 272 nanjing north street, heping district, Shenyang 110001, China
+
+ |
+게임운영업 |
+3,848 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+Kabam, Inc. |
+2006.09.29 |
+575 Market St. Suite 2725, San Francisco, CA 94105. |
+게임퍼블리싱 및 운영업 |
+310,939 |
+의결권의 과반수 소유 |
+해당 (주2) |
+
+Kabam Games, Inc. |
+2013.01.04 |
+#800 - 733 Seymour Street, Vancouver BC V6B 0S6, Canada |
+게임소프트웨어개발 및 공급업 |
+226,079 |
+의결권의 과반수 소유 |
+해당 (주2) |
+
+Kabam Games UK Ltd. |
+2013.04.25 |
+
+Devonshire House, 1 Devonshire Street, London, W1W 5DR,
+
+ United Kingdom
+
+ |
+게임퍼블리싱 및 운영업 |
+0 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+Kabam LA, Inc. |
+2012.02.23 |
+600 Wilshire Blvd Suite# 1100, Los Angeles, CA 90017 |
+게임퍼블리싱 및 운영업 |
+8,841 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+Kabam Acadia Inc. |
+2019.03.05 |
+
+#800 - 733 Seymour Street, Vancouver BC V6B 0S6, Canada
+
+ |
+게임운영업 |
+392 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+Kabam Montreal, Inc. |
+2014.06.13 |
+
+1225 Saint-Charles Street West, Suite 1120 Longueuil,
+
+ QC J4K 1A7 Canada
+
+ |
+게임소프트웨어개발 및 공급업 |
+8,783 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+Katorio Software Inc. |
+2020.01.31 |
+#800 - 733 Seymour Street, Vancouver BC V6B 0S6, Canada |
+게임소프트웨어개발업 |
+20 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+DIGIPARK SINGAPORE PTE. LTD. |
+2017.09.26 |
+14 Robinson Road #08-01A Far East Finance Building Singapore 048545 |
+게임퍼블리싱 및 운영업 |
+10,545 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+Jam City, Inc. |
+2010.03.03 |
+
+8461-63 Higuera St. Unit 2B, Culver City, CA 90232
+
+ |
+게임소프트웨어개발 및 공급업 |
+301,729 |
+의결권의 과반수 소유 |
+해당 (주2) |
+
+TinyCo, Inc. |
+2009.02.27 |
+
+8461-63 Higuera St. Unit 2B, Culver City, CA 90232
+
+ |
+게임소프트웨어개발 및 공급업 |
+67,675 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+JCTO Studios, ULC |
+2009.05.01 |
+
+123 Edward Street Suite 273 Toronto, ON M5G 1E2 Canada
+
+ |
+게임소프트웨어개발 및 공급업 |
+55,513 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+Jam City US Subco, Inc. |
+2018.11.02 |
+8461-63 Higuera St. Unit 2B, Culver City, CA 90232 |
+게임소프트웨어개발 및 공급업 |
+51,416 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+JCBE GmbH |
+2019.01.24 |
+
+Satellite Office KaiPo GmBH & Co. KG Kaiserlicke Postdirektion
+
+ Franzosische Strabe 12 10117 Berlin
+
+ |
+게임소프트웨어개발 및 공급업 |
+47,227 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+Jam City Germany GmbH |
+2016.12.15 |
+
+Satellite Office KaiPo GmBH & Co. KG Kaiserlicke Postdirektion 
+
+Franzosische Strabe 12 10117 Berlin
+
+ |
+게임소프트웨어개발 및 공급업 |
+41,710 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+JCBA, S.A.U. |
+2019.04.01 |
+
+Tucuman 1 Piso: 4 1049 Ciudad Autonoma de Buenos Aires (CABA)
+
+ Argentina
+
+ |
+게임소프트웨어개발 및 공급업 |
+947 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+JCMV S.A. |
+2020.08.11 |
+Colonia Numero 810, Officina 403, Montevideo, Uruguay |
+게임소프트웨어개발 및 공급업 |
+4,381 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+ZEMPOT MALAYSIA SDN. BHD. |
+2020.06.26 |
+
+L01-01A, 1Medini Hub, 2, Persiaran Medini, Bandar Medini Iskandar,
+
+ 79250 Iskandar Puteri, Johor.
+
+ |
+데이터분석 및 컨설팅업 |
+4,418 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+SpinX Games Limited |
+2020.08.12 |
+
+Suite nos. 6B-7, 19 Floor, China Hong Kong City Tower 3, 
+
+33 Canton Road, Kowloon, Hong Kong
+
+ |
+게임퍼블리싱 및 운영업 |
+462,791 |
+의결권의 과반수 소유 |
+해당 (주2) |
+
+Boyue Xingyao(Beijing)Technology Co., Ltd. |
+2020.10.12 |
+No. 401, 4th Floor, No. 101, Floors 1-7 of Building 2, Courtyard 36,Hongjunying South Road, Chaoyang District, Beijing. |
+게임소프트웨어개발 및 공급업 |
+319,450 |
+의결권의 과반수 소유 |
+해당 (주2) |
+
+Spin Interactive Co., Ltd |
+2022.11.07 |
+5 Chome-27-3 Shiba, Minato City, Tokyo |
+게임소프트웨어개발 및 공급업 |
+77 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+Boyue Chuangqu(Shanghai)Technology Co., Ltd |
+2021.09.10 |
+5th Floor, No. 277, Huqingping Road, Minhang District, Shanghai. |
+게임소프트웨어개발 및 공급업 |
+46,551 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+Beijing Bole Technology Co., Ltd. |
+2014.08.20 |
+No. 301, 3th Floor, No. 101, Floors 1-7 of Building 2, Courtyard 36,Hongjunying South Road, Chaoyang District, Beijing. |
+게임소프트웨어개발 및 공급업 |
+96,151 |
+의결권의 과반수 소유 |
+해당 (주2) |
+
+Grande Games Limited |
+2016.01.13 |
+
+Room 1003, 10/F, Tower 1, Lippo Centre, 89 Queensway,
+
+ Admiralty, Hong Kong.
+
+ |
+게임소프트웨어개발 및 공급업 |
+0 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+PLAY2EVER GAMES LIMITED |
+2025.06.12 |
+9/F MW TOWER NO. 111 BONHAM STRAND SHEUNG WAN HONGKONG |
+게임퍼블리싱 및 운영업 |
+4,432 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+MARBLEX Corp. |
+2022.01.26 |
+3rd Floor Palm Grove House, Road Town, Tortola, British Virgin Islands |
+소프트웨어개발 및 판매업 |
+68,217 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+GC LABS PTE. LTD.(구,ITAM CUBE PTE. LTD.) |
+2022.01.06 |
+16 RAFFLES QUAY #33-07 HONG LEONG BUILDING SINGAPORE |
+소프트웨어개발 및 판매업 |
+34,761 |
+의결권의 과반수 소유 |
+해당 없음 |
+
+[표 끝]
+
+[표]
+
+주1)주2) |
+최근사업연도말 자산총액은 종속회사의 별도 또는 개별 재무제표상 2025년말 자산총액입니다.최근사업연도말 자산총액이 750억 원 이상인 종속회사로서 주요종속회사에 해당합니다. |
+
+[표 끝]

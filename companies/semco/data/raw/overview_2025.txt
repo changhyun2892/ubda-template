@@ -1,6 +1,6 @@
-# 삼성전기 사업보고서 (2025.12) — I. 회사의 개요 (본문 텍스트)
+# 삼성전기 사업보고서 (2025.12) — I. 회사의 개요 + 상세표-1 연결대상 종속회사 현황(상세) (본문 텍스트)
 # 접수번호 20260310003071 · 접수일 20260310 · 원문 https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310003071
-# OpenDART document.xml에서 자동 추출 (2026-11-13 18:07 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
+# OpenDART document.xml에서 자동 추출 (2026-11-13 18:15 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
 
 ## I. 회사의 개요
 
@@ -1579,3 +1579,147 @@ N |
 (2) 사업목적 변경 내용당사는 공시대상기간 중 정관상 사업목적을 변경하지 않았습니다.
 
 (3) 사업목적 추가 내용당사는 공시대상기간 중 정관상 사업목적을 추가하지 않았습니다.
+
+## 1. 연결대상 종속회사 현황(상세)
+
+[표]
+
+☞ 본문 위치로 이동
+ |
+
+[표 끝]
+
+[표]
+
+[표]
+
+ |
+(단위 : 천원) |
+
+[표 끝]
+
+[표]
+
+상호 |
+설립일 |
+주소 |
+주요사업 |
+최근사업연도말자산총액 |
+지배관계 근거 |
+주요종속회사 여부 |
+
+Tianjin Samsung Electro-Mechanics Co., Ltd. |
+1993.12 |
+No.80&96, Xiaqing Road, The west zone of TEDA Tianjin, China |
+수동소자 제조 |
+2,143,180,016 |
+의결권의 과반수 소유(K-IFRS 1110호) |
+해당 |
+
+Samsung Electro-MechanicsPhilippines, Corp. |
+1997.07 |
+BLK 5&6 Calamba Premiere International Park Brgy.Batino Calamba, Laguna Philippines |
+수동소자 제조 |
+1,474,207,967 |
+의결권의 과반수 소유(K-IFRS 1110호) |
+해당 |
+
+Samsung High-Tech Electro-Mechanics(Tianjin) Co., Ltd. |
+2001.03 |
+No.1, Weisan Rd.,Micro-Electronics Industrial Park, Xiqing Dist.,Tianjin 300385, China |
+카메라모듈 제조 |
+685,111,787 |
+의결권의 과반수 소유(K-IFRS 1110호) |
+해당 |
+
+Samsung Electro-Mechanics Vietnam Co., Ltd. |
+2013.09 |
+Yen Binh Industrial Zone, Dong Tien Ward, Pho Yen Town,Thai Nguyen, Vietnam |
+카메라모듈 제조,반도체패키지기판 제조 |
+2,645,959,527 |
+의결권의 과반수 소유(K-IFRS 1110호) |
+해당 |
+
+Samsung Electro-Mechanics America, Inc. |
+1994.01 |
+665 Clyde Avenue, Mountain View, CA, 94043 USA |
+판매법인 |
+153,583,769 |
+의결권의 과반수 소유(K-IFRS 1110호) |
+해당 |
+
+Samsung Electro-Mechanics GmbH |
+1995.08 |
+Koelner Strasse 12, 65760 Eschborn, Germany |
+판매법인 |
+155,338,155 |
+의결권의 과반수 소유(K-IFRS 1110호) |
+해당 |
+
+Calamba Premier Realty Corporation (*1) |
+1997.09 |
+Block 5 Calamba Premiere International Park, Brgy. Batino & Prinza, Calamba City, Laguna |
+부동산 임대업 |
+10,693,806 |
+실질지배력 보유 |
+해당사항 없음 |
+
+Samsung Electro-Mechanics Pte, Ltd. |
+2002.11 |
+3 Church Street Samsung Hub #23-01 Singapore |
+판매법인 |
+117,839,727 |
+의결권의 과반수 소유(K-IFRS 1110호) |
+해당 |
+
+Samsung Electro-Mechanics(Shenzhen) Co., Ltd. |
+2007.04 |
+14F, Tower A, SCC Building, Junction of Houhai Blvd. and Haide 1st Rd., Nanshan Dist., Shenzhen City, China |
+판매법인 |
+1,052,900,006 |
+의결권의 과반수 소유(K-IFRS 1110호) |
+해당 |
+
+Samsung Electro-MechanicsJapan Co., Ltd. |
+2012.02 |
+Shinagawa Grand Central Tower 6F, 2-16-4, Kounan, Minato-ku, Tokyo, Japan |
+판매법인 |
+25,710,473 |
+의결권의 과반수 소유(K-IFRS 1110호) |
+해당사항 없음 |
+
+Batino Realty Corporation |
+2013.03 |
+Block 6 Calamba Premiere International Park, Brgy. Prinza, Calamba City, Laguna |
+부동산 임대업 |
+10,599,371 |
+실질지배력 보유 |
+해당사항 없음 |
+
+Samsung Electro-Mechanics Software India Bangalore Private Limited |
+2017.12 |
+N-1201, 12 Floor, WTC, Brigade Gateway, 26/1, Dr Rajkumar Rd, Malleshwaram-West, Bangalore, Karnataka, India |
+소프트웨어 개발 |
+12,254,557 |
+의결권의 과반수 소유(K-IFRS 1110호) |
+해당사항 없음 |
+
+Samsung Electro-Mechanics Mexico S.A. de C.V. |
+2023.09 |
+Av. Industria Minera, Lote 4A, Manzana II, Ampliacion 2A, Parque Industrial Queretaro, Santa Rosa Jauregui, Municipio de Queretaro, Mexico |
+카메라모듈 제조 |
+60,090,547 |
+의결권의 과반수 소유(K-IFRS 1110호) |
+해당사항 없음 |
+
+SVIC 47호 신기술사업투자조합 |
+2019.08 |
+서울특별시 서초구 서초대로74길 11(서초동) |
+투자조합 |
+13,910,891 |
+의결권의 과반수 소유(K-IFRS 1110호) |
+해당사항 없음 |
+
+[표 끝]
+
+※ 연결대상 종속기업 중 국내상장 기업은 없습니다.※ 주요종속회사 여부 판단기준 : 최근사업연도(2025년)말 자산총액 750억원 이상.※ Calamba Premier Realty Corporation과 Batino Realty Corporation은 지분율이 50%미만이지만 지분율의 50% 이상을 Samsung Electro-Mechanics Philippines, Corp.의 종업원퇴직연금이 소유하고 있어, 지배기업이 실질적으로 지배하고 있으므로 연결대상에 포함하였습니다.(*1) 손자회사인 Batino Realty Corporation을 100% 소유하고 있는 종속기업입니다.
