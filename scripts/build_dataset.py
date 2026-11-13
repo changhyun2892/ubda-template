@@ -57,7 +57,9 @@ def main() -> int:
     industry = json.loads(ind_path.read_text(encoding="utf-8")) if ind_path.exists() else {"id": cfg["industry"], "name": cfg["industry"], "kpis": []}
 
     min_year = int(cfg.get("start_year", 0)) - 1  # 전년 대비 계산용 1년 포함, 그 이전(옛 보고서 기재정정 등)은 제외
-    raw = [r for r in read_csv(RAW / "dart_financials.csv") if int(r["bsns_year"]) >= min_year]
+    raw = [r for r in read_csv(RAW / "dart_financials.csv") if int(r["bsns_year"]) >= min_year
+           # 예전 수집분에 '영업비용'(성격별 표시 회사의 영업비용 합계)이 매출원가로 들어간 경우 제외 — 매출원가가 아님
+           and not (r["metric"] == "cost_of_sales" and r.get("account_nm", "").strip() == "영업비용")]
     reports = [r for r in read_csv(RAW / "dart_reports.csv") if int(r["bsns_year"]) >= min_year]
     MANUAL.mkdir(parents=True, exist_ok=True)
     if not (MANUAL / "kpi_values.csv").exists():

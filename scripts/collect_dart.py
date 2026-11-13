@@ -43,7 +43,7 @@ ORDER = {"11013": 1, "11012": 2, "11014": 3, "11011": 4}
 # 업종 공통 계정만 둡니다. 은행·보험처럼 손익 구조가 다른 업종은 industries/*.json의 extra_accounts로 추가합니다.
 ACCOUNTS = [
     ("revenue", "매출액", ("IS", "CIS"), ("ifrs-full_Revenue", "ifrs_Revenue"), r"^(매출액|수익\(매출액\)|영업수익|매출)$"),
-    ("cost_of_sales", "매출원가", ("IS", "CIS"), ("ifrs-full_CostOfSales", "ifrs_CostOfSales"), r"^(매출원가|영업비용)$"),
+    ("cost_of_sales", "매출원가", ("IS", "CIS"), ("ifrs-full_CostOfSales", "ifrs_CostOfSales"), r"^매출원가$"),  # 영업비용(성격별 표시 회사의 비용 합계)은 매출원가가 아니므로 받지 않는다
     ("sga", "판매비와관리비", ("IS", "CIS"), ("dart_TotalSellingGeneralAdministrativeExpenses",), r"^판매비와관리비$"),
     ("operating_profit", "영업이익", ("IS", "CIS"), ("dart_OperatingIncomeLoss",), r"^영업이익(\(손실\))?$"),
     ("net_income", "당기순이익", ("IS", "CIS"), ("ifrs-full_ProfitLoss", "ifrs_ProfitLoss"), r"^(당기|분기|반기)순이익(\(손실\))?$"),

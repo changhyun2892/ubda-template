@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import functools
 import http.server
+import os
 import sys
 import threading
 from pathlib import Path
@@ -55,8 +56,18 @@ def main() -> int:
             ok("WebGL 화면 표시 (대체 화면 아님)", pg.locator("canvas").count() == 1 and not pg.is_visible("#fallback"))
             n_ind = len(list((ROOT / "industries").glob("*.json")))
             ok("산업 노드 이름표 = industries/*.json 수", pg.locator(".lbl.industry").count() == n_ind, f"{pg.locator('.lbl.industry').count()}/{n_ind}")
-            first = sorted(slugs)[0]
-            ind = __import__("json").loads((ROOT / "companies" / first / "company.json").read_text(encoding="utf-8"))
+            # 처음 화면 안에 산업 구체가 보이는 기업을 골라 클릭 흐름을 점검한다(모바일은 일부 산업 구체가 화면 밖에서 시작)
+            J = __import__("json")
+            inds = [p.stem for p in (ROOT / "industries").glob("*.json")]
+            outside = []
+            for i in inds:
+                pt = pg.evaluate(f"__portal.screenOf({J.dumps('ind:' + i)})")
+                if not (pt and 0 <= pt["x"] <= vp["width"] and 0 <= pt["y"] <= vp["height"]):
+                    outside.append(i)
+            if outside:
+                print(f"  ⚠ 참고: 처음 화면 밖에 있는 산업 구체 {len(outside)}/{len(inds)} — {', '.join(sorted(outside))} (처음 화면 기준, 3D 파일은 수정 금지라 기록만)")
+            first = next((s for s in slugs if J.loads((ROOT / "companies" / s / "company.json").read_text(encoding="utf-8"))["industry"] not in outside), sorted(slugs)[0])
+            ind = J.loads((ROOT / "companies" / first / "company.json").read_text(encoding="utf-8"))
             cat = (ind.get("categories") or ["기타"])[0]
             for nid in (f"ind:{ind['industry']}", f"cat:{ind['industry']}:{cat}", f"co:{first}"):
                 pg.wait_for_function("!__portal.flying")
@@ -103,7 +114,8 @@ def main() -> int:
         ok("없는 기업 주소 → 안내 표시", "찾지 못했습니다" in pg.inner_text("#workspace"))
         ok("목록 자바스크립트 오류 없음", not errs, "; ".join(errs[:3]))
         pg.close()
-        for slug in slugs:
+        only = [x for x in os.environ.get("UI_ONLY", "").split(",") if x]  # 예: UI_ONLY=naver,kakao — 일부 기업 대시보드만 점검
+        for slug in [x for x in slugs if not only or x in only]:
             url = root + f"dashboard.html?c={slug}"
             has_data = (ROOT / "companies" / slug / "data" / "financials.csv").exists()
             for label, vp in (("PC", {"width": 1366, "height": 860}), ("모바일", {"width": 390, "height": 844})):

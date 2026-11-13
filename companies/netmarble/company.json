@@ -18,5 +18,5 @@
   ],
   "theme_color": "#e60012",
   "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=netmarble",
-  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용."
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용. 손익계산서를 비용 성격별(영업비용 합계)로 표시해 매출원가·판매비와관리비 줄이 없음 — 매출총이익률·매출원가율은 계산하지 않음(영업비용을 매출원가로 넣지 않음)."
 }
