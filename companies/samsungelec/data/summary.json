@@ -1,0 +1,37 @@
+{
+  "slug": "samsungelec",
+  "company_id": "SE",
+  "name": "삼성전자",
+  "dashboard_path": "dashboard.html?c=samsungelec",
+  "name_en": "Samsung Electronics",
+  "stock_code": "005930",
+  "industry": "semiconductor",
+  "industry_name": "반도체·전자",
+  "categories": [
+    "메모리 반도체",
+    "가전·모바일"
+  ],
+  "competitors": [
+    "SK하이닉스",
+    "LG전자"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=samsungelec",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 333605938000000,
+    "operating_profit": 43601051000000,
+    "net_income": 45206805000000,
+    "operating_margin_pct": 13.0696,
+    "revenue_growth_pct": 10.8801,
+    "debt_ratio_pct": 29.9371
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 126,
+    "불일치": 0,
+    "미확인": 0
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 8,
+  "updated_at": "2026-11-13 09:57 KST"
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "hyundai",
+  "company_id": "HY",
+  "name": "현대차",
+  "dashboard_path": "dashboard.html?c=hyundai",
+  "name_en": "Hyundai Motor",
+  "stock_code": "005380",
+  "industry": "auto",
+  "industry_name": "자동차",
+  "categories": [
+    "완성차"
+  ],
+  "competitors": [
+    "기아",
+    "KG모빌리티"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=hyundai",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 186254472000000,
+    "operating_profit": 11467851000000,
+    "net_income": 10364775000000,
+    "operating_margin_pct": 6.1571,
+    "revenue_growth_pct": 6.2907,
+    "debt_ratio_pct": 188.9541
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 121,
+    "불일치": 0,
+    "미확인": 1
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 7,
+  "updated_at": "2026-11-13 09:55 KST"
+}

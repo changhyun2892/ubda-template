@@ -1,0 +1,168 @@
+{
+ "started_at": "2026-11-13 09:54:45 KST",
+ "steps": [
+  "collect",
+  "text",
+  "stock",
+  "build",
+  "verify"
+ ],
+ "companies": {
+  "binggrae": {
+   "collect": {
+    "sec": 0.8,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.6,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "haitai": {
+   "collect": {
+    "sec": 0.8,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.3,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "hyundai": {
+   "collect": {
+    "sec": 38.1,
+    "result": 0
+   },
+   "text": {
+    "sec": 10.2,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.4,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "lgdisplay": {
+   "collect": {
+    "sec": 33.3,
+    "result": 0
+   },
+   "text": {
+    "sec": 5.8,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.3,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "mobis": {
+   "collect": {
+    "sec": 40.8,
+    "result": 0
+   },
+   "text": {
+    "sec": 2.6,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.3,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "samsungelec": {
+   "collect": {
+    "sec": 32.8,
+    "result": 0
+   },
+   "text": {
+    "sec": 2.7,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.3,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "skhynix": {
+   "collect": {
+    "sec": 43.1,
+    "result": 0
+   },
+   "text": {
+    "sec": 2.7,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.4,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  }
+ },
+ "finished_at": "2026-11-13 09:58:22 KST",
+ "failed": []
+}

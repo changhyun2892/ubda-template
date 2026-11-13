@@ -1,0 +1,36 @@
+{
+  "slug": "mobis",
+  "company_id": "MB",
+  "name": "현대모비스",
+  "dashboard_path": "dashboard.html?c=mobis",
+  "name_en": "Hyundai Mobis",
+  "stock_code": "012330",
+  "industry": "auto",
+  "industry_name": "자동차",
+  "categories": [
+    "자동차부품"
+  ],
+  "competitors": [
+    "HL만도",
+    "한온시스템"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=mobis",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 61118127000000,
+    "operating_profit": 3357456000000,
+    "net_income": 3664736000000,
+    "operating_margin_pct": 5.4934,
+    "revenue_growth_pct": 6.7808,
+    "debt_ratio_pct": 43.0533
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 136,
+    "불일치": 0,
+    "미확인": 0
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 7,
+  "updated_at": "2026-11-13 09:57 KST"
+}
