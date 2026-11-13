@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-13 18:14:39 KST",
+ "started_at": "2026-11-13 18:40:26 KST",
  "steps": [
   "collect",
   "text",
@@ -10,41 +10,41 @@
  "companies": {
   "apr": {
    "collect": {
-    "sec": 3.6,
+    "sec": 3.2,
     "result": 0
    },
    "text": {
-    "sec": 34.5,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
-    "sec": 0.6,
+    "sec": 0.4,
     "result": 0
    },
    "build": {
-    "sec": 0.1,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
-    "sec": 0.1,
+    "sec": 0.2,
     "result": 0
    }
   },
   "classys": {
    "collect": {
-    "sec": 1.7,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
-    "sec": 28.9,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
-    "sec": 0.5,
+    "sec": 0.4,
     "result": 0
    },
    "build": {
-    "sec": 0.1,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -54,19 +54,19 @@
   },
   "gsretail": {
    "collect": {
-    "sec": 1.1,
+    "sec": 1.3,
     "result": 0
    },
    "text": {
-    "sec": 51.7,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
-    "sec": 0.4,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
-    "sec": 0.1,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -76,19 +76,19 @@
   },
   "hanon": {
    "collect": {
-    "sec": 1.2,
+    "sec": 1.3,
     "result": 0
    },
    "text": {
-    "sec": 38.8,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
-    "sec": 0.1,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -98,11 +98,11 @@
   },
   "hlmando": {
    "collect": {
-    "sec": 1.1,
+    "sec": 1.3,
     "result": 0
    },
    "text": {
-    "sec": 38.6,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
@@ -110,7 +110,7 @@
     "result": 0
    },
    "build": {
-    "sec": 0.1,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -124,15 +124,15 @@
     "result": 0
    },
    "text": {
-    "sec": 29.9,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
-    "sec": 0.1,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -142,11 +142,11 @@
   },
   "kbfg": {
    "collect": {
-    "sec": 1.2,
+    "sec": 1.3,
     "result": 0
    },
    "text": {
-    "sec": 84.8,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
@@ -154,7 +154,7 @@
     "result": 0
    },
    "build": {
-    "sec": 0.1,
+    "sec": 0.3,
     "result": 0
    },
    "verify": {
@@ -164,11 +164,11 @@
   },
   "krafton": {
    "collect": {
-    "sec": 2.4,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
-    "sec": 38.7,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
@@ -176,7 +176,7 @@
     "result": 0
    },
    "build": {
-    "sec": 0.1,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -186,11 +186,11 @@
   },
   "lotteshopping": {
    "collect": {
-    "sec": 3.1,
+    "sec": 2.5,
     "result": 0
    },
    "text": {
-    "sec": 49.1,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
@@ -198,7 +198,7 @@
     "result": 0
    },
    "build": {
-    "sec": 0.1,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -208,19 +208,19 @@
   },
   "ncsoft": {
    "collect": {
-    "sec": 1.1,
+    "sec": 1.4,
     "result": 0
    },
    "text": {
-    "sec": 31.4,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
-    "sec": 0.1,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -230,11 +230,11 @@
   },
   "ottogi": {
    "collect": {
-    "sec": 1.3,
+    "sec": 1.1,
     "result": 0
    },
    "text": {
-    "sec": 34.6,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
@@ -242,7 +242,7 @@
     "result": 0
    },
    "build": {
-    "sec": 0.1,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -252,19 +252,19 @@
   },
   "samyang": {
    "collect": {
-    "sec": 1.2,
+    "sec": 0.9,
     "result": 0
    },
    "text": {
-    "sec": 31.3,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
-    "sec": 0.4,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
-    "sec": 0.1,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -278,15 +278,15 @@
     "result": 0
    },
    "text": {
-    "sec": 27.7,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
-    "sec": 0.1,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -295,6 +295,6 @@
    }
   }
  },
- "finished_at": "2026-11-13 18:23:48 KST",
+ "finished_at": "2026-11-13 18:40:53 KST",
  "failed": []
 }
