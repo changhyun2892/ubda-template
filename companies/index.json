@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-13 10:53 KST",
+ "updated_at": "2026-11-13 12:38 KST",
  "industries": {
   "auto": {
    "name": "자동차",
@@ -424,6 +424,29 @@
    "updated_at": "2026-11-13 10:53 KST"
   },
   {
+   "slug": "kakao",
+   "company_id": "KK",
+   "name": "카카오",
+   "name_en": "Kakao",
+   "stock_code": "035720",
+   "industry": "platform",
+   "categories": [
+    "포털·플랫폼"
+   ],
+   "competitors": [
+    "NAVER"
+   ],
+   "theme_color": "#fee500",
+   "dashboard_path": "dashboard.html?c=kakao",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
    "slug": "kgm",
    "company_id": "KG",
    "name": "KG모빌리티",
@@ -494,6 +517,30 @@
    "industry_kpis_found": 8,
    "industry_kpis_total": 10,
    "updated_at": "2026-11-13 10:53 KST"
+  },
+  {
+   "slug": "krafton",
+   "company_id": "KR",
+   "name": "크래프톤",
+   "name_en": "KRAFTON",
+   "stock_code": "259960",
+   "industry": "platform",
+   "categories": [
+    "게임"
+   ],
+   "competitors": [
+    "엔씨소프트",
+    "넷마블"
+   ],
+   "theme_color": "#1b1b1b",
+   "dashboard_path": "dashboard.html?c=krafton",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
   },
   {
    "slug": "lgdisplay",
@@ -681,6 +728,77 @@
    "updated_at": "2026-11-13 10:53 KST"
   },
   {
+   "slug": "naver",
+   "company_id": "NV",
+   "name": "NAVER",
+   "name_en": "NAVER",
+   "stock_code": "035420",
+   "industry": "platform",
+   "categories": [
+    "포털·플랫폼"
+   ],
+   "competitors": [
+    "카카오"
+   ],
+   "theme_color": "#03c75a",
+   "dashboard_path": "dashboard.html?c=naver",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
+   "slug": "ncsoft",
+   "company_id": "NC",
+   "name": "엔씨소프트",
+   "name_en": "NCSOFT",
+   "stock_code": "036570",
+   "industry": "platform",
+   "categories": [
+    "게임"
+   ],
+   "competitors": [
+    "크래프톤",
+    "넷마블"
+   ],
+   "theme_color": "#2c6fbb",
+   "dashboard_path": "dashboard.html?c=ncsoft",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
+   "slug": "netmarble",
+   "company_id": "NM",
+   "name": "넷마블",
+   "name_en": "Netmarble",
+   "stock_code": "251270",
+   "industry": "platform",
+   "categories": [
+    "게임"
+   ],
+   "competitors": [
+    "크래프톤",
+    "엔씨소프트"
+   ],
+   "theme_color": "#e60012",
+   "dashboard_path": "dashboard.html?c=netmarble",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
    "slug": "nongshim",
    "company_id": "NS",
    "name": "농심",
@@ -831,6 +949,30 @@
    "industry_kpis_found": 7,
    "industry_kpis_total": 10,
    "updated_at": "2026-11-13 10:53 KST"
+  },
+  {
+   "slug": "samsungsds",
+   "company_id": "SD",
+   "name": "삼성에스디에스",
+   "name_en": "Samsung SDS",
+   "stock_code": "018260",
+   "industry": "platform",
+   "categories": [
+    "IT서비스"
+   ],
+   "competitors": [
+    "NAVER",
+    "카카오"
+   ],
+   "theme_color": "#1428a0",
+   "dashboard_path": "dashboard.html?c=samsungsds",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
   },
   {
    "slug": "samyang",
@@ -1135,6 +1277,25 @@
     "industry": "retail"
    },
    {
+    "id": "ind:platform",
+    "type": "industry",
+    "label": "IT·플랫폼",
+    "color": "#06b6d4"
+   },
+   {
+    "id": "co:kakao",
+    "type": "company",
+    "label": "카카오",
+    "slug": "kakao",
+    "url": "dashboard.html?c=kakao"
+   },
+   {
+    "id": "cat:platform:포털·플랫폼",
+    "type": "category",
+    "label": "포털·플랫폼",
+    "industry": "platform"
+   },
+   {
     "id": "co:kgm",
     "type": "company",
     "label": "KG모빌리티",
@@ -1147,6 +1308,19 @@
     "label": "기아",
     "slug": "kia",
     "url": "dashboard.html?c=kia"
+   },
+   {
+    "id": "co:krafton",
+    "type": "company",
+    "label": "크래프톤",
+    "slug": "krafton",
+    "url": "dashboard.html?c=krafton"
+   },
+   {
+    "id": "cat:platform:게임",
+    "type": "category",
+    "label": "게임",
+    "industry": "platform"
    },
    {
     "id": "co:lgdisplay",
@@ -1196,6 +1370,27 @@
     "url": "dashboard.html?c=mobis"
    },
    {
+    "id": "co:naver",
+    "type": "company",
+    "label": "NAVER",
+    "slug": "naver",
+    "url": "dashboard.html?c=naver"
+   },
+   {
+    "id": "co:ncsoft",
+    "type": "company",
+    "label": "엔씨소프트",
+    "slug": "ncsoft",
+    "url": "dashboard.html?c=ncsoft"
+   },
+   {
+    "id": "co:netmarble",
+    "type": "company",
+    "label": "넷마블",
+    "slug": "netmarble",
+    "url": "dashboard.html?c=netmarble"
+   },
+   {
     "id": "co:nongshim",
     "type": "company",
     "label": "농심",
@@ -1234,6 +1429,19 @@
     "type": "category",
     "label": "메모리 반도체",
     "industry": "semiconductor"
+   },
+   {
+    "id": "co:samsungsds",
+    "type": "company",
+    "label": "삼성에스디에스",
+    "slug": "samsungsds",
+    "url": "dashboard.html?c=samsungsds"
+   },
+   {
+    "id": "cat:platform:IT서비스",
+    "type": "category",
+    "label": "IT서비스",
+    "industry": "platform"
    },
    {
     "id": "co:samyang",
@@ -1364,12 +1572,32 @@
     "target": "co:hyundaidept"
    },
    {
+    "source": "core",
+    "target": "ind:platform"
+   },
+   {
+    "source": "ind:platform",
+    "target": "cat:platform:포털·플랫폼"
+   },
+   {
+    "source": "cat:platform:포털·플랫폼",
+    "target": "co:kakao"
+   },
+   {
     "source": "cat:auto:완성차",
     "target": "co:kgm"
    },
    {
     "source": "cat:auto:완성차",
     "target": "co:kia"
+   },
+   {
+    "source": "ind:platform",
+    "target": "cat:platform:게임"
+   },
+   {
+    "source": "cat:platform:게임",
+    "target": "co:krafton"
    },
    {
     "source": "ind:semiconductor",
@@ -1408,6 +1636,18 @@
     "target": "co:mobis"
    },
    {
+    "source": "cat:platform:포털·플랫폼",
+    "target": "co:naver"
+   },
+   {
+    "source": "cat:platform:게임",
+    "target": "co:ncsoft"
+   },
+   {
+    "source": "cat:platform:게임",
+    "target": "co:netmarble"
+   },
+   {
     "source": "ind:food",
     "target": "cat:food:라면"
    },
@@ -1438,6 +1678,14 @@
    {
     "source": "cat:semiconductor:가전·모바일",
     "target": "co:samsungelec"
+   },
+   {
+    "source": "ind:platform",
+    "target": "cat:platform:IT서비스"
+   },
+   {
+    "source": "cat:platform:IT서비스",
+    "target": "co:samsungsds"
    },
    {
     "source": "cat:food:라면",

@@ -1,0 +1,22 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(samsungsds)이 기업 주소(slug)입니다.",
+  "company_id": "SD",
+  "name": "삼성에스디에스",
+  "name_en": "Samsung SDS",
+  "stock_code": "018260",
+  "yahoo_ticker": "018260.KS",
+  "market_index": "^KS11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "platform",
+  "categories": [
+    "IT서비스"
+  ],
+  "competitors": [
+    "NAVER",
+    "카카오"
+  ],
+  "theme_color": "#1428a0",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=samsungsds",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용."
+}

@@ -6,20 +6,56 @@
   {
    "key": "segment_revenue",
    "label": "사업부문별 매출",
-   "where": "사업보고서 부문정보, IR",
-   "caution": "광고·커머스·콘텐츠 등"
+   "where": "사업보고서 II. 매출실적 / 연결주석 부문정보",
+   "caution": "광고·커머스·콘텐츠·게임 등, 내부거래 제거 행 포함"
+  },
+  {
+   "key": "segment_operating_profit",
+   "label": "사업부문별 영업이익",
+   "where": "연결주석 부문정보 / 사업의 내용",
+   "caution": "부문 이익 합계와 연결 영업이익 차이(조정) 표시"
+  },
+  {
+   "key": "region_revenue",
+   "label": "국내·해외 매출",
+   "where": "사업보고서 매출실적 / 연결주석 지역정보",
+   "caution": "고객 소재지 기준인지 법인 소재지 기준인지 표시"
+  },
+  {
+   "key": "platform_mix",
+   "label": "플랫폼·서비스별 매출",
+   "where": "사업보고서 주요 제품 현황(모바일·PC·콘솔, 서비스별)",
+   "caution": "게임은 플랫폼별, IT서비스는 서비스 유형별"
+  },
+  {
+   "key": "top_title_revenue",
+   "label": "주요 게임·서비스 매출",
+   "where": "사업보고서 주요 제품 현황(게임 타이틀·IP별)",
+   "caution": "회사가 공시한 타이틀만"
   },
   {
    "key": "mau",
    "label": "월간 활성 이용자(MAU)",
-   "where": "IR 자료",
+   "where": "IR 자료 / 사업보고서 서술",
    "caution": "회사 자체 집계 — 외부 검증 불가 표시"
   },
   {
-   "key": "rd_ratio",
-   "label": "연구개발비 비중",
-   "where": "사업보고서 연구개발 활동",
-   "caution": ""
+   "key": "rnd_expense",
+   "label": "연구개발비",
+   "where": "사업보고서 II. 연구개발비용",
+   "caution": "매출 대비 비율의 분모 기준(연결/별도) 표시"
+  },
+  {
+   "key": "capex",
+   "label": "설비투자(데이터센터 등)",
+   "where": "사업보고서 생산설비 및 투자",
+   "caution": "실적과 계획 구분"
+  },
+  {
+   "key": "market_share",
+   "label": "시장점유율",
+   "where": "사업보고서 II. 기타 참고사항",
+   "caution": "조사기관·기준 표시"
   }
  ]
 }

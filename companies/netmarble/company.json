@@ -1,0 +1,22 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(netmarble)이 기업 주소(slug)입니다.",
+  "company_id": "NM",
+  "name": "넷마블",
+  "name_en": "Netmarble",
+  "stock_code": "251270",
+  "yahoo_ticker": "251270.KS",
+  "market_index": "^KS11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "platform",
+  "categories": [
+    "게임"
+  ],
+  "competitors": [
+    "크래프톤",
+    "엔씨소프트"
+  ],
+  "theme_color": "#e60012",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=netmarble",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용."
+}
