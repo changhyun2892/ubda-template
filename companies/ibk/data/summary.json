@@ -1,0 +1,36 @@
+{
+  "slug": "ibk",
+  "company_id": "IB",
+  "name": "기업은행",
+  "dashboard_path": "dashboard.html?c=ibk",
+  "name_en": "Industrial Bank of Korea",
+  "stock_code": "024110",
+  "industry": "bank",
+  "industry_name": "은행·금융",
+  "categories": [
+    "국책은행"
+  ],
+  "competitors": [
+    "KB금융",
+    "신한지주"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=ibk",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": null,
+    "operating_profit": 3655589000000,
+    "net_income": 2718868000000,
+    "operating_margin_pct": "",
+    "revenue_growth_pct": "",
+    "debt_ratio_pct": 1258.5096
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 42,
+    "불일치": 0,
+    "미확인": 24
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 6,
+  "updated_at": "2026-11-13 13:59 KST"
+}

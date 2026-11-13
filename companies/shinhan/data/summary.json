@@ -1,0 +1,37 @@
+{
+  "slug": "shinhan",
+  "company_id": "SN",
+  "name": "신한지주",
+  "dashboard_path": "dashboard.html?c=shinhan",
+  "name_en": "Shinhan Financial Group",
+  "stock_code": "055550",
+  "industry": "bank",
+  "industry_name": "은행·금융",
+  "categories": [
+    "시중 금융지주"
+  ],
+  "competitors": [
+    "KB금융",
+    "하나금융지주",
+    "우리금융지주"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=shinhan",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": null,
+    "operating_profit": 7023357000000,
+    "net_income": 5084519000000,
+    "operating_margin_pct": "",
+    "revenue_growth_pct": "",
+    "debt_ratio_pct": 1201.9434
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 45,
+    "불일치": 0,
+    "미확인": 21
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 6,
+  "updated_at": "2026-11-13 14:10 KST"
+}
