@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>경영 모니터링 · 메인 스크린</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230A1628'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%234FC3F7' stroke-width='2.5'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/screen.css">
+</head>
+<body>
+<div id="viewport"><div id="stage">
+
+  <header>
+    <svg class="frame" width="1920" height="96" viewBox="0 0 1920 96">
+      <defs>
+        <linearGradient id="tabFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#1C3852"/><stop offset=".72" stop-color="#17324B"/><stop offset="1" stop-color="#1E4862"/></linearGradient>
+        <linearGradient id="botLine" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#3AB4D3" stop-opacity="0"/><stop offset=".12" stop-color="#3AB4D3" stop-opacity=".8"/><stop offset=".88" stop-color="#3AB4D3" stop-opacity=".8"/><stop offset="1" stop-color="#3AB4D3" stop-opacity="0"/></linearGradient>
+        <filter id="tglow" x="-5%" y="-200%" width="110%" height="500%"><feGaussianBlur stdDeviation="2"/></filter>
+      </defs>
+      <rect x="0" y="0" width="1920" height="6" fill="#071121"/>
+      <rect x="0" y="6" width="1920" height="68" fill="#13263D"/>
+      <polygon points="690,6 1230,6 1194,56 1176,74 744,74 726,56" fill="url(#tabFill)"/>
+      <line x1="690" y1="6" x2="1230" y2="6" stroke="#3AB4D3" stroke-width="5" opacity=".35" filter="url(#tglow)"/>
+      <line x1="690" y1="6.5" x2="1230" y2="6.5" stroke="#3AB4D3" stroke-width="2.5"/>
+      <line x1="756" y1="74" x2="1164" y2="74" stroke="#2A8FB0" stroke-width="2.5"/>
+      <line x1="0" y1="74" x2="740" y2="74" stroke="#3AB4D3" stroke-width="1" opacity=".3"/>
+      <line x1="1180" y1="74" x2="1920" y2="74" stroke="#3AB4D3" stroke-width="1" opacity=".3"/>
+    </svg>
+    <div class="meta-left" id="metaLeft">불러오는 중…</div>
+    <div class="title"><div class="eyebrow">GLOBAL BUSINESS MONITOR</div><div class="main" id="mainTitle">경영 모니터링</div></div>
+    <div class="meta-right">
+      <div class="toggle" id="coToggle"></div>
+      <div class="clock num" id="clock">--:--:--<small id="clockSub">사업보고서</small></div>
+      <button class="fs-btn" id="fsBtn" title="전체 화면 (F)">⛶</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="col">
+      <section class="panel" id="kpiPanel">
+        <div class="ptitle"><span id="kpiTitle">핵심 지표</span><span class="aside" id="kpiAside">전년 대비</span></div>
+        <div class="insight" id="kpiInsight"></div>
+        <div class="kpis" id="kpis"></div>
+      </section>
+      <section class="panel" id="qopPanel">
+        <div class="ptitle">분기 영업이익 <span class="aside">억원</span></div>
+        <div class="insight" id="qopInsight"></div>
+        <div class="chart" id="qopChart"></div>
+      </section>
+    </div>
+
+    <div class="col">
+      <section class="panel" id="globePanel">
+        <div class="ptitle" id="globeTitle">대한민국에서 세계로</div>
+        <div id="globe"></div>
+        <div id="globeFallback"></div>
+        <div id="globeErr" style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:9;display:none;max-width:70%;background:rgba(8,20,36,.92);border:1px solid #E0574F;padding:14px 18px;font-size:16px;color:#F4F7FA;line-height:1.5"></div>
+        <div id="bigYear" class="num"></div>
+        <div id="caption"></div>
+        <div class="hud" id="hudNS"></div>
+        <div class="hud" id="hudYear"><div class="y num" id="hudYearV"></div><div class="s" id="hudYearS">GLOBAL</div></div>
+        <div class="hud" id="hudRank"><h4>국가별 해외 종속회사 · <span id="hudRankY"></span></h4><div id="rankRows"></div></div>
+        <div class="hud" id="hudExport"><div class="l" id="expL">수출 매출</div><div class="v num"><span id="expV">0</span><span class="u">억원</span></div><div class="n" id="expN"></div></div>
+        <div class="hud" id="hudTimeline">
+          <button id="playBtn" title="재생/일시정지 (Space)">❚❚</button>
+          <span id="tlDots"></span>
+        </div>
+        <div class="hud" id="hudNote"></div>
+      </section>
+      <section class="panel" id="gaugePanel">
+        <div class="ptitle"><span id="plantTitle">가동률</span> <span class="aside" id="plantAside"></span></div>
+        <div class="insight" id="plantInsight"></div>
+        <div class="chart" id="plantChart"></div>
+      </section>
+    </div>
+
+    <div class="col">
+      <section class="panel" id="profitPanel">
+        <div class="ptitle">수익성 모니터 <span class="aside" id="profitAside"></span></div>
+        <div class="insight" id="profitInsight"></div>
+        <div class="dials">
+          <div class="dial"><div class="ch" id="dialA"></div><div class="nm"><i style="background:var(--red)"></i><span id="dialAName"></span></div></div>
+          <div class="dial"><div class="ch" id="dialB"></div><div class="nm"><i style="background:var(--blue)"></i><span id="dialBName"></span></div></div>
+        </div>
+        <div class="subt" id="qrevTitle">분기 매출 &amp; 영업이익률</div>
+        <div class="chart" id="qrevChart"></div>
+      </section>
+      <section class="panel" id="searchPanel">
+        <div class="ptitle"><span id="searchTitle">주가 vs 시장지수</span> <span class="aside" id="searchAside"></span></div>
+        <div class="insight" id="searchInsight"></div>
+        <div class="chart" id="searchChart"></div>
+      </section>
+    </div>
+  </main>
+  <div id="helpHint">? 단축키</div>
+
+  <div id="help"><div class="box">
+    <h3>발표 단축키</h3>
+    <table>
+      <tr><td><kbd>F</kbd></td><td>전체 화면</td></tr>
+      <tr><td><kbd>Space</kbd></td><td>지구본 재생 / 일시정지</td></tr>
+      <tr><td><kbd>1</kbd><kbd>2</kbd><kbd>3</kbd></td><td>연도별 장면</td></tr>
+      <tr><td><kbd>←</kbd><kbd>→</kbd></td><td>이전 / 다음 연도</td></tr>
+      <tr><td><kbd>S</kbd></td><td>기업 / 비교 기업 전환</td></tr>
+      <tr><td><kbd>Esc</kbd></td><td>대시보드로 돌아가기</td></tr>
+      <tr><td><kbd>R</kbd></td><td>지구본 처음부터</td></tr>
+      <tr><td><kbd>?</kbd></td><td>이 안내 열기 / 닫기</td></tr>
+    </table>
+  </div></div>
+</div></div>
+
+<!-- 라이브러리는 모두 assets/vendor/에 포함 (CDN 미사용). 라이선스: assets/vendor/THIRD_PARTY_LICENSES.md -->
+<script src="assets/vendor/echarts.min.js"></script>
+<script src="assets/vendor/topojson-client.min.js"></script>
+<script src="assets/vendor/globe.gl.min.js"></script>
+<script src="assets/screen.js"></script>
+</body>
+</html>

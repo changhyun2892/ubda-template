@@ -151,8 +151,18 @@ def main() -> int:
                     pg.wait_for_timeout(300)
                     ok("메인 스크린 → Esc로 개요 복귀", pg.inner_text("#pageTitle") == "개요")
                     pg.click('.nav-btn[data-page="screen"]')
-                    pg.wait_for_timeout(300)
-                    ok("메인 스크린 KPI 5개·차트 4개", pg.locator(".sc-kpi").count() == 5 and pg.locator(".sc-card .chart svg").count() == 4)
+                    fr = pg.frame_locator("#screenFrame")
+                    sf = None
+                    for _ in range(60):
+                        sf = next((f for f in pg.frames if "screen.html" in f.url), None)
+                        if sf and sf.evaluate("!!window.__screenReady"):
+                            break
+                        pg.wait_for_timeout(250)
+                    ready = bool(sf and sf.evaluate("!!window.__screenReady"))
+                    kpis = fr.locator(".kpi").count() if ready else 0
+                    canv = sf.evaluate("[...document.querySelectorAll('#qopChart,#plantChart,#dialA,#qrevChart,#searchChart')].filter(e=>e.querySelector('canvas')).length") if ready else 0
+                    hard = sf.evaluate("document.querySelectorAll('.err:not([style])').length") if ready else -1
+                    ok("메인 스크린(screen.html) KPI 4개·차트 칸 5개·오류 없음", kpis == 4 and canv == 5 and hard == 0, f"KPI {kpis} · 차트 {canv} · 오류 {hard}")
                     if SHOTS:
                         pg.screenshot(path=str(SHOTS / f"{slug}_screen.png"))
                     pg.keyboard.press("Escape")

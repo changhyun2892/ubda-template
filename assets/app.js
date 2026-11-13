@@ -514,45 +514,16 @@ function pageDart() {
   </div>`;
 }
 
-/* ---------- 메인 스크린 (발표용 어두운 화면, 같은 데이터·차트 사용) ---------- */
+/* ---------- 메인 스크린 (불닭 대시보드와 같은 1920×1080 관제 화면: screen.html을 그대로 띄움) ---------- */
 function pageScreen() {
   if (!D.fin.length) return noData();
-  const Y = YEARS(), y = Y[Y.length - 1];
-  const k = (l, v, sub) => `<div class="sc-kpi"><span>${esc(l)}</span><b>${v}</b><small>${sub}</small></div>`;
-  const vm = (key) => met(y, key);
-  const last = D.stock[D.stock.length - 1];
-  const yr0 = D.stock.find((r) => r.date.startsWith(String(y)));
-  const yrEnd = [...D.stock].reverse().find((r) => r.date.startsWith(String(y)));
-  const sret = yr0 && yrEnd ? (N(yrEnd.close) / N(yr0.close) - 1) * 100 : null;
-  const vr = D.verify?.counts || {};
-  return `<div class="sc-head"><div class="sc-eyebrow">BUSINESS MONITOR</div><div class="sc-title">${esc(D.company.name)} 경영 모니터링</div>
-    <div class="sc-meta">${Y[0]}–${y} · ${esc(D.fin[0]?.scope || '')} 재무제표 · DART · 업데이트 ${esc(D.summary?.updated_at || '-')}</div><button class="sc-exit" data-page="overview">나가기 (Esc)</button></div>
-  <div class="sc-kpis">
-    ${k(`${y} ${TOPL()}`, fin(y, TOPK()) === null ? '–' : fmt(fin(y, TOPK()) / 1e8, 0) + '<i>억원</i>', `전년 대비 ${vm(TOPG()) === null ? '–' : (vm(TOPG()) > 0 ? '+' : '') + fmt(vm(TOPG())) + '%'}`)}
-    ${k(`${y} 영업이익`, fin(y, 'operating_profit') === null ? '–' : fmt(fin(y, 'operating_profit') / 1e8, 0) + '<i>억원</i>', `전년 대비 ${vm('op_growth_pct') === null ? '–' : (vm('op_growth_pct') > 0 ? '+' : '') + fmt(vm('op_growth_pct')) + '%'}`)}
-    ${k(MRGL(), vm(MRGK()) === null ? '–' : fmt(vm(MRGK())) + '<i>%</i>', BANK() ? `대손비용률 ${pct(vm('credit_cost_pct'))}` : `순이익률 ${pct(vm('net_margin_pct'))}`)}
-    ${BANK() ? k('ROE', vm('roe_pct') === null ? '–' : fmt(vm('roe_pct')) + '<i>%</i>', `ROA ${pct(vm('roa_pct'))}`) : k('부채비율', vm('debt_ratio_pct') === null ? '–' : fmt(vm('debt_ratio_pct')) + '<i>%</i>', `유동비율 ${pct(vm('current_ratio_pct'))}`)}
-    ${k('주가', last ? fmt(N(last.close), 0) + '<i>원</i>' : '–', last ? `${esc(last.date)} · ${y}년 ${sret === null ? '–' : (sret > 0 ? '+' : '') + fmt(sret) + '%'}` : '주가 없음')}
-  </div>
-  <div class="sc-grid">
-    <div class="sc-card"><h3>연간 ${TOPL()}·영업이익 <small>억원 / ${MRGL()} %</small></h3>${legend([[TOPL(), '#2F80D8'], ['영업이익', '#F2A03D'], [MRGL(), '#4FC3F7']])}<div class="chart" id="s1"></div></div>
-    <div class="sc-card"><h3>분기 영업이익 <small>억원 / 이익률 %</small></h3>${legend([['영업이익', '#F2A03D'], ['영업이익률', '#4FC3F7']])}<div class="chart" id="s2"></div></div>
-    <div class="sc-card"><h3>주가 vs 시장지수 <small>시작일 = 100</small></h3>${legend([['주가', '#F2A03D'], ['시장지수', '#4FC3F7']])}<div class="chart" id="s3"></div></div>
-    <div class="sc-card"><h3>현금흐름 <small>억원</small></h3>${legend([['영업활동현금흐름', '#7CC36A'], ['유형자산 취득', '#E0574F']])}<div class="chart" id="s4"></div></div>
-  </div>
-  <div class="sc-foot">값 ${D.ledger.length}개 출처 기록 · 자동 점검 통과 ${vr['통과'] ?? '-'} · 실패 ${vr['실패'] ?? 0} · 경고 ${vr['경고'] ?? 0} · 수업용 분석이며 투자 추천이 아닙니다</div>`;
+  return `<iframe class="screen-frame" id="screenFrame" title="메인 스크린" src="screen.html?c=${encodeURIComponent(SLUG)}" allow="fullscreen"></iframe>`;
 }
 function drawScreen() {
-  const Y = YEARS(); const h = Math.max(170, Math.round((innerHeight - 370) / 2));
-  barLine($('#s1'), Y.map(String), [{ name: TOPL(), color: '#2F80D8', values: Y.map((y) => fin(y, TOPK())) }, { name: '영업이익', color: '#F2A03D', values: Y.map((y) => fin(y, 'operating_profit')) }], { name: MRGL(), color: '#4FC3F7', unit: '%', values: Y.map((y) => met(y, MRGK())) }, { h });
-  const ps = [...new Set(D.qtr.map((r) => r.period))].sort().slice(-12);
-  const qv = (p, m) => N(D.qtr.find((r) => r.period === p && r.metric === m)?.value ?? null);
-  barLine($('#s2'), ps.map((p) => p.slice(2).replace('-', ' ')), [{ name: '영업이익', color: '#F2A03D', values: ps.map((p) => qv(p, 'operating_profit')) }], BANK() ? null : { name: '영업이익률', color: '#4FC3F7', unit: '%', values: ps.map((p) => { const r = qv(p, 'revenue'), o = qv(p, 'operating_profit'); return r && o !== null ? (o / r) * 100 : null; }) }, { h });
-  const xs = D.stock.map((r) => r.date), c = D.stock.map((r) => N(r.close)), kk = D.stock.map((r) => N(r.index_close));
-  const b0 = c.find((v) => v !== null), k0 = kk.find((v) => v !== null);
-  lineChart($('#s3'), xs, [{ name: '주가', color: '#F2A03D', values: c.map((v) => (v === null ? null : (v / b0) * 100)) }, { name: '시장지수', color: '#4FC3F7', values: kk.map((v) => (v === null || !k0 ? null : (v / k0) * 100)) }], [], { h });
-  barLine($('#s4'), Y.map(String), [{ name: '영업활동현금흐름', color: '#7CC36A', values: Y.map((y) => fin(y, 'operating_cashflow')) }, { name: '유형자산 취득', color: '#E0574F', values: Y.map((y) => fin(y, 'capex')) }], null, { h });
+  const f = $('#screenFrame'); if (!f) return;
+  f.addEventListener('load', () => { try { f.contentWindow.focus(); } catch (e) { /* 무시 */ } });
 }
+addEventListener('message', (e) => { if (e.data && e.data.ubda === 'screen-exit' && S.page === 'screen') { S.page = 'overview'; render(); } });
 
 /* ---------- 편집 모드: 카드를 끌어 순서 변경, 이 브라우저에만 저장 ---------- */
 const store = {

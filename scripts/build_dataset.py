@@ -16,6 +16,7 @@
   quarterly.csv      분기 단일 실적 (Q4 = 사업보고서 연간 − 3분기 누적)
   metrics.csv        재무비율 (산식·입력값·기준 함께 저장)
   source_registry.csv / audit_ledger.csv / research_status.csv
+  subsidiaries.csv   해외 종속회사 목록 (build_subsidiaries.py, 메인 스크린 지구본)
   summary.json       3D 포털이 읽을 요약 (기업·산업·카테고리·핵심 KPI·검증 현황)
 
 이 스크립트는 '계산'만 합니다. 값을 새로 지어내지 않으며, 입력이 없으면 빈칸으로 둡니다.
@@ -257,6 +258,8 @@ def main() -> int:
     print(f"연간 {len(years)}개 연도({years[0] if years else '-'}~{ly or '-'}) · 분기 {len({r['period'] for r in q_rows})}개 · 비율 {len(met_rows)}행 · 검증장부 {len(ledger)}행 · 출처 {len(registry)}건")
     if not years:
         print("[안내] 연간 데이터가 없습니다. collect_dart.py가 먼저 실행되어야 합니다 (DART_API_KEY 확인).")
+    import build_subsidiaries  # 해외 종속회사 목록 (메인 스크린 지구본) — 같은 기업 폴더 기준
+    build_subsidiaries.main()
     return 0
 
 
