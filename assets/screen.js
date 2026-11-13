@@ -108,12 +108,13 @@ function renderKpi() {
   need(c && c.fin.length, '재무 데이터(financials.csv)가 없습니다');
   const y = YRS[YRS.length - 1], p = y - 1, y0 = YRS[0];
   $('kpiTitle').textContent = `${c.company.name} 핵심 지표 · ${y}`; $('kpiAside').textContent = `${p} 대비`;
-  const g = (a, b) => (a != null && b ? (a / b - 1) * 100 : null);
+  const g = (a, b) => (a != null && b != null && b > 0 && a >= 0 ? (a / b - 1) * 100 : null); // 기준값이 0 이하이거나 음수로 바뀌면 증감률 대신 전환 표시
+  const turn = (a, b) => (a == null || b == null || (b > 0 && a >= 0) ? null : b <= 0 && a > 0 ? ['흑자 전환', true] : b > 0 && a < 0 ? ['적자 전환', false] : ['적자 지속', false]);
   const pp = (a, b) => (a != null && b != null ? +(a - b).toFixed(1) : null);
   const top = EOK(finV(c, y, TOPK())), op = EOK(finV(c, y, 'operating_profit'));
   const rows = [
     { lab: TOPL(), val: top, dec: 1, u: '억원', chg: g(top, EOK(finV(c, p, TOPK()))), type: 'pct' },
-    { lab: '영업이익', val: op, dec: 1, u: '억원', chg: g(op, EOK(finV(c, p, 'operating_profit'))), type: 'pct' },
+    { lab: '영업이익', val: op, dec: 1, u: '억원', chg: g(op, EOK(finV(c, p, 'operating_profit'))), turn: turn(op, EOK(finV(c, p, 'operating_profit'))), type: 'pct' },
   ];
   if (BANK()) {
     rows.push({ lab: '영업이익경비율(CIR)', val: metV(c, y, 'cir_pct'), dec: 1, u: '%', chg: pp(metV(c, y, 'cir_pct'), metV(c, p, 'cir_pct')), type: 'pp', inverse: true });
@@ -126,14 +127,14 @@ function renderKpi() {
   }
   $('kpis').innerHTML = rows.map((r, i) => {
     const good = r.chg == null ? null : (r.inverse ? r.chg <= 0 : r.chg >= 0);
-    const b = r.chg == null ? '<span class="badge na">비교 불가</span>'
+    const b = r.turn ? `<span class="badge ${r.turn[1] ? 'up' : 'down'}">${r.turn[0]}</span>` : r.chg == null ? '<span class="badge na">비교 불가</span>'
       : `<span class="badge ${good ? 'up' : 'down'}">${r.chg >= 0 ? '▲' : '▼'} ${Math.abs(r.chg).toFixed(1)}${r.type === 'pp' ? '%p' : '%'}</span>`;
     const v = r.val == null ? '<span style="color:var(--sub);font-size:32px">–</span>' : `<span class="num" id="kv${i}">0</span><span class="u">${r.u}</span>`;
     return `<div class="kpi"><div class="lab">${r.lab}</div><div class="val">${v}</div>${b}${r.foot ? `<div class="foot">${r.foot}</div>` : ''}</div>`;
   }).join('');
   rows.forEach((r, i) => { if (r.val != null) countUp($('kv' + i), r.val, { dec: r.dec, dur: 800 }); });
   const t0 = finV(c, y0, TOPK()), t1 = finV(c, y, TOPK()), o0 = finV(c, y0, 'operating_profit'), o1 = finV(c, y, 'operating_profit');
-  const mult = (a, b) => (a && b && a > 0 && b > 0 ? (b / a >= 2 ? `${(b / a).toFixed(1)}배` : pct((b / a - 1) * 100)) : '비교 불가');
+  const mult = (a, b) => (a && b && a > 0 && b > 0 ? (b / a >= 2 ? `${(b / a).toFixed(1)}배` : pct((b / a - 1) * 100)) : a != null && b != null ? (a <= 0 && b > 0 ? '흑자 전환' : a > 0 && b < 0 ? '적자 전환' : '적자 지속') : '비교 불가');
   $('kpiInsight').textContent = `${y0}년 대비 ${TOPL()} ${mult(t0, t1)} · 영업이익 ${mult(o0, o1)}`;
 }
 
@@ -209,18 +210,24 @@ function initPlantGauges() {
     $('plantInsight').textContent = cr.list.map((r) => `${r.full} ${r.v.toFixed(2)}%`).join(' · ').slice(0, 70);
     return;
   }
-  const sg = A.kpi.filter((r) => r.kpi_key === 'segment_revenue' && (r.unit || '').toUpperCase() === 'KRW' && N(r.value) !== null && !/조정|제거/.test(r.item));
-  if (!sg.length) { $('plantTitle').textContent = '가동률'; $('plantAside').textContent = ''; throw Object.assign(new Error('가동률·사업부문 매출이 산업 KPI에 없습니다'), { soft: true }); }
+  // 가동률이 없으면 매출 구성 KPI 중 먼저 있는 것 (사업부문 → 제품군 → 주요 상품 → 플랫폼 → 지역)
+  const MIX = [['segment_revenue', '사업부문별 매출'], ['product_segment_revenue', '제품군별 매출'], ['top_title_revenue', '주요 상품별 매출'], ['platform_mix', '플랫폼·품목별 매출'], ['region_revenue', '지역별 매출']];
+  let sg = [], mixL = '';
+  for (const [k, l] of MIX) {
+    sg = A.kpi.filter((r) => r.kpi_key === k && (r.unit || '').toUpperCase() === 'KRW' && N(r.value) !== null && !/조정|제거/.test(r.item) && !/재작성|비교 표시/.test(r.scope || ''));
+    if (sg.length) { mixL = l; break; }
+  }
+  if (!sg.length) { $('plantTitle').textContent = '가동률'; $('plantAside').textContent = ''; throw Object.assign(new Error('가동률·매출 구성 지표가 산업 KPI에 없습니다'), { soft: true }); }
   const y = Math.max(...sg.map((r) => +r.year));
   const sc = sg.filter((r) => +r.year === y); const scope = sc.find((r) => /연결/.test(r.scope))?.scope || sc[0].scope;
   const rows = sc.filter((r) => r.scope === scope).map((r) => ({ k: r.item.replace(/\(.*?\)/g, ''), v: EOK(N(r.value)) })).sort((a, b) => b.v - a.v).slice(0, 6);
-  $('plantTitle').textContent = `${y} 사업부문별 매출`; $('plantAside').textContent = '억원 · 가동률 공시 없음';
+  $('plantTitle').textContent = `${y} ${mixL}`; $('plantAside').textContent = '억원 · 가동률 공시 없음';
   const ch = mk('plantChart');
   ch.setOption({ grid: { left: 150, right: 90, top: 10, bottom: 10 }, xAxis: { type: 'value', show: false },
     yAxis: { type: 'category', inverse: true, data: rows.map((r) => r.k), axisLabel: { color: C.text, fontSize: 16, width: 140, overflow: 'truncate' }, axisTick: { show: false }, axisLine: { show: false } },
     series: [{ type: 'bar', barWidth: 14, itemStyle: { color: C.cyan, borderRadius: [0, 3, 3, 0] }, label: { show: true, position: 'right', color: '#fff', fontSize: 16, fontFamily: NUMF, formatter: (p) => fmt(p.value) }, data: rows.map((r) => r.v) }] });
   const tot = rows.reduce((s, r) => s + Math.max(0, r.v), 0);
-  $('plantInsight').textContent = `최대 부문 ${rows[0].k} · 비중 ${tot ? ((rows[0].v / tot) * 100).toFixed(1) : '–'}% (표시 부문 합 기준)`;
+  $('plantInsight').textContent = `최대 항목 ${rows[0].k} · 비중 ${tot ? ((rows[0].v / tot) * 100).toFixed(1) : '–'}% (표시 부문 합 기준)`;
 }
 
 function dial(id, v, color, max, band) {
