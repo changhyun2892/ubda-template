@@ -1,0 +1,22 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(semco)이 기업 주소(slug)입니다.",
+  "company_id": "SM",
+  "name": "삼성전기",
+  "name_en": "Samsung Electro-Mechanics",
+  "stock_code": "009150",
+  "yahoo_ticker": "009150.KS",
+  "market_index": "^KS11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "semiconductor",
+  "categories": [
+    "전자부품"
+  ],
+  "competitors": [
+    "LG전자",
+    "삼성전자"
+  ],
+  "theme_color": "#0a4ea2",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=semco",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용."
+}

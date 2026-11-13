@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-12 17:39 KST",
+ "updated_at": "2026-11-13 09:14 KST",
  "industries": {
   "auto": {
    "name": "자동차",
@@ -27,6 +27,29 @@
   }
  },
  "companies": [
+  {
+   "slug": "bgfretail",
+   "company_id": "BF",
+   "name": "BGF리테일",
+   "name_en": "BGF Retail",
+   "stock_code": "282330",
+   "industry": "retail",
+   "categories": [
+    "편의점"
+   ],
+   "competitors": [
+    "GS리테일"
+   ],
+   "theme_color": "#6f2c91",
+   "dashboard_path": "dashboard.html?c=bgfretail",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
   {
    "slug": "binggrae",
    "company_id": "BG",
@@ -101,6 +124,53 @@
    "updated_at": "2026-11-12 17:39 KST"
   },
   {
+   "slug": "emart",
+   "company_id": "EM",
+   "name": "이마트",
+   "name_en": "E-MART",
+   "stock_code": "139480",
+   "industry": "retail",
+   "categories": [
+    "대형마트"
+   ],
+   "competitors": [
+    "롯데쇼핑",
+    "BGF리테일"
+   ],
+   "theme_color": "#ffb81c",
+   "dashboard_path": "dashboard.html?c=emart",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
+   "slug": "gsretail",
+   "company_id": "GS",
+   "name": "GS리테일",
+   "name_en": "GS Retail",
+   "stock_code": "007070",
+   "industry": "retail",
+   "categories": [
+    "편의점"
+   ],
+   "competitors": [
+    "BGF리테일"
+   ],
+   "theme_color": "#00a7e1",
+   "dashboard_path": "dashboard.html?c=gsretail",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
    "slug": "haitai",
    "company_id": "HT",
    "name": "해태제과",
@@ -136,6 +206,248 @@
    "industry_kpis_found": 4,
    "industry_kpis_total": 8,
    "updated_at": "2026-11-12 17:39 KST"
+  },
+  {
+   "slug": "hanmisemi",
+   "company_id": "HM",
+   "name": "한미반도체",
+   "name_en": "Hanmi Semiconductor",
+   "stock_code": "042700",
+   "industry": "semiconductor",
+   "categories": [
+    "반도체 장비"
+   ],
+   "competitors": [
+    "SK하이닉스",
+    "삼성전자"
+   ],
+   "theme_color": "#005bac",
+   "dashboard_path": "dashboard.html?c=hanmisemi",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
+   "slug": "hanon",
+   "company_id": "HN",
+   "name": "한온시스템",
+   "name_en": "Hanon Systems",
+   "stock_code": "018880",
+   "industry": "auto",
+   "categories": [
+    "자동차부품"
+   ],
+   "competitors": [
+    "현대모비스",
+    "HL만도"
+   ],
+   "theme_color": "#e36c0a",
+   "dashboard_path": "dashboard.html?c=hanon",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
+   "slug": "hlmando",
+   "company_id": "MD",
+   "name": "HL만도",
+   "name_en": "HL Mando",
+   "stock_code": "204320",
+   "industry": "auto",
+   "categories": [
+    "자동차부품"
+   ],
+   "competitors": [
+    "현대모비스",
+    "한온시스템"
+   ],
+   "theme_color": "#00a0e9",
+   "dashboard_path": "dashboard.html?c=hlmando",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
+   "slug": "hyundai",
+   "company_id": "HY",
+   "name": "현대차",
+   "name_en": "Hyundai Motor",
+   "stock_code": "005380",
+   "industry": "auto",
+   "categories": [
+    "완성차"
+   ],
+   "competitors": [
+    "기아",
+    "KG모빌리티"
+   ],
+   "theme_color": "#002c5f",
+   "dashboard_path": "dashboard.html?c=hyundai",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
+   "slug": "hyundaidept",
+   "company_id": "HD",
+   "name": "현대백화점",
+   "name_en": "Hyundai Department Store",
+   "stock_code": "069960",
+   "industry": "retail",
+   "categories": [
+    "백화점"
+   ],
+   "competitors": [
+    "롯데쇼핑",
+    "신세계"
+   ],
+   "theme_color": "#00704a",
+   "dashboard_path": "dashboard.html?c=hyundaidept",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
+   "slug": "kgm",
+   "company_id": "KG",
+   "name": "KG모빌리티",
+   "name_en": "KG Mobility",
+   "stock_code": "003620",
+   "industry": "auto",
+   "categories": [
+    "완성차"
+   ],
+   "competitors": [
+    "현대차",
+    "기아"
+   ],
+   "theme_color": "#d71920",
+   "dashboard_path": "dashboard.html?c=kgm",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
+   "slug": "kia",
+   "company_id": "KI",
+   "name": "기아",
+   "name_en": "Kia",
+   "stock_code": "000270",
+   "industry": "auto",
+   "categories": [
+    "완성차"
+   ],
+   "competitors": [
+    "현대차",
+    "KG모빌리티"
+   ],
+   "theme_color": "#05141f",
+   "dashboard_path": "dashboard.html?c=kia",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
+   "slug": "lgdisplay",
+   "company_id": "LD",
+   "name": "LG디스플레이",
+   "name_en": "LG Display",
+   "stock_code": "034220",
+   "industry": "semiconductor",
+   "categories": [
+    "디스플레이"
+   ],
+   "competitors": [
+    "삼성전자",
+    "LG전자"
+   ],
+   "theme_color": "#c4004a",
+   "dashboard_path": "dashboard.html?c=lgdisplay",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
+   "slug": "lgelec",
+   "company_id": "LE",
+   "name": "LG전자",
+   "name_en": "LG Electronics",
+   "stock_code": "066570",
+   "industry": "semiconductor",
+   "categories": [
+    "가전·모바일"
+   ],
+   "competitors": [
+    "삼성전자",
+    "삼성전기"
+   ],
+   "theme_color": "#a50034",
+   "dashboard_path": "dashboard.html?c=lgelec",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
+   "slug": "lotteshopping",
+   "company_id": "LS",
+   "name": "롯데쇼핑",
+   "name_en": "Lotte Shopping",
+   "stock_code": "023530",
+   "industry": "retail",
+   "categories": [
+    "백화점",
+    "대형마트"
+   ],
+   "competitors": [
+    "신세계",
+    "현대백화점",
+    "이마트"
+   ],
+   "theme_color": "#da291c",
+   "dashboard_path": "dashboard.html?c=lotteshopping",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
   },
   {
    "slug": "lottewellfood",
@@ -175,6 +487,30 @@
    "industry_kpis_found": 5,
    "industry_kpis_total": 8,
    "updated_at": "2026-11-12 17:39 KST"
+  },
+  {
+   "slug": "mobis",
+   "company_id": "MB",
+   "name": "현대모비스",
+   "name_en": "Hyundai Mobis",
+   "stock_code": "012330",
+   "industry": "auto",
+   "categories": [
+    "자동차부품"
+   ],
+   "competitors": [
+    "HL만도",
+    "한온시스템"
+   ],
+   "theme_color": "#1c4587",
+   "dashboard_path": "dashboard.html?c=mobis",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
   },
   {
    "slug": "nongshim",
@@ -292,6 +628,31 @@
    "updated_at": "2026-11-12 17:39 KST"
   },
   {
+   "slug": "samsungelec",
+   "company_id": "SE",
+   "name": "삼성전자",
+   "name_en": "Samsung Electronics",
+   "stock_code": "005930",
+   "industry": "semiconductor",
+   "categories": [
+    "메모리 반도체",
+    "가전·모바일"
+   ],
+   "competitors": [
+    "SK하이닉스",
+    "LG전자"
+   ],
+   "theme_color": "#1428a0",
+   "dashboard_path": "dashboard.html?c=samsungelec",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
    "slug": "samyang",
    "company_id": "SY",
    "name": "삼양식품",
@@ -327,6 +688,78 @@
    "industry_kpis_found": 6,
    "industry_kpis_total": 8,
    "updated_at": "2026-11-12 17:39 KST"
+  },
+  {
+   "slug": "semco",
+   "company_id": "SM",
+   "name": "삼성전기",
+   "name_en": "Samsung Electro-Mechanics",
+   "stock_code": "009150",
+   "industry": "semiconductor",
+   "categories": [
+    "전자부품"
+   ],
+   "competitors": [
+    "LG전자",
+    "삼성전자"
+   ],
+   "theme_color": "#0a4ea2",
+   "dashboard_path": "dashboard.html?c=semco",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
+   "slug": "shinsegae",
+   "company_id": "SS",
+   "name": "신세계",
+   "name_en": "Shinsegae",
+   "stock_code": "004170",
+   "industry": "retail",
+   "categories": [
+    "백화점"
+   ],
+   "competitors": [
+    "롯데쇼핑",
+    "현대백화점"
+   ],
+   "theme_color": "#333333",
+   "dashboard_path": "dashboard.html?c=shinsegae",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
+   "slug": "skhynix",
+   "company_id": "SH",
+   "name": "SK하이닉스",
+   "name_en": "SK hynix",
+   "stock_code": "000660",
+   "industry": "semiconductor",
+   "categories": [
+    "메모리 반도체"
+   ],
+   "competitors": [
+    "삼성전자",
+    "한미반도체"
+   ],
+   "theme_color": "#ea002c",
+   "dashboard_path": "dashboard.html?c=skhynix",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
   }
  ],
  "graph": {
@@ -335,6 +768,25 @@
     "id": "core",
     "type": "core",
     "label": "경영분석 CORE"
+   },
+   {
+    "id": "ind:retail",
+    "type": "industry",
+    "label": "유통",
+    "color": "#ef4444"
+   },
+   {
+    "id": "co:bgfretail",
+    "type": "company",
+    "label": "BGF리테일",
+    "slug": "bgfretail",
+    "url": "dashboard.html?c=bgfretail"
+   },
+   {
+    "id": "cat:retail:편의점",
+    "type": "category",
+    "label": "편의점",
+    "industry": "retail"
    },
    {
     "id": "ind:food",
@@ -369,6 +821,26 @@
     "industry": "food"
    },
    {
+    "id": "co:emart",
+    "type": "company",
+    "label": "이마트",
+    "slug": "emart",
+    "url": "dashboard.html?c=emart"
+   },
+   {
+    "id": "cat:retail:대형마트",
+    "type": "category",
+    "label": "대형마트",
+    "industry": "retail"
+   },
+   {
+    "id": "co:gsretail",
+    "type": "company",
+    "label": "GS리테일",
+    "slug": "gsretail",
+    "url": "dashboard.html?c=gsretail"
+   },
+   {
     "id": "co:haitai",
     "type": "company",
     "label": "해태제과",
@@ -376,11 +848,136 @@
     "url": "dashboard.html?c=haitai"
    },
    {
+    "id": "ind:semiconductor",
+    "type": "industry",
+    "label": "반도체·전자",
+    "color": "#8b5cf6"
+   },
+   {
+    "id": "co:hanmisemi",
+    "type": "company",
+    "label": "한미반도체",
+    "slug": "hanmisemi",
+    "url": "dashboard.html?c=hanmisemi"
+   },
+   {
+    "id": "cat:semiconductor:반도체 장비",
+    "type": "category",
+    "label": "반도체 장비",
+    "industry": "semiconductor"
+   },
+   {
+    "id": "ind:auto",
+    "type": "industry",
+    "label": "자동차",
+    "color": "#10b981"
+   },
+   {
+    "id": "co:hanon",
+    "type": "company",
+    "label": "한온시스템",
+    "slug": "hanon",
+    "url": "dashboard.html?c=hanon"
+   },
+   {
+    "id": "cat:auto:자동차부품",
+    "type": "category",
+    "label": "자동차부품",
+    "industry": "auto"
+   },
+   {
+    "id": "co:hlmando",
+    "type": "company",
+    "label": "HL만도",
+    "slug": "hlmando",
+    "url": "dashboard.html?c=hlmando"
+   },
+   {
+    "id": "co:hyundai",
+    "type": "company",
+    "label": "현대차",
+    "slug": "hyundai",
+    "url": "dashboard.html?c=hyundai"
+   },
+   {
+    "id": "cat:auto:완성차",
+    "type": "category",
+    "label": "완성차",
+    "industry": "auto"
+   },
+   {
+    "id": "co:hyundaidept",
+    "type": "company",
+    "label": "현대백화점",
+    "slug": "hyundaidept",
+    "url": "dashboard.html?c=hyundaidept"
+   },
+   {
+    "id": "cat:retail:백화점",
+    "type": "category",
+    "label": "백화점",
+    "industry": "retail"
+   },
+   {
+    "id": "co:kgm",
+    "type": "company",
+    "label": "KG모빌리티",
+    "slug": "kgm",
+    "url": "dashboard.html?c=kgm"
+   },
+   {
+    "id": "co:kia",
+    "type": "company",
+    "label": "기아",
+    "slug": "kia",
+    "url": "dashboard.html?c=kia"
+   },
+   {
+    "id": "co:lgdisplay",
+    "type": "company",
+    "label": "LG디스플레이",
+    "slug": "lgdisplay",
+    "url": "dashboard.html?c=lgdisplay"
+   },
+   {
+    "id": "cat:semiconductor:디스플레이",
+    "type": "category",
+    "label": "디스플레이",
+    "industry": "semiconductor"
+   },
+   {
+    "id": "co:lgelec",
+    "type": "company",
+    "label": "LG전자",
+    "slug": "lgelec",
+    "url": "dashboard.html?c=lgelec"
+   },
+   {
+    "id": "cat:semiconductor:가전·모바일",
+    "type": "category",
+    "label": "가전·모바일",
+    "industry": "semiconductor"
+   },
+   {
+    "id": "co:lotteshopping",
+    "type": "company",
+    "label": "롯데쇼핑",
+    "slug": "lotteshopping",
+    "url": "dashboard.html?c=lotteshopping"
+   },
+   {
     "id": "co:lottewellfood",
     "type": "company",
     "label": "롯데웰푸드",
     "slug": "lottewellfood",
     "url": "dashboard.html?c=lottewellfood"
+   },
+   {
+    "id": "co:mobis",
+    "type": "company",
+    "label": "현대모비스",
+    "slug": "mobis",
+    "url": "dashboard.html?c=mobis"
    },
    {
     "id": "co:nongshim",
@@ -410,14 +1007,66 @@
     "url": "dashboard.html?c=ottogi"
    },
    {
+    "id": "co:samsungelec",
+    "type": "company",
+    "label": "삼성전자",
+    "slug": "samsungelec",
+    "url": "dashboard.html?c=samsungelec"
+   },
+   {
+    "id": "cat:semiconductor:메모리 반도체",
+    "type": "category",
+    "label": "메모리 반도체",
+    "industry": "semiconductor"
+   },
+   {
     "id": "co:samyang",
     "type": "company",
     "label": "삼양식품",
     "slug": "samyang",
     "url": "dashboard.html?c=samyang"
+   },
+   {
+    "id": "co:semco",
+    "type": "company",
+    "label": "삼성전기",
+    "slug": "semco",
+    "url": "dashboard.html?c=semco"
+   },
+   {
+    "id": "cat:semiconductor:전자부품",
+    "type": "category",
+    "label": "전자부품",
+    "industry": "semiconductor"
+   },
+   {
+    "id": "co:shinsegae",
+    "type": "company",
+    "label": "신세계",
+    "slug": "shinsegae",
+    "url": "dashboard.html?c=shinsegae"
+   },
+   {
+    "id": "co:skhynix",
+    "type": "company",
+    "label": "SK하이닉스",
+    "slug": "skhynix",
+    "url": "dashboard.html?c=skhynix"
    }
   ],
   "links": [
+   {
+    "source": "core",
+    "target": "ind:retail"
+   },
+   {
+    "source": "ind:retail",
+    "target": "cat:retail:편의점"
+   },
+   {
+    "source": "cat:retail:편의점",
+    "target": "co:bgfretail"
+   },
    {
     "source": "core",
     "target": "ind:food"
@@ -439,8 +1088,96 @@
     "target": "co:crown"
    },
    {
+    "source": "ind:retail",
+    "target": "cat:retail:대형마트"
+   },
+   {
+    "source": "cat:retail:대형마트",
+    "target": "co:emart"
+   },
+   {
+    "source": "cat:retail:편의점",
+    "target": "co:gsretail"
+   },
+   {
     "source": "cat:food:스낵·과자",
     "target": "co:haitai"
+   },
+   {
+    "source": "core",
+    "target": "ind:semiconductor"
+   },
+   {
+    "source": "ind:semiconductor",
+    "target": "cat:semiconductor:반도체 장비"
+   },
+   {
+    "source": "cat:semiconductor:반도체 장비",
+    "target": "co:hanmisemi"
+   },
+   {
+    "source": "core",
+    "target": "ind:auto"
+   },
+   {
+    "source": "ind:auto",
+    "target": "cat:auto:자동차부품"
+   },
+   {
+    "source": "cat:auto:자동차부품",
+    "target": "co:hanon"
+   },
+   {
+    "source": "cat:auto:자동차부품",
+    "target": "co:hlmando"
+   },
+   {
+    "source": "ind:auto",
+    "target": "cat:auto:완성차"
+   },
+   {
+    "source": "cat:auto:완성차",
+    "target": "co:hyundai"
+   },
+   {
+    "source": "ind:retail",
+    "target": "cat:retail:백화점"
+   },
+   {
+    "source": "cat:retail:백화점",
+    "target": "co:hyundaidept"
+   },
+   {
+    "source": "cat:auto:완성차",
+    "target": "co:kgm"
+   },
+   {
+    "source": "cat:auto:완성차",
+    "target": "co:kia"
+   },
+   {
+    "source": "ind:semiconductor",
+    "target": "cat:semiconductor:디스플레이"
+   },
+   {
+    "source": "cat:semiconductor:디스플레이",
+    "target": "co:lgdisplay"
+   },
+   {
+    "source": "ind:semiconductor",
+    "target": "cat:semiconductor:가전·모바일"
+   },
+   {
+    "source": "cat:semiconductor:가전·모바일",
+    "target": "co:lgelec"
+   },
+   {
+    "source": "cat:retail:백화점",
+    "target": "co:lotteshopping"
+   },
+   {
+    "source": "cat:retail:대형마트",
+    "target": "co:lotteshopping"
    },
    {
     "source": "cat:food:스낵·과자",
@@ -449,6 +1186,10 @@
    {
     "source": "cat:food:아이스크림",
     "target": "co:lottewellfood"
+   },
+   {
+    "source": "cat:auto:자동차부품",
+    "target": "co:mobis"
    },
    {
     "source": "ind:food",
@@ -471,8 +1212,36 @@
     "target": "co:ottogi"
    },
    {
+    "source": "ind:semiconductor",
+    "target": "cat:semiconductor:메모리 반도체"
+   },
+   {
+    "source": "cat:semiconductor:메모리 반도체",
+    "target": "co:samsungelec"
+   },
+   {
+    "source": "cat:semiconductor:가전·모바일",
+    "target": "co:samsungelec"
+   },
+   {
     "source": "cat:food:라면",
     "target": "co:samyang"
+   },
+   {
+    "source": "ind:semiconductor",
+    "target": "cat:semiconductor:전자부품"
+   },
+   {
+    "source": "cat:semiconductor:전자부품",
+    "target": "co:semco"
+   },
+   {
+    "source": "cat:retail:백화점",
+    "target": "co:shinsegae"
+   },
+   {
+    "source": "cat:semiconductor:메모리 반도체",
+    "target": "co:skhynix"
    }
   ]
  }

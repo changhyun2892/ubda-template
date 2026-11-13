@@ -1,0 +1,22 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(skhynix)이 기업 주소(slug)입니다.",
+  "company_id": "SH",
+  "name": "SK하이닉스",
+  "name_en": "SK hynix",
+  "stock_code": "000660",
+  "yahoo_ticker": "000660.KS",
+  "market_index": "^KS11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "semiconductor",
+  "categories": [
+    "메모리 반도체"
+  ],
+  "competitors": [
+    "삼성전자",
+    "한미반도체"
+  ],
+  "theme_color": "#ea002c",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=skhynix",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용."
+}

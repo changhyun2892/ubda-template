@@ -117,7 +117,7 @@ def main() -> int:
     # 6-1) 합계 검산: 연결 기준 구성 매출(부문·지역·판매경로)의 합 = 연결 매출액 (원문 숫자끼리 맞는지)
     groups = defaultdict(list)
     for r in kpis:
-        if r.get("unit") == "KRW" and "연결" in (r.get("scope") or "") and r.get("value") not in ("", None) and r.get("kpi_key") in ("product_segment_revenue", "export_revenue", "sales_channels", "segment_revenue"):
+        if r.get("unit") == "KRW" and "연결" in (r.get("scope") or "") and r.get("value") not in ("", None) and r.get("kpi_key") in ("product_segment_revenue", "export_revenue", "sales_channels", "segment_revenue", "region_revenue"):
             groups[(r["kpi_key"], int(r["year"]))].append(num(r["value"]))
     for (k, y), vals in sorted(groups.items()):
         rev = F.get(y, {}).get("revenue")

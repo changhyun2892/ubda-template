@@ -1,0 +1,21 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(bgfretail)이 기업 주소(slug)입니다.",
+  "company_id": "BF",
+  "name": "BGF리테일",
+  "name_en": "BGF Retail",
+  "stock_code": "282330",
+  "yahoo_ticker": "282330.KS",
+  "market_index": "^KS11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "retail",
+  "categories": [
+    "편의점"
+  ],
+  "competitors": [
+    "GS리테일"
+  ],
+  "theme_color": "#6f2c91",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=bgfretail",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용."
+}

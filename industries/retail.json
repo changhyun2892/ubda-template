@@ -6,26 +6,38 @@
   {
    "key": "store_count",
    "label": "점포 수",
-   "where": "사업보고서, IR",
-   "caution": "업태별 구분"
+   "where": "사업보고서 II. 사업의 내용 > 영업 현황 / 점포 현황",
+   "caution": "업태별·국내외 구분, 직영/가맹 구분"
+  },
+  {
+   "key": "segment_revenue",
+   "label": "사업부문별 매출",
+   "where": "사업보고서 II. 사업부문별 매출 / 연결주석 부문정보",
+   "caution": "부문 간 내부거래 제거 행 포함"
+  },
+  {
+   "key": "gross_merchandise",
+   "label": "총매출액(거래액)",
+   "where": "사업보고서 매출실적의 총매출·특정매입 관련 서술",
+   "caution": "회계상 매출(순액)과 총매출(총액) 구분"
   },
   {
    "key": "online_share",
-   "label": "온라인 매출 비중",
-   "where": "IR 자료",
-   "caution": "총매출/순매출 기준 구분"
+   "label": "온라인 매출",
+   "where": "사업보고서·IR의 온라인 채널 매출",
+   "caution": "온라인 별도 법인 포함 여부"
   },
   {
    "key": "sss_growth",
    "label": "기존점 성장률",
-   "where": "IR 자료",
-   "caution": "공시 여부 확인"
+   "where": "IR 자료 — 사업보고서에는 대부분 없음",
+   "caution": "공시 근거가 없으면 미공개"
   },
   {
-   "key": "gross_merchandise",
-   "label": "총매출액(GMV)",
-   "where": "IR 자료",
-   "caution": "회계상 매출(순액)과 다름"
+   "key": "region_revenue",
+   "label": "국내·해외 매출",
+   "where": "연결주석 지역별 정보",
+   "caution": "법인 소재지 기준인지 표시"
   }
  ]
 }

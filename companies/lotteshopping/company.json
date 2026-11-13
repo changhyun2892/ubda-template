@@ -1,0 +1,24 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(lotteshopping)이 기업 주소(slug)입니다.",
+  "company_id": "LS",
+  "name": "롯데쇼핑",
+  "name_en": "Lotte Shopping",
+  "stock_code": "023530",
+  "yahoo_ticker": "023530.KS",
+  "market_index": "^KS11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "retail",
+  "categories": [
+    "백화점",
+    "대형마트"
+  ],
+  "competitors": [
+    "신세계",
+    "현대백화점",
+    "이마트"
+  ],
+  "theme_color": "#da291c",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=lotteshopping",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용."
+}

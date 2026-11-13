@@ -1,0 +1,22 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(lgdisplay)이 기업 주소(slug)입니다.",
+  "company_id": "LD",
+  "name": "LG디스플레이",
+  "name_en": "LG Display",
+  "stock_code": "034220",
+  "yahoo_ticker": "034220.KS",
+  "market_index": "^KS11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "semiconductor",
+  "categories": [
+    "디스플레이"
+  ],
+  "competitors": [
+    "삼성전자",
+    "LG전자"
+  ],
+  "theme_color": "#c4004a",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=lgdisplay",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용."
+}

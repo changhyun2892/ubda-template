@@ -1,0 +1,22 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(mobis)이 기업 주소(slug)입니다.",
+  "company_id": "MB",
+  "name": "현대모비스",
+  "name_en": "Hyundai Mobis",
+  "stock_code": "012330",
+  "yahoo_ticker": "012330.KS",
+  "market_index": "^KS11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "auto",
+  "categories": [
+    "자동차부품"
+  ],
+  "competitors": [
+    "HL만도",
+    "한온시스템"
+  ],
+  "theme_color": "#1c4587",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=mobis",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용."
+}

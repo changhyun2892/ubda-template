@@ -1,0 +1,23 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(samsungelec)이 기업 주소(slug)입니다.",
+  "company_id": "SE",
+  "name": "삼성전자",
+  "name_en": "Samsung Electronics",
+  "stock_code": "005930",
+  "yahoo_ticker": "005930.KS",
+  "market_index": "^KS11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "semiconductor",
+  "categories": [
+    "메모리 반도체",
+    "가전·모바일"
+  ],
+  "competitors": [
+    "SK하이닉스",
+    "LG전자"
+  ],
+  "theme_color": "#1428a0",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=samsungelec",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용."
+}

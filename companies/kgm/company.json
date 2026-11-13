@@ -1,0 +1,22 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(kgm)이 기업 주소(slug)입니다.",
+  "company_id": "KG",
+  "name": "KG모빌리티",
+  "name_en": "KG Mobility",
+  "stock_code": "003620",
+  "yahoo_ticker": "003620.KS",
+  "market_index": "^KS11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "auto",
+  "categories": [
+    "완성차"
+  ],
+  "competitors": [
+    "현대차",
+    "기아"
+  ],
+  "theme_color": "#d71920",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=kgm",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용."
+}
