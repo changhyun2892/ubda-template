@@ -1,0 +1,21 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(kolmar)이 기업 주소(slug)입니다.",
+  "company_id": "KM",
+  "name": "한국콜마",
+  "name_en": "Kolmar Korea",
+  "stock_code": "161890",
+  "yahoo_ticker": "161890.KS",
+  "market_index": "^KS11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "cosmetics",
+  "categories": [
+    "ODM"
+  ],
+  "competitors": [
+    "코스맥스"
+  ],
+  "theme_color": "#e60012",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=kolmar",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용."
+}

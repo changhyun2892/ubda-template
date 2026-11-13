@@ -1,0 +1,55 @@
+{
+ "id": "beauty_device",
+ "name": "미용기기",
+ "color": "#a855f7",
+ "kpis": [
+  {
+   "key": "segment_revenue",
+   "label": "제품군별 매출",
+   "where": "사업보고서 II. 주요 제품 / 매출실적",
+   "caution": "장비·소모품·화장품 등"
+  },
+  {
+   "key": "region_revenue",
+   "label": "국내·해외 매출",
+   "where": "사업보고서 II. 매출실적",
+   "caution": "수출 국가·지역 구분"
+  },
+  {
+   "key": "product_price",
+   "label": "주요 제품 가격",
+   "where": "사업보고서 II. 가격변동추이",
+   "caution": "장비·소모품 구분"
+  },
+  {
+   "key": "capacity_utilization",
+   "label": "생산능력·가동률",
+   "where": "사업보고서 II. 생산설비",
+   "caution": ""
+  },
+  {
+   "key": "production_volume",
+   "label": "생산 실적",
+   "where": "사업보고서 II. 생산실적",
+   "caution": "대수·개수·금액 구분"
+  },
+  {
+   "key": "raw_material_prices",
+   "label": "주요 원재료 가격",
+   "where": "사업보고서 II. 원재료",
+   "caution": ""
+  },
+  {
+   "key": "rnd_expense",
+   "label": "연구개발비",
+   "where": "사업보고서 II. 연구개발비용",
+   "caution": ""
+  },
+  {
+   "key": "market_share",
+   "label": "시장점유율",
+   "where": "사업보고서 II. 기타 참고사항",
+   "caution": "조사 기준 표시"
+  }
+ ]
+}

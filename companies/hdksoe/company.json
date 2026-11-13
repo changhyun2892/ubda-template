@@ -1,0 +1,23 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(hdksoe)이 기업 주소(slug)입니다.",
+  "company_id": "KS",
+  "name": "HD한국조선해양",
+  "name_en": "HD Korea Shipbuilding & Offshore Engineering",
+  "stock_code": "009540",
+  "yahoo_ticker": "009540.KS",
+  "market_index": "^KS11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "shipbuilding",
+  "categories": [
+    "조선 중간지주"
+  ],
+  "competitors": [
+    "HD현대중공업",
+    "한화오션",
+    "삼성중공업"
+  ],
+  "theme_color": "#003a70",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=hdksoe",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용. HD현대 조선 중간지주(연결: HD현대중공업·HD현대삼호 등) — 자회사 HD현대중공업과 숫자가 겹침."
+}

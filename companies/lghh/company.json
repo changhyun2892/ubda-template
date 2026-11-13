@@ -1,0 +1,21 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(lghh)이 기업 주소(slug)입니다.",
+  "company_id": "LH",
+  "name": "LG생활건강",
+  "name_en": "LG H&H",
+  "stock_code": "051900",
+  "yahoo_ticker": "051900.KS",
+  "market_index": "^KS11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "cosmetics",
+  "categories": [
+    "브랜드사"
+  ],
+  "competitors": [
+    "아모레퍼시픽"
+  ],
+  "theme_color": "#a50034",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=lghh",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용."
+}

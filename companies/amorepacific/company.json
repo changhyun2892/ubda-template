@@ -1,0 +1,21 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(amorepacific)이 기업 주소(slug)입니다.",
+  "company_id": "AP",
+  "name": "아모레퍼시픽",
+  "name_en": "Amorepacific",
+  "stock_code": "090430",
+  "yahoo_ticker": "090430.KS",
+  "market_index": "^KS11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "cosmetics",
+  "categories": [
+    "브랜드사"
+  ],
+  "competitors": [
+    "LG생활건강"
+  ],
+  "theme_color": "#1c3f94",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=amorepacific",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용."
+}

@@ -1,0 +1,61 @@
+{
+ "id": "cosmetics",
+ "name": "화장품",
+ "color": "#ec4899",
+ "kpis": [
+  {
+   "key": "segment_revenue",
+   "label": "사업부문별 매출",
+   "where": "사업보고서 II. 매출실적 / 연결주석 부문정보",
+   "caution": "화장품·생활용품·음료·ODM 등, 내부거래 제거 행 포함"
+  },
+  {
+   "key": "segment_operating_profit",
+   "label": "사업부문별 영업이익",
+   "where": "사업보고서 II. / 연결주석 부문정보",
+   "caution": "조정 항목 표시"
+  },
+  {
+   "key": "region_revenue",
+   "label": "지역별 매출",
+   "where": "사업보고서 II. 매출실적 / 연결주석 지역정보",
+   "caution": "국내·중국·미주 등, 법인 소재지 기준인지 표시"
+  },
+  {
+   "key": "sales_channels",
+   "label": "판매채널",
+   "where": "사업보고서 II. 판매경로",
+   "caution": "면세·온라인·H&B·방판 등 — 비중 기준 표시"
+  },
+  {
+   "key": "brand_revenue",
+   "label": "주요 브랜드·고객사",
+   "where": "사업보고서 II. 주요 제품",
+   "caution": "회사가 공시한 브랜드만"
+  },
+  {
+   "key": "capacity_utilization",
+   "label": "생산능력·가동률",
+   "where": "사업보고서 II. 생산설비",
+   "caution": "수량 단위 표시"
+  },
+  {
+   "key": "raw_material_prices",
+   "label": "주요 원재료 가격",
+   "where": "사업보고서 II. 원재료",
+   "caution": "회사 매입단가"
+  },
+  {
+   "key": "rnd_expense",
+   "label": "연구개발비",
+   "where": "사업보고서 II. 연구개발비용",
+   "caution": "연결/별도 표시"
+  },
+  {
+   "key": "market_share",
+   "label": "시장점유율",
+   "where": "사업보고서 II. 기타 참고사항",
+   "caution": "조사 기준 표시"
+  }
+ ]
+}

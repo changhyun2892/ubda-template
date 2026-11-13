@@ -1,0 +1,22 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(hdhhi)이 기업 주소(slug)입니다.",
+  "company_id": "HH",
+  "name": "HD현대중공업",
+  "name_en": "HD Hyundai Heavy Industries",
+  "stock_code": "329180",
+  "yahoo_ticker": "329180.KS",
+  "market_index": "^KS11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "shipbuilding",
+  "categories": [
+    "조선소"
+  ],
+  "competitors": [
+    "한화오션",
+    "삼성중공업"
+  ],
+  "theme_color": "#00539b",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=hdhhi",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용. 2025-12 HD현대미포를 흡수합병(통합 HD현대중공업) — 2025년 이후 숫자는 합병 효과 포함 가능, 연도 비교 주의."
+}

@@ -1,0 +1,67 @@
+{
+ "id": "shipbuilding",
+ "name": "조선",
+ "color": "#0ea5e9",
+ "kpis": [
+  {
+   "key": "order_backlog",
+   "label": "수주잔고",
+   "where": "사업보고서 II. 수주상황",
+   "caution": "금액·척수, 환율 기준 표시"
+  },
+  {
+   "key": "new_orders",
+   "label": "신규 수주",
+   "where": "사업보고서 II. 수주상황 / 영업 현황",
+   "caution": "금액·척수"
+  },
+  {
+   "key": "segment_revenue",
+   "label": "사업부문별 매출",
+   "where": "사업보고서 II. 매출실적 / 연결주석 부문정보",
+   "caution": "조선·해양·엔진 등, 내부거래 제거 행 포함"
+  },
+  {
+   "key": "segment_operating_profit",
+   "label": "사업부문별 영업이익",
+   "where": "연결주석 부문정보",
+   "caution": "조정 항목 표시"
+  },
+  {
+   "key": "product_price",
+   "label": "선박 가격",
+   "where": "사업보고서 II. 주요 제품 가격변동",
+   "caution": "선종별, 달러 기준인지 표시"
+  },
+  {
+   "key": "capacity_utilization",
+   "label": "생산능력·가동률",
+   "where": "사업보고서 II. 생산능력·가동률",
+   "caution": "도크·시간·톤 기준 표시"
+  },
+  {
+   "key": "production_volume",
+   "label": "건조 실적",
+   "where": "사업보고서 II. 생산실적",
+   "caution": "척수·CGT·금액 구분"
+  },
+  {
+   "key": "raw_material_prices",
+   "label": "후판 등 원재료 가격",
+   "where": "사업보고서 II. 원재료 가격변동",
+   "caution": "원/톤"
+  },
+  {
+   "key": "region_revenue",
+   "label": "지역별 매출",
+   "where": "사업보고서 II. 매출실적",
+   "caution": "수출/내수 구분"
+  },
+  {
+   "key": "rnd_expense",
+   "label": "연구개발비",
+   "where": "사업보고서 II. 연구개발비용",
+   "caution": ""
+  }
+ ]
+}

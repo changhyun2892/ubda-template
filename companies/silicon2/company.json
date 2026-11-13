@@ -1,0 +1,22 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(silicon2)이 기업 주소(slug)입니다.",
+  "company_id": "S2",
+  "name": "실리콘투",
+  "name_en": "Silicon2",
+  "stock_code": "257720",
+  "yahoo_ticker": "257720.KQ",
+  "market_index": "^KQ11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "cosmetics",
+  "categories": [
+    "유통"
+  ],
+  "competitors": [
+    "아모레퍼시픽",
+    "LG생활건강"
+  ],
+  "theme_color": "#111827",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=silicon2",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용."
+}

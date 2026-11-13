@@ -1,0 +1,21 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(cosmax)이 기업 주소(slug)입니다.",
+  "company_id": "CX",
+  "name": "코스맥스",
+  "name_en": "Cosmax",
+  "stock_code": "192820",
+  "yahoo_ticker": "192820.KS",
+  "market_index": "^KS11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "cosmetics",
+  "categories": [
+    "ODM"
+  ],
+  "competitors": [
+    "한국콜마"
+  ],
+  "theme_color": "#00a0e9",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=cosmax",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용."
+}

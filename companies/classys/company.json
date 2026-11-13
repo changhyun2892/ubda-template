@@ -1,0 +1,21 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(classys)이 기업 주소(slug)입니다.",
+  "company_id": "CL",
+  "name": "클래시스",
+  "name_en": "Classys",
+  "stock_code": "214150",
+  "yahoo_ticker": "214150.KQ",
+  "market_index": "^KQ11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "beauty_device",
+  "categories": [
+    "미용 의료기기"
+  ],
+  "competitors": [
+    "원텍"
+  ],
+  "theme_color": "#7c3aed",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=classys",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용."
+}

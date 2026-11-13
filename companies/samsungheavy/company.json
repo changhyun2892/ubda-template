@@ -1,0 +1,22 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(samsungheavy)이 기업 주소(slug)입니다.",
+  "company_id": "SHI",
+  "name": "삼성중공업",
+  "name_en": "Samsung Heavy Industries",
+  "stock_code": "010140",
+  "yahoo_ticker": "010140.KS",
+  "market_index": "^KS11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "shipbuilding",
+  "categories": [
+    "조선소"
+  ],
+  "competitors": [
+    "HD현대중공업",
+    "한화오션"
+  ],
+  "theme_color": "#1428a0",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=samsungheavy",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용."
+}

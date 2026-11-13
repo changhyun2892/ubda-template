@@ -1,0 +1,21 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(wontech)이 기업 주소(slug)입니다.",
+  "company_id": "WT",
+  "name": "원텍",
+  "name_en": "Wontech",
+  "stock_code": "336570",
+  "yahoo_ticker": "336570.KQ",
+  "market_index": "^KQ11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "beauty_device",
+  "categories": [
+    "미용 의료기기"
+  ],
+  "competitors": [
+    "클래시스"
+  ],
+  "theme_color": "#0f766e",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=wontech",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용."
+}

@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-13 15:13 KST",
+ "updated_at": "2026-11-13 15:42 KST",
  "industries": {
   "auto": {
    "name": "자동차",
@@ -8,6 +8,14 @@
   "bank": {
    "name": "은행·금융",
    "color": "#3b82f6"
+  },
+  "beauty_device": {
+   "name": "미용기기",
+   "color": "#a855f7"
+  },
+  "cosmetics": {
+   "name": "화장품",
+   "color": "#ec4899"
   },
   "food": {
    "name": "식품",
@@ -24,9 +32,60 @@
   "semiconductor": {
    "name": "반도체·전자",
    "color": "#8b5cf6"
+  },
+  "shipbuilding": {
+   "name": "조선",
+   "color": "#0ea5e9"
   }
  },
  "companies": [
+  {
+   "slug": "amorepacific",
+   "company_id": "AP",
+   "name": "아모레퍼시픽",
+   "name_en": "Amorepacific",
+   "stock_code": "090430",
+   "industry": "cosmetics",
+   "categories": [
+    "브랜드사"
+   ],
+   "competitors": [
+    "LG생활건강"
+   ],
+   "theme_color": "#1c3f94",
+   "dashboard_path": "dashboard.html?c=amorepacific",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
+   "slug": "apr",
+   "company_id": "PR",
+   "name": "에이피알",
+   "name_en": "APR",
+   "stock_code": "278470",
+   "industry": "beauty_device",
+   "categories": [
+    "홈 뷰티 디바이스"
+   ],
+   "competitors": [
+    "클래시스",
+    "아모레퍼시픽"
+   ],
+   "theme_color": "#ff3b6b",
+   "dashboard_path": "dashboard.html?c=apr",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
   {
    "slug": "bgfretail",
    "company_id": "BF",
@@ -133,6 +192,52 @@
    "industry_kpis_found": 3,
    "industry_kpis_total": 11,
    "updated_at": "2026-11-13 15:12 KST"
+  },
+  {
+   "slug": "classys",
+   "company_id": "CL",
+   "name": "클래시스",
+   "name_en": "Classys",
+   "stock_code": "214150",
+   "industry": "beauty_device",
+   "categories": [
+    "미용 의료기기"
+   ],
+   "competitors": [
+    "원텍"
+   ],
+   "theme_color": "#7c3aed",
+   "dashboard_path": "dashboard.html?c=classys",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
+   "slug": "cosmax",
+   "company_id": "CX",
+   "name": "코스맥스",
+   "name_en": "Cosmax",
+   "stock_code": "192820",
+   "industry": "cosmetics",
+   "categories": [
+    "ODM"
+   ],
+   "competitors": [
+    "한국콜마"
+   ],
+   "theme_color": "#00a0e9",
+   "dashboard_path": "dashboard.html?c=cosmax",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
   },
   {
    "slug": "crown",
@@ -387,6 +492,79 @@
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
    "updated_at": "2026-11-13 15:12 KST"
+  },
+  {
+   "slug": "hanwhaocean",
+   "company_id": "HO",
+   "name": "한화오션",
+   "name_en": "Hanwha Ocean",
+   "stock_code": "042660",
+   "industry": "shipbuilding",
+   "categories": [
+    "조선소"
+   ],
+   "competitors": [
+    "HD현대중공업",
+    "삼성중공업"
+   ],
+   "theme_color": "#f37321",
+   "dashboard_path": "dashboard.html?c=hanwhaocean",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
+   "slug": "hdhhi",
+   "company_id": "HH",
+   "name": "HD현대중공업",
+   "name_en": "HD Hyundai Heavy Industries",
+   "stock_code": "329180",
+   "industry": "shipbuilding",
+   "categories": [
+    "조선소"
+   ],
+   "competitors": [
+    "한화오션",
+    "삼성중공업"
+   ],
+   "theme_color": "#00539b",
+   "dashboard_path": "dashboard.html?c=hdhhi",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
+   "slug": "hdksoe",
+   "company_id": "KS",
+   "name": "HD한국조선해양",
+   "name_en": "HD Korea Shipbuilding & Offshore Engineering",
+   "stock_code": "009540",
+   "industry": "shipbuilding",
+   "categories": [
+    "조선 중간지주"
+   ],
+   "competitors": [
+    "HD현대중공업",
+    "한화오션",
+    "삼성중공업"
+   ],
+   "theme_color": "#003a70",
+   "dashboard_path": "dashboard.html?c=hdksoe",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
   },
   {
    "slug": "hlmando",
@@ -785,6 +963,29 @@
    "updated_at": "2026-11-13 15:12 KST"
   },
   {
+   "slug": "kolmar",
+   "company_id": "KM",
+   "name": "한국콜마",
+   "name_en": "Kolmar Korea",
+   "stock_code": "161890",
+   "industry": "cosmetics",
+   "categories": [
+    "ODM"
+   ],
+   "competitors": [
+    "코스맥스"
+   ],
+   "theme_color": "#e60012",
+   "dashboard_path": "dashboard.html?c=kolmar",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
    "slug": "krafton",
    "company_id": "KR",
    "name": "크래프톤",
@@ -891,6 +1092,29 @@
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
    "updated_at": "2026-11-13 15:12 KST"
+  },
+  {
+   "slug": "lghh",
+   "company_id": "LH",
+   "name": "LG생활건강",
+   "name_en": "LG H&H",
+   "stock_code": "051900",
+   "industry": "cosmetics",
+   "categories": [
+    "브랜드사"
+   ],
+   "competitors": [
+    "아모레퍼시픽"
+   ],
+   "theme_color": "#a50034",
+   "dashboard_path": "dashboard.html?c=lghh",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
   },
   {
    "slug": "lotteshopping",
@@ -1265,6 +1489,30 @@
    "updated_at": "2026-11-13 15:12 KST"
   },
   {
+   "slug": "samsungheavy",
+   "company_id": "SHI",
+   "name": "삼성중공업",
+   "name_en": "Samsung Heavy Industries",
+   "stock_code": "010140",
+   "industry": "shipbuilding",
+   "categories": [
+    "조선소"
+   ],
+   "competitors": [
+    "HD현대중공업",
+    "한화오션"
+   ],
+   "theme_color": "#1428a0",
+   "dashboard_path": "dashboard.html?c=samsungheavy",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
    "slug": "samsungsds",
    "company_id": "SD",
    "name": "삼성에스디에스",
@@ -1447,6 +1695,30 @@
    "updated_at": "2026-11-13 15:12 KST"
   },
   {
+   "slug": "silicon2",
+   "company_id": "S2",
+   "name": "실리콘투",
+   "name_en": "Silicon2",
+   "stock_code": "257720",
+   "industry": "cosmetics",
+   "categories": [
+    "유통"
+   ],
+   "competitors": [
+    "아모레퍼시픽",
+    "LG생활건강"
+   ],
+   "theme_color": "#111827",
+   "dashboard_path": "dashboard.html?c=silicon2",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
+  },
+  {
    "slug": "skhynix",
    "company_id": "SH",
    "name": "SK하이닉스",
@@ -1481,6 +1753,29 @@
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
    "updated_at": "2026-11-13 15:12 KST"
+  },
+  {
+   "slug": "wontech",
+   "company_id": "WT",
+   "name": "원텍",
+   "name_en": "Wontech",
+   "stock_code": "336570",
+   "industry": "beauty_device",
+   "categories": [
+    "미용 의료기기"
+   ],
+   "competitors": [
+    "클래시스"
+   ],
+   "theme_color": "#0f766e",
+   "dashboard_path": "dashboard.html?c=wontech",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": ""
   },
   {
    "slug": "woorifg",
@@ -1526,6 +1821,44 @@
     "id": "core",
     "type": "core",
     "label": "경영분석 CORE"
+   },
+   {
+    "id": "ind:cosmetics",
+    "type": "industry",
+    "label": "화장품",
+    "color": "#ec4899"
+   },
+   {
+    "id": "co:amorepacific",
+    "type": "company",
+    "label": "아모레퍼시픽",
+    "slug": "amorepacific",
+    "url": "dashboard.html?c=amorepacific"
+   },
+   {
+    "id": "cat:cosmetics:브랜드사",
+    "type": "category",
+    "label": "브랜드사",
+    "industry": "cosmetics"
+   },
+   {
+    "id": "ind:beauty_device",
+    "type": "industry",
+    "label": "미용기기",
+    "color": "#a855f7"
+   },
+   {
+    "id": "co:apr",
+    "type": "company",
+    "label": "에이피알",
+    "slug": "apr",
+    "url": "dashboard.html?c=apr"
+   },
+   {
+    "id": "cat:beauty_device:홈 뷰티 디바이스",
+    "type": "category",
+    "label": "홈 뷰티 디바이스",
+    "industry": "beauty_device"
    },
    {
     "id": "ind:retail",
@@ -1583,6 +1916,32 @@
     "type": "category",
     "label": "지방 금융지주",
     "industry": "bank"
+   },
+   {
+    "id": "co:classys",
+    "type": "company",
+    "label": "클래시스",
+    "slug": "classys",
+    "url": "dashboard.html?c=classys"
+   },
+   {
+    "id": "cat:beauty_device:미용 의료기기",
+    "type": "category",
+    "label": "미용 의료기기",
+    "industry": "beauty_device"
+   },
+   {
+    "id": "co:cosmax",
+    "type": "company",
+    "label": "코스맥스",
+    "slug": "cosmax",
+    "url": "dashboard.html?c=cosmax"
+   },
+   {
+    "id": "cat:cosmetics:ODM",
+    "type": "category",
+    "label": "ODM",
+    "industry": "cosmetics"
    },
    {
     "id": "co:crown",
@@ -1674,6 +2033,45 @@
     "type": "category",
     "label": "자동차부품",
     "industry": "auto"
+   },
+   {
+    "id": "ind:shipbuilding",
+    "type": "industry",
+    "label": "조선",
+    "color": "#0ea5e9"
+   },
+   {
+    "id": "co:hanwhaocean",
+    "type": "company",
+    "label": "한화오션",
+    "slug": "hanwhaocean",
+    "url": "dashboard.html?c=hanwhaocean"
+   },
+   {
+    "id": "cat:shipbuilding:조선소",
+    "type": "category",
+    "label": "조선소",
+    "industry": "shipbuilding"
+   },
+   {
+    "id": "co:hdhhi",
+    "type": "company",
+    "label": "HD현대중공업",
+    "slug": "hdhhi",
+    "url": "dashboard.html?c=hdhhi"
+   },
+   {
+    "id": "co:hdksoe",
+    "type": "company",
+    "label": "HD한국조선해양",
+    "slug": "hdksoe",
+    "url": "dashboard.html?c=hdksoe"
+   },
+   {
+    "id": "cat:shipbuilding:조선 중간지주",
+    "type": "category",
+    "label": "조선 중간지주",
+    "industry": "shipbuilding"
    },
    {
     "id": "co:hlmando",
@@ -1789,6 +2187,13 @@
     "url": "dashboard.html?c=kia"
    },
    {
+    "id": "co:kolmar",
+    "type": "company",
+    "label": "한국콜마",
+    "slug": "kolmar",
+    "url": "dashboard.html?c=kolmar"
+   },
+   {
     "id": "co:krafton",
     "type": "company",
     "label": "크래프톤",
@@ -1826,6 +2231,13 @@
     "type": "category",
     "label": "가전·모바일",
     "industry": "semiconductor"
+   },
+   {
+    "id": "co:lghh",
+    "type": "company",
+    "label": "LG생활건강",
+    "slug": "lghh",
+    "url": "dashboard.html?c=lghh"
    },
    {
     "id": "co:lotteshopping",
@@ -1910,6 +2322,13 @@
     "industry": "semiconductor"
    },
    {
+    "id": "co:samsungheavy",
+    "type": "company",
+    "label": "삼성중공업",
+    "slug": "samsungheavy",
+    "url": "dashboard.html?c=samsungheavy"
+   },
+   {
     "id": "co:samsungsds",
     "type": "company",
     "label": "삼성에스디에스",
@@ -1957,11 +2376,31 @@
     "url": "dashboard.html?c=shinsegae"
    },
    {
+    "id": "co:silicon2",
+    "type": "company",
+    "label": "실리콘투",
+    "slug": "silicon2",
+    "url": "dashboard.html?c=silicon2"
+   },
+   {
+    "id": "cat:cosmetics:유통",
+    "type": "category",
+    "label": "유통",
+    "industry": "cosmetics"
+   },
+   {
     "id": "co:skhynix",
     "type": "company",
     "label": "SK하이닉스",
     "slug": "skhynix",
     "url": "dashboard.html?c=skhynix"
+   },
+   {
+    "id": "co:wontech",
+    "type": "company",
+    "label": "원텍",
+    "slug": "wontech",
+    "url": "dashboard.html?c=wontech"
    },
    {
     "id": "co:woorifg",
@@ -1972,6 +2411,30 @@
    }
   ],
   "links": [
+   {
+    "source": "core",
+    "target": "ind:cosmetics"
+   },
+   {
+    "source": "ind:cosmetics",
+    "target": "cat:cosmetics:브랜드사"
+   },
+   {
+    "source": "cat:cosmetics:브랜드사",
+    "target": "co:amorepacific"
+   },
+   {
+    "source": "core",
+    "target": "ind:beauty_device"
+   },
+   {
+    "source": "ind:beauty_device",
+    "target": "cat:beauty_device:홈 뷰티 디바이스"
+   },
+   {
+    "source": "cat:beauty_device:홈 뷰티 디바이스",
+    "target": "co:apr"
+   },
    {
     "source": "core",
     "target": "ind:retail"
@@ -2007,6 +2470,22 @@
    {
     "source": "cat:bank:지방 금융지주",
     "target": "co:bnkfg"
+   },
+   {
+    "source": "ind:beauty_device",
+    "target": "cat:beauty_device:미용 의료기기"
+   },
+   {
+    "source": "cat:beauty_device:미용 의료기기",
+    "target": "co:classys"
+   },
+   {
+    "source": "ind:cosmetics",
+    "target": "cat:cosmetics:ODM"
+   },
+   {
+    "source": "cat:cosmetics:ODM",
+    "target": "co:cosmax"
    },
    {
     "source": "ind:food",
@@ -2063,6 +2542,30 @@
    {
     "source": "cat:auto:자동차부품",
     "target": "co:hanon"
+   },
+   {
+    "source": "core",
+    "target": "ind:shipbuilding"
+   },
+   {
+    "source": "ind:shipbuilding",
+    "target": "cat:shipbuilding:조선소"
+   },
+   {
+    "source": "cat:shipbuilding:조선소",
+    "target": "co:hanwhaocean"
+   },
+   {
+    "source": "cat:shipbuilding:조선소",
+    "target": "co:hdhhi"
+   },
+   {
+    "source": "ind:shipbuilding",
+    "target": "cat:shipbuilding:조선 중간지주"
+   },
+   {
+    "source": "cat:shipbuilding:조선 중간지주",
+    "target": "co:hdksoe"
    },
    {
     "source": "cat:auto:자동차부품",
@@ -2133,6 +2636,10 @@
     "target": "co:kia"
    },
    {
+    "source": "cat:cosmetics:ODM",
+    "target": "co:kolmar"
+   },
+   {
     "source": "ind:platform",
     "target": "cat:platform:게임"
    },
@@ -2155,6 +2662,10 @@
    {
     "source": "cat:semiconductor:가전·모바일",
     "target": "co:lgelec"
+   },
+   {
+    "source": "cat:cosmetics:브랜드사",
+    "target": "co:lghh"
    },
    {
     "source": "cat:retail:백화점",
@@ -2221,6 +2732,10 @@
     "target": "co:samsungelec"
    },
    {
+    "source": "cat:shipbuilding:조선소",
+    "target": "co:samsungheavy"
+   },
+   {
     "source": "ind:platform",
     "target": "cat:platform:IT서비스"
    },
@@ -2249,8 +2764,20 @@
     "target": "co:shinsegae"
    },
    {
+    "source": "ind:cosmetics",
+    "target": "cat:cosmetics:유통"
+   },
+   {
+    "source": "cat:cosmetics:유통",
+    "target": "co:silicon2"
+   },
+   {
     "source": "cat:semiconductor:메모리 반도체",
     "target": "co:skhynix"
+   },
+   {
+    "source": "cat:beauty_device:미용 의료기기",
+    "target": "co:wontech"
    },
    {
     "source": "cat:bank:시중 금융지주",

@@ -1,0 +1,22 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(apr)이 기업 주소(slug)입니다.",
+  "company_id": "PR",
+  "name": "에이피알",
+  "name_en": "APR",
+  "stock_code": "278470",
+  "yahoo_ticker": "278470.KS",
+  "market_index": "^KS11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "beauty_device",
+  "categories": [
+    "홈 뷰티 디바이스"
+  ],
+  "competitors": [
+    "클래시스",
+    "아모레퍼시픽"
+  ],
+  "theme_color": "#ff3b6b",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=apr",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용."
+}
