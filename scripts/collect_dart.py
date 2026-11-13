@@ -68,7 +68,7 @@ BANK_ACCOUNTS = [
      ("ifrs-full_ImpairmentLossImpairmentGainAndReversalOfImpairmentLossDeterminedInAccordanceWithIFRS9",
       "ifrs-full_AdditionalAllowanceRecognisedInProfitOrLossAllowanceAccountForCreditLossesOfFinancialAssets"), r"^(금융자산)?신용손실.*(전입액|충당금)"),
     ("net_income_owners", "지배주주 순이익", ("IS", "CIS"), ("ifrs-full_ProfitLossAttributableToOwnersOfParent",), r"^지배(기업|주주)(의)?(소유주|주주)?(에게귀속되는)?(당기|분기|반기)?순이익"),
-    ("loans", "대출채권", ("BS",), ("ifrs-full_LoansAndAdvancesToCustomers", "ifrs-full_Loans"), r"^(상각후원가측정)?(원화)?대출(채권|금)(및(수취채권|기타금융자산))?$"),
+    ("loans", "대출채권", ("BS",), ("ifrs-full_LoansAndAdvancesToCustomers", "ifrs-full_Loans", "dart_LoansAtAmortisedCost"), r"^(상각후원가(측정)?)?(원화)?대출(채권|금)(및(수취채권|기타금융자산))?$"),
     ("deposits", "예수부채", ("BS",), ("ifrs-full_Deposits", "ifrs-full_DepositsFromCustomers"), r"^예수부채$"),
 ]
 BANK_FLOW = {"interest_income", "interest_expense", "net_interest_income", "net_fee_income", "general_admin", "credit_loss", "net_income_owners"}

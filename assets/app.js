@@ -285,7 +285,7 @@ const PL_BASE = [['revenue', '매출액'], ['cost_of_sales', '매출원가'], ['
 const PL_BANK = [['interest_income', '이자수익'], ['interest_expense', '이자비용'], ['net_interest_income', '순이자이익'], ['net_fee_income', '순수수료이익'], ['general_admin', '일반관리비'],
   ['credit_loss', '신용손실충당금전입액'], ['operating_profit', '영업이익'], ['net_income', '당기순이익'], ['net_income_owners', '지배주주 순이익']];
 const PLROWS = () => (BANK() ? PL_BANK : PL_BASE);
-const PLKEYS = () => (BANK() ? ['nii_share_pct', 'cir_pct', 'credit_cost_pct'] : ['cost_ratio_pct', 'sga_ratio_pct', 'operating_margin_pct']);
+const PLKEYS = () => (BANK() ? ['nii_share_pct', 'cir_pct'] : ['cost_ratio_pct', 'sga_ratio_pct', 'operating_margin_pct']);  // 대손비용률(1% 안팎)은 축이 달라 재무비율 화면에서
 function finTable(items) {
   const Y = YEARS();
   return `<div class="tbl-wrap"><table class="tbl"><thead><tr><th>항목 (억원)</th>${Y.map((y) => `<th>${y}</th>`).join('')}<th>상태(${Y[Y.length - 1]})</th></tr></thead><tbody>
@@ -295,7 +295,7 @@ function finTable(items) {
 function pagePL() {
   if (!D.fin.length) return noData();
   return `<div class="grid">${card('w6', '연간 손익', '숫자를 누르면 출처·검증 상태가 오른쪽에 표시됩니다', finTable(PLROWS()))}
-    ${card('w6', BANK() ? '수익·비용 구조' : '비용 구조', BANK() ? '% · 순이자이익 비중·CIR은 총영업이익(계산) 대비, 대손비용률은 평균 대출채권 대비' : '매출액 대비 비율 (%) · 막대를 누르면 산식', legend(PLKEYS().map((k, j) => [metRow(YEARS()[YEARS().length - 1], k)?.label || k, COLORS()[[1, 2, 0][j]]])) + '<div class="chart" id="c2"></div>')}</div>`;
+    ${card('w6', BANK() ? '수익·비용 구조' : '비용 구조', BANK() ? '% · 총영업이익(계산) 대비 · 대손비용률은 재무비율 화면' : '매출액 대비 비율 (%) · 막대를 누르면 산식', legend(PLKEYS().map((k, j) => [metRow(YEARS()[YEARS().length - 1], k)?.label || k, COLORS()[[1, 2, 0][j]]])) + '<div class="chart" id="c2"></div>')}</div>`;
 }
 function drawPL() {
   const Y = YEARS(), keys = PLKEYS();
@@ -306,6 +306,7 @@ function drawPL() {
 function pageQuarterly() {
   if (!D.qtr.length) return noData();
   const metrics = [...new Map(D.qtr.map((r) => [r.metric, r.label])).entries()];
+  if (!metrics.some(([m]) => m === S.qmetric)) S.qmetric = (metrics.find(([m]) => m === TOPK()) || metrics[0])[0];  // 은행 등 매출액이 없는 회사
   const periods = [...new Set(D.qtr.map((r) => r.period))].sort();
   const q = (p, m) => D.qtr.find((r) => r.period === p && r.metric === m);
   return `<div class="grid">${card('w6', '분기 실적', '막대: 선택 항목(억원) · 선: 분기 영업이익률(%)', `<div class="seg" style="margin-bottom:8px">${metrics.map(([m, l]) => `<button data-q="${m}" aria-pressed="${S.qmetric === m}">${esc(l)}</button>`).join('')}</div><div class="chart" id="c3"></div>`, 'Q4는 사업보고서 연간 값에서 3분기 누적을 뺀 값이라 연말 결산조정이 함께 들어갑니다.')}

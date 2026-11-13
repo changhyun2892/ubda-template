@@ -174,7 +174,7 @@ def main() -> int:
     if cfg.get("industry") == "bank":  # 은행: 매출 기반 비율 대신 은행 지표 (비용 계정은 회사마다 부호가 달라 금액(절댓값)으로 통일)
         ex = lambda v: None if v is None else abs(v)  # noqa: E731
         toi = lambda c: None if None in (c.get("operating_profit"), c.get("general_admin"), c.get("credit_loss")) else c["operating_profit"] + ex(c["general_admin"]) + ex(c["credit_loss"])  # noqa: E731
-        bank_only = {"debt_ratio_pct", "equity_ratio_pct", "roe_pct", "roa_pct"}
+        bank_only = {"debt_ratio_pct", "equity_ratio_pct", "roe_pct", "roa_pct", "op_growth_pct"}
         DEFS = [d for d in DEFS if d[0] in bank_only] + [
             ("total_operating_income", "총영업이익(계산)", "KRW", "영업이익 + 일반관리비 + 신용손실충당금전입액 (충당금 적립 전·경비 차감 전 이익, 비용은 금액 기준)", lambda c, p: toi(c), ["operating_profit", "general_admin", "credit_loss"]),
             ("nii_share_pct", "순이자이익 비중", "%", "순이자이익 ÷ 총영업이익(계산) × 100", lambda c, p: safe_div(c.get("net_interest_income"), toi(c)), ["net_interest_income", "operating_profit", "general_admin", "credit_loss"]),
