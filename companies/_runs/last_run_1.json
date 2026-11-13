@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-13 09:54:45 KST",
+ "started_at": "2026-11-13 10:13:18 KST",
  "steps": [
   "collect",
   "text",
@@ -10,7 +10,7 @@
  "companies": {
   "binggrae": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.4,
     "result": 0
    },
    "text": {
@@ -18,7 +18,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.6,
+    "sec": 7.4,
     "result": 0
    },
    "build": {
@@ -32,7 +32,7 @@
   },
   "haitai": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.3,
     "result": 0
    },
    "text": {
@@ -40,7 +40,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
@@ -54,33 +54,11 @@
   },
   "hyundai": {
    "collect": {
-    "sec": 38.1,
+    "sec": 1.7,
     "result": 0
    },
    "text": {
-    "sec": 10.2,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.4,
-    "result": 0
-   },
-   "build": {
     "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "lgdisplay": {
-   "collect": {
-    "sec": 33.3,
-    "result": 0
-   },
-   "text": {
-    "sec": 5.8,
     "result": 0
    },
    "stock": {
@@ -96,13 +74,35 @@
     "result": 0
    }
   },
-  "mobis": {
+  "lgdisplay": {
    "collect": {
-    "sec": 40.8,
+    "sec": 1.4,
     "result": 0
    },
    "text": {
-    "sec": 2.6,
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.2,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "mobis": {
+   "collect": {
+    "sec": 1.4,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
@@ -120,15 +120,15 @@
   },
   "samsungelec": {
    "collect": {
-    "sec": 32.8,
+    "sec": 1.3,
     "result": 0
    },
    "text": {
-    "sec": 2.7,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
@@ -142,15 +142,15 @@
   },
   "skhynix": {
    "collect": {
-    "sec": 43.1,
+    "sec": 1.1,
     "result": 0
    },
    "text": {
-    "sec": 2.7,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
-    "sec": 0.4,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
@@ -163,6 +163,6 @@
    }
   }
  },
- "finished_at": "2026-11-13 09:58:22 KST",
+ "finished_at": "2026-11-13 10:13:39 KST",
  "failed": []
 }
