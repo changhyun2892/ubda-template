@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-13 15:43:40 KST",
+ "started_at": "2026-11-13 16:12:20 KST",
  "steps": [
   "collect",
   "text",
@@ -10,11 +10,11 @@
  "companies": {
   "apr": {
    "collect": {
-    "sec": 340.2,
+    "sec": 1.0,
     "result": 0
    },
    "text": {
-    "sec": 32.2,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
@@ -32,11 +32,11 @@
   },
   "classys": {
    "collect": {
-    "sec": 340.8,
+    "sec": 2.4,
     "result": 0
    },
    "text": {
-    "sec": 32.6,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
@@ -53,138 +53,6 @@
    }
   },
   "gsretail": {
-   "collect": {
-    "sec": 1.2,
-    "result": 0
-   },
-   "text": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.2,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "hanon": {
-   "collect": {
-    "sec": 1.4,
-    "result": 0
-   },
-   "text": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.2,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "hlmando": {
-   "collect": {
-    "sec": 1.7,
-    "result": 0
-   },
-   "text": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.2,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "imfg": {
-   "collect": {
-    "sec": 1.3,
-    "result": 0
-   },
-   "text": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.2,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "kbfg": {
-   "collect": {
-    "sec": 1.4,
-    "result": 0
-   },
-   "text": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.2,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "krafton": {
-   "collect": {
-    "sec": 1.1,
-    "result": 0
-   },
-   "text": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.2,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "lotteshopping": {
    "collect": {
     "sec": 1.5,
     "result": 0
@@ -206,7 +74,95 @@
     "result": 0
    }
   },
-  "ncsoft": {
+  "hanon": {
+   "collect": {
+    "sec": 0.8,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.3,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "hlmando": {
+   "collect": {
+    "sec": 1.4,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.2,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "imfg": {
+   "collect": {
+    "sec": 1.0,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.2,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "kbfg": {
+   "collect": {
+    "sec": 2.9,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.2,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "krafton": {
    "collect": {
     "sec": 1.3,
     "result": 0
@@ -228,9 +184,9 @@
     "result": 0
    }
   },
-  "ottogi": {
+  "lotteshopping": {
    "collect": {
-    "sec": 1.2,
+    "sec": 0.9,
     "result": 0
    },
    "text": {
@@ -250,9 +206,53 @@
     "result": 0
    }
   },
-  "samyang": {
+  "ncsoft": {
+   "collect": {
+    "sec": 0.9,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.2,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "ottogi": {
    "collect": {
     "sec": 1.1,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.3,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "samyang": {
+   "collect": {
+    "sec": 0.9,
     "result": 0
    },
    "text": {
@@ -274,15 +274,15 @@
   },
   "silicon2": {
    "collect": {
-    "sec": 338.8,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
-    "sec": 33.4,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
-    "sec": 0.4,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
@@ -295,6 +295,6 @@
    }
   }
  },
- "finished_at": "2026-11-13 16:02:36 KST",
+ "finished_at": "2026-11-13 16:12:44 KST",
  "failed": []
 }
