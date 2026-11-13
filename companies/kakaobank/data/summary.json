@@ -20,17 +20,17 @@
     "revenue": 3086291000000,
     "operating_profit": 649371000000,
     "net_income": 480280000000,
-    "operating_margin_pct": 21.0405,
-    "revenue_growth_pct": 4.7756,
+    "operating_margin_pct": "",
+    "revenue_growth_pct": "",
     "debt_ratio_pct": 1032.0191
   },
   "verification": {
     "원문 대조 일치": 0,
-    "자동 수집 · 원문 대조 전": 75,
+    "자동 수집 · 원문 대조 전": 144,
     "불일치": 0,
-    "미확인": 15
+    "미확인": 21
   },
   "industry_kpis_found": 0,
-  "industry_kpis_total": 6,
-  "updated_at": "2026-11-13 14:02 KST"
+  "industry_kpis_total": 11,
+  "updated_at": "2026-11-13 14:20 KST"
 }

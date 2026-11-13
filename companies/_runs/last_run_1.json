@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-13 13:50:27 KST",
+ "started_at": "2026-11-13 14:18:21 KST",
  "steps": [
   "collect",
   "text",
@@ -10,7 +10,7 @@
  "companies": {
   "binggrae": {
    "collect": {
-    "sec": 1.3,
+    "sec": 1.4,
     "result": 0
    },
    "text": {
@@ -18,7 +18,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.6,
+    "sec": 0.5,
     "result": 0
    },
    "build": {
@@ -32,7 +32,7 @@
   },
   "gsretail": {
    "collect": {
-    "sec": 1.0,
+    "sec": 0.9,
     "result": 0
    },
    "text": {
@@ -54,7 +54,7 @@
   },
   "hanon": {
    "collect": {
-    "sec": 1.2,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -62,7 +62,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.4,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -76,11 +76,11 @@
   },
   "ibk": {
    "collect": {
-    "sec": 409.3,
+    "sec": 68.3,
     "result": 0
    },
    "text": {
-    "sec": 106.8,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
@@ -98,15 +98,15 @@
   },
   "kakaobank": {
    "collect": {
-    "sec": 181.2,
+    "sec": 57.7,
     "result": 0
    },
    "text": {
-    "sec": 21.9,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
-    "sec": 0.5,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -120,7 +120,7 @@
   },
   "krafton": {
    "collect": {
-    "sec": 1.0,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -142,7 +142,7 @@
   },
   "lottewellfood": {
    "collect": {
-    "sec": 1.3,
+    "sec": 0.7,
     "result": 0
    },
    "text": {
@@ -150,7 +150,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -164,7 +164,7 @@
   },
   "netmarble": {
    "collect": {
-    "sec": 1.2,
+    "sec": 0.7,
     "result": 0
    },
    "text": {
@@ -186,7 +186,7 @@
   },
   "samsungelec": {
    "collect": {
-    "sec": 1.1,
+    "sec": 0.9,
     "result": 0
    },
    "text": {
@@ -208,11 +208,11 @@
   },
   "shinhan": {
    "collect": {
-    "sec": 391.5,
+    "sec": 47.4,
     "result": 0
    },
    "text": {
-    "sec": 69.2,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
@@ -229,6 +229,6 @@
    }
   }
  },
- "finished_at": "2026-11-13 14:10:22 KST",
+ "finished_at": "2026-11-13 14:21:25 KST",
  "failed": []
 }

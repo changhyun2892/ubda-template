@@ -1,7 +1,7 @@
 {
- "checked_at": "2026-11-13 14:02 KST",
+ "checked_at": "2026-11-13 14:20 KST",
  "counts": {
-  "통과": 25,
+  "통과": 30,
   "미실행": 4
  },
  "results": [
@@ -52,6 +52,26 @@
   },
   {
    "state": "통과",
+   "name": "2024 credit_loss 분기 합 = 연간",
+   "detail": ""
+  },
+  {
+   "state": "통과",
+   "name": "2024 general_admin 분기 합 = 연간",
+   "detail": ""
+  },
+  {
+   "state": "통과",
+   "name": "2024 interest_expense 분기 합 = 연간",
+   "detail": ""
+  },
+  {
+   "state": "통과",
+   "name": "2024 interest_income 분기 합 = 연간",
+   "detail": ""
+  },
+  {
+   "state": "통과",
    "name": "2024 net_income 분기 합 = 연간",
    "detail": ""
   },
@@ -68,6 +88,26 @@
   {
    "state": "통과",
    "name": "2024 sga 분기 합 = 연간",
+   "detail": ""
+  },
+  {
+   "state": "통과",
+   "name": "2025 credit_loss 분기 합 = 연간",
+   "detail": ""
+  },
+  {
+   "state": "통과",
+   "name": "2025 general_admin 분기 합 = 연간",
+   "detail": ""
+  },
+  {
+   "state": "통과",
+   "name": "2025 interest_expense 분기 합 = 연간",
+   "detail": ""
+  },
+  {
+   "state": "통과",
+   "name": "2025 interest_income 분기 합 = 연간",
    "detail": ""
   },
   {
@@ -92,28 +132,13 @@
   },
   {
    "state": "통과",
-   "name": "2023 영업이익률 재계산",
-   "detail": "CSV 19.1851 / 재계산 19.1851"
-  },
-  {
-   "state": "통과",
    "name": "2023 부채비율 재계산",
    "detail": "CSV 790.6650 / 재계산 790.6650"
   },
   {
    "state": "통과",
-   "name": "2024 영업이익률 재계산",
-   "detail": "CSV 20.6028 / 재계산 20.6028"
-  },
-  {
-   "state": "통과",
    "name": "2024 부채비율 재계산",
    "detail": "CSV 860.3062 / 재계산 860.3062"
-  },
-  {
-   "state": "통과",
-   "name": "2025 영업이익률 재계산",
-   "detail": "CSV 21.0405 / 재계산 21.0405"
   },
   {
    "state": "통과",
