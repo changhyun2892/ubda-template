@@ -6,6 +6,7 @@
 출력  data/subsidiaries.csv — 상호·설립일·주소·주요사업·자산총액(원문 단위 그대로)·국가·좌표·출처
 
 · 국가는 원문 '주소' 칸의 글자로만 정한다(아래 COUNTRIES 표). 못 정하면 '미확인'으로 두고 지도에서 뺀다.
+· 주소 칸이 각주 번호뿐이면(국내 신탁·펀드 등) '주소 미기재'로 두고 나라를 추정하지 않는다. 원문 '-' 한 줄 = 종속회사 없음.
 · 좌표는 국가 대표 위치(지도 표시용)이며 법인 실제 주소의 좌표가 아니다.
 · 값을 새로 만들지 않는다. 표를 못 찾으면 빈 파일(헤더만)을 쓴다.
 """
@@ -46,7 +47,7 @@ COUNTRIES = {
     "카자흐스탄": ("Kazakhstan", 48.0, 66.9, ["카자흐스탄", "KAZAKHSTAN", "ALMATY", "ASTANA", "알마티"]),
     "우즈베키스탄": ("Uzbekistan", 41.4, 64.6, ["우즈베키스탄", "UZBEKISTAN", "TASHKENT", "타슈켄트"]),
     "아랍에미리트": ("United Arab Emirates", 23.4, 53.8, ["아랍에미리트", "UAE", "U.A.E", "UNITED ARAB EMIRATES", "DUBAI", "ABU DHABI", "두바이", "아부다비"]),
-    "사우디아라비아": ("Saudi Arabia", 23.9, 45.1, ["사우디", "SAUDI", "RIYADH", "리야드", "JEDDAH", "DAMMAM"]),
+    "사우디아라비아": ("Saudi Arabia", 23.9, 45.1, ["사우디", "SAUDI", "RIYADH", "리야드", "JEDDAH", "DAMMAM", "KSA", "AL KHOBAR", "KHOBAR"]),
     "카타르": ("Qatar", 25.3, 51.2, ["카타르", "QATAR", "DOHA"]),
     "쿠웨이트": ("Kuwait", 29.3, 47.5, ["쿠웨이트", "KUWAIT"]),
     "오만": ("Oman", 21.5, 55.9, ["오만", "OMAN", "MUSCAT"]),
@@ -54,6 +55,7 @@ COUNTRIES = {
     "튀르키예": ("Turkey", 39.0, 35.2, ["튀르키예", "터키", "TURKEY", "TURKIYE", "TÜRKIYE", "ISTANBUL", "이스탄불", "IZMIT"]),
     "이집트": ("Egypt", 26.8, 30.8, ["이집트", "EGYPT", "CAIRO"]),
     "남아프리카공화국": ("South Africa", -30.6, 22.9, ["남아프리카", "남아공", "SOUTH AFRICA", "JOHANNESBURG"]),
+    "앙골라": ("Angola", -11.2, 17.9, ["앙골라", "ANGOLA", "LUANDA"]),
     "나이지리아": ("Nigeria", 9.1, 8.7, ["나이지리아", "NIGERIA", "LAGOS"]),
     "케냐": ("Kenya", -0.0, 37.9, ["케냐", "KENYA", "NAIROBI"]),
     "모로코": ("Morocco", 31.8, -7.1, ["모로코", "MOROCCO"]),
@@ -70,11 +72,11 @@ COUNTRIES = {
     "스위스": ("Switzerland", 46.8, 8.2, ["스위스", "SWITZERLAND", "ZURICH", "취리히", "GENEVA", "제네바"]),
     "오스트리아": ("Austria", 47.5, 14.6, ["오스트리아", "AUSTRIA", "VIENNA", "WIEN", "비엔나"]),
     "아일랜드": ("Ireland", 53.4, -8.2, ["아일랜드", "IRELAND", "DUBLIN", "더블린"]),
-    "스웨덴": ("Sweden", 60.1, 18.6, ["스웨덴", "SWEDEN", "STOCKHOLM"]),
+    "스웨덴": ("Sweden", 60.1, 18.6, ["스웨덴", "SWEDEN", "STOCKHOLM", "GATAN", "ÅMÅL", "AMAL"]),
     "노르웨이": ("Norway", 60.5, 8.5, ["노르웨이", "NORWAY", "OSLO", "HOKKSUND", "FREDRIKSTAD", "SELLEBAKK"]),
     "덴마크": ("Denmark", 56.3, 9.5, ["덴마크", "DENMARK", "COPENHAGEN"]),
     "핀란드": ("Finland", 61.9, 25.7, ["핀란드", "FINLAND", "HELSINKI"]),
-    "폴란드": ("Poland", 51.9, 19.1, ["폴란드", "POLAND", "WARSAW", "바르샤바", "WROCLAW", "브로츠와프", "브로츠와프"]),
+    "폴란드": ("Poland", 51.9, 19.1, ["폴란드", "POLAND", "WARSAW", "WARSZAWA", "POLSKA", "바르샤바", "WROCLAW", "브로츠와프", "브로츠와프"]),
     "체코": ("Czechia", 49.8, 15.5, ["체코", "CZECH", "PRAGUE", "프라하", "NOSOVICE", "OSTRAVA"]),
     "슬로바키아": ("Slovakia", 48.7, 19.7, ["슬로바키아", "SLOVAKIA", "ZILINA", "질리나", "BRATISLAVA"]),
     "헝가리": ("Hungary", 47.2, 19.5, ["헝가리", "HUNGARY", "BUDAPEST", "부다페스트", "GÖD", "괴드"]),
@@ -139,8 +141,15 @@ _PATTERNS = sorted(((p, k) for k, (_, _, _, ps) in COUNTRIES.items() for p in ps
 US_STATE = re.compile(r"(?:,|\s)\s*(AL|AK|AZ|AR|CA|CO|CT|DE|FL|GA|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|OH|OK|OR|PA|RI|SC|SD|TN|TX|UT|VT|VA|WA|WV|WI|WY)\.?\s*,?\s*\d{5}(-\d{4})?\b")
 
 
+CN_CITY = {"상해", "북경", "천진", "청도", "대련", "심양", "중경", "성도", "무한", "서안", "연태", "위해", "항주", "소주", "무석", "남경", "옌청", "염성"}
+JP_POSTAL = re.compile(r"(?<![\d-])\d{3}-\d{4}(?![\d-])")
+NO_ADDR = re.compile(r"^\s*(-|–|\(?\s*주\s*\d*\s*\)?|\(?\*\d*\)?)?\s*$")  # 주소 칸이 비었거나 각주 번호만 있음
+
+
 def _rx(p: str, k: str):
     if k != "대한민국" and re.fullmatch(r"[가-힣]{2,3}", p):  # '가나'·'오만'·'인도' 같은 짧은 한글 국명은 단어로만 (예: '인도로' 제외)
+        if p in CN_CITY:  # '상해시' 처럼 '시'가 붙는 중국 도시 (하남시·광주시 같은 국내 지명과 겹치는 이름은 제외)
+            return re.compile(r"(?<![가-힣])" + p + r"(?=시|(?![가-힣]))")
         return re.compile(r"(?<![가-힣])" + p + r"(?![가-힣])")
     if re.fullmatch(r"[A-Z.]{2,5}", p):
         return re.compile(r"(?<![A-Z])" + re.escape(p) + r"(?![A-Z])")
@@ -164,6 +173,8 @@ def country_of(addr: str) -> str:
             hit(m, k)
     for m in US_STATE.finditer(a):  # 미국식 '주 약어 + 우편번호'
         hit(m, "미국")
+    if best is None and JP_POSTAL.search(a):  # 다른 단서가 없을 때만: 일본식 우편번호 123-4567 (한국 5자리·미국 5-4자리와 다름)
+        return "일본"
     return best[2] if best else "미확인"
 
 
@@ -210,7 +221,9 @@ def parse(text: str) -> tuple[list[dict], str]:
                         return cells[ix]
             return ""
         name = col("상호", "회사명")
-        if not name or name.replace(" ", "") in ("합계", "계", "소계") or name.startswith("※"):
+        if not name or name.replace(" ", "") in ("합계", "계", "소계", "-", "–", "해당없음", "해당사항없음") or name.startswith("※"):
+            continue  # '-' 한 줄뿐인 표 = 종속회사 없음
+        if re.match(r"제\s*\d+\s*기", name):  # 연결대상 회사 수 변동 표 같은 다른 표의 행
             continue
         rows.append({"name": name, "established": col("설립일"), "address": col("주소", "소재지"), "business": col("주요사업", "업종"),
                      "assets": col("자산총액", "자산"), "assets_unit": "원문 표기 그대로", "major": col("주요종속", "주요")})
@@ -232,17 +245,26 @@ def main() -> int:
     rows, _ = parse(text)
     res = []
     for r in rows:
-        k = country_of(r["address"])
+        if NO_ADDR.match(r["address"]):  # 주소 대신 각주만 있음(주로 국내 신탁·펀드·유동화회사) — 나라를 추정하지 않음
+            k = country_of(r["name"])
+            if k == "미확인":
+                k = "주소 미기재"
+        else:
+            k = country_of(r["address"])
         if k == "미확인":  # 주소에 나라 이름이 없으면 상호(예: '… UK LIMITED', '… (Shanghai) Co.')로 한 번 더
             k = country_of(r["name"])
         en, lat, lng, _ = COUNTRIES.get(k, (None, None, None, None))
         res.append({**r, "country": k, "country_en": en or "", "lat": "" if lat is None else lat, "lng": "" if lng is None else lng,
                     "report": info.get("report_nm", f"{year} 사업보고서"), "source_url": info.get("viewer_url", ""),
                     "source_location": "XII. 상세표 > 1. 연결대상 종속회사 현황(상세)"})
+    if not res and re.search(r"연결대상\s*종속회사\s*현황", text):  # 표는 있는데 '-'뿐 = 종속회사 없음 (미수집과 구분하려고 한 줄 남김)
+        res.append({c: "" for c in COLS} | {"name": "(종속회사 없음)", "country": "종속회사 없음", "report": info.get("report_nm", f"{year} 사업보고서"),
+                                             "source_url": info.get("viewer_url", ""), "source_location": "XII. 상세표 > 1. 연결대상 종속회사 현황(상세) — 원문 '-'"})
     write_csv(out, COLS, res)
     unk = [r for r in res if r["country"] == "미확인"]
-    fr = [r for r in res if r["country"] not in ("대한민국", "미확인")]
-    print(f"종속회사 {len(res)}곳 (해외 {len(fr)} · 국가 미확인 {len(unk)}) → {out.name}  [{now_kst()}]")
+    noad = [r for r in res if r["country"] == "주소 미기재"]
+    fr = [r for r in res if r["country"] not in ("대한민국", "미확인", "주소 미기재", "종속회사 없음")]
+    print(f"종속회사 {len(res)}곳 (해외 {len(fr)} · 국가 미확인 {len(unk)} · 주소 미기재 {len(noad)}) → {out.name}  [{now_kst()}]")
     for r in unk[:5]:
         print(f"  [미확인 주소] {r['name']} — {r['address'][:60]}")
     return 0

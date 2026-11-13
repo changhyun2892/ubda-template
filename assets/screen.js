@@ -323,8 +323,27 @@ function entRows(y) {
   });
   return Object.values(by).sort((a, b) => b.v - a.v || a.k.localeCompare(b.k));
 }
+/* 해외 종속회사가 없는 회사: 같은 칸에 수출·해외 매출 비중을 보여 준다 (산업 KPI region_revenue, 매출과 같은 범위일 때만 비중 계산) */
+function renderExportShare(y) {
+  $('hudRankT').textContent = '수출·해외 매출 비중';
+  const v = EXPORT[y], cons = exportOf(A, y, true), rev = finV(A, y, TOPK());
+  const share = cons != null && rev ? (cons / rev) * 100 : null;
+  const prevC = exportOf(A, y - 1, true), prevR = finV(A, y - 1, TOPK());
+  const pShare = prevC != null && prevR ? (prevC / prevR) * 100 : null;
+  const row = (rk, nm, val, g, gc) => `<div class="rrow"><span class="rk">${rk}</span><span class="nm">${nm}</span><span class="rv num">${val}</span><span class="rg num" style="color:${gc || C.sub}">${g}</span></div>`;
+  let h = '<div style="color:var(--sub);font-size:15px;padding:2px 2px 8px">해외 종속회사 없음 (사업보고서 기준)</div>';
+  if (v == null) h += '<div style="color:var(--sub);font-size:16px;padding:6px 2px">수출·해외 매출 공시 없음 (산업 KPI)</div>';
+  else {
+    h += row('', '수출 매출', fmt(v) + '억', '');
+    if (share != null) h += row('', `${TOPL()} 대비`, share.toFixed(1) + '%', pShare == null ? '–' : (share - pShare >= 0 ? '+' : '') + (share - pShare).toFixed(1) + '%p', pShare == null ? null : share >= pShare ? C.green : C.red);
+    else h += '<div style="color:var(--sub);font-size:14px;padding:4px 2px">매출과 집계 범위가 달라 비중은 계산하지 않음</div>';
+  }
+  $('rankRows').innerHTML = h;
+}
 function renderRank(y, activeK, shown) {
   $('hudRankY').textContent = y;
+  if (!foreign().length) return renderExportShare(y);
+  $('hudRankT').textContent = '국가별 해외 종속회사';
   const rows = entRows(y);
   $('rankRows').innerHTML = rows.slice(0, 8).map((r, i) => {
     const cls = (r.k === activeK ? 'active' : '') + (shown && !shown.has(r.k) ? ' wait' : '');
@@ -606,7 +625,7 @@ function pickPeer(index) {
   $('hudYearS').textContent = `${(A.company.name_en || '').toUpperCase()} · GLOBAL`;
   const sub = A.subs[0];
   $('hudNote').innerHTML = `해외 종속회사: 사업보고서 '연결대상 종속회사 현황' · 설립일 기준 연도별 누적<br>출처: ${esc(name)} ${esc(sub?.report || '사업보고서')}`
-    + (A.subs.length ? '' : '<br><b style="color:var(--orange)">종속회사 표 미수집</b>');
+    + (!A.subs.length ? '<br><b style="color:var(--orange)">종속회사 표 미수집</b>' : A.subs.every((r) => r.country === '종속회사 없음') ? '<br>종속회사 없음 (원문 표 \'-\')' : '');
   const hasExp = Object.values(EXPORT).some((v) => v != null);
   $('expN').textContent = hasExp ? exportScope(A).slice(0, 40) : '산업 KPI에 수출·해외 매출 없음';
   if (!hasExp) { $('hudExport').style.opacity = '.6'; $('hudExport').querySelector('.u').style.display = 'none'; $('expV').style.fontSize = '24px'; }
