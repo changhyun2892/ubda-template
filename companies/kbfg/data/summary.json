@@ -1,0 +1,37 @@
+{
+  "slug": "kbfg",
+  "company_id": "KB",
+  "name": "KB금융",
+  "dashboard_path": "dashboard.html?c=kbfg",
+  "name_en": "KB Financial Group",
+  "stock_code": "105560",
+  "industry": "bank",
+  "industry_name": "은행·금융",
+  "categories": [
+    "시중 금융지주"
+  ],
+  "competitors": [
+    "신한지주",
+    "하나금융지주",
+    "우리금융지주"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=kbfg",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": null,
+    "operating_profit": 8517711000000,
+    "net_income": 5840715000000,
+    "operating_margin_pct": "",
+    "revenue_growth_pct": "",
+    "debt_ratio_pct": 1211.7264
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 45,
+    "불일치": 0,
+    "미확인": 21
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 6,
+  "updated_at": "2026-11-13 13:53 KST"
+}

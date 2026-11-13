@@ -1,0 +1,36 @@
+{
+  "slug": "imfg",
+  "company_id": "IM",
+  "name": "iM금융지주",
+  "dashboard_path": "dashboard.html?c=imfg",
+  "name_en": "iM Financial Group",
+  "stock_code": "139130",
+  "industry": "bank",
+  "industry_name": "은행·금융",
+  "categories": [
+    "지방 금융지주"
+  ],
+  "competitors": [
+    "BNK금융지주",
+    "JB금융지주"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=imfg",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": null,
+    "operating_profit": 583241000000,
+    "net_income": 457486000000,
+    "operating_margin_pct": "",
+    "revenue_growth_pct": "",
+    "debt_ratio_pct": 1435.875
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 45,
+    "불일치": 0,
+    "미확인": 21
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 6,
+  "updated_at": "2026-11-13 13:52 KST"
+}
