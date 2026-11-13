@@ -1,0 +1,36 @@
+{
+  "slug": "kgm",
+  "company_id": "KG",
+  "name": "KG모빌리티",
+  "dashboard_path": "dashboard.html?c=kgm",
+  "name_en": "KG Mobility",
+  "stock_code": "003620",
+  "industry": "auto",
+  "industry_name": "자동차",
+  "categories": [
+    "완성차"
+  ],
+  "competitors": [
+    "현대차",
+    "기아"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=kgm",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 4303636808271,
+    "operating_profit": 36155571131,
+    "net_income": 46571489864,
+    "operating_margin_pct": 0.8401,
+    "revenue_growth_pct": 10.2064,
+    "debt_ratio_pct": 126.9513
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 126,
+    "불일치": 0,
+    "미확인": 0
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 7,
+  "updated_at": "2026-11-13 10:00 KST"
+}

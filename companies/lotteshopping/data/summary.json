@@ -1,0 +1,38 @@
+{
+  "slug": "lotteshopping",
+  "company_id": "LS",
+  "name": "롯데쇼핑",
+  "dashboard_path": "dashboard.html?c=lotteshopping",
+  "name_en": "Lotte Shopping",
+  "stock_code": "023530",
+  "industry": "retail",
+  "industry_name": "유통",
+  "categories": [
+    "백화점",
+    "대형마트"
+  ],
+  "competitors": [
+    "신세계",
+    "현대백화점",
+    "이마트"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=lotteshopping",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 13738354725833,
+    "operating_profit": 547037221095,
+    "net_income": 73555557525,
+    "operating_margin_pct": 3.9818,
+    "revenue_growth_pct": -1.7747,
+    "debt_ratio_pct": 124.7709
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 126,
+    "불일치": 0,
+    "미확인": 0
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 6,
+  "updated_at": "2026-11-13 10:06 KST"
+}

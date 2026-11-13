@@ -1,0 +1,150 @@
+{
+ "started_at": "2026-11-13 09:54:44 KST",
+ "steps": [
+  "collect",
+  "text",
+  "stock",
+  "build",
+  "verify"
+ ],
+ "companies": {
+  "emart": {
+   "collect": {
+    "sec": 1.1,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.6,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "hanon": {
+   "collect": {
+    "sec": 1.2,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.3,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 1
+   }
+  },
+  "kgm": {
+   "collect": {
+    "sec": 291.9,
+    "result": 0
+   },
+   "text": {
+    "sec": 31.6,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.4,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "lotteshopping": {
+   "collect": {
+    "sec": 340.6,
+    "result": 0
+   },
+   "text": {
+    "sec": 52.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.4,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 1
+   }
+  },
+  "orion": {
+   "collect": {
+    "sec": 1.0,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.3,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "semco": {
+   "collect": {
+    "sec": 300.4,
+    "result": 0
+   },
+   "text": {
+    "sec": 33.7,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.3,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 1
+   }
+  }
+ },
+ "finished_at": "2026-11-13 10:12:21 KST",
+ "failed": [
+  "hanon:verify",
+  "lotteshopping:verify",
+  "semco:verify"
+ ]
+}
