@@ -1,0 +1,35 @@
+{
+  "slug": "naver",
+  "company_id": "NV",
+  "name": "NAVER",
+  "dashboard_path": "dashboard.html?c=naver",
+  "name_en": "NAVER",
+  "stock_code": "035420",
+  "industry": "platform",
+  "industry_name": "IT·플랫폼",
+  "categories": [
+    "포털·플랫폼"
+  ],
+  "competitors": [
+    "카카오"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=naver",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 12035007218975,
+    "operating_profit": 2208138388720,
+    "net_income": 1818746310015,
+    "operating_margin_pct": 18.3476,
+    "revenue_growth_pct": 12.0816,
+    "debt_ratio_pct": 41.9006
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 108,
+    "불일치": 0,
+    "미확인": 4
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 9,
+  "updated_at": "2026-11-13 12:44 KST"
+}

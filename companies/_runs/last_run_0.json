@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-13 10:53:26 KST",
+ "started_at": "2026-11-13 12:39:05 KST",
  "steps": [
   "collect",
   "text",
@@ -10,7 +10,7 @@
  "companies": {
   "bgfretail": {
    "collect": {
-    "sec": 1.4,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
@@ -18,7 +18,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.7,
+    "sec": 0.6,
     "result": 0
    },
    "build": {
@@ -74,13 +74,57 @@
     "result": 0
    }
   },
-  "kia": {
+  "kgm": {
    "collect": {
-    "sec": 1.1,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
     "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.3,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "lgelec": {
+   "collect": {
+    "sec": 1.2,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.3,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "naver": {
+   "collect": {
+    "sec": 295.8,
+    "result": 0
+   },
+   "text": {
+    "sec": 46.4,
     "result": 0
    },
    "stock": {
@@ -93,32 +137,10 @@
    },
    "verify": {
     "sec": 0.1,
-    "result": 0
+    "result": 1
    }
   },
-  "lottewellfood": {
-   "collect": {
-    "sec": 1.6,
-    "result": 0
-   },
-   "text": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.5,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "ottogi": {
+  "orion": {
    "collect": {
     "sec": 1.0,
     "result": 0
@@ -140,7 +162,7 @@
     "result": 0
    }
   },
-  "shinsegae": {
+  "samyang": {
    "collect": {
     "sec": 1.0,
     "result": 0
@@ -163,8 +185,9 @@
    }
   }
  },
- "finished_at": "2026-11-13 10:53:38 KST",
+ "finished_at": "2026-11-13 12:44:59 KST",
  "failed": [
-  "gsretail:verify"
+  "gsretail:verify",
+  "naver:verify"
  ]
 }
