@@ -1,23 +1,21 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-13 17:36 KST",
+    "checked_at": "2026-11-13 17:59 KST",
     "corp_code": "01205329",
     "reports_total": 17,
-    "new_reports": [
-      "분기보고서 (2026.09) (20261113) — 반영 (14/14개 계정 · OFS)"
-    ],
+    "new_reports": [],
     "errors": []
   },
   "business_text": {
     "status": "성공",
-    "checked_at": "2026-11-12 15:14 KST",
+    "checked_at": "2026-11-13 17:59 KST",
     "report": "사업보고서 (2025.12)",
     "chars": 18834
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-13 17:36 KST",
+    "checked_at": "2026-11-13 17:59 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 6900,
