@@ -1,7 +1,7 @@
 {
- "checked_at": "2026-11-13 12:56 KST",
+ "checked_at": "2026-11-13 13:18 KST",
  "counts": {
-  "통과": 36,
+  "통과": 33,
   "미실행": 5
  },
  "results": [
@@ -62,11 +62,6 @@
   },
   {
    "state": "통과",
-   "name": "2023 cost_of_sales 분기 합 = 연간",
-   "detail": ""
-  },
-  {
-   "state": "통과",
    "name": "2023 net_income 분기 합 = 연간",
    "detail": ""
   },
@@ -82,11 +77,6 @@
   },
   {
    "state": "통과",
-   "name": "2024 cost_of_sales 분기 합 = 연간",
-   "detail": ""
-  },
-  {
-   "state": "통과",
    "name": "2024 net_income 분기 합 = 연간",
    "detail": ""
   },
@@ -98,11 +88,6 @@
   {
    "state": "통과",
    "name": "2024 revenue 분기 합 = 연간",
-   "detail": ""
-  },
-  {
-   "state": "통과",
-   "name": "2025 cost_of_sales 분기 합 = 연간",
    "detail": ""
   },
   {

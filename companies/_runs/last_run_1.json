@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-13 12:56:31 KST",
+ "started_at": "2026-11-13 13:18:07 KST",
  "steps": [
   "collect",
   "text",
@@ -10,7 +10,7 @@
  "companies": {
   "binggrae": {
    "collect": {
-    "sec": 0.9,
+    "sec": 1.5,
     "result": 0
    },
    "text": {
@@ -18,7 +18,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.4,
     "result": 0
    },
    "build": {
@@ -32,7 +32,7 @@
   },
   "haitai": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.4,
     "result": 0
    },
    "text": {
@@ -54,7 +54,7 @@
   },
   "hyundai": {
    "collect": {
-    "sec": 0.9,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
@@ -62,7 +62,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.7,
     "result": 0
    },
    "build": {
@@ -76,7 +76,7 @@
   },
   "kia": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
@@ -98,7 +98,7 @@
   },
   "lotteshopping": {
    "collect": {
-    "sec": 0.9,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
@@ -120,7 +120,7 @@
   },
   "ncsoft": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.1,
     "result": 0
    },
    "text": {
@@ -128,7 +128,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -142,7 +142,7 @@
   },
   "ottogi": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.3,
     "result": 0
    },
    "text": {
@@ -150,7 +150,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -164,7 +164,7 @@
   },
   "semco": {
    "collect": {
-    "sec": 0.9,
+    "sec": 1.1,
     "result": 0
    },
    "text": {
@@ -172,7 +172,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -185,7 +185,7 @@
    }
   }
  },
- "finished_at": "2026-11-13 12:56:41 KST",
+ "finished_at": "2026-11-13 13:18:23 KST",
  "failed": [
   "lotteshopping:verify",
   "semco:verify"

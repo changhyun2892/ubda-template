@@ -1,5 +1,5 @@
 group,key,label,status,result,where,caution
-공통 재무,annual_financials,연간 재무제표 (DART),자동 수집 · 원문 대조 전,4개 연도 · 원문 대조 0 · 자동 51 · 불일치 0 · 계정 없음 5,OpenDART 단일회사 전체 재무제표 API,자동값은 사업보고서 원문 대조 전입니다. 대조 결과는 data/manual/audit_overrides.csv에 기록
+공통 재무,annual_financials,연간 재무제표 (DART),자동 수집 · 원문 대조 전,4개 연도 · 원문 대조 0 · 자동 47 · 불일치 0 · 계정 없음 5,OpenDART 단일회사 전체 재무제표 API,자동값은 사업보고서 원문 대조 전입니다. 대조 결과는 data/manual/audit_overrides.csv에 기록
 공통 재무,quarterly,분기 단일 실적,자동 수집 · 원문 대조 전,14개 분기,1분기·반기·3분기·사업보고서,Q4는 연간 − 3분기 누적이라 결산조정이 섞입니다
 IT·플랫폼,segment_revenue,사업부문별 매출,미공개,1행 · 2025,사업보고서 II. 매출실적 / 연결주석 부문정보,"광고·커머스·콘텐츠·게임 등, 내부거래 제거 행 포함"
 IT·플랫폼,segment_operating_profit,사업부문별 영업이익,미공개,1행 · 2025,연결주석 부문정보 / 사업의 내용,부문 이익 합계와 연결 영업이익 차이(조정) 표시
