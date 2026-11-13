@@ -18,5 +18,5 @@
   ],
   "theme_color": "#005bac",
   "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=hanmisemi",
-  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용."
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용. 매출−원가−판관비≠영업이익 경고는 판관비와 별도 줄로 표시되는 연구개발비(2025 193.96억) 때문(사업보고서 연구개발비용 표의 판관비 처리분과 일치)."
 }
