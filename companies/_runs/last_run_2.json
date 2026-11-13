@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-13 09:54:48 KST",
+ "started_at": "2026-11-13 10:13:31 KST",
  "steps": [
   "collect",
   "text",
@@ -10,95 +10,7 @@
  "companies": {
   "crown": {
    "collect": {
-    "sec": 2.8,
-    "result": 0
-   },
-   "text": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.6,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "hanmisemi": {
-   "collect": {
-    "sec": 1.2,
-    "result": 0
-   },
-   "text": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.4,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "hyundaidept": {
-   "collect": {
-    "sec": 310.6,
-    "result": 0
-   },
-   "text": {
-    "sec": 42.8,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.5,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "lgelec": {
-   "collect": {
-    "sec": 312.6,
-    "result": 0
-   },
-   "text": {
-    "sec": 54.3,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.4,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "nongshim": {
-   "collect": {
-    "sec": 1.1,
+    "sec": 2.9,
     "result": 0
    },
    "text": {
@@ -118,9 +30,9 @@
     "result": 0
    }
   },
-  "samyang": {
+  "hanmisemi": {
    "collect": {
-    "sec": 1.0,
+    "sec": 0.7,
     "result": 0
    },
    "text": {
@@ -128,7 +40,95 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.4,
+    "sec": 0.2,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "hyundaidept": {
+   "collect": {
+    "sec": 0.8,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.2,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "lgelec": {
+   "collect": {
+    "sec": 0.8,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.2,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "nongshim": {
+   "collect": {
+    "sec": 0.8,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.2,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "samyang": {
+   "collect": {
+    "sec": 0.7,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.2,
     "result": 0
    },
    "build": {
@@ -141,6 +141,6 @@
    }
   }
  },
- "finished_at": "2026-11-13 10:06:58 KST",
+ "finished_at": "2026-11-13 10:13:40 KST",
  "failed": []
 }
