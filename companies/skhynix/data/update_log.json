@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-13 10:53 KST",
+    "checked_at": "2026-11-13 12:55 KST",
     "corp_code": "00164779",
     "reports_total": 15,
     "new_reports": [],
@@ -15,10 +15,10 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-13 10:53 KST",
+    "checked_at": "2026-11-13 12:55 KST",
     "rows": 942,
     "last_date": "2026-11-13",
-    "last_close": 1284000,
+    "last_close": 1242000,
     "source": "Yahoo Finance 000660.KS 일봉 (비수정 종가)",
     "index": "^KS11"
   }

@@ -1,10 +1,12 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-13 10:53 KST",
+    "checked_at": "2026-11-13 12:48 KST",
     "corp_code": "00108241",
-    "reports_total": 15,
-    "new_reports": [],
+    "reports_total": 16,
+    "new_reports": [
+      "분기보고서 (2026.09) (20261113) — 반영 (14/14개 계정 · CFS)"
+    ],
     "errors": []
   },
   "business_text": {
@@ -15,10 +17,10 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-13 10:53 KST",
+    "checked_at": "2026-11-13 12:48 KST",
     "rows": 942,
     "last_date": "2026-11-13",
-    "last_close": 382000,
+    "last_close": 366500,
     "source": "Yahoo Finance 004370.KS 일봉 (비수정 종가)",
     "index": "^KS11"
   }

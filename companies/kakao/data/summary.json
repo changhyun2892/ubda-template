@@ -1,0 +1,35 @@
+{
+  "slug": "kakao",
+  "company_id": "KK",
+  "name": "카카오",
+  "dashboard_path": "dashboard.html?c=kakao",
+  "name_en": "Kakao",
+  "stock_code": "035720",
+  "industry": "platform",
+  "industry_name": "IT·플랫폼",
+  "categories": [
+    "포털·플랫폼"
+  ],
+  "competitors": [
+    "NAVER"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=kakao",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 8099147815086,
+    "operating_profit": 732036535379,
+    "net_income": 517959587282,
+    "operating_margin_pct": 9.0384,
+    "revenue_growth_pct": 2.8895,
+    "debt_ratio_pct": 82.4871
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 112,
+    "불일치": 0,
+    "미확인": 3
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 9,
+  "updated_at": "2026-11-13 12:48 KST"
+}

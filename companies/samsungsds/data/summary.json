@@ -1,0 +1,36 @@
+{
+  "slug": "samsungsds",
+  "company_id": "SD",
+  "name": "삼성에스디에스",
+  "dashboard_path": "dashboard.html?c=samsungsds",
+  "name_en": "Samsung SDS",
+  "stock_code": "018260",
+  "industry": "platform",
+  "industry_name": "IT·플랫폼",
+  "categories": [
+    "IT서비스"
+  ],
+  "competitors": [
+    "NAVER",
+    "카카오"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=samsungsds",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 13929868497711,
+    "operating_profit": 957102744609,
+    "net_income": 782669219514,
+    "operating_margin_pct": 6.8709,
+    "revenue_growth_pct": 0.735,
+    "debt_ratio_pct": 31.0907
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 126,
+    "불일치": 0,
+    "미확인": 0
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 9,
+  "updated_at": "2026-11-13 12:55 KST"
+}
