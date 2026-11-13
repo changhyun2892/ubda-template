@@ -1,0 +1,23 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(jusung)이 기업 주소(slug)입니다.",
+  "company_id": "JS",
+  "name": "주성엔지니어링",
+  "name_en": "Jusung Engineering",
+  "stock_code": "036930",
+  "yahoo_ticker": "036930.KQ",
+  "market_index": "^KQ11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "semiconductor",
+  "categories": [
+    "반도체 장비",
+    "디스플레이·태양광 장비"
+  ],
+  "competitors": [
+    "한미반도체",
+    "원익IPS"
+  ],
+  "theme_color": "#0055a5",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=jusung",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용. 증착(ALD·CVD) 전공정 장비 · 코스닥 상장."
+}
