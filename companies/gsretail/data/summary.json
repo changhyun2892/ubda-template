@@ -1,0 +1,35 @@
+{
+  "slug": "gsretail",
+  "company_id": "GS",
+  "name": "GS리테일",
+  "dashboard_path": "dashboard.html?c=gsretail",
+  "name_en": "GS Retail",
+  "stock_code": "007070",
+  "industry": "retail",
+  "industry_name": "유통",
+  "categories": [
+    "편의점"
+  ],
+  "competitors": [
+    "BGF리테일"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=gsretail",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 11957421688837,
+    "operating_profit": 292119604403,
+    "net_income": 50239032621,
+    "operating_margin_pct": 2.443,
+    "revenue_growth_pct": 2.8426,
+    "debt_ratio_pct": 128.4152
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 126,
+    "불일치": 0,
+    "미확인": 0
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 6,
+  "updated_at": "2026-11-13 09:38 KST"
+}

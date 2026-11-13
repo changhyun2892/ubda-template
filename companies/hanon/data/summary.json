@@ -1,0 +1,36 @@
+{
+  "slug": "hanon",
+  "company_id": "HN",
+  "name": "한온시스템",
+  "dashboard_path": "dashboard.html?c=hanon",
+  "name_en": "Hanon Systems",
+  "stock_code": "018880",
+  "industry": "auto",
+  "industry_name": "자동차",
+  "categories": [
+    "자동차부품"
+  ],
+  "competitors": [
+    "현대모비스",
+    "HL만도"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=hanon",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 10883728406019,
+    "operating_profit": 270371633168,
+    "net_income": -197268294891,
+    "operating_margin_pct": 2.4842,
+    "revenue_growth_pct": 8.8512,
+    "debt_ratio_pct": 168.1395
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 131,
+    "불일치": 0,
+    "미확인": 0
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 7,
+  "updated_at": "2026-11-13 09:51 KST"
+}

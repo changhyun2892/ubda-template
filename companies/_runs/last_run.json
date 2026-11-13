@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-12 17:39:43 KST",
+ "started_at": "2026-11-13 09:16:47 KST",
  "steps": [
   "collect",
   "text",
@@ -8,13 +8,13 @@
   "verify"
  ],
  "companies": {
-  "binggrae": {
+  "bgfretail": {
    "collect": {
-    "sec": 0.8,
+    "sec": 364.1,
     "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 36.8,
     "result": 0
    },
    "stock": {
@@ -30,9 +30,9 @@
     "result": 0
    }
   },
-  "crown": {
+  "binggrae": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
@@ -40,7 +40,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.4,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
@@ -50,11 +50,77 @@
    "verify": {
     "sec": 0.1,
     "result": 0
+   }
+  },
+  "crown": {
+   "collect": {
+    "sec": 1.1,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.3,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "emart": {
+   "collect": {
+    "sec": 376.1,
+    "result": 0
+   },
+   "text": {
+    "sec": 60.6,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.2,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "gsretail": {
+   "collect": {
+    "sec": 378.3,
+    "result": 0
+   },
+   "text": {
+    "sec": 61.5,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.3,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 1
    }
   },
   "haitai": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.6,
     "result": 0
    },
    "text": {
@@ -74,35 +140,13 @@
     "result": 0
    }
   },
-  "lottewellfood": {
+  "hanmisemi": {
    "collect": {
-    "sec": 2.4,
+    "sec": 354.0,
     "result": 0
    },
    "text": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.3,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "nongshim": {
-   "collect": {
-    "sec": 0.7,
-    "result": 0
-   },
-   "text": {
-    "sec": 0.1,
+    "sec": 29.1,
     "result": 0
    },
    "stock": {
@@ -118,17 +162,17 @@
     "result": 0
    }
   },
-  "orion": {
+  "hanon": {
    "collect": {
-    "sec": 0.7,
+    "sec": 385.2,
     "result": 0
    },
    "text": {
-    "sec": 0.1,
+    "sec": 46.2,
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.4,
     "result": 0
    },
    "build": {
@@ -137,54 +181,8 @@
    },
    "verify": {
     "sec": 0.1,
-    "result": 0
-   }
-  },
-  "ottogi": {
-   "collect": {
-    "sec": 0.7,
-    "result": 0
-   },
-   "text": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.3,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "samyang": {
-   "collect": {
-    "sec": 0.7,
-    "result": 0
-   },
-   "text": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.3,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
+    "result": 1
    }
   }
- },
- "finished_at": "2026-11-12 17:39:55 KST",
- "failed": []
+ }
 }

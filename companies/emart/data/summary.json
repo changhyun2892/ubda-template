@@ -1,0 +1,36 @@
+{
+  "slug": "emart",
+  "company_id": "EM",
+  "name": "이마트",
+  "dashboard_path": "dashboard.html?c=emart",
+  "name_en": "E-MART",
+  "stock_code": "139480",
+  "industry": "retail",
+  "industry_name": "유통",
+  "categories": [
+    "대형마트"
+  ],
+  "competitors": [
+    "롯데쇼핑",
+    "BGF리테일"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=emart",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 28970388263858,
+    "operating_profit": 322541170250,
+    "net_income": 246338918347,
+    "operating_margin_pct": 1.1133,
+    "revenue_growth_pct": -0.174,
+    "debt_ratio_pct": 144.6071
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 125,
+    "불일치": 0,
+    "미확인": 1
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 6,
+  "updated_at": "2026-11-13 09:30 KST"
+}
