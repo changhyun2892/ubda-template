@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-13 13:44:58 KST",
+ "started_at": "2026-11-13 13:50:26 KST",
  "steps": [
   "collect",
   "text",
@@ -10,7 +10,7 @@
  "companies": {
   "bgfretail": {
    "collect": {
-    "sec": 1.0,
+    "sec": 1.5,
     "result": 0
    },
    "text": {
@@ -30,9 +30,9 @@
     "result": 0
    }
   },
-  "gsretail": {
+  "emart": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.1,
     "result": 0
    },
    "text": {
@@ -52,9 +52,9 @@
     "result": 0
    }
   },
-  "hlmando": {
+  "hanmisemi": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
@@ -74,51 +74,7 @@
     "result": 0
    }
   },
-  "kgm": {
-   "collect": {
-    "sec": 0.8,
-    "result": 0
-   },
-   "text": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.2,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "lgelec": {
-   "collect": {
-    "sec": 0.8,
-    "result": 0
-   },
-   "text": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.2,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "naver": {
+  "hyundaidept": {
    "collect": {
     "sec": 1.0,
     "result": 0
@@ -140,9 +96,9 @@
     "result": 0
    }
   },
-  "orion": {
+  "kakao": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
@@ -162,9 +118,9 @@
     "result": 0
    }
   },
-  "samyang": {
+  "kia": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.1,
     "result": 0
    },
    "text": {
@@ -183,8 +139,118 @@
     "sec": 0.1,
     "result": 0
    }
+  },
+  "lotteshopping": {
+   "collect": {
+    "sec": 1.1,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.2,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "ncsoft": {
+   "collect": {
+    "sec": 1.1,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.2,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "ottogi": {
+   "collect": {
+    "sec": 1.3,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.3,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "semco": {
+   "collect": {
+    "sec": 1.0,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.2,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "woorifg": {
+   "collect": {
+    "sec": 386.5,
+    "result": 0
+   },
+   "text": {
+    "sec": 82.6,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.3,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
   }
  },
- "finished_at": "2026-11-13 13:45:09 KST",
+ "finished_at": "2026-11-13 13:58:31 KST",
  "failed": []
 }

@@ -1,0 +1,37 @@
+{
+  "slug": "woorifg",
+  "company_id": "WR",
+  "name": "우리금융지주",
+  "dashboard_path": "dashboard.html?c=woorifg",
+  "name_en": "Woori Financial Group",
+  "stock_code": "316140",
+  "industry": "bank",
+  "industry_name": "은행·금융",
+  "categories": [
+    "시중 금융지주"
+  ],
+  "competitors": [
+    "KB금융",
+    "신한지주",
+    "하나금융지주"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=woorifg",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": null,
+    "operating_profit": 3674808000000,
+    "net_income": 3227508000000,
+    "operating_margin_pct": "",
+    "revenue_growth_pct": "",
+    "debt_ratio_pct": 1488.6668
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 48,
+    "불일치": 0,
+    "미확인": 18
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 6,
+  "updated_at": "2026-11-13 13:58 KST"
+}
