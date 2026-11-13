@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-13 16:12:28 KST",
+ "started_at": "2026-11-13 16:20:53 KST",
  "steps": [
   "collect",
   "text",
@@ -10,11 +10,11 @@
  "companies": {
   "amorepacific": {
    "collect": {
-    "sec": 96.8,
+    "sec": 1.7,
     "result": 0
    },
    "text": {
-    "sec": 8.3,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
@@ -32,7 +32,7 @@
   },
   "bnkfg": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.9,
     "result": 0
    },
    "text": {
@@ -54,7 +54,7 @@
   },
   "emart": {
    "collect": {
-    "sec": 1.0,
+    "sec": 1.3,
     "result": 0
    },
    "text": {
@@ -76,7 +76,7 @@
   },
   "hanmisemi": {
    "collect": {
-    "sec": 1.7,
+    "sec": 2.2,
     "result": 0
    },
    "text": {
@@ -98,11 +98,11 @@
   },
   "hdksoe": {
    "collect": {
-    "sec": 87.9,
+    "sec": 1.3,
     "result": 0
    },
    "text": {
-    "sec": 10.7,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
@@ -120,7 +120,7 @@
   },
   "ibk": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.4,
     "result": 0
    },
    "text": {
@@ -142,7 +142,7 @@
   },
   "kakaobank": {
    "collect": {
-    "sec": 2.9,
+    "sec": 4.5,
     "result": 0
    },
    "text": {
@@ -164,11 +164,11 @@
   },
   "kolmar": {
    "collect": {
-    "sec": 110.8,
+    "sec": 1.5,
     "result": 0
    },
    "text": {
-    "sec": 3.7,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
@@ -186,11 +186,11 @@
   },
   "lghh": {
    "collect": {
-    "sec": 99.6,
+    "sec": 1.3,
     "result": 0
    },
    "text": {
-    "sec": 2.8,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
@@ -208,7 +208,7 @@
   },
   "naver": {
    "collect": {
-    "sec": 2.2,
+    "sec": 3.3,
     "result": 0
    },
    "text": {
@@ -230,7 +230,7 @@
   },
   "orion": {
    "collect": {
-    "sec": 1.1,
+    "sec": 2.4,
     "result": 0
    },
    "text": {
@@ -252,7 +252,7 @@
   },
   "samsungsds": {
    "collect": {
-    "sec": 1.5,
+    "sec": 1.3,
     "result": 0
    },
    "text": {
@@ -274,7 +274,7 @@
   },
   "shinsegae": {
    "collect": {
-    "sec": 1.0,
+    "sec": 2.2,
     "result": 0
    },
    "text": {
@@ -296,7 +296,7 @@
   },
   "woorifg": {
    "collect": {
-    "sec": 1.8,
+    "sec": 1.4,
     "result": 0
    },
    "text": {
@@ -317,6 +317,6 @@
    }
   }
  },
- "finished_at": "2026-11-13 16:19:48 KST",
+ "finished_at": "2026-11-13 16:21:28 KST",
  "failed": []
 }
