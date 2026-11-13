@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-13 10:53:25 KST",
+ "started_at": "2026-11-13 12:39:05 KST",
  "steps": [
   "collect",
   "text",
@@ -10,7 +10,7 @@
  "companies": {
   "binggrae": {
    "collect": {
-    "sec": 1.5,
+    "sec": 4.6,
     "result": 0
    },
    "text": {
@@ -32,7 +32,7 @@
   },
   "haitai": {
    "collect": {
-    "sec": 1.3,
+    "sec": 1.5,
     "result": 0
    },
    "text": {
@@ -54,29 +54,7 @@
   },
   "hyundai": {
    "collect": {
-    "sec": 1.2,
-    "result": 0
-   },
-   "text": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.3,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "lgdisplay": {
-   "collect": {
-    "sec": 1.2,
+    "sec": 1.4,
     "result": 0
    },
    "text": {
@@ -96,7 +74,7 @@
     "result": 0
    }
   },
-  "mobis": {
+  "kia": {
    "collect": {
     "sec": 1.4,
     "result": 0
@@ -106,7 +84,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
@@ -118,9 +96,9 @@
     "result": 0
    }
   },
-  "samsungelec": {
+  "lotteshopping": {
    "collect": {
-    "sec": 1.2,
+    "sec": 1.3,
     "result": 0
    },
    "text": {
@@ -137,12 +115,34 @@
    },
    "verify": {
     "sec": 0.1,
+    "result": 1
+   }
+  },
+  "ncsoft": {
+   "collect": {
+    "sec": 408.2,
+    "result": 0
+   },
+   "text": {
+    "sec": 37.3,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.3,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
     "result": 0
    }
   },
-  "skhynix": {
+  "ottogi": {
    "collect": {
-    "sec": 2.4,
+    "sec": 1.1,
     "result": 0
    },
    "text": {
@@ -161,8 +161,33 @@
     "sec": 0.1,
     "result": 0
    }
+  },
+  "semco": {
+   "collect": {
+    "sec": 1.4,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.2,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 1
+   }
   }
  },
- "finished_at": "2026-11-13 10:53:38 KST",
- "failed": []
+ "finished_at": "2026-11-13 12:46:47 KST",
+ "failed": [
+  "lotteshopping:verify",
+  "semco:verify"
+ ]
 }

@@ -1,0 +1,36 @@
+{
+  "slug": "ncsoft",
+  "company_id": "NC",
+  "name": "엔씨소프트",
+  "dashboard_path": "dashboard.html?c=ncsoft",
+  "name_en": "NCSOFT",
+  "stock_code": "036570",
+  "industry": "platform",
+  "industry_name": "IT·플랫폼",
+  "categories": [
+    "게임"
+  ],
+  "competitors": [
+    "크래프톤",
+    "넷마블"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=ncsoft",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 1506925065850,
+    "operating_profit": 16078426029,
+    "net_income": 347421554268,
+    "operating_margin_pct": 1.067,
+    "revenue_growth_pct": -4.5116,
+    "debt_ratio_pct": 28.5634
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 107,
+    "불일치": 0,
+    "미확인": 5
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 9,
+  "updated_at": "2026-11-13 12:46 KST"
+}
