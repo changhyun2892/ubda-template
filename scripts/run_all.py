@@ -5,6 +5,7 @@
     python scripts/run_all.py                    모든 기업: 수집 → 사업보고서 본문 → 주가 → 계산 → 점검 → 기업 목록
     python scripts/run_all.py --only ottogi      한 기업만
     python scripts/run_all.py --steps build,verify   수집 없이 계산·점검만 (인터넷 없이 가능)
+    python scripts/run_all.py --shard 0/4        기업을 4묶음으로 나눈 것 중 0번째만 (GitHub에서 동시 실행용)
 
 companies/ 아래에 company.json이 있는 폴더를 모두 기업으로 봅니다.
 company.json에 "enabled": false 를 넣으면 건너뜁니다.
@@ -32,6 +33,7 @@ def arg(name: str, default: str | None = None) -> str | None:
 def main() -> int:
     steps = (arg("--steps") or "collect,text,stock,build,verify").split(",")
     only = arg("--only")
+    shard = arg("--shard")  # "i/n": 기업 목록을 n묶음으로 나눠 i번째만 처리 (DART가 느릴 때 동시 실행)
     slugs = []
     for p in sorted((ROOT / "companies").glob("*/company.json")):
         cfg = json.loads(p.read_text(encoding="utf-8"))
@@ -41,11 +43,14 @@ def main() -> int:
         if only and p.parent.name != only:
             continue
         slugs.append(p.parent.name)
+    if shard:
+        i, n = (int(x) for x in shard.split("/"))
+        slugs = [s for k, s in enumerate(slugs) if k % n == i]
     if not slugs:
         print("처리할 기업이 없습니다.")
         return 1
     failed, log = [], {"started_at": datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d %H:%M:%S KST"), "steps": steps, "companies": {}}
-    out = ROOT / "companies" / "_runs" / "last_run.json"
+    out = ROOT / "companies" / "_runs" / (f"last_run_{shard.split('/')[0]}.json" if shard else "last_run.json")
     out.parent.mkdir(parents=True, exist_ok=True)
     for slug in slugs:
         print(f"\n===== {slug} =====", flush=True)
@@ -67,7 +72,8 @@ def main() -> int:
                 if st == "collect" and code != "시간 초과":
                     print(f"[오류] {slug} 수집 실패 — 이 기업의 다음 단계는 건너뜀", file=sys.stderr)
                     break
-    subprocess.run([sys.executable, str(ROOT / "scripts" / "build_index.py")], cwd=ROOT, check=False)
+    if not shard:  # 나눠 돌릴 때는 모든 묶음이 끝난 뒤 기업 목록을 한 번만 만든다
+        subprocess.run([sys.executable, str(ROOT / "scripts" / "build_index.py")], cwd=ROOT, check=False)
     log["finished_at"] = datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d %H:%M:%S KST")
     log["failed"] = failed
     out.write_text(json.dumps(log, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
