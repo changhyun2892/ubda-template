@@ -28,6 +28,9 @@ START = re.compile(r"<TITLE[^>]*>\s*I{2}\.\s*사업의\s*내용\s*</TITLE>", re.
 END = re.compile(r"<TITLE[^>]*>\s*I{3}\.\s*재무에\s*관한\s*사항\s*</TITLE>", re.I)
 # 'I. 회사의 개요' 장 (연결대상 종속회사 개황 표 → 해외법인 지도에 사용)
 OV_START = re.compile(r"<TITLE[^>]*>\s*I\.\s*회사의\s*개요\s*</TITLE>", re.I)
+# 'XII. 상세표 > 1. 연결대상 종속회사 현황(상세)' — 법인별 상호·설립일·주소·주요사업 (요약표만 있는 I장 대신 이 표를 씀)
+SUB_START = re.compile(r"<TITLE[^>]*>[^<]*연결대상\s*종속회사\s*현황\s*\(\s*상세\s*\)[^<]*</TITLE>", re.I)
+NEXT_TITLE = re.compile(r"<TITLE\b", re.I)
 
 
 def xml_to_text(x: str) -> str:
@@ -63,7 +66,7 @@ def main() -> int:
     m = json.loads(meta.read_text(encoding="utf-8")) if meta.exists() else {}
     mm = m.get(rep["bsns_year"], {})
     same = mm.get("rcept_no") == rep["rcept_no"] or mm.get("fallback_for") == rep["rcept_no"]  # 최신본 원본이 없어 이전 제출본을 이미 쓴 경우 포함
-    if out.exists() and same and (ov_out.exists() or "overview_chars" in mm):  # 개요 장이 없던 보고서는 다시 받지 않음
+    if out.exists() and same and "detail_chars" in mm:  # 개요 장이 없던 보고서는 다시 받지 않음
         print(f"이미 저장됨: {out.name} ({rep['report_nm']})")
         return 0
     if not key:
@@ -86,7 +89,7 @@ def main() -> int:
             print("[안내] 최신 제출본 원본파일이 없어 이전 제출본을 사용: " + rep["report_nm"])
         # 본문은 보통 '<접수번호>.xml' (첨부·감사보고서는 '_00760' 같은 꼬리가 붙음)
         names = sorted(z.namelist(), key=lambda n: (n != f"{rep['rcept_no']}.xml", len(n)))
-        txt, ov = "", ""
+        txt, ov, detail = "", "", ""
         for n in names:
             raw = z.read(n)
             for enc in ("utf-8", "euc-kr", "cp949"):
@@ -101,6 +104,10 @@ def main() -> int:
                 o = OV_START.search(x)
                 if o and o.start() < s.start():
                     ov = xml_to_text(x[o.start(): s.start()])
+                d = SUB_START.search(x)
+                if d:
+                    nx = NEXT_TITLE.search(x, d.end())
+                    detail = xml_to_text(x[d.start(): nx.start() if nx else len(x)])
                 break
         if not txt:
             raise DartError("'II. 사업의 내용' 장을 찾지 못했습니다")
@@ -112,12 +119,12 @@ def main() -> int:
             f"# 접수번호 {rep['rcept_no']} · 접수일 {rep['rcept_dt']} · 원문 {rep['viewer_url']}\n"
             f"# OpenDART document.xml에서 자동 추출 ({now}). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.\n\n")
     out.write_text(head + txt + "\n", encoding="utf-8")
-    if ov:
-        ov_out.write_text(head.replace("II. 사업의 내용", "I. 회사의 개요") + ov + "\n", encoding="utf-8")
+    if ov or detail:
+        ov_out.write_text(head.replace("II. 사업의 내용", "I. 회사의 개요 + 상세표-1 연결대상 종속회사 현황(상세)") + ov + "\n\n" + detail + "\n", encoding="utf-8")
     else:
         print("[안내] 'I. 회사의 개요' 장을 찾지 못해 종속회사 표는 저장하지 않았습니다")
     m[rep["bsns_year"]] = {"fallback_for": ordered[0]["rcept_no"]} if rep is not ordered[0] else {}
-    m[rep["bsns_year"]].update({"rcept_no": rep["rcept_no"], "report_nm": rep["report_nm"], "viewer_url": rep["viewer_url"], "saved_at": now, "chars": len(txt), "overview_chars": len(ov)})
+    m[rep["bsns_year"]].update({"rcept_no": rep["rcept_no"], "report_nm": rep["report_nm"], "viewer_url": rep["viewer_url"], "saved_at": now, "chars": len(txt), "overview_chars": len(ov), "detail_chars": len(detail)})
     meta.write_text(json.dumps(m, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     write_log("business_text", {"status": "성공", "checked_at": now, "report": rep["report_nm"], "chars": len(txt)})
     print(f"저장: {out.name} ({len(txt):,}자)")
