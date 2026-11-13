@@ -1,0 +1,36 @@
+{
+  "slug": "apr",
+  "company_id": "PR",
+  "name": "에이피알",
+  "dashboard_path": "dashboard.html?c=apr",
+  "name_en": "APR",
+  "stock_code": "278470",
+  "industry": "beauty_device",
+  "industry_name": "미용기기",
+  "categories": [
+    "홈 뷰티 디바이스"
+  ],
+  "competitors": [
+    "클래시스",
+    "아모레퍼시픽"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=apr",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 1527344973381,
+    "operating_profit": 365520628934,
+    "net_income": 289654813287,
+    "operating_margin_pct": 23.9318,
+    "revenue_growth_pct": 111.323,
+    "debt_ratio_pct": 73.113
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 122,
+    "불일치": 0,
+    "미확인": 4
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 8,
+  "updated_at": "2026-11-13 15:49 KST"
+}

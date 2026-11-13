@@ -1,0 +1,36 @@
+{
+  "slug": "silicon2",
+  "company_id": "S2",
+  "name": "실리콘투",
+  "dashboard_path": "dashboard.html?c=silicon2",
+  "name_en": "Silicon2",
+  "stock_code": "257720",
+  "industry": "cosmetics",
+  "industry_name": "화장품",
+  "categories": [
+    "유통"
+  ],
+  "competitors": [
+    "아모레퍼시픽",
+    "LG생활건강"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=silicon2",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 1116287364104,
+    "operating_profit": 205361951857,
+    "net_income": 168584659656,
+    "operating_margin_pct": 18.3969,
+    "revenue_growth_pct": 61.4246,
+    "debt_ratio_pct": 55.0944
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 131,
+    "불일치": 0,
+    "미확인": 0
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 9,
+  "updated_at": "2026-11-13 16:02 KST"
+}
