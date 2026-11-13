@@ -40,6 +40,12 @@
    "caution": "수량 단위 표시"
   },
   {
+   "key": "production_volume",
+   "label": "생산 실적",
+   "where": "사업보고서 II. 생산실적",
+   "caution": "대수·개수·금액 구분"
+  },
+  {
    "key": "raw_material_prices",
    "label": "주요 원재료 가격",
    "where": "사업보고서 II. 원재료",
