@@ -1,0 +1,37 @@
+{
+  "slug": "jusung",
+  "company_id": "JS",
+  "name": "주성엔지니어링",
+  "dashboard_path": "dashboard.html?c=jusung",
+  "name_en": "Jusung Engineering",
+  "stock_code": "036930",
+  "industry": "semiconductor",
+  "industry_name": "반도체·전자",
+  "categories": [
+    "반도체 장비",
+    "디스플레이·태양광 장비"
+  ],
+  "competitors": [
+    "한미반도체",
+    "원익IPS"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=jusung",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 310692584812,
+    "operating_profit": 31257811742,
+    "net_income": 35693416702,
+    "operating_margin_pct": 10.0607,
+    "revenue_growth_pct": -24.109,
+    "debt_ratio_pct": 50.374
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 127,
+    "불일치": 0,
+    "미확인": 4
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 10,
+  "updated_at": "2026-11-13 20:16 KST"
+}
