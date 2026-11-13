@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-13 18:14:39 KST",
+ "started_at": "2026-11-13 18:41:29 KST",
  "steps": [
   "collect",
   "text",
@@ -14,15 +14,15 @@
     "result": 0
    },
    "text": {
-    "sec": 2.5,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
-    "sec": 0.6,
+    "sec": 0.5,
     "result": 0
    },
    "build": {
-    "sec": 0.1,
+    "sec": 0.3,
     "result": 0
    },
    "verify": {
@@ -32,11 +32,11 @@
   },
   "cosmax": {
    "collect": {
-    "sec": 2.3,
+    "sec": 2.7,
     "result": 0
    },
    "text": {
-    "sec": 2.7,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
@@ -44,7 +44,7 @@
     "result": 0
    },
    "build": {
-    "sec": 0.1,
+    "sec": 0.3,
     "result": 0
    },
    "verify": {
@@ -54,19 +54,19 @@
   },
   "haitai": {
    "collect": {
-    "sec": 4.7,
+    "sec": 2.2,
     "result": 0
    },
    "text": {
-    "sec": 3.2,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
-    "sec": 0.4,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
-    "sec": 0.1,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -76,41 +76,19 @@
   },
   "hanwhaocean": {
    "collect": {
-    "sec": 1.5,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
-    "sec": 2.9,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
-    "sec": 0.4,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "hyundai": {
-   "collect": {
-    "sec": 1.4,
-    "result": 0
-   },
-   "text": {
-    "sec": 3.1,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.4,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -124,7 +102,15 @@
     "result": 0
    },
    "text": {
-    "sec": 5.3,
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.3,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.3,
     "result": 0
    },
    "verify": {
@@ -134,11 +120,11 @@
   },
   "jbfg": {
    "collect": {
-    "sec": 1.4,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
-    "sec": 59.4,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
@@ -146,7 +132,7 @@
     "result": 0
    },
    "build": {
-    "sec": 0.1,
+    "sec": 0.3,
     "result": 0
    },
    "verify": {
@@ -156,11 +142,11 @@
   },
   "kgm": {
    "collect": {
-    "sec": 1.4,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
-    "sec": 2.5,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
@@ -168,7 +154,7 @@
     "result": 0
    },
    "build": {
-    "sec": 0.1,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -178,19 +164,19 @@
   },
   "lgdisplay": {
    "collect": {
-    "sec": 1.0,
+    "sec": 0.9,
     "result": 0
    },
    "text": {
-    "sec": 3.3,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
-    "sec": 0.4,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
-    "sec": 0.1,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -200,11 +186,11 @@
   },
   "lottewellfood": {
    "collect": {
-    "sec": 4.1,
+    "sec": 0.9,
     "result": 0
    },
    "text": {
-    "sec": 9.0,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
@@ -212,7 +198,7 @@
     "result": 0
    },
    "build": {
-    "sec": 0.1,
+    "sec": 0.3,
     "result": 0
    },
    "verify": {
@@ -222,19 +208,19 @@
   },
   "netmarble": {
    "collect": {
-    "sec": 3.4,
+    "sec": 0.7,
     "result": 0
    },
    "text": {
-    "sec": 3.5,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
-    "sec": 0.4,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
-    "sec": 0.1,
+    "sec": 0.3,
     "result": 0
    },
    "verify": {
@@ -244,11 +230,11 @@
   },
   "samsungelec": {
    "collect": {
-    "sec": 1.4,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
-    "sec": 4.1,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
@@ -256,7 +242,7 @@
     "result": 0
    },
    "build": {
-    "sec": 0.1,
+    "sec": 0.4,
     "result": 0
    },
    "verify": {
@@ -266,11 +252,11 @@
   },
   "semco": {
    "collect": {
-    "sec": 1.0,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
-    "sec": 5.8,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
@@ -278,7 +264,7 @@
     "result": 0
    },
    "build": {
-    "sec": 0.1,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -288,11 +274,11 @@
   },
   "skhynix": {
    "collect": {
-    "sec": 1.0,
+    "sec": 0.9,
     "result": 0
    },
    "text": {
-    "sec": 14.8,
+    "sec": 0.1,
     "result": 0
    },
    "stock": {
@@ -300,7 +286,7 @@
     "result": 0
    },
    "build": {
-    "sec": 0.1,
+    "sec": 0.3,
     "result": 0
    },
    "verify": {
@@ -309,6 +295,6 @@
    }
   }
  },
- "finished_at": "2026-11-13 18:16:13 KST",
+ "finished_at": "2026-11-13 18:41:52 KST",
  "failed": []
 }
