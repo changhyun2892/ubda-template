@@ -7,7 +7,7 @@ HF,2023,current_assets,유동자산,,KRW,연결,20240516001695,https://dart.fss.
 HF,2023,current_liabilities,유동부채,,KRW,연결,20240516001695,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240516001695,,F-2023-current_liabilities,미확인
 HF,2023,deposits,예수부채,371866240000000,KRW,연결,20240516001695,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240516001695,예수부채,F-2023-deposits,자동 수집 · 원문 대조 전
 HF,2023,general_admin,일반관리비,4408272000000,KRW,연결,20240516001695,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240516001695,일반관리비,F-2023-general_admin,자동 수집 · 원문 대조 전
-HF,2023,interest_expense,이자비용,-14396495000000,KRW,연결,20240516001695,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240516001695,이자비용,F-2023-interest_expense,자동 수집 · 원문 대조 전
+HF,2023,interest_expense,이자비용,14396495000000,KRW,연결,20240516001695,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240516001695,이자비용,F-2023-interest_expense,자동 수집 · 원문 대조 전
 HF,2023,interest_income,이자수익,23275944000000,KRW,연결,20240516001695,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240516001695,이자수익,F-2023-interest_income,자동 수집 · 원문 대조 전
 HF,2023,inventories,재고자산,,KRW,연결,20240516001695,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240516001695,,F-2023-inventories,미확인
 HF,2023,loans,대출채권,381410658000000,KRW,연결,20240516001695,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240516001695,상각후원가측정 대출채권,F-2023-loans,자동 수집 · 원문 대조 전

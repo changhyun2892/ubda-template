@@ -2,12 +2,12 @@ company_id,year,metric,label,value,unit,scope,source_id,source_url,account_nm,au
 JB,2023,capex,유형자산의 취득 (지출액),376042000000,KRW,연결,20240507000432,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240507000432,유형자산의 취득,F-2023-capex,자동 수집 · 원문 대조 전
 JB,2023,cash,현금및현금성자산,,KRW,연결,20240507000432,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240507000432,,F-2023-cash,미확인
 JB,2023,cost_of_sales,매출원가,,KRW,연결,20240507000432,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240507000432,,F-2023-cost_of_sales,미확인
-JB,2023,credit_loss,신용손실충당금전입액,-442457000000,KRW,연결,20240507000432,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240507000432,신용손실충당금 전입액,F-2023-credit_loss,자동 수집 · 원문 대조 전
+JB,2023,credit_loss,신용손실충당금전입액,442457000000,KRW,연결,20240507000432,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240507000432,신용손실충당금 전입액,F-2023-credit_loss,자동 수집 · 원문 대조 전
 JB,2023,current_assets,유동자산,,KRW,연결,20240507000432,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240507000432,,F-2023-current_assets,미확인
 JB,2023,current_liabilities,유동부채,,KRW,연결,20240507000432,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240507000432,,F-2023-current_liabilities,미확인
 JB,2023,deposits,예수부채,42958124000000,KRW,연결,20240507000432,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240507000432,예수부채,F-2023-deposits,자동 수집 · 원문 대조 전
-JB,2023,general_admin,일반관리비,-772275000000,KRW,연결,20240507000432,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240507000432,판매비와관리비,F-2023-general_admin,자동 수집 · 원문 대조 전
-JB,2023,interest_expense,이자비용,-1489335000000,KRW,연결,20240507000432,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240507000432,이자비용,F-2023-interest_expense,자동 수집 · 원문 대조 전
+JB,2023,general_admin,일반관리비,772275000000,KRW,연결,20240507000432,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240507000432,판매비와관리비,F-2023-general_admin,자동 수집 · 원문 대조 전
+JB,2023,interest_expense,이자비용,1489335000000,KRW,연결,20240507000432,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240507000432,이자비용,F-2023-interest_expense,자동 수집 · 원문 대조 전
 JB,2023,interest_income,이자수익,3395912000000,KRW,연결,20240507000432,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240507000432,이자수익,F-2023-interest_income,자동 수집 · 원문 대조 전
 JB,2023,inventories,재고자산,,KRW,연결,20240507000432,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240507000432,,F-2023-inventories,미확인
 JB,2023,loans,대출채권,49266405000000,KRW,연결,20240507000432,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240507000432,상각후원가측정대출채권,F-2023-loans,자동 수집 · 원문 대조 전
@@ -52,8 +52,8 @@ JB,2025,credit_loss,신용손실충당금전입액,478979000000,KRW,연결,20260
 JB,2025,current_assets,유동자산,,KRW,연결,20260318001225,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001225,,F-2025-current_assets,미확인
 JB,2025,current_liabilities,유동부채,,KRW,연결,20260318001225,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001225,,F-2025-current_liabilities,미확인
 JB,2025,deposits,예수부채,47779704000000,KRW,연결,20260318001225,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001225,예수부채,F-2025-deposits,자동 수집 · 원문 대조 전
-JB,2025,general_admin,일반관리비,-908189000000,KRW,연결,20260318001225,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001225,판매비및일반관리비 총계,F-2025-general_admin,자동 수집 · 원문 대조 전
-JB,2025,interest_expense,이자비용,-1526918000000,KRW,연결,20260318001225,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001225,이자비용,F-2025-interest_expense,자동 수집 · 원문 대조 전
+JB,2025,general_admin,일반관리비,908189000000,KRW,연결,20260318001225,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001225,판매비및일반관리비 총계,F-2025-general_admin,자동 수집 · 원문 대조 전
+JB,2025,interest_expense,이자비용,1526918000000,KRW,연결,20260318001225,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001225,이자비용,F-2025-interest_expense,자동 수집 · 원문 대조 전
 JB,2025,interest_income,이자수익,3571850000000,KRW,연결,20260318001225,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001225,이자수익,F-2025-interest_income,자동 수집 · 원문 대조 전
 JB,2025,inventories,재고자산,,KRW,연결,20260318001225,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001225,,F-2025-inventories,미확인
 JB,2025,loans,대출채권,56458629000000,KRW,연결,20260318001225,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001225,상각후원가측정대출채권,F-2025-loans,자동 수집 · 원문 대조 전
