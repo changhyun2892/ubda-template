@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-13 16:21:04 KST",
+ "started_at": "2026-11-13 17:36:30 KST",
  "steps": [
   "collect",
   "text",
@@ -10,7 +10,7 @@
  "companies": {
   "binggrae": {
    "collect": {
-    "sec": 2.7,
+    "sec": 1.5,
     "result": 0
    },
    "text": {
@@ -18,7 +18,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.4,
     "result": 0
    },
    "build": {
@@ -32,7 +32,7 @@
   },
   "crown": {
    "collect": {
-    "sec": 0.9,
+    "sec": 6.3,
     "result": 0
    },
    "text": {
@@ -76,7 +76,7 @@
   },
   "hdhhi": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
@@ -98,7 +98,7 @@
   },
   "hyundaidept": {
    "collect": {
-    "sec": 0.9,
+    "sec": 1.5,
     "result": 0
    },
    "text": {
@@ -120,7 +120,7 @@
   },
   "kakao": {
    "collect": {
-    "sec": 0.9,
+    "sec": 3.6,
     "result": 0
    },
    "text": {
@@ -142,7 +142,7 @@
   },
   "kia": {
    "collect": {
-    "sec": 1.4,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
@@ -164,7 +164,7 @@
   },
   "lgelec": {
    "collect": {
-    "sec": 1.2,
+    "sec": 1.6,
     "result": 0
    },
    "text": {
@@ -186,7 +186,7 @@
   },
   "mobis": {
    "collect": {
-    "sec": 1.3,
+    "sec": 1.4,
     "result": 0
    },
    "text": {
@@ -208,7 +208,7 @@
   },
   "nongshim": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
@@ -216,7 +216,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -230,7 +230,7 @@
   },
   "samsungheavy": {
    "collect": {
-    "sec": 0.9,
+    "sec": 1.4,
     "result": 0
    },
    "text": {
@@ -252,7 +252,7 @@
   },
   "shinhan": {
    "collect": {
-    "sec": 1.1,
+    "sec": 1.4,
     "result": 0
    },
    "text": {
@@ -260,7 +260,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -274,7 +274,7 @@
   },
   "wontech": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.5,
     "result": 0
    },
    "text": {
@@ -295,6 +295,6 @@
    }
   }
  },
- "finished_at": "2026-11-13 16:21:24 KST",
+ "finished_at": "2026-11-13 17:37:02 KST",
  "failed": []
 }
