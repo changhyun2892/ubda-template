@@ -8,7 +8,7 @@ year,metric,label,value,unit,formula,input_audit_ids,note
 2023,cir_pct,"영업이익경비율(CIR, 계산)",45.1689,%,일반관리비 ÷ 총영업이익(계산) × 100 · 회사 공시 CIR과 산식이 다를 수 있음,F-2023-general_admin;F-2023-operating_profit;F-2023-credit_loss,
 2023,credit_cost_pct,대손비용률(계산),,%,신용손실충당금전입액 ÷ 평균 대출채권 × 100 (평균 = (기초+기말)÷2),F-2023-credit_loss;F-2023-loans;F-2022-credit_loss;F-2022-loans,전기 자료 없음 → 계산 불가
 2023,nii_to_assets_pct,순이자이익/평균총자산(NIM 대용),,%,순이자이익 ÷ 평균 자산총계 × 100 · 공시 NIM(이자수익자산 기준)이 아님,F-2023-net_interest_income;F-2023-total_assets;F-2022-net_interest_income;F-2022-total_assets,전기 자료 없음 → 계산 불가
-2023,loan_deposit_pct,단순 예대율(계산),,%,대출채권 ÷ 예수부채 × 100 · 규제 예대율(원화예대율) 산식이 아님,F-2023-loans;F-2023-deposits,
+2023,loan_deposit_pct,단순 예대율(계산),104.2942,%,대출채권 ÷ 예수부채 × 100 · 규제 예대율(원화예대율) 산식이 아님,F-2023-loans;F-2023-deposits,
 2023,nii_growth_pct,순이자이익 증가율,,%,(당기 순이자이익 ÷ 전기 순이자이익 − 1) × 100,F-2023-net_interest_income;F-2022-net_interest_income,전기 자료 없음 → 계산 불가
 2023,ni_growth_pct,순이익 증가율,,%,(당기 순이익 ÷ 전기 순이익 − 1) × 100 · 전기 적자면 비교 불가,F-2023-net_income;F-2022-net_income,전기 자료 없음 → 계산 불가
 2024,debt_ratio_pct,부채비율,1364.6869,%,부채총계 ÷ 자본총계 × 100,F-2024-total_liabilities;F-2024-total_equity,
@@ -20,7 +20,7 @@ year,metric,label,value,unit,formula,input_audit_ids,note
 2024,cir_pct,"영업이익경비율(CIR, 계산)",,%,일반관리비 ÷ 총영업이익(계산) × 100 · 회사 공시 CIR과 산식이 다를 수 있음,F-2024-general_admin;F-2024-operating_profit;F-2024-credit_loss,
 2024,credit_cost_pct,대손비용률(계산),,%,신용손실충당금전입액 ÷ 평균 대출채권 × 100 (평균 = (기초+기말)÷2),F-2024-credit_loss;F-2024-loans;F-2023-credit_loss;F-2023-loans,
 2024,nii_to_assets_pct,순이자이익/평균총자산(NIM 대용),1.736,%,순이자이익 ÷ 평균 자산총계 × 100 · 공시 NIM(이자수익자산 기준)이 아님,F-2024-net_interest_income;F-2024-total_assets;F-2023-net_interest_income;F-2023-total_assets,
-2024,loan_deposit_pct,단순 예대율(계산),,%,대출채권 ÷ 예수부채 × 100 · 규제 예대율(원화예대율) 산식이 아님,F-2024-loans;F-2024-deposits,
+2024,loan_deposit_pct,단순 예대율(계산),108.6284,%,대출채권 ÷ 예수부채 × 100 · 규제 예대율(원화예대율) 산식이 아님,F-2024-loans;F-2024-deposits,
 2024,nii_growth_pct,순이자이익 증가율,1.6448,%,(당기 순이자이익 ÷ 전기 순이자이익 − 1) × 100,F-2024-net_interest_income;F-2023-net_interest_income,
 2024,ni_growth_pct,순이익 증가율,20.7308,%,(당기 순이익 ÷ 전기 순이익 − 1) × 100 · 전기 적자면 비교 불가,F-2024-net_income;F-2023-net_income,
 2025,debt_ratio_pct,부채비율,1488.6668,%,부채총계 ÷ 자본총계 × 100,F-2025-total_liabilities;F-2025-total_equity,
@@ -30,8 +30,8 @@ year,metric,label,value,unit,formula,input_audit_ids,note
 2025,total_operating_income,총영업이익(계산),10957243000000,KRW,"영업이익 + 일반관리비 + 신용손실충당금전입액 (충당금 적립 전·경비 차감 전 이익, 비용은 금액 기준)",F-2025-operating_profit;F-2025-general_admin;F-2025-credit_loss,
 2025,nii_share_pct,순이자이익 비중,82.4183,%,순이자이익 ÷ 총영업이익(계산) × 100,F-2025-net_interest_income;F-2025-operating_profit;F-2025-general_admin;F-2025-credit_loss,
 2025,cir_pct,"영업이익경비율(CIR, 계산)",47.2712,%,일반관리비 ÷ 총영업이익(계산) × 100 · 회사 공시 CIR과 산식이 다를 수 있음,F-2025-general_admin;F-2025-operating_profit;F-2025-credit_loss,
-2025,credit_cost_pct,대손비용률(계산),,%,신용손실충당금전입액 ÷ 평균 대출채권 × 100 (평균 = (기초+기말)÷2),F-2025-credit_loss;F-2025-loans;F-2024-credit_loss;F-2024-loans,
+2025,credit_cost_pct,대손비용률(계산),0.5186,%,신용손실충당금전입액 ÷ 평균 대출채권 × 100 (평균 = (기초+기말)÷2),F-2025-credit_loss;F-2025-loans;F-2024-credit_loss;F-2024-loans,
 2025,nii_to_assets_pct,순이자이익/평균총자산(NIM 대용),1.6023,%,순이자이익 ÷ 평균 자산총계 × 100 · 공시 NIM(이자수익자산 기준)이 아님,F-2025-net_interest_income;F-2025-total_assets;F-2024-net_interest_income;F-2024-total_assets,
-2025,loan_deposit_pct,단순 예대율(계산),,%,대출채권 ÷ 예수부채 × 100 · 규제 예대율(원화예대율) 산식이 아님,F-2025-loans;F-2025-deposits,
+2025,loan_deposit_pct,단순 예대율(계산),109.5371,%,대출채권 ÷ 예수부채 × 100 · 규제 예대율(원화예대율) 산식이 아님,F-2025-loans;F-2025-deposits,
 2025,nii_growth_pct,순이자이익 증가율,1.6253,%,(당기 순이자이익 ÷ 전기 순이자이익 − 1) × 100,F-2025-net_interest_income;F-2024-net_interest_income,
 2025,ni_growth_pct,순이익 증가율,1.767,%,(당기 순이익 ÷ 전기 순이익 − 1) × 100 · 전기 적자면 비교 불가,F-2025-net_income;F-2024-net_income,

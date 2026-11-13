@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-13 14:18:21 KST",
+ "started_at": "2026-11-13 14:49:04 KST",
  "steps": [
   "collect",
   "text",
@@ -10,7 +10,7 @@
  "companies": {
   "bgfretail": {
    "collect": {
-    "sec": 1.5,
+    "sec": 1.1,
     "result": 0
    },
    "text": {
@@ -62,7 +62,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -76,7 +76,7 @@
   },
   "hyundaidept": {
    "collect": {
-    "sec": 0.8,
+    "sec": 0.9,
     "result": 0
    },
    "text": {
@@ -128,7 +128,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -142,7 +142,7 @@
   },
   "lotteshopping": {
    "collect": {
-    "sec": 1.0,
+    "sec": 0.9,
     "result": 0
    },
    "text": {
@@ -164,7 +164,7 @@
   },
   "ncsoft": {
    "collect": {
-    "sec": 1.0,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -194,7 +194,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "build": {
@@ -216,7 +216,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "build": {
@@ -230,7 +230,7 @@
   },
   "woorifg": {
    "collect": {
-    "sec": 45.0,
+    "sec": 40.6,
     "result": 0
    },
    "text": {
@@ -251,6 +251,6 @@
    }
   }
  },
- "finished_at": "2026-11-13 14:19:21 KST",
+ "finished_at": "2026-11-13 14:50:00 KST",
  "failed": []
 }

@@ -27,11 +27,11 @@
   },
   "verification": {
     "원문 대조 일치": 0,
-    "자동 수집 · 원문 대조 전": 154,
+    "자동 수집 · 원문 대조 전": 157,
     "불일치": 0,
-    "미확인": 22
+    "미확인": 19
   },
-  "industry_kpis_found": 0,
+  "industry_kpis_found": 5,
   "industry_kpis_total": 11,
-  "updated_at": "2026-11-13 14:19 KST"
+  "updated_at": "2026-11-13 14:50 KST"
 }
