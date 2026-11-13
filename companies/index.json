@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-13 19:59 KST",
+ "updated_at": "2026-11-13 20:17 KST",
  "industries": {
   "auto": {
    "name": "자동차",
@@ -72,7 +72,7 @@
    },
    "industry_kpis_found": 9,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "apr",
@@ -108,7 +108,7 @@
    },
    "industry_kpis_found": 2,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "bgfretail",
@@ -143,7 +143,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "binggrae",
@@ -179,7 +179,7 @@
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "bnkfg",
@@ -215,7 +215,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "classys",
@@ -250,7 +250,7 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "cosmax",
@@ -279,13 +279,13 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "자동 수집 · 원문 대조 전": 126,
+    "자동 수집 · 원문 대조 전": 131,
     "불일치": 0,
     "미확인": 0
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "crown",
@@ -322,7 +322,7 @@
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "emart",
@@ -358,7 +358,7 @@
    },
    "industry_kpis_found": 2,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "gsretail",
@@ -393,7 +393,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "haitai",
@@ -424,13 +424,13 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "자동 수집 · 원문 대조 전": 126,
+    "자동 수집 · 원문 대조 전": 131,
     "불일치": 0,
     "미확인": 0
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "hanafg",
@@ -467,7 +467,7 @@
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "hanmisemi",
@@ -503,7 +503,7 @@
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "hanon",
@@ -539,7 +539,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "hanwhaocean",
@@ -575,7 +575,7 @@
    },
    "industry_kpis_found": 10,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "hdhhi",
@@ -611,7 +611,7 @@
    },
    "industry_kpis_found": 10,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "hdksoe",
@@ -648,7 +648,7 @@
    },
    "industry_kpis_found": 9,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "hlmando",
@@ -684,7 +684,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "hyundai",
@@ -720,7 +720,7 @@
    },
    "industry_kpis_found": 8,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "hyundaidept",
@@ -756,7 +756,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "ibk",
@@ -792,7 +792,7 @@
    },
    "industry_kpis_found": 2,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "imfg",
@@ -828,7 +828,7 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "jbfg",
@@ -864,7 +864,44 @@
    },
    "industry_kpis_found": 1,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
+  },
+  {
+   "slug": "jusung",
+   "company_id": "JS",
+   "name": "주성엔지니어링",
+   "name_en": "Jusung Engineering",
+   "stock_code": "036930",
+   "industry": "semiconductor",
+   "categories": [
+    "반도체 장비",
+    "디스플레이·태양광 장비"
+   ],
+   "competitors": [
+    "한미반도체",
+    "원익IPS"
+   ],
+   "theme_color": "#0055a5",
+   "dashboard_path": "dashboard.html?c=jusung",
+   "has_data": true,
+   "latest_year": 2025,
+   "kpis": {
+    "revenue": 310692584812,
+    "operating_profit": 31257811742,
+    "net_income": 35693416702,
+    "operating_margin_pct": 10.0607,
+    "revenue_growth_pct": -24.109,
+    "debt_ratio_pct": 50.374
+   },
+   "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 127,
+    "불일치": 0,
+    "미확인": 4
+   },
+   "industry_kpis_found": 0,
+   "industry_kpis_total": 10,
+   "updated_at": "2026-11-13 20:16 KST"
   },
   {
    "slug": "kakao",
@@ -899,7 +936,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "kakaobank",
@@ -935,7 +972,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "kbfg",
@@ -972,7 +1009,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "kgm",
@@ -1008,7 +1045,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:16 KST"
   },
   {
    "slug": "kia",
@@ -1044,7 +1081,7 @@
    },
    "industry_kpis_found": 8,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "kolmar",
@@ -1079,7 +1116,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "krafton",
@@ -1115,7 +1152,7 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "lgdisplay",
@@ -1151,7 +1188,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:16 KST"
   },
   {
    "slug": "lgelec",
@@ -1187,7 +1224,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "lghh",
@@ -1222,7 +1259,7 @@
    },
    "industry_kpis_found": 8,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "lotteshopping",
@@ -1260,7 +1297,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "lottewellfood",
@@ -1299,7 +1336,7 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:16 KST"
   },
   {
    "slug": "mobis",
@@ -1335,7 +1372,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "naver",
@@ -1370,7 +1407,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "ncsoft",
@@ -1406,7 +1443,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "netmarble",
@@ -1442,7 +1479,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:16 KST"
   },
   {
    "slug": "nongshim",
@@ -1481,7 +1518,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "orion",
@@ -1519,7 +1556,7 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "ottogi",
@@ -1557,7 +1594,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "samsungelec",
@@ -1594,7 +1631,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:16 KST"
   },
   {
    "slug": "samsungheavy",
@@ -1630,7 +1667,7 @@
    },
    "industry_kpis_found": 9,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "samsungsds",
@@ -1666,7 +1703,7 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "samyang",
@@ -1703,7 +1740,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "semco",
@@ -1739,7 +1776,7 @@
    },
    "industry_kpis_found": 8,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:16 KST"
   },
   {
    "slug": "shinhan",
@@ -1776,7 +1813,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "shinsegae",
@@ -1812,7 +1849,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "silicon2",
@@ -1848,7 +1885,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "skhynix",
@@ -1884,7 +1921,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:16 KST"
   },
   {
    "slug": "wontech",
@@ -1919,7 +1956,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   },
   {
    "slug": "woorifg",
@@ -1956,7 +1993,7 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-13 19:58 KST"
+   "updated_at": "2026-11-13 20:10 KST"
   }
  ],
  "graph": {
@@ -2276,6 +2313,19 @@
     "label": "JB금융지주",
     "slug": "jbfg",
     "url": "dashboard.html?c=jbfg"
+   },
+   {
+    "id": "co:jusung",
+    "type": "company",
+    "label": "주성엔지니어링",
+    "slug": "jusung",
+    "url": "dashboard.html?c=jusung"
+   },
+   {
+    "id": "cat:semiconductor:디스플레이·태양광 장비",
+    "type": "category",
+    "label": "디스플레이·태양광 장비",
+    "industry": "semiconductor"
    },
    {
     "id": "ind:platform",
@@ -2746,6 +2796,18 @@
    {
     "source": "cat:bank:지방 금융지주",
     "target": "co:jbfg"
+   },
+   {
+    "source": "cat:semiconductor:반도체 장비",
+    "target": "co:jusung"
+   },
+   {
+    "source": "ind:semiconductor",
+    "target": "cat:semiconductor:디스플레이·태양광 장비"
+   },
+   {
+    "source": "cat:semiconductor:디스플레이·태양광 장비",
+    "target": "co:jusung"
    },
    {
     "source": "core",
