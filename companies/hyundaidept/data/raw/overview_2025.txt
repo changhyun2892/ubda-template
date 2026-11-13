@@ -1,6 +1,6 @@
-# 현대백화점 사업보고서 (2025.12) — I. 회사의 개요 (본문 텍스트)
+# 현대백화점 사업보고서 (2025.12) — I. 회사의 개요 + 상세표-1 연결대상 종속회사 현황(상세) (본문 텍스트)
 # 접수번호 20260318001314 · 접수일 20260318 · 원문 https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001314
-# OpenDART document.xml에서 자동 추출 (2026-11-13 17:59 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
+# OpenDART document.xml에서 자동 추출 (2026-11-13 18:15 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
 
 ## I. 회사의 개요
 
@@ -1853,3 +1853,292 @@ D |
 2023년 03월 28일 |
 
 [표 끝]
+
+## 1. 연결대상 종속회사 현황(상세)
+
+[표]
+
+☞ 본문 위치로 이동
+ |
+
+[표 끝]
+
+[표]
+
+[표]
+
+ |
+(단위 : 백만원) |
+
+[표 끝]
+
+[표]
+
+상호 |
+설립일 |
+주소 |
+주요사업 |
+최근사업연도말자산총액 |
+지배관계 근거 |
+주요종속회사 여부 |
+
+한무쇼핑(주) |
+1987.03.31 |
+서울시 강남구테헤란로 517 |
+
+도ㆍ소매업
+(백화점 및 아울렛)
+
+ |
+2,816,080 |
+기업 의결권의 과반수 소유 |
+
+해당
+
+(최근사업연도말 자산총액 750억 이상임)
+
+ |
+
+(주)현대디에프 |
+2016.08.31 |
+서울시 강남구영동대로82길 19 |
+도ㆍ소매업 |
+602,858 |
+기업 의결권의 과반수 소유 |
+
+해당
+
+(최근사업연도말 자산총액 750억 이상임)
+
+ |
+
+(주)더현대광주 |
+2024.02.16 |
+광주광역시 북구 천변우로 227 |
+도ㆍ소매업 |
+306,704 |
+기업 의결권의 과반수 소유 |
+
+해당
+
+(최근사업연도말 자산총액 750억 이상임)
+
+ |
+
+(주)지누스 |
+1979.03.08 |
+경기도 성남시 분당구 야탑로 81번길 10 |
+가구 제조업 |
+723,313 |
+
+실질적인 지배력 보유
+
+ |
+
+해당
+
+(최근사업연도말 자산총액 750억 이상임)
+
+ |
+
+ZINUS, INC. |
+1987.01.09 |
+5731 Promontory Pkwy, Tracy, CA 95377 |
+침대 및 침구류 등의 판매 |
+283,727 |
+실질적인 지배력 보유 |
+
+해당
+
+(최근사업연도말 자산총액 750억 이상임)
+
+ |
+
+KEETSA, INC. |
+2007.04.10 |
+6111 Bollinger Canyon RD 550, San Ramon, CA 94583 |
+침대 및 침구류 등의 판매 |
+ 4,760 |
+실질적인 지배력 보유 |
+미해당 |
+
+ZINUS(Xiamen) INC. |
+2003.08.21 |
+Huan Zhu Road #461-471, Jimei District, Xiamen, Fujian, China |
+침대 및 침구류 등의 생산 |
+144,374 |
+실질적인 지배력 보유 |
+
+해당
+
+(최근사업연도말 자산총액 750억 이상임)
+
+ |
+
+ZINUS(Xiamen) Global Trading INC. |
+2018.10.18 |
+Huan Zhu Road #461-471, Jimei District, Xiamen, Fujian, China |
+침대 및 침구류 등의 판매 |
+14,870 |
+실질적인 지배력 보유 |
+미해당 |
+
+ZINUS(Fujian) INC. |
+2016.12.08 |
+JiuLong Industrial Park, Hua'an Economic Development Zone,Zhangzhou, Fujian, China |
+침대 및 침구류 등의 생산 |
+125,105 |
+실질적인 지배력 보유 |
+
+해당
+
+(최근사업연도말 자산총액 750억 이상임)
+
+ |
+
+ZINUS Canada INC. |
+2016.11.01 |
+125 Don Hillock Drive, Unit 3, Aurora ON L4G 0G9, Canada |
+침대 및 침구류 등의 판매 |
+13,454 |
+실질적인 지배력 보유 |
+미해당 |
+
+Mellow, INC. |
+2017.10.27 |
+6111 Bollinger Canyon RD 550, San Ramon, CA 94583 |
+침대 및 침구류 등의 판매 |
+48,104 |
+실질적인 지배력 보유 |
+미해당 |
+
+ZINUS Australia PTY LTD. |
+2018.06.19 |
+42 CLEVELAND STREET STONES CORNER QLD 4120 |
+침대 및 침구류 등의 판매 |
+16,546 |
+실질적인 지배력 보유 |
+미해당 |
+
+PT. ZINUS Global Indonesia |
+2018.08.31 |
+Jalan Raya Parung-Gunung Sindur No 68, Desa/Kelurahan Curug,Kec. Gunung Sindur, Kab. Bogor, Provinsi Jawa Barat |
+침대 및 침구류 등의 생산 |
+179,172 |
+실질적인 지배력 보유 |
+
+해당
+
+(최근사업연도말 자산총액 750억 이상임)
+
+ |
+
+ZINUS Japan K.K. |
+2019.07.29 |
+5-27-5 Sendagaya, Shibuya-ku, Tokyo, Japan |
+침대 및 침구류 등의 판매 |
+4,592 |
+실질적인 지배력 보유 |
+미해당 |
+
+ZINUS Singapore PTE. LTD. |
+2020.01.15 |
+61 UBI Road 1, #02-24, Oxley Bizhub, Singapore 408727 |
+침대 및 침구류 등의 판매 |
+1,235 |
+실질적인 지배력 보유 |
+미해당 |
+
+PT. ZINUS Furniture Indonesia |
+2020.02.04 |
+JL. BENDA 98EF, Desa/Kelurahan Cilandak Timur,Kec. Pasar Minggu,Kota Adm. Jakarta Selatan, Provinsi DKI Jakarta, |
+침대 및 침구류 등의 판매 |
+2,989 |
+실질적인 지배력 보유 |
+미해당 |
+
+ZINUS Vietnam LLC. |
+2020.06.22 |
+No. 4, 71-TML Street, Cat Lai Ward, Ho Chi Minh City, Vietnam |
+침대 및 침구류 등의 판매 |
+2,164 |
+실질적인 지배력 보유 |
+미해당 |
+
+ZINUS USA INC. |
+2020.07.02 |
+830 Highway 42 South, McDonough, GA, 30252, USA |
+침대 및 침구류 등의 생산 |
+133,141 |
+실질적인 지배력 보유 |
+
+해당
+
+(최근사업연도말 자산총액 750억 이상임)
+
+ |
+
+ZINUS EU LTD. |
+2020.07.04 |
+24 - 28 Bloomsbury Way Bloomsbury Way, London, England,WC1A 2SN |
+침대 및 침구류 등의 판매 |
+7,630 |
+실질적인 지배력 보유 |
+미해당 |
+
+PT. ZINUS DREAM INDONESIA |
+2022.01.17 |
+Jalan Raya Serang Km. 12, Kp. Gebang, Desa/Kelurahan Sukadamai,Kec. Cikupa, Kab. Tangerang, Provinsi Banten, |
+침대 및 침구류 등의 생산 |
+112,151 |
+실질적인 지배력 보유 |
+
+해당
+
+(최근사업연도말 자산총액 750억 이상임)
+
+ |
+
+ZINUS MALAYSIA SDN. BHD. |
+2022.04.07 |
+E-03A-01, Block E, Starparc Point Commercial Centre,Jalan Taman Ibu Kota, Setapak Wilayah Persekutuan |
+침대 및 침구류 등의 판매 |
+1,469 |
+실질적인 지배력 보유 |
+미해당 |
+
+ZINUS CHILE SPA |
+2022.08.29 |
+AV.Apoquindo 5950 Oficina 302, Las Condes, Region Metropolitana,Santiago, Chile |
+침대 및 침구류 등의 판매 |
+4,002 |
+실질적인 지배력 보유 |
+미해당 |
+
+ZINUS NEW ZEALAND LTD |
+2023.05.28 |
+74 Taharoto Road, Takapuna, Auckland, 0622, NZ |
+침대 및 침구류 등의 판매 |
+1,283 |
+실질적인 지배력 보유 |
+미해당 |
+
+Dreamzinus Mexico, S.A. de C.V |
+2023.12.26 |
+Av Oaxaca, Numero 86, Interior 400, Colonia Roma Norte,Alacaldia Cuauhtemoc, Ciudad De Mexico, Codigo Postal 06700 |
+침대 및 침구류 등의 판매 |
+3,935 |
+실질적인 지배력 보유 |
+미해당 |
+
+ZINUS (CAMBODIA) CO.,LTD. |
+2025.01.16 |
+Krang Sbov, Preah Putth, Kandal Stueng District, Kandal, 8362,Cambodia |
+침대 및 침구류 등의 생산 |
+ 42,440 |
+실질적인 지배력 보유 |
+미해당 |
+
+[표 끝]
+
+※ 최근 사업연도말 자산총액은 사업보고서 작성기준일인 2025.12.31 기준으로 작성하였습니다.

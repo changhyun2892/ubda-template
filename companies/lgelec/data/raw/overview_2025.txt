@@ -1,6 +1,6 @@
-# LG전자 [기재정정]사업보고서 (2025.12) — I. 회사의 개요 (본문 텍스트)
+# LG전자 [기재정정]사업보고서 (2025.12) — I. 회사의 개요 + 상세표-1 연결대상 종속회사 현황(상세) (본문 텍스트)
 # 접수번호 20260706000276 · 접수일 20260706 · 원문 https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260706000276
-# OpenDART document.xml에서 자동 추출 (2026-11-13 18:00 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
+# OpenDART document.xml에서 자동 추출 (2026-11-13 18:15 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
 
 ## I. 회사의 개요
 
@@ -2031,3 +2031,1451 @@ N |
 주5) 기간통신사업자사가 보유한 5G 기술을 활용하여 특정 기업 / 장소 내 사람이나 디바이스에 한정하여 연결성을 제공하는 무선 사설망인 Private 5G 사업에 진출을 검토하였습니다. Private 5G 망을 구축/운영하는 업체에게 5G 네트워크 장비 및 솔루션을 납품하거나, 필요에따라 자사가 직접 기업고객을 대상으로 Private 5G 망을 구축하고 솔루션 납품 및 운영 서비스를 제공하는 사업 형태가 있습니다.거래 상대방에 Private 5G 망을 구축 / 제공하는 사업을 위해서는 과학기술정보통신부에 기간통신사업자로 등록하고(2023년 7월 등록 완료) 주파수를 할당 받아야 하며, 구축된 Private 5G망 운영 및 서비스를 제공하기 위해서는 데이터 변경 없이 그대로 송수신하기 때문에 기간통신사업을 정관의 사업목적에 추가하였습니다. 
 
 주6) 화장품 판매업홈뷰티 사업의 일환으로 미용기기 전용 화장품 도입의 사전 준비 활동을 검토하였으나 기존 사업과의 연관성 및 융합 효과 등을 고려하여 미진행하였으며, 뷰티 다비이스 브랜드인 프라엘(Pra.L)은 LG생활건강으로 이관하였습니다.
+
+## 1. 연결대상 종속회사 현황(상세)
+
+[표]
+
+☞ 본문 위치로 이동
+ |
+
+[표 끝]
+
+[표]
+
+[표]
+
+ |
+(단위 : 백만원) |
+
+[표 끝]
+
+[표]
+
+상호 |
+설립일 |
+주소 |
+주요사업 |
+최근사업연도말자산총액 |
+지배관계 근거 |
+주요종속회사 여부 |
+
+엘지이노텍㈜ |
+1970.08 |
+서울특별시 강서구 마곡중앙10로 30 |
+전기전자 부품 생산 및 판매 |
+10,190,414 |
+사실상 지배력기준 |
+해당 |
+
+엘지마그나 이파워트레인㈜ |
+2021.07 |
+인천광역시 서구 경명대로 322 |
+자동차부품 생산 및 판매 |
+1,389,519 |
+의결권의 과반수 보유 |
+해당 |
+
+㈜하이프라자 |
+1997.05 |
+서울특별시 강서구 마곡중앙5로 18 |
+전자제품 도, 소매 |
+994,291 |
+의결권의 과반수 보유 |
+해당 |
+
+하이케어솔루션㈜ |
+2021.01 |
+서울특별시 강서구 마곡중앙5로 18 |
+용역서비스 |
+124,743 |
+의결권의 과반수 보유 |
+해당 |
+
+하이엠솔루텍㈜ |
+2006.01 |
+서울특별시 강서구 마곡중앙5로 18 |
+기타 일반 기계 및 장비 수리 |
+106,546 |
+의결권의 과반수 보유 |
+해당 |
+
+㈜하이텔레서비스 |
+2009.12 |
+서울특별시 강서구 마곡중앙5로 18 |
+콜센터 및 텔레마케팅 서비스 |
+41,883 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+에이스냉동공조㈜ |
+1998.11 |
+경기도 화성시 장안면 수정로 299번길 43 |
+공기조화장치 생산 및 판매 |
+40,843 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+지케이더블유라이팅시스템즈코리아㈜ |
+2019.07 |
+인천광역시 서구 경명대로 322번길 |
+자동차 조명 연구개발 |
+11,553 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+㈜하누리 |
+2013.02 |
+경기도 평택시 진위2산단로 140 |
+사업시설 유지관리 |
+11,008 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+이노위드㈜ |
+2012.05 |
+광주광역시 광산구 하남산단5번로 26 |
+용역서비스 |
+5,512 |
+사실상 지배력기준 |
+해당 없음 |
+
+LG Electronics U.S.A., Inc.(LGEUS) |
+1978.08 |
+111 Sylvan Avenue North Building Englewood Cliffs, New Jersey, U.S.A. |
+전자제품 생산 및 판매 |
+5,812,038 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Innotek Vietnam Haiphong Co., Ltd.(LGITVH) |
+2016.09 |
+Lot I-4, Trang Due Industrial Park, a part of Dinh Vu - Cat Hai Economic Zone, Hong Phong Commune, An Duong district, Hai Phong City, Vietnam |
+전기전자 부품 생산 및 판매 |
+2,651,620 |
+사실상 지배력기준 |
+해당 |
+
+LG Electronics Vietnam Haiphong Co., Ltd.(LGEVH) |
+2013.09 |
+Lot CN2, Trang Due Industrial Park, An Phong Ward, Hai Phong City, Vietnam. |
+전자제품 생산 및 판매 |
+2,254,881 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics European Shared Service Center B.V.(LGESC) |
+1998.08 |
+Krijgsman 1, 1186 DM Amstelveen, The Netherlands |
+용역서비스 |
+2,206,812 |
+의결권의 과반수 보유 |
+해당 |
+
+LG ELECTRONICS INDIA LIMITED(LGEIL) |
+1997.01 |
+A-24/6 Mohan Cooperative Industrial Estate, Mathura Road, New Delhi, India |
+전자제품 생산 및 판매 |
+2,009,617 |
+의결권의 과반수 보유 |
+해당 |
+
+ZKW Group GmbH |
+1982.02 |
+Rottenhauser Str.8, 3250 Wieselburg, Austria |
+서비스 |
+1,988,142 |
+의결권의 과반수 보유 |
+해당 |
+
+Zenith Electronics LLC(Zenith) |
+1918.12 |
+2000 Millbrook Drive, Lincolnshire, IL, U.S.A. |
+R&D |
+1,933,245 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics do Brasil Ltda.(LGEBR) |
+1996.04 |
+W-7.777 Av. Dom Pedro I, Buildings 1 and 2, City of Taubate, State of Sao Paulo, Brasil |
+전자제품 생산 및 판매 |
+1,898,737 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Mlawa Sp. z.o.o.(LGEMA) |
+1999.01 |
+ul. LG Electronics 7, 06-500 Mlawa, Poland |
+전자제품 생산 |
+1,484,953 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Tianjin Appliances Co., Ltd.(LGETA) |
+1995.12 |
+No.9 Jin Wei Road, Bei Chen Dist, Tianjin, China(P.R.C.) |
+전자제품 생산 |
+1,385,126 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics (China) Co., Ltd.(LGECH) |
+1995.07 |
+1201, F11, Building 1, No.1 of Xidawang Road, Chaoyang District, Beijing, China(P.R.C.) |
+전자제품 판매 |
+1,272,041 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Vehicle Components Europe GmbH(LGEVG) |
+2021.12 |
+Frankfurter Straße 102-110, 65760 Eschborn, Germany |
+자동차 부품 판매 |
+1,237,025 |
+의결권의 과반수 보유 |
+해당 |
+
+PT. LG Electronics Indonesia(LGEIN) |
+1990.11 |
+Gandaria 8 office Tower JL. Sultan Iskandar Muda, Kebayoran Lama Jakarta, Indonesia |
+전자제품 생산 및 판매 |
+1,206,601 |
+의결권의 과반수 보유 |
+해당 |
+
+ZKW Lichtsysteme GmbH |
+2015.07 |
+Scheibbser Str.17, 3250 Wieselburg, Austria |
+자동차 부품 생산 및 판매 |
+956,366 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics RUS, LLC(LGERA) |
+2004.12 |
+143160, Russian Federation, Moscow region, Ruza municipal district, territory of Minsk highway, kilometer 86, house 9 |
+전자제품 생산 및 판매 |
+1,033,934 |
+의결권의 과반수 보유 |
+해당 |
+
+Taizhou LG Electronics Refrigeration Co., Ltd.(LGETR) |
+1995.12 |
+No.12, Ying Bin Road, Hailing District, Taizhou, Jiangsu, China(P.R.C.) |
+전자제품 생산 |
+1,013,623 |
+의결권의 과반수 보유 |
+해당 |
+
+NanJing LG-Panda Appliances Co., Ltd.(LGEPN) |
+1995.12 |
+28, Yongfeng Dadao, Qinhuai District, Nanjing, China(P.R.C.) |
+전자제품 생산 |
+815,241 |
+의결권의 과반수 보유 |
+해당 |
+
+Alphonso Inc. |
+2013.01 |
+211 Hope Street Suite 390905 Mountain View, CA 94041, U.S.A. |
+광고 |
+803,664 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Thailand Co., Ltd.(LGETH) |
+1997.04 |
+No.195, One Bangkok Tower 4, Room No. 2301-2314, 23rd Floor, Witthayu Road, Lumpini Sub-district, Pathum Wan District, Bangkok 10330 |
+전자제품 생산 및 판매 |
+776,166 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Mexico S.A. DE C.V.(LGEMS) |
+1993.08 |
+Sor Juana Ines De La Cruz No.555, San Lorenzo, Tlalnepantla, Estado De Mexico, Mexico |
+전자제품 판매 |
+748,254 |
+의결권의 과반수 보유 |
+해당 |
+
+ZKW Mexico S.A. de C.V. |
+2014.03 |
+Av. Mineral de Penafiel No.1, Parque Industrial Santa Fe IV, Silao, Guanajuato, Mexico |
+자동차 부품 생산 및 판매 |
+676,110 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Nanjing New Technology co.,LTD(LGENT) |
+1997.09 |
+No. 346, Yaoxin Road, Economic & Technical Development Zone, Nanjing, China(P.R.C.) |
+전자제품 생산 |
+595,881 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Deutschland GmbH(LGEDG) |
+1980.10 |
+Alfred-Herrhausen-Allee 3-5, Eschborn, Germany |
+전자제품 판매 |
+581,979 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Reynosa S.A. DE C.V.(LGERS) |
+2000.06 |
+Mike Allen 1245 Parque Industrial Reynosa, Reynosa, Tamps., Mexico |
+전자제품 생산 |
+563,306 |
+의결권의 과반수 보유 |
+해당 |
+
+ZKW Slovakia s.r.o. |
+2006.07 |
+Bedzianska cesta 679/375, 956 31 Krusovce, Slovakia |
+자동차 부품 생산 및 판매 |
+552,023 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics European Holding B.V.(LGEEH) |
+1998.09 |
+Krijgsman 1, 1186 DM Amstelveen, The Netherlands |
+유럽지주회사 |
+540,199 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics U.K. Ltd.(LGEUK) |
+1987.07 |
+Velocity 2, Brooklands, Weybridge, KT13 0SL, United Kingdom |
+전자제품 판매 |
+538,088 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics France S.A.S.(LGEFS) |
+1990.12 |
+25 quai du President Paul Doumer - 92400 Courbevoie, France |
+전자제품 판매 |
+396,866 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Canada, Inc.(LGECI) |
+1986.10 |
+20 Norelco Drive, North York, Ontario M9L 2X6, Canada |
+전자제품 판매 |
+393,353 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Magna e-Powertrain Mexico S.A. DE C.V.(LGMPM) |
+2022.02 |
+Av. Olimpia 2312 Parque Industrial Santa Maria 2da Etapa, Ramos Arizpe, Coahuila, Mexico |
+자동차부품 제조 및 판매 |
+388,666 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Espana S.A.(LGEES) |
+1996.01 |
+C/ Chile No.1 28.290 Las Rozas, Madrid, Spain |
+전자제품 판매 |
+387,853 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Magna Nanjing e-Powertrain Vehicle Components Co., Ltd.(LGMNP) |
+2021.04 |
+NO.346,Yaoxin Road Economic & Technical Development Zone Nanjing China |
+자동차 부품 생산 및 판매 |
+373,241 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Innotek Mexico S.A. de C.V.(LGITMX) |
+2013.06 |
+Avenida 2 Oriente #4, Nuevo Parque Industrial San Juan, San Juan del Rio, Queretaro C.P. 76806, Mexico |
+전기전자 부품 생산 및 판매 |
+372,282 |
+사실상 지배력기준 |
+해당 |
+
+LG Electronics Italia S.P.A.(LGEIS) |
+1996.01 |
+Via Aldo Rossi 4 - 20149 Milano, Italia |
+전자제품 판매 |
+355,963 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Vehicle Components U.S.A., LLC (LGEVU) |
+2017.08 |
+1835 Technology Dr, Troy, Michigan 48083, U.S.A. |
+자동차 부품 생산 및 판매 |
+338,476 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Wroclaw Sp. z.O.O.(LGEWR) |
+2005.10 |
+ul LG Electronics 1-2, Biskupice Podgorne, 55-040 Kobierzyce, Poland |
+전자제품 생산 |
+333,503 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Australia Pty, Ltd.(LGEAP) |
+1994.05 |
+2 Wonderland Drive Eastern Creek NSW 2766, Australia |
+전자제품 판매 |
+321,124 |
+의결권의 과반수 보유 |
+해당 |
+
+ZKW Lighting Systems (Dalian) Co. Ltd. |
+2010.06 |
+No.51, Tie Shan Dong San Road, Dalian Economic and Technological Development Zone, Dalian, China(P.R.C.) |
+자동차 부품 생산 및 판매 |
+302,839 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Egypt S.A.E(LGEEG) |
+1990.11 |
+Plot N2 Zezenya, Altajamoat Industrial Park, 10th Of Ramadan City, Egypt |
+전자제품 생산 및 판매 |
+302,196 |
+의결권의 과반수 보유 |
+해당 |
+
+Bear Robotics Inc. |
+2017.05 |
+785 Broadway St, Redwood City, CA 94063, USA |
+로봇 판매 |
+281,097 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Polska Sp. Z.O.O(LGEPL) |
+1997.05 |
+Woloska ST 22, 02-675 Warsaw, Poland |
+전자제품 판매 |
+258,953 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Innotek Yantai Co.,Ltd.(LGITYT) |
+2004.08 |
+36# TAIBEI North Road, Development zone, Yantai, Shandong, 264006, China(P.R.C.) |
+전기전자 부품 생산 및 판매 |
+257,322 |
+사실상 지배력기준 |
+해당 |
+
+LG Electronics Nanjing Vehicle Components Co.,Ltd.(LGENV) |
+2016.01 |
+No.346, Yaoxin Road, Economic & Technical Development Zone, Nanjing, China(P.R.C.) |
+전자제품 생산 |
+247,112 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics M SDN. BHD(LGEML) |
+2000.02 |
+Level 30, Mercu Aspire, No. 3, Jalan Bangsar, KL Eco City, 59200 Kuala Lumpur, Malaysia |
+전자제품 판매 |
+243,486 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Magna e-Powertrain USA Inc.(LGMPU) |
+2021.04 |
+1835 Technology Drive, Troy, Michigan 48083, USA |
+자동차 부품 판매 |
+223,456 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Magyar K.F.T.(LGEMK) |
+1992.09 |
+H-1097, Budapest Konyves Kalman krt 3/a, Hungary |
+전자제품 판매 |
+215,837 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Colombia Limitada(LGECB) |
+1999.11 |
+Carrera 11 No. 94A-34, Piso 8, Bogota, Cundinamarca, Colombia |
+전자제품 판매 |
+206,346 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Alabama Inc.(LGEAI) |
+1981.04 |
+201 James Record Road, Huntsville, AL 35824, U.S.A. |
+서비스 |
+198,519 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Shenyang Inc.(LGESY) |
+1994.12 |
+No. 35, 40 Hunnan Industrial Area Of Nanhu Science and Technology Development Zone, Shenyang City, China(P.R.C.) |
+전자제품 생산 |
+183,290 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Ticaret A.S.(LGETK) |
+2008.02 |
+Kaptanpasa Mah. Piyalepasa Bulvari No. 73, Ortadogu Plaza Kat 7, Okmeydani Sisli, Istanbul, Turkiye |
+전자제품 판매 |
+171,926 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Almaty Kazakhstan Limited Liability Partnership(LGEAK) |
+1997.10 |
+Business Center "Baykonyr", 42 Abay Avenue, Fl.10-13, Almaty, Kazakstan |
+전자제품 판매 |
+160,282 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Africa Logistics FZE(LGEAF) |
+2006.12 |
+P.O. Box 261893, Jebel Ali, Dubai, U.A.E. |
+전자제품 판매 |
+159,334 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Taiwan Taipei Co., Ltd.(LGETT) |
+2001.11 |
+6F, No. 47,Lane 3, Jihu Road, NeiHu District,Taipei City,Taiwan, R.O.C. |
+전자제품 판매 |
+156,605 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Panama, S.A.(LGEPS) |
+1981.07 |
+Aquilino de la Guardia Street and 48 East Street, Marbella, Panama City, Republic of Panama |
+전자제품 판매 |
+155,115 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Peru S.A.(LGEPR) |
+1997.09 |
+Av. Republica de Colombia No.791 Piso 12 , San Isidro, Lima, Peru |
+전자제품 판매 |
+152,286 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Huizhou Ltd.(LGEHZ) |
+1993.10 |
+NO.13, Huifeng East 1st Rd, Zhongkai HI-TECH Industry Development Zone, Huizhou, Guangdong, China(P.R.C.) |
+전자제품 생산 |
+147,541 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Benelux Sales B.V.(LGEBN) |
+2006.01 |
+Krijgsman 1, 1186 DM Amstelveen, The Netherlands |
+전자제품 판매 |
+146,769 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Nordic AB(LGESW) |
+1999.10 |
+Esbogatan 18, Akalla, Kista, Sweden |
+전자제품 판매 |
+141,435 |
+의결권의 과반수 보유 |
+해당 |
+
+PT LGE INDONESIA RESEARCH AND DEVELOPMENT CENTER(LGERC) |
+2021.11 |
+Jalan Timor Blok E/6, Kawasan Industri MM2100, Desa/Kelurahan Jatiwangi, Kec. Cikarang Barat, Kab. Bekasi, Provinsi Jawa Barat, Indonesia, Kode Pos: 17846 |
+R&D |
+137,806 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Innotek Fund I LLC |
+2021.06 |
+251 Little Falls Drive, City of Wilmington, County of New Castle, 19808 |
+벤처투자 |
+136,816 |
+사실상 지배력기준 |
+해당 |
+
+LG Electronics Algeria EURL(LGEAS) |
+2010.02 |
+98, Rue Mohamed Boudiaf , Cheraga , Algiers, Algeria |
+전자제품 판매 |
+133,399 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Gulf FZE(LGEGF) |
+1996.10 |
+Plot No. B34BS12, P.O. Box 61445, Jebel Ali, Dubai, U.A.E. |
+전자제품 판매 |
+131,599 |
+의결권의 과반수 보유 |
+해당 |
+
+PT. LG Innotek Indonesia(LGITIN) |
+2000.10 |
+Bekasi International Estate Block C8 NO.12&12A Lemahabang Bekasi Timur 17550 Jawa Barat, Indonesia |
+전기전자 부품 생산 및 판매 |
+131,517 |
+사실상 지배력기준 |
+해당 |
+
+ZKW Holding GmbH |
+2015.09 |
+Rottenhauser Str.8, 3250 Wieselburg, Austria |
+지주회사 |
+123,942 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Philippines Inc.(LGEPH) |
+1988.12 |
+15th and 16th Floors, One Paseo Building, Paseo de Arco corner E. Rodriguez Jr. Avenue (C5), ArcoVia City, Barangay Ugong, Pasig City 1604 |
+전자제품 판매 |
+122,620 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Innotek Poland Sp. z o.o.(LGITPO) |
+2005.09 |
+ul.Seulska 2, Biskupice Podgorne 55-040 Kobierzyce, Poland |
+전기전자 부품 생산 및 판매 |
+119,678 |
+사실상 지배력기준 |
+해당 |
+
+LG Electronics Portugal S.A.(LGEPT) |
+2003.04 |
+Tagus Park, Av. Jacques Delors, no. 3, Edificio Inovacao I, corpo 1, 2740-122 Porto Salvo, Portugal |
+전자제품 판매 |
+117,026 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Air-Conditioning(Shandong) Co., Ltd.(LGEQA) |
+2004.12 |
+Zhengyang Road south side, Xiazhuang, Chengyang District, Qingdao, Shandong, China(P.R.C.) |
+전자제품 생산 및 판매 |
+113,885 |
+의결권의 과반수 보유 |
+해당 |
+
+ZKW Mexico Inmobiliaria S.A. de C.V. |
+2014.03 |
+Av. Mineral de Penafiel No.1, Parque Industrial Santa Fe IV, Silao, Guanajuato, Mexico |
+부동산 |
+111,406 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics (Levant) Jordan(LGELF) |
+2008.09 |
+Abdali Project, Rafik al Hariri Avenue, The Boulevard, the Central Square 5F, Amman, Jordan |
+전자제품 판매 |
+110,759 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Soft India Private Limited.(LGSI) |
+1998.03 |
+Embassy Tech Square, Marathahalli-Sarjapur Outer Ring Road, Bangalore, Karnataka, India |
+R&D |
+108,986 |
+의결권의 과반수 보유 |
+해당 |
+
+LG ELECTRONICS CZ, s.r.o.(LGECK) |
+2025.01 |
+Ceskomoravska 2420/15, 190 00 Praha 9, Czech |
+전자제품 판매 |
+105,575 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Saudi Arabia LLC(LGESJ) |
+2012.04 |
+RASA6360, 6360 Al Thumamah Branch, 3307 Al Sahafah Dist. Postal code 13315, Riyadh, Kingdom of Saudi Arabia |
+전자제품 판매 |
+102,853 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Hellas Single Member SA(LGEHS) |
+2002.10 |
+Ethnarhou Makariou str., Delta Palaio Faliro, PO Box 77331, 175-01, Faleo Paliro, Athens, Greece |
+전자제품 판매 |
+102,049 |
+의결권의 과반수 보유 |
+해당 |
+
+ZKW Austria Immobilien GmbH |
+2015.07 |
+Rottenhauser Str.8, 3250 Wieselburg, Austria |
+부동산 |
+99,985 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Inc Chile Limitada(LGECL) |
+2003.10 |
+Isidora Goyenechea 2800, Piso 10 edificio, Las Condes, Santiago, Chile |
+전자제품 판매 |
+90,320 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Singapore PTE LTD.(LGESL) |
+2004.12 |
+8 Temasek Boulevard, # 27-01 Suntec Tower 3, Singapore |
+전자제품 판매 |
+81,596 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics S.A. (Pty) Ltd.(LGESA) |
+1996.10 |
+162 Tonetti St, Halfway House, Midrand, South Africa |
+전자제품 생산 및 판매 |
+77,469 |
+의결권의 과반수 보유 |
+해당 |
+
+KES - kabelove a elektricke systemy spol. s.r.o. |
+1992.06 |
+Popinecka 983/30 CZ-739 32 Vratimov, Czech Republic |
+자동차 부품 생산 및 판매 |
+75,037 |
+의결권의 과반수 보유 |
+해당 |
+
+LG Electronics Dubai FZE(LGEDF) |
+2009.12 |
+P.O. Box 263041, Jebel Ali, Dubai, U.A.E. |
+전자제품 판매 |
+70,390 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+LG Electronics Latvia, Ltd(LGELA) |
+2006.06 |
+Gustava Zemgala gatve 74A, "Henrihs", Riga, LV-1039, Latvia |
+전자제품 판매 |
+65,306 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+LG Electronics Morocco S.A.R.L.(LGEMC) |
+2000.07 |
+HARMONY BUSINESS CIL RUE RISTINGA ET LARACHE CIL LOT 10 11 ET 12 IM MIMOUNA ETG 1 ET 2, CASABLANCA |
+전자제품 판매 |
+59,059 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+LG Magna e-Powertrain Hungary Ltd.(LGMHP) |
+2023.07 |
+3526 Miskolc, Arany Janos ter 1. C-D. fszt. Hungary |
+자동차용 기타 부품 및 액세서리 제조 |
+55,081 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+Bear Robotics Korea, Inc. |
+2017.09 |
+4F, 39-34, Seongsuil-ro, Seongdong-gu, Seoul, Republic of Korea |
+로봇 판매 |
+52,859 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+LG ELECTRONICS FUND Ⅰ LLC |
+2018.05 |
+251 Little Falls Drive, Wilmington, DE, U.S.A. |
+신기술사업 투자 |
+46,873 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+LG Electronics HK Ltd.(LGEHK) |
+1995.03 |
+6F, Manhattan Place, 23 Wang Tai Road, Kowloon Bay, HONG KONG |
+전자제품 판매 |
+44,049 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+OSO Hotwater AS |
+2003.07 |
+Loesmoen 3300 HOKKSUND |
+온수 솔루션 제품 생산 및 판매 |
+41,885 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+LG Innotek USA, Inc.(LGITUS) |
+1994.11 |
+2540 N 1st Street, Suite 400, San Jose, CA 95131, U.S.A. |
+전기전자 부품 판매 |
+37,622 |
+사실상 지배력기준 |
+해당 없음 |
+
+OSO Group AS |
+1984.09 |
+Industrivein 1, 3300 Hokksund, Norway |
+온수 솔루션 제품 생산 및 판매 |
+36,203 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+LG Japan Lab. Inc.(LGJL) |
+2010.09 |
+1-2-13, Takashima, Nishi-ku, Yokohama city, Kanagawa, 220-0011, Japan |
+R&D |
+35,418 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+PT.LG Electronics Service Indonesia(LGEID) |
+2014.04 |
+Gandaria 8 Office Tower LT 19-D1 Kebayoran Lama Utara, Kebayoran Lama Kota ADM. Jakarta Selatan DKI Jakarta |
+서비스 |
+31,127 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+LG Electronics Fund II LLC |
+2022.02 |
+251 Little Falls Drive, Wilmington, DE, U.S.A. |
+신기술사업 투자 |
+31,046 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+LG Electronics Development Vietnam Company Limited(LGEDV) |
+2022.12 |
+Floor14th, 17th to 21stOffice Tower, Lotte Mall Hanoi 272Vo Chi Cong, Phu Thuong Ward, Tay Ho District, Hanoi, Vietnam |
+R&D |
+28,889 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+LG Electronics Middle East Co., Ltd.(LGEME) |
+1991.01 |
+9WA, 108 1st Floor Dubai Airport Free Zone (DAFZA) |
+서비스 |
+26,688 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+LG Technology Ventures LLC |
+2018.05 |
+251 Little Falls Drive, Wilmington, DE, U.S.A. |
+용역서비스 |
+26,369 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+ACE R&A US INC |
+2023.08 |
+8735 DUNWOODY PLACE STE R, ATLANTA, GA, 30350, USA |
+냉동기, 공조기류 제조 |
+24,114 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+LG Electronics Argentina S.A.(LGEAR) |
+2000.07 |
+Juramento 1775, Piso 13, Ciudad Autonoma de Buenos Aires, Argentina. |
+전자제품 판매 |
+20,857 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+QINGGONGLIAN ELECTRICAL INSTALLATION ENGINEERING CO.,LTD. |
+2011.05 |
+181 Changjiang Rd, Nankai Qu, Tianjin Shi, China(P.R.C.) |
+에어컨 설치 및 판매 |
+17,916 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+Athom Holding B.V. |
+2014.07 |
+Oude Markt 9b, 7511 GA Enschede, Netherlands |
+가전제품 제조, 소프트웨어 개발, 생산 및 판매 |
+15,987 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+LG Electronics (China) Research and Development Center Co., Ltd.(LGERD) |
+2002.12 |
+Room 708, Apartment 6/F, No. 1, West Dawang Road, Chaoyang District, Beijing, China(P.R.C.) |
+R&D |
+15,461 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+Hi-M. Solutek Germany GmbH |
+2023.09 |
+Alfred-Herrhausen-Allee 3-5, 65760 Eschborn, Germany |
+상업용 에어컨 SVC 및 유지보수 |
+15,186 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+LGEUS Power, LLC |
+2017.08 |
+111 Sylvan Avenue North Building Englewood Cliffs, New Jersey, U.S.A. |
+태양광발전사업 투자 |
+14,333 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+LG Innotek Fund II LLC |
+2024.07 |
+251 Little Falls Drive, City of Wilmington, County of New Castle, 19808 |
+벤처투자 |
+13,317 |
+사실상 지배력기준 |
+해당 없음 |
+
+CYBELLUM TECHNOLOGIES LTD |
+2016.01 |
+3 Aminadav St.,Tel Aviv-Yafo, 6706703, Israel |
+보안 S/W 제품 개발 및 판매 |
+13,057 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+HI M SOLUTEK HVAC SERVICE AND MAINTENANCE LLC |
+2016.03 |
+P.O. Box No: 118662, No: 56, Sheikh Saeed Al Maktoum Complex, Industrial - 1, Jebel Ali, Dubai, U.A.E. |
+서비스 |
+12,461 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+Alphonso Labs Private Limited |
+2017.07 |
+The Hive, Devasandra Industrial Area, 2nd Stage, K.R.Puram, Hobli, Bangalore, Karnataka, India |
+R&D |
+11,983 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+ZKW Lighting Systems USA, Inc. |
+2013.10 |
+100 West Big Beaver Road Suite 300 Troy, Michigan, U.S.A. |
+자동차 부품 판매 |
+11,580 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+HI-M.SOLUTEK INDIA PRIVATE LIMITED |
+2023.10 |
+ Plot No.48 Kasna, Ecotech VI, Kasna, Dadri, Gautam Buddha Nagar-201310, Uttar Pradesh, Indonesia |
+상업용 에어컨 SVC 및 유지보수 |
+10,333 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+Athom B.V. |
+2014.07 |
+Oude Markt 9b, 7511 GA Enschede, Netherlands |
+소프트웨어 개발, 생산 및 판매 |
+9,972 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+LG Electronics Finland Lab Oy(LGEFL) |
+2015.06 |
+Tykistokatu 4, 6F, 20520 Turku, Finland |
+R&D |
+9,608 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+OSO Technology AS |
+2005.11 |
+Loesmoen 3300 HOKKSUND |
+온수 솔루션 제품 생산 및 판매 |
+9,523 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+OSO Logistics AS |
+2023.02 |
+Industriveien 1 3300 HOKKSUND |
+온수 솔루션 제품 생산 및 판매 |
+8,859 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+HI-M SOLUTEK MEXICO S DE RL DE CV. |
+2022.02 |
+Av. Miguel Aleman KM 14.2-115, EJIDO MEZQUITAL, 66630 Cd Apodaca, N.L., Mexico |
+상업용 에어컨 SVC 및 유지보수 |
+6,332 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+OSO Hotwater(U.K.) Ltd |
+1993.12 |
+1A, The Riverside Business Centre, Lowestoft, Suffolk, England |
+온수 솔루션 제품 생산 및 판매 |
+6,249 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+ZKW Austria Immobilien Holding GmbH |
+2016.10 |
+Rottenhauser Str.8, 3250 Wieselburg, Austria |
+지주회사 |
+5,719 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+Alphonso UK Limited |
+2022.02 |
+The Broadgate Tower, Third fl. 20 Primrose St. Londong, United Kingdom EC2A 2RS |
+마케팅 |
+5,634 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+OSO Hotwater AB |
+2001.08 |
+Stromsbergsgatan 4, 662 34 AMAL |
+온수 솔루션 제품 생산 및 판매 |
+5,610 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+LG Electronics Guatemala S.A. |
+2000.10 |
+Boulevard Los Proceres 24-69 zona 10, Edificio Empresarial Zona Pradera, Torre II, nivel 12, Guatemala, Guatemala |
+전자제품 판매 |
+5,260 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+ZKW Automotive Engineering CZ s.r.o. |
+2021.02 |
+Okruzni 1300/19, Nova Ulice, 779 00 Olomouc, Czech republic |
+자동차 설계 엔지니어링 |
+5,249 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+HI-M SOLUTEK POLAND Sp. z o.o. |
+2021.06 |
+Katowicka 16/3 Opole 45-061, Poland |
+에어컨 서비스 |
+4,808 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+PT HI-M SOLUTEK INDONESIA |
+2022.12 |
+2F, JL.PANGLIMA POLIM RAYA NO 69, MELAWAI, KEBAYORAN, INDONESIA |
+상업용 에어컨 SVC 및 유지보수 |
+4,704 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+ACE R&A Hungary Limited Liability Company |
+2022.01 |
+1027 Budapest, Bem Jozsef utca 9, Hungary |
+공조장치 생산 및 판매 |
+4,629 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+Hi-M.SOLUTEK US INC |
+2023.12 |
+4625 Alexander Dr. # 215, Alpharetta, GA 30022, USA |
+상업용 에어컨 SVC 및 유지보수 |
+4,009 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+CYBELLUM TECHNOLOGIES LTD Japan |
+2021.06 |
+8F/13F Pacific Century Place Marunouchi, 1-11-1 Marunouchi, Chiyoda-ku, Tokyo Japan |
+보안 S/W 제품 개발 및 판매 |
+3,340 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+LG Electronics Ukraine(LGEUR) |
+1998.06 |
+2 (Lit. A) Mechnikova Str., Kyiv, 01601, Ukraine |
+전자제품 판매 |
+3,267 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+HI-M SOLUTEK PHILIPPINES INC. |
+2016.06 |
+15 Francisco Legaspi Street Maybunga, Pasig City, Philippines |
+서비스 |
+2,887 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+PrimeFocus Health Inc |
+2023.11 |
+1209 Orange Street-Corporation Trust Center, City of Wilmington, Country of New Castle, 19801 USA |
+헬스케어 투자 |
+2,843 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+LG Consulting Corp. |
+2006.07 |
+Aquilino de la Guardia Street and 48 East Street, Marbella, Panama City, Republic of Panama |
+서비스 |
+2,821 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+LG Innotek Trading (Shanghai) Co., Ltd.(LGITSH) |
+2012.07 |
+Room 1601, Block I, Shanghai Arch, No. 523 Loushanguan Road, Shanghai, 200051, China(P.R.C.) |
+전기전자 부품 판매 |
+2,653 |
+사실상 지배력기준 |
+해당 없음 |
+
+LG Electronics Middle East & Africa Regional Headquarter(LGESQ) |
+2023.11 |
+RASA6360, 6360 Al Thumamah Branch, 3307 Al Sahafah Dist., 13315, Riyadh, Kingdom of Saudi Arabia |
+Regional Headquarter |
+2,557 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+Hi-M.Solutek Brazil Ltda |
+2024.09 |
+City of Sao Paulo, State of Sao Paulo, at Rua Antonio Nagib Ibrahim, n.o 350, Mezanino, Agua Branca, ZIP code: 05.036-060 |
+상업용 에어컨 SVC 및 유지보수 |
+2,461 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+HI-M SOLUTEK VIETNAM CO., LTD. |
+2017.03 |
+Unit O3517, 35th Floor, Keangnam Hanoi Landmark Tower, Plot E6, Cau Giay new urban area, Me Tri ward, Nam Tu Liem district, Hanoi, Vietnam |
+서비스 |
+2,259 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+LG Electronics Pasig Inc. |
+1997.03 |
+15 Francisco Legaspi Street Maybunga, Pasig City, Philippines |
+부동산 |
+2,171 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+Bear Robotics Japan LLC |
+2024.05 |
+5 Chome-27-5 Sendagaya, Shibuya City, Tokyo |
+로봇 판매 |
+1,815 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+LG Electronics Nigeria Limited(LGENI) |
+2004.03 |
+CBC Towers, 11 Olubunmi Owa Street, Off Admiralty Road, Lekki Phase 1, Lagos. Nigeria |
+전자제품 판매 |
+1736 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+Bear Robotics Ireland Limited |
+2022.07 |
+70 SIR JOHN ROGERSONS QUAY DUBLIN |
+로봇 판매 |
+1,516 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+HI-M.SOLUTEK LLC |
+2021.05 |
+Block 2-Exhibition Region-Ring Road-el Tagamoa- New Cairo-CAIRO. Egypt |
+에어컨 서비스 |
+1,507 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+OSO Hotwater Inc |
+2023.09 |
+10 McIlveen Drive, Saint John, New Brunswick, Canada |
+온수 솔루션 제품 생산 및 판매 |
+1,499 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+LG Innotek (Taiwan) Co., Ltd.(LGITTW) |
+2005.11 |
+9F.-1~2, No.308, Zhifu Rd., Zhongshan Dist., Taipei City 104, Taiwan(R.O.C.) |
+전기전자 부품 판매 |
+1,444 |
+사실상 지배력기준 |
+해당 없음 |
+
+Athom Inc. |
+2023.02 |
+228 East 45th Street, Suite 9E New York, NY 10017 USA |
+소프트웨어 개발, 생산 및 판매 |
+1,134 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+LG Electronics Overseas Trading FZE(LGEOT) |
+2005.10 |
+Plot Number B34BS12 P.O. BOX 261561, Jebel Ali, Dubai, U.A.E. |
+전자제품 판매 |
+1,040 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+LG Electronics North Africa Service Company S.A.R.L |
+1997.06 |
+Immeuble Zemni 3rd Floor, Les Jardins du Lac 2, 1053 Tunis, Tunisia |
+전자제품 판매 |
+987 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+ALPHONSO BRAZIL LTDA |
+2025.03 |
+Av. Dr. Chucri Zaidan, 940, 16th floor, Vila Cordeiro, Sao Paulo, SP, Brazil. |
+광고 |
+882 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+Norteam Eiendom AS |
+2021.06 |
+Galtungveien 65, 1651 Sellebakk, Fredrikstad |
+온수 솔루션 제품 생산 및 판매 |
+871 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+CYBELLUM TECHNOLOGIES USA, INC. |
+2021.03 |
+108 W. 13th Street, Suite 100 Wilmington, DE 19801 U.S.A. |
+보안 S/W 제품 개발 및 판매 |
+865 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+OSO Energy AS |
+2020.05 |
+Industriveien 1 3300 HOKKSUND |
+온수 솔루션 제품 생산 및 판매 |
+755 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+LG Electronics Angola Limitada(LGEAO) |
+2011.12 |
+Rua Antero de Quental , No. 106/108, Bairro Vila Alice, Municipio do Rangel, Luanda, Angola. |
+전자제품 판매 및 서비스 |
+637 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+OSO Hotwater Oy |
+2022.02 |
+Niittyvillankuja 4, 01510 Vantaa, Finland |
+온수 솔루션 제품 생산 및 판매 |
+526 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+Bear Robotics Pte. Ltd |
+2022.03 |
+2 Shenton Way, #18-01, SGX Centre I, Singapore 068804 |
+로봇 판매 |
+449 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+ACERNA ECO INDIA PRIVATE LIMITED |
+2025.01 |
+NO.115 W-BLOCK, 3RD AVENUE MULLAM, Anna Nagar (Chennai), Egmore Nungambakkam, Chennai- 600040, Tamil Nadu |
+공조기류 판매 |
+282 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+KES Poland Sp.z o.o. |
+2018.06 |
+Pszowska 92, 44-300 Wodzislaw Slaski, Poland |
+자동차 부품 생산 및 판매 |
+196 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+OSO Hotwater Canada Holding Inc |
+2023.09 |
+10 McIlveen Drive, Saint John, New Brunswick, Canada |
+온수 솔루션 제품 생산 및 판매 |
+29 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+Onetank AS |
+2018.04 |
+Industriveien 1 3300 HOKKSUND |
+온수 솔루션 제품 생산 및 판매 |
+12 |
+의결권의 과반수 보유 |
+해당 없음 |
+
+ALPHONSO MEXICO, S. de R.L. de C.V. |
+2025.10 |
+Av. Dr. Gustavo Baz 2160, La Loma, 54060 Tlalnepantla, Mex., Mexico |
+멕시코 로컬 광고 영업 활동 |
+- |
+의결권의 과반수 보유 |
+해당 없음 |
+
+OSO Property AS |
+1992.07 |
+Loesmoen Industriomrade 3300 HOKKSUND |
+온수 솔루션 제품 생산 및 판매 |
+- |
+의결권의 과반수 보유 |
+해당 없음 |
+
+OM BE Norteam Holding AS |
+2022.04 |
+Galtungveien 65, 1651 Sellebakk, Fredrikstad |
+온수 솔루션 제품 생산 및 판매 |
+- |
+의결권의 과반수 보유 |
+해당 없음 |
+
+FlowForm AS |
+2021.06 |
+Galtungveien 65, 1651 Sellebakk, Fredrikstad |
+온수 솔루션 제품 생산 및 판매 |
+- |
+의결권의 과반수 보유 |
+해당 없음 |
+
+OSO Hotwater Sweden Holding AB |
+2021.02 |
+Stromsbergsgatan 4, 662 34 AMAL |
+온수 솔루션 제품 생산 및 판매 |
+- |
+의결권의 과반수 보유 |
+해당 없음 |
+
+LG Electronics Honduras S.de R.L. |
+2000.11 |
+Tegucigalpa, Department of Francisco Morazan, Honduras |
+전자제품 판매 |
+- |
+사실상 지배력기준 |
+해당 없음 |
+
+OverDriver Energy Inc |
+2023.11 |
+1209 Orange Street-Corporation Trust Center, City of Wilmington, Country of New Castle, 19801 USA |
+클린테크 |
+- |
+의결권의 과반수 보유 |
+해당 없음 |
+
+LG Electronics Japan, Inc.(LGEJP) |
+1981.01 |
+Kyobashi Trust Tower 15F, 2-1-3 Kyobashi, Chuo- ku,Tokyo, Japan |
+전자제품 판매 |
+- |
+의결권의 과반수 보유 |
+해당 없음 |
+
+LG Electronics Venezuela S.A.(LGEVZ) |
+2009.07 |
+Av. Francisco de Miranda, Edif. Parque Avila, piso 10, Los Palos Grandes, Caracas, Venezuela |
+전자제품 판매 |
+- |
+의결권의 과반수 보유 |
+해당 없음 |
+
+LG ELECTRONICS UZBEKISTAN FE LLC(LGEUZ) |
+2025.01 |
+12A, Turkiston street, Tashkent, Mirabad district, the Republic of Uzbekistan |
+마케팅 |
+- |
+의결권의 과반수 보유 |
+해당 없음 |
+
+ReliefAI, Inc. |
+2025.06 |
+1209 Orange Street-Corporation Trust Center, City of Wilmington, Country of New Castle, 19801 |
+헬스케어 |
+- |
+의결권의 과반수 보유 |
+해당 없음 |
+
+Elevai Inc |
+2025.07 |
+5150 Great America Pkwy, Santa Clara, CA 95054 |
+헬스케어 신사업 목적 |
+- |
+의결권의 과반수 보유 |
+해당 없음 |
+
+OnVibe AI |
+2025.10 |
+5150 Great America Pkwy, Santa Clara, CA 95054 |
+AI 활용 컨텐츠 신사업 목적 |
+- |
+의결권의 과반수 보유 |
+해당 없음 |
+
+Pado AI Orchestration, Inc. |
+2023.11 |
+1209 Orange Street-Corporation Trust Center, City of Wilmington, Country of New Castle, 19801 |
+클린테크 신사업 목적 |
+- |
+의결권의 과반수 보유 |
+해당 없음 |
+
+[표 끝]
+
+주1) 최근사업연도말 자산총액은 2025년 12월 31일 현재의 금액입니다. 주2) 주요종속회사 여부는 최근사업연도말 자산총액 750억원 이상 기준으로 판단하였습니다.

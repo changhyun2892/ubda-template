@@ -1,6 +1,6 @@
-# 농심 사업보고서 (2025.12) — I. 회사의 개요 (본문 텍스트)
+# 농심 사업보고서 (2025.12) — I. 회사의 개요 + 상세표-1 연결대상 종속회사 현황(상세) (본문 텍스트)
 # 접수번호 20260311003892 · 접수일 20260311 · 원문 https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311003892
-# OpenDART document.xml에서 자동 추출 (2026-11-13 18:00 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
+# OpenDART document.xml에서 자동 추출 (2026-11-13 18:15 KST). 표는 ' | '로 구분. 숫자 단위는 각 표의 원문 단위를 따름.
 
 ## I. 회사의 개요
 
@@ -1272,3 +1272,151 @@ NONGSHIM EUROPE B.V. |
 8) 미추진 사유
 
  해당 사항 없습니다.
+
+## 1. 연결대상 종속회사 현황(상세)
+
+[표]
+
+☞ 본문 위치로 이동
+ |
+
+[표 끝]
+
+[표]
+
+[표]
+
+ |
+(단위 : 백만원) |
+
+[표 끝]
+
+[표]
+
+상호 |
+설립일 |
+주소 |
+주요사업 |
+최근사업연도말자산총액 |
+지배관계 근거 |
+주요종속회사 여부 |
+
+YANBIAN NONGSHIM MINERALWATER BEVERAGE CO., LTD. |
+2007.03.12 |
+No.1 Meirensong East Rd, Erdaobaihe Town, Antu District, Jilin, China |
+천연광천수제조 및 판매 |
+232,660 |
+기업의결권 과반수 보유 |
+해당 |
+
+NONGSHIM (HONGKONG) LTD. |
+1997.05.15 |
+Unit 1101, 11th floor, Tower1, Enterprise Square, No 9, Sheung Yuet Road, Kowloon Bay, Hong Kong |
+주1 |
+215,950 |
+기업의결권 과반수 보유 |
+해당 |
+
+QINGDAO NONGSHIM FOODS CO., LTD. |
+1997.06.09 |
+101 Huanghe Road, Economic and Technological Development Zone Jone, Jiaozhou, Qingdao, Shandong, China |
+스프,원재료제조 |
+220,404 |
+기업의결권 과반수 보유 |
+해당 |
+
+NONGSHIM AMERICA, INC. |
+1994.10.28 |
+12155, 6TH STREET, RANCHO CUCAMONGA, CA91730, U.S.A |
+식품제조 |
+256,895 |
+기업의결권 과반수 보유 |
+해당 |
+
+NONGSHIM HOLDINGS USA, INC. |
+2003.03.04 |
+12155 ,6TH STREET ,RANCHO CUCAMONGA, CA91730, U.S.A |
+주2 |
+349,254 |
+기업의결권 과반수 보유 |
+해당 |
+
+SHANGHAI NONGSHIM FOODS CO., LTD. |
+1995.09.07 |
+No.840 Langong Rd, Jinshan Industrial District, Shanghai, China |
+식품제조 |
+109,610 |
+기업의결권 과반수 보유 |
+해당 |
+
+SHENYANG NONGSHIM FOODS CO., LTD. |
+1999.03.18 |
+No.3-1 Si Hao Street, Shenyang Development Zone, China |
+식품제조 |
+44,665 |
+기업의결권 과반수 보유 |
+해당사항 없음 |
+
+NONGSHIM JAPAN, INC. |
+2002.01.08 |
+Daido Seimei Kasumigaseki Bldg.4F, 1-4-2, Kasumigaseki, Chiyoda-ku, Tokyo, Japan |
+식품판매 |
+59,302 |
+기업의결권 과반수 보유 |
+해당사항 없음 |
+
+NONGSHIM AUSTRALIA PTY LTD. |
+2014.01.20 |
+Suite 3.03, 12 Waterloo Road, Macquarie Park NSW 2113, Australia |
+식품판매 |
+30,825 |
+기업의결권 과반수 보유 |
+해당사항 없음 |
+
+NONGSHIM VIETNAM CO., LTD. |
+2018.09.27 |
+428 Nguyen Thi Minh Khai, District 3 , HochiMinh , Vietnam |
+식품판매 |
+7,177 |
+기업의결권 과반수 보유 |
+해당사항 없음 |
+
+NONGSHIM CANADA, INC. |
+2020.01.01 |
+6255 Cantay Road Unit 4, Mississauga, ON L5R 3Z4, Canda |
+식품판매 |
+30,283 |
+기업의결권 과반수 보유 |
+해당사항 없음 |
+
+NONGSHIM EUROPE B.V.(*) |
+2025.03.04 |
+Zwaansvliet 1, 1081AP Amsterdam, The Netherlands |
+식품판매 |
+19,218 |
+기업의결권 과반수 보유 |
+해당사항 없음 |
+
+농심이스포츠㈜ |
+2020.10.06 |
+서울특별시 구로구 디지털로 226 크림슨빌딩 4층 |
+프로게이머홍보ㆍ광고 |
+10,403 |
+기업의결권 과반수 보유 |
+해당사항 없음 |
+
+㈜허심청브로이 |
+2023.01.02 |
+부산광역시 동래구 온청장로 107번길 32(온천동) |
+소규모맥주제조업 |
+235 |
+기업의결권 과반수 보유 |
+해당사항 없음 |
+
+[표 끝]
+
+[표]
+
+(*) NONGSHIM EUROPE B.V.는 100% 지분을 출자한 회사로 2025년 3월에 신규 설립되었습니다. ※ 주요종속회사의 판단기준은 최근사업연도말 자산총액 750억원 이상입니다. 주1) NONGSHIM (HONGKONG) LTD.는 SHANGHAI, QINGDAO, SHENYANG NONGSHIM FOODS CO., LTD. 지분을 100% 보유하고 있습니다. 주2) NONGSHIM HOLDINGS USA, INC.는 NONGSHIM AMERICA, INC., NONGSHIM CANADA, INC. 지분을 100% 보유하고 있습니다. |
+
+[표 끝]
