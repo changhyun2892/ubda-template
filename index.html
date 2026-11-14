@@ -1,39 +1,864 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
-<!-- 랜딩페이지: 처음 들어온 방문자를 landing.html로 보냄 (같은 탭에서 한 번 들어온 뒤에는 건너뜀) -->
-<script>
-try{
-  if(!sessionStorage.getItem('ubda_entered') && !location.search && !location.hash){
-    location.replace('landing.html');
-  }
-}catch(e){}
-</script>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>UBDA 경영분석 — 기업 네트워크</title>
 <meta name="description" content="DART 공시 기반 기업 경영분석 대시보드를 산업 → 카테고리 → 기업의 3D 네트워크로 탐색합니다. 수업용 분석이며 투자 추천이 아닙니다.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230B1A2E'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%234FC3F7'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/portal3d.css">
-<script type="importmap">
-{ "imports": { "three": "./assets/vendor/three/build/three.module.min.js", "three/addons/": "./assets/vendor/three/jsm/" } }
-</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b0b0d'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23e9dcc0'/%3E%3C/svg%3E">
+<style>
+/* 폰트·라이브러리는 같은 폴더의 graph-* 파일에서 불러옴 (CDN 없음 — 인터넷이 불안한 곳에서도 같은 모양) */
+@font-face{font-family:"Pretendard";src:url(graph-Pretendard-Regular.subset.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Pretendard";src:url(graph-Pretendard-Medium.subset.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"Pretendard";src:url(graph-Pretendard-SemiBold.subset.woff2) format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"JetBrains Mono";src:url(graph-jetbrains-mono-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"JetBrains Mono";src:url(graph-jetbrains-mono-latin-500-normal.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"JetBrains Mono";src:url(graph-jetbrains-mono-latin-600-normal.woff2) format("woff2");font-weight:600;font-display:swap}
+:root{
+  --bg:#0b0b0d; --panel:rgba(18,18,21,.78); --line:rgba(255,255,255,.08); --line2:rgba(255,255,255,.14);
+  --text:#e9e7e2; --soft:#b4b1aa; --dim:#77746e; --faint:#4b4945; --accent:#e9dcc0;
+  --mono:"JetBrains Mono","Pretendard",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --sans:"Pretendard",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:var(--bg);color:var(--text);font-family:var(--sans);overflow:hidden;-webkit-font-smoothing:antialiased}
+#gl{position:fixed;inset:0;width:100vw;height:100vh;display:block;cursor:grab;touch-action:none}
+#gl.drag{cursor:grabbing}
+#gl.hov{cursor:pointer}
+.vig{position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse 75% 70% at 50% 50%,transparent 50%,rgba(5,5,6,.75) 100%)}
+
+/* ---------- 라벨 ---------- */
+#labels{position:fixed;inset:0;pointer-events:none;overflow:hidden}
+.lb{position:absolute;left:0;top:0;white-space:nowrap;will-change:transform,opacity;transform-origin:0 0;
+  text-shadow:0 0 6px #0b0b0d,0 0 3px #0b0b0d,0 0 12px #0b0b0d}
+.lb.core{font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.14em;color:#fff}
+.lb.core small{display:block;font-weight:400;font-size:9.5px;letter-spacing:.08em;color:var(--dim);margin-top:2px}
+.lb.industry{font-family:var(--mono);font-size:11.5px;font-weight:600;letter-spacing:.12em}
+.lb.industry b{font-family:var(--sans);font-weight:600;letter-spacing:0;font-size:12.5px;color:var(--text);margin-right:8px}
+.lb.industry small{display:block;font-weight:400;font-size:9.5px;letter-spacing:.06em;color:var(--dim);margin-top:2px}
+.lb.category{font-family:var(--mono);font-size:9.5px;color:var(--dim);letter-spacing:.04em}
+.lb.company{font-size:11px;color:var(--soft);font-weight:500}
+.lb.company.hot{color:#fff}
+.lb.metric{font-family:var(--mono);font-size:9px;color:var(--dim)}
+
+#ring{position:fixed;left:0;top:0;border:1px solid rgba(233,220,192,.65);border-radius:50%;pointer-events:none;opacity:0;transition:opacity .3s;
+  box-shadow:0 0 18px rgba(233,220,192,.18)}
+#ring::after{content:"";position:absolute;inset:-7px;border-radius:50%;border:1px dashed rgba(233,220,192,.22);animation:spin 14s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ---------- 상단 ---------- */
+.brand{position:fixed;left:22px;top:18px;z-index:5;font-family:var(--mono);pointer-events:none}
+.brand .t{font-size:12px;font-weight:600;letter-spacing:.18em;color:var(--text);display:flex;align-items:center;gap:9px}
+.brand .t i{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent)}
+.brand .s{font-size:10px;color:var(--dim);letter-spacing:.08em;margin-top:5px}
+
+.legend{position:fixed;left:18px;top:66px;z-index:5;width:232px;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:6px;font-family:var(--mono)}
+.legend .hd{display:flex;justify-content:space-between;padding:6px 8px 8px;font-size:9.5px;letter-spacing:.14em;color:var(--dim);border-bottom:1px solid var(--line);margin-bottom:4px}
+.lg{display:grid;grid-template-columns:10px 1fr auto;align-items:center;gap:9px;padding:6px 8px;border-radius:6px;cursor:pointer;transition:background .2s}
+.lg:hover,.lg.on{background:rgba(255,255,255,.05)}
+.lg .sq{width:8px;height:8px;border-radius:2px}
+.lg .nm{font-size:10.5px;font-weight:600;letter-spacing:.1em;color:var(--text);line-height:1.25}
+.lg .nm span{display:block;font-family:var(--sans);font-weight:400;font-size:10px;letter-spacing:0;color:var(--dim)}
+.lg .ct{font-size:10.5px;color:var(--soft)}
+
+.tools{position:fixed;right:18px;top:16px;z-index:6;display:flex;gap:8px;align-items:flex-start}
+.search{position:relative}
+.search input{width:240px;height:34px;border-radius:8px;border:1px solid var(--line2);background:var(--panel);color:var(--text);
+  font:12px var(--sans);padding:0 12px 0 32px;outline:none;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.search input::placeholder{color:var(--dim)}
+.search input:focus{border-color:rgba(233,220,192,.45)}
+.search svg{position:absolute;left:11px;top:11px;opacity:.55;z-index:1;pointer-events:none}
+.sugg{position:absolute;top:40px;left:0;right:0;background:rgba(18,18,21,.96);border:1px solid var(--line2);border-radius:8px;padding:4px;display:none;max-height:300px;overflow:auto}
+.sugg.show{display:block}
+.sugg div{padding:7px 10px;font-size:12px;border-radius:5px;cursor:pointer;display:flex;justify-content:space-between;gap:10px}
+.sugg div span{font-family:var(--mono);font-size:9.5px;color:var(--dim);letter-spacing:.06em;align-self:center}
+.sugg div:hover,.sugg div.on{background:rgba(255,255,255,.06)}
+.seg{display:flex;height:34px;border:1px solid var(--line2);border-radius:8px;overflow:hidden;background:var(--panel);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.seg button{all:unset;cursor:pointer;padding:0 12px;font:500 10px var(--mono);letter-spacing:.14em;color:var(--dim);display:flex;align-items:center;transition:color .2s,background .2s}
+.seg button+button{border-left:1px solid var(--line)}
+.seg button:hover{color:var(--soft)}
+.seg button.on{color:var(--bg);background:var(--accent)}
+.seg button.tg.on{color:var(--text);background:rgba(255,255,255,.07)}
+.seg button.tg::before{content:"";width:6px;height:6px;border-radius:50%;border:1px solid var(--dim);margin-right:7px}
+.seg button.tg.on::before{background:var(--accent);border-color:var(--accent);box-shadow:0 0 6px var(--accent)}
+button:focus-visible,input:focus-visible{outline:1px solid var(--accent);outline-offset:2px}
+
+/* ---------- 오른쪽 패널 ---------- */
+.panel{position:fixed;right:18px;top:62px;bottom:52px;width:310px;z-index:5;background:var(--panel);border:1px solid var(--line);border-radius:12px;
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding:20px 20px 18px;overflow:auto;
+  transform:translateX(calc(100% + 30px));transition:transform .45s cubic-bezier(.2,.75,.2,1)}
+.panel.show{transform:none}
+.panel::-webkit-scrollbar{width:6px}.panel::-webkit-scrollbar-thumb{background:rgba(255,255,255,.1);border-radius:6px}
+.panel .x{all:unset;position:absolute;right:14px;top:14px;cursor:pointer;color:var(--dim);font:14px var(--mono);width:24px;height:24px;text-align:center;border-radius:5px}
+.panel .x:hover{color:var(--text);background:rgba(255,255,255,.06)}
+.pk{font-family:var(--mono);font-size:9.5px;letter-spacing:.16em;color:var(--dim);display:flex;align-items:center;gap:8px}
+.pk i{width:7px;height:7px;border-radius:2px}
+.panel h2{font-size:22px;font-weight:600;letter-spacing:-.02em;margin-top:12px;line-height:1.25}
+.panel .sub{font-size:12px;color:var(--dim);margin-top:6px}
+.sec{margin-top:22px}
+.sec h3{font-family:var(--mono);font-weight:500;font-size:9.5px;letter-spacing:.16em;color:var(--dim);padding-bottom:8px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between}
+.row{display:flex;justify-content:space-between;align-items:center;padding:8px 2px;border-bottom:1px solid rgba(255,255,255,.04);font-size:12.5px}
+.row.lnk{cursor:pointer;border-radius:4px}
+.row.lnk:hover{background:rgba(255,255,255,.04)}
+.row span{font-family:var(--mono);font-size:10px;color:var(--dim)}
+.tag{font-family:var(--mono);font-size:9px;letter-spacing:.08em;padding:2px 6px;border-radius:3px;border:1px solid var(--line2);color:var(--soft)}
+.tag.g{border-color:rgba(233,220,192,.4);color:var(--accent)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.chip{all:unset;cursor:pointer;font-size:11.5px;padding:5px 9px;border-radius:5px;border:1px solid var(--line2);color:var(--soft);transition:all .2s}
+.chip:hover{color:#fff;border-color:rgba(255,255,255,.35);background:rgba(255,255,255,.04)}
+.cat{margin-top:14px}
+.cat .cn{font-family:var(--mono);font-size:10px;color:var(--dim);letter-spacing:.06em}
+.note{margin-top:12px;font-size:11px;line-height:1.65;color:var(--dim)}
+.cta{all:unset;cursor:pointer;margin-top:16px;display:flex;justify-content:space-between;align-items:center;padding:11px 14px;border-radius:8px;
+  background:var(--accent);color:#141310;font-size:12.5px;font-weight:600;transition:filter .2s}
+.cta:hover{filter:brightness(1.08)}
+.cta:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.cta span{font-family:var(--mono)}
+
+/* ---------- 하단 ---------- */
+.gizmo{position:fixed;left:22px;bottom:22px;z-index:4;pointer-events:none}
+.stats{position:fixed;left:96px;bottom:30px;z-index:4;font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;color:var(--faint);line-height:1.7}
+.stats b{color:var(--dim);font-weight:500}
+.hint{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:4;text-align:center;pointer-events:none}
+.hint .k{font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:var(--dim)}
+.hint .k kbd{font-family:var(--mono);border:1px solid var(--line2);border-radius:3px;padding:0 4px;margin:0 3px;color:var(--soft)}
+.hint .d{font-size:10px;color:var(--faint);margin-top:6px}
+#tip{position:fixed;left:0;top:0;z-index:7;pointer-events:none;opacity:0;transition:opacity .18s;background:rgba(20,20,23,.94);border:1px solid var(--line2);border-radius:7px;padding:7px 10px;white-space:nowrap}
+#tip.show{opacity:1}
+#tip em{display:block;font-style:normal;font-size:10.5px;color:var(--accent);margin-top:5px}
+a{color:inherit;text-decoration:none}
+a.lb.company{pointer-events:auto;cursor:pointer;padding:2px 5px;margin:-2px -5px;border-radius:4px;transition:color .15s,background .15s}
+a.lb.company:hover{color:#fff;background:rgba(255,255,255,.09)}
+#hit{position:fixed;left:0;top:0;z-index:3;border-radius:50%;display:none;cursor:pointer}
+.chip i{font-style:normal;font-family:var(--mono);font-size:9px;margin-left:5px;opacity:.5}
+.row .v{font-size:12px;color:var(--text)}
+.seg.lk{padding:0 12px;align-items:center;font:500 10px var(--mono);letter-spacing:.14em;color:var(--dim);transition:color .2s}
+.seg.lk:hover{color:var(--text)}
+#tip b{display:block;font-size:12px;font-weight:600}
+#tip span{display:block;font-family:var(--mono);font-size:9px;letter-spacing:.08em;color:var(--dim);margin-top:3px}
+.grain{position:fixed;inset:0;pointer-events:none;opacity:.07;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+#toast{position:fixed;left:50%;bottom:70px;transform:translateX(-50%);background:rgba(24,24,27,.96);border:1px solid var(--line2);
+  padding:9px 15px;border-radius:8px;font-size:12px;opacity:0;transition:opacity .3s;z-index:20;pointer-events:none}
+#toast.show{opacity:1}
+#nogl{display:none;position:fixed;inset:0;align-items:center;justify-content:center;color:var(--dim);font:13px var(--mono)}
+
+@media (max-width:860px){
+  .legend{display:none}
+  .tools{left:12px;right:12px;flex-wrap:wrap}
+  .search{flex:1 1 100%}.search input{width:100%}
+  .brand{display:none}
+  .panel{left:12px;right:12px;width:auto;top:auto;bottom:12px;max-height:52vh;transform:translateY(calc(100% + 30px))}
+  .hint,.stats{display:none}
+}
+</style>
 </head>
 <body>
-<div id="scene" aria-label="기업 네트워크 3D 화면"></div>
-<header class="hud-top">
-  <div class="brand"><span class="dot"></span><div><b>UBDA 경영분석</b><small>산업 → 카테고리 → 기업 네트워크</small></div></div>
+<canvas id="gl" aria-label="산업·기업 3D 네트워크 그래프"></canvas>
+<div class="vig"></div>
+<div class="grain"></div>
+<div id="labels"></div>
+<div id="ring"></div>
+<a id="hit"></a>
+
+<div class="brand"><div class="t"><i></i>UBDA · GRAPH VIEW</div><div class="s">CORE → INDUSTRY → CATEGORY → COMPANY</div></div>
+
+<aside class="legend" aria-label="산업 목록">
+  <div class="hd"><span>INDUSTRY</span><span>NODES</span></div>
+  <div id="lgList"></div>
+</aside>
+
+<div class="tools">
   <div class="search">
-    <input id="q" type="search" placeholder="기업·산업·카테고리 검색" aria-label="검색" autocomplete="off">
-    <ul id="sugg" role="listbox" hidden></ul>
+    <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="1.6"><circle cx="7" cy="7" r="5"/><path d="M11 11l3.5 3.5"/></svg>
+    <input id="q" type="search" placeholder="기업·산업·카테고리 검색" autocomplete="off" aria-label="검색">
+    <div class="sugg" id="sugg" role="listbox"></div>
   </div>
-  <nav class="hud-links"><button id="resetBtn" title="처음 화면으로">전체 보기</button><a href="list.html">목록 보기</a></nav>
-</header>
-<aside class="info" id="info" hidden aria-live="polite"></aside>
-<div class="hint" id="hint">드래그: 회전 · 휠/두 손가락: 확대 · 구체를 누르면 펼쳐집니다</div>
-<div class="legend" id="legend"></div>
-<div class="fallback" id="fallback" hidden><b>3D 화면을 표시할 수 없습니다</b><p>이 기기나 브라우저에서 WebGL을 사용할 수 없습니다.</p><a href="list.html">목록 화면으로 이동</a></div>
-<footer class="foot">수업용 경영분석이며 투자 추천이 아닙니다 · 재무: 금융감독원 OpenDART · 주가: Yahoo Finance</footer>
-<script type="module" src="assets/portal3d.js"></script>
+  <div class="seg" role="group" aria-label="보기 방식">
+    <button type="button" data-mode="graph" class="on">GRAPH</button>
+    <button type="button" data-mode="cluster">CLUSTER</button>
+  </div>
+  <div class="seg" role="group" aria-label="표시 항목">
+    <button type="button" class="tg on" data-tg="metric" title="기업마다 6개 지표 노드">지표</button>
+    <button type="button" class="tg on" data-tg="rel" title="경쟁 관계선">경쟁</button>
+    <button type="button" data-reset title="처음 화면">RESET</button>
+  </div>
+  <a class="seg lk" id="listLink">LIST ↗</a>
+</div>
+
+<aside class="panel" id="panel" aria-live="polite"><button class="x" type="button" aria-label="닫기">✕</button><div id="pbody"></div></aside>
+
+<svg class="gizmo" id="gizmo" width="60" height="60" viewBox="-30 -30 60 60" aria-hidden="true"></svg>
+<div class="stats" id="stats"></div>
+<div class="hint">
+  <div class="k">DRAG 회전 · WHEEL 확대 · 기업 CLICK → 대시보드 · <kbd>←→</kbd>이웃 <kbd>↑↓</kbd>상·하위 · <kbd>ESC</kbd> 처음으로</div>
+  <div class="d">수업용 경영분석이며 투자 추천이 아닙니다 · 재무: 금융감독원 OpenDART · 주가: Yahoo Finance</div>
+</div>
+<div id="tip"></div>
+<div id="toast"></div>
+<div id="nogl">이 브라우저에서는 3D 그래픽(WebGL)을 쓸 수 없습니다.</div>
+
+<script src="graph-three.min.js"></script>
+<script>
+(async function(){
+'use strict';
+/* =====================================================================
+   데이터 불러오기
+   · 사이트(깃허브 저장소)에 올리면 같은 폴더의 companies/index.json 을 읽어 그래프를 만든다
+     → 기업을 추가·수정하려면 index.json 만 바뀌면 되고, 이 파일은 고칠 필요가 없다
+   · 파일을 못 읽는 곳(Claude 아티팩트 미리보기 등)에서는 아래 RAW 스냅샷으로 대신 그린다
+   ===================================================================== */
+const DATA_URL='companies/index.json';
+let SITE_DATA=null;
+try{ const r=await fetch(DATA_URL,{cache:'no-cache'}); if(r.ok){ const j=await r.json(); if(j&&Array.isArray(j.companies)&&j.companies.length) SITE_DATA=j; } }catch(e){}
+// 랜딩페이지: 사이트에서 처음 들어온 방문자는 landing.html 로 (기존 index.html 과 같은 규칙)
+try{ if(SITE_DATA && !sessionStorage.getItem('ubda_entered') && !location.search && !location.hash){ location.replace('landing.html'); return; } }catch(e){}
+
+/* =====================================================================
+   스냅샷 데이터 (index.json 을 못 읽을 때만 사용) — 2026-11-14 20:50 KST 기준 54개 기업
+   한 줄: slug|기업명|종목코드|산업|카테고리(/)|경쟁사(/)|has_data|연도|매출액|영업이익|순이익(억원)|영업이익률|매출증가율|부채비율(%)
+   ===================================================================== */
+const SITE='https://ubda-template.onrender.com/';
+const IN_SITE=!!SITE_DATA;                                   // index.json 을 읽었으면 사이트 안 → 같은 탭·상대 주소로 이동
+const DATA_AT=(SITE_DATA&&SITE_DATA.updated_at)||'2026-11-14 20:50 KST';
+const INDDEF=[['bank','은행·금융','FINANCE','#8fb0ff'],['food','식품','FOOD','#f0cf8a'],['semiconductor','반도체·전자','SEMICONDUCTOR','#b49dff'],
+  ['auto','자동차','AUTOMOTIVE','#7fe0b5'],['platform','IT·플랫폼','PLATFORM','#79d4ea'],['retail','유통','RETAIL','#ff9a8f'],
+  ['cosmetics','화장품','COSMETICS','#f6a3c4'],['shipbuilding','조선','SHIPBUILDING','#7cc0f7'],['beauty_device','미용기기','AESTHETIC','#d9a6e6']];
+const RAW=`
+amorepacific|아모레퍼시픽|090430|cosmetics|브랜드사|LG생활건강|1|2025|42528|3358|2473|7.9|9.5|26.5
+apr|에이피알|278470|beauty_device|홈 뷰티 디바이스|클래시스/아모레퍼시픽|1|2025|15273|3655|2897|23.9|111.3|73.1
+bgfretail|BGF리테일|282330|retail|편의점|GS리테일|1|2025|90612|2539|1953|2.8|4.2|170.8
+binggrae|빙그레|005180|food|아이스크림|롯데웰푸드/해태제과|1|2025|14896|884|556|5.9|1.8|43.7
+bnkfg|BNK금융지주|138930|bank|지방 금융지주|JB금융지주/iM금융지주|1|2025||9027|8362|0.0|0.0|1333.0
+classys|클래시스|214150|beauty_device|미용 의료기기|원텍|1|2025|3368|1706|1320|50.7|38.6|27.7
+cosmax|코스맥스|192820|cosmetics|ODM|한국콜마|1|2025|23988|1958|1311|8.2|10.7|247.1
+crown|크라운제과|264900|food|스낵·과자|오리온/롯데웰푸드/해태제과|1|2025|4448|153|123|3.4|1.5|56.0
+emart|이마트|139480|retail|대형마트|롯데쇼핑/BGF리테일|1|2025|289704|3225|2463|1.1|-0.2|144.6
+gsretail|GS리테일|007070|retail|편의점|BGF리테일|1|2025|119574|2921|502|2.4|2.8|128.4
+haitai|해태제과|101530|food|스낵·과자|오리온/롯데웰푸드/크라운제과|1|2025|6414|423|234|6.6|1.9|129.5
+hanafg|하나금융지주|086790|bank|시중 금융지주|KB금융/신한지주/우리금융지주|1|2025||53509|40366|0.0|0.0|1377.9
+hanmisemi|한미반도체|042700|semiconductor|반도체 장비|SK하이닉스/삼성전자|1|2025|5767|2514|2140|43.6|3.2|17.8
+hanon|한온시스템|018880|auto|자동차부품|현대모비스/HL만도|1|2025|108837|2704|-1973|2.5|8.9|168.1
+hanwhaocean|한화오션|042660|shipbuilding|조선소|HD현대중공업/삼성중공업|1|2025|127835|11676|12459|9.1|18.6|226.2
+hdhhi|HD현대중공업|329180|shipbuilding|조선소|한화오션/삼성중공업|1|2025|175806|20375|14155|11.6|21.4|180.1
+hdksoe|HD한국조선해양|009540|shipbuilding|조선 중간지주|HD현대중공업/한화오션/삼성중공업|1|2025|299332|39045|29284|13.0|17.2|133.9
+hlmando|HL만도|204320|auto|자동차부품|현대모비스/한온시스템|1|2025|94548|3571|1228|3.8|6.9|148.2
+hyundai|현대차|005380|auto|완성차|기아/KG모빌리티|1|2025|1862545|114679|103648|6.2|6.3|189.0
+hyundaidept|현대백화점|069960|retail|백화점|롯데쇼핑/신세계|1|2025|42303|3779|1415|8.9|1.0|78.3
+ibk|기업은행|024110|bank|국책은행|KB금융/신한지주|1|2025||36556|27189|0.0|0.0|1258.5
+imfg|iM금융지주|139130|bank|지방 금융지주|BNK금융지주/JB금융지주|1|2025||5832|4575|0.0|0.0|1435.9
+jbfg|JB금융지주|175330|bank|지방 금융지주|BNK금융지주/iM금융지주|1|2025||9523|7300|0.0|0.0|1084.2
+jusung|주성엔지니어링|036930|semiconductor|반도체 장비/디스플레이·태양광 장비|한미반도체/원익IPS|1|2025|3107|313|357|10.1|-24.1|50.4
+kakao|카카오|035720|platform|포털·플랫폼|NAVER|1|2025|80991|7320|5180|9.0|2.9|82.5
+kakaobank|카카오뱅크|323410|bank|인터넷은행|KB금융/신한지주|1|2025|30863|6494|4803|0.0|0.0|1032.0
+kbfg|KB금융|105560|bank|시중 금융지주|신한지주/하나금융지주/우리금융지주|1|2025||85177|58407|0.0|0.0|1211.7
+kgm|KG모빌리티|003620|auto|완성차|현대차/기아|1|2025|43036|362|466|0.8|10.2|127.0
+kia|기아|000270|auto|완성차|현대차/KG모빌리티|1|2025|1141409|90781|75542|8.0|6.2|61.8
+kolmar|한국콜마|161890|cosmetics|ODM|코스맥스|1|2025|27224|2396|1682|8.8|11.0|107.4
+krafton|크래프톤|259960|platform|게임|엔씨소프트/넷마블|1|2025|33266|10544|7337|31.7|22.8|31.3
+lgdisplay|LG디스플레이|034220|semiconductor|디스플레이|삼성전자/LG전자|1|2025|258101|5170|3038|2.0|-3.0|243.4
+lgelec|LG전자|066570|semiconductor|가전·모바일|삼성전자/삼성전기|1|2025|892009|24784|12204|2.8|1.7|140.3
+lghh|LG생활건강|051900|cosmetics|브랜드사|아모레퍼시픽|1|2025|63555|1707|-858|2.7|-6.7|23.3
+lotteshopping|롯데쇼핑|023530|retail|백화점/대형마트|신세계/현대백화점/이마트|1|2025|137384|5470|736|4.0|-1.8|124.8
+lottewellfood|롯데웰푸드|280360|food|스낵·과자/아이스크림|오리온/빙그레/크라운제과/해태제과|1|2025|42160|1095|714|2.6|4.2|100.0
+mobis|현대모비스|012330|auto|자동차부품|HL만도/한온시스템|1|2025|611181|33575|36647|5.5|6.8|43.1
+naver|NAVER|035420|platform|포털·플랫폼|카카오|1|2025|120350|22081|18187|18.3|12.1|41.9
+ncsoft|엔씨소프트|036570|platform|게임|크래프톤/넷마블|1|2025|15069|161|3474|1.1|-4.5|28.6
+netmarble|넷마블|251270|platform|게임|크래프톤/엔씨소프트|1|2025|28351|3525|2308|12.4|6.4|47.4
+nongshim|농심|004370|food|라면/스낵·과자|오뚜기/삼양식품/팔도/오리온|1|2025|35143|1839|1701|5.2|2.2|35.0
+orion|오리온|271560|food|스낵·과자|롯데웰푸드/크라운제과/해태제과/농심|1|2025|33324|5583|3906|16.8|7.3|17.5
+ottogi|오뚜기|007310|food|라면|농심/삼양식품/팔도/CJ제일제당|1|2025|36745|1773|721|4.8|3.8|65.3
+samsungelec|삼성전자|005930|semiconductor|메모리 반도체/가전·모바일|SK하이닉스/LG전자|1|2025|3336059|436011|452068|13.1|10.9|29.9
+samsungheavy|삼성중공업|010140|shipbuilding|조선소|HD현대중공업/한화오션|1|2025|106500|8622|5358|8.1|7.5|265.0
+samsungsds|삼성에스디에스|018260|platform|IT서비스|NAVER/카카오|1|2025|139299|9571|7827|6.9|0.7|31.1
+samyang|삼양식품|003230|food|라면|농심/오뚜기/팔도|1|2025|23518|5242|3887|22.3|36.1|72.7
+semco|삼성전기|009150|semiconductor|전자부품|LG전자/삼성전자|1|2025|113145|9133|7310|8.1|9.9|49.0
+shinhan|신한지주|055550|bank|시중 금융지주|KB금융/하나금융지주/우리금융지주|1|2025||70234|50845|0.0|0.0|1201.9
+shinsegae|신세계|004170|retail|백화점|롯데쇼핑/현대백화점|1|2025|69295|4800|646|6.9|5.5|140.9
+silicon2|실리콘투|257720|cosmetics|유통|아모레퍼시픽/LG생활건강|1|2025|11163|2054|1686|18.4|61.4|55.1
+skhynix|SK하이닉스|000660|semiconductor|메모리 반도체|삼성전자/한미반도체|1|2025|971467|472063|429479|48.6|46.8|45.9
+wontech|원텍|336570|beauty_device|미용 의료기기|클래시스|1|2025|1568|517|352|33.0|36.1|38.0
+woorifg|우리금융지주|316140|bank|시중 금융지주|KB금융/신한지주/하나금융지주|1|2025||36748|32275|0.0|0.0|1488.7
+`;
+const METRICS=['매출액','영업이익','순이익','영업이익률','매출 증가율','부채비율'];
+
+/* ---------- 유틸 ---------- */
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const TAU=Math.PI*2, rnd=Math.random;
+const gauss=()=>{let u=0,v=0;while(!u)u=rnd();while(!v)v=rnd();return Math.sqrt(-2*Math.log(u))*Math.cos(TAU*v);};
+const hex=h=>[parseInt(h.slice(1,3),16)/255,parseInt(h.slice(3,5),16)/255,parseInt(h.slice(5,7),16)/255];
+const mix=(a,b,t)=>[a[0]+(b[0]-a[0])*t,a[1]+(b[1]-a[1])*t,a[2]+(b[2]-a[2])*t];
+const WHITE=[1,1,1], CREAM=[0.95,0.91,0.82];
+function fib(k,n){ const y=1-2*(k+0.5)/n, r=Math.sqrt(1-y*y), a=k*Math.PI*(3-Math.sqrt(5)); return [Math.cos(a)*r,y,Math.sin(a)*r]; }
+function fibBall(k,n){ const d=fib(k,n), r=Math.cbrt((k+0.5)/n); return [d[0]*r,d[1]*r,d[2]*r]; }
+const REDUCED=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('show');clearTimeout(toast._t);toast._t=setTimeout(()=>t.classList.remove('show'),2600);}
+const eok=v=>v==null?'–':(Math.abs(v)>=10000?(v/10000).toFixed(1)+'조':v.toLocaleString('ko-KR')+'억');
+const pct=v=>v==null?'–':v.toFixed(1)+'%';
+const lnk=n=>`href="${n.url}" target="${IN_SITE?'_self':'_blank'}" rel="noopener"`;
+const CO=(SITE_DATA ? SITE_DATA.companies.map(c=>{ const k=c.kpis||{}, e=v=>v==null?null:Math.round(v/1e8);          // 원 → 억원
+    return {slug:c.slug,name:c.name,code:c.stock_code||'',ind:c.industry||'etc',cats:(c.categories&&c.categories.length?c.categories:['기타']),comp:c.competitors||[],
+            year:c.latest_year||'',path:c.dashboard_path||('dashboard.html?c='+c.slug),
+            rev:e(k.revenue),op:e(k.operating_profit),ni:e(k.net_income),opm:k.operating_margin_pct,gr:k.revenue_growth_pct,debt:k.debt_ratio_pct}; })
+  : RAW.trim().split('\n').map(r=>{ const a=r.split('|'), num=x=>x===''?null:+x;
+    return {slug:a[0],name:a[1],code:a[2],ind:a[3],cats:a[4].split('/'),comp:a[5]?a[5].split('/'):[],year:a[7],path:'dashboard.html?c='+a[0],
+            rev:num(a[8]),op:num(a[9]),ni:num(a[10]),opm:num(a[11]),gr:num(a[12]),debt:num(a[13])}; })
+).filter(c=>c&&c.slug&&c.name).map(c=>{ if(!c.rev) c.rev=null; if(!c.opm&&!c.gr){ c.opm=null; c.gr=null; } return c; });   // 은행처럼 매출·이익률이 0으로 온 값은 사이트 목록처럼 '–'
+
+/* ---------- 그래프 만들기 ---------- */
+const nodes=[], links=[], byName={};
+function addNode(o){ o.id=nodes.length; o.x=o.y=o.z=0; o.vx=o.vy=o.vz=0; o.nb=[]; o.alpha=0; o.ta=1; nodes.push(o); return o; }
+function link(a,b,kind,len,str){ const l={s:a,t:b,kind,len,str}; links.push(l); a.nb.push(b); b.nb.push(a); return l; }
+// 산업: index.json 의 industries 를 따르고, 처음 보는 산업 키는 이름·색을 자동으로 만든다
+const PAL={}; INDDEF.forEach(([k,name,en,color],i)=>PAL[k]={name,en,color,i});
+const soften=h=>'#'+mix(hex(/^#[0-9a-f]{6}$/i.test(h||'')?h:'#9aa0aa'),WHITE,0.42).map(v=>Math.round(v*255).toString(16).padStart(2,'0')).join('');
+const cnt={}; CO.forEach(c=>{ cnt[c.ind]=(cnt[c.ind]||0)+1; });
+const IND=Object.keys(cnt).sort((a,b)=>cnt[b]-cnt[a]||((PAL[a]?PAL[a].i:99)-(PAL[b]?PAL[b].i:99))).map(key=>{
+  const p=PAL[key], sd=(SITE_DATA&&SITE_DATA.industries&&SITE_DATA.industries[key])||{};
+  return {key,name:sd.name||(p&&p.name)||key,en:p?p.en:key.replace(/_/g,' ').toUpperCase(),color:p?p.color:soften(sd.color),cats:{},catNode:{},count:0,catN:0}; });
+const indIdx={}; IND.forEach((I,i)=>indIdx[I.key]=i);
+const core=addNode({type:'core',name:'경영분석 CORE',ind:-1,size:10,charge:3});
+IND.forEach((I,i)=>{ I.rgb=hex(I.color); I.node=addNode({type:'industry',name:I.name,ind:i,size:6.5,charge:2.4}); link(core,I.node,'tree',62,0.45); });
+CO.forEach(c=>{ const i=indIdx[c.ind], I=IND[i];
+  const catNodes=c.cats.map(cn=>{ if(!I.catNode[cn]){ I.catNode[cn]=addNode({type:'category',name:cn,ind:i,parent:I.node,size:3,charge:1.1}); I.cats[cn]=[]; I.catN++; link(I.node,I.catNode[cn],'tree',20,0.6); }
+    I.cats[cn].push(c.name); return I.catNode[cn]; });
+  const scale=Math.log10(Math.max(1000,c.rev||(c.op||0)*8));                    // 규모(매출)에 따라 점 크기를 조금 다르게
+  const vals=[eok(c.rev),eok(c.op),eok(c.ni),pct(c.opm),pct(c.gr),pct(c.debt)];
+  const m=addNode({type:'company',name:c.name,ind:i,cat:c.cats.join(' · '),parent:catNodes[0],catNodes,size:3.1+(scale-3)*0.7,charge:1,metrics:[],rels:[],
+    slug:c.slug,code:c.code,d:c,vals,url:(IN_SITE?'':SITE)+c.path});
+  byName[c.name]=m; I.count++;
+  catNodes.forEach((cn,k)=>link(cn,m,'tree',11,k?0.35:0.7));
+  METRICS.forEach((mt,k)=>{ const d=fib(k,METRICS.length), r=3.6+rnd()*1.4;
+    const q=addNode({type:'metric',name:mt,val:vals[k],ind:i,parent:m,size:1.25,off:[d[0]*r,d[1]*r,d[2]*r]}); m.metrics.push(q); link(m,q,'metric'); });
+});
+{ const seen=new Set();                                                          // 경쟁 관계 (목록에 없는 회사는 건너뜀)
+  CO.forEach(c=>c.comp.forEach(o=>{ const A=byName[c.name], B=byName[o]; if(!B) return;
+    const key=Math.min(A.id,B.id)+'-'+Math.max(A.id,B.id); if(seen.has(key)) return; seen.add(key);
+    const same=A.ind===B.ind, l=link(A,B,'rel',same?16:40,same?0.04:0.03); l.rk='경쟁'; A.rels.push([B,'경쟁']); B.rels.push([A,'경쟁']); })); }
+const DELAY={core:0,industry:.35,category:.85,company:1.2,metric:1.8};
+nodes.forEach(n=>{ n.delay=REDUCED?0:DELAY[n.type]+rnd()*0.4; });
+const S=nodes.filter(n=>n.type!=='metric');          // 힘 계산 대상 (87개)
+const TOTAL_CO=Object.keys(byName).length;
+
+// 노드 색
+nodes.forEach(n=>{
+  if(n.type==='core') n.rgb=CREAM;
+  else { const c=IND[n.ind].rgb;
+    n.rgb= n.type==='industry'? mix(c,WHITE,0.12) : n.type==='category'? mix(c,WHITE,0.35) : n.type==='company'? mix(c,WHITE,0.55) : mix(c,WHITE,0.7); }
+});
+
+// 초기 위치 (부모 근처에 흩뿌림 → 처음에 펼쳐지며 자리 잡는 모습)
+IND.forEach((I,i)=>{ const d=fib(i,IND.length); Object.assign(I.node,{x:d[0]*14,y:d[1]*14,z:d[2]*14}); });
+S.forEach(n=>{ if(n.parent){ const p=n.parent; n.x=p.x+gauss()*3; n.y=p.y+gauss()*3; n.z=p.z+gauss()*3; } });
+S.forEach(n=>{ if(n.type==='company'){ const p=n.parent; n.x=p.x+gauss()*3; n.y=p.y+gauss()*3; n.z=p.z+gauss()*3; } });
+
+// CLUSTER 보기의 목표 위치: 산업마다 하나의 구
+IND.forEach((I,i)=>{
+  const d=fib(i,IND.length), c=[d[0]*100,d[1]*74,d[2]*100]; I.center=c;
+  I.node.cx=c;
+  const mem=S.filter(n=>n.ind===i&&n.type!=='industry');
+  mem.forEach((n,k)=>{ const b=fibBall(k+1,mem.length+1); n.cx=[c[0]+b[0]*15,c[1]+b[1]*15,c[2]+b[2]*15]; });
+});
+core.cx=[0,0,0];
+
+/* ---------- 힘 시뮬레이션 (d3-force와 같은 방식, 3D) ---------- */
+let simAlpha=1, mode='graph';
+const REP=10, DECAY=0.58;
+function simStep(){
+  const a=simAlpha;
+  for(let i=0;i<S.length;i++){ const A=S[i];
+    for(let j=i+1;j<S.length;j++){ const B=S[j];
+      let dx=B.x-A.x, dy=B.y-A.y, dz=B.z-A.z, d2=dx*dx+dy*dy+dz*dz;
+      if(d2<0.01){ dx=rnd()-0.5; dy=rnd()-0.5; dz=rnd()-0.5; d2=0.5; }
+      if(d2>22500) continue;
+      const f=REP*a*A.charge*B.charge/d2;
+      A.vx-=dx*f; A.vy-=dy*f; A.vz-=dz*f; B.vx+=dx*f; B.vy+=dy*f; B.vz+=dz*f;
+    }
+  }
+  for(const l of links){ if(l.kind==='metric') continue;
+    const s=l.s,t=l.t; const dx=t.x-s.x, dy=t.y-s.y, dz=t.z-s.z, d=Math.sqrt(dx*dx+dy*dy+dz*dz)||0.01;
+    const k=(d-l.len)/d*l.str*a, ws=l.kind==='tree'?0.25:0.5, wt=1-ws;
+    s.vx+=dx*k*ws; s.vy+=dy*k*ws; s.vz+=dz*k*ws; t.vx-=dx*k*wt; t.vy-=dy*k*wt; t.vz-=dz*k*wt;
+  }
+  for(const n of S){
+    if(n===core){ n.x=n.y=n.z=0; n.vx=n.vy=n.vz=0; continue; }
+    n.vx*=DECAY; n.vy*=DECAY; n.vz*=DECAY;
+    const v=Math.hypot(n.vx,n.vy,n.vz); if(v>6){ n.vx*=6/v; n.vy*=6/v; n.vz*=6/v; }
+    n.x+=n.vx; n.y+=n.vy*0.86; n.z+=n.vz;          // 살짝 납작하게 (화면에 잘 맞도록)
+  }
+  simAlpha+=(0.0-simAlpha)*0.011;
+}
+
+/* ---------- WebGL 준비 ---------- */
+function hasGL(){try{const c=document.createElement('canvas');return !!(c.getContext('webgl')||c.getContext('experimental-webgl'));}catch(e){return false;}}
+if(typeof THREE==='undefined'||!hasGL()){ $('#nogl').style.display='flex'; return; }
+
+const canvas=$('#gl');
+const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:false,powerPreference:'high-performance'});
+const DPR=Math.min(2,devicePixelRatio||1);
+renderer.setPixelRatio(DPR); renderer.setSize(innerWidth,innerHeight); renderer.setClearColor(0x0b0b0d,1);
+const scene=new THREE.Scene();
+const FOV=48;
+const camera=new THREE.PerspectiveCamera(FOV,innerWidth/innerHeight,0.5,3000);
+const pxScale=()=>innerHeight*DPR*0.5/Math.tan(FOV*Math.PI/360);
+
+const mkVS=ring=>`attribute float size; attribute float alpha; attribute vec3 color; ${ring?'attribute float ring;':''} uniform float uScale,uMin,uFocus,uDepth;
+  varying vec3 vC; varying float vA; varying float vR; varying float vPx;
+  void main(){ vec4 mv=modelViewMatrix*vec4(position,1.0); gl_Position=projectionMatrix*mv; float d=-mv.z;
+    float ps=clamp(size*uScale/d,uMin,150.0); gl_PointSize=ps; vPx=ps;
+    float fade=1.0-uDepth*0.72*smoothstep(uFocus*0.95,uFocus*2.1,d);     // 초점에서 멀수록 어둡게
+    vC=color; vA=alpha*fade; vR=${ring?'ring':'0.0'}; }`;
+const FS_NODE=`varying vec3 vC; varying float vA; varying float vR; varying float vPx;
+  void main(){ float r=length(gl_PointCoord-0.5)*2.0; if(r>1.0) discard;
+    float aa=2.0/max(vPx,4.0);
+    float core=1.0-smoothstep(0.30-aa,0.30+aa,r);
+    float glow=exp(-r*r*5.5)*0.38;
+    float ring=vR*(1.0-smoothstep(0.0,aa*1.5+0.025,abs(r-0.56)))*0.5;
+    float a=(core+glow+ring)*vA; vec3 c=mix(vC,vec3(1.0),core*0.3);
+    gl_FragColor=vec4(c*a,a); }`;
+const FS_DUST=`varying vec3 vC; varying float vA;
+  void main(){ float r=length(gl_PointCoord-0.5)*2.0; if(r>1.0) discard;
+    float a=(exp(-r*r*9.0)+exp(-r*r*2.5)*0.15)*vA; gl_FragColor=vec4(vC*a,a); }`;
+function pointsMat(fs,min,depth=1,ring=false){ return new THREE.ShaderMaterial({uniforms:{uScale:{value:pxScale()},uMin:{value:min},uFocus:{value:300},uDepth:{value:depth}},vertexShader:mkVS(ring),fragmentShader:fs,
+  transparent:true,depthWrite:false,blending:THREE.AdditiveBlending}); }
+
+// 1) 노드
+const NN=nodes.length;
+const nPos=new Float32Array(NN*3), nCol=new Float32Array(NN*3), nSize=new Float32Array(NN), nAlpha=new Float32Array(NN);
+nodes.forEach((n,i)=>{ nCol.set(n.rgb,i*3); nSize[i]=n.size; });
+const nGeo=new THREE.BufferGeometry();
+nGeo.setAttribute('position',new THREE.BufferAttribute(nPos,3));
+nGeo.setAttribute('color',new THREE.BufferAttribute(nCol,3));
+nGeo.setAttribute('size',new THREE.BufferAttribute(nSize,1));
+nGeo.setAttribute('alpha',new THREE.BufferAttribute(nAlpha,1));
+const nRing=new Float32Array(NN); nGeo.setAttribute('ring',new THREE.BufferAttribute(nRing,1));
+const nMat=pointsMat(FS_NODE,1.6,1,true);
+const nodePts=new THREE.Points(nGeo,nMat); nodePts.frustumCulled=false; nodePts.renderOrder=3; scene.add(nodePts);
+
+// 2) 선
+const LN=links.length;
+const lPos=new Float32Array(LN*6), lCol=new Float32Array(LN*6);
+links.forEach(l=>{ l.base= l.kind==='rel'?0.2: l.kind==='metric'?0.16 : (l.s===core?0.30:0.22); l.cur=0;
+  l.rgb= l.kind==='rel' ? (l.rk==='계열'?[0.92,0.88,0.80]:[0.95,0.80,0.62]) : l.kind==='metric'? mix(IND[l.s.ind].rgb,WHITE,0.6) : (l.s===core? mix(IND[l.t.ind].rgb,WHITE,0.4) : mix(IND[l.t.ind].rgb,WHITE,0.5)); });
+links.forEach(l=>{ l.rgbS=l.rgbT=l.rgb; if(l.s===core){ l.rgbS=CREAM; l.rgbT=mix(IND[l.t.ind].rgb,WHITE,0.2); } });
+function dfade(n){ const p=camera.position, dx=n.x-p.x, dy=n.y-p.y, dz=n.z-p.z, d=Math.sqrt(dx*dx+dy*dy+dz*dz);
+  return 1-0.72*Math.max(0,Math.min(1,(d-cam.r*0.95)/(cam.r*1.15))); }
+const lGeo=new THREE.BufferGeometry();
+lGeo.setAttribute('position',new THREE.BufferAttribute(lPos,3));
+lGeo.setAttribute('color',new THREE.BufferAttribute(lCol,3));
+const lineMesh=new THREE.LineSegments(lGeo,new THREE.LineBasicMaterial({vertexColors:true,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending}));
+lineMesh.frustumCulled=false; lineMesh.renderOrder=1; scene.add(lineMesh);
+
+// 3) 산업마다 먼지 구름 (뉴런 다발처럼 보이게)
+const DPI=REDUCED?180:(innerWidth<820?240:520);
+const DN=DPI*IND.length;
+const dPos=new Float32Array(DN*3), dCol=new Float32Array(DN*3), dSize=new Float32Array(DN), dAlpha=new Float32Array(DN), dOff=new Float32Array(DN*3), dInd=new Uint8Array(DN);
+for(let i=0;i<DN;i++){
+  const ind=Math.floor(i/DPI); dInd[i]=ind;
+  const u=rnd()*2-1,a=rnd()*TAU,s=Math.sqrt(1-u*u), r=Math.pow(rnd(),0.55);
+  dOff[i*3]=s*Math.cos(a)*r; dOff[i*3+1]=u*r; dOff[i*3+2]=s*Math.sin(a)*r;
+  dCol.set(mix(IND[ind].rgb,CREAM,0.55+rnd()*0.35),i*3);
+  dSize[i]=0.45+Math.pow(rnd(),4)*1.4; dAlpha[i]=0;
+}
+const dGeo=new THREE.BufferGeometry();
+dGeo.setAttribute('position',new THREE.BufferAttribute(dPos,3));
+dGeo.setAttribute('color',new THREE.BufferAttribute(dCol,3));
+dGeo.setAttribute('size',new THREE.BufferAttribute(dSize,1));
+dGeo.setAttribute('alpha',new THREE.BufferAttribute(dAlpha,1));
+const dMat=pointsMat(FS_DUST,1.0);
+const dust=new THREE.Points(dGeo,dMat); dust.frustumCulled=false; dust.renderOrder=0; scene.add(dust);
+const dustBase=new Float32Array(DN); for(let i=0;i<DN;i++) dustBase[i]=0.25+rnd()*0.45;
+
+// 3.5) 선을 따라 흐르는 신호
+const flow=links.filter(l=>l.kind!=='metric'); let hotLinks=[];
+const PN=REDUCED?0:130;
+const pPos=new Float32Array(PN*3), pCol=new Float32Array(PN*3), pSize=new Float32Array(PN), pAlpha=new Float32Array(PN);
+const pulses=[]; for(let i=0;i<PN;i++){ pulses.push({l:flow[Math.floor(rnd()*flow.length)],t:rnd(),v:0.22+rnd()*0.38}); pSize[i]=1.0+rnd()*0.9; }
+const pGeo=new THREE.BufferGeometry();
+pGeo.setAttribute('position',new THREE.BufferAttribute(pPos,3)); pGeo.setAttribute('color',new THREE.BufferAttribute(pCol,3));
+pGeo.setAttribute('size',new THREE.BufferAttribute(pSize,1)); pGeo.setAttribute('alpha',new THREE.BufferAttribute(pAlpha,1));
+const pMat=pointsMat(FS_DUST,1.6);
+const pulsePts=new THREE.Points(pGeo,pMat); pulsePts.frustumCulled=false; pulsePts.renderOrder=2; if(PN) scene.add(pulsePts);
+
+// 4) 아주 먼 배경 점
+const BN=1400, bPos=new Float32Array(BN*3), bCol=new Float32Array(BN*3), bSize=new Float32Array(BN), bAlpha=new Float32Array(BN);
+for(let i=0;i<BN;i++){ const u=rnd()*2-1,a=rnd()*TAU,s=Math.sqrt(1-u*u),R=700+rnd()*900;
+  bPos[i*3]=s*Math.cos(a)*R; bPos[i*3+1]=u*R; bPos[i*3+2]=s*Math.sin(a)*R; bCol.set(mix(CREAM,[0.75,0.82,1],rnd()),i*3); bSize[i]=2+rnd()*4; bAlpha[i]=0.08+Math.pow(rnd(),3)*0.35; }
+const bGeo=new THREE.BufferGeometry();
+bGeo.setAttribute('position',new THREE.BufferAttribute(bPos,3)); bGeo.setAttribute('color',new THREE.BufferAttribute(bCol,3));
+bGeo.setAttribute('size',new THREE.BufferAttribute(bSize,1)); bGeo.setAttribute('alpha',new THREE.BufferAttribute(bAlpha,1));
+const bgPts=new THREE.Points(bGeo,pointsMat(FS_DUST,1.0,0)); bgPts.frustumCulled=false; scene.add(bgPts);
+
+/* ---------- 라벨 (HTML) ---------- */
+const labelsEl=$('#labels'); let labelHover=null;
+nodes.forEach(n=>{
+  const el=document.createElement(n.type==='company'?'a':'div'); el.className='lb '+n.type;
+  if(n.type==='company'){ el.href=n.url; el.target=IN_SITE?'_self':'_blank'; el.rel='noopener'; el.title=n.name+' 대시보드 열기';
+    el.addEventListener('pointerenter',()=>{ labelHover=n; }); el.addEventListener('pointerleave',()=>{ if(labelHover===n) labelHover=null; }); }
+  if(n.type==='core') el.innerHTML=`UBDA CORE<small>경영분석 · ${IND.length} industries · ${TOTAL_CO} companies</small>`;
+  else if(n.type==='industry'){ const I=IND[n.ind]; el.style.color=I.color; el.innerHTML=`<b>${I.name}</b>${I.en}<small>${I.catN} categories · ${I.count} companies</small>`; }
+  else if(n.type==='category') el.textContent='/'+n.name;
+  else el.textContent= n.type==='metric' ? n.name+' '+n.val : n.name;
+  el.style.opacity=0; el.style.display='none';
+  labelsEl.appendChild(el); n.el=el; n.lo=0; n.shown=false;
+});
+
+function measure(){ nodes.forEach(n=>{ if(!n.shown) n.el.style.display='block'; });
+  nodes.forEach(n=>{ n.w=n.el.offsetWidth; n.h=n.el.offsetHeight; });
+  nodes.forEach(n=>{ if(!n.shown) n.el.style.display='none'; }); }
+measure(); if(document.fonts&&document.fonts.ready) document.fonts.ready.then(measure);
+
+/* ---------- 범례 ---------- */
+$('#lgList').innerHTML=IND.map((I,i)=>`<div class="lg" data-ind="${i}" role="button" tabindex="0"><i class="sq" style="background:${I.color};box-shadow:0 0 8px ${I.color}80"></i><div class="nm">${I.en}<span>${I.name}</span></div><div class="ct">${I.count}</div></div>`).join('');
+$$('.lg').forEach(r=>{ const go=()=>select(IND[+r.dataset.ind].node); r.addEventListener('click',go); r.addEventListener('keydown',e=>{if(e.key==='Enter')go();}); });
+
+/* ---------- 카메라 (직접 만든 궤도 조작) ---------- */
+const cam={theta:REDUCED?0.6:-0.15,phi:1.18,r:REDUCED?250:470, tt:0.6,tp:1.18,tr:200, vt:0,vp:0, target:new THREE.Vector3(), goal:new THREE.Vector3()};
+let lastInput=performance.now(), idleK=0;
+function placeCamera(){
+  const sp=Math.sin(cam.phi);
+  camera.position.set(cam.target.x+cam.r*sp*Math.sin(cam.theta), cam.target.y+cam.r*Math.cos(cam.phi), cam.target.z+cam.r*sp*Math.cos(cam.theta));
+  camera.lookAt(cam.target);
+}
+
+/* ---------- 화면 맞춤: 그래프 전체가 들어오는 거리 ---------- */
+let userZoom=false;
+function fitR(){ let m=40; for(const n of S){ const r=Math.hypot(n.x,n.y,n.z); if(r>m) m=r; }
+  const asp=Math.min(1,innerWidth/innerHeight*0.9); return Math.min(560,(m+16)*2.45/asp); }
+
+/* ---------- 선택·강조 ---------- */
+let hovered=null, selected=null, showMetric=true, showRel=true;
+const hiSet=new Set();
+function family(n){
+  const s=new Set([n]);
+  if(n.type==='core'){ IND.forEach(I=>s.add(I.node)); }
+  else if(n.type==='industry'){ nodes.forEach(m=>{ if(m.ind===n.ind && m.type!=='metric') s.add(m); }); s.add(core); }
+  else if(n.type==='category'){ s.add(n.parent); n.nb.forEach(m=>{ s.add(m); if(m.type==='company') m.metrics.forEach(q=>s.add(q)); }); }
+  else if(n.type==='company'){ n.catNodes.forEach(c=>s.add(c)); s.add(n.parent.parent); n.metrics.forEach(q=>s.add(q)); n.rels.forEach(([m])=>s.add(m)); }
+  else if(n.type==='metric'){ s.add(n.parent); n.parent.metrics.forEach(q=>s.add(q)); }
+  return s;
+}
+function refreshHighlight(){
+  hiSet.clear(); const act=hovered||selected;
+  if(act) family(act).forEach(n=>hiSet.add(n));
+  hotLinks=act?flow.filter(l=>hiSet.has(l.s)&&hiSet.has(l.t)):[];
+}
+function nodeVisible(n){ return n.type!=='metric' || showMetric; }
+
+function select(n,opts={}){
+  selected=n; refreshHighlight(); renderPanel(n);
+  if(!n){ cam.goal.set(0,0,0); cam.tr=fitR(); userZoom=false; return; }
+  cam.goal.set(n.x,n.y,n.z);
+  cam.tr={core:fitR(),industry:mode==='cluster'?105:120,category:80,company:66,metric:52}[n.type];
+  lastInput=performance.now();
+}
+
+/* ---------- 오른쪽 패널 ---------- */
+const panel=$('#panel'), pbody=$('#pbody');
+$('#panel .x').addEventListener('click',()=>select(null));
+function chip(n){ return `<a class="chip" ${lnk(n)} title="${n.name} 대시보드 열기">${n.name}<i>↗</i></a>`; }
+function renderPanel(n){
+  if(!n){ panel.classList.remove('show'); return; }
+  const I=n.ind>=0?IND[n.ind]:null, sq=I?`<i style="background:${I.color}"></i>`:'<i style="background:var(--accent)"></i>';
+  let h='';
+  if(n.type==='core'){
+    h=`<div class="pk">${sq}CORE</div><h2>경영분석 CORE</h2><div class="sub">${IND.length}개 산업 · ${TOTAL_CO}개 기업</div>
+      <div class="sec"><h3><span>INDUSTRIES</span><span>COMPANIES</span></h3>${IND.map(I=>`<div class="row lnk" data-go="${I.node.id}">${I.name}<span>${I.count}</span></div>`).join('')}</div>`;
+  } else if(n.type==='industry'){
+    h=`<div class="pk">${sq}INDUSTRY · ${I.en}</div><h2>${I.name}</h2><div class="sub">카테고리 ${I.catN}개 · 기업 ${I.count}개</div>
+      <div class="sec"><h3><span>CATEGORIES</span><span>${I.catN}</span></h3>${Object.entries(I.cats).map(([cn,cos])=>{
+        const cnode=nodes.find(m=>m.type==='category'&&m.ind===n.ind&&m.name===cn);
+        return `<div class="cat"><div class="cn row lnk" data-go="${cnode.id}" style="border:0;padding:4px 2px">/${cn}<span>${cos.length}</span></div><div class="chips">${cos.map(c=>chip(byName[c])).join('')}</div></div>`; }).join('')}</div>`;
+  } else if(n.type==='category'){
+    const cos=n.nb.filter(m=>m.type==='company');
+    h=`<div class="pk">${sq}CATEGORY · ${I.name}</div><h2>${n.name}</h2><div class="sub">기업 ${cos.length}개</div>
+      <div class="sec"><h3><span>COMPANIES</span><span>${cos.length}</span></h3><div class="chips">${cos.map(chip).join('')}</div></div>
+      <div class="sec"><h3><span>PARENT</span></h3><div class="row lnk" data-go="${n.parent.id}">${I.name}<span>${I.en}</span></div></div>`;
+  } else {
+    const c=n.type==='metric'?n.parent:n, d=c.d;
+    h=`<div class="pk">${sq}COMPANY · ${c.code}</div><h2>${c.name}</h2><div class="sub">${I.name} › ${c.cat}</div>
+      <a class="cta" ${lnk(c)}>${c.name} 대시보드 열기<span>${IN_SITE?'→':'↗'}</span></a>
+      <div class="sec"><h3><span>KPI · ${d.year}</span><span>${METRICS.length}</span></h3>
+        ${METRICS.map((m,k)=>`<div class="row"${n.type==='metric'&&n.name===m?' style="color:var(--accent)"':''}>${m}<span class="v">${c.vals[k]}</span></div>`).join('')}
+        <p class="note">사이트 데이터(${DATA_AT}) 기준입니다. 자세한 수치와 출처는 대시보드에서 확인하세요.</p></div>
+      <div class="sec"><h3><span>LINKS</span><span>${c.catNodes.length+c.rels.length}</span></h3>
+        ${c.catNodes.map(cn=>`<div class="row lnk" data-go="${cn.id}">/${cn.name}<span class="tag">카테고리</span></div>`).join('')}
+        ${c.rels.map(([m,k])=>`<div class="row lnk" data-go="${m.id}">${m.name}<span class="tag g">${k}</span></div>`).join('')}</div>`;
+  }
+  pbody.innerHTML=h; panel.classList.add('show'); panel.scrollTop=0;
+  { const a=pbody.querySelector('a.cta'); if(a && document.activeElement!==q){ try{ a.focus({preventScroll:true}); }catch(e){} } }
+  pbody.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>select(nodes[+b.dataset.go])));
+  const o=pbody.querySelector('[data-open]'); if(o) o.addEventListener('click',()=>toast('실제 사이트에서는 여기서 기업 대시보드로 이동합니다'));
+  $$('.lg').forEach(r=>r.classList.toggle('on', n.type==='industry' && +r.dataset.ind===n.ind));
+}
+
+/* ---------- 검색 ---------- */
+const q=$('#q'), sugg=$('#sugg'); let sIdx=0, sList=[];
+const typeTag={industry:'INDUSTRY',category:'CATEGORY',company:'COMPANY'};
+q.addEventListener('input',()=>{
+  const v=q.value.trim().toLowerCase(); sIdx=0;
+  if(!v){ sugg.classList.remove('show'); return; }
+  sList=nodes.filter(n=>typeTag[n.type] && (n.name.toLowerCase().includes(v) || (n.type==='industry'&&IND[n.ind].en.toLowerCase().includes(v)))).slice(0,9);
+  drawSugg();
+});
+function drawSugg(){
+  if(!sList.length){ sugg.innerHTML='<div style="cursor:default;color:var(--dim)">결과 없음</div>'; sugg.classList.add('show'); return; }
+  sugg.innerHTML=sList.map((n,i)=>`<div data-i="${i}" class="${i===sIdx?'on':''}">${n.name}<span>${typeTag[n.type]}${n.type!=='industry'?' · '+IND[n.ind].name:''}</span></div>`).join('');
+  sugg.classList.add('show');
+  sugg.querySelectorAll('[data-i]').forEach(d=>d.addEventListener('mousedown',e=>{e.preventDefault(); pick(sList[+d.dataset.i]);}));
+}
+function pick(n){ if(!n) return; q.blur(); select(n); q.value=n.name; sugg.classList.remove('show'); }
+q.addEventListener('keydown',e=>{
+  if(e.key==='ArrowDown'){ e.preventDefault(); sIdx=Math.min(sList.length-1,sIdx+1); drawSugg(); }
+  else if(e.key==='ArrowUp'){ e.preventDefault(); sIdx=Math.max(0,sIdx-1); drawSugg(); }
+  else if(e.key==='Enter'){ pick(sList[sIdx]); }
+  else if(e.key==='Escape'){ q.value=''; sugg.classList.remove('show'); q.blur(); }
+});
+q.addEventListener('blur',()=>setTimeout(()=>sugg.classList.remove('show'),120));
+
+/* ---------- 보기 방식·토글 ---------- */
+let dustScale=16;
+$$('[data-mode]').forEach(b=>b.addEventListener('click',()=>{
+  mode=b.dataset.mode; $$('[data-mode]').forEach(x=>x.classList.toggle('on',x===b));
+  if(mode==='graph') simAlpha=Math.max(simAlpha,0.5);
+  if(selected) select(selected); else { cam.tr=fitR(); userZoom=false; }
+}));
+$$('[data-tg]').forEach(b=>b.addEventListener('click',()=>{
+  b.classList.toggle('on'); const on=b.classList.contains('on');
+  if(b.dataset.tg==='metric') showMetric=on; else showRel=on;
+}));
+function resetView(){ select(null); q.value=''; cam.tt=0.6; cam.tp=1.18; userZoom=false; cam.tr=fitR(); simAlpha=Math.max(simAlpha,0.25); }
+$('[data-reset]').addEventListener('click',resetView);
+addEventListener('keydown',e=>{
+  if(selected && document.activeElement!==q && e.key.startsWith('Arrow')){ e.preventDefault(); let n=null;
+    if(e.key==='ArrowLeft'||e.key==='ArrowRight'){ const sib=nodes.filter(m=>m.type===selected.type&&m.parent===selected.parent), i=sib.indexOf(selected); n=sib[(i+(e.key==='ArrowRight'?1:sib.length-1))%sib.length]; }
+    else if(e.key==='ArrowUp') n=selected===core?null:(selected.parent||core);
+    else n=selected===core?IND[0].node:nodes.find(m=>m.parent===selected&&m.type!=='metric');
+    if(n) select(n); return; }
+  if(e.key==='Escape' && document.activeElement!==q) resetView(); if(e.key==='/' && document.activeElement!==q){ e.preventDefault(); q.focus(); } });
+
+/* ---------- 포인터: 회전·확대·고르기 ---------- */
+const ptrs=new Map(); let downAt=null, dragged=false, pinch0=0, mouse={x:-1e4,y:-1e4};
+const V=new THREE.Vector3();
+function screenOf(x,y,z){ V.set(x,y,z).project(camera); return {x:(V.x+1)/2*innerWidth, y:(1-V.y)/2*innerHeight, z:V.z}; }
+function pickAt(px,py){
+  let best=null, bd=1e9;
+  const sc=pxScale()/DPR;
+  for(const n of nodes){
+    if(!nodeVisible(n) || n.alpha<0.25) continue;
+    const s=screenOf(n.x,n.y,n.z); if(s.z>1) continue;
+    const dist=camera.position.distanceTo(V.set(n.x,n.y,n.z));
+    const rad=Math.max(n.type==='metric'?6:n.type==='company'?14:9, n.size*sc/dist*0.34);
+    const d=Math.hypot(s.x-px,s.y-py);
+    if(d<rad && d-rad*0.2<bd){ bd=d; best=n; }
+  }
+  return best;
+}
+canvas.addEventListener('pointerdown',e=>{
+  canvas.setPointerCapture(e.pointerId); ptrs.set(e.pointerId,{x:e.clientX,y:e.clientY});
+  cam.vt=cam.vp=0;
+  if(ptrs.size===1){ downAt={x:e.clientX,y:e.clientY}; dragged=false; }
+  if(ptrs.size===2){ const [a,b]=[...ptrs.values()]; pinch0=Math.hypot(a.x-b.x,a.y-b.y); dragged=true; }
+  lastInput=performance.now();
+});
+canvas.addEventListener('pointermove',e=>{
+  mouse={x:e.clientX,y:e.clientY};
+  if(!ptrs.has(e.pointerId)){ return; }
+  const p=ptrs.get(e.pointerId), dx=e.clientX-p.x, dy=e.clientY-p.y; p.x=e.clientX; p.y=e.clientY;
+  if(ptrs.size===2){ const [a,b]=[...ptrs.values()]; const d=Math.hypot(a.x-b.x,a.y-b.y); if(pinch0){ userZoom=true; cam.tr=Math.max(18,Math.min(600,cam.tr*pinch0/d)); } pinch0=d; return; }
+  if(downAt && Math.hypot(e.clientX-downAt.x,e.clientY-downAt.y)>4) dragged=true;
+  if(dragged){ canvas.classList.add('drag'); cam.tt-=dx*0.0055; cam.tp=Math.max(0.12,Math.min(Math.PI-0.12,cam.tp-dy*0.0055)); cam.vt=-dx*0.0055; cam.vp=-dy*0.0055; }
+  lastInput=performance.now();
+});
+function endPtr(e){
+  const wasSingle=ptrs.size===1; ptrs.delete(e.pointerId); if(ptrs.size<2) pinch0=0;
+  canvas.classList.remove('drag');
+  if(wasSingle && !dragged && e.type==='pointerup'){ const n=pickAt(e.clientX,e.clientY); const co=n&&(n.type==='company'?n:n.type==='metric'?n.parent:null);
+    if(co&&IN_SITE) location.href=co.url; else select(co||n||null); }      // 마우스는 #hit 링크가 먼저 받아 바로 이동, 터치는 패널의 큰 버튼으로
+  if(performance.now()-lastInput>90 || !dragged) cam.vt=cam.vp=0;
+  if(e.pointerType!=='mouse') mouse={x:-1e4,y:-1e4};
+  if(!ptrs.size) downAt=null;
+}
+canvas.addEventListener('pointerup',endPtr); canvas.addEventListener('pointercancel',endPtr);
+const hit=$('#hit'); hit.target=IN_SITE?'_self':'_blank'; hit.rel='noopener';
+const overGraph=t=>t===canvas||t===hit||!!(t&&t.closest&&t.closest('.lb'));
+addEventListener('pointermove',e=>{ if(overGraph(e.target)) mouse={x:e.clientX,y:e.clientY}; else if(!ptrs.size) mouse={x:-1e4,y:-1e4}; },{passive:true});
+document.addEventListener('mouseleave',()=>{ mouse={x:-1e4,y:-1e4}; });
+let hitDown=null; hit.addEventListener('pointerdown',e=>{ hitDown={x:e.clientX,y:e.clientY}; });
+hit.addEventListener('click',e=>{ if(hitDown&&Math.hypot(e.clientX-hitDown.x,e.clientY-hitDown.y)>6) e.preventDefault(); });
+$('#listLink').href=(IN_SITE?'':SITE)+'list.html'; $('#listLink').target=IN_SITE?'_self':'_blank'; $('#listLink').rel='noopener';
+addEventListener('wheel',e=>{ if(!overGraph(e.target)) return; e.preventDefault(); userZoom=true; cam.tr=Math.max(18,Math.min(600,cam.tr*Math.exp(e.deltaY*0.0011))); lastInput=performance.now(); },{passive:false});
+
+/* ---------- 리사이즈 ---------- */
+addEventListener('resize',()=>{ renderer.setSize(innerWidth,innerHeight); camera.aspect=innerWidth/innerHeight; camera.updateProjectionMatrix();
+  const s=pxScale(); nMat.uniforms.uScale.value=s; dMat.uniforms.uScale.value=s; bgPts.material.uniforms.uScale.value=s; pMat.uniforms.uScale.value=s; });
+
+/* ---------- 축 표시 (좌하단) ---------- */
+const giz=$('#gizmo'), AX=[[1,0,0,'#c98a7a','x'],[0,1,0,'#9fc49a','y'],[0,0,1,'#8aa6d6','z']];
+const qInv=new THREE.Quaternion();
+function drawGizmo(){
+  qInv.copy(camera.quaternion).invert();
+  const parts=AX.map(([x,y,z,c,t])=>{ const v=new THREE.Vector3(x,y,z).applyQuaternion(qInv); return {v,c,t}; }).sort((a,b)=>a.v.z-b.v.z);
+  giz.innerHTML='<circle r="24" fill="none" stroke="rgba(255,255,255,.07)"/>'+parts.map(({v,c,t})=>{ const X=v.x*20,Y=-v.y*20, o=0.45+0.55*(v.z*0.5+0.5);
+    return `<line x1="0" y1="0" x2="${X.toFixed(1)}" y2="${Y.toFixed(1)}" stroke="${c}" stroke-opacity="${o.toFixed(2)}" stroke-width="1.2"/><text x="${(X*1.25).toFixed(1)}" y="${(Y*1.25+3).toFixed(1)}" fill="${c}" fill-opacity="${o.toFixed(2)}" font-size="8" font-family="JetBrains Mono,monospace" text-anchor="middle">${t}</text>`; }).join('');
+}
+$('#stats').innerHTML=`<b>${nodes.length}</b> NODES · <b>${links.length}</b> LINKS<br><b>${IND.length}</b> INDUSTRIES · <b>${TOTAL_CO}</b> COMPANIES<br>DATA <b>${DATA_AT}</b>`;
+
+/* ---------- 매 프레임 ---------- */
+const ring=$('#ring'), tip=$('#tip'); let tipW=0;
+const PRI={core:900,industry:800,company:500,category:450,metric:300}, cand=[], placed=[];
+let last=performance.now(), T=0, running=true, frameN=0;
+document.addEventListener('visibilitychange',()=>{ running=!document.hidden; if(running){ last=performance.now(); requestAnimationFrame(frame); } });
+
+function frame(now){
+  if(!running) return;
+  const dt=Math.min(0.05,(now-last)/1000); last=now; T+=dt; frameN++;
+
+  // 위치
+  if(mode==='graph'){ if(simAlpha>0.002) simStep(); }
+  else { simAlpha=0; for(const n of S){ const c=n.cx; n.x+=(c[0]-n.x)*0.06; n.y+=(c[1]-n.y)*0.06; n.z+=(c[2]-n.z)*0.06; n.vx=n.vy=n.vz=0; } }
+  const wob=REDUCED?0:1;
+  for(const n of nodes) if(n.type==='metric'){ const p=n.parent, o=n.off, k=Math.sin(T*0.6+n.id)*0.25*wob; n.x=p.x+o[0]*(1+k*0.1); n.y=p.y+o[1]*(1+k*0.1); n.z=p.z+o[2]*(1+k*0.1); }
+
+  // 강조 상태 (호버는 매 프레임 갱신)
+  if(labelHover&&!labelHover.shown) labelHover=null;
+  const h=(!ptrs.size)?(labelHover||pickAt(mouse.x,mouse.y)):null;
+  if(h!==hovered){ hovered=h; refreshHighlight(); canvas.classList.toggle('hov',!!h);
+    if(h && h!==core){ const I=IND[h.ind];
+      let sub, em='', ttl=h.name;
+      if(h.type==='industry') sub=`INDUSTRY · ${I.catN} categories · ${I.count} companies`;
+      else if(h.type==='category') sub=`CATEGORY · ${I.name}`;
+      else { const c=h.type==='metric'?h.parent:h; if(h.type==='metric') ttl=`${c.name} · ${h.name} ${h.val}`;
+        sub=`${c.code} · ${I.name} / ${c.cat}`; em=`매출 ${c.vals[0]} · 영업이익 ${c.vals[1]} · 클릭하면 대시보드 ↗`; }
+      tip.innerHTML=`<b>${ttl}</b><span>${sub}</span>${em?`<em>${em}</em>`:''}`; tipW=tip.offsetWidth; }
+    tip.classList.toggle('show',!!h && h!==core); }
+  if(hovered){ const tx=mouse.x+16+tipW>innerWidth-8 ? mouse.x-tipW-14 : mouse.x+16; tip.style.transform=`translate(${tx}px,${mouse.y+18}px)`; }
+  const act=hovered||selected;
+
+  // 노드 투명도
+  for(let i=0;i<NN;i++){ const n=nodes[i];
+    let ta=(nodeVisible(n)&&T>=n.delay)?1:0;
+    if(act && !hiSet.has(n)) ta*= n.type==='metric'?0.05:0.13;
+    if(n.type==='metric' && !act) ta*=0.75;
+    n.alpha+=(ta-n.alpha)*Math.min(1,dt*7);
+    nAlpha[i]=n.alpha*(1+(n===act?0.35:0));
+    nPos[i*3]=n.x; nPos[i*3+1]=n.y; nPos[i*3+2]=n.z;
+    nSize[i]=n.size*(n===act?1.25:1)*(n.type==='core'?1+0.04*Math.sin(T*1.6):1);
+    nRing[i]=(n.type==='core'||n.type==='industry'||n===selected)?1:0;
+  }
+  nGeo.attributes.position.needsUpdate=true; nGeo.attributes.alpha.needsUpdate=true; nGeo.attributes.size.needsUpdate=true; nGeo.attributes.ring.needsUpdate=true;
+
+  // 선
+  links.forEach((l,i)=>{
+    let tb=T>=l.t.delay?l.base:0;
+    if(l.kind==='metric' && !showMetric) tb=0;
+    if(l.kind==='rel' && !showRel) tb=0;
+    if(mode==='cluster' && l.kind==='tree' && l.s!==core) tb*=0.45;
+    if(mode==='cluster' && l.kind==='rel') tb*=1.5;
+    if(act){ const on=hiSet.has(l.s)&&hiSet.has(l.t); tb= on ? Math.min(1,tb*2.6+0.15) : tb*0.12; }
+    l.cur+=(tb-l.cur)*Math.min(1,dt*7);
+    const c=l.rgb, k=l.cur, o=i*6;
+    lPos[o]=l.s.x; lPos[o+1]=l.s.y; lPos[o+2]=l.s.z; lPos[o+3]=l.t.x; lPos[o+4]=l.t.y; lPos[o+5]=l.t.z;
+    const ca=l.rgbS, cb=l.rgbT, ks=k*dfade(l.s), kt=k*dfade(l.t);
+    lCol[o]=ca[0]*ks; lCol[o+1]=ca[1]*ks; lCol[o+2]=ca[2]*ks; lCol[o+3]=cb[0]*kt; lCol[o+4]=cb[1]*kt; lCol[o+5]=cb[2]*kt;
+  });
+  lGeo.attributes.position.needsUpdate=true; lGeo.attributes.color.needsUpdate=true;
+
+  // 신호 입자
+  if(PN){ const pool=hotLinks.length?hotLinks:flow;
+    for(let i=0;i<PN;i++){ const p=pulses[i]; p.t+=dt*p.v;
+      if(p.t>1){ p.l=pool[Math.floor(rnd()*pool.length)]; p.t=0; }
+      const l=p.l, a=l.s, b=l.t, u=p.t, c=l.rgbT;
+      pPos[i*3]=a.x+(b.x-a.x)*u; pPos[i*3+1]=a.y+(b.y-a.y)*u; pPos[i*3+2]=a.z+(b.z-a.z)*u;
+      pCol[i*3]=c[0]*0.5+0.5; pCol[i*3+1]=c[1]*0.5+0.5; pCol[i*3+2]=c[2]*0.5+0.5;
+      pAlpha[i]=Math.min(1,l.cur*2.4)*Math.sin(u*Math.PI)*0.95; }
+    pGeo.attributes.position.needsUpdate=true; pGeo.attributes.color.needsUpdate=true; pGeo.attributes.alpha.needsUpdate=true; }
+
+  // 먼지 구름
+  dustScale+=((mode==='cluster'?24:26)-dustScale)*0.05;
+  if(!selected && !userZoom && frameN%20===0) cam.tr=fitR();
+  IND.forEach((I,i)=>{ let x=0,y=0,z=0,c=0; for(const n of S){ if(n.ind===i){ x+=n.x; y+=n.y; z+=n.z; c++; } }
+    I.cen=I.cen||[x/c,y/c,z/c]; I.cen[0]=x/c; I.cen[1]=y/c; I.cen[2]=z/c; });
+  const dBoost=mode==='cluster'?1.7:1.15, intro=REDUCED?1:Math.min(1,Math.max(0,(T-0.7)/2.4));
+  const indA=IND.map((I,i)=> (!act||hiSet.has(I.node)&&(act.ind===i||act===core)) ? 1 : 0.18);
+  const rot=T*0.05*wob, cr=Math.cos(rot), sr=Math.sin(rot);
+  for(let i=0;i<DN;i++){ const I=IND[dInd[i]], C=I.cen, c={x:C[0],y:C[1],z:C[2]};
+    const ox=dOff[i*3], oy=dOff[i*3+1], oz=dOff[i*3+2];
+    dPos[i*3]=c.x+(ox*cr-oz*sr)*dustScale; dPos[i*3+1]=c.y+oy*dustScale*0.85; dPos[i*3+2]=c.z+(ox*sr+oz*cr)*dustScale;
+    const ta=dustBase[i]*indA[dInd[i]]*dBoost*intro*(0.8+0.2*Math.sin(T*1.3*wob+i*12.9898)); dAlpha[i]+=(ta-dAlpha[i])*Math.min(1,dt*5);
+  }
+  dGeo.attributes.position.needsUpdate=true; dGeo.attributes.alpha.needsUpdate=true;
+
+  // 카메라
+  const idle=now-lastInput>3500 && !REDUCED && !ptrs.size;
+  idleK+=((idle?1:0)-idleK)*Math.min(1,dt*1.2); cam.tt+=dt*0.045*idleK;
+  if(!ptrs.size && !REDUCED){ cam.tt+=cam.vt; cam.tp=Math.max(0.12,Math.min(Math.PI-0.12,cam.tp+cam.vp)); cam.vt*=0.93; cam.vp*=0.9; }
+  if(selected) cam.goal.set(selected.x,selected.y,selected.z);
+  cam.target.lerp(cam.goal,Math.min(1,dt*3.2));
+  const k=Math.min(1,dt*5);
+  cam.theta+=(cam.tt-cam.theta)*k; cam.phi+=(cam.tp-cam.phi)*k; cam.r+=(cam.tr-cam.r)*Math.min(1,dt*2.6);
+  placeCamera();
+  bgPts.position.copy(camera.position);
+  nMat.uniforms.uFocus.value=dMat.uniforms.uFocus.value=pMat.uniforms.uFocus.value=cam.r;
+
+  // 라벨 — 겹치면 더 중요한 것만 남긴다
+  const zoom=cam.r, sc=pxScale()/DPR, kL=Math.min(1,dt*8), wide=innerWidth>860;
+  cand.length=0; placed.length=0;
+  if(wide){ placed.push(14,56,254,456, innerWidth-700,8,innerWidth,56); if(selected) placed.push(innerWidth-334,58,innerWidth,innerHeight-48); }
+  for(const n of nodes){
+    let want=0;
+    if(n.alpha>0.05){
+      const hi=act&&hiSet.has(n);
+      if(n.type==='core'||n.type==='industry') want=1;
+      else if(n.type==='category') want=(zoom<170||hi)?0.9:0;
+      else if(n.type==='company') want=(zoom<190||hi)?1:0;
+      else want=(hi&&(act.type==='company'||act.type==='metric')&&showMetric)?0.9:0;
+      if(act&&!hi) want*=0.25;
+      want*=Math.min(1,n.alpha*1.4);
+    }
+    n.want=want; n.vis=false;
+    if(want>0.02||n.lo>0.02){
+      const s=screenOf(n.x,n.y,n.z);
+      if(s.z>1||s.x<-200||s.x>innerWidth+50||s.y<-50||s.y>innerHeight+50){ n.want=0; continue; }
+      const dist=camera.position.distanceTo(V.set(n.x,n.y,n.z)), rad=n.size*sc/dist*0.3;
+      n.sx=s.x+rad+5; n.sy=s.y-7; n.dist=dist; n.vis=true;
+      if(want>0.02){ n.pri=PRI[n.type]+(n===act?2000:0)+(act&&hiSet.has(n)?200:0)+(n.lo>0.5?40:0)-dist/cam.r*30; cand.push(n); }
+    }
+  }
+  cand.sort((a,b)=>b.pri-a.pri);
+  for(const n of cand){ const x0=n.sx-4,y0=n.sy-2,x1=n.sx+n.w+4,y1=n.sy+n.h+2; let hit=false;
+    for(let j=0;j<placed.length;j+=4){ if(x0<placed[j+2]&&x1>placed[j]&&y0<placed[j+3]&&y1>placed[j+1]){ hit=true; break; } }
+    if(hit&&n!==act) n.want=0; else placed.push(x0,y0,x1,y1); }
+  for(const n of nodes){
+    n.lo+=(n.want-n.lo)*kL;
+    if(n.lo<0.02||!n.vis){ if(n.shown){ n.el.style.display='none'; n.shown=false; } continue; }
+    if(!n.shown){ n.el.style.display='block'; n.shown=true; }
+    const depthFade=Math.max(0.35,Math.min(1,1.6-n.dist/(cam.r*1.25)));
+    n.el.style.opacity=(n.lo*depthFade).toFixed(3);
+    n.el.style.transform=`translate(${n.sx.toFixed(1)}px,${n.sy.toFixed(1)}px)`;
+    if(n.hot!==(n===act)){ n.hot=(n===act); n.el.classList.toggle('hot',n.hot); }
+  }
+
+  // 기업 위에 놓이는 실제 링크 (한 번 클릭 = 대시보드)
+  { const hc=hovered&&!ptrs.size&&(hovered.type==='company'||hovered.type==='metric')?hovered:null;
+    if(hc){ const co=hc.type==='metric'?hc.parent:hc, s=screenOf(hc.x,hc.y,hc.z), dist=camera.position.distanceTo(V.set(hc.x,hc.y,hc.z));
+      const r=Math.max(hc.type==='metric'?9:16, hc.size*sc/dist*0.38);
+      if(hit._n!==co){ hit._n=co; hit.href=co.url; hit.setAttribute('aria-label',co.name+' 대시보드 열기'); }
+      hit.style.display='block'; hit.style.width=hit.style.height=(r*2).toFixed(1)+'px'; hit.style.transform=`translate(${(s.x-r).toFixed(1)}px,${(s.y-r).toFixed(1)}px)`; }
+    else if(hit._n){ hit._n=null; hit.style.display='none'; } }
+
+  // 선택 고리
+  if(selected){ const s=screenOf(selected.x,selected.y,selected.z); const dist=camera.position.distanceTo(V.set(selected.x,selected.y,selected.z));
+    const r=Math.max(12,selected.size*sc/dist*0.5); ring.style.width=ring.style.height=(r*2)+'px';
+    ring.style.transform=`translate(${(s.x-r).toFixed(1)}px,${(s.y-r).toFixed(1)}px)`; ring.style.opacity=s.z>1?0:1; }
+  else ring.style.opacity=0;
+
+  if(frameN%2===0) drawGizmo();
+  renderer.render(scene,camera);
+  requestAnimationFrame(frame);
+}
+placeCamera(); requestAnimationFrame(frame);
+})();
+</script>
 </body>
 </html>

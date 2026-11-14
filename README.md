@@ -54,7 +54,8 @@ GitHub 공개 저장소와 Actions, Render 정적 사이트, OpenDART API(하루
 ## 폴더 구조
 
 ```
-index.html                 3D 뉴런 포털 (Three.js, assets/portal3d.js)
+landing.html               첫 화면(랜딩) — 입장하면 index.html
+index.html                 기업 네트워크 그래프 뷰 (three.js, graph-* 파일, companies/index.json을 읽음)
 list.html                  기업 목록 (목록형, 3D를 못 쓰는 기기용)
 dashboard.html             공용 기업 대시보드 (?c=기업폴더)
 assets/                    화면 코드·스타일 · assets/vendor/three = Three.js r170 (MIT, 저장소에 포함해 외부 접속 없이 동작)

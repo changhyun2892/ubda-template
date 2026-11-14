@@ -10,4 +10,3 @@
 | assets/geo/countries-110m.json | world-atlas 2.0.2 | ISC (원자료 Natural Earth, 퍼블릭 도메인) | https://github.com/topojson/world-atlas |
 | assets/fonts/barlow-semi-condensed-*.woff2 | 5.3.0 (fontsource) | SIL OFL 1.1 (assets/fonts/LICENSE-BarlowSemiCondensed.txt) | https://github.com/jpt/barlow |
 
-3D 포털용 three.js는 assets/vendor/three/ 폴더의 LICENSE를 따릅니다.

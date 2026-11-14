@@ -44,7 +44,7 @@ def main() -> int:
     with sync_playwright() as p:
         b = p.chromium.launch(executable_path="/usr/bin/google-chrome" if Path("/usr/bin/google-chrome").exists() else None,
                               args=["--use-gl=angle", "--use-angle=swiftshader", "--enable-unsafe-swiftshader"])  # 화면 없는 환경에서도 WebGL
-        # 랜딩페이지 (landing.html) — 사이트 주소를 처음 열면 랜딩, 입장하면 3D 포털
+        # 랜딩페이지 (landing.html) — 사이트 주소를 처음 열면 랜딩, 입장하면 기업 네트워크 그래프
         if (ROOT / "landing.html").exists():
             for label, vp in (("PC", {"width": 1366, "height": 860}), ("모바일", {"width": 390, "height": 844})):
                 print(f"\n[랜딩 landing.html · {label}]")
@@ -62,67 +62,56 @@ def main() -> int:
                 if label == "PC":
                     pg.keyboard.press("Enter")
                     pg.wait_for_url("**/index.html", timeout=15000)
-                    pg.wait_for_function("window.__portal", timeout=20000)
-                    ok("Enter → 3D 포털 입장", True)
+                    pg.wait_for_function("document.querySelector('#stats') && /COMPANIES/.test(document.querySelector('#stats').textContent)", timeout=20000)
+                    ok("Enter → 기업 네트워크 입장", True)
                     pg.goto(root + "list.html")
                     pg.click("text=3D 보기")
-                    pg.wait_for_function("window.__portal", timeout=20000)
+                    pg.wait_for_function("document.querySelector('#stats') && /COMPANIES/.test(document.querySelector('#stats').textContent)", timeout=20000)
                     ok("같은 탭: 목록 → 3D 보기에서 랜딩으로 돌아가지 않음", pg.url.endswith("index.html"), pg.url.split("/")[-1])
                 ok(f"랜딩 {label} 자바스크립트 오류 없음", not errs, "; ".join(errs[:3]))
                 pg.close()
             pg = b.new_page()
             pg.goto(root + "index.html?direct")
-            pg.wait_for_function("window.__portal", timeout=20000)
+            pg.wait_for_function("document.querySelector('#stats') && /COMPANIES/.test(document.querySelector('#stats').textContent)", timeout=20000)
             ok("주소에 ?…가 붙은 링크는 랜딩을 건너뜀", "index.html?direct" in pg.url)
             pg.close()
-        # 3D 포털 (index.html) — 입장 표시를 미리 넣어 랜딩을 건너뜀
+        # 기업 네트워크 그래프 (index.html) — 입장 표시를 미리 넣어 랜딩을 건너뜀
+        J = __import__("json")
+        idx = J.loads((ROOT / "companies" / "index.json").read_text(encoding="utf-8"))
+        n_ind_idx = len({c["industry"] for c in idx["companies"]})
         for label, vp in (("PC", {"width": 1366, "height": 860}), ("모바일", {"width": 390, "height": 844})):
-            print(f"\n[3D 포털 index.html · {label}]")
+            print(f"\n[기업 네트워크 index.html · {label}]")
             pg = b.new_page(viewport=vp)
             pg.add_init_script("try{sessionStorage.setItem('ubda_entered','1')}catch(e){}")
-            errs = []
+            errs, ext = [], []
             pg.on("pageerror", lambda e: errs.append(str(e)))
             pg.on("console", lambda m: errs.append(m.text) if m.type == "error" else None)
+            pg.on("request", lambda r: ext.append(r.url) if not (r.url.startswith(root) or r.url.startswith("data:") or r.url.startswith("blob:")) else None)
             pg.goto(root)
-            pg.wait_for_function("window.__portal", timeout=20000)
-            ok("WebGL 화면 표시 (대체 화면 아님)", pg.locator("canvas").count() == 1 and not pg.is_visible("#fallback"))
-            n_ind = len(list((ROOT / "industries").glob("*.json")))
-            ok("산업 노드 이름표 = industries/*.json 수", pg.locator(".lbl.industry").count() == n_ind, f"{pg.locator('.lbl.industry').count()}/{n_ind}")
-            # 처음 화면 안에 산업 구체가 보이는 기업을 골라 클릭 흐름을 점검한다(모바일은 일부 산업 구체가 화면 밖에서 시작)
-            J = __import__("json")
-            inds = [p.stem for p in (ROOT / "industries").glob("*.json")]
-            outside = []
-            for i in inds:
-                pt = pg.evaluate(f"__portal.screenOf({J.dumps('ind:' + i)})")
-                if not (pt and 0 <= pt["x"] <= vp["width"] and 0 <= pt["y"] <= vp["height"]):
-                    outside.append(i)
-            if outside:
-                print(f"  ⚠ 참고: 처음 화면 밖에 있는 산업 구체 {len(outside)}/{len(inds)} — {', '.join(sorted(outside))} (처음 화면 기준, 3D 파일은 수정 금지라 기록만)")
-            first = next((s for s in slugs if J.loads((ROOT / "companies" / s / "company.json").read_text(encoding="utf-8"))["industry"] not in outside), sorted(slugs)[0])
-            ind = J.loads((ROOT / "companies" / first / "company.json").read_text(encoding="utf-8"))
-            cat = (ind.get("categories") or ["기타"])[0]
-            for nid in (f"ind:{ind['industry']}", f"cat:{ind['industry']}:{cat}", f"co:{first}"):
-                pg.wait_for_function("!__portal.flying")
-                pg.wait_for_timeout(300)
-                pt = pg.evaluate(f"__portal.screenOf({__import__('json').dumps(nid)})")
-                pg.mouse.click(pt["x"], pt["y"])
-                pg.wait_for_timeout(300)
-                ok(f"구체 클릭 → {nid} 선택", pg.evaluate("__portal.selected") == nid)
-            pg.wait_for_function("!__portal.flying")
-            ok("기업 정보 패널 + 대시보드 열기", "대시보드 열기" in pg.inner_text("#info"))
+            pg.wait_for_function("document.querySelector('#stats') && /COMPANIES/.test(document.querySelector('#stats').textContent)", timeout=20000)
+            st = pg.inner_text("#stats")
+            ok("WebGL 그래프 표시 (안내 문구 아님)", not pg.is_visible("#nogl"))
+            ok("산업·기업 수 = companies/index.json", f"{n_ind_idx} INDUSTRIES" in st and f"{len(idx['companies'])} COMPANIES" in st, st.replace("\n", " / "))
+            ok("DATA 날짜 = index.json updated_at", idx.get("updated_at", "?") in st)
+            ok("기업 이름 라벨 = 대시보드 링크", pg.locator("#labels a[href*='dashboard.html?c=']").count() == len(idx["companies"]), str(pg.locator("#labels a").count()))
+            first = idx["companies"][0]
+            pg.fill("#q", first["name"])
+            pg.wait_for_timeout(400)
+            pg.keyboard.press("Enter")
+            pg.wait_for_selector("a.cta", timeout=8000)
+            ok("검색 → 기업 패널 + 대시보드 열기 버튼", first["name"] in pg.inner_text("#pbody") and "대시보드 열기" in pg.inner_text("a.cta"))
             if SHOTS:
                 SHOTS.mkdir(parents=True, exist_ok=True)
-                pg.screenshot(path=str(SHOTS / f"3d_{label}.png"))
-            pg.click("#resetBtn")
-            pg.fill("#q", ind["name"][:2])
-            pg.wait_for_timeout(150)
-            pg.keyboard.press("Enter")
-            pg.wait_for_timeout(300)
-            ok("검색 → 기업으로 이동", (pg.evaluate("__portal.selected") or "").startswith("co:"), pg.evaluate("__portal.selected"))
-            pg.click("text=대시보드 열기")
-            pg.wait_for_selector(".page", timeout=10000)
-            ok("대시보드로 이동", "dashboard.html?c=" in pg.url, pg.url.split("/")[-1])
-            ok(f"3D {label} 자바스크립트 오류 없음", not errs, "; ".join(errs[:3]))
+                pg.screenshot(path=str(SHOTS / f"graph_{label}.png"))
+            pg.locator("a.cta").press("Enter")
+            pg.wait_for_url("**/dashboard.html?c=*", timeout=10000)
+            ok("Enter → 같은 탭에서 대시보드", f"dashboard.html?c={first['slug']}" in pg.url, pg.url.split("/")[-1])
+            pg.go_back()
+            pg.wait_for_function("document.querySelector('#stats') && /COMPANIES/.test(document.querySelector('#stats').textContent)", timeout=20000)
+            ok("뒤로 가기 → 그래프로 돌아옴 (랜딩 아님)", pg.url.split("?")[0].endswith("/") or "index.html" in pg.url, pg.url.split("/")[-1])
+            ok("가로 넘침 없음", pg.evaluate("document.documentElement.scrollWidth") <= vp["width"])
+            ok(f"그래프 {label} 자바스크립트 오류 없음", not errs, "; ".join(errs[:3]))
+            ok(f"그래프 {label} 외부 요청 없음", not ext, "; ".join(ext[:3]))
             pg.close()
         # 기업 목록 (목록형)
         print("\n[기업 목록 list.html]")
