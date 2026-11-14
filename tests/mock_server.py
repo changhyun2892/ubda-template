@@ -44,6 +44,7 @@ class Data:
             self.items[k].append({"rcept_no": rc, "sj_div": r["sj_div"], "account_id": r["account_id"], "account_nm": r["account_nm"],
                                   "thstrm_amount": r["value"], "thstrm_add_amount": ""})
         self.stock = _rows("stock_daily.csv")
+        self.extra = []  # 정기보고서 외 공시 (사건 수집 테스트용, pblntf_ty 없이 요청할 때만)
         self.calls = defaultdict(int)
 
 
@@ -79,6 +80,8 @@ def make_handler(d: Data):
                 lst = [{"rcept_no": r["rcept_no"], "rcept_dt": r["rcept_dt"], "report_nm": r["report_nm"], "corp_name": d.corp_name}
                        for r in d.reports if p["bgn_de"] <= r["rcept_dt"] <= p["end_de"]]
                 lst.append({"rcept_no": "20240101000001", "rcept_dt": "20240101", "report_nm": "주요사항보고서(자기주식취득결정)"})  # 정기보고서 아님 → 무시되어야 함
+                if "pblntf_ty" not in p:
+                    lst += [r for r in d.extra if p["bgn_de"] <= r["rcept_dt"] <= p["end_de"]]
                 return self._json({"status": "000", "total_page": 1, "list": lst})
             if u.path == "/api/fnlttSinglAcntAll.json":
                 if d.no_cfs and p["fs_div"] == "CFS":

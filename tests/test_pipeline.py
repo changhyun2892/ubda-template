@@ -125,6 +125,36 @@ def main() -> int:
     ok("판매비와관리비 합계 계정이 있으면 그대로", next(r for r in cd.to_rows(items2, rep, "CFS") if r["metric"] == "sga")["value"] == 90)
     os.chdir(REPO)
 
+    print("\n[1-1] 주가 급변일 + 같은 시기 공시 자동 연결")
+    fx = rows(HERE / "fixtures" / "stock_daily.csv")
+    best, bd = 0, None
+    for i in range(62, len(fx)):
+        a0, a1, k0, k1 = (float(fx[i - 1]["close"]), float(fx[i]["close"]), fx[i - 1]["kospi"], fx[i]["kospi"])
+        if not (k0 and k1):
+            continue
+        e = abs((a1 / a0 - 1) - (float(k1) / float(k0) - 1))
+        if e > best:
+            best, bd = e, fx[i]["date"]
+    dk = bd.replace("-", "")
+    data.extra = [{"rcept_no": dk + "900001", "rcept_dt": dk, "report_nm": "연결재무제표기준영업(잠정)실적(공정공시)", "flr_nm": "삼양식품"},
+                  {"rcept_no": dk + "900002", "rcept_dt": dk, "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서", "flr_nm": "홍길동"},
+                  {"rcept_no": "20230105900003", "rcept_dt": "20230105", "report_nm": "단일판매ㆍ공급계약체결", "flr_nm": "삼양식품"}]
+    r = run(d, "collect_events.py", base)
+    ev = rows(d / "companies" / SLUG / "data" / "events_auto.csv")
+    lk = rows(d / "companies" / SLUG / "data" / "event_links.csv")
+    hit = next((e for e in ev if e["date"] == bd), None)
+    ok("급변일 찾음 (연도별 10일 이하)", r.returncode == 0 and ev and max(sum(1 for e in ev if e["date"][:4] == y) for y in {e["date"][:4] for e in ev}) <= 10,
+       f"{len(ev)}일 · {r.stdout.strip()[-60:]}")
+    ok("가장 큰 초과 등락일에 잠정실적 공시가 대표 공시로 연결, 지분 공시는 '기타'", hit is not None and hit["other_count"] == "1"
+       and "잠정" in hit["headline"] and hit["categories"].startswith("실적"), str(hit and {k: hit[k] for k in ("date", "headline", "major_count", "other_count")}))
+    ok("급변일과 멀리 떨어진 공시는 연결 안 됨", not any(x["rcept_no"] == "20230105900003" for x in lk))
+    ok("공시가 없는 급변일도 남김", any(e["major_count"] == "0" for e in ev))
+    disc = rows(d / "companies" / SLUG / "data" / "raw" / "dart_disclosures.csv")
+    n_list = data.calls["/api/list.json"]
+    r = run(d, "collect_events.py", base)
+    ok("재실행 때는 최근 공시만 다시 조회 (중복 저장 없음)", data.calls["/api/list.json"] - n_list == 1 and len(rows(d / "companies" / SLUG / "data" / "raw" / "dart_disclosures.csv")) == len(disc),
+       f"추가 조회 {data.calls['/api/list.json'] - n_list}회")
+
     print("\n[2] 다시 실행 — 새 보고서가 없으면 재무 API를 다시 부르지 않음")
     before = data.calls["/api/fnlttSinglAcntAll.json"]
     r = run(d, "collect_dart.py", base)
