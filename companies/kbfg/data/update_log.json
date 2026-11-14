@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-14 21:34 KST",
+    "checked_at": "2026-11-14 21:54 KST",
     "corp_code": "00688996",
     "reports_total": 30,
     "new_reports": [],
@@ -15,11 +15,20 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-14 21:34 KST",
+    "checked_at": "2026-11-14 21:54 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 159000,
     "source": "Yahoo Finance 105560.KS 일봉 (비수정 종가)",
     "index": "^KS11"
+  },
+  "events": {
+    "status": "성공",
+    "checked_at": "2026-11-14 21:54 KST",
+    "spike_days": 27,
+    "with_major_disclosure": 5,
+    "disclosures_total": 716,
+    "disclosures_new": 716,
+    "rule": "|초과 등락률| ≥ 2.5σ(직전 250거래일) 또는 ≥ 5.0%, 연도별 상위 10일, 공시 창 D-2(다음 날)~D"
   }
 }
