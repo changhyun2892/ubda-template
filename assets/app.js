@@ -12,7 +12,7 @@ const FILE_MAP = {
   company: 'company.json', summary: 'data/summary.json', verify: 'data/verify_report.json', log: 'data/update_log.json',
   fin: 'data/financials.csv', qtr: 'data/quarterly.csv', met: 'data/metrics.csv', ledger: 'data/audit_ledger.csv',
   reg: 'data/source_registry.csv', status: 'data/research_status.csv', kpi: 'data/manual/kpi_values.csv', stock: 'data/stock_daily.csv',
-  reports: 'data/raw/dart_reports.csv',
+  reports: 'data/raw/dart_reports.csv', events: 'data/events_auto.csv', evlinks: 'data/event_links.csv',
 };
 const COMPARE_KEYS = ['company', 'summary', 'fin', 'met', 'qtr', 'ledger', 'reg'];
 
@@ -159,6 +159,10 @@ function lineChart(el, xs, series, markers = [], opt = {}) {
     s += `<path d="${d}" fill="none" stroke="${se.color}" stroke-width="1.6"/>`;
   });
   s += `<rect class="hit" x="${m.l}" y="${m.t}" width="${iw}" height="${ih}" fill="transparent"/><line class="cur" y1="${m.t}" y2="${m.t + ih}" stroke="#999" opacity="0"/>`;
+  (opt.dots || []).forEach((dt) => { // 급변일 점 (첫 번째 선 위). 클릭하면 opt.onDot(key)
+    const i = idx.get(dt.date), v = i === undefined ? null : series[0].values[i]; if (v === null || v === undefined) return;
+    s += `<circle class="dot" data-key="${esc(dt.key)}" data-l="${esc(dt.label)}" cx="${X(i)}" cy="${Y(v)}" r="${dt.big ? 5.5 : 4}" fill="${dt.color}" stroke="#fff" stroke-width="1.5" style="cursor:pointer"/>`;
+  });
   el.innerHTML = s + '</svg>';
   const svg = el.querySelector('svg'), cur = el.querySelector('.cur');
   el.querySelector('.hit').addEventListener('mousemove', (e) => {
@@ -168,6 +172,10 @@ function lineChart(el, xs, series, markers = [], opt = {}) {
   });
   el.querySelector('.hit').addEventListener('mouseleave', () => { tip.hide(); cur.setAttribute('opacity', 0); });
   el.querySelectorAll('.mk').forEach((l) => { l.addEventListener('mousemove', (e) => tip.show(e, esc(l.dataset.l))); l.addEventListener('mouseleave', () => tip.hide()); });
+  el.querySelectorAll('.dot').forEach((c) => {
+    c.addEventListener('mousemove', (e) => tip.show(e, esc(c.dataset.l).replace(/\n/g, '<br>'))); c.addEventListener('mouseleave', () => tip.hide());
+    c.addEventListener('click', () => { tip.hide(); opt.onDot && opt.onDot(c.dataset.key); });
+  });
 }
 
 const legend = (items) => `<div class="legend">${items.map(([n, c]) => `<span><i style="background:${c}"></i>${esc(n)}</span>`).join('')}</div>`;
@@ -214,7 +222,7 @@ const PAGES = [
   ['quarterly', '분기 실적', '분기별 단일 실적 (Q4 = 연간 − 3분기 누적)'],
   ['ratios', '재무비율', '수익성·안정성·활동성 — 산식과 입력값 공개'],
   ['bs', '재무상태·현금', '자산·부채·자본과 현금흐름'],
-  ['stock', '주가', '주가와 시장지수, 정기공시 시점'],
+  ['stock', '주가', '주가와 시장지수, 급변일과 같은 시기 공시'],
   ['industry', '산업 KPI', '산업별로 추가 확인할 지표의 확보 현황'],
   ['dart', 'DART 자동 업데이트', '정기보고서를 평일마다 확인해 자동 반영 · 원문 대조 전 값은 따로 표시'],
   ['audit', '출처·검증', '자동 점검 결과, 검증 장부, 출처 목록'],
@@ -354,14 +362,45 @@ function pageStock() {
   return `<div class="grid">${card('w6', '주가 흐름', `${esc(last.source)} · 보라색 점선 = 정기보고서 공시일 (마우스를 올리면 보고서명)`,
     `<div class="seg" style="margin-bottom:8px"><button data-sm="index" aria-pressed="${S.stockMode === 'index'}">시작일=100 지수 비교</button><button data-sm="raw" aria-pressed="${S.stockMode === 'raw'}">주가(원)</button></div>` +
     legend(S.stockMode === 'index' ? [['주가', COLORS()[0]], ['시장지수', COLORS()[1]]] : [['종가', COLORS()[0]]]) + '<div class="chart" id="c6"></div>',
-    `마지막 ${esc(last.date)} 종가 ${fmt(N(last.close), 0)}원. 공시와 주가가 같은 시기에 움직였다고 해서 인과관계가 있다는 뜻은 아닙니다. 비수정 종가라 액면분할이 있으면 해석에 주의하세요.`)}</div>`;
+    `마지막 ${esc(last.date)} 종가 ${fmt(N(last.close), 0)}원. 점 = 시장 대비 크게 움직인 날(초록 상승 · 빨강 하락, 큰 점은 주요 공시가 같은 시기에 있음). 누르면 같은 시기 공시가 열립니다. 공시와 주가가 같은 시기에 움직였다고 해서 인과관계가 있다는 뜻은 아닙니다. 비수정 종가라 액면분할이 있으면 해석에 주의하세요.`)}${eventsCard()}</div>`;
+}
+/* 주가 급변일 (scripts/collect_events.py → events_auto.csv · event_links.csv) */
+const EVROWS = () => (D.events || []).slice().sort((a, b) => (a.date < b.date ? 1 : -1));
+const spct = (v) => (v === '' || v === undefined ? '–' : `${N(v) > 0 ? '+' : ''}${fmt(N(v), 1)}%`);
+function eventsCard() {
+  const ev = EVROWS();
+  if (!ev.length) return card('w6', '주가 급변일과 같은 시기 공시', '', `<div class="empty"><b>급변일 자료가 아직 없습니다</b>평일 자동 업데이트(collect_events.py)가 돌면 채워집니다.</div>`);
+  const lg = D.log?.events || {}, linked = ev.filter((e) => +e.major_count > 0).length;
+  const rows = ev.map((e) => `<tr class="click" data-act="ev:${esc(e.date)}"><td>${esc(e.date)}</td><td class="${e.direction === '하락' ? 'neg' : ''}" style="${e.direction === '상승' ? 'color:var(--up)' : ''}">${esc(e.direction)}</td>
+    <td>${spct(e.ret_pct)}</td><td>${spct(e.index_ret_pct)}</td><td><b>${spct(e.excess_pct)}</b></td><td>${fmt(N(e.z), 1)}배</td><td>${e.volume_ratio ? fmt(N(e.volume_ratio), 1) + '배' : '–'}</td>
+    <td class="l">${+e.major_count ? `<b>${esc(e.headline)}</b>${+e.major_count > 1 ? ` 외 ${+e.major_count - 1}건` : ''}` : `<span style="color:var(--muted)">${esc(e.headline)}</span>`}${+e.other_count ? ` <small style="color:var(--muted)">· 기타 공시 ${esc(e.other_count)}건</small>` : ''}${e.note ? `<br><small style="color:var(--warn)">${esc(e.note)}</small>` : ''}</td></tr>`).join('');
+  return card('w6', '주가 급변일과 같은 시기 공시', `시장 대비 크게 움직인 ${ev.length}일 중 ${linked}일에 주요 공시가 같은 시기에 있음 · 행을 누르면 공시 목록과 DART 원문`,
+    `<div class="tbl-wrap" style="max-height:420px;overflow-y:auto"><table class="tbl"><thead><tr><th>날짜</th><th>방향</th><th>등락률</th><th>시장지수</th><th>시장 대비</th><th>평소 변동폭 대비</th><th>거래량(20일 평균 대비)</th><th class="l">같은 시기 대표 공시</th></tr></thead><tbody>${rows}</tbody></table></div>`,
+    `기준: ${esc(lg.rule || '시장 대비 등락률이 평소 변동폭의 2.5배 이상 또는 5% 이상, 연도별 상위 10일')}. 공시는 급변일 전날~당일 접수분(장 마감 뒤·주말 공시 포함). 같은 시기에 있었던 공시일 뿐 원인이라는 뜻이 아니며, 공시가 없는 날도 숨기지 않습니다. 자동 수집 · 원문 대조 전${lg.checked_at ? ` · ${esc(lg.checked_at)}` : ''}`);
+}
+function showEvent(date) {
+  const e = (D.events || []).find((r) => r.date === date); if (!e) return;
+  const lk = (D.evlinks || []).filter((r) => r.date === date).sort((a, b) => (b.major === 'Y') - (a.major === 'Y') || (a.rcept_dt < b.rcept_dt ? -1 : 1));
+  const item = (r) => `<div class="ev-box"><b>${esc(r.category)}</b> · ${esc(r.rcept_dt.slice(0, 4))}-${esc(r.rcept_dt.slice(4, 6))}-${esc(r.rcept_dt.slice(6, 8))} 접수${r.flr_nm ? ` · 제출 ${esc(r.flr_nm)}` : ''}<br><a href="${esc(r.viewer_url)}" target="_blank" rel="noopener">${esc(r.report_nm)}</a></div>`;
+  const maj = lk.filter((r) => r.major === 'Y'), oth = lk.filter((r) => r.major !== 'Y');
+  openPanel(`<div class="panel-head"><h2>${esc(date)} 주가 ${esc(e.direction)}</h2><button class="x" aria-label="닫기">✕</button></div>
+    <div class="ev-val">${spct(e.excess_pct)} <small style="font-size:12px;color:var(--muted)">시장 대비</small></div>
+    <div class="formula">종가 ${fmt(N(e.close), 0)}원 · 등락률 ${spct(e.ret_pct)} − 시장지수 ${spct(e.index_ret_pct)}<br>평소 변동폭(직전 250거래일 표준편차 ${fmt(N(e.sigma_pct), 2)}%)의 ${fmt(N(e.z), 1)}배 · 거래량 20일 평균의 ${e.volume_ratio ? fmt(N(e.volume_ratio), 1) + '배' : '–'}<br>그해 급변 후보 ${esc(e.candidates_in_year)}일 중 ${esc(e.rank_in_year)}위</div>
+    ${e.note ? `<div class="note warn" style="margin-top:8px">${esc(e.note)}</div>` : ''}
+    <h3 style="font-size:12.5px;margin:12px 0 0">같은 시기 주요 공시 (${maj.length}건) <small style="color:var(--muted);font-weight:400">${esc(e.window)}</small></h3>
+    ${maj.map(item).join('') || '<div class="ev-box">연결된 주요 공시 없음 — 업종 전체 흐름, 수급, 공시 밖 뉴스일 수 있음 (확인 전)</div>'}
+    ${oth.length ? `<details style="margin-top:8px"><summary style="cursor:pointer;font-size:12px">기타 공시 ${oth.length}건 (지분 신고·IR 안내 등)</summary>${oth.map(item).join('')}</details>` : ''}
+    <div class="note" style="margin-top:10px">같은 시기에 있었던 공시를 자동으로 모은 것이며, 이 공시 때문에 주가가 움직였다는 뜻이 아닙니다.</div>`);
 }
 function drawStock() {
   const xs = D.stock.map((r) => r.date), c = D.stock.map((r) => N(r.close)), k = D.stock.map((r) => N(r.index_close));
   const b0 = c.find((v) => v !== null), k0 = k.find((v) => v !== null);
   const mk = D.reg.filter((r) => r.type === 'DART 정기보고서' && r.source_date).map((r) => ({ date: `${r.source_date.slice(0, 4)}-${r.source_date.slice(4, 6)}-${r.source_date.slice(6, 8)}`, label: `${r.title} (${r.source_date})` }));
-  if (S.stockMode === 'index') lineChart($('#c6'), xs, [{ name: '주가', color: COLORS()[0], values: c.map((v) => (v === null ? null : (v / b0) * 100)) }, { name: '시장지수', color: COLORS()[1], values: k.map((v) => (v === null || !k0 ? null : (v / k0) * 100)) }], mk, { fmt: (v) => fmt(v, 0) });
-  else lineChart($('#c6'), xs, [{ name: '종가(원)', color: COLORS()[0], values: c }], mk, { fmt: (v) => fmt(v, 0) });
+  const dots = (D.events || []).map((e) => ({ date: e.date, key: e.date, big: +e.major_count > 0, color: e.direction === '하락' ? css('--down') : css('--up'),
+    label: `${e.date} 시장 대비 ${spct(e.excess_pct)}\n${+e.major_count ? e.headline : '연결된 주요 공시 없음'}\n누르면 같은 시기 공시` }));
+  const o = { fmt: (v) => fmt(v, 0), dots, onDot: showEvent };
+  if (S.stockMode === 'index') lineChart($('#c6'), xs, [{ name: '주가', color: COLORS()[0], values: c.map((v) => (v === null ? null : (v / b0) * 100)) }, { name: '시장지수', color: COLORS()[1], values: k.map((v) => (v === null || !k0 ? null : (v / k0) * 100)) }], mk, o);
+  else lineChart($('#c6'), xs, [{ name: '종가(원)', color: COLORS()[0], values: c }], mk, o);
 }
 
 /* 산업 KPI: kpi_values.csv에 값이 있으면 KPI별 차트+표, 없으면 '미확인'과 찾을 곳 */
@@ -425,7 +464,7 @@ function pageAudit() {
   return `<div class="grid">
   ${card('w3', '자동 점검 결과', vr ? `${esc(vr.checked_at)} · 통과 ${vr.counts['통과'] || 0} · 실패 ${vr.counts['실패'] || 0} · 경고 ${vr.counts['경고'] || 0}` : '아직 점검 전',
     vr ? `<div class="tbl-wrap" style="max-height:340px"><table class="tbl"><tbody>${vr.results.map((r) => `<tr><td>${badge(r.state)}</td><td class="l">${esc(r.name)}${r.detail ? `<br><small style="color:var(--muted)">${esc(r.detail)}</small>` : ''}</td></tr>`).join('')}</tbody></table></div>` : '<div class="empty">scripts/verify_data.py 실행 후 표시됩니다</div>')}
-  ${card('w3', '자동 업데이트 기록', '', `<table class="tbl"><tbody>${Object.entries(log).map(([k, v]) => `<tr><td>${esc({ dart: 'DART 공시', stock: '주가' }[k] || k)}</td><td>${badge(v.status === '성공' ? '통과' : v.status === '건너뜀' ? '미실행' : '경고')} ${esc(v.status)}</td><td class="l">${esc(v.checked_at || '')}<br><small>${esc(v.message || (v.new_reports || []).slice(-2).join(' / '))}</small></td></tr>`).join('') || '<tr><td>기록 없음</td></tr>'}</tbody></table>`)}
+  ${card('w3', '자동 업데이트 기록', '', `<table class="tbl"><tbody>${Object.entries(log).map(([k, v]) => `<tr><td>${esc({ dart: 'DART 공시', stock: '주가', events: '급변일·공시', text: '사업보고서 본문' }[k] || k)}</td><td>${badge(v.status === '성공' ? '통과' : v.status === '건너뜀' ? '미실행' : '경고')} ${esc(v.status)}</td><td class="l">${esc(v.checked_at || '')}<br><small>${esc(v.message || (v.new_reports || []).slice(-2).join(' / '))}</small></td></tr>`).join('') || '<tr><td>기록 없음</td></tr>'}</tbody></table>`)}
   ${card('w6', '검증 장부', '값 하나하나의 출처·원문 위치·대조 상태', `<div class="seg" style="margin-bottom:8px">${['all', '원문 대조 일치', '자동 수집 · 원문 대조 전', '불일치', '미확인'].map((s) => `<button data-lf="${esc(s)}" aria-pressed="${res === s}">${s === 'all' ? '전체' : esc(ST_SHORT[s] || s)} (${s === 'all' ? D.ledger.length : D.ledger.filter((r) => r.result === s).length})</button>`).join('')}</div>
     <div class="tbl-wrap" style="max-height:420px"><table class="tbl"><thead><tr><th>검증번호</th><th>값(억원)</th><th>상태</th><th class="l">원문 위치</th><th class="l">방법</th></tr></thead><tbody>
     ${led.slice(0, 400).map((r) => `<tr class="click" data-act="aud:${esc(r.audit_id)}"><td>${esc(r.audit_id)}</td><td>${r.value === '' ? '–' : fmt(N(r.value) / 1e8)}</td><td>${badge(r.result)}</td><td class="l">${esc(r.source_location)}</td><td class="l">${esc(r.method)}</td></tr>`).join('')}
@@ -583,7 +622,7 @@ function onClick(e) {
   else if (t.dataset.lf) { S.ledgerFilter = t.dataset.lf; render(); }
   else if (t.dataset.act) {
     const [k, a, b] = t.dataset.act.split(':');
-    if (k === 'fin') showFin(+a, b); else if (k === 'met') showMetric(+a, b); else if (k === 'cmp') showCmp(+a, b); else if (k === 'kpi') showKpi(a, +b);
+    if (k === 'fin') showFin(+a, b); else if (k === 'met') showMetric(+a, b); else if (k === 'cmp') showCmp(+a, b); else if (k === 'kpi') showKpi(a, +b); else if (k === 'ev') showEvent(a);
     else if (k === 'aud') openPanel(`<div class="panel-head"><h2>${esc(a)}</h2><button class="x">✕</button></div>${evidenceHTML(a)}`);
     e.stopPropagation();
   }
