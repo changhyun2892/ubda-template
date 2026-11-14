@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:20 KST",
+    "checked_at": "2026-11-15 00:32 KST",
     "corp_code": "00982023",
     "reports_total": 18,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:21 KST",
+    "checked_at": "2026-11-15 00:33 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 24000,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:21 KST",
+    "checked_at": "2026-11-15 00:33 KST",
     "spike_days": 40,
     "with_major_disclosure": 12,
     "news_total": 177,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:21 KST",
+    "checked_at": "2026-11-15 00:33 KST",
     "rows": 609,
     "groups": [
       "실리콘투",
@@ -46,7 +46,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:21 KST",
+    "checked_at": "2026-11-15 00:33 KST",
     "new": 0,
     "total": 177,
     "first": "2026-08-25 00:46",
@@ -55,16 +55,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:20 KST",
-    "new_share_reports": 18,
-    "new_dividend_reports": 5
+    "checked_at": "2026-11-15 00:32 KST",
+    "new_share_reports": 0,
+    "new_dividend_reports": 0,
+    "new_owner_reports": 18
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:21 KST",
+    "checked_at": "2026-11-15 00:33 KST",
     "rows": 888,
     "as_of": "2026-11-13",
-    "per": 8.53,
-    "pbr": 2.036
+    "per": 10.11,
+    "pbr": 2.412
   }
 }

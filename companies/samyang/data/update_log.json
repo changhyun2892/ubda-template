@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:20 KST",
+    "checked_at": "2026-11-15 00:32 KST",
     "corp_code": "00126955",
     "reports_total": 16,
     "new_reports": [],
@@ -9,7 +9,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:20 KST",
+    "checked_at": "2026-11-15 00:32 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 1210000,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:20 KST",
+    "checked_at": "2026-11-15 00:32 KST",
     "spike_days": 40,
     "with_major_disclosure": 8,
     "news_total": 366,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:20 KST",
+    "checked_at": "2026-11-15 00:32 KST",
     "rows": 812,
     "groups": [
       "삼양식품",
@@ -47,7 +47,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:20 KST",
+    "checked_at": "2026-11-15 00:32 KST",
     "new": 0,
     "total": 366,
     "first": "2026-10-28 17:12",
@@ -56,16 +56,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:20 KST",
-    "new_share_reports": 16,
-    "new_dividend_reports": 5
+    "checked_at": "2026-11-15 00:32 KST",
+    "new_share_reports": 0,
+    "new_dividend_reports": 0,
+    "new_owner_reports": 16
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:20 KST",
+    "checked_at": "2026-11-15 00:32 KST",
     "rows": 889,
     "as_of": "2026-11-13",
     "per": 18.69,
-    "pbr": 5.887
+    "pbr": 5.954
   }
 }

@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:15 KST",
+    "checked_at": "2026-11-15 00:27 KST",
     "corp_code": "00428321",
     "reports_total": 20,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:15 KST",
+    "checked_at": "2026-11-15 00:27 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 4780,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:15 KST",
+    "checked_at": "2026-11-15 00:28 KST",
     "spike_days": 30,
     "with_major_disclosure": 2,
     "news_total": 441,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:15 KST",
+    "checked_at": "2026-11-15 00:27 KST",
     "rows": 809,
     "groups": [
       "해태제과",
@@ -47,7 +47,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:15 KST",
+    "checked_at": "2026-11-15 00:27 KST",
     "new": 0,
     "total": 441,
     "first": "2026-09-21 08:56",
@@ -56,8 +56,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:15 KST",
-    "new_share_reports": 20,
-    "new_dividend_reports": 8
+    "checked_at": "2026-11-15 00:27 KST",
+    "new_share_reports": 0,
+    "new_dividend_reports": 0,
+    "new_owner_reports": 20
+  },
+  "valuation": {
+    "status": "성공",
+    "checked_at": "2026-11-15 00:28 KST",
+    "rows": 881,
+    "as_of": "2026-11-13",
+    "per": 6.25,
+    "pbr": 0.402
   }
 }

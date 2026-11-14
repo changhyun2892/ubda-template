@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:14 KST",
+    "checked_at": "2026-11-15 00:27 KST",
     "corp_code": "01009789",
     "reports_total": 19,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:15 KST",
+    "checked_at": "2026-11-15 00:27 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 280500,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:15 KST",
+    "checked_at": "2026-11-15 00:27 KST",
     "spike_days": 40,
     "with_major_disclosure": 13,
     "news_total": 506,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:15 KST",
+    "checked_at": "2026-11-15 00:27 KST",
     "rows": 406,
     "groups": [
       "코스맥스",
@@ -45,7 +45,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:15 KST",
+    "checked_at": "2026-11-15 00:27 KST",
     "new": 0,
     "total": 506,
     "first": "2026-10-14 09:16",
@@ -54,16 +54,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:14 KST",
-    "new_share_reports": 19,
-    "new_dividend_reports": 6
+    "checked_at": "2026-11-15 00:27 KST",
+    "new_share_reports": 0,
+    "new_dividend_reports": 0,
+    "new_owner_reports": 19
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:15 KST",
+    "checked_at": "2026-11-15 00:27 KST",
     "rows": 888,
     "as_of": "2026-11-13",
-    "per": 14.06,
-    "pbr": 4.563
+    "per": 14.61,
+    "pbr": 4.984
   }
 }

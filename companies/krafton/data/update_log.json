@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:18 KST",
+    "checked_at": "2026-11-15 00:30 KST",
     "corp_code": "00760971",
     "reports_total": 16,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:18 KST",
+    "checked_at": "2026-11-15 00:30 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 199100,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:18 KST",
+    "checked_at": "2026-11-15 00:30 KST",
     "spike_days": 34,
     "with_major_disclosure": 6,
     "news_total": 433,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:18 KST",
+    "checked_at": "2026-11-15 00:30 KST",
     "rows": 609,
     "groups": [
       "크래프톤",
@@ -46,7 +46,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:18 KST",
+    "checked_at": "2026-11-15 00:30 KST",
     "new": 0,
     "total": 433,
     "first": "2026-11-05 23:10",
@@ -55,8 +55,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:18 KST",
-    "new_share_reports": 16,
-    "new_dividend_reports": 5
+    "checked_at": "2026-11-15 00:30 KST",
+    "new_share_reports": 0,
+    "new_dividend_reports": 0,
+    "new_owner_reports": 16
+  },
+  "valuation": {
+    "status": "성공",
+    "checked_at": "2026-11-15 00:30 KST",
+    "rows": 890,
+    "as_of": "2026-11-13",
+    "per": 10.36,
+    "pbr": 1.2
   }
 }

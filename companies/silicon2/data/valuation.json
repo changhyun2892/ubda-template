@@ -1,32 +1,33 @@
 {
  "as_of": "2026-11-13",
  "close": 24000,
- "market_cap": 1460957616000,
- "per": 8.53,
- "pbr": 2.036,
+ "market_cap": 1733830032000,
+ "per": 10.11,
+ "pbr": 2.412,
  "div_yield_pct": 1.275,
- "eps": 2813.6,
- "bps": 11786.2,
+ "eps": 2374.9,
+ "bps": 9948.2,
  "dps": 306.0,
  "inputs": {
-  "common_issued": 60873234.0,
-  "shares_outstanding": 60873234.0,
+  "common_issued": 72242918.0,
+  "shares_outstanding": 72119718.0,
   "preferred_outstanding": 0.0,
-  "shares_report": "[기재정정]사업보고서 (2024.12)",
-  "shares_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250408002625",
+  "shares_report": "분기보고서 (2026.09)",
+  "shares_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113000882",
   "ttm_net_income": 171274661465.0,
-  "ttm_period": "2025Q4~2026Q3",
-  "ni_basis": "당기순이익(비지배 포함)",
+  "ttm_period": "최근 4분기 (2026 3분기 누적 기준)",
+  "ni_basis": "지배주주 순이익",
   "equity": 717462904533.0,
   "equity_period": "2026 3분기보고서",
+  "equity_basis": "자본총계(비지배 포함)",
   "dps_year": "2025",
   "payout_pct": 11.9
  },
  "notes": [
   "시가총액은 보통주만 (거래소 방식). 우선주는 주가를 받지 않아 시가총액에서 빠짐",
   "PER·PBR의 주식 수는 보통주+우선주 유통주식수(자기주식 제외)",
-  "자본총계는 비지배지분을 포함",
+  "순이익·자본은 지배주주 기준 (공시에 없으면 비지배 포함 값으로 대신하고 위에 표시)",
   "비수정 종가 기준 · 자동 계산 · 원문 대조 전"
  ],
- "built_at": "2026-11-15 00:21 KST"
+ "built_at": "2026-11-15 00:33 KST"
 }
