@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-15 00:22 KST",
+ "updated_at": "2026-11-15 01:01 KST",
  "industries": {
   "auto": {
    "name": "자동차",
@@ -72,12 +72,12 @@
    },
    "industry_kpis_found": 9,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 00:14 KST",
+   "updated_at": "2026-11-15 00:28 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 7381786185800,
-    "per": 29.28,
-    "pbr": 1.545,
+    "per": 30.42,
+    "pbr": 1.561,
     "div_yield_pct": 0.983
    }
   },
@@ -115,7 +115,7 @@
    },
    "industry_kpis_found": 2,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-15 00:14 KST",
+   "updated_at": "2026-11-15 00:28 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 8835404580000,
@@ -157,8 +157,14 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-15 00:14 KST",
-   "valuation": null
+   "updated_at": "2026-11-15 00:27 KST",
+   "valuation": {
+    "as_of": "2026-11-13",
+    "market_cap": 2412833277600,
+    "per": 11.21,
+    "pbr": 1.823,
+    "div_yield_pct": 2.937
+   }
   },
   {
    "slug": "binggrae",
@@ -194,7 +200,7 @@
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-15 00:14 KST",
+   "updated_at": "2026-11-15 00:27 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 688689003300,
@@ -237,12 +243,12 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-15 00:14 KST",
+   "updated_at": "2026-11-15 00:30 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 4229757459790,
     "per": 5.57,
-    "pbr": 0.365,
+    "pbr": 0.384,
     "div_yield_pct": 5.393
    }
   },
@@ -279,12 +285,12 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-15 00:14 KST",
+   "updated_at": "2026-11-15 00:29 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 1552608684200,
-    "per": 11.54,
-    "pbr": 2.796,
+    "per": 11.28,
+    "pbr": 2.825,
     "div_yield_pct": 4.202
    }
   },
@@ -321,12 +327,12 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 00:15 KST",
+   "updated_at": "2026-11-15 00:27 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 3183537274500,
-    "per": 14.06,
-    "pbr": 4.563,
+    "per": 14.61,
+    "pbr": 4.984,
     "div_yield_pct": 1.176
    }
   },
@@ -365,7 +371,7 @@
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-15 00:15 KST",
+   "updated_at": "2026-11-15 00:28 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 86414565000,
@@ -408,12 +414,12 @@
    },
    "industry_kpis_found": 2,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-15 00:15 KST",
+   "updated_at": "2026-11-15 00:33 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 1755094088400,
-    "per": 12.46,
-    "pbr": 0.108,
+    "per": 80.31,
+    "pbr": 0.13,
     "div_yield_pct": 3.931
    }
   },
@@ -450,12 +456,12 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-15 00:15 KST",
+   "updated_at": "2026-11-15 00:31 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 1856084613000,
-    "per": 13.41,
-    "pbr": 0.555,
+    "per": 14.31,
+    "pbr": 0.553,
     "div_yield_pct": 2.703
    }
   },
@@ -494,8 +500,14 @@
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-15 00:15 KST",
-   "valuation": null
+   "updated_at": "2026-11-15 00:28 KST",
+   "valuation": {
+    "as_of": "2026-11-13",
+    "market_cap": 139178409160,
+    "per": 6.25,
+    "pbr": 0.402,
+    "div_yield_pct": 5.23
+   }
   },
   {
    "slug": "hanafg",
@@ -532,8 +544,14 @@
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-15 00:16 KST",
-   "valuation": null
+   "updated_at": "2026-11-15 00:29 KST",
+   "valuation": {
+    "as_of": "2026-11-13",
+    "market_cap": 34679396424400,
+    "per": 8.21,
+    "pbr": 0.719,
+    "div_yield_pct": 3.295
+   }
   },
   {
    "slug": "hanmisemi",
@@ -569,7 +587,7 @@
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 00:15 KST",
+   "updated_at": "2026-11-15 00:35 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 17318226740000,
@@ -612,8 +630,14 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 00:15 KST",
-   "valuation": null
+   "updated_at": "2026-11-15 00:33 KST",
+   "valuation": {
+    "as_of": "2026-11-13",
+    "market_cap": 3130100783600,
+    "per": null,
+    "pbr": 0.881,
+    "div_yield_pct": null
+   }
   },
   {
    "slug": "hanwhaocean",
@@ -649,12 +673,12 @@
    },
    "industry_kpis_found": 10,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 00:16 KST",
+   "updated_at": "2026-11-15 00:28 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 14815087599900,
     "per": 7.6,
-    "pbr": 1.993,
+    "pbr": 1.994,
     "div_yield_pct": null
    }
   },
@@ -692,7 +716,7 @@
    },
    "industry_kpis_found": 10,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 00:16 KST",
+   "updated_at": "2026-11-15 00:29 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 28444491975000,
@@ -736,12 +760,12 @@
    },
    "industry_kpis_found": 9,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 00:16 KST",
+   "updated_at": "2026-11-15 00:37 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 16808615050000,
-    "per": 3.65,
-    "pbr": 0.887,
+    "per": 4.87,
+    "pbr": 1.132,
     "div_yield_pct": 5.179
    }
   },
@@ -779,12 +803,12 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 00:16 KST",
+   "updated_at": "2026-11-15 00:35 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 1610629216000,
-    "per": 8.47,
-    "pbr": 0.516,
+    "per": 9.53,
+    "pbr": 0.548,
     "div_yield_pct": 2.187
    }
   },
@@ -822,12 +846,12 @@
    },
    "industry_kpis_found": 8,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 00:16 KST",
+   "updated_at": "2026-11-15 00:29 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 55182217937000,
-    "per": 7.67,
-    "pbr": 0.521,
+    "per": 8.66,
+    "pbr": 0.577,
     "div_yield_pct": 3.711
    }
   },
@@ -865,12 +889,12 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-15 00:17 KST",
+   "updated_at": "2026-11-15 00:30 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 1835174011200,
-    "per": 14.58,
-    "pbr": 0.285,
+    "per": 7.84,
+    "pbr": 0.39,
     "div_yield_pct": 2.526
    }
   },
@@ -908,12 +932,12 @@
    },
    "industry_kpis_found": 2,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-15 00:16 KST",
+   "updated_at": "2026-11-15 00:41 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 15246782615280,
     "per": 5.77,
-    "pbr": 0.402,
+    "pbr": 0.406,
     "div_yield_pct": 5.481
    }
   },
@@ -951,8 +975,14 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-15 00:16 KST",
-   "valuation": null
+   "updated_at": "2026-11-15 00:38 KST",
+   "valuation": {
+    "as_of": "2026-11-13",
+    "market_cap": 2494223676000,
+    "per": 5.8,
+    "pbr": 0.391,
+    "div_yield_pct": 4.444
+   }
   },
   {
    "slug": "jbfg",
@@ -988,12 +1018,12 @@
    },
    "industry_kpis_found": 1,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-15 00:17 KST",
+   "updated_at": "2026-11-15 00:29 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 5073434088800,
     "per": 6.83,
-    "pbr": 0.786,
+    "pbr": 0.824,
     "div_yield_pct": 4.23
    }
   },
@@ -1032,8 +1062,14 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 00:17 KST",
-   "valuation": null
+   "updated_at": "2026-11-15 00:31 KST",
+   "valuation": {
+    "as_of": "2026-11-13",
+    "market_cap": 8017993372500,
+    "per": 284.94,
+    "pbr": 12.793,
+    "div_yield_pct": 0.031
+   }
   },
   {
    "slug": "kakao",
@@ -1068,8 +1104,14 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-15 00:17 KST",
-   "valuation": null
+   "updated_at": "2026-11-15 00:45 KST",
+   "valuation": {
+    "as_of": "2026-11-13",
+    "market_cap": 14043116167000,
+    "per": 36.85,
+    "pbr": 1.187,
+    "div_yield_pct": 0.237
+   }
   },
   {
    "slug": "kakaobank",
@@ -1105,8 +1147,14 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-15 00:17 KST",
-   "valuation": null
+   "updated_at": "2026-11-15 00:39 KST",
+   "valuation": {
+    "as_of": "2026-11-13",
+    "market_cap": 9924105089600,
+    "per": 17.24,
+    "pbr": 1.468,
+    "div_yield_pct": 2.212
+   }
   },
   {
    "slug": "kbfg",
@@ -1143,8 +1191,14 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-15 00:18 KST",
-   "valuation": null
+   "updated_at": "2026-11-15 00:30 KST",
+   "valuation": {
+    "as_of": "2026-11-13",
+    "market_cap": 56395349706000,
+    "per": 8.94,
+    "pbr": 0.923,
+    "div_yield_pct": 2.747
+   }
   },
   {
    "slug": "kgm",
@@ -1180,7 +1234,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 00:18 KST",
+   "updated_at": "2026-11-15 00:32 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 425999189760,
@@ -1223,7 +1277,7 @@
    },
    "industry_kpis_found": 8,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 00:18 KST",
+   "updated_at": "2026-11-15 00:48 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 36933069610800,
@@ -1265,12 +1319,12 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 00:17 KST",
+   "updated_at": "2026-11-15 00:41 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 2428962423300,
-    "per": 10.39,
-    "pbr": 1.371,
+    "per": 13.14,
+    "pbr": 2.425,
     "div_yield_pct": 0.84
    }
   },
@@ -1308,8 +1362,14 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-15 00:18 KST",
-   "valuation": null
+   "updated_at": "2026-11-15 00:30 KST",
+   "valuation": {
+    "as_of": "2026-11-13",
+    "market_cap": 9186042550300,
+    "per": 10.36,
+    "pbr": 1.2,
+    "div_yield_pct": 1.125
+   }
   },
   {
    "slug": "lgdisplay",
@@ -1345,12 +1405,12 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 00:19 KST",
+   "updated_at": "2026-11-15 00:32 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 3515000000000,
     "per": null,
-    "pbr": 0.459,
+    "pbr": 0.558,
     "div_yield_pct": null
    }
   },
@@ -1388,12 +1448,12 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 00:18 KST",
+   "updated_at": "2026-11-15 00:50 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 22087156912800,
-    "per": 15.98,
-    "pbr": 0.762,
+    "per": 23.37,
+    "pbr": 0.908,
     "div_yield_pct": 0.996
    }
   },
@@ -1430,12 +1490,12 @@
    },
    "industry_kpis_found": 8,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 00:17 KST",
+   "updated_at": "2026-11-15 00:43 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 3406931482500,
     "per": null,
-    "pbr": 0.66,
+    "pbr": 0.674,
     "div_yield_pct": 0.879
    }
   },
@@ -1475,12 +1535,12 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-15 00:19 KST",
+   "updated_at": "2026-11-15 00:31 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 2198036263500,
-    "per": 5.29,
-    "pbr": 0.13,
+    "per": 5.95,
+    "pbr": 0.145,
     "div_yield_pct": 5.148
    }
   },
@@ -1521,12 +1581,12 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-15 00:19 KST",
+   "updated_at": "2026-11-15 00:33 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 1171742270200,
-    "per": 12.83,
-    "pbr": 0.485,
+    "per": 12.84,
+    "pbr": 0.505,
     "div_yield_pct": 2.592
    }
   },
@@ -1564,11 +1624,11 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 00:19 KST",
+   "updated_at": "2026-11-15 00:52 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 32255433256500,
-    "per": 8.64,
+    "per": 8.66,
     "pbr": 0.609,
     "div_yield_pct": 1.828
    }
@@ -1606,12 +1666,12 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-15 00:18 KST",
+   "updated_at": "2026-11-15 00:45 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 27072881745000,
-    "per": 16.56,
-    "pbr": 0.89,
+    "per": 15.23,
+    "pbr": 0.938,
     "div_yield_pct": 1.525
    }
   },
@@ -1649,12 +1709,12 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-15 00:19 KST",
+   "updated_at": "2026-11-15 00:31 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 3856379938000,
-    "per": 5.54,
-    "pbr": 0.973,
+    "per": 5.64,
+    "pbr": 0.985,
     "div_yield_pct": 0.642
    }
   },
@@ -1692,12 +1752,12 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-15 00:20 KST",
+   "updated_at": "2026-11-15 00:33 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 2626003000550,
-    "per": 6.34,
-    "pbr": 0.426,
+    "per": 6.48,
+    "pbr": 0.43,
     "div_yield_pct": 2.733
    }
   },
@@ -1738,7 +1798,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-15 00:19 KST",
+   "updated_at": "2026-11-15 00:54 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 2229288293000,
@@ -1783,12 +1843,12 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-15 00:18 KST",
+   "updated_at": "2026-11-15 00:47 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 4490470316800,
-    "per": 10.54,
-    "pbr": 1.074,
+    "per": 10.71,
+    "pbr": 1.105,
     "div_yield_pct": 3.081
    }
   },
@@ -1828,12 +1888,12 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-15 00:20 KST",
+   "updated_at": "2026-11-15 00:32 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 1220384235000,
     "per": 14.34,
-    "pbr": 0.462,
+    "pbr": 0.489,
     "div_yield_pct": 2.956
    }
   },
@@ -1872,12 +1932,12 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 00:20 KST",
+   "updated_at": "2026-11-15 00:34 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 1204333393248000,
-    "per": 8.98,
-    "pbr": 2.335,
+    "per": 9.04,
+    "pbr": 2.394,
     "div_yield_pct": 0.81
    }
   },
@@ -1915,12 +1975,12 @@
    },
    "industry_kpis_found": 9,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 00:20 KST",
+   "updated_at": "2026-11-15 00:56 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 14616800000000,
-    "per": 25.51,
-    "pbr": 3.012,
+    "per": 25.1,
+    "pbr": 2.973,
     "div_yield_pct": null
    }
   },
@@ -1958,12 +2018,12 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-15 00:19 KST",
+   "updated_at": "2026-11-15 00:49 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 18145094100000,
-    "per": 27.28,
-    "pbr": 1.704,
+    "per": 27.95,
+    "pbr": 1.759,
     "div_yield_pct": 1.36
    }
   },
@@ -2002,12 +2062,12 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-15 00:20 KST",
+   "updated_at": "2026-11-15 00:32 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 9114948150000,
     "per": 18.69,
-    "pbr": 5.887,
+    "pbr": 5.954,
     "div_yield_pct": 0.397
    }
   },
@@ -2045,12 +2105,12 @@
    },
    "industry_kpis_found": 8,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 00:21 KST",
+   "updated_at": "2026-11-15 00:34 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 63863110080000,
-    "per": 62.52,
-    "pbr": 6.135,
+    "per": 64.11,
+    "pbr": 6.314,
     "div_yield_pct": 0.275
    }
   },
@@ -2089,8 +2149,14 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-15 00:20 KST",
-   "valuation": null
+   "updated_at": "2026-11-15 01:00 KST",
+   "valuation": {
+    "as_of": "2026-11-13",
+    "market_cap": 42623961617800,
+    "per": 7.84,
+    "pbr": 0.701,
+    "div_yield_pct": 2.884
+   }
   },
   {
    "slug": "shinsegae",
@@ -2126,12 +2192,12 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-15 00:19 KST",
+   "updated_at": "2026-11-15 00:51 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 2351850069000,
-    "per": 9.43,
-    "pbr": 0.29,
+    "per": 12.92,
+    "pbr": 0.404,
     "div_yield_pct": 2.088
    }
   },
@@ -2169,12 +2235,12 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 00:21 KST",
+   "updated_at": "2026-11-15 00:33 KST",
    "valuation": {
     "as_of": "2026-11-13",
-    "market_cap": 1460957616000,
-    "per": 8.53,
-    "pbr": 2.036,
+    "market_cap": 1733830032000,
+    "per": 10.11,
+    "pbr": 2.412,
     "div_yield_pct": 1.275
    }
   },
@@ -2212,12 +2278,12 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 00:21 KST",
+   "updated_at": "2026-11-15 00:35 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 866646075840000,
-    "per": 5.33,
-    "pbr": 3.292,
+    "per": 5.34,
+    "pbr": 3.295,
     "div_yield_pct": 0.247
    }
   },
@@ -2292,12 +2358,12 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-15 00:20 KST",
+   "updated_at": "2026-11-15 00:53 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 23662914665000,
     "per": 7.44,
-    "pbr": 0.579,
+    "pbr": 0.608,
     "div_yield_pct": 4.185
    }
   }
