@@ -434,7 +434,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20231019800299,20231019,기업설명회(IR)개최(안내공시),NAVER,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231019800299
 20231023000096,20231023,주식등의대량보유상황보고서(약식),국민연금공단,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231023000096
 20231024800290,20231024,최대주주등소유주식변동신고서,NAVER,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231024800290
-20231031800646,20231031,주식소각결정,NAVER,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231031800646
+20231031800646,20231031,주식소각결정,NAVER,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231031800646
 20231103800002,20231103,연결재무제표기준영업(잠정)실적(공정공시),NAVER,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231103800002
 20231103800003,20231103,영업(잠정)실적(공정공시),NAVER,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231103800003
 20231103800336,20231103,기업설명회(IR)개최(안내공시),NAVER,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231103800336
@@ -657,7 +657,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20240705000365,20240705,임원ㆍ주요주주특정증권등소유상황보고서,강유훈,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240705000365
 20240708000417,20240708,임원ㆍ주요주주특정증권등소유상황보고서,이인희,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240708000417
 20240718800321,20240718,기업설명회(IR)개최(안내공시),NAVER,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240718800321
-20240731800695,20240731,주식소각결정,NAVER,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240731800695
+20240731800695,20240731,주식소각결정,NAVER,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240731800695
 20240809800001,20240809,연결재무제표기준영업(잠정)실적(공정공시),NAVER,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240809800001
 20240809800002,20240809,영업(잠정)실적(공정공시),NAVER,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240809800002
 20240809800368,20240809,기업설명회(IR)개최(안내공시),NAVER,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240809800368
@@ -677,7 +677,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20240920000329,20240920,임원ㆍ주요주주특정증권등소유상황보고서,전정호,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240920000329
 20240920000334,20240920,임원ㆍ주요주주특정증권등소유상황보고서,김평송,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240920000334
 20240930000001,20240930,주요사항보고서(자기주식취득결정),NAVER,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240930000001
-20240930800002,20240930,주식소각결정,NAVER,유정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240930800002
+20240930800002,20240930,주식소각결정,NAVER,유정,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240930800002
 20241004000297,20241004,특수관계인에대한부동산임대,NAVER,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241004000297
 20241004000304,20241004,특수관계인에대한부동산임대,NAVER,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241004000304
 20241011000462,20241011,임원ㆍ주요주주특정증권등소유상황보고서,정유한,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241011000462
@@ -686,7 +686,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20241025000391,20241025,임원ㆍ주요주주특정증권등소유상황보고서,이동철,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241025000391
 20241030000274,20241030,자기주식취득결과보고서,NAVER,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241030000274
 20241104800365,20241104,기업설명회(IR)개최(안내공시),NAVER,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241104800365
-20241106800514,20241106,[기재정정]주식소각결정,NAVER,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241106800514
+20241106800514,20241106,[기재정정]주식소각결정,NAVER,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241106800514
 20241108000462,20241108,임원ㆍ주요주주특정증권등소유상황보고서,임준현,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241108000462
 20241108800001,20241108,연결재무제표기준영업(잠정)실적(공정공시),NAVER,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241108800001
 20241108800002,20241108,영업(잠정)실적(공정공시),NAVER,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241108800002
@@ -913,7 +913,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20250711000289,20250711,임원ㆍ주요주주특정증권등소유상황보고서,이종현,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250711000289
 20250718000447,20250718,임원ㆍ주요주주특정증권등소유상황보고서,김재엽,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250718000447
 20250724800405,20250724,기업설명회(IR)개최(안내공시),NAVER,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250724800405
-20250805800311,20250805,주식소각결정,NAVER,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250805800311
+20250805800311,20250805,주식소각결정,NAVER,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250805800311
 20250805800320,20250805,타법인주식및출자증권취득결정,NAVER,유정,지분·출자,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250805800320
 20250808000410,20250808,임원ㆍ주요주주특정증권등소유상황보고서,차동철,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250808000410
 20250808000423,20250808,임원ㆍ주요주주특정증권등소유상황보고서,김소연,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250808000423
@@ -1126,7 +1126,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20260716800252,20260716,기업설명회(IR)개최(안내공시),NAVER,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260716800252
 20260727000001,20260727,주요사항보고서(유상증자결정),NAVER,정,증자·사채,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260727000001
 20260727800006,20260727,[기재정정]장래사업ㆍ경영계획(공정공시),NAVER,유정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260727800006
-20260727800009,20260727,주식소각결정,NAVER,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260727800009
+20260727800009,20260727,주식소각결정,NAVER,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260727800009
 20260729000235,20260729,특수관계인에대한부동산임대,NAVER,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260729000235
 20260803800500,20260803,기업설명회(IR)개최(안내공시),NAVER,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260803800500
 20260804000335,20260804,특수관계인에대한출자,NAVER,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260804000335

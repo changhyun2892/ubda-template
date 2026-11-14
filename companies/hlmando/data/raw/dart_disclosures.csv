@@ -191,7 +191,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20240424800322,20240424,기업설명회(IR)개최(안내공시),HL만도,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240424800322
 20240426000660,20240426,임원ㆍ주요주주특정증권등소유상황보고서,김평용,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240426000660
 20240426800515,20240426,연결재무제표기준영업(잠정)실적(공정공시),HL만도,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240426800515
-20240516001059,20240516,[기재정정]사업보고서 (2023.12),HL만도,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240516001059
+20240516001059,20240516,[기재정정]사업보고서 (2023.12),HL만도,연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240516001059
 20240516001170,20240516,분기보고서 (2024.03),HL만도,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240516001170
 20240531001775,20240531,대규모기업집단현황공시[연1회공시및1/4분기용(개별회사)],HL만도,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240531001775
 20240531800723,20240531,기업지배구조보고서공시,HL만도,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240531800723
@@ -256,7 +256,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20250311000584,20250311,의결권대리행사권유참고서류,HL만도,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250311000584
 20250318001343,20250318,사업보고서 (2024.12),HL만도,정연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318001343
 20250318800005,20250318,감사보고서제출,HL만도,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318800005
-20250326001216,20250326,[기재정정]사업보고서 (2024.12),HL만도,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250326001216
+20250326001216,20250326,[기재정정]사업보고서 (2024.12),HL만도,연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250326001216
 20250326802469,20250326,정기주주총회결과,HL만도,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250326802469
 20250401004066,20250401,주식등의대량보유상황보고서(약식),국민연금공단,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250401004066
 20250402003593,20250402,임원ㆍ주요주주특정증권등소유상황보고서,국민연금공단,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250402003593

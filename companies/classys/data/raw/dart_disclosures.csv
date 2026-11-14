@@ -97,7 +97,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20240214900543,20240214,기업설명회(IR)개최,클래시스,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240214900543
 20240219900869,20240219,기업설명회(IR)개최,클래시스,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240219900869
 20240226900121,20240226,기업설명회(IR)개최,클래시스,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240226900121
-20240227900253,20240227,주식소각결정,클래시스,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240227900253
+20240227900253,20240227,주식소각결정,클래시스,코,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240227900253
 20240227900266,20240227,현금ㆍ현물배당결정,클래시스,코,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240227900266
 20240304900305,20240304,기업설명회(IR)개최,클래시스,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240304900305
 20240313001408,20240313,주주총회소집공고,클래시스,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240313001408
@@ -240,7 +240,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20260213900561,20260213,[기재정정]연결재무제표기준영업실적등에대한전망(공정공시),클래시스,코정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260213900561
 20260213900705,20260213,매출액또는손익구조30%(대규모법인은15%)이상변동,클래시스,코,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260213900705
 20260219900063,20260219,기업설명회(IR)개최,클래시스,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260219900063
-20260219900311,20260219,주식소각결정,클래시스,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260219900311
+20260219900311,20260219,주식소각결정,클래시스,코,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260219900311
 20260226001381,20260226,[기재정정]주식등의대량보유상황보고서(일반),"BCPECenturInvestments,LP",,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260226001381
 20260226001437,20260226,주식등의대량보유상황보고서(일반),"BCPECenturInvestments,LP",,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260226001437
 20260226900645,20260226,기업설명회(IR)개최,클래시스,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260226900645

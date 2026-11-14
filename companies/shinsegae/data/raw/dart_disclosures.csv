@@ -295,7 +295,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20250214001106,20250214,지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항,신세계,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250214001106
 20250219001835,20250219,주주총회소집공고,신세계,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250219001835
 20250219001856,20250219,의결권대리행사권유참고서류,신세계,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250219001856
-20250219800327,20250219,주식소각결정,신세계,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250219800327
+20250219800327,20250219,주식소각결정,신세계,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250219800327
 20250219800880,20250219,주주총회소집결의,신세계,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250219800880
 20250228005001,20250228,대규모기업집단현황공시[분기별공시(대표회사용)],신세계,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250228005001
 20250306801281,20250306,감사보고서제출,신세계,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250306801281
@@ -384,7 +384,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20260213002567,20260213,[기재정정]지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항,신세계,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260213002567
 20260223003373,20260223,주주총회소집공고,신세계,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260223003373
 20260223003493,20260223,의결권대리행사권유참고서류,신세계,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260223003493
-20260223800628,20260223,주식소각결정,신세계,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260223800628
+20260223800628,20260223,주식소각결정,신세계,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260223800628
 20260223800707,20260223,주주총회소집결의,신세계,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260223800707
 20260227004457,20260227,대규모기업집단현황공시[분기별공시(대표회사용)],신세계,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260227004457
 20260310801002,20260310,영업(잠정)실적(공정공시),신세계,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310801002
@@ -434,7 +434,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20260811800243,20260811,영업(잠정)실적(공정공시),신세계,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811800243
 20260811800640,20260811,기업설명회(IR)개최(안내공시),신세계,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811800640
 20260812000052,20260812,지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항,신세계,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000052
-20260814003432,20260814,[첨부추가]반기보고서 (2026.06),신세계,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003432
+20260814003432,20260814,[첨부추가]반기보고서 (2026.06),신세계,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003432
 20260821800588,20260821,기업설명회(IR)개최(안내공시),신세계,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821800588
 20260826800528,20260826,기업설명회(IR)개최(안내공시),신세계,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260826800528
 20260831000882,20260831,대규모기업집단현황공시[분기별공시(대표회사용)],신세계,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260831000882
@@ -448,7 +448,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20261103800429,20261103,결산실적공시예고(안내공시),신세계,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103800429
 20261110800284,20261110,현금ㆍ현물배당을위한주주명부폐쇄(기준일)결정,신세계,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800284
 20261110800287,20261110,현금ㆍ현물배당결정,신세계,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800287
-20261110800292,20261110,주식소각결정,신세계,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800292
+20261110800292,20261110,주식소각결정,신세계,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800292
 20261110800296,20261110,연결재무제표기준영업(잠정)실적(공정공시),신세계,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800296
 20261110800301,20261110,영업(잠정)실적(공정공시),신세계,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800301
 20261110800782,20261110,기업설명회(IR)개최(안내공시),신세계,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800782

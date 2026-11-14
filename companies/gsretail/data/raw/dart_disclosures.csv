@@ -177,7 +177,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20240321801621,20240321,대표이사(대표집행임원)변경(안내공시),GS리테일,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240321801621
 20240326000935,20240326,임원ㆍ주요주주특정증권등소유상황보고서,오진석,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240326000935
 20240326801564,20240326,최대주주등소유주식변동신고서,GS리테일,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240326801564
-20240401004251,20240401,[기재정정]사업보고서 (2023.12),GS리테일,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240401004251
+20240401004251,20240401,[기재정정]사업보고서 (2023.12),GS리테일,연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240401004251
 20240502800458,20240502,결산실적공시예고(안내공시),GS리테일,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240502800458
 20240509000017,20240509,주식등의대량보유상황보고서(약식),국민연금공단,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240509000017
 20240509000172,20240509,특수관계인에대한자금대여,GS리테일,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240509000172
@@ -192,7 +192,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20240603800063,20240603,기업설명회(IR)개최(안내공시),GS리테일,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240603800063
 20240607800448,20240607,기업설명회(IR)개최(안내공시),GS리테일,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240607800448
 20240628801087,20240628,지속가능경영보고서등관련사항(자율공시),GS리테일,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240628801087
-20240717000421,20240717,[기재정정]분기보고서 (2024.03),GS리테일,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240717000421
+20240717000421,20240717,[기재정정]분기보고서 (2024.03),GS리테일,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240717000421
 20240730800288,20240730,결산실적공시예고(안내공시),GS리테일,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240730800288
 20240807800137,20240807,연결재무제표기준영업(잠정)실적(공정공시),GS리테일,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240807800137
 20240807800206,20240807,기업설명회(IR)개최(안내공시),GS리테일,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240807800206

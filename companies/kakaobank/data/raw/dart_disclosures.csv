@@ -151,7 +151,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20231027800610,20231027,기업설명회(IR)개최(안내공시),카카오뱅크,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231027800610
 20231108800006,20231108,영업(잠정)실적(공정공시),카카오뱅크,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231108800006
 20231114002689,20231114,분기보고서 (2023.09),카카오뱅크,정,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231114002689
-20231115000274,20231115,[기재정정]분기보고서 (2023.09),카카오뱅크,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231115000274
+20231115000274,20231115,[기재정정]분기보고서 (2023.09),카카오뱅크,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231115000274
 20231117800335,20231117,기업설명회(IR)개최(안내공시),카카오뱅크,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231117800335
 20231130001501,20231130,대규모기업집단현황공시[분기별공시(개별회사용)],카카오뱅크,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231130001501
 20231221000383,20231221,[기재정정]특수관계인과의내부거래,카카오뱅크,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231221000383
@@ -215,8 +215,8 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20241106800002,20241106,영업(잠정)실적(공정공시),카카오뱅크,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241106800002
 20241106800005,20241106,기업설명회(IR)개최(안내공시),카카오뱅크,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241106800005
 20241107800388,20241107,기업설명회(IR)개최(안내공시),카카오뱅크,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241107800388
-20241112000350,20241112,[기재정정]분기보고서 (2024.03),카카오뱅크,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241112000350
-20241112000360,20241112,[기재정정]반기보고서 (2024.06),카카오뱅크,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241112000360
+20241112000350,20241112,[기재정정]분기보고서 (2024.03),카카오뱅크,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241112000350
+20241112000360,20241112,[기재정정]반기보고서 (2024.06),카카오뱅크,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241112000360
 20241114001656,20241114,분기보고서 (2024.09),카카오뱅크,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241114001656
 20241126800027,20241126,기업가치제고계획(자율공시),카카오뱅크,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241126800027
 20241129001784,20241129,대규모기업집단현황공시[분기별공시(개별회사용)],카카오뱅크,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241129001784
@@ -246,7 +246,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20250402800441,20250402,기업설명회(IR)개최(안내공시),카카오뱅크,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250402800441
 20250408800924,20250408,결산실적공시예고(안내공시),카카오뱅크,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250408800924
 20250408800927,20250408,기업설명회(IR)개최(안내공시),카카오뱅크,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250408800927
-20250411001905,20250411,[기재정정]사업보고서 (2024.12),카카오뱅크,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250411001905
+20250411001905,20250411,[기재정정]사업보고서 (2024.12),카카오뱅크,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250411001905
 20250414002396,20250414,계열금융회사의약관에의한금융거래-[유가증권-채권],카카오뱅크,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250414002396
 20250428000652,20250428,임원ㆍ주요주주특정증권등소유상황보고서,민경표,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250428000652
 20250430001203,20250430,[기재정정]주식매수선택권부여에관한신고,카카오뱅크,정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250430001203
@@ -343,7 +343,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20260805800019,20260805,영업(잠정)실적(공정공시),카카오뱅크,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260805800019
 20260805800345,20260805,기업설명회(IR)개최(안내공시),카카오뱅크,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260805800345
 20260813001739,20260813,지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항,카카오뱅크,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001739
-20260814000011,20260814,[기재정정]분기보고서 (2026.03),카카오뱅크,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000011
+20260814000011,20260814,[기재정정]분기보고서 (2026.03),카카오뱅크,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000011
 20260814000103,20260814,임원ㆍ주요주주특정증권등소유상황보고서,박형근,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000103
 20260814000118,20260814,임원ㆍ주요주주특정증권등소유상황보고서,엄준식,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000118
 20260814000136,20260814,임원ㆍ주요주주특정증권등소유상황보고서,조명식,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000136

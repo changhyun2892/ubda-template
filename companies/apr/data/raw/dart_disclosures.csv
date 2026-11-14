@@ -2,7 +2,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20220331002148,20220331,사업보고서 (2021.12),에이피알,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220331002148
 20220516002594,20220516,분기보고서 (2022.03),에이피알,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220516002594
 20220816001642,20220816,반기보고서 (2022.06),에이피알,정,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220816001642
-20220817000173,20220817,[기재정정]반기보고서 (2022.06),에이피알,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220817000173
+20220817000173,20220817,[기재정정]반기보고서 (2022.06),에이피알,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220817000173
 20221114000470,20221114,분기보고서 (2022.09),에이피알,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20221114000470
 20230313000828,20230313,주요사항보고서(유상증자결정),에이피알,,증자·사채,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230313000828
 20230329001036,20230329,사업보고서 (2022.12),에이피알,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230329001036
@@ -89,7 +89,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20241114002863,20241114,분기보고서 (2024.09),에이피알,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241114002863
 20241223000121,20241223,주요사항보고서(자기주식취득신탁계약해지결정),에이피알,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241223000121
 20241223000122,20241223,신탁계약해지결과보고서,에이피알,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241223000122
-20250108800061,20250108,주식소각결정,에이피알,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250108800061
+20250108800061,20250108,주식소각결정,에이피알,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250108800061
 20250203800943,20250203,결산실적공시예고(안내공시),에이피알,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250203800943
 20250203801044,20250203,기업설명회(IR)개최(안내공시),에이피알,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250203801044
 20250204000318,20250204,주요사항보고서(자기주식취득신탁계약체결결정),에이피알,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250204000318
@@ -136,7 +136,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20250731800393,20250731,기업설명회(IR)개최(안내공시),에이피알,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250731800393
 20250804000080,20250804,주요사항보고서(자기주식취득신탁계약해지결정),에이피알,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250804000080
 20250804000089,20250804,신탁계약해지결과보고서,에이피알,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250804000089
-20250804800162,20250804,주식소각결정,에이피알,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250804800162
+20250804800162,20250804,주식소각결정,에이피알,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250804800162
 20250806000284,20250806,주식등의대량보유상황보고서(약식),MORGANSTANLEY&COINTLPLC,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250806000284
 20250806800043,20250806,연결재무제표기준영업(잠정)실적(공정공시),에이피알,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250806800043
 20250811000284,20250811,임원ㆍ주요주주특정증권등소유상황보고서,정재훈,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250811000284

@@ -78,7 +78,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20230321800236,20230321,풍문또는보도에대한해명,한국콜마,유,소송·제재,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230321800236
 20230321800499,20230321,감사보고서제출,한국콜마,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230321800499
 20230321801673,20230321,[기재정정]매출액또는손익구조30%(대규모법인은15%)이상변경,한국콜마,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230321801673
-20230322001251,20230322,[기재정정]사업보고서 (2022.12),한국콜마,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230322001251
+20230322001251,20230322,[기재정정]사업보고서 (2022.12),한국콜마,연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230322001251
 20230329001382,20230329,독립이사의선임ㆍ해임또는중도퇴임에관한신고,한국콜마,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230329001382
 20230329802014,20230329,최대주주등소유주식변동신고서,한국콜마,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230329802014
 20230329802092,20230329,정기주주총회결과,한국콜마,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230329802092
@@ -198,7 +198,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20240320001629,20240320,사업보고서 (2023.12),한국콜마,정연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320001629
 20240320801265,20240320,감사보고서제출,한국콜마,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320801265
 20240320801914,20240320,감사보고서제출(자회사의 주요경영사항),한국콜마,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320801914
-20240321001772,20240321,[기재정정]사업보고서 (2023.12),한국콜마,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240321001772
+20240321001772,20240321,[기재정정]사업보고서 (2023.12),한국콜마,연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240321001772
 20240328000499,20240328,독립이사의선임ㆍ해임또는중도퇴임에관한신고,한국콜마,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240328000499
 20240328800534,20240328,정기주주총회결과,한국콜마,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240328800534
 20240329801779,20240329,지주회사의자회사탈퇴,한국콜마,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240329801779
