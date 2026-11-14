@@ -9,6 +9,7 @@
 - 실행하지 않은 코드, 확인하지 않은 값은 완료라고 말하지 않는다.
 - DART API 키는 채팅으로 받지 않는다. 사용자가 GitHub Secrets에 직접 넣는다.
 - **3D 포털(`index.html`, `assets/portal3d.*`, `assets/vendor/three/`)은 수정하지 않는다** (사용자 지시 2026-11-12). 기업을 추가하면 노드는 `companies/index.json`으로 자동 반영되므로 손댈 필요가 없다. 화면 점검(ui_check)의 3D 항목은 확인용으로만 돌린다.
+- **랜딩페이지(`landing*.*`)**: 사이트 주소를 처음 열면 `landing.html`이 뜨고, 입장하면 3D 포털로 간다. 이를 위해 `index.html` `<head>` 맨 위에 이동 스크립트 한 덩어리만 넣었다(사용자 승인 2026-11-14). 3D 코드 자체는 그대로다. 산업·기업 수는 `companies/index.json`에서 자동으로 센다. 만든 프롬프트: `docs/랜딩페이지_프롬프트.txt`
 
 ## 구조
 저장소는 `changhyun2892/ubda-template` **하나**이고, 기업마다 `companies/<영문폴더>/`를 하나씩 둔다. 기업별 저장소는 만들지 않는다.

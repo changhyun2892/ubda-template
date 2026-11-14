@@ -44,10 +44,42 @@ def main() -> int:
     with sync_playwright() as p:
         b = p.chromium.launch(executable_path="/usr/bin/google-chrome" if Path("/usr/bin/google-chrome").exists() else None,
                               args=["--use-gl=angle", "--use-angle=swiftshader", "--enable-unsafe-swiftshader"])  # 화면 없는 환경에서도 WebGL
-        # 3D 포털 (index.html)
+        # 랜딩페이지 (landing.html) — 사이트 주소를 처음 열면 랜딩, 입장하면 3D 포털
+        if (ROOT / "landing.html").exists():
+            for label, vp in (("PC", {"width": 1366, "height": 860}), ("모바일", {"width": 390, "height": 844})):
+                print(f"\n[랜딩 landing.html · {label}]")
+                pg = b.new_page(viewport=vp)
+                errs = []
+                pg.on("pageerror", lambda e: errs.append(str(e)))
+                pg.on("console", lambda m: errs.append(m.text) if m.type == "error" else None)
+                pg.goto(root)
+                pg.wait_for_url("**/landing.html", timeout=10000)
+                ok("사이트 주소 → 랜딩으로 이동", pg.url.endswith("landing.html"), pg.url.split("/")[-1])
+                pg.wait_for_timeout(1500)  # companies/index.json을 읽어 숫자를 채울 시간
+                n_co = len(slugs)
+                ok("랜딩 기업 수 = companies/ 기업 수", pg.inner_text("[data-n='co']") == str(n_co), f"{pg.inner_text('[data-n=co]')}/{n_co}")
+                ok("랜딩 가로 넘침 없음", pg.evaluate("document.documentElement.scrollWidth") <= vp["width"])
+                if label == "PC":
+                    pg.keyboard.press("Enter")
+                    pg.wait_for_url("**/index.html", timeout=15000)
+                    pg.wait_for_function("window.__portal", timeout=20000)
+                    ok("Enter → 3D 포털 입장", True)
+                    pg.goto(root + "list.html")
+                    pg.click("text=3D 보기")
+                    pg.wait_for_function("window.__portal", timeout=20000)
+                    ok("같은 탭: 목록 → 3D 보기에서 랜딩으로 돌아가지 않음", pg.url.endswith("index.html"), pg.url.split("/")[-1])
+                ok(f"랜딩 {label} 자바스크립트 오류 없음", not errs, "; ".join(errs[:3]))
+                pg.close()
+            pg = b.new_page()
+            pg.goto(root + "index.html?direct")
+            pg.wait_for_function("window.__portal", timeout=20000)
+            ok("주소에 ?…가 붙은 링크는 랜딩을 건너뜀", "index.html?direct" in pg.url)
+            pg.close()
+        # 3D 포털 (index.html) — 입장 표시를 미리 넣어 랜딩을 건너뜀
         for label, vp in (("PC", {"width": 1366, "height": 860}), ("모바일", {"width": 390, "height": 844})):
             print(f"\n[3D 포털 index.html · {label}]")
             pg = b.new_page(viewport=vp)
+            pg.add_init_script("try{sessionStorage.setItem('ubda_entered','1')}catch(e){}")
             errs = []
             pg.on("pageerror", lambda e: errs.append(str(e)))
             pg.on("console", lambda m: errs.append(m.text) if m.type == "error" else None)

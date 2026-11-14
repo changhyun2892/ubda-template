@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="ko">
 <head>
+<!-- 랜딩페이지: 처음 들어온 방문자를 landing.html로 보냄 (같은 탭에서 한 번 들어온 뒤에는 건너뜀) -->
+<script>
+try{
+  if(!sessionStorage.getItem('ubda_entered') && !location.search && !location.hash){
+    location.replace('landing.html');
+  }
+}catch(e){}
+</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>UBDA 경영분석 — 기업 네트워크</title>

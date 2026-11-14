@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UBDA 경영분석 — 9개 산업 · 54개 기업 네트워크</title>
+<meta name="description" content="DART 공시 기반 기업 경영분석 — 9개 산업 · 54개 기업을 3D 네트워크로 탐색합니다. 수업용 경영분석이며 투자 추천이 아닙니다.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%230B0D11'/%3E%3Ccircle cx='16' cy='16' r='8.5' fill='none' stroke='%23F2F3F5' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%234FC3F7'/%3E%3C/svg%3E">
+<style>
+/* 폰트: landing-*.woff2 (OFL) — 인터넷 없이도 동일하게 표시 */
+@font-face{font-family:"Pretendard";src:url(landing-Pretendard-Regular.subset.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Pretendard";src:url(landing-Pretendard-Medium.subset.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"Pretendard";src:url(landing-Pretendard-ExtraBold.subset.woff2) format("woff2");font-weight:800;font-display:swap}
+@font-face{font-family:"Barlow Semi Condensed";src:url(landing-barlow-semi-condensed-latin-500-normal.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"Barlow Semi Condensed";src:url(landing-barlow-semi-condensed-latin-600-normal.woff2) format("woff2");font-weight:600;font-display:swap}
+
+/* 원칙: 상자 없이 — 큰 글자 + 별빛. 장식은 가는 선과 작은 영문 라벨뿐 */
+:root{
+  --bg:#030406; --text:#F2F3F5; --soft:#B9BDC5; --gray:#8B9099; --dim:#5A5F68;
+  --hair:rgba(255,255,255,.12); --cyan:#4FC3F7;
+  --label:"Barlow Semi Condensed","Pretendard",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--bg);scroll-behavior:smooth;overflow-x:hidden}
+body{color:var(--text);font-family:"Pretendard",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:rgba(79,195,247,.35)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+#gl{position:fixed;inset:0;width:100vw;height:100vh;display:block;z-index:0}
+.vignette{position:fixed;inset:0;pointer-events:none;z-index:1;background:radial-gradient(ellipse 80% 75% at 50% 50%,transparent 45%,rgba(3,4,6,.8) 100%)}
+.frame{position:fixed;top:64px;bottom:0;left:28px;right:28px;border-left:1px solid rgba(255,255,255,.04);border-right:1px solid rgba(255,255,255,.04);pointer-events:none;z-index:2}
+
+/* ---------- 위쪽 바 ---------- */
+.top{position:fixed;left:0;right:0;top:0;height:64px;z-index:5;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:0 28px;
+  background:linear-gradient(180deg,rgba(3,4,6,.85),rgba(3,4,6,0))}
+.brand{display:flex;align-items:center;gap:10px;color:var(--text);text-decoration:none;justify-self:start;font-size:15px;font-weight:500;letter-spacing:-.01em}
+.links{display:flex;gap:30px}
+.links a{color:var(--dim);text-decoration:none;font-size:14px;transition:color .2s}
+.links a:hover{color:var(--soft)}
+.links a.on{color:var(--text)}
+.top .right{justify-self:end}
+
+.pill{display:inline-flex;align-items:center;gap:10px;height:38px;padding:0 18px 0 20px;border-radius:999px;border:0;cursor:pointer;white-space:nowrap;
+  background:#F4F5F7;color:#0A0B0E;font:inherit;font-size:14px;font-weight:500;letter-spacing:-.01em;
+  box-shadow:0 0 0 1px rgba(255,255,255,.9),0 0 0 5px rgba(255,255,255,.06),0 10px 30px -12px rgba(255,255,255,.28);transition:transform .25s cubic-bezier(.2,.7,.2,1),box-shadow .25s,background .25s}
+.pill .dot{width:5px;height:5px;border-radius:50%;background:#0A0B0E;transition:transform .25s cubic-bezier(.2,.7,.2,1)}
+.pill:hover{transform:translateY(-1px);background:#fff;box-shadow:0 0 0 1px #fff,0 0 0 7px rgba(255,255,255,.07),0 14px 38px -12px rgba(255,255,255,.42)}
+.pill:hover .dot{transform:translateX(3px) scale(1.25)}
+.pill.big{height:50px;padding:0 24px 0 28px;font-size:16px}
+.pill:focus-visible,.text-link:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+.text-link{all:unset;cursor:pointer;font-size:14px;color:var(--gray);border-bottom:1px solid rgba(255,255,255,.18);padding-bottom:2px;transition:color .2s,border-color .2s}
+.text-link:hover{color:var(--text);border-color:var(--text)}
+
+/* ---------- 오른쪽 목차 ---------- */
+.index{position:fixed;right:44px;top:50%;transform:translateY(-50%);z-index:5;font-family:var(--label);font-size:12px;letter-spacing:.16em}
+.index ol{list-style:none;position:relative;padding-left:16px}
+.index ol::before{content:"";position:absolute;left:0;top:2px;bottom:2px;width:1px;background:rgba(255,255,255,.14)}
+.index .bar{position:absolute;left:-0.5px;z-index:1;width:2px;height:22px;background:var(--text);transition:top .45s cubic-bezier(.4,0,.2,1)}
+.index li{height:26px;display:flex;align-items:center}
+.index button{all:unset;cursor:pointer;color:var(--dim);display:flex;gap:10px;transition:color .3s}
+.index button:hover{color:var(--gray)}
+.index button .lb{opacity:0;transform:translateX(-4px);transition:opacity .3s,transform .3s}
+.index li.on button{color:var(--text)}
+.index li.on .lb{opacity:1;transform:none}
+.index button:focus-visible{outline:1px solid var(--cyan);outline-offset:4px}
+
+/* ---------- 섹션 ---------- */
+main{position:relative;z-index:3}
+section{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:110px 120px 90px;position:relative;overflow-x:clip}
+.content{width:100%;max-width:900px;text-align:center;will-change:opacity,transform;
+  text-shadow:0 0 30px rgba(3,4,6,.95),0 0 12px rgba(3,4,6,.8);position:relative}
+.content::before{content:"";position:absolute;left:50%;top:50%;width:min(1100px,120%);height:130%;transform:translate(-50%,-50%);z-index:-1;pointer-events:none;
+  background:radial-gradient(closest-side,rgba(3,4,8,.55),rgba(3,4,8,.28) 55%,rgba(3,4,8,0))}
+.kicker{font-family:var(--label);font-weight:500;font-size:11.5px;letter-spacing:.36em;color:var(--gray);display:inline-flex;align-items:center;gap:12px;text-transform:uppercase}
+.kicker::before{content:"";width:22px;height:1px;background:var(--gray)}
+h1,h2{margin-top:22px;font-weight:500;letter-spacing:-.042em;line-height:1.1;font-size:clamp(38px,5.1vw,76px);word-break:keep-all}
+h1 .g,h2 .g{display:block;color:#7F848D;font-weight:400}
+.lead{margin:28px auto 0;max-width:34em;font-size:clamp(15px,1.1vw,16.5px);line-height:1.8;color:#AEB3BB;word-break:keep-all}
+.cta{margin-top:38px;display:flex;justify-content:center;align-items:center;gap:26px;flex-wrap:wrap}
+.meta{margin-top:64px;display:flex;justify-content:center;font-family:var(--label);font-size:11.5px;letter-spacing:.2em;color:var(--dim);text-transform:uppercase}
+.meta span{padding:2px 22px}
+.meta span+span{border-left:1px solid rgba(255,255,255,.1)}
+.meta b{color:var(--soft);font-weight:500;margin-left:10px;letter-spacing:.08em}
+.meta [data-n]{padding:0;border:0} /* 자동으로 세는 숫자 칸 — 위 .meta span 여백을 받지 않게 */
+
+/* 02 로드맵 — 레퍼런스처럼 구 양옆에 떠 있는 글자 (상자 없음) */
+.ring-labels{position:absolute;inset:0;pointer-events:none}
+.rl{position:absolute;display:flex;flex-direction:column;gap:6px}
+.rl .t{font-size:clamp(20px,1.75vw,28px);font-weight:500;letter-spacing:-.025em;display:flex;align-items:baseline;gap:12px;text-shadow:0 0 20px #030406}
+.rl .t i{font-style:normal;font-family:var(--label);font-size:12px;color:var(--dim);letter-spacing:.12em}
+.rl .d{font-size:13px;color:var(--dim);padding-left:24px}
+.rl .d .st{font-family:var(--label);letter-spacing:.18em;text-transform:uppercase;font-size:11px;margin-right:8px}
+.rl.live .t{color:#fff}
+.rl.live .st{color:var(--cyan)}
+.rl.live .t::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--cyan);box-shadow:0 0 10px var(--cyan);align-self:center}
+.rl.l{left:8vw}.rl.r{right:15vw}
+.rl.p1{top:34%}.rl.p2{top:58%}.rl.p3{top:34%}.rl.p4{top:58%}
+
+/* 03 데이터 흐름 — 한 줄짜리 단계, 가는 선만 */
+.steps{margin:48px auto 0;display:flex;justify-content:center;align-items:flex-start;gap:0;max-width:860px}
+.steps div{flex:1;padding:0 18px;text-align:left;border-left:1px solid var(--hair)}
+.steps div:first-child{border-left:0}
+.steps i{display:block;font-style:normal;font-family:var(--label);font-size:12px;letter-spacing:.16em;color:var(--dim)}
+.steps b{display:block;margin-top:10px;font-size:16px;font-weight:500;letter-spacing:-.01em}
+.steps span{display:block;margin-top:6px;font-size:12.5px;line-height:1.5;color:var(--dim)}
+
+/* 04 숫자 — 글자만, 가는 구분선 */
+.stats{margin:52px auto 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));max-width:880px;text-align:left}
+.stat{padding:4px 26px}
+.stat+.stat{border-left:1px solid var(--hair)}
+.stat .n{font-family:"Barlow Semi Condensed","Pretendard",sans-serif;font-weight:500;font-size:clamp(36px,3.7vw,58px);letter-spacing:-.01em;line-height:1;white-space:nowrap}
+.stat .n small{font-family:"Pretendard";font-weight:400;font-size:.36em;color:var(--gray);margin-left:5px}
+.stat .l{margin-top:14px;font-size:14px;color:var(--soft)}
+.stat .s{margin-top:4px;font-size:12px;color:var(--dim)}
+.inds{margin:34px auto 0;max-width:880px;font-size:13px;line-height:1.9;color:var(--gray);word-break:keep-all;text-shadow:0 0 12px #030406,0 0 4px #030406}
+.inds b{font-family:var(--label);font-weight:500;color:var(--soft);margin-left:2px}
+.src{margin-top:36px;font-size:12px;color:var(--dim);font-family:var(--label);letter-spacing:.1em}
+
+/* 05 */
+.enter-hint{margin-top:20px;font-size:12.5px;color:var(--dim)}
+.enter-hint kbd{font-family:var(--label);font-size:11px;letter-spacing:.06em;border:1px solid rgba(255,255,255,.2);border-radius:4px;padding:1px 7px;color:var(--gray);margin-right:4px}
+.next{margin-top:56px;font-family:var(--label);font-size:12px;letter-spacing:.2em;color:var(--dim);text-transform:uppercase}
+.next a{font-family:"Pretendard";font-weight:500;letter-spacing:0;text-transform:none;color:var(--soft);margin-left:10px;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.25);padding-bottom:1px}
+.next a:hover{color:#fff;border-color:#fff}
+.foot{position:absolute;left:56px;right:56px;bottom:26px;display:flex;justify-content:space-between;font-size:12px;color:var(--dim)}
+
+.scroll-cue{position:absolute;left:50%;bottom:30px;transform:translateX(-50%);font-family:var(--label);font-size:11px;letter-spacing:.3em;color:var(--dim);display:flex;flex-direction:column;align-items:center;gap:10px}
+.scroll-cue::after{content:"";width:1px;height:38px;background:linear-gradient(var(--gray),transparent);animation:cue 1.8s ease-in-out infinite}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ---------- 미세 다듬기: 가는 스크롤바 · 글이 한 줄씩 올라오는 등장 ---------- */
+html{scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.18) transparent}
+::-webkit-scrollbar{width:8px}::-webkit-scrollbar-thumb{background:rgba(255,255,255,.14);border-radius:8px;border:2px solid #030406}::-webkit-scrollbar-track{background:transparent}
+.ln{display:block;overflow:hidden;padding:.07em 0 .1em;margin:-.07em 0 -.1em}
+.ln>span{display:block}
+html.js .ln>span{transform:translateY(112%);transition:transform 1.05s cubic-bezier(.19,.8,.22,1)}
+html.js .g.ln>span{transition-delay:.09s}
+html.js section.in .ln>span{transform:none}
+html.js .rv{opacity:0;transform:translateY(12px);transition:opacity .9s ease,transform .9s cubic-bezier(.19,.8,.22,1);transition-delay:calc(.16s + var(--i,0)*.09s)}
+html.js section.in .rv{opacity:1;transform:none}
+html.js .kicker::before{width:0;transition:width .8s cubic-bezier(.19,.8,.22,1) .2s}
+html.js section.in .kicker::before{width:22px}
+
+/* 들어갈 때 */
+body.leaving main,body.leaving .top,body.leaving .index{opacity:0;transition:opacity .6s ease}
+#flash{position:fixed;inset:0;background:#08131F;opacity:0;pointer-events:none;z-index:9;transition:opacity .7s ease .35s}
+body.leaving #flash{opacity:1}
+#toast{position:fixed;left:50%;bottom:40px;transform:translateX(-50%);background:rgba(20,22,26,.95);border:1px solid rgba(255,255,255,.15);
+  padding:10px 16px;font-size:14px;border-radius:999px;opacity:0;transition:opacity .3s;z-index:10;pointer-events:none}
+#toast.show{opacity:1}
+
+body.no-gl{background:radial-gradient(ellipse at 50% 40%,#11141a,#030406 70%)}
+body.no-gl::before{content:"";position:fixed;inset:0;opacity:.6;background-image:radial-gradient(1px 1px at 20% 30%,#fff,transparent),radial-gradient(1px 1px at 70% 60%,#fff,transparent),radial-gradient(1px 1px at 40% 80%,#ccc,transparent),radial-gradient(1px 1px at 85% 20%,#ddd,transparent);background-size:220px 220px}
+
+@media (max-width:980px){
+  .top{grid-template-columns:1fr auto;padding:0 18px}
+  .links,.index{display:none}
+  .frame{left:10px;right:10px}
+  section{padding:96px 22px 80px}
+  .lead br{display:none}
+  .meta{flex-direction:column;gap:10px;margin-top:48px}
+  .ring-labels{position:static;display:grid;grid-template-columns:1fr 1fr;gap:22px 16px;margin-top:36px;width:100%;max-width:440px;pointer-events:auto}
+  .rl{position:static}.rl .d{padding-left:0}
+  .steps{flex-wrap:wrap;gap:22px 0}
+  .steps div{flex:1 1 50%;border-left:0;padding:0 10px}
+  .stats{grid-template-columns:1fr;gap:28px}
+  .meta span+span{border-left:0}
+  .stat+.stat{border-left:0}
+  .scroll-cue{display:none}
+  .kicker{letter-spacing:.24em}
+  .foot{left:22px;right:22px;flex-direction:column;gap:6px}
+}
+</style>
+</head>
+<body>
+<canvas id="gl" aria-hidden="true"></canvas>
+<div class="vignette"></div>
+<div class="frame"></div>
+<div id="flash"></div>
+
+<header class="top">
+  <a class="brand" href="#s1">
+    <svg width="22" height="22" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="10" fill="none" stroke="#F2F3F5" stroke-width="1.8"/><ellipse cx="16" cy="16" rx="15" ry="5.2" fill="none" stroke="#8B9099" stroke-width="1.1" transform="rotate(-24 16 16)"/><circle cx="16" cy="16" r="3" fill="#4FC3F7"/></svg>
+    UBDA 경영분석
+  </a>
+  <nav class="links" aria-label="섹션">
+    <a href="#s1">소개</a><a href="#s2">구조</a><a href="#s3">데이터</a><a href="#s4">네트워크</a>
+  </nav>
+  <div class="right"><button class="pill" type="button" data-enter>기업 네트워크 <span class="dot"></span></button></div>
+</header>
+
+<nav class="index" aria-label="섹션 목차">
+  <span class="bar"></span>
+  <ol>
+    <li><button type="button" data-go="0">01 <span class="lb">INTRO</span></button></li>
+    <li><button type="button" data-go="1">02 <span class="lb">STRUCTURE</span></button></li>
+    <li><button type="button" data-go="2">03 <span class="lb">PIPELINE</span></button></li>
+    <li><button type="button" data-go="3">04 <span class="lb">NETWORK</span></button></li>
+    <li><button type="button" data-go="4">05 <span class="lb">ENTER</span></button></li>
+  </ol>
+</nav>
+
+<main>
+  <!-- 01 INTRO — 은하: 흩어진 공시 -->
+  <section id="s1">
+    <div class="content">
+      <div class="kicker">UBDA · Management Dashboard</div>
+      <h1>기업의 경영을,<span class="g">한 화면의 대시보드로.</span></h1>
+      <p class="lead">기업의 공시와 주가를 같은 기준의 대시보드로 정리했습니다. <br>구체를 누르며 산업에서 기업까지 찾아 들어갑니다.</p>
+      <div class="cta">
+        <button class="pill big" type="button" data-enter>기업 네트워크 보기 <span class="dot"></span></button>
+        <button class="text-link" type="button" data-go="1">구조 보기</button>
+      </div>
+      <div class="meta"><span>Industries<b><span data-n="ind">9</span>개 산업</b></span><span>Companies<b><span data-n="co">54</span>개 기업</b></span><span>Source<b>OpenDART · Yahoo Finance</b></span></div>
+    </div>
+    <div class="scroll-cue">SCROLL</div>
+  </section>
+
+  <!-- 02 ROADMAP — 구: 기업이 모여 산업이 되는 구조 -->
+  <section id="s2">
+    <div class="content">
+      <div class="kicker">Structure</div>
+      <h2>가운데에서 시작해,<span class="g">기업까지 펼쳐집니다.</span></h2>
+      <p class="lead">경영분석 CORE에서 <span data-n="ind">9</span>개 산업이 뻗어 나갑니다. <br>산업을 누르면 카테고리가, 카테고리를 누르면 기업이 열립니다.</p>
+    </div>
+    <div class="ring-labels">
+      <div class="rl l p1 live"><div class="t"><i>I</i>CORE</div><div class="d"><span class="st">Center</span>경영분석의 중심</div></div>
+      <div class="rl l p2"><div class="t"><i>II</i>산업</div><div class="d"><span class="st">Industry</span><span data-n="ind">9</span>개 산업</div></div>
+      <div class="rl r p3"><div class="t"><i>III</i>카테고리</div><div class="d"><span class="st">Category</span>산업 안의 분류</div></div>
+      <div class="rl r p4"><div class="t"><i>IV</i>기업</div><div class="d"><span class="st">Company</span><span data-n="co">54</span>개 기업 대시보드</div></div>
+    </div>
+  </section>
+
+  <!-- 03 PIPELINE — 빛줄기: 공시가 화면으로 흐른다 -->
+  <section id="s3">
+    <div class="content">
+      <div class="kicker">Data Pipeline</div>
+      <h2>공시가 모여,<span class="g">한 화면이 됩니다.</span></h2>
+      <p class="lead">재무는 금융감독원 OpenDART, 주가는 Yahoo Finance에서 가져옵니다. <br>모든 기업을 같은 기준으로 정리해 나란히 비교합니다.</p>
+      <div class="steps">
+        <div><i>01</i><b>공시 수집</b><span>금융감독원 OpenDART</span></div>
+        <div><i>02</i><b>주가 수집</b><span>Yahoo Finance</span></div>
+        <div><i>03</i><b>같은 기준 정리</b><span>기업끼리 비교할 수 있게</span></div>
+        <div><i>04</i><b>네트워크 연결</b><span>산업 → 카테고리 → 기업</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 NETWORK — 고리: 네트워크 규모 (숫자는 이 섹션에만) -->
+  <section id="s4">
+    <div class="content">
+      <div class="kicker">The Network</div>
+      <h2>한 화면에 담은,<span class="g"><span data-n="ind">9</span>개 산업과 <span data-n="co">54</span>개 기업.</span></h2>
+      <div class="stats">
+        <div class="stat"><div class="n" data-count="9" data-key="ind" data-fmt="int">9<small>개</small></div><div class="l">산업</div><div class="s">경영분석 CORE에서 뻗어 나가는 구체</div></div>
+        <div class="stat"><div class="n" data-count="54" data-key="co" data-fmt="int">54<small>개</small></div><div class="l">기업</div><div class="s">기업마다 공시 기반 대시보드</div></div>
+        <div class="stat"><div class="n" data-count="3" data-fmt="int">3<small>단계</small></div><div class="l">탐색</div><div class="s">산업 → 카테고리 → 기업</div></div>
+      </div>
+      <p class="inds" id="indsLine">은행·금융 <b>9</b> · 식품 <b>8</b> · 반도체·전자 <b>7</b> · 자동차 <b>6</b> · IT·플랫폼 <b>6</b> · 유통 <b>6</b> · 화장품 <b>5</b> · 조선 <b>4</b> · 미용기기 <b>3</b></p>
+    </div>
+  </section>
+
+  <!-- 05 ENTER — 점으로 된 지구 -->
+  <section id="s5">
+    <div class="content">
+      <div class="kicker">Enter</div>
+      <h2>이제,<span class="g">네트워크를 펼쳐 볼 차례.</span></h2>
+      <div class="cta"><button class="pill big" type="button" data-enter>기업 네트워크 보기 <span class="dot"></span></button></div>
+      <p class="enter-hint"><kbd>Enter</kbd>를 눌러도 들어갈 수 있어요 · 들어가서 기업 이름으로 검색할 수도 있어요</p>
+      <p class="next">Or<a href="list.html" data-list>목록으로 보기</a></p>
+    </div>
+    <div class="foot"><span>UBDA 경영분석</span><span>수업용 경영분석이며 투자 추천이 아닙니다 · 재무: 금융감독원 OpenDART · 주가: Yahoo Finance</span></div>
+  </section>
+</main>
+<div id="toast"></div>
+
+<script src="landing-d3.min.js"></script>
+<script src="landing-topojson.min.js"></script>
+<script src="landing-three.min.js"></script>
+<script>
+(function(){
+'use strict';
+/* =====================================================================
+   랜딩 페이지 — 기업 경영 보고서 플랫폼 (스크롤형)
+   · 파티클 하나의 무리가 스크롤에 따라 다섯 장면으로 모양을 바꾼다
+     01 은하(흩어진 공시) → 02 구(기업이 모여 산업이 되는 구조) → 03 빛줄기(공시가 화면으로) → 04 고리(네트워크 규모) → 05 점으로 된 지구
+   · "기업 네트워크 보기" / Enter:
+       sessionStorage에 ubda_entered=1 을 남기고 index.html 로 이동.
+       index.html <head>의 한 줄 스크립트가 이 표시를 보고 랜딩으로 되돌리지 않는다
+       (같은 탭에서는 다시 랜딩이 뜨지 않음 · 새 탭/새 창에서는 다시 랜딩부터)
+   · 숫자는 04 섹션에만: 산업·기업 수는 UBDA 기업 네트워크 화면 기준 (2026-11-14). 기업이 늘면 04 섹션과 01·02의 숫자를 함께 고칠 것
+   ===================================================================== */
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const REDUCED=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+const inFrame=(()=>{try{return window.parent!==window;}catch(e){return true;}})();
+const PREVIEW=/[?&]preview\b/.test(location.search);
+const HOME='index.html';                                  // 들어갈 화면 (3D 기업 네트워크)
+function markEntered(){ try{ sessionStorage.setItem('ubda_entered','1'); }catch(e){} }
+const SCENES=5;
+const sections=$$('main section');
+
+/* ---------- 글 등장: 제목은 한 줄씩 아래에서 올라오고, 나머지는 차례로 떠오름 ---------- */
+$$('h1,h2').forEach(h=>{
+  const first=[...h.childNodes].find(n=>n.nodeType===3&&n.textContent.trim());
+  if(first){ const w=document.createElement('span'); w.className='ln'; const i=document.createElement('span'); i.textContent=first.textContent.trim(); w.appendChild(i); h.replaceChild(w,first); }
+  const g=h.querySelector('.g'); if(g){ const i=document.createElement('span'); i.innerHTML=g.innerHTML; g.innerHTML=''; g.appendChild(i); /* 안의 숫자 span(data-n)을 살려 둠 */ g.classList.add('ln'); }
+});
+sections.forEach(sec=>{ let k=0; sec.querySelectorAll('.kicker,.lead,.cta,.meta,.steps>div,.stat,.inds,.enter-hint,.next').forEach(el=>{ el.classList.add('rv'); el.style.setProperty('--i',k++); }); });
+if(!REDUCED && 'IntersectionObserver' in window){
+  document.documentElement.classList.add('js');
+  const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }),{threshold:0.3});
+  sections.forEach(s=>io.observe(s));
+}
+
+/* ---------- 들어가기 ---------- */
+let leaving=false;
+function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2400);}
+function enter(){
+  if(leaving) return; leaving=true;
+  document.body.classList.add('leaving'); burst=1;
+  setTimeout(()=>{
+    if(PREVIEW){ toast('실제 사이트에서는 여기서 기업 네트워크로 들어갑니다'); setTimeout(()=>{document.body.classList.remove('leaving');leaving=false;burst=0;},1400); return; }
+    markEntered(); location.href=HOME;
+  }, REDUCED?0:1050);
+}
+$$('[data-enter]').forEach(b=>b.addEventListener('click',enter));
+$$('[data-list]').forEach(a=>a.addEventListener('click',e=>{ if(PREVIEW){ e.preventDefault(); toast('실제 사이트에서는 기업 목록(list.html)으로 이동합니다'); return; } markEntered(); }));
+addEventListener('keydown',e=>{ if(e.key==='Enter' && !(document.activeElement&&document.activeElement.matches('button,a'))){ e.preventDefault(); enter(); }});
+
+/* ---------- 스크롤 위치 → 장면 진행도 ---------- */
+function goTo(i){ sections[i].scrollIntoView({behavior:REDUCED?'auto':'smooth'}); }
+$$('[data-go]').forEach(b=>b.addEventListener('click',()=>goTo(+b.dataset.go)));
+function progress(){ // 0 ~ 4 : 화면 가운데가 어느 섹션 중앙 사이에 있는지
+  const c=scrollY+innerHeight/2;
+  const mids=sections.map(sec=>sec.offsetTop+sec.offsetHeight/2);
+  if(c<=mids[0]) return 0;
+  for(let i=0;i<mids.length-1;i++) if(c<mids[i+1]) return i+(c-mids[i])/(mids[i+1]-mids[i]);
+  return SCENES-1;
+}
+const items=$$('.index li'), bar=$('.index .bar'), links=$$('.links a');
+let counted=false;
+/* 산업·기업 수: 저장소의 기업 목록(companies/index.json)에서 세어 표시. 못 읽으면 숫자 대신 '–' (가짜 값 금지) */
+(function(){
+  const setAll=(key,v)=>{
+    document.querySelectorAll(`[data-n="${key}"]`).forEach(el=>el.textContent=v);
+    const n=document.querySelector(`[data-key="${key}"]`);
+    if(n){ const small=n.querySelector('small').outerHTML;
+      if(typeof v==='number'){ n.dataset.count=v; if(counted) n.innerHTML=v.toLocaleString('ko-KR')+small; }
+      else { n.removeAttribute('data-count'); n.innerHTML=v+small; } }
+  };
+  fetch('companies/index.json',{cache:'no-cache'}).then(r=>{if(!r.ok) throw new Error(r.status); return r.json();}).then(d=>{
+    const cos=(d.companies||[]), inds=d.industries||{}, cnt={};
+    cos.forEach(c=>{cnt[c.industry]=(cnt[c.industry]||0)+1;});
+    const keys=Object.keys(inds).filter(k=>cnt[k]);
+    if(!cos.length||!keys.length) throw new Error('empty');
+    setAll('ind',keys.length); setAll('co',cos.length);
+    const line=document.getElementById('indsLine'); line.textContent='';
+    keys.sort((a,b)=>cnt[b]-cnt[a]).forEach((k,i)=>{ if(i) line.append(' · '); line.append(inds[k].name+' '); const b=document.createElement('b'); b.textContent=cnt[k]; line.append(b); });
+    document.title=`UBDA 경영분석 — ${keys.length}개 산업 · ${cos.length}개 기업 네트워크`;
+  }).catch(()=>{ setAll('ind','–'); setAll('co','–'); const line=document.getElementById('indsLine'); if(line) line.textContent='산업별 기업 수를 불러오지 못했습니다'; });
+})();
+function updateUI(p){
+  const a=Math.round(p);
+  items.forEach((li,i)=>li.classList.toggle('on',i===a));
+  bar.style.top=(a*26+2)+'px';
+  links.forEach((l,i)=>l.classList.toggle('on',i===a));
+  sections.forEach((s,i)=>{
+    const d=p-i, o=Math.max(0,1-Math.abs(d)*1.6);
+    const c=s.querySelector('.content'); c.style.opacity=o.toFixed(3); c.style.transform=`translateY(${(-d*36).toFixed(1)}px)`;
+    const ax=s.querySelector('.ring-labels'); if(ax&&innerWidth>980){ ax.style.opacity=o.toFixed(3); ax.style.transform=`translateY(${(-d*24).toFixed(1)}px)`; }
+  });
+  if(!counted && Math.abs(p-3)<0.35){ counted=true; countUp(); }
+}
+function countUp(){
+  $$('[data-count]').forEach(el=>{
+    const to=+el.dataset.count, fmt=el.dataset.fmt, small=el.querySelector('small').outerHTML;
+    const show=v=> fmt==='int' ? Math.round(v).toLocaleString('ko-KR') : fmt==='joeok' ? (()=>{const j=Math.floor(v/10000),e=Math.round(v-j*10000);return (j?`${j}조 `:'')+e.toLocaleString('ko-KR');})() : v.toFixed(1);
+    if(REDUCED){ el.innerHTML=show(to)+small; return; }
+    const t0=performance.now(), dur=1400;
+    (function step(t){const k=Math.min(1,(t-t0)/dur), e=1-Math.pow(1-k,3); el.innerHTML=show(to*e)+small; if(k<1) requestAnimationFrame(step);})(t0);
+  });
+}
+
+/* =====================================================================
+   파티클 (three.js)
+   ===================================================================== */
+let burst=0;
+function hasGL(){try{const c=document.createElement('canvas');return !!(c.getContext('webgl')||c.getContext('experimental-webgl'));}catch(e){return false;}}
+if(typeof THREE==='undefined'||!hasGL()){ document.body.classList.add('no-gl'); $('#gl').style.display='none';
+  addEventListener('scroll',()=>updateUI(progress()),{passive:true}); updateUI(progress()); return; }
+
+const MOBILE=innerWidth<820;
+const N=MOBILE?18000:52000;   // 계산은 그래픽카드(셰이더)에서 하므로 넉넉하게
+const rnd=Math.random, TAU=Math.PI*2;
+const gauss=()=>{let u=0,v=0;while(!u)u=rnd();while(!v)v=rnd();return Math.sqrt(-2*Math.log(u))*Math.cos(TAU*v);};
+const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
+const smooth=(a,b,x)=>{const t=clamp((x-a)/(b-a),0,1);return t*t*(3-2*t);};
+const KR=[0.31,0.76,0.97]; // 시안 #4FC3F7 (0~1)
+
+function shape(){ return {pos:new Float32Array(N*3), col:new Float32Array(N*3).fill(1), bri:new Float32Array(N).fill(1)}; }
+function rotX(p,a){const c=Math.cos(a),s=Math.sin(a);for(let i=0;i<N;i++){const y=p[i*3+1],z=p[i*3+2];p[i*3+1]=y*c-z*s;p[i*3+2]=y*s+z*c;}}
+function rotZ(p,a){const c=Math.cos(a),s=Math.sin(a);for(let i=0;i<N;i++){const x=p[i*3],y=p[i*3+1];p[i*3]=x*c-y*s;p[i*3+1]=x*s+y*c;}}
+
+// 01 은하: 부푼 중심 + 번지는 나선팔 2개(가는 줄기·넓은 먼지·별 무리) + 옅은 원반 + 헤일로
+function galaxy(){
+  const S=shape(),p=S.pos;
+  const armAt=(r,arm)=>Math.log(r+0.6)*2.6+arm*Math.PI;
+  const knots=[]; for(let k=0;k<18;k++){ const r=0.9+rnd()*3.6, a=armAt(r,k%2)+gauss()*0.05; knots.push([Math.cos(a)*r,Math.sin(a)*r,0.05+rnd()*0.09]); }
+  for(let i=0;i<N;i++){
+    let x,y,z,b; const u=i/N;
+    if(u<0.13){ const r=-Math.log(1-rnd()*0.985)*0.2; const v=rnd()*2-1,a=rnd()*TAU,s=Math.sqrt(1-v*v); x=s*Math.cos(a)*r; z=s*Math.sin(a)*r; y=v*r*0.55; b=0.55+0.45*Math.exp(-r*2.2); }
+    else if(u<0.78){
+      const arm=i%2, q=rnd();
+      if(q<0.07){ const K=knots[(i>>1)%knots.length]; x=K[0]+gauss()*K[2]; z=K[1]+gauss()*K[2]; y=gauss()*K[2]*0.5; b=0.75+rnd()*0.25; }
+      else { const wide=q<0.33, r=0.3+Math.pow(rnd(),0.72)*4.7;
+        const a=armAt(r,arm)+gauss()*(wide?0.16:0.05);
+        const sp=(wide?0.16:0.045)+r*(wide?0.085:0.03);
+        x=Math.cos(a)*r+gauss()*sp; z=Math.sin(a)*r+gauss()*sp; y=gauss()*(0.035+0.02*r)*(wide?1.5:1);
+        const fall=Math.exp(-r*0.3);
+        b=(wide?0.24+rnd()*0.3:0.58+rnd()*0.42)*(0.62+0.6*fall); }
+    }
+    else if(u<0.95){ const r=Math.min(5.4,-Math.log(1-rnd()*0.97)*1.5),a=rnd()*TAU; x=Math.cos(a)*r; z=Math.sin(a)*r; y=gauss()*(0.06+0.03*r); b=0.07+rnd()*0.16; }
+    else { const r=1.2+Math.pow(rnd(),1.6)*5.5, v=rnd()*2-1,a=rnd()*TAU,s=Math.sqrt(1-v*v); x=s*Math.cos(a)*r; z=s*Math.sin(a)*r; y=v*r*0.7; b=0.06+rnd()*0.14; }
+    p[i*3]=x;p[i*3+1]=y;p[i*3+2]=z;S.bri[i]=b;
+  }
+  rotX(p,0.95); rotZ(p,-0.3);
+  return S;
+}
+// 02 구: 정이십면체(꼭짓점 12·모서리 30)의 모서리를 구 표면 위 대원으로 — 파티클 선으로 된 구조물
+function sphereNet(){
+  const S=shape(),p=S.pos,R=2.6;
+  const t=(1+Math.sqrt(5))/2;
+  const V=[[-1,t,0],[1,t,0],[-1,-t,0],[1,-t,0],[0,-1,t],[0,1,t],[0,-1,-t],[0,1,-t],[t,0,-1],[t,0,1],[-t,0,-1],[-t,0,1]].map(v=>{const l=Math.hypot(...v);return v.map(c=>c/l);});
+  const edges=[]; for(let a=0;a<12;a++) for(let b=a+1;b<12;b++){ const d=V[a][0]*V[b][0]+V[a][1]*V[b][1]+V[a][2]*V[b][2]; if(d>0.4) edges.push([a,b]); } // 이웃 꼭짓점끼리 (30개)
+  const slerp=(a,b,s)=>{const d=clamp(a[0]*b[0]+a[1]*b[1]+a[2]*b[2],-1,1),w=Math.acos(d),sw=Math.sin(w)||1;const k1=Math.sin((1-s)*w)/sw,k2=Math.sin(s*w)/sw;return [a[0]*k1+b[0]*k2,a[1]*k1+b[1]*k2,a[2]*k1+b[2]*k2];};
+  for(let i=0;i<N;i++){
+    let q,b;
+    if(i<N*0.70){ const e=edges[i%edges.length]; q=slerp(V[e[0]],V[e[1]],rnd()); const j=0.012+Math.abs(gauss())*0.012; q=q.map(c=>c+gauss()*j); b=0.55+rnd()*0.45; }
+    else if(i<N*0.84){ const v=V[i%12]; const r=Math.abs(gauss())*0.05; q=v.map(c=>c+gauss()*r); b=1; }
+    else if(i<N*0.93){ const a=rnd()*TAU; const k=i%3; const c=Math.cos(a),s2=Math.sin(a); q=k===0?[c,0,s2]:k===1?[c,s2*0.5,s2*0.866]:[c,-s2*0.5,s2*0.866]; q=q.map(v=>v*(1+gauss()*0.02)); b=0.4+rnd()*0.3; } // 적도 고리들
+    else { const u=rnd()*2-1,a=rnd()*TAU,s2=Math.sqrt(1-u*u); q=[s2*Math.cos(a),u,s2*Math.sin(a)].map(c=>c*(1+Math.abs(gauss())*0.25)); b=0.15+rnd()*0.25; }
+    p[i*3]=q[0]*R;p[i*3+1]=q[1]*R;p[i*3+2]=q[2]*R;S.bri[i]=b;
+  }
+  return S;
+}
+// 03 빛줄기: 한국(중앙)에서 다섯 권역으로 휘어지는 호
+function reach(){
+  const S=shape(),p=S.pos,c=S.col;
+  const K=[0,0.35,0];
+  const ends=[[3.9,0.9,-0.4],[-3.9,1.3,-0.6],[-1.7,0.05,0.7],[1.35,0.55,0.9],[0.4,-2.1,0.5]]; // 미국·유럽·중국·일본·인도네시아 (대략적 방향)
+  const lifts=[1.3,1.4,0.6,0.5,0.7];
+  for(let i=0;i<N;i++){
+    let x,y,z,b=0.5+rnd()*0.5, cy=false;
+    if(i<N*0.62){
+      const k=i%5, E=ends[k], s=Math.pow(rnd(),0.85);
+      const m=[(K[0]+E[0])/2,(K[1]+E[1])/2+lifts[k],(K[2]+E[2])/2+0.6];
+      const u=1-s; x=u*u*K[0]+2*u*s*m[0]+s*s*E[0]; y=u*u*K[1]+2*u*s*m[1]+s*s*E[1]; z=u*u*K[2]+2*u*s*m[2]+s*s*E[2];
+      const j=0.025+0.04*s; x+=gauss()*j;y+=gauss()*j;z+=gauss()*j;
+      if(s<0.18) cy=true; b=0.55+0.45*(1-s*0.4);
+    } else if(i<N*0.76){ const E=ends[i%5]; x=E[0]+gauss()*0.16;y=E[1]+gauss()*0.16;z=E[2]+gauss()*0.16; b=0.9; }
+    else if(i<N*0.84){ x=K[0]+gauss()*0.12;y=K[1]+gauss()*0.12;z=K[2]+gauss()*0.12; b=1; cy=true; }
+    else { const r=4+rnd()*3,a=rnd()*TAU,u=rnd()*2-1,s2=Math.sqrt(1-u*u); x=s2*Math.cos(a)*r;y=u*r*0.6;z=s2*Math.sin(a)*r-2; b=0.15+rnd()*0.25; }
+    p[i*3]=x;p[i*3+1]=y;p[i*3+2]=z;S.bri[i]=b;
+    if(cy){c[i*3]=KR[0];c[i*3+1]=KR[1];c[i*3+2]=KR[2];}
+  }
+  return S;
+}
+// 04 고리: 울퉁불퉁한 고리 + 아주 밝은 중심
+function ring(){
+  const S=shape(),p=S.pos;
+  for(let i=0;i<N;i++){
+    let x,y,z,b;
+    if(i<N*0.72){ const a=rnd()*TAU; const lump=0.7+0.3*Math.sin(a*7+1.3)*Math.sin(a*3); const w=gauss(), r=1+w*0.055*lump;
+      x=Math.cos(a)*r*4.25; y=Math.sin(a)*r*2.95; z=gauss()*0.14*lump; b=0.5+rnd()*0.5; }
+    else if(i<N*0.8){ const r=Math.abs(gauss())*0.22; const a=rnd()*TAU,u=rnd()*2-1,s=Math.sqrt(1-u*u); x=s*Math.cos(a)*r;y=u*r;z=s*Math.sin(a)*r; b=1; }
+    else { const a=rnd()*TAU, r=1.06+Math.abs(gauss())*0.22; x=Math.cos(a)*r*4.25;y=Math.sin(a)*r*2.95;z=gauss()*0.35; b=0.08+rnd()*0.2; }
+    p[i*3]=x;p[i*3+1]=y;p[i*3+2]=z;S.bri[i]=b;
+  }
+  rotX(p,0.35);
+  return S;
+}
+// 05 지구: 육지 위에만 점, 한국은 시안 (세계지도를 작은 캔버스에 그려서 표본 추출)
+let earthS=null;
+function earthFrom(topo){
+  const S=shape(),p=S.pos,c=S.col,R=2.6;
+  const W=1024,H=512, cv=document.createElement('canvas'); cv.width=W; cv.height=H; const g=cv.getContext('2d',{willReadFrequently:true});
+  const proj=d3.geoEquirectangular().scale(W/TAU).translate([W/2,H/2]); const path=d3.geoPath(proj,g);
+  const feats=topojson.feature(topo,topo.objects.countries).features.filter(f=>f.properties.name!=='Antarctica');
+  g.fillStyle='#fff'; feats.forEach(f=>{g.beginPath();path(f);g.fill();});
+  const kr=feats.find(f=>f.properties.name==='South Korea'); g.fillStyle='#f00'; if(kr){g.beginPath();path(kr);g.fill();}
+  const img=g.getImageData(0,0,W,H).data;
+  let i=0,tries=0;
+  while(i<N && tries<N*40){
+    tries++;
+    let lng,lat;
+    if(i<N*0.03){ lng=125+rnd()*5.5; lat=33+rnd()*6; } else { lng=rnd()*360-180; lat=Math.asin(rnd()*2-1)*180/Math.PI; }
+    const px=Math.floor((lng+180)/360*W), py=Math.floor((90-lat)/180*H);
+    const k=(py*W+px)*4; if(img[k+3]<128) continue;
+    const isKR=img[k]>200&&img[k+1]<60;
+    if(i<N*0.03 && !isKR) continue;
+    const la=lat*Math.PI/180, lo=lng*Math.PI/180;
+    p[i*3]=R*Math.cos(la)*Math.sin(lo); p[i*3+1]=R*Math.sin(la); p[i*3+2]=R*Math.cos(la)*Math.cos(lo);
+    S.bri[i]=isKR?1:0.45+rnd()*0.45;
+    if(isKR){c[i*3]=KR[0];c[i*3+1]=KR[1];c[i*3+2]=KR[2];}
+    i++;
+  }
+  for(;i<N;i++){ const u=rnd()*2-1,a=rnd()*TAU,s=Math.sqrt(1-u*u); p[i*3]=s*Math.cos(a)*R*1.25;p[i*3+1]=u*R*1.25;p[i*3+2]=s*Math.sin(a)*R*1.25; S.bri[i]=0.12; }
+  return S;
+}
+function earthPlaceholder(){ // 지도 로딩 전·실패 시: 점 구
+  const S=shape(),p=S.pos,R=2.6;
+  for(let i=0;i<N;i++){const u=rnd()*2-1,a=rnd()*TAU,s=Math.sqrt(1-u*u);p[i*3]=s*Math.cos(a)*R;p[i*3+1]=u*R;p[i*3+2]=s*Math.sin(a)*R;S.bri[i]=0.3+rnd()*0.4;}
+  return S;
+}
+
+
+/* ---------- 색: 아주 옅은 온도 차 (흑백 톤은 유지) ---------- */
+const WARM=[1.0,0.93,0.84], COOL=[0.80,0.87,1.0], LAV=[0.88,0.84,1.0], ICE=[0.70,0.82,1.0], WHITE=[1,1,1];
+const mixc=(a,b,t)=>[a[0]+(b[0]-a[0])*t,a[1]+(b[1]-a[1])*t,a[2]+(b[2]-a[2])*t];
+function paint(S,fn){ const c=S.col; for(let i=0;i<N;i++){ if(c[i*3]===KR[0]&&c[i*3+1]===KR[1]) continue; const k=fn(i); c[i*3]=k[0];c[i*3+1]=k[1];c[i*3+2]=k[2]; } return S; }
+function tinted(){
+  const g=paint(galaxy(),i=> i<N*0.13 ? mixc(WARM,WHITE,rnd()*0.45) : i<N*0.78 ? (rnd()<0.6?mixc(COOL,WHITE,rnd()*0.7):rnd()<0.8?mixc(LAV,WHITE,rnd()*0.5):mixc(WARM,WHITE,0.3+rnd()*0.5)) : i<N*0.95 ? mixc(WARM,COOL,rnd()) : ICE);
+  const s=paint(sphereNet(),i=> (i>=N*0.70&&i<N*0.84) ? WHITE : i<N*0.70 ? mixc(COOL,WHITE,0.4+rnd()*0.6) : i<N*0.93 ? LAV : ICE);
+  const r=paint(reach(),i=> (i>=N*0.62&&i<N*0.76) ? mixc(WARM,WHITE,0.5) : i>=N*0.84 ? ICE : mixc(COOL,WHITE,0.3+rnd()*0.7));
+  const o=paint(ring(),i=> i<N*0.72 ? (rnd()<0.55?mixc(LAV,WHITE,rnd()*0.5):mixc(COOL,WHITE,rnd()*0.5)) : i<N*0.8 ? mixc(WARM,WHITE,0.6) : ICE);
+  const e=paint(earthPlaceholder(),()=>mixc(COOL,WHITE,0.5));
+  return [g,s,r,o,e];
+}
+const shapes=tinted();
+// 장면마다 물체 각도 (지구는 spinW 0 → 한국이 정면에 오도록 고정, 살짝만 흔들림)
+const VIEW=[{rx:0,ry:0,spin:0.05,spinW:1},{rx:0.25,ry:0,spin:0.12,spinW:1},{rx:0,ry:0,spin:0.02,spinW:1},{rx:0,ry:0,spin:0.04,spinW:1},{rx:0.18,ry:-2.22,spin:0.0,spinW:0}];
+const GLOW=[0.72,0.0,0.16,0.5,0.0];   // 중심 빛
+const NEB =[1.0,0.6,0.7,0.95,0.65];   // 성운 농도
+const HUE =[0.0,0.5,1.0,0.2,0.8];      // 성운 색 기울기 (보라 ↔ 청록)
+
+/* ---------- three.js 준비 ---------- */
+const renderer=new THREE.WebGLRenderer({canvas:$('#gl'),antialias:false,alpha:false,powerPreference:'high-performance'});
+const DPR=Math.min(MOBILE?1.5:1.75,devicePixelRatio||1);
+renderer.setPixelRatio(DPR); renderer.setSize(innerWidth,innerHeight); renderer.setClearColor(0x030406,1);
+const scene=new THREE.Scene();
+const camera=new THREE.PerspectiveCamera(45,innerWidth/innerHeight,0.1,200); camera.position.set(0,0,MOBILE?11.5:9.2);
+const group=new THREE.Group(); scene.add(group);
+
+function softTexture(stops){ const c=document.createElement('canvas'); c.width=c.height=256; const g=c.getContext('2d');
+  const r=g.createRadialGradient(128,128,0,128,128,128); stops.forEach(([o,col])=>r.addColorStop(o,col)); g.fillStyle=r; g.fillRect(0,0,256,256);
+  const t=new THREE.CanvasTexture(c); return t; }
+
+// 1) 우주 배경: 화면 전체에 그리는 성운 (겹겹이 일그러뜨린 노이즈 → 구름 결이 자연스럽게)
+const bgMat=new THREE.ShaderMaterial({depthTest:false,depthWrite:false,
+  uniforms:{uTime:{value:0},uRes:{value:new THREE.Vector2(innerWidth*DPR,innerHeight*DPR)},uNeb:{value:1},uShift:{value:new THREE.Vector2()},uHue:{value:0}},
+  vertexShader:`void main(){ gl_Position=vec4(position.xy,1.0,1.0); }`,
+  fragmentShader:`precision highp float;
+    uniform vec2 uRes,uShift; uniform float uTime,uNeb,uHue;
+    float hash(vec2 p){ p=fract(p*vec2(123.34,456.21)); p+=dot(p,p+45.32); return fract(p.x*p.y); }
+    float noise(vec2 p){ vec2 i=floor(p),f=fract(p); f=f*f*(3.0-2.0*f);
+      return mix(mix(hash(i),hash(i+vec2(1.0,0.0)),f.x),mix(hash(i+vec2(0.0,1.0)),hash(i+vec2(1.0,1.0)),f.x),f.y); }
+    float fbm(vec2 p){ float v=0.0,a=0.5; for(int i=0;i<${MOBILE?4:5};i++){ v+=a*noise(p); p=p*2.03+vec2(17.1,9.2); a*=0.5; } return v; }
+    void main(){
+      vec2 uv=(gl_FragCoord.xy-0.5*uRes)/uRes.y;
+      vec2 p=uv*1.15+uShift; float t=uTime*0.010;
+      vec2 q=vec2(fbm(p+vec2(0.0,t)),fbm(p+vec2(5.2,-t*0.8)));
+      float n=fbm(p+q*1.7+vec2(t*0.5,0.0));
+      float cloud=smoothstep(0.30,0.80,n);
+      float wisp=smoothstep(0.48,0.92,fbm(p*2.4+q*2.2-vec2(t,0.0)));
+      float lane=smoothstep(0.25,0.62,fbm(p*1.6-q*1.2+3.0));              // 어두운 먼지 띠
+      vec3 c1=vec3(0.085,0.115,0.31), c2=vec3(0.21,0.11,0.33), c3=vec3(0.04,0.19,0.27), c4=vec3(0.30,0.17,0.15);
+      vec3 tint=mix(c1,c2,smoothstep(0.30,0.72,q.x));
+      tint=mix(tint,c3,clamp(smoothstep(0.42,0.80,q.y)*0.7+uHue*0.25,0.0,1.0));
+      tint=mix(tint,c4,smoothstep(0.80,1.0,n)*0.35);                        // 가장 짙은 곳에만 아주 옅은 온기
+      vec3 col=vec3(0.010,0.013,0.022);
+      col+=tint*(cloud*1.4+wisp*0.48)*uNeb*(0.40+0.60*lane);
+      col*=1.0-0.38*dot(uv,uv);                                              // 가장자리 어둡게
+      col+=(hash(gl_FragCoord.xy+fract(uTime)*91.7)-0.5)/255.0*1.6;         // 띠 현상 방지용 미세 입자
+      gl_FragColor=vec4(max(col,0.0),1.0);
+    }`});
+const bg=new THREE.Mesh(new THREE.PlaneGeometry(2,2),bgMat); bg.frustumCulled=false; bg.renderOrder=-10; scene.add(bg);
+
+// 2) 멀리 있는 배경 별: 절반은 비스듬한 은하수 띠에 모이고, 별마다 색온도·밝기가 다름
+const SN=MOBILE?2200:5200; const sGeo=new THREE.BufferGeometry();
+const sPos=new Float32Array(SN*3), sSeed=new Float32Array(SN*2), sCol=new Float32Array(SN*3);
+const STAR_C=[[0.72,0.80,1.0],[0.86,0.90,1.0],[1,1,1],[1.0,0.95,0.86],[1.0,0.86,0.72]];
+for(let i=0;i<SN;i++){
+  const R=30+rnd()*30; let x,y,z;
+  if(i<SN*0.5){ const a=rnd()*TAU, lat=gauss()*0.16; x=Math.cos(a)*Math.cos(lat); z=Math.sin(a)*Math.cos(lat); y=Math.sin(lat);
+    const c=Math.cos(1.05),s=Math.sin(1.05); const x2=x*c-y*s, y2=x*s+y*c; x=x2; y=y2; }
+  else { const u=rnd()*2-1,a=rnd()*TAU,s=Math.sqrt(1-u*u); x=s*Math.cos(a); y=u; z=s*Math.sin(a); }
+  sPos[i*3]=x*R; sPos[i*3+1]=y*R; sPos[i*3+2]=z*R-10;
+  sSeed[i*2]=rnd()*TAU; sSeed[i*2+1]=0.22+Math.pow(rnd(),4.5)*1.9;       // 거의 다 아주 희미하고, 드물게 밝은 별
+  const k=STAR_C[Math.min(4,Math.floor(Math.pow(rnd(),0.8)*5))]; sCol[i*3]=k[0]; sCol[i*3+1]=k[1]; sCol[i*3+2]=k[2];
+}
+sGeo.setAttribute('position',new THREE.BufferAttribute(sPos,3)); sGeo.setAttribute('aSeed',new THREE.BufferAttribute(sSeed,2)); sGeo.setAttribute('aCol',new THREE.BufferAttribute(sCol,3));
+const sMat=new THREE.ShaderMaterial({transparent:true,depthWrite:false,blending:THREE.AdditiveBlending,
+  uniforms:{uTime:{value:0},uScale:{value:innerHeight*DPR*0.016},uTwinkle:{value:REDUCED?0:1}},
+  vertexShader:`attribute vec2 aSeed; attribute vec3 aCol; uniform float uTime,uScale,uTwinkle; varying float vB; varying vec3 vC;
+    void main(){ vec4 mv=modelViewMatrix*vec4(position,1.0); gl_Position=projectionMatrix*mv;
+      gl_PointSize=max(2.0,(0.6+aSeed.y)*uScale/(-mv.z)*7.0);
+      float tw=1.0-uTwinkle*0.45*(0.5+0.5*sin(uTime*(0.5+aSeed.y*1.3)+aSeed.x));
+      vB=tw*min(1.0,0.30+aSeed.y*0.85); vC=aCol; }`,
+  fragmentShader:`varying float vB; varying vec3 vC; void main(){ float r=length(gl_PointCoord-0.5)*2.0; if(r>1.0) discard; float a=exp(-r*r*7.0)+exp(-r*r*1.8)*0.12; gl_FragColor=vec4(vC*vB*a, a*vB); }`});
+const stars=new THREE.Points(sGeo,sMat); scene.add(stars);
+
+// 3) 주인공 파티클 — 장면 A·B 위치를 모두 넘기고 섞기는 셰이더에서 (매 프레임 CPU 계산 없음)
+const geo=new THREE.BufferGeometry();
+const aPosB=new Float32Array(N*3), aColA=new Float32Array(N*3), aColB=new Float32Array(N*3), aBriA=new Float32Array(N), aBriB=new Float32Array(N);
+const aPosA=new Float32Array(N*3), aSize=new Float32Array(N), aSeed=new Float32Array(N*3), aDir=new Float32Array(N*3);
+for(let i=0;i<N;i++){
+  const q=rnd(); aSize[i]= q<0.035 ? 16+rnd()*18 : q<0.05 ? 1.9+rnd()*1.4 : 0.42+Math.pow(rnd(),3.0)*1.0;   // 6%는 크고 아주 옅은 빛안개, 2%는 밝은 별     // 대부분 아주 작고, 가끔 밝은 별
+  aSeed[i*3]=rnd(); aSeed[i*3+1]=rnd()*TAU; aSeed[i*3+2]=0.6+rnd()*2.2;             // 지연, 위상, 반짝임 속도
+  const u=rnd()*2-1,a=rnd()*TAU,s=Math.sqrt(1-u*u),m=0.6+rnd()*1.4; aDir[i*3]=s*Math.cos(a)*m; aDir[i*3+1]=u*m; aDir[i*3+2]=s*Math.sin(a)*m; // 흩어질 방향
+}
+geo.setAttribute('position',new THREE.BufferAttribute(aPosA,3));
+geo.setAttribute('aPosB',new THREE.BufferAttribute(aPosB,3));
+geo.setAttribute('aColA',new THREE.BufferAttribute(aColA,3));
+geo.setAttribute('aColB',new THREE.BufferAttribute(aColB,3));
+geo.setAttribute('aBriA',new THREE.BufferAttribute(aBriA,1));
+geo.setAttribute('aBriB',new THREE.BufferAttribute(aBriB,1));
+geo.setAttribute('aSize',new THREE.BufferAttribute(aSize,1));
+geo.setAttribute('aSeed',new THREE.BufferAttribute(aSeed,3));
+geo.setAttribute('aDir',new THREE.BufferAttribute(aDir,3));
+geo.boundingSphere=new THREE.Sphere(new THREE.Vector3(),20);
+const mat=new THREE.ShaderMaterial({
+  transparent:true, depthWrite:false, blending:THREE.AdditiveBlending,
+  uniforms:{uMix:{value:0},uTime:{value:0},uScale:{value:innerHeight*DPR*0.019},uFade:{value:1},uScatter:{value:REDUCED?0:0.95},uTwinkle:{value:REDUCED?0:1},uFocus:{value:9.2}},
+  vertexShader:`
+    attribute vec3 aPosB,aColA,aColB,aSeed,aDir; attribute float aBriA,aBriB,aSize;
+    uniform float uMix,uTime,uScale,uScatter,uTwinkle,uFocus;
+    varying vec3 vColor; varying float vB; varying float vBig; varying float vSoft; varying float vHaze;
+    void main(){
+      float w=smoothstep(0.0,1.0,clamp(uMix*1.35-aSeed.x*0.35,0.0,1.0));      // 파티클마다 조금씩 늦게 출발
+      vec3 p=mix(position,aPosB,w);
+      float k=sin(w*3.14159)*step(0.001,uScatter);
+      float ang=k*0.6*(0.35+aSeed.x); float cs=cos(ang),sn=sin(ang);
+      p.xz=mat2(cs,-sn,sn,cs)*p.xz;                                           // 바뀌는 동안 소용돌이치듯 돌면서
+      p+=aDir*k*uScatter;                                                     // 한 번 흩어졌다 다시 모임
+      float t=uTime*0.22*uTwinkle;
+      p+=vec3(sin(t+p.y*0.9+aSeed.y*0.25),cos(t*0.83+p.x*0.9),sin(t*0.71+p.z*0.9+aSeed.y*0.25))*0.034; // 물결처럼 같이 일렁임
+      vec4 mv=modelViewMatrix*vec4(p,1.0); gl_Position=projectionMatrix*mv;
+      float b=mix(aBriA,aBriB,w);
+      float tw=1.0-uTwinkle*0.30*(0.5+0.5*sin(uTime*aSeed.z+aSeed.y*3.0));   // 반짝임
+      float d=-mv.z;
+      float depth=smoothstep(19.0,6.0,d);                                     // 멀수록 흐리게
+      float coc=abs(d-uFocus)*0.105;                                          // 초점면에서 멀수록 카메라처럼 번짐
+      vHaze=step(5.0,aSize); vBig=step(1.7,aSize)*(1.0-vHaze); vSoft=clamp(coc*1.5,0.0,1.0);
+      gl_PointSize=min(160.0,(aSize*(1.0+vBig*1.5)+coc*coc*5.5)*uScale/d);
+      vColor=mix(aColA,aColB,w); vB=mix(b*tw/(1.0+coc*coc*3.2), sqrt(b), vHaze)*(0.5+0.5*depth);
+    }`,
+  fragmentShader:`
+    uniform float uFade; varying vec3 vColor; varying float vB; varying float vBig; varying float vSoft; varying float vHaze;
+    void main(){
+      float r=length(gl_PointCoord-0.5)*2.0; if(r>1.0) discard;
+      float core=exp(-r*r*mix(15.0,2.8,vSoft)*(1.0+vBig*3.2));                 // 초점 맞은 별은 또렷, 벗어난 별은 뿌옇게
+      float halo=exp(-r*r*2.6)*(0.11+0.26*vBig)*(1.0-vSoft*0.6);
+      vec2 pc=abs(gl_PointCoord-0.5);
+      float spike=(exp(-pc.y*46.0)*exp(-pc.x*6.5)+exp(-pc.x*46.0)*exp(-pc.y*6.5))*0.42*vBig*(1.0-vSoft);   // 밝은 별에만 아주 가는 십자 빛줄기
+      float edge=1.0-smoothstep(0.82,1.0,r);
+      float a=(core+halo+spike)*edge*min(1.5,vB*2.35)*uFade;
+      if(vHaze>0.5){ a=exp(-r*r*3.4)*edge*0.07*vB*uFade; gl_FragColor=vec4(vColor*vec3(0.72,0.80,1.0)*a, a); return; }   // 빛안개: 겹치면서 은은한 띠가 됨
+      gl_FragColor=vec4(vColor*a, a);
+    }`
+});
+const points=new THREE.Points(geo,mat); group.add(points);
+
+// 4) 중심 빛 (은하 중심·고리 중심) — 살짝 따뜻한 흰빛
+const glow=new THREE.Sprite(new THREE.SpriteMaterial({map:softTexture([[0,'rgba(255,250,240,1)'],[0.12,'rgba(255,246,232,.9)'],[0.32,'rgba(220,214,255,.22)'],[0.6,'rgba(150,160,220,.06)'],[1,'rgba(0,0,0,0)']]),
+  transparent:true,depthWrite:false,blending:THREE.AdditiveBlending,opacity:GLOW[0]}));
+glow.scale.set(3.2,3.2,1); scene.add(glow);
+
+// 장면 A·B를 셰이더 속성에 실어 보냄 (구간이 바뀔 때만)
+let pairKey='';
+function loadPair(a,b){
+  const k=a+'>'+b+'|'+(shapes[4].ver||0); if(k===pairKey) return; pairKey=k;
+  aPosA.set(shapes[a].pos); aPosB.set(shapes[b].pos); aColA.set(shapes[a].col); aColB.set(shapes[b].col); aBriA.set(shapes[a].bri); aBriB.set(shapes[b].bri);
+  ['position','aPosB','aColA','aColB','aBriA','aBriB'].forEach(n=>geo.attributes[n].needsUpdate=true);
+}
+
+// 세계지도 → 지구 장면
+fetch('landing-countries-110m.json').then(r=>{if(!r.ok) throw new Error(r.status); return r.json();})
+  .then(t=>{ const e=paint(earthFrom(t),()=>mixc(COOL,WHITE,0.35+rnd()*0.5)); e.ver=1; shapes[4]=e; }).catch(e=>console.warn('지도 데이터를 못 읽어 점 구로 대신합니다:',e));
+
+/* ---------- 매 프레임 ---------- */
+let P=progress(), Ptarget=P, mx=0, my=0, last=performance.now(), spinAcc=0, running=true, T=0;
+addEventListener('scroll',()=>{Ptarget=progress();},{passive:true});
+addEventListener('pointermove',e=>{mx=(e.clientX/innerWidth-0.5); my=(e.clientY/innerHeight-0.5);},{passive:true});
+addEventListener('resize',()=>{ renderer.setSize(innerWidth,innerHeight); camera.aspect=innerWidth/innerHeight; camera.updateProjectionMatrix(); const s=innerHeight*DPR*0.019; mat.uniforms.uScale.value=s; sMat.uniforms.uScale.value=innerHeight*DPR*0.016; bgMat.uniforms.uRes.value.set(innerWidth*DPR,innerHeight*DPR); Ptarget=progress(); });
+document.addEventListener('visibilitychange',()=>{ running=!document.hidden; if(running){ last=performance.now(); requestAnimationFrame(frame);} });
+
+function frame(now){
+  if(!running) return;
+  const dt=Math.min(0.05,(now-last)/1000); last=now; T+=dt;
+  P+=(Ptarget-P)*(REDUCED?1:Math.min(1,dt*5));
+  if(Math.abs(Ptarget-P)<0.0005) P=Ptarget;
+  const a=Math.min(SCENES-2,Math.floor(P)), b=a+1, f=P-a;
+  const w=REDUCED?(f>0.5?1:0):smooth(0.15,0.85,f);
+  loadPair(a,b);
+  mat.uniforms.uMix.value=w; mat.uniforms.uTime.value=T; sMat.uniforms.uTime.value=T; bgMat.uniforms.uTime.value=T;
+  updateUI(P);
+  // 물체 각도
+  const va=VIEW[a],vb=VIEW[b];
+  const rx=va.rx+(vb.rx-va.rx)*w, ry=va.ry+(vb.ry-va.ry)*w, spin=va.spin+(vb.spin-va.spin)*w, sw=va.spinW+(vb.spinW-va.spinW)*w;
+  if(!REDUCED) spinAcc=(spinAcc+dt*spin)%TAU;
+  const spinN=spinAcc>Math.PI?spinAcc-TAU:spinAcc, wob=REDUCED?0:Math.sin(T/2.6)*0.12*(1-sw);
+  group.rotation.x=rx+my*0.12; group.rotation.y=ry+spinN*sw+wob+mx*0.25;
+  // 중심 빛·성운
+  const gl=GLOW[a]+(GLOW[b]-GLOW[a])*w; glow.material.opacity=gl*(0.92+0.08*Math.sin(T*1.7));
+  bgMat.uniforms.uNeb.value=(NEB[a]+(NEB[b]-NEB[a])*w)*(burst>0?Math.max(0,1-(burst-1)*0.5):1); bgMat.uniforms.uHue.value=HUE[a]+(HUE[b]-HUE[a])*w;
+  bgMat.uniforms.uShift.value.set(mx*0.035+T*0.0015, P*0.16-my*0.03);          // 스크롤하면 성운이 천천히 흘러감
+  stars.rotation.y=T*0.004+mx*0.05; stars.rotation.x=my*0.03;
+  // 들어갈 때
+  if(burst>0){ burst=Math.min(3,burst+dt*2.4); const k=burst-1; group.scale.setScalar(1+k*k*0.6); mat.uniforms.uFade.value=Math.max(0,1-k*0.7); }
+  else { group.scale.setScalar(1); mat.uniforms.uFade.value=1; }
+  // 카메라: 마우스 따라 살짝 + 아주 느린 숨쉬기
+  const bx=mx*0.35+Math.sin(T*0.11)*0.12, by=-my*0.25+Math.cos(T*0.09)*0.08;
+  camera.position.x+=(bx-camera.position.x)*0.05; camera.position.y+=(by-camera.position.y)*0.05; camera.lookAt(0,0,0); mat.uniforms.uFocus.value=camera.position.length();
+  renderer.render(scene,camera);
+  requestAnimationFrame(frame);
+}
+updateUI(P); requestAnimationFrame(frame);
+setTimeout(()=>{ try{ $('#s1 .pill').focus({preventScroll:true}); }catch(e){} },500);
+})();
+
+</script>
+</body>
+</html>
