@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:16 KST",
+    "checked_at": "2026-11-15 00:41 KST",
     "corp_code": "00258801",
     "reports_total": 29,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:17 KST",
+    "checked_at": "2026-11-15 00:45 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 31700,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:17 KST",
+    "checked_at": "2026-11-15 00:45 KST",
     "spike_days": 34,
     "with_major_disclosure": 6,
     "news_total": 257,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:17 KST",
+    "checked_at": "2026-11-15 00:45 KST",
     "rows": 406,
     "groups": [
       "카카오",
@@ -45,7 +45,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:17 KST",
+    "checked_at": "2026-11-15 00:45 KST",
     "new": 0,
     "total": 257,
     "first": "2026-11-12 15:26",
@@ -54,8 +54,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:16 KST",
-    "new_share_reports": 29,
-    "new_dividend_reports": 9
+    "checked_at": "2026-11-15 00:41 KST",
+    "new_share_reports": 0,
+    "new_dividend_reports": 0,
+    "new_owner_reports": 29
+  },
+  "valuation": {
+    "status": "성공",
+    "checked_at": "2026-11-15 00:45 KST",
+    "rows": 890,
+    "as_of": "2026-11-13",
+    "per": 36.85,
+    "pbr": 1.187
   }
 }

@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:16 KST",
+    "checked_at": "2026-11-15 00:37 KST",
     "corp_code": "00149646",
     "reports_total": 25,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:16 KST",
+    "checked_at": "2026-11-15 00:40 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 19120,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:16 KST",
+    "checked_at": "2026-11-15 00:41 KST",
     "spike_days": 35,
     "with_major_disclosure": 4,
     "news_total": 106,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:16 KST",
+    "checked_at": "2026-11-15 00:40 KST",
     "rows": 609,
     "groups": [
       "기업은행",
@@ -46,7 +46,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:16 KST",
+    "checked_at": "2026-11-15 00:40 KST",
     "new": 0,
     "total": 106,
     "first": "2026-11-11 13:02",
@@ -55,16 +55,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:16 KST",
-    "new_share_reports": 19,
-    "new_dividend_reports": 4
+    "checked_at": "2026-11-15 00:37 KST",
+    "new_share_reports": 0,
+    "new_dividend_reports": 0,
+    "new_owner_reports": 19
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:16 KST",
-    "rows": 303,
+    "checked_at": "2026-11-15 00:41 KST",
+    "rows": 646,
     "as_of": "2026-11-13",
     "per": 5.77,
-    "pbr": 0.402
+    "pbr": 0.406
   }
 }

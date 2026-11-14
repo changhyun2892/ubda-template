@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:14 KST",
+    "checked_at": "2026-11-15 00:26 KST",
     "corp_code": "00583424",
     "reports_total": 15,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:14 KST",
+    "checked_at": "2026-11-15 00:28 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 126200,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:14 KST",
+    "checked_at": "2026-11-15 00:28 KST",
     "spike_days": 36,
     "with_major_disclosure": 13,
     "news_total": 281,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:14 KST",
+    "checked_at": "2026-11-15 00:28 KST",
     "rows": 406,
     "groups": [
       "아모레퍼시픽",
@@ -45,7 +45,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:14 KST",
+    "checked_at": "2026-11-15 00:28 KST",
     "new": 0,
     "total": 281,
     "first": "2026-10-30 08:23",
@@ -54,16 +54,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:14 KST",
-    "new_share_reports": 15,
-    "new_dividend_reports": 4
+    "checked_at": "2026-11-15 00:26 KST",
+    "new_share_reports": 0,
+    "new_dividend_reports": 0,
+    "new_owner_reports": 15
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:14 KST",
+    "checked_at": "2026-11-15 00:28 KST",
     "rows": 897,
     "as_of": "2026-11-13",
-    "per": 29.28,
-    "pbr": 1.545
+    "per": 30.42,
+    "pbr": 1.561
   }
 }

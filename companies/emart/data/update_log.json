@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:14 KST",
+    "checked_at": "2026-11-15 00:30 KST",
     "corp_code": "00872984",
     "reports_total": 17,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:15 KST",
+    "checked_at": "2026-11-15 00:33 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 63600,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:15 KST",
+    "checked_at": "2026-11-15 00:33 KST",
     "spike_days": 32,
     "with_major_disclosure": 13,
     "news_total": 510,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:15 KST",
+    "checked_at": "2026-11-15 00:33 KST",
     "rows": 609,
     "groups": [
       "이마트",
@@ -46,8 +46,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:15 KST",
-    "new": 2,
+    "checked_at": "2026-11-15 00:33 KST",
+    "new": 0,
     "total": 510,
     "first": "2026-11-10 06:01",
     "pages": 3,
@@ -55,16 +55,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:14 KST",
-    "new_share_reports": 17,
-    "new_dividend_reports": 6
+    "checked_at": "2026-11-15 00:30 KST",
+    "new_share_reports": 0,
+    "new_dividend_reports": 0,
+    "new_owner_reports": 17
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:15 KST",
+    "checked_at": "2026-11-15 00:33 KST",
     "rows": 889,
     "as_of": "2026-11-13",
-    "per": 12.46,
-    "pbr": 0.108
+    "per": 80.31,
+    "pbr": 0.13
   }
 }

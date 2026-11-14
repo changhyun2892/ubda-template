@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:19 KST",
+    "checked_at": "2026-11-15 00:54 KST",
     "corp_code": "00126478",
     "reports_total": 18,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:19 KST",
+    "checked_at": "2026-11-15 00:55 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 16610,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:20 KST",
+    "checked_at": "2026-11-15 00:56 KST",
     "spike_days": 34,
     "with_major_disclosure": 10,
     "news_total": 203,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:19 KST",
+    "checked_at": "2026-11-15 00:55 KST",
     "rows": 602,
     "groups": [
       "삼성중공업",
@@ -46,7 +46,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:20 KST",
+    "checked_at": "2026-11-15 00:55 KST",
     "new": 0,
     "total": 203,
     "first": "2026-10-29 13:34",
@@ -55,16 +55,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:19 KST",
-    "new_share_reports": 18,
-    "new_dividend_reports": 7
+    "checked_at": "2026-11-15 00:54 KST",
+    "new_share_reports": 0,
+    "new_dividend_reports": 0,
+    "new_owner_reports": 18
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:20 KST",
+    "checked_at": "2026-11-15 00:56 KST",
     "rows": 897,
     "as_of": "2026-11-13",
-    "per": 25.51,
-    "pbr": 3.012
+    "per": 25.1,
+    "pbr": 2.973
   }
 }
