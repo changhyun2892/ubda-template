@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:40 KST",
+    "checked_at": "2026-11-14 23:00 KST",
     "corp_code": "00547583",
     "reports_total": 21,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:40 KST",
+    "checked_at": "2026-11-14 23:00 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 124600,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:40 KST",
+    "checked_at": "2026-11-14 23:00 KST",
     "spike_days": 26,
     "with_major_disclosure": 5,
     "news_total": 63,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:40 KST",
+    "checked_at": "2026-11-14 23:00 KST",
     "rows": 812,
     "groups": [
       "하나금융지주",
@@ -47,8 +47,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:40 KST",
-    "new": 63,
+    "checked_at": "2026-11-14 23:00 KST",
+    "new": 0,
     "total": 63,
     "first": "2026-10-12 12:22",
     "pages": 10,

@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:39 KST",
+    "checked_at": "2026-11-14 22:59 KST",
     "corp_code": "00124726",
     "reports_total": 15,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:39 KST",
+    "checked_at": "2026-11-14 22:59 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 74300,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:39 KST",
+    "checked_at": "2026-11-14 22:59 KST",
     "spike_days": 39,
     "with_major_disclosure": 9,
     "news_total": 374,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:39 KST",
+    "checked_at": "2026-11-14 22:59 KST",
     "rows": 606,
     "groups": [
       "빙그레",
@@ -46,11 +46,11 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:39 KST",
-    "new": 374,
+    "checked_at": "2026-11-14 22:59 KST",
+    "new": 0,
     "total": 374,
     "first": "2026-10-13 10:04",
-    "pages": 10,
+    "pages": 9,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   }
 }
