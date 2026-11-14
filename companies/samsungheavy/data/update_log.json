@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:01 KST",
+    "checked_at": "2026-11-14 23:44 KST",
     "corp_code": "00126478",
     "reports_total": 18,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:01 KST",
+    "checked_at": "2026-11-14 23:44 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 16610,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:02 KST",
+    "checked_at": "2026-11-14 23:44 KST",
     "spike_days": 34,
     "with_major_disclosure": 10,
     "news_total": 203,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:01 KST",
+    "checked_at": "2026-11-14 23:44 KST",
     "rows": 602,
     "groups": [
       "삼성중공업",
@@ -46,8 +46,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:01 KST",
-    "new": 1,
+    "checked_at": "2026-11-14 23:44 KST",
+    "new": 0,
     "total": 203,
     "first": "2026-10-29 13:34",
     "pages": 10,

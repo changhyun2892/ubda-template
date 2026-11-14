@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:01 KST",
+    "checked_at": "2026-11-14 23:44 KST",
     "corp_code": "00108241",
     "reports_total": 16,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:01 KST",
+    "checked_at": "2026-11-14 23:44 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 366500,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:01 KST",
+    "checked_at": "2026-11-14 23:44 KST",
     "spike_days": 35,
     "with_major_disclosure": 9,
     "news_total": 387,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:01 KST",
+    "checked_at": "2026-11-14 23:44 KST",
     "rows": 1015,
     "groups": [
       "농심",
@@ -48,7 +48,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:01 KST",
+    "checked_at": "2026-11-14 23:44 KST",
     "new": 0,
     "total": 387,
     "first": "2026-11-10 16:42",

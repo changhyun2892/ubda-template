@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:02 KST",
+    "checked_at": "2026-11-14 23:44 KST",
     "corp_code": "00382199",
     "reports_total": 18,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:02 KST",
+    "checked_at": "2026-11-14 23:44 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 89800,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:02 KST",
+    "checked_at": "2026-11-14 23:45 KST",
     "spike_days": 25,
     "with_major_disclosure": 5,
     "news_total": 27,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:02 KST",
+    "checked_at": "2026-11-14 23:44 KST",
     "rows": 812,
     "groups": [
       "신한지주",
@@ -47,7 +47,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:02 KST",
+    "checked_at": "2026-11-14 23:44 KST",
     "new": 0,
     "total": 27,
     "first": "2026-10-27 20:22",

@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:59 KST",
+    "checked_at": "2026-11-14 23:42 KST",
     "corp_code": "00858364",
     "reports_total": 16,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:59 KST",
+    "checked_at": "2026-11-14 23:42 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 13630,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:59 KST",
+    "checked_at": "2026-11-14 23:42 KST",
     "spike_days": 28,
     "with_major_disclosure": 8,
     "news_total": 115,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:59 KST",
+    "checked_at": "2026-11-14 23:42 KST",
     "rows": 537,
     "groups": [
       "BNK금융지주",
@@ -46,7 +46,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:59 KST",
+    "checked_at": "2026-11-14 23:42 KST",
     "new": 0,
     "total": 115,
     "first": "2026-09-18 08:38",
