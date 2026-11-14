@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:01 KST",
+    "checked_at": "2026-11-14 23:44 KST",
     "corp_code": "00252135",
     "reports_total": 18,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:01 KST",
+    "checked_at": "2026-11-14 23:44 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 172500,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:01 KST",
+    "checked_at": "2026-11-14 23:44 KST",
     "spike_days": 40,
     "with_major_disclosure": 6,
     "news_total": 38,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:01 KST",
+    "checked_at": "2026-11-14 23:44 KST",
     "rows": 609,
     "groups": [
       "주성엔지니어링",
@@ -46,7 +46,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:01 KST",
+    "checked_at": "2026-11-14 23:44 KST",
     "new": 0,
     "total": 38,
     "first": "2026-11-05 10:44",

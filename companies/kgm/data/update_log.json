@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:01 KST",
+    "checked_at": "2026-11-14 23:44 KST",
     "corp_code": "00138242",
     "reports_total": 15,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:01 KST",
+    "checked_at": "2026-11-14 23:44 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 2105,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:01 KST",
+    "checked_at": "2026-11-14 23:44 KST",
     "spike_days": 33,
     "with_major_disclosure": 9,
     "news_total": 97,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:01 KST",
+    "checked_at": "2026-11-14 23:44 KST",
     "rows": 609,
     "groups": [
       "KG모빌리티",
@@ -46,7 +46,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:01 KST",
+    "checked_at": "2026-11-14 23:44 KST",
     "new": 0,
     "total": 97,
     "first": "2026-10-20 11:42",

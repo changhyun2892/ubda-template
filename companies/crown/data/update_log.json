@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:59 KST",
+    "checked_at": "2026-11-14 23:43 KST",
     "corp_code": "01205329",
     "reports_total": 17,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:59 KST",
+    "checked_at": "2026-11-14 23:43 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 6900,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:00 KST",
+    "checked_at": "2026-11-14 23:43 KST",
     "spike_days": 22,
     "with_major_disclosure": 1,
     "news_total": 183,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:59 KST",
+    "checked_at": "2026-11-14 23:43 KST",
     "rows": 809,
     "groups": [
       "크라운제과",
@@ -47,7 +47,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:00 KST",
+    "checked_at": "2026-11-14 23:43 KST",
     "new": 0,
     "total": 183,
     "first": "2026-06-30 08:56",
