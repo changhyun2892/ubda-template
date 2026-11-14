@@ -142,6 +142,17 @@ def main() -> int:
     eps = vj["inputs"]["ttm_net_income"] / 7433015
     ok("PER = 종가 ÷ (최근 4분기 순이익 ÷ 유통주식수)", vj["per"] and abs(vj["per"] - int(last["close"]) / eps) < 0.01, f"PER {vj['per']} · TTM {vj['inputs']['ttm_period']}")
     ok("PBR·배당수익률 계산 (주당 배당 3,500원)", vj["pbr"] and abs(vj["div_yield_pct"] - 3500 / int(last["close"]) * 100) < 0.001, f"PBR {vj['pbr']} · 배당 {vj['div_yield_pct']}%")
+    reps = {(x["bsns_year"], x["reprt_code"]): x for x in rows(d / "companies" / SLUG / "data" / "raw" / "dart_reports.csv")}
+    ow = d / "companies" / SLUG / "data" / "raw" / "dart_owners.csv"
+    with ow.open("w", encoding="utf-8", newline="") as fh:
+        fh.write("rcept_no,rcept_dt,bsns_year,reprt_code,fs_div,ni_owners_cum,equity_owners\n")
+        for (y, rc, ni, eq) in (("2025", "11011", 300e9, 1000e9), ("2025", "11012", 100e9, 900e9), ("2026", "11012", 160e9, 1100e9)):
+            rp = reps[(y, rc)]
+            fh.write(f"{rp['rcept_no']},{rp['rcept_dt']},{y},{rc},CFS,{ni},{eq}\n")
+    run(d, "build_valuation.py", base)
+    vj2 = json.loads((d / "companies" / SLUG / "data" / "valuation.json").read_text(encoding="utf-8"))
+    ok("지배주주 기준 TTM = 올해 반기 누적 + 작년 연간 − 작년 반기 누적 (160+300−100=360억×10)", vj2["inputs"]["ttm_net_income"] == 360e9 and vj2["inputs"]["equity"] == 1100e9 and vj2["inputs"]["ni_basis"] == "지배주주 순이익",
+       f"{vj2['inputs']['ttm_net_income']:,.0f} · {vj2['inputs']['ttm_period']}")
     first_q = next(x for x in vd if x["per"])
     ok("보고서 접수 전 날짜에는 그 실적을 쓰지 않음 (첫 PER은 2022 사업보고서 접수 이후)", first_q["date"] >= "2023-03-21", first_q["date"])
 

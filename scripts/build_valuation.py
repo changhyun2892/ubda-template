@@ -7,8 +7,9 @@
 입력 (모두 이미 수집된 파일, 인터넷 불필요)
 - 주가: data/stock_daily.csv (보통주 종가, 비수정)
 - 주식 수: data/raw/dart_shares.csv (collect_shares.py · 정기보고서 '주식의 총수 현황')
-- 순이익: data/quarterly.csv 분기 순이익 (지배주주 순이익이 있으면 그것, 없으면 당기순이익) → 최근 4분기 합(TTM)
-- 자본: data/raw/dart_financials.csv 자본총계 (분기·반기·사업보고서 기말)
+- 순이익: data/raw/dart_owners.csv 지배주주 순이익 누적 → TTM = 올해 누적 + 작년 연간 − 작년 같은 분기 누적
+  (없으면 data/quarterly.csv 분기 순이익 4개 합, 그것도 없으면 사업보고서 연간)
+- 자본: dart_owners.csv 지배주주 자본 (없으면 data/raw/dart_financials.csv 자본총계)
 - 배당: data/raw/dart_dividends.csv 사업보고서 보통주 주당 현금배당금
 
 산식
@@ -67,21 +68,26 @@ def main() -> int:
 
     # 주식 수: 보고서별 보통주 발행 수, 보통+우선 유통 수
     by_rc: dict[str, dict] = {}
+    totals: dict[str, tuple] = {}
     for r in shares:
-        se = r["se"].replace(" ", "")
-        if se in ("합계", "비고") or not se:
-            continue
-        g = by_rc.setdefault(r["rcept_no"], {"dt": r["rcept_dt"], "common_issued": None, "out": 0.0, "pref": 0.0, "rc": (r["bsns_year"], r["reprt_code"])})
+        se = r["se"].replace(" ", "").replace("\n", "")
         iss, tr, out = f(r["issued"]), f(r["treasury"]), f(r["outstanding"])
         if out is None and iss is not None:
             out = iss - (tr or 0)
-        if "보통" in se:
-            g["common_issued"] = iss
-            g["common_out"] = out
+        if se == "합계":
+            totals[r["rcept_no"]] = (r, iss, out)
+        if se in ("합계", "비고") or not se or iss is None:
+            continue
+        g = by_rc.setdefault(r["rcept_no"], {"rno": r["rcept_no"], "dt": r["rcept_dt"], "common_issued": None, "out": 0.0, "pref": 0.0})
+        if "보통" in se or (se.startswith("의결권있는") and "우선" not in se):  # 보통주 / 의결권 있는 주식
+            g["common_issued"] = (g["common_issued"] or 0) + iss
         else:
             g["pref"] += out or 0
         g["out"] += out or 0
-    sh_series = sorted((g["dt"], g) for g in by_rc.values() if g["common_issued"])
+    for rno, (r, iss, out) in totals.items():  # 종류 구분 없이 합계만 적은 보고서
+        if iss and (rno not in by_rc or not by_rc[rno]["common_issued"]):
+            by_rc[rno] = {"rno": rno, "dt": r["rcept_dt"], "common_issued": iss, "out": out or iss, "pref": 0.0}
+    sh_series = sorted(((g["dt"], g) for g in by_rc.values() if g["common_issued"]), key=lambda t: (t[0], t[1]["rno"]))  # 같은 날 두 보고서면 나중 접수번호
 
     # 순이익 TTM: 분기 순이익(지배주주 우선)
     q = read_csv(DATA / "quarterly.csv")
@@ -106,6 +112,30 @@ def main() -> int:
             continue
         ttm_series.append((avail, {"value": sum(qni[k][0] for k in last4), "period": f"{last4[-1][0]}Q{last4[-1][1]}~{y}Q{n}",
                                    "basis": "지배주주 순이익" if qni[(y, n)][1] == "net_income_owners" else "당기순이익(비지배 포함)"}))
+    # 지배주주 기준 (dart_owners.csv): TTM = 올해 누적 + 작년 연간 − 작년 같은 분기 누적 — 있으면 위 값보다 우선
+    own = read_csv(RAW / "dart_owners.csv")
+    cum, eqo = {}, {}
+    for r in sorted(own, key=lambda r: r["rcept_dt"]):  # 같은 기간 정정 보고서는 뒤 값으로
+        k = (r["bsns_year"], r["reprt_code"])
+        if f(r["ni_owners_cum"]) is not None:
+            cum[k] = f(r["ni_owners_cum"])
+        if f(r["equity_owners"]) is not None:
+            eqo[k] = f(r["equity_owners"])
+    o_ttm = []
+    for (y, rc), v in cum.items():
+        avail = first.get((y, rc))
+        if not avail:
+            continue
+        if rc == "11011":
+            o_ttm.append((avail, {"value": v, "period": f"{y} 연간", "basis": "지배주주 순이익"}))
+        elif (str(int(y) - 1), "11011") in cum and (str(int(y) - 1), rc) in cum:
+            o_ttm.append((avail, {"value": v + cum[(str(int(y) - 1), "11011")] - cum[(str(int(y) - 1), rc)],
+                                  "period": f"최근 4분기 ({y} {dict(zip(('11013', '11012', '11014'), ('1분기', '반기', '3분기')))[rc]} 누적 기준)", "basis": "지배주주 순이익"}))
+    if o_ttm:
+        dates = {d for d, _ in o_ttm}
+        ttm_series = [t for t in ttm_series if t[0] not in dates] + o_ttm
+    o_eq = [(first[k], {"value": v, "period": f"{k[0]} {'사업보고서' if k[1] == '11011' else dict(zip(('11013', '11012', '11014'), ('1분기보고서', '반기보고서', '3분기보고서')))[k[1]]}", "basis": "지배주주 자본"})
+            for k, v in eqo.items() if k in first]
     # 분기가 모자란 해(분석 시작 전 해 등)는 사업보고서 연간 순이익으로 채움
     have = {s[0] for s in ttm_series}
     fins = read_csv(DATA / "financials.csv")
@@ -125,7 +155,10 @@ def main() -> int:
         if r["metric"] == "total_equity" and f(r["value"]) is not None:
             avail = first.get((r["bsns_year"], r["reprt_code"]))
             if avail:
-                eq_series.append((avail, {"value": f(r["value"]), "period": f"{r['bsns_year']} {r['report_type']}"}))
+                eq_series.append((avail, {"value": f(r["value"]), "period": f"{r['bsns_year']} {r['report_type']}", "basis": "자본총계(비지배 포함)"}))
+    if o_eq:
+        dates = {d for d, _ in o_eq}
+        eq_series = [t for t in eq_series if t[0] not in dates] + o_eq
     eq_series = sorted({s[0]: s for s in eq_series}.values(), key=lambda s: s[0])
 
     # 배당 (사업보고서 보통주 주당 현금배당금)
@@ -178,12 +211,12 @@ def main() -> int:
             "common_issued": sh["common_issued"], "shares_outstanding": sh["out"], "preferred_outstanding": sh["pref"],
             "shares_report": shrep["report_nm"] if shrep else "", "shares_url": shrep["viewer_url"] if shrep else "",
             "ttm_net_income": ni["value"] if ni else None, "ttm_period": ni["period"] if ni else "", "ni_basis": ni["basis"] if ni else "",
-            "equity": eq["value"] if eq else None, "equity_period": eq["period"] if eq else "",
+            "equity": eq["value"] if eq else None, "equity_period": eq["period"] if eq else "", "equity_basis": eq.get("basis", "") if eq else "",
             "dps_year": dv["year"] if dv else "", "payout_pct": payout.get(dv["year"]) if dv else None,
         },
         "notes": ["시가총액은 보통주만 (거래소 방식). 우선주는 주가를 받지 않아 시가총액에서 빠짐",
                   "PER·PBR의 주식 수는 보통주+우선주 유통주식수(자기주식 제외)",
-                  "자본총계는 비지배지분을 포함", "비수정 종가 기준 · 자동 계산 · 원문 대조 전"],
+                  "순이익·자본은 지배주주 기준 (공시에 없으면 비지배 포함 값으로 대신하고 위에 표시)", "비수정 종가 기준 · 자동 계산 · 원문 대조 전"],
         "built_at": now,
     }
     (DATA / "valuation.json").write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")

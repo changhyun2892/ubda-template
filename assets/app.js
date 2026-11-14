@@ -365,8 +365,8 @@ function drawBS() {
 /* ---- 밸류에이션 (scripts/build_valuation.py → valuation.json · valuation_daily.csv) ---- */
 const VAL_DEF = {
   market_cap: ['시가총액', (v) => jo(v), '보통주 종가 × 보통주 발행주식총수'],
-  per: ['PER', (v) => fmt(v, 1) + '배', '종가 ÷ EPS · EPS = 최근 4분기 순이익 ÷ 유통주식수(보통+우선, 자기주식 제외)'],
-  pbr: ['PBR', (v) => fmt(v, 2) + '배', '종가 ÷ BPS · BPS = 자본총계 ÷ 유통주식수'],
+  per: ['PER', (v) => fmt(v, 1) + '배', '종가 ÷ EPS · EPS = 최근 4분기 지배주주 순이익 ÷ 유통주식수(보통+우선, 자기주식 제외)'],
+  pbr: ['PBR', (v) => fmt(v, 2) + '배', '종가 ÷ BPS · BPS = 지배주주 자본 ÷ 유통주식수'],
   div_yield_pct: ['배당수익률', (v) => fmt(v, 2) + '%', '최근 사업보고서 보통주 주당 현금배당금 ÷ 종가'],
 };
 const median = (a) => { const b = a.filter((x) => typeof x === 'number' && Number.isFinite(x)).sort((x, y) => x - y); if (!b.length) return null; const m = b.length >> 1; return b.length % 2 ? b[m] : (b[m - 1] + b[m]) / 2; };
@@ -391,7 +391,7 @@ function showValuation(k) {
     <dl class="ev-box"><dt>기준일 종가</dt><dd>${esc(V.as_of)} · ${fmt(V.close, 0)}원 (Yahoo Finance, 비수정)</dd>
       <dt>주식 수</dt><dd>보통주 발행 ${fmt(I.common_issued, 0)}주 · 유통(보통+우선, 자기주식 제외) ${fmt(I.shares_outstanding, 0)}주${I.shares_url ? ` · <a href="${esc(I.shares_url)}" target="_blank" rel="noopener">${esc(I.shares_report)}</a>` : ''}</dd>
       <dt>최근 4분기 순이익</dt><dd>${I.ttm_net_income === null ? '없음' : jo(I.ttm_net_income)} · ${esc(I.ttm_period)} · ${esc(I.ni_basis)} → EPS ${V.eps === null ? '–' : fmt(V.eps, 0) + '원'}</dd>
-      <dt>자본총계</dt><dd>${I.equity === null ? '없음' : jo(I.equity)} · ${esc(I.equity_period)} → BPS ${V.bps === null ? '–' : fmt(V.bps, 0) + '원'}</dd>
+      <dt>자본</dt><dd>${I.equity === null ? '없음' : jo(I.equity)} · ${esc(I.equity_period)} · ${esc(I.equity_basis || '')} → BPS ${V.bps === null ? '–' : fmt(V.bps, 0) + '원'}</dd>
       <dt>주당 배당금</dt><dd>${V.dps === null ? '없음' : fmt(V.dps, 0) + '원'} (${esc(I.dps_year)} 사업보고서)${I.payout_pct !== null && I.payout_pct !== undefined ? ` · 배당성향 ${fmt(I.payout_pct, 1)}%` : ''}</dd></dl>
     ${peers.length > 1 ? `<h3 style="font-size:12.5px;margin:12px 0 4px">같은 산업 비교</h3><table class="tbl"><tbody>${peers.map(([n, v, me]) => `<tr${me ? ' style="font-weight:700"' : ''}><td>${esc(n)}</td><td>${v === null || v === undefined ? '–' : f(v)}</td></tr>`).join('')}</tbody></table>` : ''}
     <div class="note" style="margin-top:10px">${(V.notes || []).map(esc).join('<br>')}</div>`);
