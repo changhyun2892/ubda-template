@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:16 KST",
+    "checked_at": "2026-11-15 00:38 KST",
     "corp_code": "01133217",
     "reports_total": 21,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:17 KST",
+    "checked_at": "2026-11-15 00:39 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 20800,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:17 KST",
+    "checked_at": "2026-11-15 00:39 KST",
     "spike_days": 34,
     "with_major_disclosure": 6,
     "news_total": 414,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:17 KST",
+    "checked_at": "2026-11-15 00:39 KST",
     "rows": 609,
     "groups": [
       "카카오뱅크",
@@ -46,7 +46,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:17 KST",
+    "checked_at": "2026-11-15 00:39 KST",
     "new": 0,
     "total": 414,
     "first": "2026-11-04 18:16",
@@ -55,13 +55,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:16 KST",
-    "new_share_reports": 18,
-    "new_dividend_reports": 4
+    "checked_at": "2026-11-15 00:38 KST",
+    "new_share_reports": 0,
+    "new_dividend_reports": 0,
+    "new_owner_reports": 18
   },
   "valuation": {
-    "status": "건너뜀",
-    "checked_at": "2026-11-15 00:17 KST",
-    "message": "주가 기간에 맞는 주식 수 자료 없음"
+    "status": "성공",
+    "checked_at": "2026-11-15 00:39 KST",
+    "rows": 644,
+    "as_of": "2026-11-13",
+    "per": 17.24,
+    "pbr": 1.468
   }
 }

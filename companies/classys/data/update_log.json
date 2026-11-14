@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:14 KST",
+    "checked_at": "2026-11-15 00:28 KST",
     "corp_code": "01061327",
     "reports_total": 15,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:14 KST",
+    "checked_at": "2026-11-15 00:29 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 23800,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:14 KST",
+    "checked_at": "2026-11-15 00:29 KST",
     "spike_days": 40,
     "with_major_disclosure": 13,
     "news_total": 356,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:14 KST",
+    "checked_at": "2026-11-15 00:29 KST",
     "rows": 406,
     "groups": [
       "클래시스",
@@ -45,7 +45,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:14 KST",
+    "checked_at": "2026-11-15 00:29 KST",
     "new": 0,
     "total": 356,
     "first": "2026-06-04 06:02",
@@ -54,16 +54,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:14 KST",
-    "new_share_reports": 15,
-    "new_dividend_reports": 4
+    "checked_at": "2026-11-15 00:28 KST",
+    "new_share_reports": 0,
+    "new_dividend_reports": 0,
+    "new_owner_reports": 15
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:14 KST",
+    "checked_at": "2026-11-15 00:29 KST",
     "rows": 888,
     "as_of": "2026-11-13",
-    "per": 11.54,
-    "pbr": 2.796
+    "per": 11.28,
+    "pbr": 2.825
   }
 }

@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:16 KST",
+    "checked_at": "2026-11-15 00:35 KST",
     "corp_code": "00878915",
     "reports_total": 25,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:16 KST",
+    "checked_at": "2026-11-15 00:38 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 15750,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:16 KST",
+    "checked_at": "2026-11-15 00:38 KST",
     "spike_days": 28,
     "with_major_disclosure": 7,
     "news_total": 54,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:16 KST",
+    "checked_at": "2026-11-15 00:38 KST",
     "rows": 537,
     "groups": [
       "iM금융지주",
@@ -46,7 +46,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:16 KST",
+    "checked_at": "2026-11-15 00:38 KST",
     "new": 0,
     "total": 54,
     "first": "2026-10-13 07:00",
@@ -55,8 +55,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:16 KST",
-    "new_share_reports": 18,
-    "new_dividend_reports": 5
+    "checked_at": "2026-11-15 00:35 KST",
+    "new_share_reports": 0,
+    "new_dividend_reports": 0,
+    "new_owner_reports": 18
+  },
+  "valuation": {
+    "status": "성공",
+    "checked_at": "2026-11-15 00:38 KST",
+    "rows": 729,
+    "as_of": "2026-11-13",
+    "per": 5.8,
+    "pbr": 0.391
   }
 }
