@@ -1,0 +1,32 @@
+{
+ "as_of": "2026-11-13",
+ "close": 32500,
+ "market_cap": 23662914665000,
+ "per": 7.44,
+ "pbr": 0.579,
+ "div_yield_pct": 4.185,
+ "eps": 4369.6,
+ "bps": 56151.3,
+ "dps": 1360.0,
+ "inputs": {
+  "common_issued": 728089682.0,
+  "shares_outstanding": 728035737.0,
+  "preferred_outstanding": 0.0,
+  "shares_report": "반기보고서 (2026.06)",
+  "shares_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003410",
+  "ttm_net_income": 3181223000000.0,
+  "ttm_period": "2025Q3~2026Q2",
+  "ni_basis": "지배주주 순이익",
+  "equity": 40880143000000.0,
+  "equity_period": "2026 반기보고서",
+  "dps_year": "2025",
+  "payout_pct": 31.96
+ },
+ "notes": [
+  "시가총액은 보통주만 (거래소 방식). 우선주는 주가를 받지 않아 시가총액에서 빠짐",
+  "PER·PBR의 주식 수는 보통주+우선주 유통주식수(자기주식 제외)",
+  "자본총계는 비지배지분을 포함",
+  "비수정 종가 기준 · 자동 계산 · 원문 대조 전"
+ ],
+ "built_at": "2026-11-15 00:20 KST"
+}

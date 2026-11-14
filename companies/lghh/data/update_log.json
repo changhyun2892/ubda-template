@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:43 KST",
+    "checked_at": "2026-11-15 00:17 KST",
     "corp_code": "00356370",
     "reports_total": 15,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:43 KST",
+    "checked_at": "2026-11-15 00:17 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 227500,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:44 KST",
+    "checked_at": "2026-11-15 00:17 KST",
     "spike_days": 29,
     "with_major_disclosure": 9,
     "news_total": 388,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:43 KST",
+    "checked_at": "2026-11-15 00:17 KST",
     "rows": 406,
     "groups": [
       "LG생활건강",
@@ -45,11 +45,25 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:43 KST",
+    "checked_at": "2026-11-15 00:17 KST",
     "new": 0,
     "total": 388,
     "first": "2026-11-02 14:18",
     "pages": 4,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
+  },
+  "shares": {
+    "status": "성공",
+    "checked_at": "2026-11-15 00:17 KST",
+    "new_share_reports": 15,
+    "new_dividend_reports": 4
+  },
+  "valuation": {
+    "status": "성공",
+    "checked_at": "2026-11-15 00:17 KST",
+    "rows": 890,
+    "as_of": "2026-11-13",
+    "per": null,
+    "pbr": 0.66
   }
 }
