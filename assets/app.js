@@ -147,7 +147,7 @@ function lineChart(el, xs, series, markers = [], opt = {}) {
   let s = `<svg viewBox="0 0 ${W} ${H}">`;
   ticks.forEach((t) => { s += `<line x1="${m.l}" x2="${W - m.r}" y1="${Y(t)}" y2="${Y(t)}" stroke="#eeeae4"/><text x="${m.l - 6}" y="${Y(t) + 3}" text-anchor="end">${f(t)}</text>`; });
   const years = [...new Set(xs.map((x) => x.slice(0, 4)))];
-  years.forEach((y) => { const i = xs.findIndex((x) => x.startsWith(y)); s += `<text x="${X(i)}" y="${H - 8}">${y}</text>`; });
+  let lastX = -99; years.forEach((y) => { const i = xs.findIndex((x) => x.startsWith(y)); if (X(i) - lastX < 34) return; lastX = X(i); s += `<text x="${X(i)}" y="${H - 8}">${y}</text>`; }); // 연도 첫 칸이 너무 가까우면(주 단위 첫 주 등) 겹치지 않게 생략
   const idx = new Map(xs.map((x, i) => [x, i]));
   markers.forEach((mk) => {
     let i = idx.get(mk.date); if (i === undefined) i = xs.findIndex((x) => x >= mk.date); if (i < 0) return;
