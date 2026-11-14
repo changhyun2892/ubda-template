@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:00 KST",
+    "checked_at": "2026-11-14 23:43 KST",
     "corp_code": "00939331",
     "reports_total": 17,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:00 KST",
+    "checked_at": "2026-11-14 23:43 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 102900,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:00 KST",
+    "checked_at": "2026-11-14 23:43 KST",
     "spike_days": 40,
     "with_major_disclosure": 13,
     "news_total": 562,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:00 KST",
+    "checked_at": "2026-11-14 23:43 KST",
     "rows": 406,
     "groups": [
       "한국콜마",
@@ -45,7 +45,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:00 KST",
+    "checked_at": "2026-11-14 23:43 KST",
     "new": 0,
     "total": 562,
     "first": "2026-10-26 11:23",
