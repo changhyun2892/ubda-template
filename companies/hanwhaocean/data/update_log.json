@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:00 KST",
+    "checked_at": "2026-11-14 23:43 KST",
     "corp_code": "00111704",
     "reports_total": 21,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:00 KST",
+    "checked_at": "2026-11-14 23:43 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 48350,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:00 KST",
+    "checked_at": "2026-11-14 23:43 KST",
     "spike_days": 40,
     "with_major_disclosure": 17,
     "news_total": 228,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:00 KST",
+    "checked_at": "2026-11-14 23:43 KST",
     "rows": 602,
     "groups": [
       "한화오션",
@@ -46,7 +46,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:00 KST",
+    "checked_at": "2026-11-14 23:43 KST",
     "new": 0,
     "total": 228,
     "first": "2026-11-03 15:29",

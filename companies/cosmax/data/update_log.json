@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:59 KST",
+    "checked_at": "2026-11-14 23:43 KST",
     "corp_code": "01009789",
     "reports_total": 19,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:59 KST",
+    "checked_at": "2026-11-14 23:43 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 280500,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:59 KST",
+    "checked_at": "2026-11-14 23:43 KST",
     "spike_days": 40,
     "with_major_disclosure": 13,
     "news_total": 506,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:59 KST",
+    "checked_at": "2026-11-14 23:43 KST",
     "rows": 406,
     "groups": [
       "코스맥스",
@@ -45,7 +45,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:59 KST",
+    "checked_at": "2026-11-14 23:43 KST",
     "new": 0,
     "total": 506,
     "first": "2026-10-14 09:16",

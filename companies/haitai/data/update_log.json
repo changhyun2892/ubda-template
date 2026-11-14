@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:59 KST",
+    "checked_at": "2026-11-14 23:43 KST",
     "corp_code": "00428321",
     "reports_total": 20,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:59 KST",
+    "checked_at": "2026-11-14 23:43 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 4780,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:00 KST",
+    "checked_at": "2026-11-14 23:43 KST",
     "spike_days": 30,
     "with_major_disclosure": 2,
     "news_total": 441,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:59 KST",
+    "checked_at": "2026-11-14 23:43 KST",
     "rows": 809,
     "groups": [
       "해태제과",
@@ -47,7 +47,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:59 KST",
+    "checked_at": "2026-11-14 23:43 KST",
     "new": 0,
     "total": 441,
     "first": "2026-09-21 08:56",
