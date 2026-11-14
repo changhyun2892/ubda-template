@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:42 KST",
+    "checked_at": "2026-11-14 23:01 KST",
     "corp_code": "00141529",
     "reports_total": 16,
     "new_reports": [],
@@ -9,7 +9,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:42 KST",
+    "checked_at": "2026-11-14 23:01 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 304500,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:42 KST",
+    "checked_at": "2026-11-14 23:01 KST",
     "spike_days": 30,
     "with_major_disclosure": 4,
     "news_total": 455,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:42 KST",
+    "checked_at": "2026-11-14 23:01 KST",
     "rows": 1015,
     "groups": [
       "오뚜기",
@@ -48,11 +48,11 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:42 KST",
-    "new": 455,
+    "checked_at": "2026-11-14 23:01 KST",
+    "new": 0,
     "total": 455,
     "first": "2026-10-28 17:52",
-    "pages": 10,
+    "pages": 1,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   }
 }

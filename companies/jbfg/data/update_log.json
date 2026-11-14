@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:41 KST",
+    "checked_at": "2026-11-14 23:00 KST",
     "corp_code": "00980122",
     "reports_total": 18,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:41 KST",
+    "checked_at": "2026-11-14 23:00 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 26950,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:41 KST",
+    "checked_at": "2026-11-14 23:00 KST",
     "spike_days": 28,
     "with_major_disclosure": 3,
     "news_total": 43,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:41 KST",
+    "checked_at": "2026-11-14 23:00 KST",
     "rows": 537,
     "groups": [
       "JB금융지주",
@@ -46,8 +46,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:41 KST",
-    "new": 43,
+    "checked_at": "2026-11-14 23:00 KST",
+    "new": 0,
     "total": 43,
     "first": "2026-08-13 19:40",
     "pages": 10,
