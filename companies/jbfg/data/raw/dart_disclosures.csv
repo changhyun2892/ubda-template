@@ -137,7 +137,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20230324000769,20230324,임원ㆍ주요주주특정증권등소유상황보고서,송종근,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230324000769
 20230328801733,20230328,소송등의판결ㆍ결정,JB금융지주,유,소송·제재,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230328801733
 20230330001563,20230330,독립이사의선임ㆍ해임또는중도퇴임에관한신고,JB금융지주,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230330001563
-20230330001609,20230330,[기재정정]사업보고서 (2022.12),JB금융지주,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230330001609
+20230330001609,20230330,[기재정정]사업보고서 (2022.12),JB금융지주,연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230330001609
 20230330802263,20230330,정기주주총회결과,JB금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230330802263
 20230404000777,20230404,주식등의대량보유상황보고서(약식),국민연금공단,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230404000777
 20230411002295,20230411,임원ㆍ주요주주특정증권등소유상황보고서,이승국,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230411002295
@@ -209,7 +209,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20240206800273,20240206,연결재무제표기준영업실적등에대한전망(공정공시),JB금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240206800273
 20240206800276,20240206,현금ㆍ현물배당을위한주주명부폐쇄(기준일)결정,JB금융지주,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240206800276
 20240206800281,20240206,현금ㆍ현물배당결정,JB금융지주,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240206800281
-20240206800295,20240206,주식소각결정,JB금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240206800295
+20240206800295,20240206,주식소각결정,JB금융지주,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240206800295
 20240206800416,20240206,기업설명회(IR)개최(안내공시),JB금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240206800416
 20240216800441,20240216,기업설명회(IR)개최(안내공시),JB금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240216800441
 20240227801049,20240227,주주총회소집결의,JB금융지주,유정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240227801049
@@ -244,7 +244,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20240326801633,20240326,소송등의판결ㆍ결정,JB금융지주,유,소송·제재,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240326801633
 20240327000821,20240327,임원ㆍ주요주주특정증권등소유상황보고서,박종춘,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240327000821
 20240327000906,20240327,임원ㆍ주요주주특정증권등소유상황보고서,이광호,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240327000906
-20240328001876,20240328,[기재정정]사업보고서 (2023.12),JB금융지주,정연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240328001876
+20240328001876,20240328,[기재정정]사업보고서 (2023.12),JB금융지주,정연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240328001876
 20240328803691,20240328,정기주주총회결과,JB금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240328803691
 20240329000073,20240329,[기재정정]일괄신고서,JB금융지주,정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240329000073
 20240329002251,20240329,독립이사의선임ㆍ해임또는중도퇴임에관한신고,JB금융지주,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240329002251
@@ -271,7 +271,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20240429000827,20240429,증권발행실적보고서,JB금융지주,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240429000827
 20240429001109,20240429,자기주식처분결과보고서,JB금융지주,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240429001109
 20240430800745,20240430,[기재정정]타법인주식및출자증권취득결정(자율공시),JB금융지주,유,지분·출자,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240430800745
-20240507000432,20240507,[기재정정]사업보고서 (2023.12),JB금융지주,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240507000432
+20240507000432,20240507,[기재정정]사업보고서 (2023.12),JB금융지주,연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240507000432
 20240507000450,20240507,[기재정정]일괄신고서,JB금융지주,정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240507000450
 20240516002307,20240516,분기보고서 (2024.03),JB금융지주,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240516002307
 20240516002321,20240516,[기재정정]일괄신고서,JB금융지주,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240516002321
@@ -291,7 +291,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20240725800235,20240725,연결재무제표기준영업(잠정)실적(공정공시)(자회사의 주요경영사항),JB금융지주,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240725800235
 20240725800243,20240725,연결재무제표기준영업(잠정)실적(공정공시)(자회사의 주요경영사항),JB금융지주,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240725800243
 20240725800276,20240725,현금ㆍ현물배당결정,JB금융지주,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240725800276
-20240725800299,20240725,주식소각결정,JB금융지주,유정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240725800299
+20240725800299,20240725,주식소각결정,JB금융지주,유정,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240725800299
 20240725800318,20240725,단기차입금증가결정(자회사의 주요경영사항),JB금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240725800318
 20240725800347,20240725,금전대여결정(자회사의 주요경영사항),JB금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240725800347
 20240725800375,20240725,금전대여결정(자회사의 주요경영사항),JB금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240725800375
@@ -371,7 +371,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20250120000275,20250120,임원ㆍ주요주주특정증권등소유상황보고서,김동성,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250120000275
 20250124000314,20250124,주요사항보고서(자기주식취득신탁계약해지결정),JB금융지주,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250124000314
 20250124000321,20250124,신탁계약해지결과보고서,JB금융지주,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250124000321
-20250124800232,20250124,[기재정정]주식소각결정,JB금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250124800232
+20250124800232,20250124,[기재정정]주식소각결정,JB금융지주,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250124800232
 20250131800605,20250131,결산실적공시예고(안내공시),JB금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250131800605
 20250131800615,20250131,기업설명회(IR)개최(안내공시),JB금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250131800615
 20250206800585,20250206,연결재무제표기준영업(잠정)실적(공정공시),JB금융지주,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250206800585
@@ -412,7 +412,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20250327000336,20250327,독립이사의선임ㆍ해임또는중도퇴임에관한신고,JB금융지주,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250327000336
 20250327000365,20250327,주요사항보고서(자기주식취득신탁계약체결결정),JB금융지주,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250327000365
 20250327800301,20250327,정기주주총회결과,JB금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250327800301
-20250327800399,20250327,주식소각결정,JB금융지주,유정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250327800399
+20250327800399,20250327,주식소각결정,JB금융지주,유정,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250327800399
 20250404003428,20250404,자기주식처분결과보고서,JB금융지주,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250404003428
 20250404003498,20250404,임원ㆍ주요주주특정증권등소유상황보고서,김기홍,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250404003498
 20250408002633,20250408,주요사항보고서(자기주식처분결정),JB금융지주,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250408002633
@@ -461,7 +461,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20250710000427,20250710,증권발행실적보고서,JB금융지주,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250710000427
 20250715000268,20250715,주요사항보고서(자기주식취득신탁계약해지결정),JB금융지주,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250715000268
 20250715000293,20250715,신탁계약해지결과보고서,JB금융지주,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250715000293
-20250715800432,20250715,[기재정정]주식소각결정,JB금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250715800432
+20250715800432,20250715,[기재정정]주식소각결정,JB금융지주,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250715800432
 20250716000296,20250716,일괄신고추가서류,JB금융지주,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250716000296
 20250716000302,20250716,투자설명서(일괄신고),JB금융지주,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250716000302
 20250717000267,20250717,증권발행실적보고서,JB금융지주,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250717000267
@@ -471,7 +471,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20250724800296,20250724,연결재무제표기준영업(잠정)실적(공정공시)(자회사의 주요경영사항),JB금융지주,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250724800296
 20250724800304,20250724,연결재무제표기준영업(잠정)실적(공정공시)(자회사의 주요경영사항),JB금융지주,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250724800304
 20250724800310,20250724,연결재무제표기준영업(잠정)실적(공정공시)(자회사의 주요경영사항),JB금융지주,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250724800310
-20250724800368,20250724,주식소각결정,JB금융지주,유정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250724800368
+20250724800368,20250724,주식소각결정,JB금융지주,유정,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250724800368
 20250724800404,20250724,현금ㆍ현물배당을위한주주명부폐쇄(기준일)결정,JB금융지주,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250724800404
 20250724800408,20250724,현금ㆍ현물배당결정,JB금융지주,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250724800408
 20250724800418,20250724,단기차입금증가결정(자회사의 주요경영사항),JB금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250724800418
@@ -509,14 +509,14 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20251027000286,20251027,신탁계약에의한취득상황보고서,JB금융지주,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251027000286
 20251027000294,20251027,주요사항보고서(자기주식취득신탁계약해지결정),JB금융지주,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251027000294
 20251027000322,20251027,신탁계약해지결과보고서,JB금융지주,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251027000322
-20251027800585,20251027,[기재정정]주식소각결정,JB금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251027800585
+20251027800585,20251027,[기재정정]주식소각결정,JB금융지주,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251027800585
 20251027800597,20251027,[기재정정]신규시설투자등(자회사의 주요경영사항),JB금융지주,유,시설투자,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251027800597
 20251028000287,20251028,주요사항보고서(자기주식취득신탁계약체결결정),JB금융지주,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251028000287
 20251028800409,20251028,연결재무제표기준영업(잠정)실적(공정공시),JB금융지주,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251028800409
 20251028800419,20251028,연결재무제표기준영업(잠정)실적(공정공시)(자회사의 주요경영사항),JB금융지주,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251028800419
 20251028800425,20251028,연결재무제표기준영업(잠정)실적(공정공시)(자회사의 주요경영사항),JB금융지주,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251028800425
 20251028800438,20251028,연결재무제표기준영업(잠정)실적(공정공시)(자회사의 주요경영사항),JB금융지주,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251028800438
-20251028800509,20251028,주식소각결정,JB금융지주,유정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251028800509
+20251028800509,20251028,주식소각결정,JB금융지주,유정,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251028800509
 20251028800512,20251028,현금ㆍ현물배당을위한주주명부폐쇄(기준일)결정,JB금융지주,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251028800512
 20251028800526,20251028,현금ㆍ현물배당결정,JB금융지주,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251028800526
 20251028800556,20251028,단기차입금증가결정(자회사의 주요경영사항),JB금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251028800556
@@ -551,7 +551,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20260203000335,20260203,신탁계약에의한취득상황보고서,JB금융지주,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260203000335
 20260203000406,20260203,주요사항보고서(자기주식취득신탁계약해지결정),JB금융지주,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260203000406
 20260203000415,20260203,신탁계약해지결과보고서,JB금융지주,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260203000415
-20260203801072,20260203,[기재정정]주식소각결정,JB금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260203801072
+20260203801072,20260203,[기재정정]주식소각결정,JB금융지주,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260203801072
 20260205000460,20260205,주요사항보고서(자기주식취득신탁계약체결결정),JB금융지주,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260205000460
 20260205800599,20260205,연결재무제표기준영업(잠정)실적(공정공시),JB금융지주,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260205800599
 20260205800627,20260205,연결재무제표기준영업(잠정)실적(공정공시)(자회사의 주요경영사항),JB금융지주,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260205800627
@@ -562,7 +562,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20260205800785,20260205,현금ㆍ현물배당결정,JB금융지주,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260205800785
 20260205800793,20260205,현금ㆍ현물배당결정(자회사의 주요경영사항),JB금융지주,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260205800793
 20260205800801,20260205,현금ㆍ현물배당결정(자회사의 주요경영사항),JB금융지주,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260205800801
-20260205800888,20260205,주식소각결정,JB금융지주,유정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260205800888
+20260205800888,20260205,주식소각결정,JB금융지주,유정,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260205800888
 20260205800909,20260205,기업가치제고계획(자율공시) (2026년),JB금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260205800909
 20260205800968,20260205,기업설명회(IR)개최(안내공시),JB금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260205800968
 20260225801470,20260225,주주총회소집결의,JB금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260225801470
@@ -623,7 +623,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20260622800680,20260622,최대주주등소유주식변동신고서,JB금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260622800680
 20260630000968,20260630,주요사항보고서(자기주식취득신탁계약해지결정),JB금융지주,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260630000968
 20260630001059,20260630,신탁계약해지결과보고서,JB금융지주,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260630001059
-20260630801449,20260630,[기재정정]주식소각결정,JB금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260630801449
+20260630801449,20260630,[기재정정]주식소각결정,JB금융지주,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260630801449
 20260630801493,20260630,지속가능경영보고서등관련사항(자율공시),JB금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260630801493
 20260708000530,20260708,일괄신고추가서류,JB금융지주,정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260708000530
 20260708000545,20260708,투자설명서(일괄신고),JB금융지주,정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260708000545
@@ -638,7 +638,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20260723800599,20260723,연결재무제표기준영업(잠정)실적(공정공시)(자회사의 주요경영사항),JB금융지주,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260723800599
 20260723800601,20260723,연결재무제표기준영업(잠정)실적(공정공시)(자회사의 주요경영사항),JB금융지주,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260723800601
 20260723800660,20260723,현금ㆍ현물배당을위한주주명부폐쇄(기준일)결정,JB금융지주,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260723800660
-20260723800818,20260723,주식소각결정,JB금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260723800818
+20260723800818,20260723,주식소각결정,JB금융지주,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260723800818
 20260723800823,20260723,현금ㆍ현물배당결정,JB금융지주,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260723800823
 20260723800879,20260723,금전대여결정(자회사의 주요경영사항),JB금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260723800879
 20260723800897,20260723,단기차입금증가결정(자회사의 주요경영사항),JB금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260723800897

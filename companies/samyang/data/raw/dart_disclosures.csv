@@ -174,7 +174,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20250918000396,20250918,합병등종료보고서(자산양수도),삼양식품,,합병·분할,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250918000396
 20250925800632,20250925,[기재정정]타법인주식및출자증권취득결정,삼양식품,유,지분·출자,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250925800632
 20250926800513,20250926,[기재정정]타법인주식및출자증권취득결정(종속회사의주요경영사항),삼양식품,유,지분·출자,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250926800513
-20251112000498,20251112,[기재정정]사업보고서 (2022.12),삼양식품,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251112000498
+20251112000498,20251112,[기재정정]사업보고서 (2022.12),삼양식품,연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251112000498
 20251114002147,20251114,분기보고서 (2025.09),삼양식품,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114002147
 20251114003007,20251114,주식등의대량보유상황보고서(일반),삼양라운드스퀘어,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114003007
 20251119000286,20251119,주요사항보고서(자기주식처분결정),삼양식품,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251119000286
@@ -228,7 +228,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20261102000307,20261102,임원ㆍ주요주주특정증권등소유상황보고서,국민연금공단,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261102000307
 20261102800763,20261102,기업설명회(IR)개최(안내공시),삼양식품,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261102800763
 20261102800768,20261102,기업설명회(IR)개최(안내공시),삼양식품,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261102800768
-20261106800567,20261106,주식소각결정,삼양식품,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800567
+20261106800567,20261106,주식소각결정,삼양식품,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800567
 20261106800605,20261106,연결재무제표기준영업(잠정)실적(공정공시),삼양식품,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800605
 20261106800648,20261106,기업설명회(IR)개최(안내공시),삼양식품,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800648
 20261111800496,20261111,타법인주식및출자증권취득결정,삼양식품,유,지분·출자,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800496

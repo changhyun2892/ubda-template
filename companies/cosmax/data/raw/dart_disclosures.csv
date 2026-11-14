@@ -44,7 +44,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20220707000170,20220707,임원ㆍ주요주주특정증권등소유상황보고서,국민연금공단,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220707000170
 20220722800110,20220722,투자판단관련주요경영사항(특허권 취득),코스맥스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220722800110
 20220728800112,20220728,투자판단관련주요경영사항(특허권 취득),코스맥스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220728800112
-20220816001048,20220816,[기재정정]사업보고서 (2021.12),코스맥스,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220816001048
+20220816001048,20220816,[기재정정]사업보고서 (2021.12),코스맥스,연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220816001048
 20220816001063,20220816,반기보고서 (2022.06),코스맥스,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220816001063
 20220822800477,20220822,[기재정정]신규시설투자등,코스맥스,유정,시설투자,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220822800477
 20220922000046,20220922,주식등의대량보유상황보고서(일반),코스맥스비티아이,정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220922000046
@@ -190,7 +190,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20241008000503,20241008,임원ㆍ주요주주특정증권등소유상황보고서,국민연금공단,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241008000503
 20241111800347,20241111,연결재무제표기준영업(잠정)실적(공정공시),코스맥스,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241111800347
 20241112800396,20241112,투자판단관련주요경영사항,코스맥스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241112800396
-20241114001836,20241114,[첨부추가]분기보고서 (2024.09),코스맥스,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241114001836
+20241114001836,20241114,[첨부추가]분기보고서 (2024.09),코스맥스,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241114001836
 20241118800402,20241118,기업설명회(IR)개최(안내공시),코스맥스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241118800402
 20241127800314,20241127,기업설명회(IR)개최(안내공시),코스맥스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241127800314
 20241128800540,20241128,기업설명회(IR)개최(안내공시),코스맥스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241128800540
@@ -224,8 +224,8 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20250401800614,20250401,투자판단관련주요경영사항,코스맥스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250401800614
 20250402003583,20250402,임원ㆍ주요주주특정증권등소유상황보고서,국민연금공단,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250402003583
 20250404800807,20250404,기업설명회(IR)개최(안내공시),코스맥스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250404800807
-20250416000355,20250416,[기재정정]사업보고서 (2024.12),코스맥스,정연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250416000355
-20250416000526,20250416,[기재정정]사업보고서 (2024.12),코스맥스,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250416000526
+20250416000355,20250416,[기재정정]사업보고서 (2024.12),코스맥스,정연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250416000355
+20250416000526,20250416,[기재정정]사업보고서 (2024.12),코스맥스,연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250416000526
 20250421800396,20250421,투자판단관련주요경영사항,코스맥스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250421800396
 20250512000491,20250512,주식등의대량보유상황보고서(일반),코스맥스비티아이,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250512000491
 20250513800554,20250513,연결재무제표기준영업(잠정)실적(공정공시),코스맥스,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250513800554
@@ -320,7 +320,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20260805000149,20260805,주식등의대량보유상황보고서(약식),GICPrivateLimited,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260805000149
 20260805000158,20260805,주식등의대량보유상황보고서(약식),THEGOVERNMENTOFSINGAPORE,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260805000158
 20260811800420,20260811,연결재무제표기준영업(잠정)실적(공정공시),코스맥스,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811800420
-20260813001436,20260813,[첨부추가]반기보고서 (2026.06),코스맥스,정,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001436
+20260813001436,20260813,[첨부추가]반기보고서 (2026.06),코스맥스,정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001436
 20260818800380,20260818,기업설명회(IR)개최(안내공시),코스맥스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818800380
 20260820000434,20260820,합병등종료보고서(합병),코스맥스,,합병·분할,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000434
 20260825800243,20260825,기업설명회(IR)개최(안내공시),코스맥스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260825800243
@@ -337,7 +337,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20260930800795,20260930,기업설명회(IR)개최(안내공시),코스맥스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260930800795
 20261006000233,20261006,임원ㆍ주요주주특정증권등소유상황보고서,국민연금공단,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261006000233
 20261014800435,20261014,기업설명회(IR)개최(안내공시),코스맥스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261014800435
-20261029000602,20261029,[기재정정]반기보고서 (2026.06),코스맥스,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000602
+20261029000602,20261029,[기재정정]반기보고서 (2026.06),코스맥스,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000602
 20261029800781,20261029,단기차입금증가결정,코스맥스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029800781
 20261102800544,20261102,[기재정정]신규시설투자등,코스맥스,유,시설투자,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261102800544
 20261105000080,20261105,주식등의대량보유상황보고서(약식),NorgesBank,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000080

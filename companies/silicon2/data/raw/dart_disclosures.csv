@@ -23,7 +23,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20220615900256,20220615,주주총회소집결의,실리콘투,코정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220615900256
 20220615900325,20220615,주주명부폐쇄기간또는기준일설정,실리콘투,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220615900325
 20220621900217,20220621,수시공시의무관련사항(공정공시)(무상증자 검토 계획),실리콘투,코,증자·사채,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220621900217
-20220624900189,20220624,주식소각결정,실리콘투,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220624900189
+20220624900189,20220624,주식소각결정,실리콘투,코,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220624900189
 20220630000343,20220630,주요사항보고서(무상증자결정),실리콘투,,증자·사채,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220630000343
 20220630900317,20220630,주권매매거래정지(무상증자),코스닥시장본부,코,증자·사채,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220630900317
 20220630900414,20220630,주주명부폐쇄기간또는기준일설정,실리콘투,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220630900414
@@ -82,7 +82,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20240328901376,20240328,정기주주총회결과,실리콘투,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240328901376
 20240405900203,20240405,기업설명회(IR)개최,실리콘투,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240405900203
 20240509000148,20240509,분기보고서 (2024.03),실리콘투,정,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240509000148
-20240509000388,20240509,[기재정정]분기보고서 (2024.03),실리콘투,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240509000388
+20240509000388,20240509,[기재정정]분기보고서 (2024.03),실리콘투,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240509000388
 20240514900611,20240514,기업설명회(IR)개최,실리콘투,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240514900611
 20240516000257,20240516,임원ㆍ주요주주특정증권등소유상황보고서,최진호,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240516000257
 20240516000260,20240516,임원ㆍ주요주주특정증권등소유상황보고서,손인호,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240516000260
@@ -127,7 +127,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20250401000992,20250401,임원ㆍ주요주주특정증권등소유상황보고서,김상희,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250401000992
 20250401001014,20250401,임원ㆍ주요주주특정증권등소유상황보고서,강준규,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250401001014
 20250401003009,20250401,주식등의대량보유상황보고서(약식),국민연금공단,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250401003009
-20250408002625,20250408,[기재정정]사업보고서 (2024.12),실리콘투,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250408002625
+20250408002625,20250408,[기재정정]사업보고서 (2024.12),실리콘투,연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250408002625
 20250430901472,20250430,소속부변경,코스닥시장본부,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250430901472
 20250512000093,20250512,분기보고서 (2025.03),실리콘투,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250512000093
 20250520900285,20250520,기업설명회(IR)개최,실리콘투,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250520900285

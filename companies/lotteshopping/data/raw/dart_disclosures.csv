@@ -34,7 +34,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20220516002363,20220516,분기보고서 (2022.03),롯데쇼핑,정,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220516002363
 20220530000651,20220530,대규모기업집단현황공시[연1회공시및1/4분기용(개별회사)],롯데쇼핑,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220530000651
 20220531800684,20220531,기업지배구조보고서공시,롯데쇼핑,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220531800684
-20220607000293,20220607,[기재정정]분기보고서 (2022.03),롯데쇼핑,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220607000293
+20220607000293,20220607,[기재정정]분기보고서 (2022.03),롯데쇼핑,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220607000293
 20220628000373,20220628,주식등의대량보유상황보고서(일반),신동빈,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220628000373
 20220628000381,20220628,임원ㆍ주요주주특정증권등소유상황보고서,김종환,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220628000381
 20220706800069,20220706,지속가능경영보고서등관련사항(자율공시),롯데쇼핑,유정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220706800069
@@ -135,7 +135,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20231114002581,20231114,분기보고서 (2023.09),롯데쇼핑,정,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231114002581
 20231116000361,20231116,특수관계인에대한출자,롯데쇼핑,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231116000361
 20231128000782,20231128,대규모기업집단현황공시[분기별공시(개별회사용)],롯데쇼핑,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231128000782
-20231201000373,20231201,[기재정정]분기보고서 (2023.09),롯데쇼핑,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231201000373
+20231201000373,20231201,[기재정정]분기보고서 (2023.09),롯데쇼핑,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231201000373
 20231214000497,20231214,주요사항보고서(회사합병결정),롯데쇼핑,정,합병·분할,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231214000497
 20231218000298,20231218,임원ㆍ주요주주특정증권등소유상황보고서,김범창,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231218000298
 20231218000307,20231218,임원ㆍ주요주주특정증권등소유상황보고서,이영노,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231218000307

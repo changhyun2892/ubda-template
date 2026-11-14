@@ -279,7 +279,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20240321801360,20240321,[기재정정]단일판매ㆍ공급계약체결,한화오션,유,공급계약,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240321801360
 20240322800822,20240322,[기재정정]단일판매ㆍ공급계약체결,한화오션,유정,공급계약,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240322800822
 20240325800519,20240325,단일판매ㆍ공급계약체결,한화오션,유,공급계약,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240325800519
-20240328000773,20240328,[기재정정]사업보고서 (2023.12),한화오션,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240328000773
+20240328000773,20240328,[기재정정]사업보고서 (2023.12),한화오션,연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240328000773
 20240328001351,20240328,[기재정정]특수관계인과의내부거래,한화오션,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240328001351
 20240328001369,20240328,[기재정정]특수관계인과의내부거래,한화오션,공정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240328001369
 20240328001380,20240328,약관에의한금융거래시계열금융회사의거래상대방의공시,한화오션,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240328001380
@@ -306,7 +306,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20240502800396,20240502,풍문또는보도에대한해명(미확정),한화오션,유,소송·제재,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240502800396
 20240509000043,20240509,주식등의대량보유상황보고서(약식),국민연금공단,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240509000043
 20240513000844,20240513,분기보고서 (2024.03),한화오션,정,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240513000844
-20240514001522,20240514,[기재정정]분기보고서 (2024.03),한화오션,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240514001522
+20240514001522,20240514,[기재정정]분기보고서 (2024.03),한화오션,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240514001522
 20240524000306,20240524,동일인등출자계열회사와의상품ㆍ용역거래,한화오션,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240524000306
 20240531001435,20240531,대규모기업집단현황공시[연1회공시및1/4분기용(개별회사)],한화오션,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240531001435
 20240531800025,20240531,기업지배구조보고서공시,한화오션,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240531800025
@@ -389,7 +389,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20241031800662,20241031,[기재정정]단일판매ㆍ공급계약체결,한화오션,유,공급계약,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241031800662
 20241111800103,20241111,단일판매ㆍ공급계약체결,한화오션,유,공급계약,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241111800103
 20241113000191,20241113,분기보고서 (2024.09),한화오션,정,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241113000191
-20241114002675,20241114,[기재정정]분기보고서 (2024.09),한화오션,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241114002675
+20241114002675,20241114,[기재정정]분기보고서 (2024.09),한화오션,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241114002675
 20241115000317,20241115,증권신고서(채무증권),한화오션,정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241115000317
 20241115800512,20241115,[기재정정]단일판매ㆍ공급계약체결,한화오션,유,공급계약,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241115800512
 20241118800073,20241118,단일판매ㆍ공급계약체결,한화오션,유,공급계약,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241118800073
@@ -478,7 +478,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20250313001219,20250313,임원ㆍ주요주주특정증권등소유상황보고서,한화에어로스페이스,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250313001219
 20250313001242,20250313,임원ㆍ주요주주특정증권등소유상황보고서,HanwhaImpactPartnersINC.,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250313001242
 20250313802028,20250313,최대주주등소유주식변동신고서,한화오션,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250313802028
-20250314001630,20250314,[기재정정]사업보고서 (2024.12),한화오션,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250314001630
+20250314001630,20250314,[기재정정]사업보고서 (2024.12),한화오션,연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250314001630
 20250317800068,20250317,단일판매ㆍ공급계약체결,한화오션,유정,공급계약,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250317800068
 20250318800716,20250318,[기재정정]단일판매ㆍ공급계약체결,한화오션,유,공급계약,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318800716
 20250320001495,20250320,독립이사의선임ㆍ해임또는중도퇴임에관한신고,한화오션,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250320001495
@@ -662,7 +662,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20260311801958,20260311,감사보고서제출,한화오션,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311801958
 20260312000920,20260312,[기재정정]의결권대리행사권유참고서류,컨두잇,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312000920
 20260316801790,20260316,중대재해발생(종속회사의주요경영사항),한화오션,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316801790
-20260317000644,20260317,[기재정정]사업보고서 (2025.12),한화오션,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000644
+20260317000644,20260317,[기재정정]사업보고서 (2025.12),한화오션,연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000644
 20260319001125,20260319,독립이사의선임ㆍ해임또는중도퇴임에관한신고,한화오션,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319001125
 20260319001142,20260319,동일인등출자계열회사와의상품ㆍ용역거래,한화오션,공정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319001142
 20260319001146,20260319,약관에의한금융거래시계열금융회사의거래상대방의공시,한화오션,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319001146

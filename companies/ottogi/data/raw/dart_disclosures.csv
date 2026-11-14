@@ -63,7 +63,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20231011800158,20231011,최대주주등소유주식변동신고서,오뚜기,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231011800158
 20231018800372,20231018,기타안내사항(안내공시),오뚜기,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231018800372
 20231114000973,20231114,분기보고서 (2023.09),오뚜기,정,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231114000973
-20231120000665,20231120,[기재정정]분기보고서 (2023.09),오뚜기,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231120000665
+20231120000665,20231120,[기재정정]분기보고서 (2023.09),오뚜기,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231120000665
 20231129800220,20231129,최대주주등소유주식변동신고서,오뚜기,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231129800220
 20231208800240,20231208,신규시설투자등,오뚜기,유정,시설투자,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231208800240
 20240117800140,20240117,최대주주등소유주식변동신고서,오뚜기,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240117800140
@@ -133,4 +133,4 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20260804800480,20260804,[첨부정정]지속가능경영보고서등관련사항(자율공시),오뚜기,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260804800480
 20260814001966,20260814,반기보고서 (2026.06),오뚜기,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001966
 20260928800241,20260928,중대재해발생(종속회사의주요경영사항),오뚜기,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928800241
-20261113800882,20261113,주식소각결정,오뚜기,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113800882
+20261113800882,20261113,주식소각결정,오뚜기,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113800882
