@@ -182,7 +182,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20230726800506,20230726,연결재무제표기준영업(잠정)실적(공정공시)(자회사의 주요경영사항)(BNK투자증권),BNK금융지주,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230726800506
 20230726800519,20230726,연결재무제표기준영업(잠정)실적(공정공시)(자회사의 주요경영사항)(부산은행),BNK금융지주,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230726800519
 20230726800599,20230726,연결재무제표기준영업(잠정)실적(공정공시),BNK금융지주,유정,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230726800599
-20230726800607,20230726,주식소각결정,BNK금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230726800607
+20230726800607,20230726,주식소각결정,BNK금융지주,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230726800607
 20230726800609,20230726,현금ㆍ현물배당을위한주주명부폐쇄(기준일)결정,BNK금융지주,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230726800609
 20230726800629,20230726,현금ㆍ현물배당결정,BNK금융지주,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230726800629
 20230728800504,20230728,기업설명회(IR)개최(안내공시),BNK금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230728800504
@@ -215,7 +215,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20231031800345,20231031,연결재무제표기준영업(잠정)실적(공정공시)(자회사의 주요경영사항),BNK금융지주,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231031800345
 20231031800351,20231031,연결재무제표기준영업(잠정)실적(공정공시),BNK금융지주,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231031800351
 20231101000117,20231101,주식등의대량보유상황보고서(약식),국민연금공단,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231101000117
-20231114001681,20231114,[기재정정]반기보고서 (2023.06),BNK금융지주,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231114001681
+20231114001681,20231114,[기재정정]반기보고서 (2023.06),BNK금융지주,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231114001681
 20231114002098,20231114,분기보고서 (2023.09),BNK금융지주,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231114002098
 20231114002783,20231114,[기재정정]일괄신고서,BNK금융지주,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231114002783
 20231123000372,20231123,일괄신고추가서류,BNK금융지주,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231123000372
@@ -244,7 +244,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20240205801169,20240205,연결재무제표기준영업(잠정)실적(공정공시),BNK금융지주,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240205801169
 20240205801175,20240205,현금ㆍ현물배당을위한주주명부폐쇄(기준일)결정,BNK금융지주,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240205801175
 20240205801176,20240205,현금ㆍ현물배당결정,BNK금융지주,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240205801176
-20240205801180,20240205,주식소각결정,BNK금융지주,유정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240205801180
+20240205801180,20240205,주식소각결정,BNK금융지주,유정,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240205801180
 20240205000427,20240206,주요사항보고서(자기주식취득신탁계약체결결정),BNK금융지주,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240205000427
 20240207000662,20240207,[기재정정]주요사항보고서(상각형조건부자본증권발행결정),BNK금융지주,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240207000662
 20240207000778,20240207,[기재정정]증권신고서(채무증권),BNK금융지주,정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240207000778
@@ -315,10 +315,10 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20240731800204,20240731,연결재무제표기준영업(잠정)실적(공정공시)(자회사의 주요경영사항),BNK금융지주,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240731800204
 20240731800207,20240731,연결재무제표기준영업(잠정)실적(공정공시),BNK금융지주,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240731800207
 20240731800212,20240731,금전대여결정(자회사의 주요경영사항),BNK금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240731800212
-20240731800241,20240731,[기재정정]주식소각결정,BNK금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240731800241
+20240731800241,20240731,[기재정정]주식소각결정,BNK금융지주,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240731800241
 20240731800244,20240731,현금ㆍ현물배당을위한주주명부폐쇄(기준일)결정,BNK금융지주,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240731800244
 20240731800252,20240731,현금ㆍ현물배당결정,BNK금융지주,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240731800252
-20240731800273,20240731,주식소각결정,BNK금융지주,유정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240731800273
+20240731800273,20240731,주식소각결정,BNK금융지주,유정,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240731800273
 20240731800355,20240731,기업가치제고계획예고(안내공시),BNK금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240731800355
 20240813800420,20240813,횡령ㆍ배임사실확인(자회사의 주요경영사항),BNK금융지주,유,소송·제재,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240813800420
 20240814004056,20240814,반기보고서 (2024.06),BNK금융지주,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240814004056
@@ -368,8 +368,8 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20250206800534,20250206,현금ㆍ현물배당결정(자회사의 주요경영사항),BNK금융지주,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250206800534
 20250206800550,20250206,현금ㆍ현물배당을위한주주명부폐쇄(기준일)결정,BNK금융지주,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250206800550
 20250206800556,20250206,현금ㆍ현물배당결정,BNK금융지주,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250206800556
-20250206800678,20250206,[기재정정]주식소각결정,BNK금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250206800678
-20250206800690,20250206,주식소각결정,BNK금융지주,유정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250206800690
+20250206800678,20250206,[기재정정]주식소각결정,BNK금융지주,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250206800678
+20250206800690,20250206,주식소각결정,BNK금융지주,유정,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250206800690
 20250212801123,20250212,기타안내사항(안내공시),BNK금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250212801123
 20250214801192,20250214,기업설명회(IR)개최(안내공시),BNK금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250214801192
 20250218800490,20250218,기업설명회(IR)개최(안내공시),BNK금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250218800490
@@ -440,7 +440,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20250724800669,20250724,기업설명회(IR)개최(안내공시),BNK금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250724800669
 20250725000256,20250725,주요사항보고서(자기주식취득신탁계약해지결정),BNK금융지주,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250725000256
 20250725000575,20250725,신탁계약해지결과보고서,BNK금융지주,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250725000575
-20250725800437,20250725,[기재정정]주식소각결정,BNK금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250725800437
+20250725800437,20250725,[기재정정]주식소각결정,BNK금융지주,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250725800437
 20250728800362,20250728,기업설명회(IR)개최(안내공시),BNK금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250728800362
 20250730800641,20250730,금전대여결정(자회사의 주요경영사항),BNK금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250730800641
 20250731000352,20250731,주요사항보고서(자기주식취득신탁계약체결결정),BNK금융지주,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250731000352
@@ -451,7 +451,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20250731800372,20250731,연결재무제표기준영업(잠정)실적(공정공시),BNK금융지주,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250731800372
 20250731800385,20250731,현금ㆍ현물배당을위한주주명부폐쇄(기준일)결정,BNK금융지주,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250731800385
 20250731800387,20250731,현금ㆍ현물배당결정,BNK금융지주,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250731800387
-20250731800390,20250731,주식소각결정,BNK금융지주,유정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250731800390
+20250731800390,20250731,주식소각결정,BNK금융지주,유정,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250731800390
 20250805000296,20250805,주식등의대량보유상황보고서(약식),"TheCapitalGroupCompanies,Inc.",,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250805000296
 20250814003734,20250814,반기보고서 (2025.06),BNK금융지주,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003734
 20250814003897,20250814,[기재정정]일괄신고서,BNK금융지주,정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003897
@@ -485,7 +485,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20251127800939,20251127,현금ㆍ현물배당결정(자회사의 주요경영사항),BNK금융지주,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251127800939
 20251205000031,20251205,주요사항보고서(자기주식취득신탁계약해지결정),BNK금융지주,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251205000031
 20251205000243,20251205,신탁계약해지결과보고서,BNK금융지주,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251205000243
-20251205800231,20251205,[기재정정]주식소각결정,BNK금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251205800231
+20251205800231,20251205,[기재정정]주식소각결정,BNK금융지주,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251205800231
 20251215801395,20251215,주주명부폐쇄기간또는기준일설정,BNK금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251215801395
 20251215801691,20251215,기타경영사항(자율공시),BNK금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251215801691
 20251217800499,20251217,현금ㆍ현물배당을위한주주명부폐쇄(기준일)결정(자회사의 주요경영사항),BNK금융지주,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251217800499
@@ -539,7 +539,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20260430800401,20260430,현금ㆍ현물배당을위한주주명부폐쇄(기준일)결정,BNK금융지주,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260430800401
 20260430800567,20260430,연결재무제표기준영업(잠정)실적(공정공시),BNK금융지주,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260430800567
 20260430800627,20260430,현금ㆍ현물배당결정,BNK금융지주,유정,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260430800627
-20260430800736,20260430,주식소각결정,BNK금융지주,유정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260430800736
+20260430800736,20260430,주식소각결정,BNK금융지주,유정,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260430800736
 20260504800774,20260504,기업설명회(IR)개최(안내공시),BNK금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260504800774
 20260507000611,20260507,주식등의대량보유상황보고서(약식),CapitalResearchandManagementCompany,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260507000611
 20260508801238,20260508,기업설명회(IR)개최(안내공시),BNK금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260508801238
@@ -575,7 +575,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20260724000049,20260724,신탁계약에의한취득상황보고서,BNK금융지주,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260724000049
 20260724000247,20260724,주요사항보고서(자기주식취득신탁계약해지결정),BNK금융지주,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260724000247
 20260724000272,20260724,신탁계약해지결과보고서,BNK금융지주,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260724000272
-20260724800460,20260724,[기재정정]주식소각결정,BNK금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260724800460
+20260724800460,20260724,[기재정정]주식소각결정,BNK금융지주,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260724800460
 20260727800178,20260727,금전대여결정(자회사의 주요경영사항),BNK금융지주,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260727800178
 20260728800292,20260728,연결재무제표기준영업(잠정)실적(공정공시)(자회사의 주요경영사항),BNK금융지주,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260728800292
 20260728800399,20260728,연결재무제표기준영업(잠정)실적(공정공시)(자회사의 주요경영사항),BNK금융지주,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260728800399

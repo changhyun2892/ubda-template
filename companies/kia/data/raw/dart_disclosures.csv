@@ -312,7 +312,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20230425000482,20230425,특수관계인에대한출자,기아,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230425000482
 20230425000486,20230425,약관에의한금융거래시계열금융회사의거래상대방의공시,기아,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230425000486
 20230425800217,20230425,장래사업ㆍ경영계획(공정공시),기아,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230425800217
-20230425800364,20230425,주식소각결정,기아,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230425800364
+20230425800364,20230425,주식소각결정,기아,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230425800364
 20230425800435,20230425,타법인주식및출자증권취득결정(자율공시),기아,유정,지분·출자,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230425800435
 20230426800196,20230426,연결재무제표기준영업(잠정)실적(공정공시),기아,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230426800196
 20230426800325,20230426,기업설명회(IR)개최(안내공시),기아,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230426800325
@@ -505,7 +505,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20240307000911,20240307,사업보고서 (2023.12),기아,정연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240307000911
 20240307800939,20240307,감사보고서제출,기아,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240307800939
 20240312000648,20240312,특수관계인으로부터기타유가증권매수,기아,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240312000648
-20240312000909,20240312,[기재정정]사업보고서 (2023.12),기아,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240312000909
+20240312000909,20240312,[기재정정]사업보고서 (2023.12),기아,연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240312000909
 20240313001457,20240313,특수관계인으로부터기타유가증권매수,기아,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240313001457
 20240315000565,20240315,자기주식취득결과보고서,기아,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240315000565
 20240315000791,20240315,독립이사의선임ㆍ해임또는중도퇴임에관한신고,기아,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240315000791
@@ -522,7 +522,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20240426000767,20240426,약관에의한금융거래시계열금융회사의거래상대방의공시,기아,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240426000767
 20240426000777,20240426,특수관계인으로부터기타유가증권매수,기아,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240426000777
 20240426800334,20240426,연결재무제표기준영업(잠정)실적(공정공시),기아,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240426800334
-20240426800511,20240426,주식소각결정,기아,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240426800511
+20240426800511,20240426,주식소각결정,기아,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240426800511
 20240426800601,20240426,기업설명회(IR)개최(안내공시),기아,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240426800601
 20240429001125,20240429,특수관계인으로부터기타유가증권매수,기아,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240429001125
 20240502800431,20240502,영업(잠정)실적(공정공시),기아,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240502800431
@@ -587,7 +587,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20241025000411,20241025,약관에의한금융거래시계열금융회사의거래상대방의공시,기아,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241025000411
 20241025000460,20241025,주요사항보고서(자기주식처분결정),기아,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241025000460
 20241025800215,20241025,연결재무제표기준영업(잠정)실적(공정공시),기아,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241025800215
-20241025800218,20241025,주식소각결정,기아,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241025800218
+20241025800218,20241025,주식소각결정,기아,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241025800218
 20241025800224,20241025,[기재정정]장래사업ㆍ경영계획(공정공시),기아,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241025800224
 20241025800496,20241025,공정거래자율준수프로그램운영현황(안내공시),기아,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241025800496
 20241029000315,20241029,특수관계인으로부터기타유가증권매수,기아,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241029000315
@@ -668,7 +668,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20250311000965,20250311,[기재정정]의결권대리행사권유참고서류,컨두잇,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250311000965
 20250312800053,20250312,기업설명회(IR)개최(안내공시),기아,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250312800053
 20250312800057,20250312,기업설명회(IR)개최(안내공시),기아,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250312800057
-20250313001390,20250313,[기재정정]사업보고서 (2024.12),기아,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250313001390
+20250313001390,20250313,[기재정정]사업보고서 (2024.12),기아,연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250313001390
 20250314001029,20250314,독립이사의선임ㆍ해임또는중도퇴임에관한신고,기아,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250314001029
 20250314001155,20250314,주요사항보고서(자기주식취득결정),기아,정,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250314001155
 20250314001646,20250314,[기재정정]주요사항보고서(자기주식취득결정),기아,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250314001646
@@ -710,7 +710,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20250725000679,20250725,특수관계인으로부터주식의취득,기아,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250725000679
 20250725000684,20250725,약관에의한금융거래시계열금융회사의거래상대방의공시,기아,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250725000684
 20250725800274,20250725,연결재무제표기준영업(잠정)실적(공정공시),기아,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250725800274
-20250725800350,20250725,주식소각결정,기아,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250725800350
+20250725800350,20250725,주식소각결정,기아,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250725800350
 20250725800568,20250725,[기재정정]타법인주식및출자증권취득결정(자율공시),기아,유정,지분·출자,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250725800568
 20250725800611,20250725,공정거래자율준수프로그램운영현황(안내공시),기아,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250725800611
 20250725800617,20250725,기업설명회(IR)개최(안내공시),기아,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250725800617
@@ -744,7 +744,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20251031000189,20251031,주요사항보고서(자기주식처분결정),기아,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251031000189
 20251031000200,20251031,약관에의한금융거래시계열금융회사의거래상대방의공시,기아,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251031000200
 20251031800292,20251031,연결재무제표기준영업(잠정)실적(공정공시),기아,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251031800292
-20251031800329,20251031,주식소각결정,기아,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251031800329
+20251031800329,20251031,주식소각결정,기아,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251031800329
 20251031800377,20251031,공정거래자율준수프로그램운영현황(안내공시),기아,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251031800377
 20251031800396,20251031,기업설명회(IR)개최(안내공시),기아,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251031800396
 20251103800395,20251103,영업(잠정)실적(공정공시),기아,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251103800395
@@ -1103,7 +1103,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20260910800713,20260910,중대재해발생,기아,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260910800713
 20260911000318,20260911,특수관계인으로부터기타유가증권매수,기아,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000318
 20260914800202,20260914,기업설명회(IR)개최(안내공시),기아,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914800202
-20260916000427,20260916,[기재정정]반기보고서 (2026.06),기아,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427
+20260916000427,20260916,[기재정정]반기보고서 (2026.06),기아,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427
 20260930800330,20260930,기업설명회(IR)개최(안내공시),기아,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260930800330
 20261001800325,20261001,영업(잠정)실적(공정공시),기아,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001800325
 20261012000440,20261012,특수관계인으로부터기타유가증권매수,기아,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261012000440

@@ -116,14 +116,14 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20231108900105,20231108,연결재무제표기준영업(잠정)실적(공정공시),원텍,코,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231108900105
 20231108900107,20231108,기업설명회(IR)개최,원텍,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231108900107
 20231110000317,20231110,분기보고서 (2023.09),원텍,정,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231110000317
-20231113000223,20231113,[기재정정]사업보고서 (2022.12),원텍,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231113000223
-20231113000228,20231113,[기재정정]반기보고서 (2023.06),원텍,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231113000228
+20231113000223,20231113,[기재정정]사업보고서 (2022.12),원텍,연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231113000223
+20231113000228,20231113,[기재정정]반기보고서 (2023.06),원텍,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231113000228
 20231115000177,20231115,주식등의대량보유상황보고서(일반),김종원,정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231115000177
 20231115000181,20231115,임원ㆍ주요주주특정증권등소유상황보고서,최정윤,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231115000181
-20231122000319,20231122,[기재정정]분기보고서 (2023.09),원텍,정,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231122000319
+20231122000319,20231122,[기재정정]분기보고서 (2023.09),원텍,정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231122000319
 20231207000393,20231207,임원ㆍ주요주주특정증권등소유상황보고서,유춘희,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231207000393
 20231207000398,20231207,[기재정정]주식등의대량보유상황보고서(일반),김종원,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231207000398
-20231207000404,20231207,[기재정정]분기보고서 (2023.09),원텍,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231207000404
+20231207000404,20231207,[기재정정]분기보고서 (2023.09),원텍,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231207000404
 20231207000409,20231207,임원ㆍ주요주주특정증권등소유상황보고서,신희명,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231207000409
 20231214900166,20231214,주주명부폐쇄기간또는기준일설정,원텍,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231214900166
 20231214900172,20231214,현금ㆍ현물배당을위한주주명부폐쇄(기준일)결정,원텍,코,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231214900172
@@ -169,7 +169,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20241112900270,20241112,기업설명회(IR)개최,원텍,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241112900270
 20241113000360,20241113,분기보고서 (2024.09),원텍,정,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241113000360
 20241115900191,20241115,전환가액의조정 (제2회차),원텍,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241115900191
-20241118000097,20241118,[기재정정]분기보고서 (2024.09),원텍,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241118000097
+20241118000097,20241118,[기재정정]분기보고서 (2024.09),원텍,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241118000097
 20241119000097,20241119,임원ㆍ주요주주특정증권등소유상황보고서,김종원,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241119000097
 20241202000299,20241202,독립이사의선임ㆍ해임또는중도퇴임에관한신고,원텍,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241202000299
 20241216900200,20241216,주주명부폐쇄기간또는기준일설정,원텍,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241216900200
@@ -184,7 +184,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20250319900234,20250319,감사보고서제출,원텍,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250319900234
 20250321000343,20250321,[기재정정]주주총회소집공고,원텍,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321000343
 20250321000350,20250321,[기재정정]의결권대리행사권유참고서류,원텍,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321000350
-20250321000358,20250321,[기재정정]사업보고서 (2024.12),원텍,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321000358
+20250321000358,20250321,[기재정정]사업보고서 (2024.12),원텍,연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321000358
 20250327900439,20250327,기업설명회(IR)개최,원텍,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250327900439
 20250328002288,20250328,독립이사의선임ㆍ해임또는중도퇴임에관한신고,원텍,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250328002288
 20250328903526,20250328,정기주주총회결과,원텍,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250328903526
@@ -203,7 +203,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20251020000054,20251020,주요사항보고서(자기주식취득신탁계약체결결정),원텍,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251020000054
 20251110900619,20251110,기업설명회(IR)개최,원텍,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251110900619
 20251112000176,20251112,분기보고서 (2025.09),원텍,정,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251112000176
-20251112000559,20251112,[기재정정]분기보고서 (2025.09),원텍,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251112000559
+20251112000559,20251112,[기재정정]분기보고서 (2025.09),원텍,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251112000559
 20251121000124,20251121,임원ㆍ주요주주특정증권등소유상황보고서,김종원,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251121000124
 20251215901302,20251215,주주명부폐쇄기간또는기준일설정,원텍,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251215901302
 20251215901313,20251215,현금ㆍ현물배당을위한주주명부폐쇄(기준일)결정,원텍,코,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251215901313
@@ -224,7 +224,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20260327902871,20260327,정기주주총회결과,원텍,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260327902871
 20260408001926,20260408,임원ㆍ주요주주특정증권등소유상황보고서,김종원,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260408001926
 20260408002373,20260408,주요사항보고서(자기주식처분결정),원텍,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260408002373
-20260408900844,20260408,주식소각결정,원텍,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260408900844
+20260408900844,20260408,주식소각결정,원텍,코,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260408900844
 20260410001265,20260410,주요사항보고서(자기주식취득신탁계약체결결정),원텍,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260410001265
 20260410003205,20260410,주식등의대량보유상황보고서(일반),김종원,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260410003205
 20260410003250,20260410,임원ㆍ주요주주특정증권등소유상황보고서,서영석,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260410003250
@@ -240,10 +240,10 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20260513000311,20260513,분기보고서 (2026.03),원텍,정,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260513000311
 20260513000318,20260513,신탁계약해지결과보고서,원텍,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260513000318
 20260514000557,20260514,주요사항보고서(전환사채권발행결정),원텍,,증자·사채,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000557
-20260520000194,20260520,[기재정정]분기보고서 (2026.03),원텍,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260520000194
+20260520000194,20260520,[기재정정]분기보고서 (2026.03),원텍,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260520000194
 20260522900473,20260522,증권발행결과(자율공시),원텍,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260522900473
 20260615900444,20260615,전환사채(해외전환사채포함)발행후만기전사채취득,원텍,코,증자·사채,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260615900444
-20260618900115,20260618,주식소각결정,원텍,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260618900115
+20260618900115,20260618,주식소각결정,원텍,코,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260618900115
 20260622000092,20260622,주요사항보고서(자기주식취득신탁계약체결결정),원텍,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260622000092
 20260622000142,20260622,임원ㆍ주요주주특정증권등소유상황보고서,김종원,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260622000142
 20260622900275,20260622,주주총회소집결의,원텍,코정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260622900275
@@ -271,4 +271,4 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20261015900790,20261015,불성실공시법인지정예고 (공시불이행),코스닥시장본부,코,소송·제재,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261015900790
 20261104900639,20261104,불성실공시법인미지정 (공시불이행),코스닥시장본부,코,소송·제재,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261104900639
 20261113000427,20261113,분기보고서 (2026.09),원텍,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113000427
-20261113900639,20261113,주식소각결정,원텍,코,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113900639
+20261113900639,20261113,주식소각결정,원텍,코,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113900639

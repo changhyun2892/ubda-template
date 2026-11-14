@@ -56,4 +56,4 @@ date,rcept_dt,category,major,report_nm,flr_nm,rcept_no,viewer_url
 2026-11-05,20261105,기타,,[기재정정]주식매수선택권부여에관한신고,카카오,20261105000216,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000216
 2026-11-05,20261105,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),카카오,20261105800007,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800007
 2026-11-05,20261105,실적,Y,영업(잠정)실적(공정공시),카카오,20261105800008,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800008
-2026-11-05,20261105,기타,,주식소각결정,카카오,20261105800084,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800084
+2026-11-05,20261105,자기주식,Y,주식소각결정,카카오,20261105800084,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800084

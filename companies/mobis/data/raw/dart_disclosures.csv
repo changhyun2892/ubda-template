@@ -65,14 +65,14 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20220906800189,20220906,기업설명회(IR)개최(안내공시),현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220906800189
 20220907000351,20220907,주요사항보고서(자기주식처분결정),현대모비스,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220907000351
 20220907800431,20220907,타법인주식및출자증권취득결정(자율공시),현대모비스,유,지분·출자,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220907800431
-20220907800460,20220907,주식소각결정,현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220907800460
+20220907800460,20220907,주식소각결정,현대모비스,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220907800460
 20220908000272,20220908,자기주식처분결과보고서,현대모비스,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220908000272
 20220914800410,20220914,기업설명회(IR)개최(안내공시),현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220914800410
 20220914800416,20220914,기업설명회(IR)개최(안내공시),현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220914800416
 20220919800060,20220919,기업설명회(IR)개최(안내공시),현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220919800060
 20220923800260,20220923,기업설명회(IR)개최(안내공시),현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220923800260
 20221005000449,20221005,주요사항보고서(자기주식처분결정),현대모비스,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20221005000449
-20221005000463,20221005,[기재정정]사업보고서 (2021.12),현대모비스,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20221005000463
+20221005000463,20221005,[기재정정]사업보고서 (2021.12),현대모비스,연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20221005000463
 20221005800638,20221005,타법인주식및출자증권취득결정(자율공시),현대모비스,유,지분·출자,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20221005800638
 20221005800641,20221005,타법인주식및출자증권취득결정(자율공시),현대모비스,유,지분·출자,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20221005800641
 20221005800642,20221005,투자판단관련주요경영사항,현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20221005800642
@@ -106,7 +106,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20230126000531,20230126,특수관계인에대한출자,현대모비스,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230126000531
 20230126000533,20230126,특수관계인에대한부동산임대,현대모비스,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230126000533
 20230126000535,20230126,특수관계인에대한부동산임대,현대모비스,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230126000535
-20230127000463,20230127,[기재정정]분기보고서 (2022.09),현대모비스,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230127000463
+20230127000463,20230127,[기재정정]분기보고서 (2022.09),현대모비스,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230127000463
 20230127000466,20230127,특수관계인으로부터기타유가증권매수,현대모비스,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230127000466
 20230127800001,20230127,매출액또는손익구조30%(대규모법인은15%)이상변경,현대모비스,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230127800001
 20230127800060,20230127,연결재무제표기준영업(잠정)실적(공정공시),현대모비스,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230127800060
@@ -128,7 +128,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20230307800173,20230307,기업설명회(IR)개최(안내공시),현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230307800173
 20230307800957,20230307,감사보고서제출,현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230307800957
 20230314000579,20230314,사업보고서 (2022.12),현대모비스,정연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230314000579
-20230321001162,20230321,[기재정정]사업보고서 (2022.12),현대모비스,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230321001162
+20230321001162,20230321,[기재정정]사업보고서 (2022.12),현대모비스,연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230321001162
 20230322000548,20230322,독립이사의선임ㆍ해임또는중도퇴임에관한신고,현대모비스,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230322000548
 20230322800471,20230322,정기주주총회결과,현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230322800471
 20230322800536,20230322,대표이사(대표집행임원)변경(안내공시),현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230322800536
@@ -162,7 +162,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20230725800373,20230725,공정거래자율준수프로그램운영현황(안내공시),현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230725800373
 20230726000317,20230726,주요사항보고서(자기주식취득결정),현대모비스,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230726000317
 20230726800345,20230726,현금ㆍ현물배당결정,현대모비스,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230726800345
-20230726800368,20230726,주식소각결정,현대모비스,유정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230726800368
+20230726800368,20230726,주식소각결정,현대모비스,유정,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230726800368
 20230726800462,20230726,타인에대한채무보증결정,현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230726800462
 20230727000324,20230727,특수관계인으로부터기타유가증권매수,현대모비스,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230727000324
 20230727800143,20230727,연결재무제표기준영업(잠정)실적(공정공시),현대모비스,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230727800143
@@ -193,7 +193,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20231027800097,20231027,연결재무제표기준영업(잠정)실적(공정공시),현대모비스,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231027800097
 20231027800103,20231027,기업설명회(IR)개최(안내공시),현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231027800103
 20231027800104,20231027,기업설명회(IR)개최(안내공시),현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231027800104
-20231101800259,20231101,[기재정정]주식소각결정,현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231101800259
+20231101800259,20231101,[기재정정]주식소각결정,현대모비스,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231101800259
 20231114002284,20231114,분기보고서 (2023.09),현대모비스,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231114002284
 20231117800145,20231117,주주총회소집결의,현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231117800145
 20231117800204,20231117,대표이사(대표집행임원)변경(안내공시),현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231117800204
@@ -235,7 +235,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20240216001385,20240216,주요사항보고서(자기주식취득결정),현대모비스,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240216001385
 20240216800656,20240216,주주총회소집결의,현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240216800656
 20240216800715,20240216,기타경영사항(자율공시),현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240216800715
-20240216800771,20240216,주식소각결정,현대모비스,유정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240216800771
+20240216800771,20240216,주식소각결정,현대모비스,유정,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240216800771
 20240221800045,20240221,기업설명회(IR)개최(안내공시),현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240221800045
 20240221800047,20240221,기업설명회(IR)개최(안내공시),현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240221800047
 20240221800049,20240221,기업설명회(IR)개최(안내공시),현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240221800049
@@ -244,7 +244,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20240306800367,20240306,기업설명회(IR)개최(안내공시),현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240306800367
 20240312000681,20240312,사업보고서 (2023.12),현대모비스,정연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240312000681
 20240312800536,20240312,감사보고서제출,현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240312800536
-20240319000626,20240319,[기재정정]사업보고서 (2023.12),현대모비스,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240319000626
+20240319000626,20240319,[기재정정]사업보고서 (2023.12),현대모비스,연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240319000626
 20240320001591,20240320,독립이사의선임ㆍ해임또는중도퇴임에관한신고,현대모비스,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320001591
 20240320801920,20240320,정기주주총회결과,현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320801920
 20240325800863,20240325,[기재정정]현금ㆍ현물배당결정,현대모비스,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240325800863
@@ -267,7 +267,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20240524800373,20240524,기업설명회(IR)개최(안내공시),현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240524800373
 20240530000972,20240530,대규모기업집단현황공시[연1회공시및1/4분기용(개별회사)],현대모비스,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240530000972
 20240531800466,20240531,기업지배구조보고서공시,현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240531800466
-20240603800139,20240603,[기재정정]주식소각결정,현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240603800139
+20240603800139,20240603,[기재정정]주식소각결정,현대모비스,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240603800139
 20240613000175,20240613,주식등의대량보유상황보고서(일반),기아,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240613000175
 20240613000264,20240613,임원ㆍ주요주주특정증권등소유상황보고서,이규석,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240613000264
 20240613800481,20240613,최대주주등소유주식변동신고서,현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240613800481
@@ -342,7 +342,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20250213001747,20250213,특수관계인과의보험거래,현대모비스,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250213001747
 20250213001756,20250213,지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항,현대모비스,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250213001756
 20250213801082,20250213,주주총회소집결의,현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250213801082
-20250213801359,20250213,주식소각결정,현대모비스,유정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250213801359
+20250213801359,20250213,주식소각결정,현대모비스,유정,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250213801359
 20250218800705,20250218,기업설명회(IR)개최(안내공시),현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250218800705
 20250218800711,20250218,기업설명회(IR)개최(안내공시),현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250218800711
 20250218800719,20250218,기업설명회(IR)개최(안내공시),현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250218800719
@@ -371,7 +371,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20250523800220,20250523,기업설명회(IR)개최(안내공시),현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250523800220
 20250530001871,20250530,대규모기업집단현황공시[연1회공시및1/4분기용(개별회사)],현대모비스,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250530001871
 20250530801097,20250530,기업지배구조보고서공시,현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250530801097
-20250602800195,20250602,[기재정정]주식소각결정,현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250602800195
+20250602800195,20250602,[기재정정]주식소각결정,현대모비스,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250602800195
 20250616800430,20250616,기업설명회(IR)개최(안내공시),현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250616800430
 20250624800489,20250624,기업설명회(IR)개최(안내공시),현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250624800489
 20250626800338,20250626,지속가능경영보고서등관련사항(자율공시),현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250626800338
@@ -386,7 +386,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20250725000051,20250725,주요사항보고서(자기주식취득결정),현대모비스,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250725000051
 20250725000683,20250725,특수관계인에대한주식의처분,현대모비스,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250725000683
 20250725000686,20250725,특수관계인에대한주식의처분,현대모비스,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250725000686
-20250725800064,20250725,주식소각결정,현대모비스,유정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250725800064
+20250725800064,20250725,주식소각결정,현대모비스,유정,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250725800064
 20250725800077,20250725,현금ㆍ현물배당결정,현대모비스,유정,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250725800077
 20250725800079,20250725,현금ㆍ현물배당을위한주주명부폐쇄(기준일)결정,현대모비스,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250725800079
 20250725800089,20250725,연결재무제표기준영업(잠정)실적(공정공시),현대모비스,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250725800089
@@ -409,7 +409,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20251016800356,20251016,최대주주등소유주식변동신고서,현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251016800356
 20251024000381,20251024,자기주식취득결과보고서,현대모비스,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251024000381
 20251024000421,20251024,특수관계인으로부터기타유가증권매수,현대모비스,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251024000421
-20251024800631,20251024,[기재정정]주식소각결정,현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251024800631
+20251024800631,20251024,[기재정정]주식소각결정,현대모비스,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251024800631
 20251030000407,20251030,약관에의한금융거래시계열금융회사의거래상대방의공시,현대모비스,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251030000407
 20251030000411,20251030,약관에의한금융거래시계열금융회사의거래상대방의공시,현대모비스,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251030000411
 20251031000328,20251031,주요사항보고서(자기주식처분결정),현대모비스,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251031000328
@@ -540,7 +540,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20260424800122,20260424,연결재무제표기준영업(잠정)실적(공정공시),현대모비스,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260424800122
 20260424800144,20260424,기업설명회(IR)개최(안내공시),현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260424800144
 20260424800151,20260424,기업설명회(IR)개최(안내공시),현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260424800151
-20260424800596,20260424,주식소각결정,현대모비스,유정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260424800596
+20260424800596,20260424,주식소각결정,현대모비스,유정,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260424800596
 20260424800642,20260424,타법인주식및출자증권취득결정(자율공시),현대모비스,유정,지분·출자,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260424800642
 20260511800531,20260511,기업설명회(IR)개최(안내공시),현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260511800531
 20260515002700,20260515,분기보고서 (2026.03),현대모비스,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002700
@@ -560,7 +560,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20260707800489,20260707,기업설명회(IR)개최(안내공시),현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260707800489
 20260716000412,20260716,독립이사의선임ㆍ해임또는중도퇴임에관한신고,현대모비스,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260716000412
 20260721001104,20260721,자기주식취득결과보고서,현대모비스,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260721001104
-20260721801166,20260721,[기재정정]주식소각결정,현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260721801166
+20260721801166,20260721,[기재정정]주식소각결정,현대모비스,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260721801166
 20260723000611,20260723,약관에의한금융거래시계열금융회사의거래상대방의공시,현대모비스,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260723000611
 20260723800892,20260723,공정거래자율준수프로그램운영현황(안내공시),현대모비스,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260723800892
 20260724000365,20260724,특수관계인으로부터기타유가증권매수,현대모비스,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260724000365

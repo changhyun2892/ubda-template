@@ -10,8 +10,8 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20220310001098,20220310,사업보고서 (2021.12),한미반도체,정연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220310001098
 20220310801664,20220310,감사보고서제출,한미반도체,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220310801664
 20220318800696,20220318,정기주주총회결과,한미반도체,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220318800696
-20220415000570,20220415,[기재정정]분기보고서 (2021.09),한미반도체,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220415000570
-20220415000576,20220415,[기재정정]사업보고서 (2021.12),한미반도체,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220415000576
+20220415000570,20220415,[기재정정]분기보고서 (2021.09),한미반도체,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220415000570
+20220415000576,20220415,[기재정정]사업보고서 (2021.12),한미반도체,연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220415000576
 20220415000593,20220415,주식등의대량보유상황보고서(일반),곽동신,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220415000593
 20220415000607,20220415,임원ㆍ주요주주특정증권등소유상황보고서,곽노권,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220415000607
 20220415000617,20220415,임원ㆍ주요주주특정증권등소유상황보고서,곽동신,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220415000617
@@ -44,7 +44,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20221114000253,20221114,분기보고서 (2022.09),한미반도체,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20221114000253
 20221114001137,20221114,신탁계약해지결과보고서,한미반도체,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20221114001137
 20221114800066,20221114,단일판매ㆍ공급계약체결(자율공시),한미반도체,유,공급계약,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20221114800066
-20221114800182,20221114,주식소각결정,한미반도체,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20221114800182
+20221114800182,20221114,주식소각결정,한미반도체,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20221114800182
 20230126800287,20230126,기업설명회(IR)개최(안내공시),한미반도체,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230126800287
 20230127000618,20230127,신탁계약에의한취득상황보고서,한미반도체,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230127000618
 20230207800698,20230207,연결재무제표기준영업(잠정)실적(공정공시),한미반도체,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230207800698
@@ -144,7 +144,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20240417000353,20240417,주요사항보고서(자기주식취득신탁계약해지결정),한미반도체,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240417000353
 20240418000325,20240418,신탁계약해지결과보고서,한미반도체,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240418000325
 20240418000355,20240418,신탁계약에의한취득상황보고서,한미반도체,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240418000355
-20240418800077,20240418,주식소각결정,한미반도체,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240418800077
+20240418800077,20240418,주식소각결정,한미반도체,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240418800077
 20240419000196,20240419,임원ㆍ주요주주특정증권등소유상황보고서,곽동신,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240419000196
 20240419800050,20240419,연결재무제표기준영업(잠정)실적(공정공시),한미반도체,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240419800050
 20240422000128,20240422,임원ㆍ주요주주특정증권등소유상황보고서,곽동신,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240422000128
@@ -190,7 +190,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20241024000388,20241024,신탁계약해지결과보고서,한미반도체,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241024000388
 20241024000390,20241024,신탁계약에의한취득상황보고서,한미반도체,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241024000390
 20241025000456,20241025,주식등의대량보유상황보고서(일반),곽동신,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241025000456
-20241025800282,20241025,주식소각결정,한미반도체,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241025800282
+20241025800282,20241025,주식소각결정,한미반도체,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241025800282
 20241112000137,20241112,주요사항보고서(자기주식취득신탁계약체결결정),한미반도체,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241112000137
 20241112800066,20241112,기업설명회(IR)개최(안내공시),한미반도체,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241112800066
 20241114002196,20241114,분기보고서 (2024.09),한미반도체,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241114002196
@@ -238,7 +238,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20250516800189,20250516,기업설명회(IR)개최(안내공시),한미반도체,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250516800189
 20250516800191,20250516,기업설명회(IR)개최(안내공시),한미반도체,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250516800191
 20250516800319,20250516,단일판매ㆍ공급계약체결,한미반도체,유,공급계약,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250516800319
-20250519800046,20250519,주식소각결정,한미반도체,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250519800046
+20250519800046,20250519,주식소각결정,한미반도체,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250519800046
 20250522000093,20250522,임원ㆍ주요주주특정증권등소유상황보고서,곽동신,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250522000093
 20250522000095,20250522,주식등의대량보유상황보고서(일반),곽동신,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250522000095
 20250522800087,20250522,최대주주등소유주식변동신고서,한미반도체,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250522800087

@@ -19,7 +19,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20220302000447,20220302,의결권대리행사권유참고서류,LG전자,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220302000447
 20220315801411,20220315,감사보고서제출,LG전자,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220315801411
 20220316000440,20220316,사업보고서 (2021.12),LG전자,정연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220316000440
-20220316000886,20220316,[기재정정]사업보고서 (2021.12),LG전자,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220316000886
+20220316000886,20220316,[기재정정]사업보고서 (2021.12),LG전자,연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220316000886
 20220317000462,20220317,임원ㆍ주요주주특정증권등소유상황보고서,이상구,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220317000462
 20220317001148,20220317,주식등의대량보유상황보고서(일반),LG,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220317001148
 20220317801525,20220317,최대주주등소유주식변동신고서,LG전자,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220317801525
@@ -252,7 +252,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20250630800364,20250630,지속가능경영보고서등관련사항(자율공시),LG전자,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250630800364
 20250707800084,20250707,연결재무제표기준영업(잠정)실적(공정공시),LG전자,유정,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250707800084
 20250707800090,20250707,기업설명회(IR)개최(안내공시),LG전자,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250707800090
-20250724800563,20250724,주식소각결정,LG전자,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250724800563
+20250724800563,20250724,주식소각결정,LG전자,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250724800563
 20250724800581,20250724,현금ㆍ현물배당결정,LG전자,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250724800581
 20250724800596,20250724,현금ㆍ현물배당을위한주주명부폐쇄(기준일)결정,LG전자,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250724800596
 20250725800293,20250725,[기재정정]연결재무제표기준영업(잠정)실적(공정공시),LG전자,유정,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250725800293
@@ -324,7 +324,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20260601001308,20260601,대규모기업집단현황공시[연1회공시및1/4분기용(개별회사)],LG전자,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260601001308
 20260611000049,20260611,임원ㆍ주요주주특정증권등소유상황보고서,박원재,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260611000049
 20260630800321,20260630,지속가능경영보고서등관련사항(자율공시),LG전자,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260630800321
-20260706000276,20260706,[기재정정]사업보고서 (2025.12),LG전자,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260706000276
+20260706000276,20260706,[기재정정]사업보고서 (2025.12),LG전자,연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260706000276
 20260707800176,20260707,연결재무제표기준영업(잠정)실적(공정공시),LG전자,유정,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260707800176
 20260707800184,20260707,기업설명회(IR)개최(안내공시),LG전자,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260707800184
 20260728000239,20260728,동일인등출자계열회사와의상품ㆍ용역거래변경,LG전자,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260728000239

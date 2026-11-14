@@ -50,7 +50,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20220811800252,20220811,연결재무제표기준영업(잠정)실적(공정공시),이마트,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220811800252
 20220811800253,20220811,영업(잠정)실적(공정공시),이마트,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220811800253
 20220811800516,20220811,기업설명회(IR)개최(안내공시),이마트,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220811800516
-20220816000177,20220816,[기재정정]사업보고서 (2021.12),이마트,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220816000177
+20220816000177,20220816,[기재정정]사업보고서 (2021.12),이마트,연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220816000177
 20220816001040,20220816,반기보고서 (2022.06),이마트,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220816001040
 20220831000906,20220831,대규모기업집단현황공시[분기별공시(개별회사용)],이마트,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220831000906
 20220902800398,20220902,기업설명회(IR)개최(안내공시),이마트,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220902800398
@@ -154,8 +154,8 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20240229001410,20240229,대규모기업집단현황공시[분기별공시(개별회사용)],이마트,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240229001410
 20240312800253,20240312,영업(잠정)실적(공정공시),이마트,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240312800253
 20240320001504,20240320,사업보고서 (2023.12),이마트,정연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320001504
-20240320001902,20240320,[첨부정정]사업보고서 (2023.12),이마트,정연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320001902
-20240320001939,20240320,[첨부정정]사업보고서 (2023.12),이마트,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320001939
+20240320001902,20240320,[첨부정정]사업보고서 (2023.12),이마트,정연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320001902
+20240320001939,20240320,[첨부정정]사업보고서 (2023.12),이마트,연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320001939
 20240320800399,20240320,감사보고서제출,이마트,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320800399
 20240328802131,20240328,정기주주총회결과,이마트,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240328802131
 20240328802842,20240328,대표이사(대표집행임원)변경(안내공시),이마트,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240328802842
@@ -294,7 +294,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20250402003569,20250402,임원ㆍ주요주주특정증권등소유상황보고서,국민연금공단,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250402003569
 20250408800488,20250408,영업(잠정)실적(공정공시),이마트,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250408800488
 20250410001553,20250410,특수관계인으로부터부동산임차,이마트,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250410001553
-20250410800573,20250410,주식소각결정,이마트,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250410800573
+20250410800573,20250410,주식소각결정,이마트,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250410800573
 20250425000839,20250425,특수관계인에대한출자,이마트,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250425000839
 20250425000840,20250425,특수관계인에대한자산양도,이마트,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250425000840
 20250425800708,20250425,[기재정정]타법인주식및출자증권취득결정(종속회사의주요경영사항),이마트,유정,지분·출자,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250425800708
@@ -457,7 +457,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20260922800334,20260922,[기재정정]감자결정(종속회사의주요경영사항),이마트,유,증자·사채,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260922800334
 20261006800433,20261006,타법인주식및출자증권취득결정(종속회사의주요경영사항),이마트,유,지분·출자,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261006800433
 20261013800181,20261013,영업(잠정)실적(공정공시),이마트,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261013800181
-20261015800412,20261015,주식소각결정,이마트,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261015800412
+20261015800412,20261015,주식소각결정,이마트,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261015800412
 20261029000459,20261029,특수관계인에대한출자,이마트,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000459
 20261029000478,20261029,임원ㆍ주요주주특정증권등소유상황보고서,최택원,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000478
 20261029000493,20261029,임원ㆍ주요주주특정증권등소유상황보고서,박승학,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000493
