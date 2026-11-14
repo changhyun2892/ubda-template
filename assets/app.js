@@ -50,7 +50,7 @@ async function loadAll(slug = SLUG, keys = Object.keys(FILE_MAP)) {
 
 /* ---------------- 2) 계산·형식 도우미 ---------------- */
 let D = {}; // 읽은 데이터
-const S = { newsQ: '', newsSpike: false, newsAll: false, page: 'overview', year: null, qmetric: 'revenue', stockMode: 'index', ledgerFilter: 'all', period: 'annual', cmp: null, edit: false };
+const S = { tlCats: null, tlYear: 'all', tlQ: '', newsQ: '', newsSpike: false, newsAll: false, page: 'overview', year: null, qmetric: 'revenue', stockMode: 'index', ledgerFilter: 'all', period: 'annual', cmp: null, edit: false };
 let INDEX = null; // companies/index.json (기업 비교·질의용)
 const OTHER = {}; // 다른 기업 데이터 캐시
 const N = (s) => (s === undefined || s === null || s === '' ? null : Number(s));
@@ -223,7 +223,9 @@ const PAGES = [
   ['ratios', '재무비율', '수익성·안정성·활동성 — 산식과 입력값 공개'],
   ['bs', '재무상태·현금', '자산·부채·자본과 현금흐름'],
   ['stock', '주가', '주가와 시장지수, 급변일과 같은 시기 공시'],
+  ['timeline', '사건 연표', 'DART 주요 공시를 시간순으로 · 주가 급변일과 같은 시기 표시 · 자동 수집'],
   ['news', '관련 보도', '네이버 뉴스에서 찾은 이 회사 기사 · 주가 급변일과 같은 날 표시 · 확인 전'],
+  ['production', '생산', '생산능력·가동률·생산 실적과 설비투자 · 사업보고서 공시 범위만'],
   ['industry', '산업 KPI', '산업별로 추가 확인할 지표의 확보 현황'],
   ['dart', 'DART 자동 업데이트', '정기보고서를 평일마다 확인해 자동 반영 · 원문 대조 전 값은 따로 표시'],
   ['audit', '출처·검증', '자동 점검 결과, 검증 장부, 출처 목록'],
@@ -365,6 +367,116 @@ function pageStock() {
     legend(S.stockMode === 'index' ? [['주가', COLORS()[0]], ['시장지수', COLORS()[1]]] : [['종가', COLORS()[0]]]) + '<div class="chart" id="c6"></div>',
     `마지막 ${esc(last.date)} 종가 ${fmt(N(last.close), 0)}원. 점 = 시장 대비 크게 움직인 날(초록 상승 · 빨강 하락, 큰 점은 주요 공시가 같은 시기에 있음). 누르면 같은 시기 공시가 열립니다. 공시와 주가가 같은 시기에 움직였다고 해서 인과관계가 있다는 뜻은 아닙니다. 비수정 종가라 액면분할이 있으면 해석에 주의하세요.`)}${eventsCard()}${searchCard()}</div>`;
 }
+/* ---- 사건 연표: data/raw/dart_disclosures.csv (collect_events.py가 모은 전체 공시 목록, 크면 수백 KB라 이 화면을 열 때만 읽음) ---- */
+const TL_CATS = ['실적', '정기보고서', '공급계약', '시설투자', '합병·분할', '지분·출자', '최대주주', '증자·사채', '자기주식', '배당', '소송·제재'];
+const TL_DEFAULT = ['실적', '공급계약', '시설투자', '합병·분할', '지분·출자', '최대주주', '증자·사채', '소송·제재'];
+let DISC = null; // null = 아직 안 읽음, [] = 없음
+async function loadDisc() {
+  try { const r = await fetch(`companies/${SLUG}/data/raw/dart_disclosures.csv`, { cache: 'no-cache' }); DISC = r.ok ? parseCSV(await r.text()) : []; } catch (e) { DISC = []; }
+}
+const ymd = (d) => `${d.slice(0, 4)}-${d.slice(4, 6)}-${d.slice(6, 8)}`;
+function tlRows() {
+  const cats = new Set(S.tlCats || TL_DEFAULT), q = S.tlQ.trim();
+  return (DISC || []).filter((r) => cats.has(r.category) && (S.tlYear === 'all' || r.rcept_dt.startsWith(S.tlYear)) && (!q || r.report_nm.includes(q)))
+    .sort((a, b) => (a.rcept_dt < b.rcept_dt ? 1 : a.rcept_dt > b.rcept_dt ? -1 : a.rcept_no < b.rcept_no ? 1 : -1));
+}
+function tlSpikeMap() { // 공시번호 → 같은 시기 급변일
+  const m = new Map(); (D.evlinks || []).filter((r) => r.rcept_no).forEach((r) => m.set(r.rcept_no, r.date)); return m;
+}
+function tlList() {
+  const rows = tlRows(), sp = tlSpikeMap(), ev = new Map((D.events || []).map((e) => [e.date, e]));
+  if (!rows.length) return '<div class="empty"><b>조건에 맞는 공시가 없습니다</b>유형이나 연도를 바꿔 보세요.</div>';
+  let html = '', mon = '';
+  rows.slice(0, S.tlAll ? rows.length : 200).forEach((r) => {
+    const m = r.rcept_dt.slice(0, 6);
+    if (m !== mon) { mon = m; html += `<div class="news-day">${m.slice(0, 4)}년 ${+m.slice(4, 6)}월</div>`; }
+    const sd = sp.get(r.rcept_no), e = sd && ev.get(sd);
+    const corr = /^\[/.test(r.report_nm) ? ' <small style="color:var(--muted)">(정정)</small>' : '';
+    html += `<div class="tl-item"><span class="news-time">${esc(ymd(r.rcept_dt).slice(5))}</span><span class="tl-cat" data-c="${esc(r.category)}">${esc(r.category)}</span>
+      <span><a href="${esc(r.viewer_url)}" target="_blank" rel="noopener">${esc(r.report_nm)}</a>${corr}${r.flr_nm && r.flr_nm !== D.company.name ? ` <small style="color:var(--muted)">· 제출 ${esc(r.flr_nm)}</small>` : ''}
+      ${e ? `<br><span class="news-spike" data-act="ev:${esc(sd)}" style="cursor:pointer;margin-left:0;color:${e.direction === '하락' ? 'var(--down)' : 'var(--up)'}">${esc(sd)} 주가 급변일과 같은 시기 · 시장 대비 ${spct(e.excess_pct)}</span>` : ''}</span></div>`;
+  });
+  if (rows.length > 200 && !S.tlAll) html += `<button class="tb-btn" data-act="tlall" style="margin-top:10px">나머지 ${rows.length - 200}건 더 보기</button>`;
+  return html;
+}
+function pageTimeline() {
+  if (DISC === null) { loadDisc().then(() => S.page === 'timeline' && render()); return '<div class="empty">공시 목록을 불러오는 중…</div>'; }
+  if (!DISC.length) return `<div class="empty"><b>공시 목록이 아직 없습니다</b>평일 자동 업데이트(collect_events.py)가 돌면 채워집니다.</div>`;
+  const cats = new Set(S.tlCats || TL_DEFAULT), years = [...new Set(DISC.map((r) => r.rcept_dt.slice(0, 4)))].sort();
+  const cnt = (c) => DISC.filter((r) => r.category === c).length;
+  const chips = TL_CATS.map((c) => `<button data-act="tlc:${esc(c)}" aria-pressed="${cats.has(c)}">${esc(c)} <small>${cnt(c)}</small></button>`).join('');
+  const ys = `<button data-act="tly:all" aria-pressed="${S.tlYear === 'all'}">전체</button>` + years.map((y) => `<button data-act="tly:${y}" aria-pressed="${S.tlYear === y}">${y}</button>`).join('');
+  // 연도 × 유형 표
+  const tbl = `<div class="tbl-wrap"><table class="tbl"><thead><tr><th>유형</th>${years.map((y) => `<th>${y}</th>`).join('')}<th>합계</th></tr></thead><tbody>${TL_CATS.filter((c) => cnt(c)).map((c) => `<tr><td>${esc(c)}</td>${years.map((y) => `<td>${DISC.filter((r) => r.category === c && r.rcept_dt.startsWith(y)).length || '–'}</td>`).join('')}<td><b>${cnt(c)}</b></td></tr>`).join('')}
+    <tr><td style="color:var(--muted)">기타 (지분 신고·IR 안내 등, 연표에서 뺌)</td>${years.map((y) => `<td style="color:var(--muted)">${DISC.filter((r) => r.category === '기타' && r.rcept_dt.startsWith(y)).length || '–'}</td>`).join('')}<td style="color:var(--muted)">${cnt('기타')}</td></tr></tbody></table></div>`;
+  const n = tlRows().length;
+  return `<div class="grid">
+    ${card('w6', '주가와 주요 공시', '세로 점선 = 아래에서 고른 유형의 공시 (마우스를 올리면 공시명) · 점 = 주가 급변일', '<div class="chart" id="ct1"></div>', '공시와 주가가 같은 시기에 움직였다고 해서 인과관계가 있다는 뜻은 아닙니다.')}
+    ${card('w6', '공시 연표', `유형·연도를 골라 보기 · ${n.toLocaleString()}건`,
+      `<div class="seg seg-wrap" style="margin-bottom:6px">${chips}</div><div class="seg seg-wrap" style="margin-bottom:8px">${ys}</div>
+       <div class="news-tools"><input id="tlQ" type="search" placeholder="공시명 검색 (예: 공급계약, 미국)" value="${esc(S.tlQ)}" aria-label="공시 검색"></div><div id="tlList">${tlList()}</div>`,
+      `출처: DART 공시 목록 (${DISC.length.toLocaleString()}건, ${esc(ymd(DISC[0].rcept_dt))}~). 유형은 공시 제목으로 자동 분류해 틀릴 수 있습니다. 공시명을 누르면 DART 원문이 열립니다.`)}
+    ${card('w6', '연도별 공시 유형', '건수 · 정정 공시 포함', tbl)}
+  </div>`;
+}
+function drawTimeline() {
+  if (!DISC?.length || !$('#ct1') || !D.stock.length) { if ($('#ct1') && !D.stock.length) $('#ct1').innerHTML = '<div class="empty">주가 자료 없음</div>'; }
+  else {
+    const xs = D.stock.map((r) => r.date), c = D.stock.map((r) => N(r.close));
+    const mk = tlRows().filter((r) => r.category !== '정기보고서').slice(0, 400).map((r) => ({ date: ymd(r.rcept_dt), label: `${ymd(r.rcept_dt)} [${r.category}] ${r.report_nm}` }));
+    const dots = (D.events || []).map((e) => ({ date: e.date, key: e.date, big: +e.major_count > 0, color: e.direction === '하락' ? css('--down') : css('--up'), label: `${e.date} 주가 급변일 · 시장 대비 ${spct(e.excess_pct)}\n누르면 같은 시기 공시·보도` }));
+    lineChart($('#ct1'), xs, [{ name: '종가(원)', color: COLORS()[0], values: c }], mk, { fmt: (v) => fmt(v, 0), dots, onDot: showEvent });
+  }
+  $('#tlQ')?.addEventListener('input', (e) => { S.tlQ = e.target.value; S.tlAll = false; $('#tlList').innerHTML = tlList(); });
+}
+
+/* ---- 생산: 산업 KPI(kpi_values.csv)의 생산능력·가동률·생산 실적·수주 + DART 유형자산 취득 ---- */
+function kpiPivot(key) { // 항목 × 연도 표 데이터
+  const rows = D.kpi.filter((r) => r.kpi_key === key && r.value !== '');
+  const items = [...new Set(rows.map((r) => r.item))], years = [...new Set(rows.map((r) => r.year))].sort();
+  const get = (it, y) => rows.find((r) => r.item === it && r.year === y);
+  return { rows, items, years, get, allItems: [...new Set(D.kpi.filter((r) => r.kpi_key === key).map((r) => r.item))] };
+}
+function kpiTable(key, opt = {}) {
+  const P = kpiPivot(key); if (!P.items.length) return null;
+  const s = D.status.find((x) => x.key === key);
+  const body = P.items.map((it) => {
+    const ii = P.allItems.indexOf(it), unit = P.rows.find((r) => r.item === it)?.unit || '';
+    const cells = P.years.map((y, k) => {
+      const r = P.get(it, y); if (!r) return '<td>–</td>';
+      const v = N(r.value), prev = k ? P.get(it, P.years[k - 1]) : null, pv = prev ? N(prev.value) : null;
+      const chg = opt.pct || pv === null || !pv ? '' : `<br><small class="${v < pv ? 'neg' : ''}" style="${v >= pv ? 'color:var(--up)' : ''}">${v >= pv ? '+' : ''}${fmt((v / pv - 1) * 100, 1)}%</small>`;
+      const bar = opt.pct ? `<div class="ubar"><i style="width:${Math.max(0, Math.min(100, v / 1.2))}%;background:${v >= 100 ? 'var(--warn)' : 'var(--accent)'}"></i></div>` : '';
+      return `<td data-act="kpi:${esc(key)}:${ii}" style="cursor:pointer">${kpiFmt(v, unit)}${chg}${bar}</td>`;
+    }).join('');
+    return `<tr><td class="l">${esc(it)}</td>${cells}</tr>`;
+  }).join('');
+  const scope = [...new Set(P.rows.map((r) => r.scope))].slice(0, 2).join(' / ');
+  return card('w6', opt.title || s?.label || key, `${esc(scope)} · 칸을 누르면 원문 위치`, `<div class="tbl-wrap"><table class="tbl"><thead><tr><th>항목</th>${P.years.map((y) => `<th>${esc(y)}</th>`).join('')}</tr></thead><tbody>${body}</tbody></table></div>`,
+    (opt.foot || '') + (s?.caution ? ` ${esc(s.caution)}` : ''));
+}
+function pageProduction() {
+  const util = kpiTable('capacity_utilization', { pct: true, title: '가동률', foot: '가동률 계산 방식(시간·물량·M/H)은 회사·공장마다 달라 다른 회사와 직접 비교하기 어렵습니다. 100% 이상은 정상 조업 시간을 넘긴 경우입니다.' });
+  const vol = kpiTable('production_volume', { title: '생산 실적·생산능력', foot: '단위가 항목마다 다릅니다(대·톤·GT 등). 같은 단위끼리만 비교하세요.' });
+  const backlog = kpiTable('order_backlog', { title: '수주잔고' }), orders = kpiTable('new_orders', { title: '신규 수주' }), kcap = kpiTable('capex', { title: '사업부문별 설비투자 (사업보고서)' });
+  const Y = YEARS(), hasCapex = Y.some((y) => fin(y, 'capex') !== null);
+  const capex = hasCapex ? card('w6', '설비투자 (유형자산 취득)', '억원 · DART 현금흐름표 · 막대를 누르면 출처 · 선 = 매출 대비 %', '<div class="chart" id="cpr1"></div>', '현금흐름표의 유형자산 취득액입니다. 공장 증설 외에 건물·IT 투자도 포함됩니다.') : '';
+  const plantDisc = (DISC || []).filter((r) => r.category === '시설투자');
+  const discCard = plantDisc.length ? card('w6', '시설투자 관련 공시', `${plantDisc.length}건 · DART`, plantDisc.slice().reverse().slice(0, 15).map((r) => `<div class="tl-item"><span class="news-time">${esc(ymd(r.rcept_dt))}</span><span></span><span><a href="${esc(r.viewer_url)}" target="_blank" rel="noopener">${esc(r.report_nm)}</a></span></div>`).join('')) : '';
+  if (DISC === null) loadDisc().then(() => S.page === 'production' && render());
+  const any = util || vol || backlog || orders;
+  const indName = INDEX?.industries?.[D.company.industry]?.name || D.company.industry;
+  const none = any ? '' : card('w6', '생산 지표', '', `<div class="empty"><b>${['bank', 'platform', 'retail'].includes(D.company.industry) ? `${esc(indName)} 산업은 공장 생산 지표를 공시하지 않습니다` : '사업보고서에서 생산 지표를 찾지 못했습니다'}</b>${['bank', 'platform', 'retail'].includes(D.company.industry) ? '이 산업의 핵심 지표는 "산업 KPI" 화면에서 볼 수 있습니다.' : '산업 KPI 화면에 미확인 항목과 찾을 곳이 정리되어 있습니다.'}</div>`);
+  return `<div class="grid">${none}${util || ''}${vol || ''}${backlog || ''}${orders || ''}${capex}${kcap || ''}${discCard}</div>`;
+}
+function drawProduction() {
+  if (!$('#cpr1')) return;
+  const Y = YEARS();
+  barLine($('#cpr1'), Y.map(String), [{ name: '유형자산 취득', color: COLORS()[0], values: Y.map((y) => (fin(y, 'capex') === null ? null : Math.abs(fin(y, 'capex')))) }],
+    { name: '매출 대비', color: COLORS()[2], unit: '%', values: Y.map((y) => { const c = fin(y, 'capex'), r = fin(y, 'revenue'); return c !== null && r ? (Math.abs(c) / r) * 100 : null; }) },
+    { onClick: (i) => showFin(Y[i], 'capex') });
+}
+
 /* 관련 보도 (scripts/collect_news.py → data/raw/news.csv) */
 const SPIKE_NEWS = () => { const m = new Map(); (D.evlinks || []).filter((r) => r.category === '보도').forEach((r) => m.set(r.viewer_url, r.date)); return m; };
 function newsRows() {
@@ -653,8 +765,8 @@ function enableEdit() {
   });
 }
 
-const DRAW = { industry: drawIndustry, screen: drawScreen, compare: drawCompare, overview: drawOverview, pl: drawPL, quarterly: drawQuarterly, bs: drawBS, stock: drawStock, news: drawNews };
-const RENDER = { screen: pageScreen, compare: pageCompare, dart: pageDart, overview: pageOverview, pl: pagePL, quarterly: pageQuarterly, ratios: pageRatios, bs: pageBS, stock: pageStock, news: pageNews, industry: pageIndustry, audit: pageAudit };
+const DRAW = { industry: drawIndustry, screen: drawScreen, compare: drawCompare, overview: drawOverview, pl: drawPL, quarterly: drawQuarterly, bs: drawBS, stock: drawStock, news: drawNews, timeline: drawTimeline, production: drawProduction };
+const RENDER = { screen: pageScreen, compare: pageCompare, dart: pageDart, overview: pageOverview, pl: pagePL, quarterly: pageQuarterly, ratios: pageRatios, bs: pageBS, stock: pageStock, news: pageNews, timeline: pageTimeline, production: pageProduction, industry: pageIndustry, audit: pageAudit };
 
 function render() {
   const [id, title, desc] = PAGES.find((p) => p[0] === S.page);
@@ -686,7 +798,10 @@ function onClick(e) {
   else if (t.dataset.lf) { S.ledgerFilter = t.dataset.lf; render(); }
   else if (t.dataset.act) {
     const [k, a, b] = t.dataset.act.split(':');
-    if (k === 'fin') showFin(+a, b); else if (k === 'met') showMetric(+a, b); else if (k === 'cmp') showCmp(+a, b); else if (k === 'kpi') showKpi(a, +b); else if (k === 'ev') showEvent(a); else if (k === 'newsall') { S.newsAll = true; $('#newsList').innerHTML = newsList(); }
+    if (k === 'fin') showFin(+a, b); else if (k === 'met') showMetric(+a, b); else if (k === 'cmp') showCmp(+a, b); else if (k === 'kpi') showKpi(a, +b); else if (k === 'ev') showEvent(a); else if (k === 'tlc') { const c = new Set(S.tlCats || TL_DEFAULT); c.has(a) ? c.delete(a) : c.add(a); S.tlCats = [...c]; S.tlAll = false; render(); }
+    else if (k === 'tly') { S.tlYear = a; S.tlAll = false; render(); }
+    else if (k === 'tlall') { S.tlAll = true; $('#tlList').innerHTML = tlList(); }
+    else if (k === 'newsall') { S.newsAll = true; $('#newsList').innerHTML = newsList(); }
     else if (k === 'aud') openPanel(`<div class="panel-head"><h2>${esc(a)}</h2><button class="x">✕</button></div>${evidenceHTML(a)}`);
     e.stopPropagation();
   }

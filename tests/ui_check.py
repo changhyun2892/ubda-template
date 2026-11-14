@@ -23,7 +23,7 @@ from playwright.sync_api import sync_playwright
 
 ROOT = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(__file__).resolve().parent.parent
 SHOTS = Path(sys.argv[2]) if len(sys.argv) > 2 else None
-PAGES = ["overview", "compare", "pl", "quarterly", "ratios", "bs", "stock", "news", "industry", "dart", "audit", "screen"]
+PAGES = ["overview", "compare", "pl", "quarterly", "ratios", "bs", "stock", "timeline", "news", "production", "industry", "dart", "audit", "screen"]
 fails: list[str] = []
 
 

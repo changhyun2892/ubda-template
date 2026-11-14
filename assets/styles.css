@@ -210,3 +210,14 @@ body.screen-mode .chart line { stroke: #1E3A55 !important; }
 .news-item a { color: inherit; text-decoration: none; } .news-item a:hover { text-decoration: underline; }
 .news-time { color: var(--muted); font-variant-numeric: tabular-nums; grid-row: span 2; }
 .news-press { color: var(--muted); font-size: 11px; }
+
+/* 사건 연표 · 생산 */
+.tl-item { display: grid; grid-template-columns: 42px 76px 1fr; gap: 2px 8px; padding: 6px 0; font-size: 12.5px; align-items: start; border-bottom: 1px dashed var(--line2); }
+.tl-item a { color: inherit; text-decoration: none; } .tl-item a:hover { text-decoration: underline; }
+.tl-cat { font-size: 11px; padding: 1px 6px; border-radius: 4px; background: var(--sunk); color: var(--muted); text-align: center; white-space: nowrap; }
+.tl-cat[data-c="실적"], .tl-cat[data-c="정기보고서"] { background: var(--accent-soft); color: var(--accent); }
+.tl-cat[data-c="공급계약"], .tl-cat[data-c="시설투자"] { background: #e6f4ee; color: var(--up); }
+.tl-cat[data-c="소송·제재"] { background: #fbe9e7; color: var(--down); }
+.tl-cat[data-c="합병·분할"], .tl-cat[data-c="최대주주"], .tl-cat[data-c="지분·출자"] { background: var(--warn-soft); color: var(--warn); }
+.ubar { height: 4px; background: var(--line2); border-radius: 2px; margin-top: 3px; overflow: hidden; } .ubar i { display: block; height: 100%; }
+@media (max-width: 640px) { .tl-item { grid-template-columns: 40px 1fr; } .tl-item > span:last-child { grid-column: 1 / -1; } }
