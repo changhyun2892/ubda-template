@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:21 KST",
+    "checked_at": "2026-11-15 00:34 KST",
     "corp_code": "00164779",
     "reports_total": 15,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:21 KST",
+    "checked_at": "2026-11-15 00:35 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 1216000,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:21 KST",
+    "checked_at": "2026-11-15 00:35 KST",
     "spike_days": 35,
     "with_major_disclosure": 9,
     "news_total": 82,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:21 KST",
+    "checked_at": "2026-11-15 00:35 KST",
     "rows": 609,
     "groups": [
       "SK하이닉스",
@@ -46,7 +46,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:21 KST",
+    "checked_at": "2026-11-15 00:35 KST",
     "new": 0,
     "total": 82,
     "first": "2026-11-13 07:40",
@@ -55,16 +55,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:21 KST",
-    "new_share_reports": 15,
-    "new_dividend_reports": 4
+    "checked_at": "2026-11-15 00:34 KST",
+    "new_share_reports": 0,
+    "new_dividend_reports": 0,
+    "new_owner_reports": 15
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:21 KST",
+    "checked_at": "2026-11-15 00:35 KST",
     "rows": 889,
     "as_of": "2026-11-13",
-    "per": 5.33,
-    "pbr": 3.292
+    "per": 5.34,
+    "pbr": 3.295
   }
 }
