@@ -127,7 +127,7 @@ function barLine(el, cats, bars, line, opt = {}) {
   el.innerHTML = s + '</svg>';
   el.querySelectorAll('.bar').forEach((r) => {
     const i = +r.dataset.i, j = r.dataset.j;
-    const html = () => `<b>${esc(cats[i])}</b><br>` + bars.map((b) => `${esc(b.name)}: ${b.values[i] === null ? '데이터 없음' : (opt.tipFmt || eok)(b.values[i])}`).join('<br>') + (line ? `<br>${esc(line.name)}: ${line.values[i] === null ? '데이터 없음' : (line.fmt || pct)(line.values[i])}` : '') + (opt.onClick ? '<br><i>클릭: 근거 보기</i>' : '');
+    const html = () => `<div class="tip-h">${esc(cats[i])}</div>` + bars.map((b) => `<div class="tip-r"><i style="background:${b.color}"></i><span>${esc(b.name)}</span><b>${b.values[i] === null ? '데이터 없음' : (opt.tipFmt || eok)(b.values[i])}</b></div>`).join('') + (line ? `<br>${esc(line.name)}: ${line.values[i] === null ? '데이터 없음' : (line.fmt || pct)(line.values[i])}` : '') + (opt.onClick ? '<br><i>클릭: 근거 보기</i>' : '');
     r.addEventListener('mousemove', (e) => tip.show(e, html()));
     r.addEventListener('mouseleave', () => tip.hide());
     if (opt.onClick) r.addEventListener('click', () => opt.onClick(i, j));
@@ -156,21 +156,23 @@ function lineChart(el, xs, series, markers = [], opt = {}) {
   series.forEach((se) => {
     let d = '', pen = false;
     se.values.forEach((v, i) => { if (v === null || Number.isNaN(v)) { pen = false; return; } d += (pen ? 'L' : 'M') + X(i).toFixed(1) + ',' + Y(v).toFixed(1); pen = true; });
-    s += `<path d="${d}" fill="none" stroke="${se.color}" stroke-width="1.6"/>`;
+    s += `<path class="ln" pathLength="1" d="${d}" fill="none" stroke="${se.color}" stroke-width="1.6"/>`;
   });
   s += `<rect class="hit" x="${m.l}" y="${m.t}" width="${iw}" height="${ih}" fill="transparent"/><line class="cur" y1="${m.t}" y2="${m.t + ih}" stroke="#999" opacity="0"/>`;
   (opt.dots || []).forEach((dt) => { // 급변일 점 (첫 번째 선 위). 클릭하면 opt.onDot(key)
     const i = idx.get(dt.date), v = i === undefined ? null : series[0].values[i]; if (v === null || v === undefined) return;
     s += `<circle class="dot" data-key="${esc(dt.key)}" data-l="${esc(dt.label)}" cx="${X(i)}" cy="${Y(v)}" r="${dt.big ? 5.5 : 4}" fill="${dt.color}" stroke="#fff" stroke-width="1.5" style="cursor:pointer"/>`;
   });
+  s += `<g class="hov" opacity="0" pointer-events="none">${series.map((se) => `<circle r="3.6" fill="${se.color}" stroke="#fff" stroke-width="1.5"/>`).join('')}</g>`;
   el.innerHTML = s + '</svg>';
-  const svg = el.querySelector('svg'), cur = el.querySelector('.cur');
+  const svg = el.querySelector('svg'), cur = el.querySelector('.cur'), hov = el.querySelector('.hov'), hc = [...hov.querySelectorAll('circle')];
   el.querySelector('.hit').addEventListener('mousemove', (e) => {
     const b = svg.getBoundingClientRect(), x = ((e.clientX - b.left) / b.width) * W, i = Math.max(0, Math.min(xs.length - 1, Math.round(((x - m.l) / iw) * (xs.length - 1))));
-    cur.setAttribute('x1', X(i)); cur.setAttribute('x2', X(i)); cur.setAttribute('opacity', 1);
-    tip.show(e, `<b>${xs[i]}</b><br>` + series.map((se) => `${esc(se.name)}: ${se.values[i] === null ? '-' : f(se.values[i])}`).join('<br>'));
+    cur.setAttribute('x1', X(i)); cur.setAttribute('x2', X(i)); cur.setAttribute('opacity', 1); hov.setAttribute('opacity', 1);
+    series.forEach((se, k) => { const v = se.values[i]; hc[k].setAttribute('cx', X(i)); hc[k].setAttribute('cy', v === null || Number.isNaN(v) ? -99 : Y(v)); });
+    tip.show(e, `<div class="tip-h">${esc(xs[i])}</div>` + series.map((se) => `<div class="tip-r"><i style="background:${se.color}"></i><span>${esc(se.name)}</span><b>${se.values[i] === null ? '–' : f(se.values[i])}</b></div>`).join(''));
   });
-  el.querySelector('.hit').addEventListener('mouseleave', () => { tip.hide(); cur.setAttribute('opacity', 0); });
+  el.querySelector('.hit').addEventListener('mouseleave', () => { tip.hide(); cur.setAttribute('opacity', 0); hov.setAttribute('opacity', 0); });
   el.querySelectorAll('.mk').forEach((l) => { l.addEventListener('mousemove', (e) => tip.show(e, esc(l.dataset.l))); l.addEventListener('mouseleave', () => tip.hide()); });
   el.querySelectorAll('.dot').forEach((c) => {
     c.addEventListener('mousemove', (e) => tip.show(e, esc(c.dataset.l).replace(/\n/g, '<br>'))); c.addEventListener('mouseleave', () => tip.hide());
@@ -400,7 +402,7 @@ function tlList() {
   return html;
 }
 function pageTimeline() {
-  if (DISC === null) { loadDisc().then(() => S.page === 'timeline' && render()); return '<div class="empty">공시 목록을 불러오는 중…</div>'; }
+  if (DISC === null) { loadDisc().then(() => S.page === 'timeline' && render()); return '<div class="empty loading">공시 목록을 불러오는 중…</div>'; }
   if (!DISC.length) return `<div class="empty"><b>공시 목록이 아직 없습니다</b>평일 자동 업데이트(collect_events.py)가 돌면 채워집니다.</div>`;
   const cats = new Set(S.tlCats || TL_DEFAULT), years = [...new Set(DISC.map((r) => r.rcept_dt.slice(0, 4)))].sort();
   const cnt = (c) => DISC.filter((r) => r.category === c).length;
@@ -677,7 +679,7 @@ function pageCompare() {
   if (!S.cmp || !cands.some((c) => c.slug === S.cmp)) S.cmp = cands[0].slug;
   const O = OTHER[S.cmp];
   const pick = `<div class="seg seg-wrap">${cands.map((c) => `<button data-cmp="${esc(c.slug)}" aria-pressed="${c.slug === S.cmp}">${esc(c.name)}</button>`).join('')}</div><p class="sub" style="margin:6px 2px 0">${esc(indName)} 산업 ${cands.length + 1}곳 중에서 비교 · 산업이 다르면 손익 구조와 지표 의미가 달라 비교하지 않습니다</p>`;
-  if (!O) { loadOther(S.cmp).then(() => S.page === 'compare' && render()); return `${pick}<div class="empty" style="margin-top:12px">비교 기업 데이터를 불러오는 중…</div>`; }
+  if (!O) { loadOther(S.cmp).then(() => S.page === 'compare' && render()); return `${pick}<div class="empty loading" style="margin-top:12px">비교 기업 데이터를 불러오는 중…</div>`; }
   const me = D.company.name, other = O.company?.name || S.cmp;
   const Y = [...new Set([...YEARS(), ...O.fin.map((r) => +r.year)])].sort().filter((y) => YEARS().includes(y) && O.fin.some((r) => +r.year === y));
   const show = (v, t) => (v === null ? '–' : t === 'won' ? fmt(v / 1e8, 0) : fmt(v, 1) + '%');
@@ -768,6 +770,19 @@ function enableEdit() {
 const DRAW = { industry: drawIndustry, screen: drawScreen, compare: drawCompare, overview: drawOverview, pl: drawPL, quarterly: drawQuarterly, bs: drawBS, stock: drawStock, news: drawNews, timeline: drawTimeline, production: drawProduction };
 const RENDER = { screen: pageScreen, compare: pageCompare, dart: pageDart, overview: pageOverview, pl: pagePL, quarterly: pageQuarterly, ratios: pageRatios, bs: pageBS, stock: pageStock, news: pageNews, timeline: pageTimeline, production: pageProduction, industry: pageIndustry, audit: pageAudit };
 
+let LAST_PAGE = null;
+const REDUCED = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
+/* 숫자 카운트업: 요소 안 첫 숫자(쉼표·소수 유지)를 0 → 값으로 0.8초 */
+function countUp(el) {
+  const tn = [...el.childNodes].find((n) => n.nodeType === 3 && /\d/.test(n.textContent)); if (!tn) return;
+  const txt = tn.textContent, m = txt.match(/-?[\d,]*\.?\d+/); if (!m) return;
+  const raw = m[0], target = parseFloat(raw.replace(/,/g, '')), dec = (raw.split('.')[1] || '').length, comma = raw.includes(',');
+  if (!Number.isFinite(target)) return;
+  const put = (v) => { let s = Math.abs(v).toFixed(dec); if (comma) { const [a, b] = s.split('.'); s = a.replace(/\B(?=(\d{3})+(?!\d))/g, ',') + (b ? '.' + b : ''); } tn.textContent = txt.replace(raw, (v < 0 ? '-' : '') + s); };
+  const t0 = performance.now(), dur = 800;
+  const step = (t) => { const p = Math.min(1, (t - t0) / dur), e = 1 - (1 - p) ** 3; put(target * e); if (p < 1) requestAnimationFrame(step); else tn.textContent = txt; };
+  put(0); requestAnimationFrame(step);
+}
 function render() {
   const [id, title, desc] = PAGES.find((p) => p[0] === S.page);
   $('#pageTitle').textContent = title; $('#pageDesc').textContent = desc;
@@ -778,8 +793,15 @@ function render() {
   const editable = !['screen', 'audit', 'dart'].includes(id);
   $('#editBtn').hidden = !editable; $('#editBtn').setAttribute('aria-pressed', String(S.edit && editable));
   if (!editable) S.edit = false;
-  $('#workspace').innerHTML = `<div class="page">${RENDER[id]()}</div>`;
+  const fresh = id !== LAST_PAGE || !!$('#workspace .loading'); LAST_PAGE = id; // 탭을 바꿨을 때(또는 불러오기 직후)만 효과 — 필터 변경 땐 바로 표시
+  const ws = $('#workspace'); ws.classList.remove('anim');
+  ws.innerHTML = `<div class="page">${RENDER[id]()}</div>`;
   applyOrder();
+  if (fresh && !REDUCED() && id !== 'screen' && !ws.querySelector('.loading')) {
+    ws.querySelectorAll('.kpi, .card').forEach((c, k) => c.style.setProperty('--i', Math.min(k, 12)));
+    void ws.offsetWidth; ws.classList.add('anim'); clearTimeout(render.t); render.t = setTimeout(() => ws.classList.remove('anim'), 1600);
+    ws.querySelectorAll('.kpi-v').forEach(countUp);
+  }
   DRAW[id]?.();
   enableEdit();
   try { history.replaceState(null, '', location.search + '#' + id); } catch (e) { /* 미리보기 환경 */ }
