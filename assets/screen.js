@@ -592,11 +592,11 @@ function safe(fn, id) {
   }
 }
 
-/* 비교 기업: company.json competitors 중 UBDA에 있는 첫 기업 → 없으면 같은 산업의 다른 기업 */
+/* 비교 기업: company.json competitors 중 같은 산업이면서 UBDA에 있는 첫 기업 → 없으면 같은 산업의 다른 기업 (산업이 다르면 비교 안 함) */
 function pickPeer(index) {
   const all = Array.isArray(index?.companies) ? index.companies : [];
   const me = A.company;
-  for (const n of me.competitors || []) { const f = all.find((c) => c.name === n && c.slug !== SLUG && c.has_data !== false); if (f) return f.slug; }
+  for (const n of me.competitors || []) { const f = all.find((c) => c.name === n && c.industry === me.industry && c.slug !== SLUG && c.has_data !== false); if (f) return f.slug; }
   const same = all.filter((c) => c.industry === me.industry && c.slug !== SLUG && c.has_data !== false);
   return same.length ? same[0].slug : null;
 }

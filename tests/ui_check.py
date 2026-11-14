@@ -12,6 +12,7 @@
 from __future__ import annotations
 
 import functools
+import json
 import http.server
 import os
 import sys
@@ -22,7 +23,7 @@ from playwright.sync_api import sync_playwright
 
 ROOT = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(__file__).resolve().parent.parent
 SHOTS = Path(sys.argv[2]) if len(sys.argv) > 2 else None
-PAGES = ["overview", "compare", "pl", "quarterly", "ratios", "bs", "stock", "industry", "dart", "audit", "screen"]
+PAGES = ["overview", "compare", "pl", "quarterly", "ratios", "bs", "stock", "news", "industry", "dart", "audit", "screen"]
 fails: list[str] = []
 
 
@@ -210,6 +211,11 @@ def main() -> int:
                     pg.click('.nav-btn[data-page="compare"]')
                     pg.wait_for_timeout(800)
                     ok("기업 비교 차트 2개", pg.locator("#cp1 svg, #cp2 svg").count() == 2)
+                    _idx = json.loads((ROOT / "companies" / "index.json").read_text(encoding="utf-8"))
+                    _ind = {c["name"]: c["industry"] for c in _idx["companies"]}
+                    _me = json.loads((ROOT / "companies" / slug / "company.json").read_text(encoding="utf-8"))["industry"]
+                    _names = pg.locator("[data-cmp]").all_inner_texts()
+                    ok("기업 비교 후보는 같은 산업만", _names and all(_ind.get(n) == _me for n in _names), ", ".join(_names))
                     pg.click('.nav-btn[data-page="overview"]')
                     pg.wait_for_timeout(200)
                     pg.locator(".chart .bar").first.click()

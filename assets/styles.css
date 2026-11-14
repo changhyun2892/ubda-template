@@ -200,3 +200,13 @@ body.screen-mode .chart line { stroke: #1E3A55 !important; }
 
 /* 메인 스크린: screen.html(1920×1080 무대, 화면 크기에 맞춰 축소)을 작업 영역 전체에 */
 .screen-frame { display: block; width: 100%; height: 100vh; border: 0; background: #0A1628; }
+
+/* 관련 보도 */
+.news-tools { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 8px; font-size: 12px; }
+.news-tools input[type=search] { flex: 1 1 220px; min-width: 0; padding: 7px 10px; border: 1px solid var(--line); border-radius: var(--r-sm); font: inherit; background: var(--surface, #fff); color: inherit; }
+.news-day { font-size: 12px; font-weight: 600; margin: 14px 0 4px; padding-bottom: 4px; border-bottom: 1px solid var(--line2); }
+.news-spike { font-weight: 500; margin-left: 6px; font-size: 11.5px; }
+.news-item { display: grid; grid-template-columns: 42px 1fr; gap: 2px 8px; padding: 5px 0; font-size: 12.5px; }
+.news-item a { color: inherit; text-decoration: none; } .news-item a:hover { text-decoration: underline; }
+.news-time { color: var(--muted); font-variant-numeric: tabular-nums; grid-row: span 2; }
+.news-press { color: var(--muted); font-size: 11px; }

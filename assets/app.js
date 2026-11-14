@@ -12,7 +12,7 @@ const FILE_MAP = {
   company: 'company.json', summary: 'data/summary.json', verify: 'data/verify_report.json', log: 'data/update_log.json',
   fin: 'data/financials.csv', qtr: 'data/quarterly.csv', met: 'data/metrics.csv', ledger: 'data/audit_ledger.csv',
   reg: 'data/source_registry.csv', status: 'data/research_status.csv', kpi: 'data/manual/kpi_values.csv', stock: 'data/stock_daily.csv',
-  reports: 'data/raw/dart_reports.csv', events: 'data/events_auto.csv', evlinks: 'data/event_links.csv', search: 'data/search_trend.csv',
+  reports: 'data/raw/dart_reports.csv', events: 'data/events_auto.csv', evlinks: 'data/event_links.csv', search: 'data/search_trend.csv', news: 'data/raw/news.csv',
 };
 const COMPARE_KEYS = ['company', 'summary', 'fin', 'met', 'qtr', 'ledger', 'reg'];
 
@@ -50,7 +50,7 @@ async function loadAll(slug = SLUG, keys = Object.keys(FILE_MAP)) {
 
 /* ---------------- 2) 계산·형식 도우미 ---------------- */
 let D = {}; // 읽은 데이터
-const S = { page: 'overview', year: null, qmetric: 'revenue', stockMode: 'index', ledgerFilter: 'all', period: 'annual', cmp: null, edit: false };
+const S = { newsQ: '', newsSpike: false, newsAll: false, page: 'overview', year: null, qmetric: 'revenue', stockMode: 'index', ledgerFilter: 'all', period: 'annual', cmp: null, edit: false };
 let INDEX = null; // companies/index.json (기업 비교·질의용)
 const OTHER = {}; // 다른 기업 데이터 캐시
 const N = (s) => (s === undefined || s === null || s === '' ? null : Number(s));
@@ -217,12 +217,13 @@ function showMetric(y, k) {
 const PAGES = [
   ['screen', '메인 스크린', '발표용 관제 화면 · F 키 전체 화면 · Esc 나가기'],
   ['overview', '개요', '핵심 지표와 실적 흐름'],
-  ['compare', '기업 비교', '같은 기준(DART 재무)으로 다른 기업과 비교 — 사업 구성 차이에 유의'],
+  ['compare', '기업 비교', '같은 산업 기업끼리 같은 기준(DART 재무)으로 비교 — 사업 구성 차이에 유의'],
   ['pl', '손익 추이', '연간 손익과 비용 구조'],
   ['quarterly', '분기 실적', '분기별 단일 실적 (Q4 = 연간 − 3분기 누적)'],
   ['ratios', '재무비율', '수익성·안정성·활동성 — 산식과 입력값 공개'],
   ['bs', '재무상태·현금', '자산·부채·자본과 현금흐름'],
   ['stock', '주가', '주가와 시장지수, 급변일과 같은 시기 공시'],
+  ['news', '관련 보도', '네이버 뉴스에서 찾은 이 회사 기사 · 주가 급변일과 같은 날 표시 · 확인 전'],
   ['industry', '산업 KPI', '산업별로 추가 확인할 지표의 확보 현황'],
   ['dart', 'DART 자동 업데이트', '정기보고서를 평일마다 확인해 자동 반영 · 원문 대조 전 값은 따로 표시'],
   ['audit', '출처·검증', '자동 점검 결과, 검증 장부, 출처 목록'],
@@ -363,6 +364,50 @@ function pageStock() {
     `<div class="seg" style="margin-bottom:8px"><button data-sm="index" aria-pressed="${S.stockMode === 'index'}">시작일=100 지수 비교</button><button data-sm="raw" aria-pressed="${S.stockMode === 'raw'}">주가(원)</button></div>` +
     legend(S.stockMode === 'index' ? [['주가', COLORS()[0]], ['시장지수', COLORS()[1]]] : [['종가', COLORS()[0]]]) + '<div class="chart" id="c6"></div>',
     `마지막 ${esc(last.date)} 종가 ${fmt(N(last.close), 0)}원. 점 = 시장 대비 크게 움직인 날(초록 상승 · 빨강 하락, 큰 점은 주요 공시가 같은 시기에 있음). 누르면 같은 시기 공시가 열립니다. 공시와 주가가 같은 시기에 움직였다고 해서 인과관계가 있다는 뜻은 아닙니다. 비수정 종가라 액면분할이 있으면 해석에 주의하세요.`)}${eventsCard()}${searchCard()}</div>`;
+}
+/* 관련 보도 (scripts/collect_news.py → data/raw/news.csv) */
+const SPIKE_NEWS = () => { const m = new Map(); (D.evlinks || []).filter((r) => r.category === '보도').forEach((r) => m.set(r.viewer_url, r.date)); return m; };
+function newsRows() {
+  const q = S.newsQ.trim().toLowerCase(), sp = SPIKE_NEWS();
+  return (D.news || []).filter((r) => (!q || (r.title + ' ' + r.press).toLowerCase().includes(q)) && (!S.newsSpike || sp.has(r.link))).sort((a, b) => (a.pub_dt < b.pub_dt ? 1 : -1));
+}
+function newsList() {
+  const rows = newsRows(), sp = SPIKE_NEWS(), ev = new Map((D.events || []).map((e) => [e.date, e]));
+  if (!rows.length) return `<div class="empty"><b>조건에 맞는 기사가 없습니다</b>${S.newsSpike ? '급변일 전날~당일 기사만 보는 중입니다.' : '검색어를 바꿔 보세요.'}</div>`;
+  const lim = S.newsAll ? rows.length : 150; let html = '', day = '';
+  rows.slice(0, lim).forEach((r) => {
+    const d = r.pub_dt.slice(0, 10);
+    if (d !== day) { day = d; const e = ev.get(d); html += `<div class="news-day">${esc(d)}${e ? ` <span class="news-spike" data-act="ev:${esc(d)}" style="cursor:pointer;color:${e.direction === '하락' ? 'var(--down)' : 'var(--up)'}">주가 급변일 · 시장 대비 ${spct(e.excess_pct)}</span>` : ''}</div>`; }
+    const sd = sp.get(r.link);
+    html += `<div class="news-item"><span class="news-time">${esc(r.pub_dt.slice(11, 16))}</span><a href="${esc(r.link)}" target="_blank" rel="noopener">${esc(r.title)}</a><span class="news-press">${esc(r.press)}${sd && sd !== d ? ` · ${esc(sd)} 급변일 관련 시기` : ''}</span></div>`;
+  });
+  if (rows.length > lim) html += `<button class="tb-btn" data-act="newsall" style="margin-top:10px">나머지 ${rows.length - lim}건 더 보기</button>`;
+  return html;
+}
+function pageNews() {
+  const lg = D.log?.news || {}, all = D.news || [];
+  if (!all.length) return `<div class="empty"><b>${lg.status === '실패' ? '뉴스 수집 실패' : '아직 수집된 기사가 없습니다'}</b>${esc(lg.message || '네이버 API 키가 등록되면 평일 자동 업데이트 때 기사가 쌓입니다.')}</div>`;
+  const sp = SPIKE_NEWS(), first = all.reduce((a, r) => (r.pub_dt < a ? r.pub_dt : a), all[0].pub_dt), last = all.reduce((a, r) => (r.pub_dt > a ? r.pub_dt : a), all[0].pub_dt);
+  const press = Object.entries(all.reduce((m, r) => ((m[r.press] = (m[r.press] || 0) + 1), m), {})).sort((a, b) => b[1] - a[1]).slice(0, 5);
+  const n = newsRows().length;
+  return `<div class="grid">
+    ${card('w6', '날짜별 기사 수', `${esc(first.slice(0, 10))} ~ ${esc(last.slice(0, 10))} · 점 = 주가 급변일 (누르면 같은 시기 공시·보도)`, '<div class="chart" id="cn1"></div>',
+      `기사 ${all.length.toLocaleString()}건 · 급변일 전날~당일 기사 ${sp.size}건 · 많이 나온 매체: ${press.map(([p, c]) => `${esc(p)} ${c}`).join(', ')}`)}
+    ${card('w6', '기사 목록', `제목에 회사명이 들어간 기사만 · 최신순 · ${n.toLocaleString()}건`,
+      `<div class="news-tools"><input id="newsQ" type="search" placeholder="제목·매체 검색 (예: 실적, 수출)" value="${esc(S.newsQ)}" aria-label="기사 검색"><label><input type="checkbox" id="newsSpike" ${S.newsSpike ? 'checked' : ''}> 급변일 전날~당일 기사만</label></div><div id="newsList">${newsList()}</div>`,
+      `출처: NAVER API HUB 뉴스 검색${lg.checked_at ? ` · 마지막 수집 ${esc(lg.checked_at)}` : ''}. 네이버 검색은 최근 1,000건까지만 볼 수 있어 수집을 시작한 날(2026-11-14) 무렵부터 쌓입니다. 제목과 링크만 저장하며, 기사 내용은 원문에서 확인하세요. 주가 급변일과 같은 날의 기사라도 원인이라는 뜻은 아닙니다.`)}
+  </div>`;
+}
+function drawNews() {
+  const all = D.news || []; if (!all.length || !$('#cn1')) return;
+  const cnt = {}; all.forEach((r) => { const d = r.pub_dt.slice(0, 10); cnt[d] = (cnt[d] || 0) + 1; });
+  const d0 = new Date(Object.keys(cnt).sort()[0]), d1 = new Date(Object.keys(cnt).sort().pop()), xs = [];
+  for (let d = d0; d <= d1; d = new Date(d.getTime() + 864e5)) xs.push(d.toISOString().slice(0, 10));
+  const dots = (D.events || []).filter((e) => e.date >= xs[0]).map((e) => ({ date: e.date, key: e.date, big: true, color: e.direction === '하락' ? css('--down') : css('--up'), label: `${e.date} 주가 급변일 · 시장 대비 ${spct(e.excess_pct)}\n누르면 같은 시기 공시·보도` }));
+  lineChart($('#cn1'), xs, [{ name: '기사 수', color: COLORS()[0], values: xs.map((x) => cnt[x] || 0) }], [], { fmt: (v) => fmt(v, 0), h: 200, dots, onDot: showEvent });
+  const upd = () => { $('#newsList').innerHTML = newsList(); const c = document.querySelector('.card[data-k="기사 목록"] .sub'); if (c) c.textContent = `제목에 회사명이 들어간 기사만 · 최신순 · ${newsRows().length.toLocaleString()}건`; };
+  $('#newsQ')?.addEventListener('input', (e) => { S.newsQ = e.target.value; S.newsAll = false; upd(); });
+  $('#newsSpike')?.addEventListener('change', (e) => { S.newsSpike = e.target.checked; S.newsAll = false; upd(); });
 }
 /* 검색 관심도 (scripts/collect_search.py → search_trend.csv) */
 function searchCard() {
@@ -510,16 +555,16 @@ async function loadOther(slug) {
 }
 function cmpCandidates() {
   const all = (INDEX?.companies || []).filter((c) => c.slug !== SLUG && c.has_data);
-  const ind = D.company.industry;
-  return [...all.filter((c) => c.industry === ind), ...all.filter((c) => c.industry !== ind)];
+  return all.filter((c) => c.industry === D.company.industry); // 같은 산업끼리만 비교 (산업이 다르면 손익 구조·지표 의미가 달라짐)
 }
 function pageCompare() {
   if (!D.fin.length) return noData();
   const cands = cmpCandidates();
-  if (!cands.length) return '<div class="empty"><b>비교할 다른 기업이 없습니다</b>기업을 하나 더 추가하면 이 화면에서 비교할 수 있습니다.</div>';
+  const indName = INDEX?.industries?.[D.company.industry]?.name || D.company.industry;
+  if (!cands.length) return `<div class="empty"><b>같은 산업(${esc(indName)})의 다른 기업이 없습니다</b>기업 비교는 같은 산업 안에서만 합니다. 같은 산업의 기업을 추가하면 이 화면에서 비교할 수 있습니다.</div>`;
   if (!S.cmp || !cands.some((c) => c.slug === S.cmp)) S.cmp = cands[0].slug;
   const O = OTHER[S.cmp];
-  const pick = `<div class="seg seg-wrap">${cands.map((c) => `<button data-cmp="${esc(c.slug)}" aria-pressed="${c.slug === S.cmp}">${esc(c.name)}${c.industry !== D.company.industry ? ' (다른 산업)' : ''}</button>`).join('')}</div>`;
+  const pick = `<div class="seg seg-wrap">${cands.map((c) => `<button data-cmp="${esc(c.slug)}" aria-pressed="${c.slug === S.cmp}">${esc(c.name)}</button>`).join('')}</div><p class="sub" style="margin:6px 2px 0">${esc(indName)} 산업 ${cands.length + 1}곳 중에서 비교 · 산업이 다르면 손익 구조와 지표 의미가 달라 비교하지 않습니다</p>`;
   if (!O) { loadOther(S.cmp).then(() => S.page === 'compare' && render()); return `${pick}<div class="empty" style="margin-top:12px">비교 기업 데이터를 불러오는 중…</div>`; }
   const me = D.company.name, other = O.company?.name || S.cmp;
   const Y = [...new Set([...YEARS(), ...O.fin.map((r) => +r.year)])].sort().filter((y) => YEARS().includes(y) && O.fin.some((r) => +r.year === y));
@@ -608,8 +653,8 @@ function enableEdit() {
   });
 }
 
-const DRAW = { industry: drawIndustry, screen: drawScreen, compare: drawCompare, overview: drawOverview, pl: drawPL, quarterly: drawQuarterly, bs: drawBS, stock: drawStock };
-const RENDER = { screen: pageScreen, compare: pageCompare, dart: pageDart, overview: pageOverview, pl: pagePL, quarterly: pageQuarterly, ratios: pageRatios, bs: pageBS, stock: pageStock, industry: pageIndustry, audit: pageAudit };
+const DRAW = { industry: drawIndustry, screen: drawScreen, compare: drawCompare, overview: drawOverview, pl: drawPL, quarterly: drawQuarterly, bs: drawBS, stock: drawStock, news: drawNews };
+const RENDER = { screen: pageScreen, compare: pageCompare, dart: pageDart, overview: pageOverview, pl: pagePL, quarterly: pageQuarterly, ratios: pageRatios, bs: pageBS, stock: pageStock, news: pageNews, industry: pageIndustry, audit: pageAudit };
 
 function render() {
   const [id, title, desc] = PAGES.find((p) => p[0] === S.page);
@@ -641,7 +686,7 @@ function onClick(e) {
   else if (t.dataset.lf) { S.ledgerFilter = t.dataset.lf; render(); }
   else if (t.dataset.act) {
     const [k, a, b] = t.dataset.act.split(':');
-    if (k === 'fin') showFin(+a, b); else if (k === 'met') showMetric(+a, b); else if (k === 'cmp') showCmp(+a, b); else if (k === 'kpi') showKpi(a, +b); else if (k === 'ev') showEvent(a);
+    if (k === 'fin') showFin(+a, b); else if (k === 'met') showMetric(+a, b); else if (k === 'cmp') showCmp(+a, b); else if (k === 'kpi') showKpi(a, +b); else if (k === 'ev') showEvent(a); else if (k === 'newsall') { S.newsAll = true; $('#newsList').innerHTML = newsList(); }
     else if (k === 'aud') openPanel(`<div class="panel-head"><h2>${esc(a)}</h2><button class="x">✕</button></div>${evidenceHTML(a)}`);
     e.stopPropagation();
   }
