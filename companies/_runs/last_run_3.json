@@ -1,41 +1,17 @@
 {
- "started_at": "2026-11-14 22:00:32 KST",
+ "started_at": "2026-11-14 22:39:34 KST",
  "steps": [
   "collect",
   "text",
   "stock",
+  "search",
+  "news",
   "events",
   "build",
   "verify"
  ],
  "companies": {
   "binggrae": {
-   "collect": {
-    "sec": 1.0,
-    "result": 0
-   },
-   "text": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.4,
-    "result": 0
-   },
-   "events": {
-    "sec": 0.9,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.3,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "crown": {
    "collect": {
     "sec": 0.8,
     "result": 0
@@ -45,7 +21,15 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.5,
+    "result": 0
+   },
+   "search": {
+    "sec": 2.1,
+    "result": 0
+   },
+   "news": {
+    "sec": 11.3,
     "result": 0
    },
    "events": {
@@ -53,7 +37,41 @@
     "result": 0
    },
    "build": {
+    "sec": 0.2,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "crown": {
+   "collect": {
+    "sec": 0.7,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
     "sec": 0.3,
+    "result": 0
+   },
+   "search": {
+    "sec": 1.1,
+    "result": 0
+   },
+   "news": {
+    "sec": 11.2,
+    "result": 0
+   },
+   "events": {
+    "sec": 0.7,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -74,12 +92,20 @@
     "sec": 0.2,
     "result": 0
    },
+   "search": {
+    "sec": 1.2,
+    "result": 0
+   },
+   "news": {
+    "sec": 11.5,
+    "result": 0
+   },
    "events": {
     "sec": 0.7,
     "result": 0
    },
    "build": {
-    "sec": 0.5,
+    "sec": 0.3,
     "result": 0
    },
    "verify": {
@@ -88,84 +114,6 @@
    }
   },
   "hdhhi": {
-   "collect": {
-    "sec": 0.7,
-    "result": 0
-   },
-   "text": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.2,
-    "result": 0
-   },
-   "events": {
-    "sec": 0.7,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.3,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "hyundaidept": {
-   "collect": {
-    "sec": 1.0,
-    "result": 0
-   },
-   "text": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.2,
-    "result": 0
-   },
-   "events": {
-    "sec": 0.7,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.3,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "jusung": {
-   "collect": {
-    "sec": 0.9,
-    "result": 0
-   },
-   "text": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.3,
-    "result": 0
-   },
-   "events": {
-    "sec": 0.7,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.3,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "kgm": {
    "collect": {
     "sec": 0.8,
     "result": 0
@@ -178,12 +126,122 @@
     "sec": 0.2,
     "result": 0
    },
+   "search": {
+    "sec": 1.1,
+    "result": 0
+   },
+   "news": {
+    "sec": 11.3,
+    "result": 0
+   },
    "events": {
     "sec": 0.7,
     "result": 0
    },
    "build": {
+    "sec": 0.2,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "hyundaidept": {
+   "collect": {
+    "sec": 0.7,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
     "sec": 0.3,
+    "result": 0
+   },
+   "search": {
+    "sec": 1.1,
+    "result": 0
+   },
+   "news": {
+    "sec": 11.3,
+    "result": 0
+   },
+   "events": {
+    "sec": 0.8,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.2,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "jusung": {
+   "collect": {
+    "sec": 0.8,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.5,
+    "result": 0
+   },
+   "search": {
+    "sec": 1.1,
+    "result": 0
+   },
+   "news": {
+    "sec": 11.1,
+    "result": 0
+   },
+   "events": {
+    "sec": 0.7,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.2,
+    "result": 0
+   },
+   "verify": {
+    "sec": 0.1,
+    "result": 0
+   }
+  },
+  "kgm": {
+   "collect": {
+    "sec": 0.7,
+    "result": 0
+   },
+   "text": {
+    "sec": 0.1,
+    "result": 0
+   },
+   "stock": {
+    "sec": 0.4,
+    "result": 0
+   },
+   "search": {
+    "sec": 1.0,
+    "result": 0
+   },
+   "news": {
+    "sec": 11.2,
+    "result": 0
+   },
+   "events": {
+    "sec": 0.7,
+    "result": 0
+   },
+   "build": {
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -201,7 +259,15 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
+    "result": 0
+   },
+   "search": {
+    "sec": 1.2,
+    "result": 0
+   },
+   "news": {
+    "sec": 11.2,
     "result": 0
    },
    "events": {
@@ -209,7 +275,7 @@
     "result": 0
    },
    "build": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -230,12 +296,20 @@
     "sec": 0.2,
     "result": 0
    },
+   "search": {
+    "sec": 1.0,
+    "result": 0
+   },
+   "news": {
+    "sec": 11.2,
+    "result": 0
+   },
    "events": {
     "sec": 0.7,
     "result": 0
    },
    "build": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -245,7 +319,7 @@
   },
   "netmarble": {
    "collect": {
-    "sec": 0.8,
+    "sec": 1.1,
     "result": 0
    },
    "text": {
@@ -256,12 +330,20 @@
     "sec": 0.2,
     "result": 0
    },
+   "search": {
+    "sec": 1.0,
+    "result": 0
+   },
+   "news": {
+    "sec": 11.0,
+    "result": 0
+   },
    "events": {
     "sec": 0.7,
     "result": 0
    },
    "build": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -271,7 +353,7 @@
   },
   "samsungelec": {
    "collect": {
-    "sec": 0.7,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -279,15 +361,23 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
+    "result": 0
+   },
+   "search": {
+    "sec": 1.0,
+    "result": 0
+   },
+   "news": {
+    "sec": 11.3,
     "result": 0
    },
    "events": {
-    "sec": 1.1,
+    "sec": 0.8,
     "result": 0
    },
    "build": {
-    "sec": 0.4,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -305,7 +395,15 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
+    "result": 0
+   },
+   "search": {
+    "sec": 1.0,
+    "result": 0
+   },
+   "news": {
+    "sec": 11.3,
     "result": 0
    },
    "events": {
@@ -313,7 +411,7 @@
     "result": 0
    },
    "build": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -323,7 +421,7 @@
   },
   "skhynix": {
    "collect": {
-    "sec": 0.9,
+    "sec": 0.7,
     "result": 0
    },
    "text": {
@@ -331,15 +429,23 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
+    "result": 0
+   },
+   "search": {
+    "sec": 1.0,
+    "result": 0
+   },
+   "news": {
+    "sec": 11.3,
     "result": 0
    },
    "events": {
-    "sec": 1.1,
+    "sec": 0.7,
     "result": 0
    },
    "build": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -348,6 +454,6 @@
    }
   }
  },
- "finished_at": "2026-11-14 22:01:02 KST",
+ "finished_at": "2026-11-14 22:42:42 KST",
  "failed": []
 }

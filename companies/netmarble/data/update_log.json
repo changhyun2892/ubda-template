@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:00 KST",
+    "checked_at": "2026-11-14 22:41 KST",
     "corp_code": "00904672",
     "reports_total": 15,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:00 KST",
+    "checked_at": "2026-11-14 22:41 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 32050,
@@ -24,11 +24,33 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:00 KST",
+    "checked_at": "2026-11-14 22:41 KST",
     "spike_days": 40,
     "with_major_disclosure": 15,
+    "news_total": 650,
     "disclosures_total": 282,
     "disclosures_new": 0,
     "rule": "|초과 등락률| ≥ 2.5σ(직전 250거래일) 또는 ≥ 5.0%, 연도별 상위 10일, 공시 창 D-2(다음 날)~D"
+  },
+  "search": {
+    "status": "성공",
+    "checked_at": "2026-11-14 22:41 KST",
+    "rows": 609,
+    "groups": [
+      "넷마블",
+      "크래프톤",
+      "엔씨소프트"
+    ],
+    "last_period": "2026-11-09",
+    "source": "NAVER API HUB 검색어 트렌드 (주 단위, 상대 비율)"
+  },
+  "news": {
+    "status": "성공",
+    "checked_at": "2026-11-14 22:41 KST",
+    "new": 650,
+    "total": 650,
+    "first": "2026-11-05 16:12",
+    "pages": 10,
+    "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   }
 }
