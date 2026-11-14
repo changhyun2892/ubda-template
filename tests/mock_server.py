@@ -45,6 +45,8 @@ class Data:
                                   "thstrm_amount": r["value"], "thstrm_add_amount": ""})
         self.stock = _rows("stock_daily.csv")
         self.extra = []  # 정기보고서 외 공시 (사건 수집 테스트용, pblntf_ty 없이 요청할 때만)
+        self.news = []  # 네이버 뉴스 검색 결과 (테스트에서 채움)
+        self.extra = []  # 정기보고서 외 공시 (사건 수집 테스트용, pblntf_ty 없이 요청할 때만)
         self.calls = defaultdict(int)
 
 
@@ -82,6 +84,8 @@ def make_handler(d: Data):
                 lst.append({"rcept_no": "20240101000001", "rcept_dt": "20240101", "report_nm": "주요사항보고서(자기주식취득결정)"})  # 정기보고서 아님 → 무시되어야 함
                 if "pblntf_ty" not in p:
                     lst += [r for r in d.extra if p["bgn_de"] <= r["rcept_dt"] <= p["end_de"]]
+                if "pblntf_ty" not in p:
+                    lst += [r for r in d.extra if p["bgn_de"] <= r["rcept_dt"] <= p["end_de"]]
                 return self._json({"status": "000", "total_page": 1, "list": lst})
             if u.path == "/api/fnlttSinglAcntAll.json":
                 if d.no_cfs and p["fs_div"] == "CFS":
@@ -103,6 +107,11 @@ def make_handler(d: Data):
                 self.end_headers()
                 self.wfile.write(buf.getvalue())
                 return
+            if u.path == "/search/v1/news":
+                if self.headers.get("X-NCP-APIGW-API-KEY-ID") != "NID" or self.headers.get("X-NCP-APIGW-API-KEY") != "NSECRET":
+                    return self._json({"error": {"errorCode": "200", "message": "Authentication Failed"}}, 401)
+                st, n = int(p.get("start", 1)), int(p.get("display", 10))
+                return self._json({"total": len(d.news), "start": st, "display": n, "items": d.news[st - 1:st - 1 + n]})
             if u.path.startswith("/v8/finance/chart/"):
                 sym = urllib.parse.unquote(u.path.rsplit("/", 1)[1])
                 ts, cl, vol = [], [], []
@@ -112,6 +121,18 @@ def make_handler(d: Data):
                     cl.append(float(r["kospi"]) if sym == "^KS11" and r["kospi"] else (None if sym == "^KS11" else float(r["close"])))
                     vol.append(int(r["volume"]) if r["volume"] else None)
                 return self._json({"chart": {"result": [{"timestamp": ts, "indicators": {"quote": [{"close": cl, "volume": vol}]}}]}})
+            self._json({"error": "not found"}, 404)
+        def do_POST(self):  # noqa: N802
+            u = urllib.parse.urlparse(self.path)
+            d.calls[u.path] += 1
+            if self.headers.get("X-NCP-APIGW-API-KEY-ID") != "NID":
+                return self._json({"error": {"errorCode": "200", "message": "Authentication Failed"}}, 401)
+            body = json.loads(self.rfile.read(int(self.headers.get("Content-Length", 0))).decode("utf-8"))
+            if u.path == "/search-trend/v1/search":
+                d.last_trend = body
+                res = [{"title": g["groupName"], "keywords": g["keywords"], "data": [{"period": "2025-01-06", "ratio": 100 - 10 * i}, {"period": "2025-01-13", "ratio": 50.5 - i}]}
+                       for i, g in enumerate(body["keywordGroups"])]
+                return self._json({"startDate": body["startDate"], "endDate": body["endDate"], "timeUnit": body["timeUnit"], "results": res})
             self._json({"error": "not found"}, 404)
     return H
 

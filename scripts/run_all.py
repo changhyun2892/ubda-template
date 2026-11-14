@@ -2,7 +2,7 @@
 """
 모든 기업을 한 번에 처리 → companies/<기업>/data/ + companies/index.json
 
-    python scripts/run_all.py                    모든 기업: 수집 → 사업보고서 본문 → 주가 → 급변일·공시 → 계산 → 점검 → 기업 목록
+    python scripts/run_all.py                    모든 기업: 수집 → 사업보고서 본문 → 주가 → 검색 관심도 → 뉴스 → 급변일·공시 → 계산 → 점검 → 기업 목록
     python scripts/run_all.py --only ottogi      한 기업만
     python scripts/run_all.py --steps build,verify   수집 없이 계산·점검만 (인터넷 없이 가능)
     python scripts/run_all.py --shard 0/4        기업을 4묶음으로 나눈 것 중 0번째만 (GitHub에서 동시 실행용)
@@ -21,9 +21,9 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-STEPS = {"collect": "collect_dart.py", "text": "collect_business_text.py", "stock": "update_stock.py", "events": "collect_events.py", "build": "build_dataset.py", "verify": "verify_data.py"}
+STEPS = {"collect": "collect_dart.py", "text": "collect_business_text.py", "stock": "update_stock.py", "search": "collect_search.py", "news": "collect_news.py", "events": "collect_events.py", "build": "build_dataset.py", "verify": "verify_data.py"}
 # 단계별 제한 시간(초). 넘기면 그 단계만 중단하고 다음으로 진행 — 한 곳이 막혀도 전체가 멈추지 않게
-LIMIT = {"collect": 600, "text": 300, "stock": 90, "events": 240, "build": 120, "verify": 60}
+LIMIT = {"collect": 600, "text": 300, "stock": 90, "search": 60, "news": 120, "events": 240, "build": 120, "verify": 60}
 
 
 def arg(name: str, default: str | None = None) -> str | None:
@@ -31,7 +31,7 @@ def arg(name: str, default: str | None = None) -> str | None:
 
 
 def main() -> int:
-    steps = (arg("--steps") or "collect,text,stock,events,build,verify").split(",")
+    steps = (arg("--steps") or "collect,text,stock,search,news,events,build,verify").split(",")
     only = arg("--only")
     shard = arg("--shard")  # "i/n": 기업 목록을 n묶음으로 나눠 i번째만 처리 (DART가 느릴 때 동시 실행)
     slugs = []

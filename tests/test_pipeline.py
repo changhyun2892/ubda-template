@@ -48,8 +48,9 @@ def workdir(company: dict | None = None) -> Path:
     return d
 
 
-def run(d: Path, script: str, base: str, key="TESTKEY") -> subprocess.CompletedProcess:
-    env = {**os.environ, "DART_BASE_URL": base + "/api", "YAHOO_HOSTS": base, "DART_API_KEY": key,
+def run(d: Path, script: str, base: str, key="TESTKEY", naver=None) -> subprocess.CompletedProcess:
+    env = {**os.environ, "DART_BASE_URL": base + "/api", "YAHOO_HOSTS": base, "DART_API_KEY": key, "NAVER_API_BASE": base,
+           "NAVER_CLIENT_ID": (naver or ("", ""))[0], "NAVER_CLIENT_SECRET": (naver or ("", ""))[1],
            "NO_PROXY": "127.0.0.1,localhost", "no_proxy": "127.0.0.1,localhost"}
     env.pop("UBDA_COMPANY", None)
     return subprocess.run([sys.executable, str(d / "scripts" / script), "--company", SLUG], env=env, capture_output=True, text=True, cwd=d, timeout=120)
@@ -139,6 +140,23 @@ def main() -> int:
     data.extra = [{"rcept_no": dk + "900001", "rcept_dt": dk, "report_nm": "연결재무제표기준영업(잠정)실적(공정공시)", "flr_nm": "삼양식품"},
                   {"rcept_no": dk + "900002", "rcept_dt": dk, "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서", "flr_nm": "홍길동"},
                   {"rcept_no": "20230105900003", "rcept_dt": "20230105", "report_nm": "단일판매ㆍ공급계약체결", "flr_nm": "삼양식품"}]
+    from datetime import datetime as _dt
+    rfc = _dt.strptime(bd, "%Y-%m-%d").strftime("%a, %d %b %Y 10:00:00 +0900")
+    data.news = [{"title": "<b>삼양식품</b> 실적 발표", "link": "https://n.news.naver.com/a/1", "originallink": "https://www.example.co.kr/1", "pubDate": rfc},
+                 {"title": "라면 업계 소식", "link": "https://n.news.naver.com/a/2", "originallink": "https://www.example.co.kr/2", "pubDate": rfc}]
+    r = run(d, "collect_news.py", base)
+    ok("네이버 키가 없으면 뉴스·검색 관심도는 건너뜀 (종료코드 0)", r.returncode == 0 and "건너뜀" in r.stdout and run(d, "collect_search.py", base).returncode == 0)
+    r = run(d, "collect_news.py", base, naver=("NID", "WRONG"))
+    ok("네이버 키가 틀리면 경고만", r.returncode == 0 and "인증 실패" in r.stdout + r.stderr, (r.stdout + r.stderr).strip()[-70:])
+    r = run(d, "collect_news.py", base, naver=("NID", "NSECRET"))
+    nw = rows(d / "companies" / SLUG / "data" / "raw" / "news.csv")
+    ok("뉴스: 제목에 회사명이 있는 기사만, 태그 제거, 한국 시각으로 저장", len(nw) == 1 and nw[0]["title"] == "삼양식품 실적 발표" and nw[0]["pub_dt"] == bd + " 10:00", str(nw))
+    r = run(d, "collect_news.py", base, naver=("NID", "NSECRET"))
+    ok("뉴스 재실행 시 중복 저장 없음", len(rows(d / "companies" / SLUG / "data" / "raw" / "news.csv")) == 1)
+    r = run(d, "collect_search.py", base, naver=("NID", "NSECRET"))
+    tr = rows(d / "companies" / SLUG / "data" / "search_trend.csv")
+    ok("검색 관심도: 이 기업 + 비교 기업을 한 요청으로 (주 단위)", r.returncode == 0 and data.last_trend["timeUnit"] == "week" and len(data.last_trend["keywordGroups"]) == 1 + 0
+       and tr and tr[0]["is_self"] == "Y", f"{len(tr)}행 · {[g['groupName'] for g in data.last_trend['keywordGroups']]}")
     r = run(d, "collect_events.py", base)
     ev = rows(d / "companies" / SLUG / "data" / "events_auto.csv")
     lk = rows(d / "companies" / SLUG / "data" / "event_links.csv")
@@ -147,6 +165,7 @@ def main() -> int:
        f"{len(ev)}일 · {r.stdout.strip()[-60:]}")
     ok("가장 큰 초과 등락일에 잠정실적 공시가 대표 공시로 연결, 지분 공시는 '기타'", hit is not None and hit["other_count"] == "1"
        and "잠정" in hit["headline"] and hit["categories"].startswith("실적"), str(hit and {k: hit[k] for k in ("date", "headline", "major_count", "other_count")}))
+    ok("급변일 기사가 '보도'로 연결", hit is not None and hit["news_count"] == "1" and any(x["category"] == "보도" and x["date"] == bd for x in lk))
     ok("급변일과 멀리 떨어진 공시는 연결 안 됨", not any(x["rcept_no"] == "20230105900003" for x in lk))
     ok("공시가 없는 급변일도 남김", any(e["major_count"] == "0" for e in ev))
     disc = rows(d / "companies" / SLUG / "data" / "raw" / "dart_disclosures.csv")

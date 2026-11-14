@@ -12,6 +12,8 @@
    처음에는 start_year−1년 1월부터, 그다음부터는 마지막 접수일 7일 전부터만 다시 받는다.
 3) 연결: 급변일 2거래일 전 다음 날 ~ 급변일 당일에 접수된 공시를 붙인다
    (장 마감 뒤·주말 공시는 다음 거래일 주가에 반영되기 때문). 주요 유형만 따로 보이고 나머지는 '기타'로 센다.
+4) data/raw/news.csv(collect_news.py)가 있으면 같은 기간 기사를 '보도'로 붙인다 (보도 후보 · 확인 전).
+   뉴스 검색은 최근 1,000건까지만 돼서, 뉴스 수집을 시작한 뒤의 급변일 위주로 채워진다.
 
 같은 시기에 있었던 공시일 뿐, 주가 변동의 원인이라는 뜻이 아니다. 공시가 없는 급변일도 지우지 않는다.
 주가는 비수정 종가라 액면분할·무상증자일은 가격 착시가 생길 수 있어, 그 공시가 붙으면 note에 적는다.
@@ -178,6 +180,8 @@ def main() -> int:
     for r in disc:  # 분류 규칙을 고치면 저장된 목록도 다시 분류
         r["category"] = category(r["report_nm"])
 
+    news_p = DATA / "raw" / "news.csv"  # collect_news.py (네이버 키가 있을 때만)
+    news = read_csv(news_p) if news_p.exists() else []
     dates = [p[0] for p in pts]
     ev, links = [], []
     for s in days:
@@ -192,19 +196,23 @@ def main() -> int:
         for r in hit:
             links.append({"date": s["date"], "rcept_dt": r["rcept_dt"], "category": r["category"], "major": "Y" if r["category"] in MAJOR else "",
                           "report_nm": r["report_nm"], "flr_nm": r.get("flr_nm", ""), "rcept_no": r["rcept_no"], "viewer_url": r["viewer_url"]})
-        ev.append({**{k: v for k, v in s.items() if k != "i"},
+        nw = [r for r in news if lo_k < r["pub_dt"][:10].replace("-", "") <= hi_k]
+        for r in nw:
+            links.append({"date": s["date"], "rcept_dt": r["pub_dt"][:10].replace("-", ""), "category": "보도", "major": "", "report_nm": r["title"],
+                          "flr_nm": r.get("press", ""), "rcept_no": "", "viewer_url": r["link"]})
+        ev.append({**{k: v for k, v in s.items() if k != "i"}, "news_count": len(nw) if news else "",
                    "window": f"{lo_k[:4]}-{lo_k[4:6]}-{lo_k[6:]} 다음 날 ~ {s['date']}",
                    "major_count": len(major), "other_count": len(hit) - len(major),
                    "headline": (major[0]["report_nm"] if major else ("연결된 주요 공시 없음" if disc else "공시 목록 미수집")),
                    "categories": "·".join(dict.fromkeys(r["category"] for r in major)),
                    "note": " / ".join(notes), "status": "자동 수집 · 같은 시기 공시이며 원인 아님"})
     cols = ["date", "direction", "close", "ret_pct", "index_ret_pct", "excess_pct", "sigma_pct", "z", "volume_ratio", "volume_spike",
-            "rank_in_year", "candidates_in_year", "window", "major_count", "other_count", "headline", "categories", "note", "status"]
+            "rank_in_year", "candidates_in_year", "window", "major_count", "other_count", "news_count", "headline", "categories", "note", "status"]
     write_csv(OUT_EV, cols, ev)
     write_csv(OUT_LK, ["date", "rcept_dt", "category", "major", "report_nm", "flr_nm", "rcept_no", "viewer_url"], links)
     linked = sum(1 for e in ev if e["major_count"])
     info = {"status": "성공" if not err else ("부분 성공" if disc else "공시 미수집"), "checked_at": now, "spike_days": len(ev),
-            "with_major_disclosure": linked, "disclosures_total": len(disc), "disclosures_new": n_new,
+            "with_major_disclosure": linked, "news_total": len(news), "disclosures_total": len(disc), "disclosures_new": n_new,
             "rule": f"|초과 등락률| ≥ {SIGMA_K}σ(직전 {WIN_SIGMA}거래일) 또는 ≥ {ABS_MIN}%, 연도별 상위 {TOP_PER_YEAR}일, 공시 창 D-2(다음 날)~D",
             **({"message": err} if err else {})}
     write_log("events", info)
