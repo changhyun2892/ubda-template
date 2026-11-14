@@ -1,16 +1,17 @@
 {
- "started_at": "2026-11-14 21:34:39 KST",
+ "started_at": "2026-11-14 21:52:54 KST",
  "steps": [
   "collect",
   "text",
   "stock",
+  "events",
   "build",
   "verify"
  ],
  "companies": {
   "apr": {
    "collect": {
-    "sec": 2.0,
+    "sec": 0.8,
     "result": 0
    },
    "text": {
@@ -18,11 +19,15 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.5,
+    "result": 0
+   },
+   "events": {
+    "sec": 4.6,
     "result": 0
    },
    "build": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "verify": {
@@ -32,7 +37,7 @@
   },
   "classys": {
    "collect": {
-    "sec": 1.1,
+    "sec": 0.7,
     "result": 0
    },
    "text": {
@@ -40,7 +45,11 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.5,
+    "result": 0
+   },
+   "events": {
+    "sec": 3.7,
     "result": 0
    },
    "build": {
@@ -54,7 +63,7 @@
   },
   "gsretail": {
    "collect": {
-    "sec": 1.1,
+    "sec": 0.7,
     "result": 0
    },
    "text": {
@@ -62,11 +71,15 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
+    "result": 0
+   },
+   "events": {
+    "sec": 4.4,
     "result": 0
    },
    "build": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "verify": {
@@ -76,7 +89,7 @@
   },
   "hanon": {
    "collect": {
-    "sec": 1.3,
+    "sec": 0.7,
     "result": 0
    },
    "text": {
@@ -84,11 +97,15 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
+    "result": 0
+   },
+   "events": {
+    "sec": 4.4,
     "result": 0
    },
    "build": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "verify": {
@@ -98,7 +115,7 @@
   },
   "hlmando": {
    "collect": {
-    "sec": 1.2,
+    "sec": 0.7,
     "result": 0
    },
    "text": {
@@ -106,11 +123,15 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
+    "result": 0
+   },
+   "events": {
+    "sec": 3.8,
     "result": 0
    },
    "build": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "verify": {
@@ -120,7 +141,7 @@
   },
   "imfg": {
    "collect": {
-    "sec": 1.3,
+    "sec": 0.7,
     "result": 0
    },
    "text": {
@@ -128,11 +149,15 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
+    "result": 0
+   },
+   "events": {
+    "sec": 7.5,
     "result": 0
    },
    "build": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "verify": {
@@ -142,7 +167,7 @@
   },
   "kakaobank": {
    "collect": {
-    "sec": 1.3,
+    "sec": 0.7,
     "result": 0
    },
    "text": {
@@ -150,7 +175,11 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
+    "result": 0
+   },
+   "events": {
+    "sec": 4.1,
     "result": 0
    },
    "build": {
@@ -164,7 +193,7 @@
   },
   "kolmar": {
    "collect": {
-    "sec": 1.1,
+    "sec": 0.7,
     "result": 0
    },
    "text": {
@@ -172,11 +201,15 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
+    "result": 0
+   },
+   "events": {
+    "sec": 4.8,
     "result": 0
    },
    "build": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "verify": {
@@ -186,7 +219,7 @@
   },
   "lghh": {
    "collect": {
-    "sec": 1.1,
+    "sec": 0.7,
     "result": 0
    },
    "text": {
@@ -194,11 +227,15 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
+    "result": 0
+   },
+   "events": {
+    "sec": 3.8,
     "result": 0
    },
    "build": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "verify": {
@@ -208,7 +245,7 @@
   },
   "naver": {
    "collect": {
-    "sec": 1.2,
+    "sec": 0.7,
     "result": 0
    },
    "text": {
@@ -216,11 +253,15 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
+    "result": 0
+   },
+   "events": {
+    "sec": 12.1,
     "result": 0
    },
    "build": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "verify": {
@@ -230,7 +271,7 @@
   },
   "orion": {
    "collect": {
-    "sec": 1.2,
+    "sec": 0.7,
     "result": 0
    },
    "text": {
@@ -238,11 +279,15 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
+    "result": 0
+   },
+   "events": {
+    "sec": 3.6,
     "result": 0
    },
    "build": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "verify": {
@@ -252,7 +297,7 @@
   },
   "samsungsds": {
    "collect": {
-    "sec": 1.1,
+    "sec": 0.7,
     "result": 0
    },
    "text": {
@@ -260,11 +305,15 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
+    "result": 0
+   },
+   "events": {
+    "sec": 4.9,
     "result": 0
    },
    "build": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "verify": {
@@ -274,7 +323,7 @@
   },
   "shinsegae": {
    "collect": {
-    "sec": 1.2,
+    "sec": 0.7,
     "result": 0
    },
    "text": {
@@ -282,7 +331,11 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
+    "result": 0
+   },
+   "events": {
+    "sec": 4.8,
     "result": 0
    },
    "build": {
@@ -296,7 +349,7 @@
   },
   "woorifg": {
    "collect": {
-    "sec": 1.4,
+    "sec": 0.7,
     "result": 0
    },
    "text": {
@@ -304,7 +357,11 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
+    "result": 0
+   },
+   "events": {
+    "sec": 7.6,
     "result": 0
    },
    "build": {
@@ -317,6 +374,6 @@
    }
   }
  },
- "finished_at": "2026-11-14 21:35:04 KST",
+ "finished_at": "2026-11-14 21:54:28 KST",
  "failed": []
 }
