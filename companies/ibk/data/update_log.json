@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:40 KST",
+    "checked_at": "2026-11-14 23:00 KST",
     "corp_code": "00149646",
     "reports_total": 25,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:40 KST",
+    "checked_at": "2026-11-14 23:00 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 19120,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:41 KST",
+    "checked_at": "2026-11-14 23:00 KST",
     "spike_days": 35,
     "with_major_disclosure": 4,
     "news_total": 106,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:40 KST",
+    "checked_at": "2026-11-14 23:00 KST",
     "rows": 609,
     "groups": [
       "기업은행",
@@ -46,8 +46,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:40 KST",
-    "new": 106,
+    "checked_at": "2026-11-14 23:00 KST",
+    "new": 0,
     "total": 106,
     "first": "2026-11-11 13:02",
     "pages": 10,
