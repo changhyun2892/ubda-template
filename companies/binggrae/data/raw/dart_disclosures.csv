@@ -13,7 +13,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20220405001409,20220405,주식등의대량보유상황보고서(약식),국민연금공단,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220405001409
 20220516000975,20220516,분기보고서 (2022.03),빙그레,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220516000975
 20220720800180,20220720,공정거래자율준수프로그램운영현황(안내공시),빙그레,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220720800180
-20220812000681,20220812,[기재정정]사업보고서 (2021.12),빙그레,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220812000681
+20220812000681,20220812,[기재정정]사업보고서 (2021.12),빙그레,연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220812000681
 20220812000710,20220812,반기보고서 (2022.06),빙그레,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220812000710
 20221028000515,20221028,주식등의대량보유상황보고서(일반),김호연,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20221028000515
 20221114001056,20221114,분기보고서 (2022.09),빙그레,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20221114001056
@@ -71,7 +71,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20250320000772,20250320,독립이사의선임ㆍ해임또는중도퇴임에관한신고,빙그레,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250320000772
 20250320800867,20250320,정기주주총회결과,빙그레,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250320800867
 20250401002882,20250401,주식등의대량보유상황보고서(약식),국민연금공단,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250401002882
-20250415800345,20250415,주식소각결정,빙그레,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250415800345
+20250415800345,20250415,주식소각결정,빙그레,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250415800345
 20250418000436,20250418,주식등의대량보유상황보고서(일반),김호연,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250418000436
 20250509800364,20250509,주주명부폐쇄기간또는기준일설정,빙그레,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250509800364
 20250515001055,20250515,분기보고서 (2025.03),빙그레,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250515001055
@@ -111,7 +111,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20260311003689,20260311,주주총회소집공고,빙그레,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311003689
 20260311003700,20260311,의결권대리행사권유참고서류,빙그레,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311003700
 20260311800811,20260311,주주총회소집결의,빙그레,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311800811
-20260311800895,20260311,주식소각결정,빙그레,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311800895
+20260311800895,20260311,주식소각결정,빙그레,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311800895
 20260318001526,20260318,사업보고서 (2025.12),빙그레,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001526
 20260326802679,20260326,정기주주총회결과,빙그레,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260326802679
 20260402001894,20260402,합병등종료보고서(합병),빙그레,,합병·분할,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260402001894
@@ -119,7 +119,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20260515002363,20260515,분기보고서 (2026.03),빙그레,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002363
 20260529800889,20260529,기업지배구조보고서공시,빙그레,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260529800889
 20260811800312,20260811,공정거래자율준수프로그램운영현황(안내공시),빙그레,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811800312
-20260811800318,20260811,주식소각결정,빙그레,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811800318
+20260811800318,20260811,주식소각결정,빙그레,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811800318
 20260814000452,20260814,반기보고서 (2026.06),빙그레,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000452
 20261002000484,20261002,주식등의대량보유상황보고서(약식),국민연금공단,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261002000484
 20261022000457,20261022,임원ㆍ주요주주특정증권등소유상황보고서,국민연금공단,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000457

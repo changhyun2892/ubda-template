@@ -7,8 +7,8 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20220307800565,20220307,주주총회집중일개최사유신고,크라운제과,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220307800565
 20220317001246,20220317,사업보고서 (2021.12),크라운제과,정,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220317001246
 20220317801347,20220317,감사보고서제출,크라운제과,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220317801347
-20220322000905,20220322,[기재정정]사업보고서 (2021.12),크라운제과,정,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220322000905
-20220323000021,20220323,[기재정정]사업보고서 (2021.12),크라운제과,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220323000021
+20220322000905,20220322,[기재정정]사업보고서 (2021.12),크라운제과,정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220322000905
+20220323000021,20220323,[기재정정]사업보고서 (2021.12),크라운제과,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220323000021
 20220325801532,20220325,정기주주총회결과,크라운제과,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220325801532
 20220516001667,20220516,분기보고서 (2022.03),크라운제과,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220516001667
 20220708800379,20220708,신규시설투자등,크라운제과,유,시설투자,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220708800379
@@ -25,7 +25,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20230329802670,20230329,감사보고서제출,크라운제과,유정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230329802670
 20230330000001,20230330,사업보고서 (2022.12),크라운제과,정,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230330000001
 20230330800005,20230330,[첨부정정]감사보고서제출,크라운제과,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230330800005
-20230331000007,20230331,[기재정정]사업보고서 (2022.12),크라운제과,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230331000007
+20230331000007,20230331,[기재정정]사업보고서 (2022.12),크라운제과,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230331000007
 20230331004035,20230331,독립이사의선임ㆍ해임또는중도퇴임에관한신고,크라운제과,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230331004035
 20230331803187,20230331,정기주주총회결과,크라운제과,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230331803187
 20230515001657,20230515,분기보고서 (2023.03),크라운제과,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230515001657

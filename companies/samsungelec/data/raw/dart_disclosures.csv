@@ -726,7 +726,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20250218001524,20250218,주주총회소집공고,삼성전자,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250218001524
 20250218001545,20250218,의결권대리행사권유참고서류,삼성전자,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250218001545
 20250218001596,20250218,[기재정정]주요사항보고서(자기주식취득결정),삼성전자,,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250218001596
-20250218800029,20250218,주식소각결정,삼성전자,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250218800029
+20250218800029,20250218,주식소각결정,삼성전자,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250218800029
 20250218800160,20250218,주주총회소집결의,삼성전자,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250218800160
 20250218800508,20250218,감사보고서제출,삼성전자,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250218800508
 20250218800625,20250218,기타경영사항(자율공시),삼성전자,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250218800625
@@ -3385,7 +3385,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20260330000333,20260330,임원ㆍ주요주주특정증권등소유상황보고서,김보현,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260330000333
 20260330000506,20260330,임원ㆍ주요주주특정증권등소유상황보고서,조성희,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260330000506
 20260331000460,20260331,임원ㆍ주요주주특정증권등소유상황보고서,송기재,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331000460
-20260331800004,20260331,주식소각결정,삼성전자,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331800004
+20260331800004,20260331,주식소각결정,삼성전자,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331800004
 20260403003368,20260403,임원ㆍ주요주주특정증권등소유상황보고서,연지현,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260403003368
 20260403801246,20260403,최대주주등소유주식변동신고서,삼성전자,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260403801246
 20260406003839,20260406,임원ㆍ주요주주특정증권등소유상황보고서,아포테커마띠유,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260406003839

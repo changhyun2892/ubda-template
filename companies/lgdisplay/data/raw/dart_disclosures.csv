@@ -38,7 +38,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20220427000753,20220427,독립이사의선임ㆍ해임또는중도퇴임에관한신고,LG디스플레이,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220427000753
 20220427800002,20220427,타인에대한채무보증결정,LG디스플레이,유정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220427800002
 20220427800221,20220427,연결재무제표기준영업(잠정)실적(공정공시),LG디스플레이,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220427800221
-20220429800737,20220429,해외증권거래소등에신고한사업보고서등의국내신고,LG디스플레이,유,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220429800737
+20220429800737,20220429,해외증권거래소등에신고한사업보고서등의국내신고,LG디스플레이,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220429800737
 20220429800763,20220429,기업설명회(IR)개최(안내공시),LG디스플레이,유정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220429800763
 20220429800815,20220429,[기재정정]기업설명회(IR)개최(안내공시),LG디스플레이,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220429800815
 20220513001469,20220513,동일인등출자계열회사와의상품ㆍ용역거래변경,LG디스플레이,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220513001469
@@ -109,7 +109,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20230426800333,20230426,기업설명회(IR)개최(안내공시),LG디스플레이,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230426800333
 20230426800917,20230426,기타경영사항(자율공시)(ESG위원회 개최 결과),LG디스플레이,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230426800917
 20230428000127,20230428,주식등의대량보유상황보고서(약식),국민연금공단,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230428000127
-20230428800137,20230428,해외증권거래소등에신고한사업보고서등의국내신고,LG디스플레이,유,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230428800137
+20230428800137,20230428,해외증권거래소등에신고한사업보고서등의국내신고,LG디스플레이,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230428800137
 20230515002401,20230515,분기보고서 (2023.03),LG디스플레이,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230515002401
 20230530000838,20230530,대규모기업집단현황공시[연1회공시및1/4분기용(개별회사)],LG디스플레이,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230530000838
 20230531800671,20230531,기업지배구조보고서공시,LG디스플레이,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230531800671
@@ -219,7 +219,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20240425000176,20240425,특수관계인에대한부동산매도,LG디스플레이,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240425000176
 20240425800236,20240425,연결재무제표기준영업(잠정)실적(공정공시),LG디스플레이,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240425800236
 20240425800492,20240425,기업설명회(IR)개최(안내공시),LG디스플레이,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240425800492
-20240430800447,20240430,해외증권거래소등에신고한사업보고서등의국내신고,LG디스플레이,유,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240430800447
+20240430800447,20240430,해외증권거래소등에신고한사업보고서등의국내신고,LG디스플레이,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240430800447
 20240513000398,20240513,동일인등출자계열회사와의상품ㆍ용역거래변경,LG디스플레이,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240513000398
 20240516000527,20240516,분기보고서 (2024.03),LG디스플레이,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240516000527
 20240530001521,20240530,대규모기업집단현황공시[연1회공시및1/4분기용(개별회사)],LG디스플레이,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240530001521
@@ -281,7 +281,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20250424800303,20250424,연결재무제표기준영업(잠정)실적(공정공시),LG디스플레이,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250424800303
 20250428800729,20250428,기업설명회(IR)개최(안내공시),LG디스플레이,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250428800729
 20250428800739,20250428,기업설명회(IR)개최(안내공시),LG디스플레이,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250428800739
-20250429800429,20250429,해외증권거래소등에신고한사업보고서등의국내신고,LG디스플레이,유,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250429800429
+20250429800429,20250429,해외증권거래소등에신고한사업보고서등의국내신고,LG디스플레이,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250429800429
 20250508000448,20250508,임원ㆍ주요주주특정증권등소유상황보고서,김성희,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250508000448
 20250513000325,20250513,임원ㆍ주요주주특정증권등소유상황보고서,이기상,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250513000325
 20250515000488,20250515,분기보고서 (2025.03),LG디스플레이,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250515000488
@@ -369,7 +369,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20260423800267,20260423,연결재무제표기준영업(잠정)실적(공정공시),LG디스플레이,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260423800267
 20260424800035,20260424,기업설명회(IR)개최(안내공시),LG디스플레이,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260424800035
 20260427000227,20260427,임원ㆍ주요주주특정증권등소유상황보고서,정훈,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260427000227
-20260429800268,20260429,해외증권거래소등에신고한사업보고서등의국내신고,LG디스플레이,유,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260429800268
+20260429800268,20260429,해외증권거래소등에신고한사업보고서등의국내신고,LG디스플레이,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260429800268
 20260512800083,20260512,기업설명회(IR)개최(안내공시),LG디스플레이,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260512800083
 20260515000570,20260515,분기보고서 (2026.03),LG디스플레이,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000570
 20260528800124,20260528,해외증권거래소등에신고한주요공시사항의국내신고,LG디스플레이,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260528800124

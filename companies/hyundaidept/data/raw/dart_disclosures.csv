@@ -212,7 +212,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20241101800101,20241101,결산실적공시예고(안내공시),현대백화점,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241101800101
 20241101800120,20241101,기업설명회(IR)개최(안내공시),현대백화점,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241101800120
 20241107000225,20241107,동일인등출자계열회사와의상품ㆍ용역거래,현대백화점,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241107000225
-20241107800123,20241107,주식소각결정,현대백화점,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241107800123
+20241107800123,20241107,주식소각결정,현대백화점,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241107800123
 20241107800127,20241107,기업가치제고계획(자율공시),현대백화점,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241107800127
 20241107800132,20241107,연결재무제표기준영업(잠정)실적(공정공시),현대백화점,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241107800132
 20241107800165,20241107,기업설명회(IR)개최(안내공시),현대백화점,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241107800165
@@ -341,7 +341,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20260211800398,20260211,매출액또는손익구조30%(대규모법인은15%)이상변경,현대백화점,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260211800398
 20260211800400,20260211,현금ㆍ현물배당결정,현대백화점,유정,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260211800400
 20260211800403,20260211,현금ㆍ현물배당을위한주주명부폐쇄(기준일)결정,현대백화점,유,배당,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260211800403
-20260211800410,20260211,주식소각결정,현대백화점,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260211800410
+20260211800410,20260211,주식소각결정,현대백화점,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260211800410
 20260213001067,20260213,지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항,현대백화점,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260213001067
 20260225003912,20260225,주주총회소집공고,현대백화점,정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260225003912
 20260225003928,20260225,의결권대리행사권유참고서류,현대백화점,정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260225003928
@@ -413,7 +413,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20261028800286,20261028,기업설명회(IR)개최(안내공시),현대백화점,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028800286
 20261104000252,20261104,동일인등출자계열회사와의상품ㆍ용역거래,현대백화점,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261104000252
 20261104800269,20261104,연결재무제표기준영업(잠정)실적(공정공시),현대백화점,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261104800269
-20261104800274,20261104,주식소각결정,현대백화점,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261104800274
+20261104800274,20261104,주식소각결정,현대백화점,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261104800274
 20261104800302,20261104,기업설명회(IR)개최(안내공시),현대백화점,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261104800302
 20261106000164,20261106,임원ㆍ주요주주특정증권등거래계획보고서,현대지에프홀딩스,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106000164
 20261111800332,20261111,기업설명회(IR)개최(안내공시),현대백화점,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800332

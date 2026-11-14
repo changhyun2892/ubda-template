@@ -18,7 +18,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20220414800739,20220414,기타시장안내,유가증권시장본부,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220414800739
 20220421800671,20220421,기타시장안내(상장폐지 이의신청),유가증권시장본부,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220421800671
 20220425800584,20220425,기타시장안내(개선계획 이행여부 심의요청서 접수),유가증권시장본부,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220425800584
-20220427000218,20220427,[기재정정]사업보고서 (2021.12),KG모빌리티,연,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220427000218
+20220427000218,20220427,[기재정정]사업보고서 (2021.12),KG모빌리티,연,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220427000218
 20220503800265,20220503,영업(잠정)실적(공정공시),KG모빌리티,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220503800265
 20220513800302,20220513,기타경영사항(자율공시),KG모빌리티,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220513800302
 20220513801332,20220513,기타시장안내(개선기간 부여),유가증권시장본부,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220513801332
@@ -117,7 +117,7 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20221114002128,20221114,분기보고서 (2022.09),KG모빌리티,정,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20221114002128
 20221115000182,20221115,주식등의대량보유상황보고서(일반),MahindraandMahindraLimited,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20221115000182
 20221115000184,20221115,임원ㆍ주요주주특정증권등소유상황보고서,MahindraandMahindraLimited,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20221115000184
-20221116000024,20221116,[기재정정]분기보고서 (2022.09),KG모빌리티,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20221116000024
+20221116000024,20221116,[기재정정]분기보고서 (2022.09),KG모빌리티,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20221116000024
 20221124800468,20221124,생산중단,KG모빌리티,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20221124800468
 20221125000224,20221125,[기재정정]주요사항보고서(감자결정),KG모빌리티,,증자·사채,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20221125000224
 20221201800259,20221201,영업(잠정)실적(공정공시),KG모빌리티,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20221201800259
