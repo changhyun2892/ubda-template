@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:45 KST",
+    "checked_at": "2026-11-15 00:19 KST",
     "corp_code": "00904672",
     "reports_total": 15,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:45 KST",
+    "checked_at": "2026-11-15 00:19 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 32050,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:45 KST",
+    "checked_at": "2026-11-15 00:20 KST",
     "spike_days": 40,
     "with_major_disclosure": 15,
     "news_total": 650,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:45 KST",
+    "checked_at": "2026-11-15 00:19 KST",
     "rows": 609,
     "groups": [
       "넷마블",
@@ -46,11 +46,25 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:45 KST",
+    "checked_at": "2026-11-15 00:19 KST",
     "new": 0,
     "total": 650,
     "first": "2026-11-05 16:12",
     "pages": 2,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
+  },
+  "shares": {
+    "status": "성공",
+    "checked_at": "2026-11-15 00:19 KST",
+    "new_share_reports": 15,
+    "new_dividend_reports": 4
+  },
+  "valuation": {
+    "status": "성공",
+    "checked_at": "2026-11-15 00:20 KST",
+    "rows": 889,
+    "as_of": "2026-11-13",
+    "per": 6.34,
+    "pbr": 0.426
   }
 }

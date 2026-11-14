@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:44 KST",
+    "checked_at": "2026-11-15 00:18 KST",
     "corp_code": "00105873",
     "reports_total": 15,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:44 KST",
+    "checked_at": "2026-11-15 00:18 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 7030,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:45 KST",
+    "checked_at": "2026-11-15 00:19 KST",
     "spike_days": 28,
     "with_major_disclosure": 6,
     "news_total": 363,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:44 KST",
+    "checked_at": "2026-11-15 00:18 KST",
     "rows": 609,
     "groups": [
       "LG디스플레이",
@@ -46,11 +46,25 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-14 23:44 KST",
+    "checked_at": "2026-11-15 00:18 KST",
     "new": 0,
     "total": 363,
     "first": "2026-10-22 14:44",
     "pages": 6,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
+  },
+  "shares": {
+    "status": "성공",
+    "checked_at": "2026-11-15 00:18 KST",
+    "new_share_reports": 15,
+    "new_dividend_reports": 4
+  },
+  "valuation": {
+    "status": "성공",
+    "checked_at": "2026-11-15 00:19 KST",
+    "rows": 895,
+    "as_of": "2026-11-13",
+    "per": null,
+    "pbr": 0.459
   }
 }
