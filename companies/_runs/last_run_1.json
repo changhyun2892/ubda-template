@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-14 22:39:34 KST",
+ "started_at": "2026-11-14 22:59:41 KST",
  "steps": [
   "collect",
   "text",
@@ -13,7 +13,7 @@
  "companies": {
   "apr": {
    "collect": {
-    "sec": 1.3,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
@@ -21,19 +21,19 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.4,
+    "sec": 0.3,
     "result": 0
    },
    "search": {
-    "sec": 2.4,
+    "sec": 2.3,
     "result": 0
    },
    "news": {
-    "sec": 12.5,
+    "sec": 1.4,
     "result": 0
    },
    "events": {
-    "sec": 1.0,
+    "sec": 1.2,
     "result": 0
    },
    "build": {
@@ -59,11 +59,11 @@
     "result": 0
    },
    "search": {
-    "sec": 1.3,
+    "sec": 1.2,
     "result": 0
    },
    "news": {
-    "sec": 12.6,
+    "sec": 2.6,
     "result": 0
    },
    "events": {
@@ -81,7 +81,7 @@
   },
   "gsretail": {
    "collect": {
-    "sec": 1.3,
+    "sec": 1.1,
     "result": 0
    },
    "text": {
@@ -97,11 +97,11 @@
     "result": 0
    },
    "news": {
-    "sec": 12.6,
+    "sec": 3.9,
     "result": 0
    },
    "events": {
-    "sec": 0.9,
+    "sec": 1.1,
     "result": 0
    },
    "build": {
@@ -123,23 +123,23 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.4,
     "result": 0
    },
    "search": {
-    "sec": 1.4,
+    "sec": 1.2,
     "result": 0
    },
    "news": {
-    "sec": 12.8,
+    "sec": 5.1,
     "result": 0
    },
    "events": {
-    "sec": 0.9,
+    "sec": 1.0,
     "result": 0
    },
    "build": {
-    "sec": 0.4,
+    "sec": 0.3,
     "result": 0
    },
    "verify": {
@@ -149,7 +149,7 @@
   },
   "hlmando": {
    "collect": {
-    "sec": 1.3,
+    "sec": 1.2,
     "result": 0
    },
    "text": {
@@ -165,11 +165,11 @@
     "result": 0
    },
    "news": {
-    "sec": 12.8,
+    "sec": 1.4,
     "result": 0
    },
    "events": {
-    "sec": 1.0,
+    "sec": 0.9,
     "result": 0
    },
    "build": {
@@ -199,11 +199,11 @@
     "result": 0
    },
    "news": {
-    "sec": 12.7,
+    "sec": 13.2,
     "result": 0
    },
    "events": {
-    "sec": 0.9,
+    "sec": 1.0,
     "result": 0
    },
    "build": {
@@ -233,7 +233,7 @@
     "result": 0
    },
    "news": {
-    "sec": 12.8,
+    "sec": 1.3,
     "result": 0
    },
    "events": {
@@ -251,7 +251,7 @@
   },
   "kolmar": {
    "collect": {
-    "sec": 1.3,
+    "sec": 1.1,
     "result": 0
    },
    "text": {
@@ -267,7 +267,7 @@
     "result": 0
    },
    "news": {
-    "sec": 12.7,
+    "sec": 2.5,
     "result": 0
    },
    "events": {
@@ -293,7 +293,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "search": {
@@ -301,11 +301,11 @@
     "result": 0
    },
    "news": {
-    "sec": 13.0,
+    "sec": 5.1,
     "result": 0
    },
    "events": {
-    "sec": 0.9,
+    "sec": 1.1,
     "result": 0
    },
    "build": {
@@ -319,7 +319,7 @@
   },
   "naver": {
    "collect": {
-    "sec": 1.3,
+    "sec": 1.1,
     "result": 0
    },
    "text": {
@@ -335,11 +335,11 @@
     "result": 0
    },
    "news": {
-    "sec": 12.9,
+    "sec": 12.4,
     "result": 0
    },
    "events": {
-    "sec": 1.3,
+    "sec": 1.2,
     "result": 0
    },
    "build": {
@@ -369,11 +369,11 @@
     "result": 0
    },
    "news": {
-    "sec": 12.6,
+    "sec": 1.3,
     "result": 0
    },
    "events": {
-    "sec": 1.1,
+    "sec": 0.9,
     "result": 0
    },
    "build": {
@@ -387,7 +387,7 @@
   },
   "samsungsds": {
    "collect": {
-    "sec": 1.3,
+    "sec": 1.1,
     "result": 0
    },
    "text": {
@@ -407,7 +407,7 @@
     "result": 0
    },
    "events": {
-    "sec": 1.3,
+    "sec": 1.2,
     "result": 0
    },
    "build": {
@@ -429,7 +429,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "search": {
@@ -437,11 +437,11 @@
     "result": 0
    },
    "news": {
-    "sec": 12.8,
+    "sec": 12.7,
     "result": 0
    },
    "events": {
-    "sec": 1.3,
+    "sec": 1.1,
     "result": 0
    },
    "build": {
@@ -455,7 +455,7 @@
   },
   "woorifg": {
    "collect": {
-    "sec": 1.5,
+    "sec": 1.3,
     "result": 0
    },
    "text": {
@@ -463,7 +463,7 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "search": {
@@ -488,6 +488,6 @@
    }
   }
  },
- "finished_at": "2026-11-14 22:43:34 KST",
+ "finished_at": "2026-11-14 23:02:10 KST",
  "failed": []
 }

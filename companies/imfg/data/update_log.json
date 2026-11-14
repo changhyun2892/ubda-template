@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:41 KST",
+    "checked_at": "2026-11-14 23:00 KST",
     "corp_code": "00878915",
     "reports_total": 25,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:41 KST",
+    "checked_at": "2026-11-14 23:00 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 15750,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:41 KST",
+    "checked_at": "2026-11-14 23:00 KST",
     "spike_days": 28,
     "with_major_disclosure": 7,
     "news_total": 54,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:41 KST",
+    "checked_at": "2026-11-14 23:00 KST",
     "rows": 537,
     "groups": [
       "iM금융지주",
@@ -46,8 +46,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:41 KST",
-    "new": 54,
+    "checked_at": "2026-11-14 23:00 KST",
+    "new": 0,
     "total": 54,
     "first": "2026-10-13 07:00",
     "pages": 10,

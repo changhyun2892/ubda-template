@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:43 KST",
+    "checked_at": "2026-11-14 23:01 KST",
     "corp_code": "01350869",
     "reports_total": 18,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:43 KST",
+    "checked_at": "2026-11-14 23:01 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 32500,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:43 KST",
+    "checked_at": "2026-11-14 23:02 KST",
     "spike_days": 27,
     "with_major_disclosure": 5,
     "news_total": 50,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:43 KST",
+    "checked_at": "2026-11-14 23:01 KST",
     "rows": 812,
     "groups": [
       "우리금융지주",
@@ -47,8 +47,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-14 22:43 KST",
-    "new": 50,
+    "checked_at": "2026-11-14 23:01 KST",
+    "new": 0,
     "total": 50,
     "first": "2026-10-23 16:21",
     "pages": 10,
