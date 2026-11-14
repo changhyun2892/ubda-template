@@ -206,7 +206,7 @@ body.no-gl::before{content:"";position:fixed;inset:0;opacity:.6;background-image
     <div class="content">
       <div class="kicker">UBDA · Management Dashboard</div>
       <h1>기업의 경영을,<span class="g">한 화면의 대시보드로.</span></h1>
-      <p class="lead">기업의 공시와 주가를 같은 기준의 대시보드로 정리했습니다. <br>구체를 누르며 산업에서 기업까지 찾아 들어갑니다.</p>
+      <p class="lead">기업의 공시와 주가를 같은 기준의 대시보드로 정리했습니다. <br>점을 따라 산업에서 기업까지 들어가, 누르면 대시보드가 열립니다.</p>
       <div class="cta">
         <button class="pill big" type="button" data-enter>기업 네트워크 보기 <span class="dot"></span></button>
         <button class="text-link" type="button" data-go="1">구조 보기</button>
@@ -221,7 +221,7 @@ body.no-gl::before{content:"";position:fixed;inset:0;opacity:.6;background-image
     <div class="content">
       <div class="kicker">Structure</div>
       <h2>가운데에서 시작해,<span class="g">기업까지 펼쳐집니다.</span></h2>
-      <p class="lead">경영분석 CORE에서 <span data-n="ind">9</span>개 산업이 뻗어 나갑니다. <br>산업을 누르면 카테고리가, 카테고리를 누르면 기업이 열립니다.</p>
+      <p class="lead">경영분석 CORE에서 <span data-n="ind">9</span>개 산업이 뻗어 나갑니다. <br>산업·카테고리를 누르면 그쪽으로 다가가고, 기업을 누르면 대시보드가 열립니다.</p>
     </div>
     <div class="ring-labels">
       <div class="rl l p1 live"><div class="t"><i>I</i>CORE</div><div class="d"><span class="st">Center</span>경영분석의 중심</div></div>
@@ -252,7 +252,7 @@ body.no-gl::before{content:"";position:fixed;inset:0;opacity:.6;background-image
       <div class="kicker">The Network</div>
       <h2>한 화면에 담은,<span class="g"><span data-n="ind">9</span>개 산업과 <span data-n="co">54</span>개 기업.</span></h2>
       <div class="stats">
-        <div class="stat"><div class="n" data-count="9" data-key="ind" data-fmt="int">9<small>개</small></div><div class="l">산업</div><div class="s">경영분석 CORE에서 뻗어 나가는 구체</div></div>
+        <div class="stat"><div class="n" data-count="9" data-key="ind" data-fmt="int">9<small>개</small></div><div class="l">산업</div><div class="s">경영분석 CORE에서 뻗어 나가는 가지</div></div>
         <div class="stat"><div class="n" data-count="54" data-key="co" data-fmt="int">54<small>개</small></div><div class="l">기업</div><div class="s">기업마다 공시 기반 대시보드</div></div>
         <div class="stat"><div class="n" data-count="3" data-fmt="int">3<small>단계</small></div><div class="l">탐색</div><div class="s">산업 → 카테고리 → 기업</div></div>
       </div>
@@ -288,13 +288,13 @@ body.no-gl::before{content:"";position:fixed;inset:0;opacity:.6;background-image
        sessionStorage에 ubda_entered=1 을 남기고 index.html 로 이동.
        index.html <head>의 한 줄 스크립트가 이 표시를 보고 랜딩으로 되돌리지 않는다
        (같은 탭에서는 다시 랜딩이 뜨지 않음 · 새 탭/새 창에서는 다시 랜딩부터)
-   · 숫자는 04 섹션에만: 산업·기업 수는 UBDA 기업 네트워크 화면 기준 (2026-11-14). 기업이 늘면 04 섹션과 01·02의 숫자를 함께 고칠 것
+   · 산업·기업 수는 companies/index.json에서 자동으로 셈 (01·02·04 섹션 함께 바뀜, 못 읽으면 '–')
    ===================================================================== */
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const REDUCED=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
 const inFrame=(()=>{try{return window.parent!==window;}catch(e){return true;}})();
 const PREVIEW=/[?&]preview\b/.test(location.search);
-const HOME='index.html';                                  // 들어갈 화면 (3D 기업 네트워크)
+const HOME='index.html';                                  // 들어갈 화면 (기업 네트워크 그래프)
 function markEntered(){ try{ sessionStorage.setItem('ubda_entered','1'); }catch(e){} }
 const SCENES=5;
 const sections=$$('main section');
