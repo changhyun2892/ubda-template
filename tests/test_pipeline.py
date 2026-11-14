@@ -126,6 +126,25 @@ def main() -> int:
     ok("판매비와관리비 합계 계정이 있으면 그대로", next(r for r in cd.to_rows(items2, rep, "CFS") if r["metric"] == "sga")["value"] == 90)
     os.chdir(REPO)
 
+    print("\n[1-0] 주식 수·배당 → 밸류에이션")
+    r = run(d, "collect_shares.py", base)
+    shr = rows(d / "companies" / SLUG / "data" / "raw" / "dart_shares.csv")
+    ok("주식 수: 정기보고서마다 보통주·우선주 행 저장", r.returncode == 0 and len({x["rcept_no"] for x in shr}) >= 12, f"{len(shr)}행 · {r.stdout.strip()[-50:]}")
+    n_api = data.calls["/api/stockTotqySttus.json"]
+    run(d, "collect_shares.py", base)
+    ok("주식 수 재실행 시 다시 받지 않음", data.calls["/api/stockTotqySttus.json"] == n_api)
+    r = run(d, "build_valuation.py", base)
+    vj = json.loads((d / "companies" / SLUG / "data" / "valuation.json").read_text(encoding="utf-8"))
+    vd = rows(d / "companies" / SLUG / "data" / "valuation_daily.csv")
+    last = vd[-1]
+    exp_mcap = int(last["close"]) * 7533015
+    ok("시가총액 = 종가 × 보통주 발행주식총수", int(last["market_cap"]) == exp_mcap, f"{last['date']} {int(last['market_cap']):,}")
+    eps = vj["inputs"]["ttm_net_income"] / 7433015
+    ok("PER = 종가 ÷ (최근 4분기 순이익 ÷ 유통주식수)", vj["per"] and abs(vj["per"] - int(last["close"]) / eps) < 0.01, f"PER {vj['per']} · TTM {vj['inputs']['ttm_period']}")
+    ok("PBR·배당수익률 계산 (주당 배당 3,500원)", vj["pbr"] and abs(vj["div_yield_pct"] - 3500 / int(last["close"]) * 100) < 0.001, f"PBR {vj['pbr']} · 배당 {vj['div_yield_pct']}%")
+    first_q = next(x for x in vd if x["per"])
+    ok("보고서 접수 전 날짜에는 그 실적을 쓰지 않음 (첫 PER은 2022 사업보고서 접수 이후)", first_q["date"] >= "2023-03-21", first_q["date"])
+
     print("\n[1-1] 주가 급변일 + 같은 시기 공시 자동 연결")
     fx = rows(HERE / "fixtures" / "stock_daily.csv")
     best, bd = 0, None

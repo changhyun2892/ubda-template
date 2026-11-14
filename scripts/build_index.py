@@ -36,6 +36,8 @@ def main() -> int:
         slug = p.parent.name
         sp = p.parent / "data" / "summary.json"
         sm = json.loads(sp.read_text(encoding="utf-8")) if sp.exists() else {}
+        vp = p.parent / "data" / "valuation.json"
+        vj = json.loads(vp.read_text(encoding="utf-8")) if vp.exists() else {}
         companies.append({
             "slug": slug, "company_id": cfg["company_id"], "name": cfg["name"], "name_en": cfg.get("name_en", ""),
             "stock_code": cfg.get("stock_code", ""), "industry": cfg["industry"], "categories": cfg.get("categories", []),
@@ -44,6 +46,7 @@ def main() -> int:
             "latest_year": sm.get("latest_year"), "kpis": sm.get("kpis"), "verification": sm.get("verification"),
             "industry_kpis_found": sm.get("industry_kpis_found"), "industry_kpis_total": sm.get("industry_kpis_total"),
             "updated_at": sm.get("updated_at", ""),
+            "valuation": {k: vj.get(k) for k in ("as_of", "market_cap", "per", "pbr", "div_yield_pct")} if vj else None,
         })
 
     nodes = [{"id": "core", "type": "core", "label": "경영분석 CORE"}]

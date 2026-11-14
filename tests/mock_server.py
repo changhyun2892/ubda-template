@@ -94,6 +94,15 @@ def make_handler(d: Data):
                     return self._json({"status": "013", "message": "조회된 데이타가 없습니다."})
                 its = d.items.get((p["bsns_year"], p["reprt_code"]), [])
                 return self._json({"status": "000", "list": its} if its else {"status": "013", "message": "조회된 데이타가 없습니다."})
+            if u.path == "/api/stockTotqySttus.json":
+                return self._json({"status": "000", "list": [
+                    {"se": "보통주", "istc_totqy": "7,533,015", "tesstk_co": "100,000", "distb_stock_co": "7,433,015"},
+                    {"se": "우선주", "istc_totqy": "-", "tesstk_co": "-", "distb_stock_co": "-"},
+                    {"se": "합계", "istc_totqy": "7,533,015", "tesstk_co": "100,000", "distb_stock_co": "7,433,015"}]})
+            if u.path == "/api/alotMatter.json":
+                return self._json({"status": "000", "list": [
+                    {"se": "주당 현금배당금(원)", "stock_knd": "보통주", "thstrm": "3,500", "frmtrm": "1,000"},
+                    {"se": "(연결)현금배당성향(%)", "stock_knd": "", "thstrm": "15.6", "frmtrm": "10.2"}]})
             if u.path == "/api/document.xml":
                 xml = ("<DOCUMENT><BODY><SECTION-1><TITLE ATOC=\"Y\">I. 회사의 개요</TITLE><P>개요</P></SECTION-1>"
                        "<SECTION-1><TITLE ATOC=\"Y\">II. 사업의 내용</TITLE><SECTION-2><TITLE ATOC=\"Y\">4. 매출 및 수주상황</TITLE>"

@@ -12,7 +12,7 @@ const FILE_MAP = {
   company: 'company.json', summary: 'data/summary.json', verify: 'data/verify_report.json', log: 'data/update_log.json',
   fin: 'data/financials.csv', qtr: 'data/quarterly.csv', met: 'data/metrics.csv', ledger: 'data/audit_ledger.csv',
   reg: 'data/source_registry.csv', status: 'data/research_status.csv', kpi: 'data/manual/kpi_values.csv', stock: 'data/stock_daily.csv',
-  reports: 'data/raw/dart_reports.csv', events: 'data/events_auto.csv', evlinks: 'data/event_links.csv', search: 'data/search_trend.csv', news: 'data/raw/news.csv',
+  reports: 'data/raw/dart_reports.csv', events: 'data/events_auto.csv', evlinks: 'data/event_links.csv', search: 'data/search_trend.csv', news: 'data/raw/news.csv', valuation: 'data/valuation.json', vdaily: 'data/valuation_daily.csv',
 };
 const COMPARE_KEYS = ['company', 'summary', 'fin', 'met', 'qtr', 'ledger', 'reg'];
 
@@ -50,12 +50,13 @@ async function loadAll(slug = SLUG, keys = Object.keys(FILE_MAP)) {
 
 /* ---------------- 2) 계산·형식 도우미 ---------------- */
 let D = {}; // 읽은 데이터
-const S = { tlCats: null, tlYear: 'all', tlQ: '', newsQ: '', newsSpike: false, newsAll: false, page: 'overview', year: null, qmetric: 'revenue', stockMode: 'index', ledgerFilter: 'all', period: 'annual', cmp: null, edit: false };
+const S = { valMode: 'per', tlCats: null, tlYear: 'all', tlQ: '', newsQ: '', newsSpike: false, newsAll: false, page: 'overview', year: null, qmetric: 'revenue', stockMode: 'index', ledgerFilter: 'all', period: 'annual', cmp: null, edit: false };
 let INDEX = null; // companies/index.json (기업 비교·질의용)
 const OTHER = {}; // 다른 기업 데이터 캐시
 const N = (s) => (s === undefined || s === null || s === '' ? null : Number(s));
 const nf = (d) => new Intl.NumberFormat('ko-KR', { minimumFractionDigits: d, maximumFractionDigits: d });
 const fmt = (v, d = 1) => (v === null || v === undefined || Number.isNaN(v) ? '데이터 없음' : nf(d).format(v));
+const jo = (v) => (v === null || v === undefined ? '데이터 없음' : Math.abs(v) >= 1e12 ? fmt(v / 1e12, 1) + '조원' : fmt(v / 1e8, 0) + '억원'); // 1조 이상은 조원
 const eok = (v, d = 1) => (v === null || v === undefined ? '데이터 없음' : fmt(v / 1e8, d) + '억원');
 const pct = (v, d = 1) => (v === null || v === undefined ? '데이터 없음' : fmt(v, d) + '%');
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -263,7 +264,7 @@ function pageOverview() {
   const got = st.filter((r) => ['원문 대조 일치', '자동 수집 · 원문 대조 전'].includes(r.status)).length;
   const vr = D.verify?.counts || {};
   const latest = [...D.reg].filter((r) => r.type === 'DART 정기보고서').sort((a, b) => (a.source_date < b.source_date ? 1 : -1)).slice(0, 5);
-  return `<div class="kpis">${k}</div><div class="grid">
+  return `<div class="kpis">${k}</div>${valuationRow()}<div class="grid">
     ${card('w4', `${TOPL()}·영업이익 추이`, `막대: 억원 · 선: ${MRGL()}(%) · 막대를 누르면 출처`, `<div class="seg" style="margin-bottom:6px"><button data-per="annual" aria-pressed="${S.period === 'annual'}">연간</button><button data-per="quarter" aria-pressed="${S.period === 'quarter'}">분기</button></div>` + legend([[TOPL(), COLORS()[1]], ['영업이익', COLORS()[0]], [MRGL(), COLORS()[3]]]) + '<div class="chart" id="c1"></div>', S.period === 'quarter' ? 'Q4 = 사업보고서 연간 − 3분기 누적 (연말 결산조정 포함)' : '')}
     ${card('w2', '데이터 검증 현황', '값마다 출처와 대조 상태를 기록', `<table class="tbl"><tbody>
       <tr><td>${badge('원문 대조 일치')}</td><td>${sm['원문 대조 일치'] ?? 0}</td></tr>
@@ -361,13 +362,60 @@ function drawBS() {
     { onClick: (i, j) => (+j === 2 ? showMetric(Y[i], 'simple_fcf') : showFin(Y[i], ['operating_cashflow', 'capex'][+j])) });
 }
 
+/* ---- 밸류에이션 (scripts/build_valuation.py → valuation.json · valuation_daily.csv) ---- */
+const VAL_DEF = {
+  market_cap: ['시가총액', (v) => jo(v), '보통주 종가 × 보통주 발행주식총수'],
+  per: ['PER', (v) => fmt(v, 1) + '배', '종가 ÷ EPS · EPS = 최근 4분기 순이익 ÷ 유통주식수(보통+우선, 자기주식 제외)'],
+  pbr: ['PBR', (v) => fmt(v, 2) + '배', '종가 ÷ BPS · BPS = 자본총계 ÷ 유통주식수'],
+  div_yield_pct: ['배당수익률', (v) => fmt(v, 2) + '%', '최근 사업보고서 보통주 주당 현금배당금 ÷ 종가'],
+};
+const median = (a) => { const b = a.filter((x) => typeof x === 'number' && Number.isFinite(x)).sort((x, y) => x - y); if (!b.length) return null; const m = b.length >> 1; return b.length % 2 ? b[m] : (b[m - 1] + b[m]) / 2; };
+function peerVals(k) { return (INDEX?.companies || []).filter((c) => c.industry === D.company.industry && c.valuation).map((c) => c.valuation[k]); }
+function valuationRow() {
+  const V = D.valuation; if (!V) return '';
+  const cards = Object.entries(VAL_DEF).map(([k, [l, f]]) => {
+    const v = V[k], med = k === 'market_cap' ? null : median(peerVals(k)), n = peerVals(k).filter((x) => typeof x === 'number').length;
+    const val = v === null || v === undefined ? `<small>${k === 'per' && V.inputs?.ttm_net_income !== null && V.inputs?.ttm_net_income <= 0 ? '적자 (계산 안 함)' : '데이터 없음'}</small>` : f(v).replace(/(조원|억원|배|%)$/, '<small>$1</small>');
+    const sub = k === 'market_cap' ? `${esc(V.as_of)} 종가 ${fmt(V.close, 0)}원` : med !== null && n > 1 ? `같은 산업 ${n}곳 중앙값 ${f(med)}` : '같은 산업 비교 없음';
+    return kpiCard(l, val, sub, `val:${k}`);
+  }).join('');
+  return `<div class="kpis kpis-val">${cards}</div>`;
+}
+function showValuation(k) {
+  const V = D.valuation, I = V?.inputs || {}; if (!V) return;
+  const [l, f, formula] = VAL_DEF[k];
+  const peers = (INDEX?.companies || []).filter((c) => c.industry === D.company.industry && c.valuation).map((c) => [c.name, c.valuation[k], c.slug === SLUG]).sort((a, b) => (b[1] ?? -1e18) - (a[1] ?? -1e18));
+  openPanel(`<div class="panel-head"><h2>${esc(l)}</h2><button class="x" aria-label="닫기">✕</button></div>
+    <div class="ev-val">${V[k] === null || V[k] === undefined ? '계산 안 함' : f(V[k])}</div>
+    <div class="formula"><b>산식</b><br>${esc(formula)}</div>
+    <dl class="ev-box"><dt>기준일 종가</dt><dd>${esc(V.as_of)} · ${fmt(V.close, 0)}원 (Yahoo Finance, 비수정)</dd>
+      <dt>주식 수</dt><dd>보통주 발행 ${fmt(I.common_issued, 0)}주 · 유통(보통+우선, 자기주식 제외) ${fmt(I.shares_outstanding, 0)}주${I.shares_url ? ` · <a href="${esc(I.shares_url)}" target="_blank" rel="noopener">${esc(I.shares_report)}</a>` : ''}</dd>
+      <dt>최근 4분기 순이익</dt><dd>${I.ttm_net_income === null ? '없음' : jo(I.ttm_net_income)} · ${esc(I.ttm_period)} · ${esc(I.ni_basis)} → EPS ${V.eps === null ? '–' : fmt(V.eps, 0) + '원'}</dd>
+      <dt>자본총계</dt><dd>${I.equity === null ? '없음' : jo(I.equity)} · ${esc(I.equity_period)} → BPS ${V.bps === null ? '–' : fmt(V.bps, 0) + '원'}</dd>
+      <dt>주당 배당금</dt><dd>${V.dps === null ? '없음' : fmt(V.dps, 0) + '원'} (${esc(I.dps_year)} 사업보고서)${I.payout_pct !== null && I.payout_pct !== undefined ? ` · 배당성향 ${fmt(I.payout_pct, 1)}%` : ''}</dd></dl>
+    ${peers.length > 1 ? `<h3 style="font-size:12.5px;margin:12px 0 4px">같은 산업 비교</h3><table class="tbl"><tbody>${peers.map(([n, v, me]) => `<tr${me ? ' style="font-weight:700"' : ''}><td>${esc(n)}</td><td>${v === null || v === undefined ? '–' : f(v)}</td></tr>`).join('')}</tbody></table>` : ''}
+    <div class="note" style="margin-top:10px">${(V.notes || []).map(esc).join('<br>')}</div>`);
+}
+function valCard() {
+  if (!(D.vdaily || []).length) return '';
+  const modes = { per: 'PER', pbr: 'PBR', div_yield_pct: '배당수익률', market_cap: '시가총액' };
+  return card('w6', '밸류에이션 추이', '각 날짜에 그날까지 공시된 실적·주식 수만 써서 계산 · 적자 기간은 PER 비움',
+    `<div class="seg" style="margin-bottom:8px">${Object.entries(modes).map(([k, l]) => `<button data-act="valm:${k}" aria-pressed="${S.valMode === k}">${l}</button>`).join('')}</div><div class="chart" id="cv1"></div>`,
+    '비수정 종가 기준이라 액면분할·무상증자 전후 비교에 주의하세요. 산식은 개요의 밸류에이션 카드를 누르면 나옵니다.');
+}
+function drawVal() {
+  if (!$('#cv1')) return;
+  const rows = D.vdaily, k = S.valMode, xs = rows.map((r) => r.date);
+  const f = k === 'market_cap' ? (v) => (v >= 1e12 ? fmt(v / 1e12, 1) + '조' : fmt(v / 1e8, 0) + '억') : k === 'div_yield_pct' ? (v) => fmt(v, 2) + '%' : (v) => fmt(v, k === 'pbr' ? 2 : 1) + '배';
+  lineChart($('#cv1'), xs, [{ name: { per: 'PER', pbr: 'PBR', div_yield_pct: '배당수익률', market_cap: '시가총액' }[k], color: COLORS()[0], values: rows.map((r) => (r[k] === '' ? null : N(r[k]))) }], [], { fmt: f, h: 220 });
+}
 function pageStock() {
   if (!D.stock.length) return `<div class="empty"><b>주가 데이터가 없습니다</b>company.json의 yahoo_ticker를 확인하고 Actions를 실행하세요.</div>`;
   const last = D.stock[D.stock.length - 1];
   return `<div class="grid">${card('w6', '주가 흐름', `${esc(last.source)} · 보라색 점선 = 정기보고서 공시일 (마우스를 올리면 보고서명)`,
     `<div class="seg" style="margin-bottom:8px"><button data-sm="index" aria-pressed="${S.stockMode === 'index'}">시작일=100 지수 비교</button><button data-sm="raw" aria-pressed="${S.stockMode === 'raw'}">주가(원)</button></div>` +
     legend(S.stockMode === 'index' ? [['주가', COLORS()[0]], ['시장지수', COLORS()[1]]] : [['종가', COLORS()[0]]]) + '<div class="chart" id="c6"></div>',
-    `마지막 ${esc(last.date)} 종가 ${fmt(N(last.close), 0)}원. 점 = 시장 대비 크게 움직인 날(초록 상승 · 빨강 하락, 큰 점은 주요 공시가 같은 시기에 있음). 누르면 같은 시기 공시가 열립니다. 공시와 주가가 같은 시기에 움직였다고 해서 인과관계가 있다는 뜻은 아닙니다. 비수정 종가라 액면분할이 있으면 해석에 주의하세요.`)}${eventsCard()}${searchCard()}</div>`;
+    `마지막 ${esc(last.date)} 종가 ${fmt(N(last.close), 0)}원. 점 = 시장 대비 크게 움직인 날(초록 상승 · 빨강 하락, 큰 점은 주요 공시가 같은 시기에 있음). 누르면 같은 시기 공시가 열립니다. 공시와 주가가 같은 시기에 움직였다고 해서 인과관계가 있다는 뜻은 아닙니다. 비수정 종가라 액면분할이 있으면 해석에 주의하세요.`)}${valCard()}${eventsCard()}${searchCard()}</div>`;
 }
 /* ---- 사건 연표: data/raw/dart_disclosures.csv (collect_events.py가 모은 전체 공시 목록, 크면 수백 KB라 이 화면을 열 때만 읽음) ---- */
 const TL_CATS = ['실적', '정기보고서', '공급계약', '시설투자', '합병·분할', '지분·출자', '최대주주', '증자·사채', '자기주식', '배당', '소송·제재'];
@@ -578,7 +626,7 @@ function drawStock() {
   const o = { fmt: (v) => fmt(v, 0), dots, onDot: showEvent };
   if (S.stockMode === 'index') lineChart($('#c6'), xs, [{ name: '주가', color: COLORS()[0], values: c.map((v) => (v === null ? null : (v / b0) * 100)) }, { name: '시장지수', color: COLORS()[1], values: k.map((v) => (v === null || !k0 ? null : (v / k0) * 100)) }], mk, o);
   else lineChart($('#c6'), xs, [{ name: '종가(원)', color: COLORS()[0], values: c }], mk, o);
-  drawSearch();
+  drawSearch(); drawVal();
 }
 
 /* 산업 KPI: kpi_values.csv에 값이 있으면 KPI별 차트+표, 없으면 '미확인'과 찾을 곳 */
@@ -688,6 +736,8 @@ function pageCompare() {
   return `<div style="margin-bottom:10px">${pick}</div>${warn}<div class="grid">
     ${card('w3', `${TOPL()} 비교`, '억원 · 막대를 누르면 산식과 출처', legend([[me, COLORS()[0]], [other, COLORS()[1]]]) + '<div class="chart" id="cp1"></div>')}
     ${card('w3', `${MRGL()} 비교`, '% · 회사마다 비용 분류가 다를 수 있음', legend([[me, COLORS()[0]], [other, COLORS()[1]]]) + '<div class="chart" id="cp2"></div>')}
+    ${(() => { const mv = (INDEX?.companies || []).find((c) => c.slug === SLUG)?.valuation, ov = (INDEX?.companies || []).find((c) => c.slug === S.cmp)?.valuation; if (!mv && !ov) return '';
+      return card('w6', '밸류에이션 비교 (최신 종가 기준)', `${esc(me)} vs ${esc(other)} · 자동 계산 · 산식은 개요의 밸류에이션 카드`, `<div class="tbl-wrap"><table class="tbl"><thead><tr><th>지표</th><th>${esc(me)}</th><th>${esc(other)}</th></tr></thead><tbody>${Object.entries(VAL_DEF).map(([k, [l, f]]) => `<tr><td>${esc(l)}</td><td>${mv?.[k] == null ? '–' : f(mv[k])}</td><td style="color:var(--muted)">${ov?.[k] == null ? '–' : f(ov[k])}</td></tr>`).join('')}</tbody></table></div>`, `기준일 ${esc(mv?.as_of || '–')} / ${esc(ov?.as_of || '–')}. PER은 최근 4분기 순이익 기준이며 적자면 비웁니다.`); })()}
     ${card('w6', '지표 비교표', `${esc(me)} vs ${esc(other)} · 억원 / % · 셀을 누르면 두 회사 값의 출처`, `<div class="tbl-wrap"><table class="tbl"><thead><tr><th>지표</th>${Y.map((y) => `<th>${y} ${esc(me)}</th><th>${y} ${esc(other)}</th>`).join('')}</tr></thead><tbody>
       ${CMP_ROWS().map(([k, l, t]) => `<tr><td>${esc(l)}</td>${Y.map((y) => `<td data-act="cmp:${y}:${k}" style="cursor:pointer">${show(valOf(D, y, k, t), t)}</td><td data-act="cmp:${y}:${k}" style="cursor:pointer;color:var(--muted)">${show(valOf(O, y, k, t), t)}</td>`).join('')}</tr>`).join('')}
     </tbody></table></div>`, '두 회사의 사업 구성(제품군·해외 비중·관계사 구조)이 달라 수익성 차이를 경쟁력 차이로 단정할 수 없습니다. 같은 DART 연결 계정 기준의 비교입니다.')}
@@ -820,7 +870,7 @@ function onClick(e) {
   else if (t.dataset.lf) { S.ledgerFilter = t.dataset.lf; render(); }
   else if (t.dataset.act) {
     const [k, a, b] = t.dataset.act.split(':');
-    if (k === 'fin') showFin(+a, b); else if (k === 'met') showMetric(+a, b); else if (k === 'cmp') showCmp(+a, b); else if (k === 'kpi') showKpi(a, +b); else if (k === 'ev') showEvent(a); else if (k === 'tlc') { const c = new Set(S.tlCats || TL_DEFAULT); c.has(a) ? c.delete(a) : c.add(a); S.tlCats = [...c]; S.tlAll = false; render(); }
+    if (k === 'fin') showFin(+a, b); else if (k === 'met') showMetric(+a, b); else if (k === 'cmp') showCmp(+a, b); else if (k === 'kpi') showKpi(a, +b); else if (k === 'ev') showEvent(a); else if (k === 'val') showValuation(a); else if (k === 'valm') { S.valMode = a; drawVal(); document.querySelectorAll('[data-act^="valm:"]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.act === 'valm:' + a))); } else if (k === 'tlc') { const c = new Set(S.tlCats || TL_DEFAULT); c.has(a) ? c.delete(a) : c.add(a); S.tlCats = [...c]; S.tlAll = false; render(); }
     else if (k === 'tly') { S.tlYear = a; S.tlAll = false; render(); }
     else if (k === 'tlall') { S.tlAll = true; $('#tlList').innerHTML = tlList(); }
     else if (k === 'newsall') { S.newsAll = true; $('#newsList').innerHTML = newsList(); }
