@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-15 14:44 KST",
+    "checked_at": "2026-11-15 15:21 KST",
     "corp_code": "01263022",
     "reports_total": 21,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-15 14:44 KST",
+    "checked_at": "2026-11-15 15:21 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 139600,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-15 14:44 KST",
+    "checked_at": "2026-11-15 15:21 KST",
     "spike_days": 29,
     "with_major_disclosure": 6,
     "news_total": 202,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-15 14:44 KST",
+    "checked_at": "2026-11-15 15:21 KST",
     "rows": 406,
     "groups": [
       "BGF리테일",
@@ -45,7 +45,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-15 14:44 KST",
+    "checked_at": "2026-11-15 15:21 KST",
     "new": 0,
     "total": 202,
     "first": "2026-10-20 08:58",
@@ -54,14 +54,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-15 14:44 KST",
+    "checked_at": "2026-11-15 15:21 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-15 14:44 KST",
+    "checked_at": "2026-11-15 15:21 KST",
     "rows": 890,
     "as_of": "2026-11-13",
     "per": 11.21,

@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-15 14:49 KST",
+    "checked_at": "2026-11-15 15:24 KST",
     "corp_code": "00266961",
     "reports_total": 16,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-15 14:49 KST",
+    "checked_at": "2026-11-15 15:24 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 172500,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-15 14:50 KST",
+    "checked_at": "2026-11-15 15:24 KST",
     "spike_days": 35,
     "with_major_disclosure": 8,
     "news_total": 21,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-15 14:49 KST",
+    "checked_at": "2026-11-15 15:24 KST",
     "rows": 406,
     "groups": [
       "NAVER",
@@ -45,8 +45,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-15 14:49 KST",
-    "new": 1,
+    "checked_at": "2026-11-15 15:24 KST",
+    "new": 0,
     "total": 21,
     "first": "2026-11-10 14:12",
     "pages": 10,
@@ -54,14 +54,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-15 14:49 KST",
+    "checked_at": "2026-11-15 15:24 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-15 14:50 KST",
+    "checked_at": "2026-11-15 15:24 KST",
     "rows": 894,
     "as_of": "2026-11-13",
     "per": 15.23,
