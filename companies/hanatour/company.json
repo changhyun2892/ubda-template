@@ -1,0 +1,26 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(hanatour)이 기업 주소(slug)입니다.",
+  "company_id": "HA",
+  "name": "하나투어",
+  "name_en": "Hanatour",
+  "stock_code": "039130",
+  "yahoo_ticker": "039130.KS",
+  "market_index": "^KS11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "service",
+  "categories": [
+    "여행사"
+  ],
+  "competitors": [
+    "모두투어"
+  ],
+  "theme_color": "#0b5fff",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=hanatour",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용.",
+  "aliases": [
+    "하나투어서비스",
+    "HANATOUR",
+    "하나팩"
+  ]
+}

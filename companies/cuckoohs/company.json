@@ -1,0 +1,26 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(cuckoohs)이 기업 주소(slug)입니다.",
+  "company_id": "CK",
+  "name": "쿠쿠홈시스",
+  "name_en": "Cuckoo Homesys",
+  "stock_code": "284740",
+  "yahoo_ticker": "284740.KS",
+  "market_index": "^KS11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "service",
+  "categories": [
+    "생활가전 렌탈"
+  ],
+  "competitors": [
+    "코웨이"
+  ],
+  "theme_color": "#e60012",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=cuckoohs",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용.",
+  "aliases": [
+    "쿠쿠",
+    "CUCKOO",
+    "쿠쿠렌탈"
+  ]
+}

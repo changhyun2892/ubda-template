@@ -1,0 +1,27 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(jejuair)이 기업 주소(slug)입니다.",
+  "company_id": "JA",
+  "name": "제주항공",
+  "name_en": "Jeju Air",
+  "stock_code": "089590",
+  "yahoo_ticker": "089590.KS",
+  "market_index": "^KS11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "service",
+  "categories": [
+    "저비용항공(LCC)"
+  ],
+  "competitors": [
+    "진에어"
+  ],
+  "theme_color": "#ff6600",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=jejuair",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용.",
+  "aliases": [
+    "JEJUair",
+    "제주에어",
+    "LCC",
+    "7C"
+  ]
+}

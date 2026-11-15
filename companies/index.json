@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-15 09:39 KST",
+ "updated_at": "2026-11-15 14:38 KST",
  "industries": {
   "auto": {
    "name": "자동차",
@@ -32,6 +32,10 @@
   "semiconductor": {
    "name": "반도체·전자",
    "color": "#8b5cf6"
+  },
+  "service": {
+   "name": "서비스",
+   "color": "#2dd4bf"
   },
   "shipbuilding": {
    "name": "조선",
@@ -280,6 +284,36 @@
    }
   },
   {
+   "slug": "cjlogistics",
+   "company_id": "CJ",
+   "name": "CJ대한통운",
+   "name_en": "CJ Logistics",
+   "stock_code": "000120",
+   "aliases": [
+    "대한통운",
+    "CJ택배",
+    "오네",
+    "CJ Logistics"
+   ],
+   "industry": "service",
+   "categories": [
+    "택배·물류"
+   ],
+   "competitors": [
+    "한진"
+   ],
+   "theme_color": "#1a3c8f",
+   "dashboard_path": "dashboard.html?c=cjlogistics",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": "",
+   "valuation": null
+  },
+  {
    "slug": "classys",
    "company_id": "CL",
    "name": "클래시스",
@@ -371,6 +405,36 @@
    }
   },
   {
+   "slug": "coway",
+   "company_id": "CW",
+   "name": "코웨이",
+   "name_en": "Coway",
+   "stock_code": "021240",
+   "aliases": [
+    "웅진코웨이",
+    "COWAY",
+    "정수기",
+    "비렉스"
+   ],
+   "industry": "service",
+   "categories": [
+    "생활가전 렌탈"
+   ],
+   "competitors": [
+    "쿠쿠홈시스"
+   ],
+   "theme_color": "#0071ce",
+   "dashboard_path": "dashboard.html?c=coway",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": "",
+   "valuation": null
+  },
+  {
    "slug": "crown",
    "company_id": "CR",
    "name": "크라운제과",
@@ -417,6 +481,35 @@
     "pbr": 0.382,
     "div_yield_pct": 4.058
    }
+  },
+  {
+   "slug": "cuckoohs",
+   "company_id": "CK",
+   "name": "쿠쿠홈시스",
+   "name_en": "Cuckoo Homesys",
+   "stock_code": "284740",
+   "aliases": [
+    "쿠쿠",
+    "CUCKOO",
+    "쿠쿠렌탈"
+   ],
+   "industry": "service",
+   "categories": [
+    "생활가전 렌탈"
+   ],
+   "competitors": [
+    "코웨이"
+   ],
+   "theme_color": "#e60012",
+   "dashboard_path": "dashboard.html?c=cuckoohs",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": "",
+   "valuation": null
   },
   {
    "slug": "emart",
@@ -608,6 +701,63 @@
     "pbr": 0.719,
     "div_yield_pct": 3.295
    }
+  },
+  {
+   "slug": "hanatour",
+   "company_id": "HA",
+   "name": "하나투어",
+   "name_en": "Hanatour",
+   "stock_code": "039130",
+   "aliases": [
+    "하나투어서비스",
+    "HANATOUR",
+    "하나팩"
+   ],
+   "industry": "service",
+   "categories": [
+    "여행사"
+   ],
+   "competitors": [
+    "모두투어"
+   ],
+   "theme_color": "#0b5fff",
+   "dashboard_path": "dashboard.html?c=hanatour",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": "",
+   "valuation": null
+  },
+  {
+   "slug": "hanjin",
+   "company_id": "HJ",
+   "name": "한진",
+   "name_en": "Hanjin",
+   "stock_code": "002320",
+   "aliases": [
+    "한진택배",
+    "HANJIN"
+   ],
+   "industry": "service",
+   "categories": [
+    "택배·물류"
+   ],
+   "competitors": [
+    "CJ대한통운"
+   ],
+   "theme_color": "#0d4fa3",
+   "dashboard_path": "dashboard.html?c=hanjin",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": "",
+   "valuation": null
   },
   {
    "slug": "hanmisemi",
@@ -1132,6 +1282,66 @@
     "pbr": 0.824,
     "div_yield_pct": 4.23
    }
+  },
+  {
+   "slug": "jejuair",
+   "company_id": "JA",
+   "name": "제주항공",
+   "name_en": "Jeju Air",
+   "stock_code": "089590",
+   "aliases": [
+    "JEJUair",
+    "제주에어",
+    "LCC",
+    "7C"
+   ],
+   "industry": "service",
+   "categories": [
+    "저비용항공(LCC)"
+   ],
+   "competitors": [
+    "진에어"
+   ],
+   "theme_color": "#ff6600",
+   "dashboard_path": "dashboard.html?c=jejuair",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": "",
+   "valuation": null
+  },
+  {
+   "slug": "jinair",
+   "company_id": "JN",
+   "name": "진에어",
+   "name_en": "Jin Air",
+   "stock_code": "272450",
+   "aliases": [
+    "JINAIR",
+    "지니에어",
+    "LCC",
+    "LJ"
+   ],
+   "industry": "service",
+   "categories": [
+    "저비용항공(LCC)"
+   ],
+   "competitors": [
+    "제주항공"
+   ],
+   "theme_color": "#7ac142",
+   "dashboard_path": "dashboard.html?c=jinair",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": "",
+   "valuation": null
   },
   {
    "slug": "jusung",
@@ -1709,6 +1919,36 @@
    }
   },
   {
+   "slug": "lottetour",
+   "company_id": "LT",
+   "name": "롯데관광개발",
+   "name_en": "Lotte Tour Development",
+   "stock_code": "032350",
+   "aliases": [
+    "제주드림타워",
+    "드림타워",
+    "롯데관광",
+    "카지노"
+   ],
+   "industry": "service",
+   "categories": [
+    "복합리조트"
+   ],
+   "competitors": [
+    "파라다이스"
+   ],
+   "theme_color": "#d4145a",
+   "dashboard_path": "dashboard.html?c=lottetour",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": "",
+   "valuation": null
+  },
+  {
    "slug": "lottewellfood",
    "company_id": "LW",
    "name": "롯데웰푸드",
@@ -1805,6 +2045,34 @@
     "pbr": 0.609,
     "div_yield_pct": 1.828
    }
+  },
+  {
+   "slug": "modetour",
+   "company_id": "MT",
+   "name": "모두투어",
+   "name_en": "Modetour",
+   "stock_code": "080160",
+   "aliases": [
+    "모두투어네트워크",
+    "MODETOUR"
+   ],
+   "industry": "service",
+   "categories": [
+    "여행사"
+   ],
+   "competitors": [
+    "하나투어"
+   ],
+   "theme_color": "#00a19a",
+   "dashboard_path": "dashboard.html?c=modetour",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": "",
+   "valuation": null
   },
   {
    "slug": "naver",
@@ -2096,6 +2364,36 @@
     "pbr": 0.489,
     "div_yield_pct": 2.956
    }
+  },
+  {
+   "slug": "paradise",
+   "company_id": "PD",
+   "name": "파라다이스",
+   "name_en": "Paradise",
+   "stock_code": "034230",
+   "aliases": [
+    "파라다이스시티",
+    "PARADISE",
+    "카지노",
+    "워커힐"
+   ],
+   "industry": "service",
+   "categories": [
+    "복합리조트"
+   ],
+   "competitors": [
+    "롯데관광개발"
+   ],
+   "theme_color": "#b8860b",
+   "dashboard_path": "dashboard.html?c=paradise",
+   "has_data": false,
+   "latest_year": null,
+   "kpis": null,
+   "verification": null,
+   "industry_kpis_found": null,
+   "industry_kpis_total": null,
+   "updated_at": "",
+   "valuation": null
   },
   {
    "slug": "samsungelec",
@@ -2731,6 +3029,25 @@
     "industry": "bank"
    },
    {
+    "id": "ind:service",
+    "type": "industry",
+    "label": "서비스",
+    "color": "#2dd4bf"
+   },
+   {
+    "id": "co:cjlogistics",
+    "type": "company",
+    "label": "CJ대한통운",
+    "slug": "cjlogistics",
+    "url": "dashboard.html?c=cjlogistics"
+   },
+   {
+    "id": "cat:service:택배·물류",
+    "type": "category",
+    "label": "택배·물류",
+    "industry": "service"
+   },
+   {
     "id": "co:classys",
     "type": "company",
     "label": "클래시스",
@@ -2757,6 +3074,19 @@
     "industry": "cosmetics"
    },
    {
+    "id": "co:coway",
+    "type": "company",
+    "label": "코웨이",
+    "slug": "coway",
+    "url": "dashboard.html?c=coway"
+   },
+   {
+    "id": "cat:service:생활가전 렌탈",
+    "type": "category",
+    "label": "생활가전 렌탈",
+    "industry": "service"
+   },
+   {
     "id": "co:crown",
     "type": "company",
     "label": "크라운제과",
@@ -2768,6 +3098,13 @@
     "type": "category",
     "label": "스낵·과자",
     "industry": "food"
+   },
+   {
+    "id": "co:cuckoohs",
+    "type": "company",
+    "label": "쿠쿠홈시스",
+    "slug": "cuckoohs",
+    "url": "dashboard.html?c=cuckoohs"
    },
    {
     "id": "co:emart",
@@ -2808,6 +3145,26 @@
     "type": "category",
     "label": "시중 금융지주",
     "industry": "bank"
+   },
+   {
+    "id": "co:hanatour",
+    "type": "company",
+    "label": "하나투어",
+    "slug": "hanatour",
+    "url": "dashboard.html?c=hanatour"
+   },
+   {
+    "id": "cat:service:여행사",
+    "type": "category",
+    "label": "여행사",
+    "industry": "service"
+   },
+   {
+    "id": "co:hanjin",
+    "type": "company",
+    "label": "한진",
+    "slug": "hanjin",
+    "url": "dashboard.html?c=hanjin"
    },
    {
     "id": "ind:semiconductor",
@@ -2947,6 +3304,26 @@
     "url": "dashboard.html?c=jbfg"
    },
    {
+    "id": "co:jejuair",
+    "type": "company",
+    "label": "제주항공",
+    "slug": "jejuair",
+    "url": "dashboard.html?c=jejuair"
+   },
+   {
+    "id": "cat:service:저비용항공(LCC)",
+    "type": "category",
+    "label": "저비용항공(LCC)",
+    "industry": "service"
+   },
+   {
+    "id": "co:jinair",
+    "type": "company",
+    "label": "진에어",
+    "slug": "jinair",
+    "url": "dashboard.html?c=jinair"
+   },
+   {
     "id": "co:jusung",
     "type": "company",
     "label": "주성엔지니어링",
@@ -3073,6 +3450,19 @@
     "url": "dashboard.html?c=lotteshopping"
    },
    {
+    "id": "co:lottetour",
+    "type": "company",
+    "label": "롯데관광개발",
+    "slug": "lottetour",
+    "url": "dashboard.html?c=lottetour"
+   },
+   {
+    "id": "cat:service:복합리조트",
+    "type": "category",
+    "label": "복합리조트",
+    "industry": "service"
+   },
+   {
     "id": "co:lottewellfood",
     "type": "company",
     "label": "롯데웰푸드",
@@ -3085,6 +3475,13 @@
     "label": "현대모비스",
     "slug": "mobis",
     "url": "dashboard.html?c=mobis"
+   },
+   {
+    "id": "co:modetour",
+    "type": "company",
+    "label": "모두투어",
+    "slug": "modetour",
+    "url": "dashboard.html?c=modetour"
    },
    {
     "id": "co:naver",
@@ -3133,6 +3530,13 @@
     "label": "오뚜기",
     "slug": "ottogi",
     "url": "dashboard.html?c=ottogi"
+   },
+   {
+    "id": "co:paradise",
+    "type": "company",
+    "label": "파라다이스",
+    "slug": "paradise",
+    "url": "dashboard.html?c=paradise"
    },
    {
     "id": "co:samsungelec",
@@ -3298,6 +3702,18 @@
     "target": "co:bnkfg"
    },
    {
+    "source": "core",
+    "target": "ind:service"
+   },
+   {
+    "source": "ind:service",
+    "target": "cat:service:택배·물류"
+   },
+   {
+    "source": "cat:service:택배·물류",
+    "target": "co:cjlogistics"
+   },
+   {
     "source": "ind:beauty_device",
     "target": "cat:beauty_device:미용 의료기기"
    },
@@ -3314,12 +3730,24 @@
     "target": "co:cosmax"
    },
    {
+    "source": "ind:service",
+    "target": "cat:service:생활가전 렌탈"
+   },
+   {
+    "source": "cat:service:생활가전 렌탈",
+    "target": "co:coway"
+   },
+   {
     "source": "ind:food",
     "target": "cat:food:스낵·과자"
    },
    {
     "source": "cat:food:스낵·과자",
     "target": "co:crown"
+   },
+   {
+    "source": "cat:service:생활가전 렌탈",
+    "target": "co:cuckoohs"
    },
    {
     "source": "ind:retail",
@@ -3344,6 +3772,18 @@
    {
     "source": "cat:bank:시중 금융지주",
     "target": "co:hanafg"
+   },
+   {
+    "source": "ind:service",
+    "target": "cat:service:여행사"
+   },
+   {
+    "source": "cat:service:여행사",
+    "target": "co:hanatour"
+   },
+   {
+    "source": "cat:service:택배·물류",
+    "target": "co:hanjin"
    },
    {
     "source": "core",
@@ -3430,6 +3870,18 @@
     "target": "co:jbfg"
    },
    {
+    "source": "ind:service",
+    "target": "cat:service:저비용항공(LCC)"
+   },
+   {
+    "source": "cat:service:저비용항공(LCC)",
+    "target": "co:jejuair"
+   },
+   {
+    "source": "cat:service:저비용항공(LCC)",
+    "target": "co:jinair"
+   },
+   {
     "source": "cat:semiconductor:반도체 장비",
     "target": "co:jusung"
    },
@@ -3514,6 +3966,14 @@
     "target": "co:lotteshopping"
    },
    {
+    "source": "ind:service",
+    "target": "cat:service:복합리조트"
+   },
+   {
+    "source": "cat:service:복합리조트",
+    "target": "co:lottetour"
+   },
+   {
     "source": "cat:food:스낵·과자",
     "target": "co:lottewellfood"
    },
@@ -3524,6 +3984,10 @@
    {
     "source": "cat:auto:자동차부품",
     "target": "co:mobis"
+   },
+   {
+    "source": "cat:service:여행사",
+    "target": "co:modetour"
    },
    {
     "source": "cat:platform:포털·플랫폼",
@@ -3556,6 +4020,10 @@
    {
     "source": "cat:food:라면",
     "target": "co:ottogi"
+   },
+   {
+    "source": "cat:service:복합리조트",
+    "target": "co:paradise"
    },
    {
     "source": "ind:semiconductor",

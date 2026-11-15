@@ -1,0 +1,25 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(modetour)이 기업 주소(slug)입니다.",
+  "company_id": "MT",
+  "name": "모두투어",
+  "name_en": "Modetour",
+  "stock_code": "080160",
+  "yahoo_ticker": "080160.KQ",
+  "market_index": "^KQ11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "service",
+  "categories": [
+    "여행사"
+  ],
+  "competitors": [
+    "하나투어"
+  ],
+  "theme_color": "#00a19a",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=modetour",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용.",
+  "aliases": [
+    "모두투어네트워크",
+    "MODETOUR"
+  ]
+}

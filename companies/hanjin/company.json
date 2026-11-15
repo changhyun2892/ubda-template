@@ -1,0 +1,25 @@
+{
+  "_설명": "기업마다 바뀌는 값은 이 파일에만 둡니다. 폴더 이름(hanjin)이 기업 주소(slug)입니다.",
+  "company_id": "HJ",
+  "name": "한진",
+  "name_en": "Hanjin",
+  "stock_code": "002320",
+  "yahoo_ticker": "002320.KS",
+  "market_index": "^KS11",
+  "fs_div": "auto",
+  "start_year": 2023,
+  "industry": "service",
+  "categories": [
+    "택배·물류"
+  ],
+  "competitors": [
+    "CJ대한통운"
+  ],
+  "theme_color": "#0d4fa3",
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=hanjin",
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용.",
+  "aliases": [
+    "한진택배",
+    "HANJIN"
+  ]
+}
