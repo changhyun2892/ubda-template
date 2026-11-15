@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-15 14:38 KST",
+ "updated_at": "2026-11-15 15:17 KST",
  "industries": {
   "auto": {
    "name": "자동차",
@@ -83,7 +83,7 @@
    },
    "industry_kpis_found": 9,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 09:37 KST",
+   "updated_at": "2026-11-15 14:44 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 7381786185800,
@@ -131,7 +131,7 @@
    },
    "industry_kpis_found": 2,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-15 09:37 KST",
+   "updated_at": "2026-11-15 14:44 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 8835404580000,
@@ -179,7 +179,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-15 09:37 KST",
+   "updated_at": "2026-11-15 14:44 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 2412833277600,
@@ -226,7 +226,7 @@
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-15 09:38 KST",
+   "updated_at": "2026-11-15 14:44 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 688689003300,
@@ -274,7 +274,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-15 09:37 KST",
+   "updated_at": "2026-11-15 14:44 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 4229757459790,
@@ -304,14 +304,32 @@
    ],
    "theme_color": "#1a3c8f",
    "dashboard_path": "dashboard.html?c=cjlogistics",
-   "has_data": false,
-   "latest_year": null,
-   "kpis": null,
-   "verification": null,
-   "industry_kpis_found": null,
-   "industry_kpis_total": null,
-   "updated_at": "",
-   "valuation": null
+   "has_data": true,
+   "latest_year": 2025,
+   "kpis": {
+    "revenue": 12284652471280,
+    "operating_profit": 508080820628,
+    "net_income": 258742959823,
+    "operating_margin_pct": 4.1359,
+    "revenue_growth_pct": 1.3856,
+    "debt_ratio_pct": 132.884
+   },
+   "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 129,
+    "불일치": 0,
+    "미확인": 1
+   },
+   "industry_kpis_found": 0,
+   "industry_kpis_total": 8,
+   "updated_at": "2026-11-15 14:45 KST",
+   "valuation": {
+    "as_of": "2026-11-13",
+    "market_cap": 1544395688800,
+    "per": 6.57,
+    "pbr": 0.329,
+    "div_yield_pct": 1.182
+   }
   },
   {
    "slug": "classys",
@@ -350,7 +368,7 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-15 09:37 KST",
+   "updated_at": "2026-11-15 14:44 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 1552608684200,
@@ -395,7 +413,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 09:35 KST",
+   "updated_at": "2026-11-15 14:44 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 3183537274500,
@@ -425,14 +443,32 @@
    ],
    "theme_color": "#0071ce",
    "dashboard_path": "dashboard.html?c=coway",
-   "has_data": false,
-   "latest_year": null,
-   "kpis": null,
-   "verification": null,
-   "industry_kpis_found": null,
-   "industry_kpis_total": null,
-   "updated_at": "",
-   "valuation": null
+   "has_data": true,
+   "latest_year": 2025,
+   "kpis": {
+    "revenue": 4963566073111,
+    "operating_profit": 878651769382,
+    "net_income": 617510076654,
+    "operating_margin_pct": 17.702,
+    "revenue_growth_pct": 15.1602,
+    "debt_ratio_pct": 93.7092
+   },
+   "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 131,
+    "불일치": 0,
+    "미확인": 0
+   },
+   "industry_kpis_found": 0,
+   "industry_kpis_total": 8,
+   "updated_at": "2026-11-15 14:52 KST",
+   "valuation": {
+    "as_of": "2026-11-13",
+    "market_cap": 7253661165000,
+    "per": 11.61,
+    "pbr": 1.941,
+    "div_yield_pct": 1.268
+   }
   },
   {
    "slug": "crown",
@@ -473,7 +509,7 @@
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-15 09:36 KST",
+   "updated_at": "2026-11-15 14:46 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 86414565000,
@@ -502,14 +538,32 @@
    ],
    "theme_color": "#e60012",
    "dashboard_path": "dashboard.html?c=cuckoohs",
-   "has_data": false,
-   "latest_year": null,
-   "kpis": null,
-   "verification": null,
-   "industry_kpis_found": null,
-   "industry_kpis_total": null,
-   "updated_at": "",
-   "valuation": null
+   "has_data": true,
+   "latest_year": 2025,
+   "kpis": {
+    "revenue": 1121342626136,
+    "operating_profit": 169362970577,
+    "net_income": 134319541308,
+    "operating_margin_pct": 15.1036,
+    "revenue_growth_pct": 6.0663,
+    "debt_ratio_pct": 24.7827
+   },
+   "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 124,
+    "불일치": 0,
+    "미확인": 2
+   },
+   "industry_kpis_found": 0,
+   "industry_kpis_total": 8,
+   "updated_at": "2026-11-15 14:46 KST",
+   "valuation": {
+    "as_of": "2026-11-13",
+    "market_cap": 521667922500,
+    "per": 3.68,
+    "pbr": 0.456,
+    "div_yield_pct": 5.161
+   }
   },
   {
    "slug": "emart",
@@ -550,7 +604,7 @@
    },
    "industry_kpis_found": 2,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-15 09:37 KST",
+   "updated_at": "2026-11-15 14:44 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 1755094088400,
@@ -596,7 +650,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-15 09:37 KST",
+   "updated_at": "2026-11-15 14:52 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 1856084613000,
@@ -645,7 +699,7 @@
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-15 09:36 KST",
+   "updated_at": "2026-11-15 14:46 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 139178409160,
@@ -693,7 +747,7 @@
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-15 09:36 KST",
+   "updated_at": "2026-11-15 14:46 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 34679396424400,
@@ -722,14 +776,32 @@
    ],
    "theme_color": "#0b5fff",
    "dashboard_path": "dashboard.html?c=hanatour",
-   "has_data": false,
-   "latest_year": null,
-   "kpis": null,
-   "verification": null,
-   "industry_kpis_found": null,
-   "industry_kpis_total": null,
-   "updated_at": "",
-   "valuation": null
+   "has_data": true,
+   "latest_year": 2025,
+   "kpis": {
+    "revenue": 586902971424,
+    "operating_profit": 57626875763,
+    "net_income": 48091672930,
+    "operating_margin_pct": 9.8188,
+    "revenue_growth_pct": -4.8173,
+    "debt_ratio_pct": 293.4415
+   },
+   "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 90,
+    "불일치": 0,
+    "미확인": 8
+   },
+   "industry_kpis_found": 0,
+   "industry_kpis_total": 8,
+   "updated_at": "2026-11-15 14:54 KST",
+   "valuation": {
+    "as_of": "2026-11-13",
+    "market_cap": 470893932800,
+    "per": 11.34,
+    "pbr": 3.126,
+    "div_yield_pct": 3.947
+   }
   },
   {
    "slug": "hanjin",
@@ -750,14 +822,32 @@
    ],
    "theme_color": "#0d4fa3",
    "dashboard_path": "dashboard.html?c=hanjin",
-   "has_data": false,
-   "latest_year": null,
-   "kpis": null,
-   "verification": null,
-   "industry_kpis_found": null,
-   "industry_kpis_total": null,
-   "updated_at": "",
-   "valuation": null
+   "has_data": true,
+   "latest_year": 2025,
+   "kpis": {
+    "revenue": 3064925190779,
+    "operating_profit": 112195809190,
+    "net_income": 984901814,
+    "operating_margin_pct": 3.6606,
+    "revenue_growth_pct": 1.6397,
+    "debt_ratio_pct": 183.401
+   },
+   "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 130,
+    "불일치": 0,
+    "미확인": 0
+   },
+   "industry_kpis_found": 0,
+   "industry_kpis_total": 8,
+   "updated_at": "2026-11-15 15:01 KST",
+   "valuation": {
+    "as_of": "2026-11-13",
+    "market_cap": 300595591920,
+    "per": null,
+    "pbr": 0.21,
+    "div_yield_pct": 3.098
+   }
   },
   {
    "slug": "hanmisemi",
@@ -797,7 +887,7 @@
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 09:38 KST",
+   "updated_at": "2026-11-15 14:46 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 17318226740000,
@@ -843,7 +933,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 09:37 KST",
+   "updated_at": "2026-11-15 14:47 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 3130100783600,
@@ -890,7 +980,7 @@
    },
    "industry_kpis_found": 10,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 09:36 KST",
+   "updated_at": "2026-11-15 14:55 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 14815087599900,
@@ -937,7 +1027,7 @@
    },
    "industry_kpis_found": 10,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 09:36 KST",
+   "updated_at": "2026-11-15 15:01 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 28444491975000,
@@ -985,7 +1075,7 @@
    },
    "industry_kpis_found": 9,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 09:38 KST",
+   "updated_at": "2026-11-15 14:46 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 16808615050000,
@@ -1032,7 +1122,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 09:37 KST",
+   "updated_at": "2026-11-15 14:47 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 1610629216000,
@@ -1082,7 +1172,7 @@
    },
    "industry_kpis_found": 8,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 09:36 KST",
+   "updated_at": "2026-11-15 14:55 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 55182217937000,
@@ -1129,7 +1219,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-15 09:36 KST",
+   "updated_at": "2026-11-15 15:01 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 1835174011200,
@@ -1177,7 +1267,7 @@
    },
    "industry_kpis_found": 2,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-15 09:38 KST",
+   "updated_at": "2026-11-15 14:46 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 15246782615280,
@@ -1226,7 +1316,7 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-15 09:37 KST",
+   "updated_at": "2026-11-15 14:47 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 2494223676000,
@@ -1274,7 +1364,7 @@
    },
    "industry_kpis_found": 1,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-15 09:36 KST",
+   "updated_at": "2026-11-15 14:55 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 5073434088800,
@@ -1304,14 +1394,32 @@
    ],
    "theme_color": "#ff6600",
    "dashboard_path": "dashboard.html?c=jejuair",
-   "has_data": false,
-   "latest_year": null,
-   "kpis": null,
-   "verification": null,
-   "industry_kpis_found": null,
-   "industry_kpis_total": null,
-   "updated_at": "",
-   "valuation": null
+   "has_data": true,
+   "latest_year": 2025,
+   "kpis": {
+    "revenue": 1579940872409,
+    "operating_profit": -111660044639,
+    "net_income": -116400560741,
+    "operating_margin_pct": -7.0674,
+    "revenue_growth_pct": -18.3827,
+    "debt_ratio_pct": 754.4306
+   },
+   "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 126,
+    "불일치": 0,
+    "미확인": 0
+   },
+   "industry_kpis_found": 0,
+   "industry_kpis_total": 8,
+   "updated_at": "2026-11-15 15:08 KST",
+   "valuation": {
+    "as_of": "2026-11-13",
+    "market_cap": 552390747250,
+    "per": null,
+    "pbr": 2.305,
+    "div_yield_pct": null
+   }
   },
   {
    "slug": "jinair",
@@ -1334,14 +1442,32 @@
    ],
    "theme_color": "#7ac142",
    "dashboard_path": "dashboard.html?c=jinair",
-   "has_data": false,
-   "latest_year": null,
-   "kpis": null,
-   "verification": null,
-   "industry_kpis_found": null,
-   "industry_kpis_total": null,
-   "updated_at": "",
-   "valuation": null
+   "has_data": true,
+   "latest_year": 2025,
+   "kpis": {
+    "revenue": 1381080693148,
+    "operating_profit": -19157673281,
+    "net_income": -9755171166,
+    "operating_margin_pct": -1.3872,
+    "revenue_growth_pct": -5.4872,
+    "debt_ratio_pct": 423.1668
+   },
+   "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 131,
+    "불일치": 0,
+    "미확인": 0
+   },
+   "industry_kpis_found": 0,
+   "industry_kpis_total": 8,
+   "updated_at": "2026-11-15 14:48 KST",
+   "valuation": {
+    "as_of": "2026-11-13",
+    "market_cap": 406116000000,
+    "per": null,
+    "pbr": 1.918,
+    "div_yield_pct": null
+   }
   },
   {
    "slug": "jusung",
@@ -1382,7 +1508,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 09:37 KST",
+   "updated_at": "2026-11-15 14:47 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 8017993372500,
@@ -1429,7 +1555,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-15 09:38 KST",
+   "updated_at": "2026-11-15 14:55 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 14043116167000,
@@ -1476,7 +1602,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-15 09:38 KST",
+   "updated_at": "2026-11-15 15:08 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 9924105089600,
@@ -1525,7 +1651,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-15 09:36 KST",
+   "updated_at": "2026-11-15 14:48 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 56395349706000,
@@ -1574,7 +1700,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 09:37 KST",
+   "updated_at": "2026-11-15 14:47 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 425999189760,
@@ -1622,7 +1748,7 @@
    },
    "industry_kpis_found": 8,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 09:36 KST",
+   "updated_at": "2026-11-15 14:56 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 36933069610800,
@@ -1668,7 +1794,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 09:35 KST",
+   "updated_at": "2026-11-15 15:08 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 2428962423300,
@@ -1717,7 +1843,7 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-15 09:36 KST",
+   "updated_at": "2026-11-15 14:48 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 9186042550300,
@@ -1764,7 +1890,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 09:37 KST",
+   "updated_at": "2026-11-15 14:48 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 3515000000000,
@@ -1812,7 +1938,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 09:36 KST",
+   "updated_at": "2026-11-15 14:56 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 22087156912800,
@@ -1859,7 +1985,7 @@
    },
    "industry_kpis_found": 8,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 09:36 KST",
+   "updated_at": "2026-11-15 15:08 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 3406931482500,
@@ -1909,7 +2035,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-15 09:37 KST",
+   "updated_at": "2026-11-15 14:48 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 2198036263500,
@@ -1939,14 +2065,32 @@
    ],
    "theme_color": "#d4145a",
    "dashboard_path": "dashboard.html?c=lottetour",
-   "has_data": false,
-   "latest_year": null,
-   "kpis": null,
-   "verification": null,
-   "industry_kpis_found": null,
-   "industry_kpis_total": null,
-   "updated_at": "",
-   "valuation": null
+   "has_data": true,
+   "latest_year": 2025,
+   "kpis": {
+    "revenue": 653447659142,
+    "operating_profit": 143328051761,
+    "net_income": 27596636822,
+    "operating_margin_pct": 21.9341,
+    "revenue_growth_pct": 38.5985,
+    "debt_ratio_pct": 488.675
+   },
+   "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 93,
+    "불일치": 0,
+    "미확인": 4
+   },
+   "industry_kpis_found": 0,
+   "industry_kpis_total": 8,
+   "updated_at": "2026-11-15 14:49 KST",
+   "valuation": {
+    "as_of": "2026-11-13",
+    "market_cap": 796457325420,
+    "per": 17.96,
+    "pbr": 2.132,
+    "div_yield_pct": null
+   }
   },
   {
    "slug": "lottewellfood",
@@ -1990,7 +2134,7 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-15 09:37 KST",
+   "updated_at": "2026-11-15 14:56 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 1171742270200,
@@ -2037,7 +2181,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 09:36 KST",
+   "updated_at": "2026-11-15 15:09 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 32255433256500,
@@ -2065,14 +2209,32 @@
    ],
    "theme_color": "#00a19a",
    "dashboard_path": "dashboard.html?c=modetour",
-   "has_data": false,
-   "latest_year": null,
-   "kpis": null,
-   "verification": null,
-   "industry_kpis_found": null,
-   "industry_kpis_total": null,
-   "updated_at": "",
-   "valuation": null
+   "has_data": true,
+   "latest_year": 2025,
+   "kpis": {
+    "revenue": 210407391445,
+    "operating_profit": 7438478888,
+    "net_income": 14479086684,
+    "operating_margin_pct": 3.5353,
+    "revenue_growth_pct": -16.3562,
+    "debt_ratio_pct": 150.2804
+   },
+   "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 122,
+    "불일치": 0,
+    "미확인": 4
+   },
+   "industry_kpis_found": 0,
+   "industry_kpis_total": 8,
+   "updated_at": "2026-11-15 14:50 KST",
+   "valuation": {
+    "as_of": "2026-11-13",
+    "market_cap": 192780000000,
+    "per": 37.11,
+    "pbr": 1.931,
+    "div_yield_pct": 3.431
+   }
   },
   {
    "slug": "naver",
@@ -2113,7 +2275,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-15 09:36 KST",
+   "updated_at": "2026-11-15 14:50 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 27072881745000,
@@ -2161,7 +2323,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-15 09:37 KST",
+   "updated_at": "2026-11-15 14:56 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 3856379938000,
@@ -2207,7 +2369,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-15 09:37 KST",
+   "updated_at": "2026-11-15 15:09 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 2626003000550,
@@ -2258,7 +2420,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-15 09:36 KST",
+   "updated_at": "2026-11-15 14:50 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 2229288293000,
@@ -2307,7 +2469,7 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-15 09:36 KST",
+   "updated_at": "2026-11-15 14:50 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 4490470316800,
@@ -2356,7 +2518,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-15 09:37 KST",
+   "updated_at": "2026-11-15 14:56 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 1220384235000,
@@ -2386,13 +2548,25 @@
    ],
    "theme_color": "#b8860b",
    "dashboard_path": "dashboard.html?c=paradise",
-   "has_data": false,
-   "latest_year": null,
-   "kpis": null,
-   "verification": null,
-   "industry_kpis_found": null,
-   "industry_kpis_total": null,
-   "updated_at": "",
+   "has_data": true,
+   "latest_year": 2025,
+   "kpis": {
+    "revenue": 1149867026461,
+    "operating_profit": 155816230766,
+    "net_income": 144781456677,
+    "operating_margin_pct": 13.5508,
+    "revenue_growth_pct": 7.2528,
+    "debt_ratio_pct": 84.407
+   },
+   "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 131,
+    "불일치": 0,
+    "미확인": 0
+   },
+   "industry_kpis_found": 0,
+   "industry_kpis_total": 8,
+   "updated_at": "2026-11-15 15:17 KST",
    "valuation": null
   },
   {
@@ -2436,7 +2610,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 09:37 KST",
+   "updated_at": "2026-11-15 14:50 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 1204333393248000,
@@ -2483,7 +2657,7 @@
    },
    "industry_kpis_found": 9,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 09:36 KST",
+   "updated_at": "2026-11-15 14:50 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 14616800000000,
@@ -2530,7 +2704,7 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-15 09:36 KST",
+   "updated_at": "2026-11-15 14:57 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 18145094100000,
@@ -2581,7 +2755,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-15 09:37 KST",
+   "updated_at": "2026-11-15 15:17 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 9114948150000,
@@ -2629,7 +2803,7 @@
    },
    "industry_kpis_found": 8,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 09:38 KST",
+   "updated_at": "2026-11-15 14:50 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 63863110080000,
@@ -2678,7 +2852,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-15 09:36 KST",
+   "updated_at": "2026-11-15 14:50 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 42623961617800,
@@ -2725,7 +2899,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-15 09:36 KST",
+   "updated_at": "2026-11-15 14:57 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 2351850069000,
@@ -2773,7 +2947,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 09:37 KST",
+   "updated_at": "2026-11-15 14:44 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 1733830032000,
@@ -2822,7 +2996,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-15 09:38 KST",
+   "updated_at": "2026-11-15 14:44 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 866646075840000,
@@ -2868,7 +3042,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-15 09:37 KST",
+   "updated_at": "2026-11-15 14:44 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 317839099760,
@@ -2916,7 +3090,7 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-15 09:37 KST",
+   "updated_at": "2026-11-15 14:44 KST",
    "valuation": {
     "as_of": "2026-11-13",
     "market_cap": 23662914665000,
