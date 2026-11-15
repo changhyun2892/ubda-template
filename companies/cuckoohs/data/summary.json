@@ -1,0 +1,35 @@
+{
+  "slug": "cuckoohs",
+  "company_id": "CK",
+  "name": "쿠쿠홈시스",
+  "dashboard_path": "dashboard.html?c=cuckoohs",
+  "name_en": "Cuckoo Homesys",
+  "stock_code": "284740",
+  "industry": "service",
+  "industry_name": "서비스",
+  "categories": [
+    "생활가전 렌탈"
+  ],
+  "competitors": [
+    "코웨이"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=cuckoohs",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 1121342626136,
+    "operating_profit": 169362970577,
+    "net_income": 134319541308,
+    "operating_margin_pct": 15.1036,
+    "revenue_growth_pct": 6.0663,
+    "debt_ratio_pct": 24.7827
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 124,
+    "불일치": 0,
+    "미확인": 2
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 8,
+  "updated_at": "2026-11-15 14:46 KST"
+}
