@@ -126,6 +126,25 @@ def main() -> int:
     ok("판매비와관리비 합계 계정이 있으면 그대로", next(r for r in cd.to_rows(items2, rep, "CFS") if r["metric"] == "sga")["value"] == 90)
     os.chdir(REPO)
 
+    print("\n[0-1] 주가: 수정주가·분할 되돌리기, 시간 예산")
+    from datetime import datetime
+    sys.path.insert(0, str(HERE.parent / "scripts"))
+    os.environ.setdefault("UBDA_COMPANY", SLUG)
+    import importlib
+    _argv, sys.argv = sys.argv, ["x", "--company", SLUG]
+    us = importlib.import_module("update_stock")
+    sys.argv = _argv
+    t = lambda d: int(datetime.strptime(d, "%Y-%m-%d").replace(hour=9, tzinfo=us.KST).timestamp())
+    pj = us.parse({"chart": {"result": [{"timestamp": [t("2024-01-02"), t("2024-01-03"), t("2024-01-04")],
+        "events": {"splits": {"x": {"date": t("2024-01-04"), "numerator": 5, "denominator": 1}}},
+        "indicators": {"quote": [{"close": [100.0, 102.0, 101.0], "volume": [1, 2, 3]}], "adjclose": [{"adjclose": [98.0, 99.96, 101.0]}]}}]}})
+    ok("5:1 분할 전 날짜는 실제 거래 가격(×5)으로 되돌리고, 수정주가는 따로 저장",
+       pj["2024-01-03"]["raw_close"] == 510.0 and pj["2024-01-04"]["raw_close"] == 101.0 and pj["2024-01-02"]["adj_close"] == 98.0, str(pj["2024-01-03"]))
+    r = subprocess.run([sys.executable, str(d / "scripts" / "run_all.py"), "--steps", "verify", "--budget-min", "0.000001"], cwd=d, capture_output=True, text=True,
+                       env={**os.environ, "DART_API_KEY": ""})
+    lr = json.loads((d / "companies" / "_runs" / "last_run.json").read_text(encoding="utf-8"))
+    ok("시간 예산을 넘기면 남은 기업은 수집을 미루고 기록 (실패로 치지 않음)", "deferred" in lr and isinstance(lr["deferred"], list), f"deferred {lr.get('deferred')}")
+
     print("\n[1-0] 주식 수·배당 → 밸류에이션")
     r = run(d, "collect_shares.py", base)
     shr = rows(d / "companies" / SLUG / "data" / "raw" / "dart_shares.csv")

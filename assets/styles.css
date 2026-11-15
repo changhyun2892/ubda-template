@@ -236,3 +236,19 @@ body.screen-mode .chart line { stroke: #1E3A55 !important; }
 @media (prefers-reduced-motion: reduce) { #workspace.anim * { animation: none !important; } .tip { transition: none; } }
 
 .kpis-val .kpi-v { font-size: 22px; }
+
+/* 내려받기 버튼 · 기업 검색 · 거래량 */
+.card { position: relative; }
+.card-tools { position: absolute; top: 9px; right: 10px; display: flex; gap: 4px; }
+.card-tools .dl { display: none; border: 1px solid var(--line); background: var(--panel); color: var(--muted); font-size: 10.5px; padding: 2px 7px; border-radius: 5px; cursor: pointer; }
+.card-tools .dl:hover { color: var(--fg); border-color: var(--muted); }
+.card:has(table) .dl-csv, .card:has(.chart svg) .dl-png { display: inline-block; }
+.card:has(table) > h3, .card:has(.chart svg) > h3 { padding-right: 84px; }
+body.screen-mode .card-tools { display: none; }
+.co-search { position: relative; margin: 10px 6px 4px; }
+.co-search input { width: 100%; padding: 7px 9px; border: 1px solid var(--line); border-radius: var(--r-sm); font: inherit; font-size: 12px; background: var(--panel); color: inherit; }
+#coSugg { position: absolute; left: 0; right: 0; top: 100%; z-index: 30; background: var(--panel); border: 1px solid var(--line); border-radius: var(--r-sm); box-shadow: 0 8px 24px rgba(0,0,0,.12); margin-top: 3px; overflow: hidden; }
+#coSugg > div { padding: 7px 9px; font-size: 12.5px; cursor: pointer; } #coSugg > div.on, #coSugg > div[data-i]:hover { background: var(--sunk); }
+#coSugg span { display: block; color: var(--muted); font-size: 11px; } #coSugg .none { color: var(--muted); cursor: default; }
+.vol-wrap { position: relative; margin-top: -4px; } .vol-wrap small { position: absolute; left: 0; top: 22px; font-size: 10px; color: var(--muted); }
+.chart-sub svg { width: 100%; height: auto; display: block; } .chart-sub text { font-size: 10px; fill: var(--muted); }

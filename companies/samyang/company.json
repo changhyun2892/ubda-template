@@ -19,5 +19,12 @@
   ],
   "theme_color": "#d4262c",
   "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=samyang",
-  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용으로 함께 수집됨"
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용으로 함께 수집됨",
+  "aliases": [
+    "불닭",
+    "불닭볶음면",
+    "삼양",
+    "Samyang",
+    "Buldak"
+  ]
 }

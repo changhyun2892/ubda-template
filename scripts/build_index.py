@@ -40,7 +40,7 @@ def main() -> int:
         vj = json.loads(vp.read_text(encoding="utf-8")) if vp.exists() else {}
         companies.append({
             "slug": slug, "company_id": cfg["company_id"], "name": cfg["name"], "name_en": cfg.get("name_en", ""),
-            "stock_code": cfg.get("stock_code", ""), "industry": cfg["industry"], "categories": cfg.get("categories", []),
+            "stock_code": cfg.get("stock_code", ""), "aliases": cfg.get("aliases", []), "industry": cfg["industry"], "categories": cfg.get("categories", []),
             "competitors": cfg.get("competitors", []), "theme_color": cfg.get("theme_color", ""),
             "dashboard_path": f"dashboard.html?c={slug}", "has_data": bool(sm.get("latest_year")),
             "latest_year": sm.get("latest_year"), "kpis": sm.get("kpis"), "verification": sm.get("verification"),

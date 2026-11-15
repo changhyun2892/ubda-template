@@ -19,5 +19,9 @@
   ],
   "theme_color": "#003a70",
   "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=hdksoe",
-  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용. HD현대 조선 중간지주(연결: HD현대중공업·HD현대삼호 등) — 자회사 HD현대중공업과 숫자가 겹침."
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용. HD현대 조선 중간지주(연결: HD현대중공업·HD현대삼호 등) — 자회사 HD현대중공업과 숫자가 겹침.",
+  "aliases": [
+    "한국조선해양",
+    "HD현대"
+  ]
 }

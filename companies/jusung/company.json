@@ -19,5 +19,9 @@
   ],
   "theme_color": "#0055a5",
   "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=jusung",
-  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용. 증착(ALD·CVD) 전공정 장비 · 코스닥 상장."
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용. 증착(ALD·CVD) 전공정 장비 · 코스닥 상장.",
+  "aliases": [
+    "주성",
+    "Jusung"
+  ]
 }

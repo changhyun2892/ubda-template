@@ -18,5 +18,11 @@
   ],
   "theme_color": "#ea002c",
   "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=skhynix",
-  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용."
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용.",
+  "aliases": [
+    "하이닉스",
+    "SK",
+    "Hynix",
+    "HBM"
+  ]
 }

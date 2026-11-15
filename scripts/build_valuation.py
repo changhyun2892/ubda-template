@@ -5,7 +5,7 @@
     python scripts/build_valuation.py --company samyang
 
 입력 (모두 이미 수집된 파일, 인터넷 불필요)
-- 주가: data/stock_daily.csv (보통주 종가, 비수정)
+- 주가: data/stock_daily.csv (보통주 raw_close = 그날 실제 거래 가격. 없으면 close)
 - 주식 수: data/raw/dart_shares.csv (collect_shares.py · 정기보고서 '주식의 총수 현황')
 - 순이익: data/raw/dart_owners.csv 지배주주 순이익 누적 → TTM = 올해 누적 + 작년 연간 − 작년 같은 분기 누적
   (없으면 data/quarterly.csv 분기 순이익 4개 합, 그것도 없으면 사업보고서 연간)
@@ -177,7 +177,7 @@ def main() -> int:
 
     rows = []
     for s in stock:
-        px = f(s["close"])
+        px = f(s.get("raw_close")) or f(s["close"])  # 그날의 주식 수와 짝이 맞는 실제 거래 가격
         if not px:
             continue
         d = s["date"].replace("-", "")
@@ -216,7 +216,7 @@ def main() -> int:
         },
         "notes": ["시가총액은 보통주만 (거래소 방식). 우선주는 주가를 받지 않아 시가총액에서 빠짐",
                   "PER·PBR의 주식 수는 보통주+우선주 유통주식수(자기주식 제외)",
-                  "순이익·자본은 지배주주 기준 (공시에 없으면 비지배 포함 값으로 대신하고 위에 표시)", "비수정 종가 기준 · 자동 계산 · 원문 대조 전"],
+                  "순이익·자본은 지배주주 기준 (공시에 없으면 비지배 포함 값으로 대신하고 위에 표시)", "각 날짜의 실제 거래 가격과 그날까지 공시된 주식 수로 계산 · 자동 계산 · 원문 대조 전"],
         "built_at": now,
     }
     (DATA / "valuation.json").write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")

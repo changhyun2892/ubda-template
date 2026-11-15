@@ -21,5 +21,10 @@
   ],
   "theme_color": "#b5121b",
   "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=nongshim",
-  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용. 라면·스낵을 함께 하는 회사라 회사 전체 매출을 라면 매출로 해석하지 말 것"
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용. 라면·스낵을 함께 하는 회사라 회사 전체 매출을 라면 매출로 해석하지 말 것",
+  "aliases": [
+    "신라면",
+    "Nongshim",
+    "새우깡"
+  ]
 }

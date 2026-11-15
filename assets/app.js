@@ -50,14 +50,17 @@ async function loadAll(slug = SLUG, keys = Object.keys(FILE_MAP)) {
 
 /* ---------------- 2) 계산·형식 도우미 ---------------- */
 let D = {}; // 읽은 데이터
-const S = { valMode: 'per', tlCats: null, tlYear: 'all', tlQ: '', newsQ: '', newsSpike: false, newsAll: false, page: 'overview', year: null, qmetric: 'revenue', stockMode: 'index', ledgerFilter: 'all', period: 'annual', cmp: null, edit: false };
+const S = { stockRange: 'all', valMode: 'per', tlCats: null, tlYear: 'all', tlQ: '', newsQ: '', newsSpike: false, newsAll: false, page: 'overview', year: null, qmetric: 'revenue', stockMode: 'index', ledgerFilter: 'all', period: 'annual', cmp: null, edit: false };
 let INDEX = null; // companies/index.json (기업 비교·질의용)
 const OTHER = {}; // 다른 기업 데이터 캐시
 const N = (s) => (s === undefined || s === null || s === '' ? null : Number(s));
 const nf = (d) => new Intl.NumberFormat('ko-KR', { minimumFractionDigits: d, maximumFractionDigits: d });
 const fmt = (v, d = 1) => (v === null || v === undefined || Number.isNaN(v) ? '데이터 없음' : nf(d).format(v));
 const jo = (v) => (v === null || v === undefined ? '데이터 없음' : Math.abs(v) >= 1e12 ? fmt(v / 1e12, 1) + '조원' : fmt(v / 1e8, 0) + '억원'); // 1조 이상은 조원
-const eok = (v, d = 1) => (v === null || v === undefined ? '데이터 없음' : fmt(v / 1e8, d) + '억원');
+const eokFull = (v, d = 1) => (v === null || v === undefined ? '데이터 없음' : fmt(v / 1e8, d) + '억원'); // 근거 패널용: 항상 억원
+const joNum = (v) => fmt(v / 1e12, Math.abs(v) >= 1e14 ? 1 : 2); // 100조 이상은 소수 1자리
+const eok = (v, d = 1) => (v === null || v === undefined ? '데이터 없음' : Math.abs(v) >= 1e12 ? joNum(v) + '조원' : fmt(v / 1e8, d) + '억원'); // 1조 이상은 조원
+const axisWon = (ticks) => (Math.max(...ticks.map(Math.abs)) >= 1e13 ? (t) => (t === 0 ? '0' : fmt(t / 1e12, 0) + '조') : (t) => fmt(t / 1e8, 0)); // 축: 10조 이상이면 조 단위
 const pct = (v, d = 1) => (v === null || v === undefined ? '데이터 없음' : fmt(v, d) + '%');
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const growth = (c, p) => (c === null || p === null || p <= 0 ? null : (c / p - 1) * 100);
@@ -100,7 +103,7 @@ function barLine(el, cats, bars, line, opt = {}) {
   const ticks = niceTicks(Math.min(0, ...vals), Math.max(0, ...vals));
   const y0 = ticks[0], y1 = ticks[ticks.length - 1], Y = (v) => m.t + ih - ((v - y0) / (y1 - y0)) * ih;
   const bw = iw / cats.length, gw = bw * 0.7, sw = opt.stacked ? gw : gw / bars.length;
-  const f = opt.fmt || ((v) => fmt(v / 1e8, 0));
+  const f = opt.fmt || axisWon(ticks);
   let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(opt.label || '')}">`;
   ticks.forEach((t) => { s += `<line x1="${m.l}" x2="${W - m.r}" y1="${Y(t)}" y2="${Y(t)}" stroke="${t === 0 ? '#c9c3b8' : '#eeeae4'}"/><text x="${m.l - 6}" y="${Y(t) + 3}" text-anchor="end">${f(t)}</text>`; });
   cats.forEach((c, i) => {
@@ -148,7 +151,9 @@ function lineChart(el, xs, series, markers = [], opt = {}) {
   let s = `<svg viewBox="0 0 ${W} ${H}">`;
   ticks.forEach((t) => { s += `<line x1="${m.l}" x2="${W - m.r}" y1="${Y(t)}" y2="${Y(t)}" stroke="#eeeae4"/><text x="${m.l - 6}" y="${Y(t) + 3}" text-anchor="end">${f(t)}</text>`; });
   const years = [...new Set(xs.map((x) => x.slice(0, 4)))];
-  let lastX = -99; years.forEach((y) => { const i = xs.findIndex((x) => x.startsWith(y)); if (X(i) - lastX < 34) return; lastX = X(i); s += `<text x="${X(i)}" y="${H - 8}">${y}</text>`; }); // 연도 첫 칸이 너무 가까우면(주 단위 첫 주 등) 겹치지 않게 생략
+  const monthly = xs.length <= 300 && /^\d{4}-\d{2}-\d{2}$/.test(xs[0] || ''); // 1년 이하 일별 자료는 월 단위 눈금
+  if (monthly) { let lx = -99; [...new Set(xs.map((x) => x.slice(0, 7)))].forEach((ym) => { const i = xs.findIndex((x) => x.startsWith(ym)); if (X(i) - lx < 44) return; lx = X(i); s += `<text x="${X(i)}" y="${H - 8}">${ym.slice(2).replace('-', '.')}</text>`; }); }
+  let lastX = -99; if (!monthly) years.forEach((y) => { const i = xs.findIndex((x) => x.startsWith(y)); if (X(i) - lastX < 34) return; lastX = X(i); s += `<text x="${X(i)}" y="${H - 8}">${y}</text>`; }); // 연도 첫 칸이 너무 가까우면(주 단위 첫 주 등) 겹치지 않게 생략
   const idx = new Map(xs.map((x, i) => [x, i]));
   markers.forEach((mk) => {
     let i = idx.get(mk.date); if (i === undefined) i = xs.findIndex((x) => x >= mk.date); if (i < 0) return;
@@ -200,7 +205,7 @@ function showFin(y, m) {
   const r = finRow(y, m); if (!r) return;
   const v = N(r.value), p = fin(y - 1, m);
   openPanel(`<div class="panel-head"><h2>${y}년 ${esc(r.label)}</h2><button class="x" aria-label="닫기">✕</button></div>
-    <div class="ev-val">${eok(v)}</div><div class="kpi-d">${pill(growth(v, p))} 전년 ${eok(p)} · ${esc(r.scope)} 기준</div>
+    <div class="ev-val">${eok(v)}</div><div class="kpi-d">${Math.abs(v ?? 0) >= 1e12 ? eokFull(v) + ' · ' : ''}${pill(growth(v, p))} 전년 ${eok(p)} · ${esc(r.scope)} 기준</div>
     ${evidenceHTML(r.audit_id)}
     <p class="foot">원 단위 원값: ${v === null ? '없음' : v.toLocaleString('ko-KR')}원. '자동 · 대조 전'은 공식 API 값이지만 사람이 사업보고서와 대조하기 전이라는 뜻입니다.</p>`);
 }
@@ -234,7 +239,7 @@ const PAGES = [
   ['audit', '출처·검증', '자동 점검 결과, 검증 장부, 출처 목록'],
 ];
 
-const card = (cls, title, sub, body, foot = '') => `<div class="card ${cls}" data-k="${esc(title)}"><h3>${esc(title)}</h3>${sub ? `<p class="sub">${esc(sub)}</p>` : ''}${body}${foot ? `<p class="foot">${foot}</p>` : ''}</div>`;
+const card = (cls, title, sub, body, foot = '') => `<div class="card ${cls}" data-k="${esc(title)}"><span class="card-tools"><button class="dl dl-csv" data-act="dlcsv" title="이 표를 CSV 파일로 저장 (엑셀에서 열림)">CSV</button><button class="dl dl-png" data-act="dlpng" title="이 차트를 이미지로 저장">PNG</button></span><h3>${esc(title)}</h3>${sub ? `<p class="sub">${esc(sub)}</p>` : ''}${body}${foot ? `<p class="foot">${foot}</p>` : ''}</div>`;
 const noData = () => `<div class="empty"><b>아직 재무 데이터가 없습니다</b>GitHub 저장소 → Actions → '데이터 업데이트' → Run workflow 를 실행하세요.<br>DART_API_KEY가 Secrets에 등록되어 있어야 합니다.</div>`;
 
 /* 은행·금융지주: '매출액' 자리에 순이자이익, '영업이익률' 자리에 영업이익경비율(CIR)을 쓴다 */
@@ -247,7 +252,7 @@ const MRGL = () => (BANK() ? '영업이익경비율(CIR)' : '영업이익률');
 function kpiCard(label, value, sub, onclick) {
   return `<button class="kpi" data-act="${esc(onclick || '')}"><span class="kpi-l">${esc(label)}</span><span class="kpi-v">${value}</span><span class="kpi-d">${sub}</span></button>`;
 }
-const big = (v) => (v === null ? '<small>데이터 없음</small>' : `${fmt(v / 1e8, 0)}<small>억원</small>`);
+const big = (v) => (v === null ? '<small>데이터 없음</small>' : Math.abs(v) >= 1e12 ? `${joNum(v)}<small>조원</small>` : `${fmt(v / 1e8, 0)}<small>억원</small>`);
 
 function pageOverview() {
   if (!D.fin.length) return noData();
@@ -388,7 +393,7 @@ function showValuation(k) {
   openPanel(`<div class="panel-head"><h2>${esc(l)}</h2><button class="x" aria-label="닫기">✕</button></div>
     <div class="ev-val">${V[k] === null || V[k] === undefined ? '계산 안 함' : f(V[k])}</div>
     <div class="formula"><b>산식</b><br>${esc(formula)}</div>
-    <dl class="ev-box"><dt>기준일 종가</dt><dd>${esc(V.as_of)} · ${fmt(V.close, 0)}원 (Yahoo Finance, 비수정)</dd>
+    <dl class="ev-box"><dt>기준일 종가</dt><dd>${esc(V.as_of)} · ${fmt(V.close, 0)}원 (Yahoo Finance, 그날 실제 거래 가격)</dd>
       <dt>주식 수</dt><dd>보통주 발행 ${fmt(I.common_issued, 0)}주 · 유통(보통+우선, 자기주식 제외) ${fmt(I.shares_outstanding, 0)}주${I.shares_url ? ` · <a href="${esc(I.shares_url)}" target="_blank" rel="noopener">${esc(I.shares_report)}</a>` : ''}</dd>
       <dt>최근 4분기 순이익</dt><dd>${I.ttm_net_income === null ? '없음' : jo(I.ttm_net_income)} · ${esc(I.ttm_period)} · ${esc(I.ni_basis)} → EPS ${V.eps === null ? '–' : fmt(V.eps, 0) + '원'}</dd>
       <dt>자본</dt><dd>${I.equity === null ? '없음' : jo(I.equity)} · ${esc(I.equity_period)} · ${esc(I.equity_basis || '')} → BPS ${V.bps === null ? '–' : fmt(V.bps, 0) + '원'}</dd>
@@ -401,7 +406,7 @@ function valCard() {
   const modes = { per: 'PER', pbr: 'PBR', div_yield_pct: '배당수익률', market_cap: '시가총액' };
   return card('w6', '밸류에이션 추이', '각 날짜에 그날까지 공시된 실적·주식 수만 써서 계산 · 적자 기간은 PER 비움',
     `<div class="seg" style="margin-bottom:8px">${Object.entries(modes).map(([k, l]) => `<button data-act="valm:${k}" aria-pressed="${S.valMode === k}">${l}</button>`).join('')}</div><div class="chart" id="cv1"></div>`,
-    '비수정 종가 기준이라 액면분할·무상증자 전후 비교에 주의하세요. 산식은 개요의 밸류에이션 카드를 누르면 나옵니다.');
+    '각 날짜의 실제 거래 가격과 그날까지 공시된 주식 수로 계산합니다. 산식은 개요의 밸류에이션 카드를 누르면 나옵니다.');
 }
 function drawVal() {
   if (!$('#cv1')) return;
@@ -413,9 +418,10 @@ function pageStock() {
   if (!D.stock.length) return `<div class="empty"><b>주가 데이터가 없습니다</b>company.json의 yahoo_ticker를 확인하고 Actions를 실행하세요.</div>`;
   const last = D.stock[D.stock.length - 1];
   return `<div class="grid">${card('w6', '주가 흐름', `${esc(last.source)} · 보라색 점선 = 정기보고서 공시일 (마우스를 올리면 보고서명)`,
-    `<div class="seg" style="margin-bottom:8px"><button data-sm="index" aria-pressed="${S.stockMode === 'index'}">시작일=100 지수 비교</button><button data-sm="raw" aria-pressed="${S.stockMode === 'raw'}">주가(원)</button></div>` +
-    legend(S.stockMode === 'index' ? [['주가', COLORS()[0]], ['시장지수', COLORS()[1]]] : [['종가', COLORS()[0]]]) + '<div class="chart" id="c6"></div>',
-    `마지막 ${esc(last.date)} 종가 ${fmt(N(last.close), 0)}원. 점 = 시장 대비 크게 움직인 날(초록 상승 · 빨강 하락, 큰 점은 주요 공시가 같은 시기에 있음). 누르면 같은 시기 공시가 열립니다. 공시와 주가가 같은 시기에 움직였다고 해서 인과관계가 있다는 뜻은 아닙니다. 비수정 종가라 액면분할이 있으면 해석에 주의하세요.`)}${valCard()}${eventsCard()}${searchCard()}</div>`;
+    `<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px"><div class="seg"><button data-sm="index" aria-pressed="${S.stockMode === 'index'}">시작일=100 지수 비교</button><button data-sm="raw" aria-pressed="${S.stockMode === 'raw'}">주가(원)</button></div>
+     <div class="seg">${[['1m', '1개월'], ['3m', '3개월'], ['1y', '1년'], ['all', '전체']].map(([k, l]) => `<button data-sr="${k}" aria-pressed="${S.stockRange === k}">${l}</button>`).join('')}</div></div>` +
+    legend(S.stockMode === 'index' ? [['주가', COLORS()[0]], ['시장지수', COLORS()[1]]] : [['종가', COLORS()[0]]]) + '<div class="chart" id="c6"></div><div class="vol-wrap"><small>거래량</small><div class="chart-sub" id="c6v"></div></div>',
+    `마지막 ${esc(last.date)} 종가 ${fmt(N(last.close), 0)}원. 점 = 시장 대비 크게 움직인 날(초록 상승 · 빨강 하락, 큰 점은 주요 공시가 같은 시기에 있음). 누르면 같은 시기 공시가 열립니다. 공시와 주가가 같은 시기에 움직였다고 해서 인과관계가 있다는 뜻은 아닙니다. 지수 비교는 배당·분할을 반영한 수정주가로, 주가(원)는 분할만 반영한 종가로 그립니다.`)}${valCard()}${eventsCard()}${searchCard()}</div>`;
 }
 /* ---- 사건 연표: data/raw/dart_disclosures.csv (collect_events.py가 모은 전체 공시 목록, 크면 수백 KB라 이 화면을 열 때만 읽음) ---- */
 const TL_CATS = ['실적', '정기보고서', '공급계약', '시설투자', '합병·분할', '지분·출자', '최대주주', '증자·사채', '자기주식', '배당', '소송·제재'];
@@ -608,7 +614,7 @@ function showEvent(date) {
   const nitem = (r) => `<div class="ev-box">${esc(r.rcept_dt.slice(0, 4))}-${esc(r.rcept_dt.slice(4, 6))}-${esc(r.rcept_dt.slice(6, 8))}${r.flr_nm ? ` · ${esc(r.flr_nm)}` : ''}<br><a href="${esc(r.viewer_url)}" target="_blank" rel="noopener">${esc(r.report_nm)}</a></div>`;
   openPanel(`<div class="panel-head"><h2>${esc(date)} 주가 ${esc(e.direction)}</h2><button class="x" aria-label="닫기">✕</button></div>
     <div class="ev-val">${spct(e.excess_pct)} <small style="font-size:12px;color:var(--muted)">시장 대비</small></div>
-    <div class="formula">종가 ${fmt(N(e.close), 0)}원 · 등락률 ${spct(e.ret_pct)} − 시장지수 ${spct(e.index_ret_pct)}<br>평소 변동폭(직전 250거래일 표준편차 ${fmt(N(e.sigma_pct), 2)}%)의 ${fmt(N(e.z), 1)}배 · 거래량 20일 평균의 ${e.volume_ratio ? fmt(N(e.volume_ratio), 1) + '배' : '–'}<br>그해 급변 후보 ${esc(e.candidates_in_year)}일 중 ${esc(e.rank_in_year)}위</div>
+    <div class="formula">종가 ${fmt(N(e.close), 0)}원 · 등락률 ${spct(e.ret_pct)} − ${e.beta ? `베타 ${fmt(N(e.beta), 2)} × ` : ''}시장지수 ${spct(e.index_ret_pct)}${e.beta ? ' <small>(베타 = 이 종목이 시장을 따라 움직이는 정도, 직전 250거래일)</small>' : ''}<br>평소 변동폭(직전 250거래일 표준편차 ${fmt(N(e.sigma_pct), 2)}%)의 ${fmt(N(e.z), 1)}배 · 거래량 20일 평균의 ${e.volume_ratio ? fmt(N(e.volume_ratio), 1) + '배' : '–'}<br>그해 급변 후보 ${esc(e.candidates_in_year)}일 중 ${esc(e.rank_in_year)}위</div>
     ${e.note ? `<div class="note warn" style="margin-top:8px">${esc(e.note)}</div>` : ''}
     <h3 style="font-size:12.5px;margin:12px 0 0">같은 시기 주요 공시 (${maj.length}건) <small style="color:var(--muted);font-weight:400">${esc(e.window)}</small></h3>
     ${maj.map(item).join('') || '<div class="ev-box">연결된 주요 공시 없음 — 업종 전체 흐름, 수급, 공시 밖 뉴스일 수 있음 (확인 전)</div>'}
@@ -617,9 +623,23 @@ function showEvent(date) {
     ${news.length ? (news.length > 8 ? news.slice(0, 8).map(nitem).join('') + `<details><summary style="cursor:pointer;font-size:12px">나머지 ${news.length - 8}건</summary>${news.slice(8).map(nitem).join('')}</details>` : news.map(nitem).join('')) : `<div class="ev-box" style="color:var(--muted)">${e.news_count === '' || e.news_count === undefined ? '네이버 뉴스 검색은 최근 기사만 볼 수 있어, 뉴스 수집을 시작한 뒤의 급변일부터 채워집니다.' : '같은 시기 기사 없음'}</div>`}
     <div class="note" style="margin-top:10px">같은 시기에 있었던 공시를 자동으로 모은 것이며, 이 공시 때문에 주가가 움직였다는 뜻이 아닙니다.</div>`);
 }
+function stockRows() { // 기간 버튼: 마지막 날짜 기준으로 자름
+  const all = D.stock, n = { '1m': 1, '3m': 3, '1y': 12 }[S.stockRange]; if (!n || !all.length) return all;
+  const d = new Date(all[all.length - 1].date); d.setMonth(d.getMonth() - n); const cut = d.toISOString().slice(0, 10);
+  return all.filter((r) => r.date >= cut);
+}
+function volBars(el, xs, vals) { // 거래량 막대 (주가 차트와 같은 가로 축)
+  if (!el) return; const W = Math.max(280, el.clientWidth || 500), H = 64, l = 56, r = 12, iw = W - l - r, mx = Math.max(1, ...vals.map((v) => v || 0)), bw = Math.max(1, iw / Math.max(1, xs.length) - 0.5);
+  const X = (i) => l + (i / Math.max(1, xs.length - 1)) * iw;
+  const short = (v) => (v >= 1e8 ? fmt(v / 1e8, 1) + '억' : v >= 1e4 ? fmt(v / 1e4, 0) + '만' : fmt(v, 0));
+  el.innerHTML = `<svg viewBox="0 0 ${W} ${H}"><text x="${l - 6}" y="10" text-anchor="end">최대 ${short(mx)}</text>${vals.map((v, i) => (v ? `<rect class="vb" data-i="${i}" x="${X(i) - bw / 2}" y="${H - 2 - (v / mx) * (H - 8)}" width="${bw}" height="${(v / mx) * (H - 8)}" fill="#b9b3a8"/>` : '')).join('')}</svg>`;
+  el.querySelectorAll('.vb').forEach((b) => { b.addEventListener('mousemove', (e) => tip.show(e, `<div class="tip-h">${esc(xs[+b.dataset.i])}</div>거래량 ${fmt(vals[+b.dataset.i], 0)}주`)); b.addEventListener('mouseleave', () => tip.hide()); });
+}
 function drawStock() {
-  const xs = D.stock.map((r) => r.date), c = D.stock.map((r) => N(r.close)), k = D.stock.map((r) => N(r.index_close));
+  const ST = stockRows(), idxMode = S.stockMode === 'index';
+  const xs = ST.map((r) => r.date), c = ST.map((r) => N(idxMode && r.adj_close ? r.adj_close : r.close)), k = ST.map((r) => N(r.index_close));
   const b0 = c.find((v) => v !== null), k0 = k.find((v) => v !== null);
+  volBars($('#c6v'), xs, ST.map((r) => N(r.volume)));
   const mk = D.reg.filter((r) => r.type === 'DART 정기보고서' && r.source_date).map((r) => ({ date: `${r.source_date.slice(0, 4)}-${r.source_date.slice(4, 6)}-${r.source_date.slice(6, 8)}`, label: `${r.title} (${r.source_date})` }));
   const dots = (D.events || []).map((e) => ({ date: e.date, key: e.date, big: +e.major_count > 0, color: e.direction === '하락' ? css('--down') : css('--up'),
     label: `${e.date} 시장 대비 ${spct(e.excess_pct)}\n${+e.major_count ? e.headline : '연결된 주요 공시 없음'}\n누르면 같은 시기 공시` }));
@@ -630,7 +650,7 @@ function drawStock() {
 }
 
 /* 산업 KPI: kpi_values.csv에 값이 있으면 KPI별 차트+표, 없으면 '미확인'과 찾을 곳 */
-const kpiFmt = (v, u) => (v === null ? '–' : u === 'KRW' ? fmt(v / 1e8, 0) + '억원' : u === '%' ? fmt(v, 2) + '%' : `${fmt(v, v % 1 ? 2 : 0)} ${u}`);
+const kpiFmt = (v, u) => (v === null ? '–' : u === 'KRW' ? eok(v, 0) : u === '%' ? fmt(v, 2) + '%' : `${fmt(v, v % 1 ? 2 : 0)} ${u}`);
 function kpiGroups() {
   const st = D.status.filter((r) => r.group !== '공통 재무');
   return st.map((s) => ({ s, rows: D.kpi.filter((r) => r.kpi_key === s.key) }));
@@ -857,8 +877,46 @@ function render() {
   try { history.replaceState(null, '', location.search + '#' + id); } catch (e) { /* 미리보기 환경 */ }
 }
 
+/* 내려받기: 카드 안 첫 표 → CSV, 첫 차트 → PNG */
+function saveBlob(blob, name) { const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name.replace(/[\\/:*?"<>|\s]+/g, '_'); document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 2000); }
+function downloadCsv(cardEl) {
+  const tb = cardEl.querySelector('table'); if (!tb) return;
+  const cell = (c) => { let v = c.innerText.replace(/\s*\n\s*/g, ' ').trim(); if (/^-?[\d,]+(\.\d+)?$/.test(v)) v = v.replace(/,/g, ''); return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; };
+  const csv = [...tb.rows].map((r) => [...r.cells].map(cell).join(',')).join('\r\n');
+  saveBlob(new Blob(['\ufeff' + csv + '\r\n'], { type: 'text/csv;charset=utf-8' }), `${D.company.name}_${cardEl.dataset.k}.csv`);
+}
+function downloadPng(cardEl) {
+  const svg = cardEl.querySelector('.chart svg'); if (!svg) return;
+  const vb = svg.viewBox.baseVal, W = vb.width, H = vb.height, top = 46, clone = svg.cloneNode(true);
+  const src = svg.querySelectorAll('*'), dst = clone.querySelectorAll('*'); // 화면 CSS(글자 크기·색)를 그림 안에 그대로 넣음
+  src.forEach((el, i) => { const cs = getComputedStyle(el), d = dst[i]; if (el.tagName === 'text') { d.setAttribute('font-size', cs.fontSize); d.setAttribute('font-family', cs.fontFamily); d.setAttribute('fill', cs.fill); } if (el.classList.contains('hit') || el.classList.contains('cur') || el.classList.contains('hov')) d.remove(); else { d.style.animation = 'none'; d.removeAttribute('stroke-dasharray'); } });
+  const ff = getComputedStyle(document.body).fontFamily, leg = [...cardEl.querySelectorAll('.legend span')].map((x) => x.textContent.trim()).filter(Boolean).join(' · ');
+  const out = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H + top + 22}" viewBox="0 0 ${W} ${H + top + 22}"><rect width="100%" height="100%" fill="#fff"/>
+    <text x="12" y="20" font-family="${esc(ff)}" font-size="14" font-weight="700" fill="#1c1a17">${esc(D.company.name)} · ${esc(cardEl.dataset.k)}</text>
+    <text x="12" y="38" font-family="${esc(ff)}" font-size="11" fill="#555">${[...cardEl.querySelectorAll('.legend span')].map((x) => { const i = x.querySelector('i'); return `<tspan fill="${i ? getComputedStyle(i).backgroundColor : '#777'}">■</tspan> ${esc(x.textContent.trim())}   `; }).join('')}</text>
+    <g transform="translate(0,${top})">${clone.innerHTML}</g>
+    <text x="12" y="${H + top + 14}" font-family="${esc(ff)}" font-size="10" fill="#999">UBDA · DART 공시·Yahoo Finance 기반 자동 수집 · ${esc(D.summary?.updated_at || '')}</text></svg>`;
+  const img = new Image();
+  img.onload = () => { const k = 2, cv = document.createElement('canvas'); cv.width = W * k; cv.height = (H + top + 22) * k; const cx = cv.getContext('2d'); cx.scale(k, k); cx.drawImage(img, 0, 0); cv.toBlob((b) => b && saveBlob(b, `${D.company.name}_${cardEl.dataset.k}.png`), 'image/png'); };
+  img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(out);
+}
+/* 다른 기업으로 바로 가기: 이름·영문명·종목코드·별칭(브랜드)으로 찾고, 지금 보던 탭을 그대로 연다 */
+function initCoSearch() {
+  const q = $('#coQ'), box = $('#coSugg'); if (!q || !INDEX?.companies) return;
+  let list = [], idx = 0;
+  const go = (c) => { if (c) location.href = `dashboard.html?c=${c.slug}#${S.page}`; };
+  const draw = () => { box.innerHTML = list.length ? list.map((c, i) => `<div data-i="${i}" class="${i === idx ? 'on' : ''}"><b>${esc(c.name)}</b><span>${esc(c.stock_code)} · ${esc(INDEX.industries?.[c.industry]?.name || c.industry)}</span></div>`).join('') : '<div class="none">결과 없음</div>'; box.hidden = false; };
+  q.addEventListener('input', () => { const v = q.value.trim().toLowerCase(); idx = 0; if (!v) { box.hidden = true; return; }
+    list = INDEX.companies.filter((c) => [c.name, c.name_en, c.stock_code, ...(c.aliases || [])].some((k) => String(k || '').toLowerCase().includes(v))).slice(0, 8); draw(); });
+  q.addEventListener('keydown', (e) => { if (e.key === 'ArrowDown') { e.preventDefault(); idx = Math.min(list.length - 1, idx + 1); draw(); } else if (e.key === 'ArrowUp') { e.preventDefault(); idx = Math.max(0, idx - 1); draw(); } else if (e.key === 'Enter') go(list[idx]); else if (e.key === 'Escape') { q.value = ''; box.hidden = true; } });
+  box.addEventListener('mousedown', (e) => { const d = e.target.closest('[data-i]'); if (d) { e.preventDefault(); go(list[+d.dataset.i]); } });
+  q.addEventListener('blur', () => setTimeout(() => { box.hidden = true; }, 150));
+}
 function onClick(e) {
-  const t = e.target.closest('[data-page],[data-year],[data-act],[data-q],[data-sm],[data-lf],[data-per],[data-cmp],[data-edit]'); if (!t) return;
+  const t = e.target.closest('[data-page],[data-year],[data-act],[data-q],[data-sm],[data-lf],[data-per],[data-cmp],[data-edit],[data-sr]'); if (!t) return;
+  if (t.dataset.act === 'dlcsv') { downloadCsv(t.closest('.card')); return; }
+  if (t.dataset.act === 'dlpng') { downloadPng(t.closest('.card')); return; }
+  if (t.dataset.sr) { S.stockRange = t.dataset.sr; render(); return; }
   if (S.edit && t.closest('.chart')) return; // 편집 중에는 차트 클릭 끔
   if (t.dataset.per) { S.period = t.dataset.per; render(); return; }
   if (t.dataset.cmp) { S.cmp = t.dataset.cmp; closePanel(); render(); return; }
@@ -905,6 +963,7 @@ function onClick(e) {
   $('#editBtn').addEventListener('click', () => { S.edit = !S.edit; render(); });
   $('#askBtn')?.addEventListener('click', () => window.openQuery?.());
   try { INDEX = await (await fetch('companies/index.json', { cache: 'no-cache' })).json(); } catch (e) { INDEX = null; }
+  initCoSearch();
   let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => DRAW[S.page]?.(), 150); });
   render();
 })();

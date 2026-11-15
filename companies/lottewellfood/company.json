@@ -21,5 +21,10 @@
   ],
   "theme_color": "#8f1d3a",
   "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=lottewellfood",
-  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용. 2023년 롯데푸드 합병(옛 롯데제과). 합병 전후 비교에 주의"
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용. 2023년 롯데푸드 합병(옛 롯데제과). 합병 전후 비교에 주의",
+  "aliases": [
+    "롯데제과",
+    "빼빼로",
+    "롯데푸드"
+  ]
 }

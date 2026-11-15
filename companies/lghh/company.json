@@ -17,5 +17,10 @@
   ],
   "theme_color": "#a50034",
   "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=lghh",
-  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용."
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용.",
+  "aliases": [
+    "엘지생활건강",
+    "생건",
+    "더후"
+  ]
 }

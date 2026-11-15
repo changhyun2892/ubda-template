@@ -6,7 +6,8 @@
 
  - 종목: company.json의 yahoo_ticker (예: 003230.KS = 코스피, 숫자.KQ = 코스닥), 비교 지수: market_index (기본 ^KS11 코스피)
  - 출처: Yahoo Finance 일봉 (비공식 무료 경로 — 바뀌거나 막힐 수 있어 실패해도 기존 파일을 유지). DART는 주가를 제공하지 않습니다.
- - 수정주가가 아닌 일반 종가입니다. 액면분할이 있는 기업은 화면 해석에 주의.
+ - close = Yahoo 일봉 종가 (액면분할은 과거까지 반영, 배당은 미반영), adj_close = 배당·분할을 모두 반영한 수정주가 (수익률·급변일 계산용),
+   raw_close = 그날 실제 거래된 가격 (분할 이전 날짜는 분할 비율을 되돌림 — 시가총액·PER 계산용)
 """
 from __future__ import annotations
 
@@ -30,7 +31,7 @@ def fetch(ticker: str, start_year: int) -> dict:
     p2 = int(time.time()) + 86400
     last = None
     for host in HOSTS:
-        url = f"{host}/v8/finance/chart/{urllib.parse.quote(ticker)}?period1={p1}&period2={p2}&interval=1d"
+        url = f"{host}/v8/finance/chart/{urllib.parse.quote(ticker)}?period1={p1}&period2={p2}&interval=1d&events=div%2Csplits"
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (ubda dashboard data updater)"})
         for attempt in range(2):
             try:
@@ -45,13 +46,28 @@ def fetch(ticker: str, start_year: int) -> dict:
 def parse(js: dict) -> dict[str, dict]:
     res = js["chart"]["result"][0]
     q = res["indicators"]["quote"][0]
+    adj = ((res["indicators"].get("adjclose") or [{}])[0] or {}).get("adjclose") or []
+    splits = []  # (날짜, 비율) — 5:1 분할이면 비율 5
+    for sp in ((res.get("events") or {}).get("splits") or {}).values():
+        try:
+            ratio = float(sp["numerator"]) / float(sp["denominator"])
+            if ratio > 0 and ratio != 1:
+                splits.append((datetime.fromtimestamp(int(sp["date"]), KST).strftime("%Y-%m-%d"), ratio))
+        except (KeyError, TypeError, ValueError, ZeroDivisionError):
+            continue
     out = {}
     for i, t in enumerate(res.get("timestamp") or []):
         c = q["close"][i]
         if c is None:  # 거래정지·휴장
             continue
         d = datetime.fromtimestamp(t, KST).strftime("%Y-%m-%d")
-        out[d] = {"date": d, "close": round(c, 2), "volume": q["volume"][i] if q["volume"][i] is not None else ""}
+        a = adj[i] if i < len(adj) and adj[i] is not None else c
+        back = 1.0
+        for sd, ratio in splits:  # 이 날짜보다 뒤에 있었던 분할을 되돌려 실제 거래 가격으로
+            if sd > d:
+                back *= ratio
+        out[d] = {"date": d, "close": round(c, 2), "adj_close": round(a, 2), "raw_close": round(c * back, 2), "splits": len(splits),
+                  "volume": q["volume"][i] if q["volume"][i] is not None else ""}
     return out
 
 
@@ -82,13 +98,14 @@ def main() -> int:
         print(f"[경고] {e} — 기존 stock_daily.csv를 유지합니다.", file=sys.stderr)
         write_log("stock", {"status": "실패", "checked_at": now, "message": str(e)[:200]})
         return 0
-    src = f"Yahoo Finance {ticker} 일봉 (비수정 종가)"
+    src = f"Yahoo Finance {ticker} 일봉 (분할 반영 종가)"
     out = []
     for d in sorted(rows):
         r = rows[d]
         k = idx.get(d)
-        out.append({"date": d, "close": round(r["close"]), "volume": r["volume"], "index_close": "" if k is None else k["close"], "source": src})
-    write_csv(OUT, ["date", "close", "volume", "index_close", "source"], out)
+        out.append({"date": d, "close": round(r["close"]), "volume": r["volume"], "index_close": "" if k is None else k["close"], "source": src,
+                    "adj_close": r["adj_close"], "raw_close": round(r["raw_close"])})
+    write_csv(OUT, ["date", "close", "volume", "index_close", "source", "adj_close", "raw_close"], out)
     write_log("stock", {"status": "성공", "checked_at": now, "rows": len(out), "last_date": out[-1]["date"], "last_close": out[-1]["close"], "source": src, "index": index})
     print(f"주가 {len(out)}행 저장 · 마지막 {out[-1]['date']} 종가 {out[-1]['close']:,}")
     return 0

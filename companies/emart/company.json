@@ -18,5 +18,10 @@
   ],
   "theme_color": "#ffb81c",
   "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=emart",
-  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용."
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용.",
+  "aliases": [
+    "E-MART",
+    "이마트24",
+    "트레이더스"
+  ]
 }

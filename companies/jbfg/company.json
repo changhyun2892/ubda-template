@@ -18,5 +18,10 @@
   ],
   "theme_color": "#0b3d91",
   "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=jbfg",
-  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용. 은행·금융지주는 매출 대신 순이자이익·순수수료이익 등으로 손익 구조가 다름."
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용. 은행·금융지주는 매출 대신 순이자이익·순수수료이익 등으로 손익 구조가 다름.",
+  "aliases": [
+    "JB",
+    "전북은행",
+    "광주은행"
+  ]
 }

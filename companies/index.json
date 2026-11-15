@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-15 01:01 KST",
+ "updated_at": "2026-11-15 09:30 KST",
  "industries": {
   "auto": {
    "name": "자동차",
@@ -45,6 +45,13 @@
    "name": "아모레퍼시픽",
    "name_en": "Amorepacific",
    "stock_code": "090430",
+   "aliases": [
+    "아모레",
+    "설화수",
+    "라네즈",
+    "이니스프리",
+    "AP"
+   ],
    "industry": "cosmetics",
    "categories": [
     "브랜드사"
@@ -87,6 +94,11 @@
    "name": "에이피알",
    "name_en": "APR",
    "stock_code": "278470",
+   "aliases": [
+    "APR",
+    "메디큐브",
+    "에이지알"
+   ],
    "industry": "beauty_device",
    "categories": [
     "홈 뷰티 디바이스"
@@ -130,6 +142,12 @@
    "name": "BGF리테일",
    "name_en": "BGF Retail",
    "stock_code": "282330",
+   "aliases": [
+    "BGF",
+    "CU",
+    "씨유",
+    "편의점"
+   ],
    "industry": "retail",
    "categories": [
     "편의점"
@@ -172,6 +190,10 @@
    "name": "빙그레",
    "name_en": "Binggrae",
    "stock_code": "005180",
+   "aliases": [
+    "바나나맛우유",
+    "메로나"
+   ],
    "industry": "food",
    "categories": [
     "아이스크림"
@@ -215,6 +237,11 @@
    "name": "BNK금융지주",
    "name_en": "BNK Financial Group",
    "stock_code": "138930",
+   "aliases": [
+    "BNK",
+    "부산은행",
+    "경남은행"
+   ],
    "industry": "bank",
    "categories": [
     "지방 금융지주"
@@ -258,6 +285,10 @@
    "name": "클래시스",
    "name_en": "Classys",
    "stock_code": "214150",
+   "aliases": [
+    "슈링크",
+    "볼뉴머"
+   ],
    "industry": "beauty_device",
    "categories": [
     "미용 의료기기"
@@ -300,6 +331,9 @@
    "name": "코스맥스",
    "name_en": "Cosmax",
    "stock_code": "192820",
+   "aliases": [
+    "COSMAX"
+   ],
    "industry": "cosmetics",
    "categories": [
     "ODM"
@@ -342,6 +376,10 @@
    "name": "크라운제과",
    "name_en": "Crown Confectionery",
    "stock_code": "264900",
+   "aliases": [
+    "크라운",
+    "죠리퐁"
+   ],
    "industry": "food",
    "categories": [
     "스낵·과자"
@@ -386,6 +424,11 @@
    "name": "이마트",
    "name_en": "E-MART",
    "stock_code": "139480",
+   "aliases": [
+    "E-MART",
+    "이마트24",
+    "트레이더스"
+   ],
    "industry": "retail",
    "categories": [
     "대형마트"
@@ -429,6 +472,10 @@
    "name": "GS리테일",
    "name_en": "GS Retail",
    "stock_code": "007070",
+   "aliases": [
+    "GS25",
+    "지에스리테일"
+   ],
    "industry": "retail",
    "categories": [
     "편의점"
@@ -471,6 +518,11 @@
    "name": "해태제과",
    "name_en": "Haitai Confectionery & Foods",
    "stock_code": "101530",
+   "aliases": [
+    "해태",
+    "허니버터칩",
+    "홈런볼"
+   ],
    "industry": "food",
    "categories": [
     "스낵·과자"
@@ -515,6 +567,10 @@
    "name": "하나금융지주",
    "name_en": "Hana Financial Group",
    "stock_code": "086790",
+   "aliases": [
+    "하나금융",
+    "하나은행"
+   ],
    "industry": "bank",
    "categories": [
     "시중 금융지주"
@@ -559,6 +615,10 @@
    "name": "한미반도체",
    "name_en": "Hanmi Semiconductor",
    "stock_code": "042700",
+   "aliases": [
+    "한미",
+    "TC본더"
+   ],
    "industry": "semiconductor",
    "categories": [
     "반도체 장비"
@@ -602,6 +662,9 @@
    "name": "한온시스템",
    "name_en": "Hanon Systems",
    "stock_code": "018880",
+   "aliases": [
+    "한온"
+   ],
    "industry": "auto",
    "categories": [
     "자동차부품"
@@ -645,6 +708,10 @@
    "name": "한화오션",
    "name_en": "Hanwha Ocean",
    "stock_code": "042660",
+   "aliases": [
+    "한화오션",
+    "대우조선해양"
+   ],
    "industry": "shipbuilding",
    "categories": [
     "조선소"
@@ -688,6 +755,10 @@
    "name": "HD현대중공업",
    "name_en": "HD Hyundai Heavy Industries",
    "stock_code": "329180",
+   "aliases": [
+    "현대중공업",
+    "HD현대"
+   ],
    "industry": "shipbuilding",
    "categories": [
     "조선소"
@@ -731,6 +802,10 @@
    "name": "HD한국조선해양",
    "name_en": "HD Korea Shipbuilding & Offshore Engineering",
    "stock_code": "009540",
+   "aliases": [
+    "한국조선해양",
+    "HD현대"
+   ],
    "industry": "shipbuilding",
    "categories": [
     "조선 중간지주"
@@ -775,6 +850,10 @@
    "name": "HL만도",
    "name_en": "HL Mando",
    "stock_code": "204320",
+   "aliases": [
+    "만도",
+    "HL"
+   ],
    "industry": "auto",
    "categories": [
     "자동차부품"
@@ -818,6 +897,13 @@
    "name": "현대차",
    "name_en": "Hyundai Motor",
    "stock_code": "005380",
+   "aliases": [
+    "현대자동차",
+    "현대차",
+    "Hyundai Motor",
+    "제네시스",
+    "아이오닉"
+   ],
    "industry": "auto",
    "categories": [
     "완성차"
@@ -861,6 +947,10 @@
    "name": "현대백화점",
    "name_en": "Hyundai Department Store",
    "stock_code": "069960",
+   "aliases": [
+    "현대백화점",
+    "더현대"
+   ],
    "industry": "retail",
    "categories": [
     "백화점"
@@ -904,6 +994,11 @@
    "name": "기업은행",
    "name_en": "Industrial Bank of Korea",
    "stock_code": "024110",
+   "aliases": [
+    "IBK",
+    "IBK기업은행",
+    "중소기업은행"
+   ],
    "industry": "bank",
    "categories": [
     "국책은행"
@@ -947,6 +1042,12 @@
    "name": "iM금융지주",
    "name_en": "iM Financial Group",
    "stock_code": "139130",
+   "aliases": [
+    "iM",
+    "DGB",
+    "대구은행",
+    "iM뱅크"
+   ],
    "industry": "bank",
    "categories": [
     "지방 금융지주"
@@ -990,6 +1091,11 @@
    "name": "JB금융지주",
    "name_en": "JB Financial Group",
    "stock_code": "175330",
+   "aliases": [
+    "JB",
+    "전북은행",
+    "광주은행"
+   ],
    "industry": "bank",
    "categories": [
     "지방 금융지주"
@@ -1033,6 +1139,10 @@
    "name": "주성엔지니어링",
    "name_en": "Jusung Engineering",
    "stock_code": "036930",
+   "aliases": [
+    "주성",
+    "Jusung"
+   ],
    "industry": "semiconductor",
    "categories": [
     "반도체 장비",
@@ -1077,6 +1187,11 @@
    "name": "카카오",
    "name_en": "Kakao",
    "stock_code": "035720",
+   "aliases": [
+    "Kakao",
+    "카카오톡",
+    "카톡"
+   ],
    "industry": "platform",
    "categories": [
     "포털·플랫폼"
@@ -1119,6 +1234,10 @@
    "name": "카카오뱅크",
    "name_en": "KakaoBank",
    "stock_code": "323410",
+   "aliases": [
+    "카뱅",
+    "KakaoBank"
+   ],
    "industry": "bank",
    "categories": [
     "인터넷은행"
@@ -1162,6 +1281,11 @@
    "name": "KB금융",
    "name_en": "KB Financial Group",
    "stock_code": "105560",
+   "aliases": [
+    "KB",
+    "KB금융지주",
+    "국민은행"
+   ],
    "industry": "bank",
    "categories": [
     "시중 금융지주"
@@ -1206,6 +1330,12 @@
    "name": "KG모빌리티",
    "name_en": "KG Mobility",
    "stock_code": "003620",
+   "aliases": [
+    "KGM",
+    "쌍용차",
+    "쌍용자동차",
+    "토레스"
+   ],
    "industry": "auto",
    "categories": [
     "완성차"
@@ -1249,6 +1379,11 @@
    "name": "기아",
    "name_en": "Kia",
    "stock_code": "000270",
+   "aliases": [
+    "KIA",
+    "기아차",
+    "기아자동차"
+   ],
    "industry": "auto",
    "categories": [
     "완성차"
@@ -1292,6 +1427,10 @@
    "name": "한국콜마",
    "name_en": "Kolmar Korea",
    "stock_code": "161890",
+   "aliases": [
+    "콜마",
+    "Kolmar"
+   ],
    "industry": "cosmetics",
    "categories": [
     "ODM"
@@ -1334,6 +1473,12 @@
    "name": "크래프톤",
    "name_en": "KRAFTON",
    "stock_code": "259960",
+   "aliases": [
+    "KRAFTON",
+    "배틀그라운드",
+    "배그",
+    "PUBG"
+   ],
    "industry": "platform",
    "categories": [
     "게임"
@@ -1377,6 +1522,10 @@
    "name": "LG디스플레이",
    "name_en": "LG Display",
    "stock_code": "034220",
+   "aliases": [
+    "LGD",
+    "엘지디스플레이"
+   ],
    "industry": "semiconductor",
    "categories": [
     "디스플레이"
@@ -1420,6 +1569,11 @@
    "name": "LG전자",
    "name_en": "LG Electronics",
    "stock_code": "066570",
+   "aliases": [
+    "LG",
+    "엘지전자",
+    "엘지"
+   ],
    "industry": "semiconductor",
    "categories": [
     "가전·모바일"
@@ -1463,6 +1617,11 @@
    "name": "LG생활건강",
    "name_en": "LG H&H",
    "stock_code": "051900",
+   "aliases": [
+    "엘지생활건강",
+    "생건",
+    "더후"
+   ],
    "industry": "cosmetics",
    "categories": [
     "브랜드사"
@@ -1505,6 +1664,11 @@
    "name": "롯데쇼핑",
    "name_en": "Lotte Shopping",
    "stock_code": "023530",
+   "aliases": [
+    "롯데",
+    "롯데백화점",
+    "롯데마트"
+   ],
    "industry": "retail",
    "categories": [
     "백화점",
@@ -1550,6 +1714,11 @@
    "name": "롯데웰푸드",
    "name_en": "LOTTE WELLFOOD",
    "stock_code": "280360",
+   "aliases": [
+    "롯데제과",
+    "빼빼로",
+    "롯데푸드"
+   ],
    "industry": "food",
    "categories": [
     "스낵·과자",
@@ -1596,6 +1765,10 @@
    "name": "현대모비스",
    "name_en": "Hyundai Mobis",
    "stock_code": "012330",
+   "aliases": [
+    "모비스",
+    "Mobis"
+   ],
    "industry": "auto",
    "categories": [
     "자동차부품"
@@ -1639,6 +1812,12 @@
    "name": "NAVER",
    "name_en": "NAVER",
    "stock_code": "035420",
+   "aliases": [
+    "네이버",
+    "Naver",
+    "라인",
+    "웹툰"
+   ],
    "industry": "platform",
    "categories": [
     "포털·플랫폼"
@@ -1681,6 +1860,11 @@
    "name": "엔씨소프트",
    "name_en": "NCSOFT",
    "stock_code": "036570",
+   "aliases": [
+    "NC",
+    "엔씨",
+    "리니지"
+   ],
    "industry": "platform",
    "categories": [
     "게임"
@@ -1724,6 +1908,9 @@
    "name": "넷마블",
    "name_en": "Netmarble",
    "stock_code": "251270",
+   "aliases": [
+    "Netmarble"
+   ],
    "industry": "platform",
    "categories": [
     "게임"
@@ -1767,6 +1954,11 @@
    "name": "농심",
    "name_en": "Nongshim",
    "stock_code": "004370",
+   "aliases": [
+    "신라면",
+    "Nongshim",
+    "새우깡"
+   ],
    "industry": "food",
    "categories": [
     "라면",
@@ -1813,6 +2005,10 @@
    "name": "오리온",
    "name_en": "Orion",
    "stock_code": "271560",
+   "aliases": [
+    "초코파이",
+    "Orion"
+   ],
    "industry": "food",
    "categories": [
     "스낵·과자"
@@ -1858,6 +2054,10 @@
    "name": "오뚜기",
    "name_en": "Ottogi",
    "stock_code": "007310",
+   "aliases": [
+    "진라면",
+    "Ottogi"
+   ],
    "industry": "food",
    "categories": [
     "라면"
@@ -1903,6 +2103,12 @@
    "name": "삼성전자",
    "name_en": "Samsung Electronics",
    "stock_code": "005930",
+   "aliases": [
+    "삼전",
+    "Samsung",
+    "삼성",
+    "갤럭시"
+   ],
    "industry": "semiconductor",
    "categories": [
     "메모리 반도체",
@@ -1947,6 +2153,10 @@
    "name": "삼성중공업",
    "name_en": "Samsung Heavy Industries",
    "stock_code": "010140",
+   "aliases": [
+    "삼성중",
+    "삼중"
+   ],
    "industry": "shipbuilding",
    "categories": [
     "조선소"
@@ -1990,6 +2200,10 @@
    "name": "삼성에스디에스",
    "name_en": "Samsung SDS",
    "stock_code": "018260",
+   "aliases": [
+    "삼성SDS",
+    "SDS"
+   ],
    "industry": "platform",
    "categories": [
     "IT서비스"
@@ -2033,6 +2247,13 @@
    "name": "삼양식품",
    "name_en": "Samyang Foods",
    "stock_code": "003230",
+   "aliases": [
+    "불닭",
+    "불닭볶음면",
+    "삼양",
+    "Samyang",
+    "Buldak"
+   ],
    "industry": "food",
    "categories": [
     "라면"
@@ -2077,6 +2298,11 @@
    "name": "삼성전기",
    "name_en": "Samsung Electro-Mechanics",
    "stock_code": "009150",
+   "aliases": [
+    "삼성전기",
+    "SEMCO",
+    "MLCC"
+   ],
    "industry": "semiconductor",
    "categories": [
     "전자부품"
@@ -2120,6 +2346,11 @@
    "name": "신한지주",
    "name_en": "Shinhan Financial Group",
    "stock_code": "055550",
+   "aliases": [
+    "신한금융",
+    "신한금융지주",
+    "신한은행"
+   ],
    "industry": "bank",
    "categories": [
     "시중 금융지주"
@@ -2164,6 +2395,10 @@
    "name": "신세계",
    "name_en": "Shinsegae",
    "stock_code": "004170",
+   "aliases": [
+    "신세계백화점",
+    "Shinsegae"
+   ],
    "industry": "retail",
    "categories": [
     "백화점"
@@ -2207,6 +2442,11 @@
    "name": "실리콘투",
    "name_en": "Silicon2",
    "stock_code": "257720",
+   "aliases": [
+    "실리콘2",
+    "Silicon2",
+    "스타일코리안"
+   ],
    "industry": "cosmetics",
    "categories": [
     "유통"
@@ -2250,6 +2490,12 @@
    "name": "SK하이닉스",
    "name_en": "SK hynix",
    "stock_code": "000660",
+   "aliases": [
+    "하이닉스",
+    "SK",
+    "Hynix",
+    "HBM"
+   ],
    "industry": "semiconductor",
    "categories": [
     "메모리 반도체"
@@ -2293,6 +2539,10 @@
    "name": "원텍",
    "name_en": "Wontech",
    "stock_code": "336570",
+   "aliases": [
+    "Wontech",
+    "올리지오"
+   ],
    "industry": "beauty_device",
    "categories": [
     "미용 의료기기"
@@ -2329,6 +2579,10 @@
    "name": "우리금융지주",
    "name_en": "Woori Financial Group",
    "stock_code": "316140",
+   "aliases": [
+    "우리금융",
+    "우리은행"
+   ],
    "industry": "bank",
    "categories": [
     "시중 금융지주"

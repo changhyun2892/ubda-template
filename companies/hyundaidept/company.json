@@ -18,5 +18,9 @@
   ],
   "theme_color": "#00704a",
   "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=hyundaidept",
-  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용."
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용.",
+  "aliases": [
+    "현대백화점",
+    "더현대"
+  ]
 }

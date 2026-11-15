@@ -5,7 +5,9 @@
     python scripts/collect_events.py --company samyang
 
 1) 급변일: data/stock_daily.csv(update_stock.py 결과)에서
-   초과 등락률 = 종목 등락률 − 시장지수 등락률 (그날 시장 전체가 움직인 만큼은 뺀다)
+   초과 등락률 = 종목 등락률 − 베타 × 시장지수 등락률 (그날 시장이 움직인 만큼을 이 종목의 민감도에 맞춰 뺀다)
+   베타 = 직전 250거래일의 종목·지수 일간 등락률로 계산(공분산 ÷ 지수 분산, 0~3으로 제한). 과거가 60일 미만이면 1.
+   등락률은 수정주가(adj_close, 배당·분할 반영)가 있으면 그것으로 계산한다.
    기준: |초과 등락률| ≥ 직전 250거래일 초과 등락률 표준편차 × 2.5  또는  |초과 등락률| ≥ 5%
    연도별로 크기(표준편차 배수) 상위 10일만 남긴다. 거래량이 직전 20일 평균의 3배 이상이면 함께 표시.
 2) 공시: DART 공시 목록(list.json, 모든 유형)을 data/raw/dart_disclosures.csv에 모아 두고
@@ -16,7 +18,7 @@
    뉴스 검색은 최근 1,000건까지만 돼서, 뉴스 수집을 시작한 뒤의 급변일 위주로 채워진다.
 
 같은 시기에 있었던 공시일 뿐, 주가 변동의 원인이라는 뜻이 아니다. 공시가 없는 급변일도 지우지 않는다.
-주가는 비수정 종가라 액면분할·무상증자일은 가격 착시가 생길 수 있어, 그 공시가 붙으면 note에 적는다.
+무상증자·감자 등 주식 수가 바뀌는 공시가 붙으면 note에 적는다. 시장지수가 하루 5% 이상 움직인 날도 note에 적는다.
 """
 from __future__ import annotations
 
@@ -77,15 +79,24 @@ def f(x):
 
 
 def spikes(rows: list[dict]) -> list[dict]:
-    pts = [(r["date"], f(r["close"]), f(r["volume"]), f(r.get("index_close"))) for r in rows]
+    pts = [(r["date"], f(r.get("adj_close")) or f(r["close"]), f(r["volume"]), f(r.get("index_close")), f(r["close"])) for r in rows]
     pts = [p for p in pts if p[1]]
-    out, ex_hist = [], []
+    out, ex_hist, pair = [], [], []  # pair = (종목 등락률, 지수 등락률) 과거 기록 → 베타
     for i in range(1, len(pts)):
-        d, c, v, ix = pts[i]
-        _, c0, _, ix0 = pts[i - 1]
+        d, c, v, ix, px = pts[i]
+        _, c0, _, ix0, _ = pts[i - 1]
         r = (c / c0 - 1) * 100
         m = (ix / ix0 - 1) * 100 if ix and ix0 else None
-        e = r - m if m is not None else r
+        beta = 1.0
+        win = pair[-WIN_SIGMA:]
+        if len(win) >= MIN_HIST:
+            mr, mm = sum(p[0] for p in win) / len(win), sum(p[1] for p in win) / len(win)
+            var = sum((p[1] - mm) ** 2 for p in win)
+            if var > 0:
+                beta = min(3.0, max(0.0, sum((p[0] - mr) * (p[1] - mm) for p in win) / var))
+        e = r - beta * m if m is not None else r
+        if m is not None:
+            pair.append((r, m))
         hist = ex_hist[-WIN_SIGMA:]
         sd = None
         if len(hist) >= MIN_HIST:
@@ -98,7 +109,7 @@ def spikes(rows: list[dict]) -> list[dict]:
             continue
         z = abs(e) / sd if sd else 0
         if z >= SIGMA_K or abs(e) >= ABS_MIN:
-            out.append({"i": i, "date": d, "close": round(c), "ret_pct": round(r, 2), "index_ret_pct": "" if m is None else round(m, 2),
+            out.append({"i": i, "date": d, "close": round(px or c), "ret_pct": round(r, 2), "index_ret_pct": "" if m is None else round(m, 2), "beta": round(beta, 2),
                         "excess_pct": round(e, 2), "sigma_pct": round(sd, 2), "z": round(z, 2), "volume_ratio": "" if vr is None else round(vr, 1),
                         "direction": "상승" if e > 0 else "하락", "volume_spike": "Y" if vr and vr >= VOL_K else ""})
     keep = []
@@ -192,7 +203,9 @@ def main() -> int:
         major = sorted((r for r in hit if r["category"] in MAJOR), key=lambda r: PRIO[r["category"]])  # 실적·계약 같은 유형이 먼저
         notes = []
         if any(PRICE_TRAP.search(r["report_nm"]) for r in hit):
-            notes.append("주식 수가 바뀌는 공시가 있어 비수정 주가의 착시일 수 있음")
+            notes.append("주식 수가 바뀌는 공시가 같은 시기에 있음 (가격 조정 확인 필요)")
+        if s["index_ret_pct"] != "" and abs(s["index_ret_pct"]) >= 5:
+            notes.append(f"시장지수가 하루 {s['index_ret_pct']:+.1f}% 움직인 날 — 시장 대비 값 해석에 주의")
         for r in hit:
             links.append({"date": s["date"], "rcept_dt": r["rcept_dt"], "category": r["category"], "major": "Y" if r["category"] in MAJOR else "",
                           "report_nm": r["report_nm"], "flr_nm": r.get("flr_nm", ""), "rcept_no": r["rcept_no"], "viewer_url": r["viewer_url"]})
@@ -206,14 +219,14 @@ def main() -> int:
                    "headline": (major[0]["report_nm"] if major else ("연결된 주요 공시 없음" if disc else "공시 목록 미수집")),
                    "categories": "·".join(dict.fromkeys(r["category"] for r in major)),
                    "note": " / ".join(notes), "status": "자동 수집 · 같은 시기 공시이며 원인 아님"})
-    cols = ["date", "direction", "close", "ret_pct", "index_ret_pct", "excess_pct", "sigma_pct", "z", "volume_ratio", "volume_spike",
+    cols = ["date", "direction", "close", "ret_pct", "index_ret_pct", "beta", "excess_pct", "sigma_pct", "z", "volume_ratio", "volume_spike",
             "rank_in_year", "candidates_in_year", "window", "major_count", "other_count", "news_count", "headline", "categories", "note", "status"]
     write_csv(OUT_EV, cols, ev)
     write_csv(OUT_LK, ["date", "rcept_dt", "category", "major", "report_nm", "flr_nm", "rcept_no", "viewer_url"], links)
     linked = sum(1 for e in ev if e["major_count"])
     info = {"status": "성공" if not err else ("부분 성공" if disc else "공시 미수집"), "checked_at": now, "spike_days": len(ev),
             "with_major_disclosure": linked, "news_total": len(news), "disclosures_total": len(disc), "disclosures_new": n_new,
-            "rule": f"|초과 등락률| ≥ {SIGMA_K}σ(직전 {WIN_SIGMA}거래일) 또는 ≥ {ABS_MIN}%, 연도별 상위 {TOP_PER_YEAR}일, 공시 창 D-2(다음 날)~D",
+            "rule": f"시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 {WIN_SIGMA}거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 {SIGMA_K}배 또는 ≥ {ABS_MIN}%, 연도별 상위 {TOP_PER_YEAR}일",
             **({"message": err} if err else {})}
     write_log("events", info)
     print(f"급변일 {len(ev)}일 (주요 공시 연결 {linked}일) · 공시 목록 {len(disc)}건 (새로 {n_new}건)" + (f" · {err}" if err else ""))

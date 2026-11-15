@@ -23,7 +23,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 STEPS = {"collect": "collect_dart.py", "shares": "collect_shares.py", "text": "collect_business_text.py", "stock": "update_stock.py", "search": "collect_search.py", "news": "collect_news.py", "events": "collect_events.py", "valuation": "build_valuation.py", "build": "build_dataset.py", "verify": "verify_data.py"}
 # 단계별 제한 시간(초). 넘기면 그 단계만 중단하고 다음으로 진행 — 한 곳이 막혀도 전체가 멈추지 않게
-LIMIT = {"collect": 600, "shares": 300, "text": 300, "stock": 90, "search": 60, "news": 120, "events": 240, "valuation": 60, "build": 120, "verify": 60}
+LOCAL = ("valuation", "build", "verify")  # 인터넷 없이 되는 단계
+LIMIT = {"collect": 600, "shares": 420, "text": 300, "stock": 90, "search": 60, "news": 120, "events": 240, "valuation": 60, "build": 120, "verify": 60}
 
 
 def arg(name: str, default: str | None = None) -> str | None:
@@ -49,13 +50,24 @@ def main() -> int:
     if not slugs:
         print("처리할 기업이 없습니다.")
         return 1
+    # 시간 예산(분): 넘기면 남은 기업은 수집을 건너뛰고 계산·점검만 한다 (GitHub 실행이 중간에 끊겨 '실패'로 남지 않게).
+    # 매일 시작 기업을 바꿔, 예산이 모자란 날에도 같은 기업만 계속 밀리지 않게 한다.
+    budget = float(arg("--budget-min") or 0) * 60
+    if budget and len(slugs) > 1:
+        k = datetime.now(timezone(timedelta(hours=9))).toordinal() % len(slugs)
+        slugs = slugs[k:] + slugs[:k]
+    t_start, deferred = time.time(), []
     failed, log = [], {"started_at": datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d %H:%M:%S KST"), "steps": steps, "companies": {}}
     out = ROOT / "companies" / "_runs" / (f"last_run_{shard.split('/')[0]}.json" if shard else "last_run.json")
     out.parent.mkdir(parents=True, exist_ok=True)
     for slug in slugs:
         print(f"\n===== {slug} =====", flush=True)
         log["companies"][slug] = {}
-        for st in steps:
+        over = bool(budget) and time.time() - t_start > budget
+        if over:
+            deferred.append(slug)
+            print(f"[안내] 시간 예산({budget / 60:.0f}분)을 넘겨 {slug}의 수집은 다음 실행으로 미룸 — 계산·점검만 진행", flush=True)
+        for st in ([s for s in steps if s in LOCAL] if over else steps):
             t0 = time.time()
             try:
                 r = subprocess.run([sys.executable, str(ROOT / "scripts" / STEPS[st]), "--company", slug], cwd=ROOT, timeout=LIMIT[st])
@@ -76,6 +88,7 @@ def main() -> int:
         subprocess.run([sys.executable, str(ROOT / "scripts" / "build_index.py")], cwd=ROOT, check=False)
     log["finished_at"] = datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d %H:%M:%S KST")
     log["failed"] = failed
+    log["deferred"] = deferred  # 시간 예산 때문에 수집을 미룬 기업 (실패 아님)
     out.write_text(json.dumps(log, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print("\n결과:", "모두 정상" if not failed else "실패 → " + ", ".join(failed))
     return 1 if failed else 0

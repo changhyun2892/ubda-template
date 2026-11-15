@@ -297,7 +297,7 @@ const eok=v=>v==null?'–':(Math.abs(v)>=10000?(v/10000).toFixed(1)+'조':v.toLo
 const pct=v=>v==null?'–':v.toFixed(1)+'%';
 const lnk=n=>`href="${n.url}" target="${IN_SITE?'_self':'_blank'}" rel="noopener"`;
 const CO=(SITE_DATA ? SITE_DATA.companies.map(c=>{ const k=c.kpis||{}, e=v=>v==null?null:Math.round(v/1e8);          // 원 → 억원
-    return {slug:c.slug,name:c.name,code:c.stock_code||'',ind:c.industry||'etc',cats:(c.categories&&c.categories.length?c.categories:['기타']),comp:c.competitors||[],
+    return {slug:c.slug,name:c.name,code:c.stock_code||'',keys:[c.stock_code,c.name_en].concat(c.aliases||[]).filter(Boolean).join('|').toLowerCase(),ind:c.industry||'etc',cats:(c.categories&&c.categories.length?c.categories:['기타']),comp:c.competitors||[],
             year:c.latest_year||'',path:c.dashboard_path||('dashboard.html?c='+c.slug),
             rev:e(k.revenue),op:e(k.operating_profit),ni:e(k.net_income),opm:k.operating_margin_pct,gr:k.revenue_growth_pct,debt:k.debt_ratio_pct}; })
   : RAW.trim().split('\n').map(r=>{ const a=r.split('|'), num=x=>x===''?null:+x;
@@ -598,7 +598,7 @@ const typeTag={industry:'INDUSTRY',category:'CATEGORY',company:'COMPANY'};
 q.addEventListener('input',()=>{
   const v=q.value.trim().toLowerCase(); sIdx=0;
   if(!v){ sugg.classList.remove('show'); return; }
-  sList=nodes.filter(n=>typeTag[n.type] && (n.name.toLowerCase().includes(v) || (n.type==='industry'&&IND[n.ind].en.toLowerCase().includes(v)))).slice(0,9);
+  sList=nodes.filter(n=>typeTag[n.type] && (n.name.toLowerCase().includes(v) || (n.type==='industry'&&IND[n.ind].en.toLowerCase().includes(v)) || (n.type==='company'&&n.d&&n.d.keys&&n.d.keys.includes(v)))).slice(0,9); // 기업은 종목코드·영문명·별칭(브랜드)으로도 찾음
   drawSugg();
 });
 function drawSugg(){

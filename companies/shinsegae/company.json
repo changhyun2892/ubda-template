@@ -18,5 +18,9 @@
   ],
   "theme_color": "#333333",
   "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=shinsegae",
-  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용."
+  "notes": "분석 기간 2023~최신. 2022는 전년 대비 계산용.",
+  "aliases": [
+    "신세계백화점",
+    "Shinsegae"
+  ]
 }
