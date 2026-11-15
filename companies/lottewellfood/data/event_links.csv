@@ -1,29 +1,230 @@
 date,rcept_dt,category,major,report_nm,flr_nm,rcept_no,viewer_url
 2023-08-10,20230809,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),롯데웰푸드,20230809800089,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230809800089
-2024-02-07,20240207,실적,Y,영업(잠정)실적(공정공시),롯데웰푸드,20240207800259,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240207800259
-2024-02-07,20240207,배당,Y,현금ㆍ현물배당결정,롯데웰푸드,20240207800260,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240207800260
-2024-02-07,20240207,기타,,기업설명회(IR)개최(안내공시),롯데웰푸드,20240207800821,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240207800821
-2024-03-04,20240304,기타,,주주총회소집결의,롯데웰푸드,20240304800737,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240304800737
-2024-03-21,20240321,기타,,독립이사의선임ㆍ해임또는중도퇴임에관한신고,롯데웰푸드,20240321001218,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240321001218
-2024-03-21,20240321,기타,,정기주주총회결과,롯데웰푸드,20240321801157,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240321801157
-2024-03-21,20240321,시설투자,Y,신규시설투자등,롯데웰푸드,20240321801439,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240321801439
+2024-05-07,20240503,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),롯데웰푸드,20240503800134,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240503800134
 2024-07-01,20240628,기타,,지속가능경영보고서등관련사항(자율공시),롯데웰푸드,20240628800152,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240628800152
 2024-07-01,20240628,기타,,기타시장안내 (업종변경),유가증권시장본부,20240628800944,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240628800944
+2024-08-02,20240802,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),롯데웰푸드,20240802800216,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240802800216
+2024-08-05,20240802,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),롯데웰푸드,20240802800216,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240802800216
 2025-08-05,20250805,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),롯데웰푸드,20250805800180,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250805800180
 2025-08-05,20250805,기타,,기업설명회(IR)개최(안내공시),롯데웰푸드,20250805800400,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250805800400
 2025-11-04,20251104,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),롯데웰푸드,20251104800116,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251104800116
 2025-11-04,20251104,기타,,기업설명회(IR)개최(안내공시),롯데웰푸드,20251104800190,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251104800190
-2026-02-02,20260130,기타,,기업설명회(IR)개최(안내공시),롯데웰푸드,20260130800216,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260130800216
-2026-02-02,20260202,실적,Y,매출액또는손익구조30%(대규모법인은15%)이상변경,롯데웰푸드,20260202801818,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260202801818
-2026-02-03,20260202,실적,Y,매출액또는손익구조30%(대규모법인은15%)이상변경,롯데웰푸드,20260202801818,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260202801818
-2026-03-05,20260304,증자·사채,Y,주요사항보고서(감자결정),롯데웰푸드,20260304000890,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260304000890
-2026-03-05,20260304,기타,,주주총회소집결의,롯데웰푸드,20260304800725,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260304800725
-2026-03-05,20260305,기타,,주주총회소집공고,롯데웰푸드,20260305000711,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260305000711
-2026-03-05,20260305,기타,,의결권대리행사권유참고서류,롯데웰푸드,20260305000828,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260305000828
-2026-05-06,20260504,기타,,기업설명회(IR)개최(안내공시),롯데웰푸드,20260504800397,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260504800397
+2026-03-04,20260304,증자·사채,Y,주요사항보고서(감자결정),롯데웰푸드,20260304000890,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260304000890
+2026-03-04,20260304,기타,,주주총회소집결의,롯데웰푸드,20260304800725,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260304800725
+2026-05-08,20260508,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),롯데웰푸드,20260508800354,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260508800354
+2026-05-08,20260508,기타,,기업설명회(IR)개최(안내공시),롯데웰푸드,20260508800387,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260508800387
 2026-05-11,20260508,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),롯데웰푸드,20260508800354,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260508800354
 2026-05-11,20260508,기타,,기업설명회(IR)개최(안내공시),롯데웰푸드,20260508800387,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260508800387
-2026-05-21,20260520,기타,,기업설명회(IR)개최(안내공시),롯데웰푸드,20260520800143,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260520800143
-2026-07-31,20260731,기타,,기업설명회(IR)개최(안내공시),롯데웰푸드,20260731800336,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731800336
 2026-08-07,20260807,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),롯데웰푸드,20260807800348,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807800348
 2026-08-07,20260807,기타,,기업설명회(IR)개최(안내공시),롯데웰푸드,20260807800612,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807800612
+2026-08-10,20260807,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),롯데웰푸드,20260807800348,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807800348
+2026-08-10,20260807,기타,,기업설명회(IR)개최(안내공시),롯데웰푸드,20260807800612,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807800612
+2026-08-14,20260813,기타,,지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항,롯데웰푸드,20260813000795,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000795
+2026-08-14,20260813,정기보고서,Y,반기보고서 (2026.06),롯데웰푸드,20260813000921,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000921
+2026-08-28,20260828,기타,,대규모기업집단현황공시[분기별공시(개별회사용)],롯데웰푸드,20260828001197,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260828001197
+2026-11-12,20261111,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),롯데웰푸드,20261111800116,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800116
+2026-11-12,20261111,기타,,기업설명회(IR)개최(안내공시),롯데웰푸드,20261111800395,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800395
+2026-11-12,20261112,정기보고서,Y,분기보고서 (2026.09),롯데웰푸드,20261112000468,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112000468
+2026-11-12,20261111,보도,,"글로벌 K스낵 축제 된 ‘빼빼로데이’…롯데웰푸드, 세계 시장 공략 박...",etoday.co.kr,,https://www.etoday.co.kr/news/view/2646358
+2026-11-12,20261111,보도,,"롯데웰푸드, 유통채널별 '프리미엄 가나' 4종 출시…매장마다 다른 맛",shinailbo.co.kr,,https://www.shinailbo.co.kr/news/articleView.html?idxno=5081906
+2026-11-12,20261111,보도,,빼빼로데이 기획한 롯데웰푸드 직원은 초고속 승진?…11월11일에 얽힌 '...,wikileaks-kr.org,,https://www.wikileaks-kr.org/news/articleView.html?idxno=194479
+2026-11-12,20261111,보도,,롯데웰푸드 3분기 영업이익 899억원…작년 동기 대비 29.7%↑,yna.co.kr,,https://n.news.naver.com/mnews/article/001/0016435081?sid=101
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 899억원…전년比 29.7% 증가(1보)",news1.kr,,https://n.news.naver.com/mnews/article/421/0009282751?sid=101
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업이익 899억원 '역대 최대'",4th.kr,,http://www.4th.kr/news/articleView.html?idxno=2121592
+2026-11-12,20261111,보도,,"매출은 제자리, 이익은 30%↑…롯데웰푸드 3분기 수익성 개선",peoplewatch.co.kr,,https://www.peoplewatch.co.kr/article/view/ppw202611110005
+2026-11-12,20261111,보도,,"롯데웰푸드, 3Q 영업익 899억·전년比 29.7%↑...매출 성장률 웃돌아",popcornnews.net,,http://www.popcornnews.net/news/articleView.html?idxno=139531
+2026-11-12,20261111,보도,,"롯데웰푸드, 3Q 영업익 899억…예상치 부합",news.einfomax.co.kr,,https://news.einfomax.co.kr/news/articleView.html?idxno=4444153
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 899억원…전년比 29.7% 증가",joongangenews.com,,https://www.joongangenews.com/news/articleView.html?idxno=562954
+2026-11-12,20261111,보도,,롯데웰푸드 3Q 영업익 899억…전년比 29.7% ↑,newsis.com,,https://n.news.naver.com/mnews/article/003/0014315050?sid=103
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 899억원…전년比 29.7% 증가",etoday.co.kr,,https://www.etoday.co.kr/news/view/2646762
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 899억원…전년비 29.7% 증가",edaily.co.kr,,https://n.news.naver.com/mnews/article/018/0006408105?sid=101
+2026-11-12,20261111,보도,,"롯데웰푸드, 인도·카자흐가 살렸다…3분기 영업익 29.7% 늘어",biz.chosun.com,,https://n.news.naver.com/mnews/article/366/0001204006?sid=101
+2026-11-12,20261111,보도,,롯데웰푸드 3Q 영업익 899억...전년 동기비 30% 증가,livebiz.today,,https://www.livebiz.today/news/articleView.html?idxno=206401
+2026-11-12,20261111,보도,,"롯데웰푸드, 영업익 3분기 연속 증가…3Q 29.7%↑",g-enews.com,,https://www.g-enews.com/view.php?ud=20261111113541607740eacf404_1
+2026-11-12,20261111,보도,,"롯데웰푸드·농심·오뚜기 등 식품업계, 인기 브랜드 활용 신제품 잇따...",sateconomy.co.kr,,https://sateconomy.co.kr/news/view/1065580657826969
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 899억…전년비 29.7% 증가(1보)",news2day.co.kr,,https://www.news2day.co.kr/article/20261111500181
+2026-11-12,20261111,보도,,롯데웰푸드 3분기 영업이익 899억원…작년 동기 대비 29.7%↑,biz.sbs.co.kr,,https://n.news.naver.com/mnews/article/374/0000542989?sid=101
+2026-11-12,20261111,보도,,"롯데웰푸드, 글로벌 영토 확장 결실… 3분기 누적 영업익 58.7% '껑충'",newsdream.kr,,http://www.newsdream.kr/news/articleView.html?idxno=121897
+2026-11-12,20261111,보도,,"롯데웰푸드, 해외사업 성장에 3분기 실적 개선…영업이익 29.7%↑",dailysmart.co.kr,,http://www.dailysmart.co.kr/news/articleView.html?idxno=132346
+2026-11-12,20261111,보도,,"매출 1.5% 늘 때 영업익 30%↑…롯데웰푸드, '해외 효자' 통했다",newsquest.co.kr,,https://www.newsquest.co.kr/news/articleView.html?idxno=304746
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 899억…인도∙카자흐스탄 성장 견인",kdfnews.com,,http://www.kdfnews.com/news/articleView.html?idxno=190784
+2026-11-12,20261111,보도,,롯데웰푸드 3Q 영업익 30% 증가…인도·카자흐 영업익 138% 급증,newspim.com,,https://www.newspim.com/news/view/20261111000882
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 899억원...전년比 29.7% 늘어",megaeconomy.co.kr,,https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065587754129444
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 899억원···전년比 29.7%↑",seoulfn.com,,https://www.seoulfn.com/news/articleView.html?idxno=642513
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 29.7%↑…인도·카자흐스탄이 견인",etnews.com,,https://n.news.naver.com/mnews/article/030/0003484562?sid=103
+2026-11-12,20261111,보도,,"매출 1.5% 늘 때 영업익 29.7% 껑충... 롯데웰푸드, 3분기 내실 다졌다",insight.co.kr,,https://www.insight.co.kr/news/581571
+2026-11-12,20261111,보도,,"인도·카자흐스탄이 끌었다 … 롯데웰푸드, 3Q 영업익 29.7% ↑",biz.newdaily.co.kr,,https://biz.newdaily.co.kr/site/data/html/2026/11/11/2026111100200.html
+2026-11-12,20261111,보도,,"롯데웰푸드, 해외사업 성장에 3분기 영업익 29.7%↑",metroseoul.co.kr,,http://www.metroseoul.co.kr/article/20261111500222
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업이익 899억…전년비 29.7% 증가",fnnews.com,,https://n.news.naver.com/mnews/article/014/0005602659?sid=101
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 899억 29.7%↑…'빼빼로 세계화' 성큼",newsworks.co.kr,,https://www.newsworks.co.kr/news/articleView.html?idxno=902711
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 899억원...전년 동기 比 29.7%↑",zdnet.co.kr,,https://n.news.naver.com/mnews/article/092/0002444825?sid=103
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업이익 899억원…전년比 29.7% 증가",news.tf.co.kr,,https://n.news.naver.com/mnews/article/629/0000550839?sid=101
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 899억…전년 동기 대비 29.7%↑",fntimes.com,,https://www.fntimes.com/html/view.php?ud=202611111345134480923defd0cc_18
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 매출 1조1739억…전년 동기보다 1.5% 증가",foodnews.co.kr,,http://www.foodnews.co.kr/news/articleView.html?idxno=120940
+2026-11-12,20261111,보도,,"롯데웰푸드 3분기 영업이익 29.7%↑…""해외사업 호조""(종합)",yna.co.kr,,https://n.news.naver.com/mnews/article/001/0016435836?sid=101
+2026-11-12,20261111,보도,,"초코파이 덕에 실적도 달콤…롯데웰푸드, 3분기 영업익 29.7%↑",kukinews.com,,https://www.kukinews.com/article/view/kuk202611110108
+2026-11-12,20261111,보도,,"롯데웰푸드, 3Q 영업익 899억…해외사업 호조(종합)",news.einfomax.co.kr,,https://news.einfomax.co.kr/news/articleView.html?idxno=4444200
+2026-11-12,20261111,보도,,"롯데웰푸드, 인도·카자흐스탄 성장에 웃었다…해외 매출 16.1%↑",e-science.co.kr,,https://www.e-science.co.kr/news/articleView.html?idxno=139492
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 30% 증가...인도·카자흐스탄 성장 견인",asiaa.co.kr,,https://www.asiaa.co.kr/news/articleView.html?idxno=270550
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업이익 29.7% 증가... 해외사업 성장 견인",meconomynews.com,,https://www.meconomynews.com/news/articleView.html?idxno=203533
+2026-11-12,20261111,보도,,롯데웰푸드 3분기 매출 1조1739억·영업익 899억,vegannews.co.kr,,https://www.vegannews.co.kr/news/article.html?no=403584
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업이익 899억원 '역대 최대'…해외호조 지속(종합...",4th.kr,,http://www.4th.kr/news/articleView.html?idxno=2121607
+2026-11-12,20261111,보도,,"롯데웰푸드, 3Q 영업익 29.7%↑⋯4분기 '빼빼로'로 성장세 잇는다",inews24.com,,https://n.news.naver.com/mnews/article/031/0001074107?sid=101
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 29.7% ↑…""인도·카자흐 성장 효과""(상보)",news1.kr,,https://n.news.naver.com/mnews/article/421/0009283355?sid=101
+2026-11-12,20261111,보도,,"롯데웰푸드, 해외 시장 고성장 실적 견인…3Q 영업익 899억·29.7%↑(종합...",newsis.com,,https://n.news.naver.com/mnews/article/003/0014315765?sid=103
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 899억…해외 법인 고성장으로 실적 반등",pointe.co.kr,,https://www.pointe.co.kr/news/articleView.html?idxno=87557
+2026-11-12,20261111,보도,,"롯데웰푸드, 글로벌 성장에 '날았다'…3분기 영업익 29.7%↑",ziksir.com,,https://www.ziksir.com/news/articleView.html?idxno=152889
+2026-11-12,20261111,보도,,"롯데웰푸드, 해외 사업 성장에 3분기 영업익 29.7% 증가",thefirstmedia.net,,http://www.thefirstmedia.net/news/articleView.html?idxno=213251
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 899억원 전년比 29.7%↑…해외 사업이 성장 견...",moneystorm.kr,,https://www.moneystorm.kr/news/articleView.html?idxno=8314
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 29.7% 증가…인도·카자흐스탄 성장 견인",ajunews.com,,https://www.ajunews.com/view/20261111140229126
+2026-11-12,20261111,보도,,"국내서 주춤한 롯데웰푸드, 해외서 웃었다…3분기 영업익 30%↑",ddaily.co.kr,,https://n.news.naver.com/mnews/article/138/0002248109?sid=101
+2026-11-12,20261111,보도,,"해외 성장·국내 수익성 개선…롯데웰푸드, 3분기 영업익 29.7% '증가'",youthdaily.co.kr,,https://www.youthdaily.co.kr/news/article.html?no=229685
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업이익 30% 늘었다",pressman.kr,,https://www.pressman.kr/news/articleView.html?idxno=104423
+2026-11-12,20261111,보도,,"국내 주춤해도 해외서 날았다…롯데웰푸드, 3분기 영업익 30%↑",daily.hankooki.com,,https://daily.hankooki.com/news/articleView.html?idxno=1423864
+2026-11-12,20261111,보도,,"롯데웰푸드, '해외사업 호조' 힘입어 영업익 전년비 30% 증가",hankyung.com,,https://n.news.naver.com/mnews/article/015/0005352709?sid=101
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 30% ‘껑충’…인도·카자흐스탄서 날았다 [종...",etoday.co.kr,,https://www.etoday.co.kr/news/view/2646863
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 '영업이익' 899억원… 인도 등 '해외 사업' 호조",view.asiae.co.kr,,https://n.news.naver.com/mnews/article/277/0005841223?sid=101
+2026-11-12,20261111,보도,,"롯데웰푸드, 3Q 영업익 30%↑…해외 성장·국내 비용 절감 '쌍끌이'",joseilbo.com,,https://n.news.naver.com/mnews/article/123/0002393826?sid=101
+2026-11-12,20261111,보도,,"롯데웰푸드, 해외법인 호조에 3분기 실적 회복세",fetv.co.kr,,https://www.fetv.co.kr/news/articleView.html?idxno=313504
+2026-11-12,20261111,보도,,"롯데웰푸드, 해외법인 매출 확대… 3분기 매출 1조1739억 달성",sisacast.kr,,http://www.sisacast.kr/news/articleView.html?idxno=101838
+2026-11-12,20261111,보도,,"롯데웰푸드 3분기 영업익, 전년 대비 29.7% ↑... 해외 이익 2.4배 확대",getnews.co.kr,,https://www.getnews.co.kr/news/articleView.html?idxno=886759
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 899억원·29.7%↑…해외사업 성장",newsinside.kr,,https://www.newsinside.kr/news/articleView.html?idxno=5045470
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 29.7%↑...해외사업 성장에 웃었다",opinionnews.co.kr,,http://www.opinionnews.co.kr/news/articleView.html?idxno=146949
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 29.7% 증가…해외 법인 성장에 수익성 개선",seoultimes.news,,https://www.seoultimes.news/news/article.html?no=2000102063
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 29.7% 증가···인도·카자흐스탄 성장 견인",smartbizn.com,,https://www.smartbizn.com/news/articleView.html?idxno=159111
+2026-11-12,20261111,보도,,"롯데웰푸드, 해외사업 성장에 3분기 영업익 29.7% 증가",theviewers.co.kr,,https://theviewers.co.kr/View.aspx?No=4307769
+2026-11-12,20261111,보도,,"롯데웰푸드, 인도·카자흐스탄 성장에 영업익 29.7% 증가…원가 부담은...",news2day.co.kr,,https://www.news2day.co.kr/article/20261111500217
+2026-11-12,20261111,보도,,"롯데웰푸드, 해외 법인 성장에 수익성 개선..3분기 영업이익 1904억원",kpenews.com,,https://kpenews.com/View.aspx?No=4307772
+2026-11-12,20261111,보도,,"롯데웰푸드, 해외 법인 성장에 3분기 영업익 29.7% 증가",thepublic.kr,,https://www.thepublic.kr/news/articleView.html?idxno=326128
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 899억원...전년比 29.7%↑",issuenbiz.com,,http://www.issuenbiz.com/news/articleView.html?idxno=81483
+2026-11-12,20261111,보도,,"""인도·카자흐서 날다"" 롯데웰푸드, 3Q영업익 899억·전년比29.7%↑",catchnews.kr,,https://www.catchnews.kr/news/articleView.html?idxno=130375
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 30% 증가…해외사업 성장에 수익성 개선",sedaily.com,,https://n.news.naver.com/mnews/article/011/0004681033?sid=101
+2026-11-12,20261111,보도,,"[2026 3분기 실적] 롯데웰푸드, 영업익 30% 증가…해외서 웃었다",inthenews.co.kr,,https://www.inthenews.co.kr/news/article.html?no=94358
+2026-11-12,20261111,보도,,"롯데웰푸드, 해외사업 호조·본원적 경쟁력 강화로 3분기 영업익 29.7%↑",pointdaily.co.kr,,https://www.pointdaily.co.kr/news/articleView.html?idxno=325567
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업이익 29.7% 증가…인도·카자흐스탄 성장 견인",asiatime.co.kr,,https://www.asiatime.co.kr/article/20261111500269
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 899억원…해외 성장·효율화에 29.7%↑",m-i.kr,,https://www.m-i.kr/news/articleView.html?idxno=2017275
+2026-11-12,20261111,보도,,"인도·카자흐서 '훨훨'…롯데웰푸드, 3Q 해외 영업이익 138%↑",mt.co.kr,,https://n.news.naver.com/mnews/article/008/0005439666?sid=101
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 29.7% 성장…“해외시장이 견인”",biz.heraldcorp.com,,https://n.news.naver.com/mnews/article/016/0002722134?sid=101
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 29.7%↑···해외사업 호조",finomy.com,,http://www.finomy.com/news/articleView.html?idxno=266329
+2026-11-12,20261111,보도,,"롯데웰푸드, 매출 1.5% 늘 때 영업익 30%↑…해외 성장·국내 효율화 효...",newsian.co.kr,,https://www.newsian.co.kr/news/articleView.html?idxno=101066
+2026-11-12,20261111,보도,,"롯데웰푸드, 3Q 영업익 합병 후 최대…해외법인이 견인",newsprime.co.kr,,http://www.newsprime.co.kr/news/article.html?no=754508
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업이익 899억원…해외사업 호조",yonhapnewstv.co.kr,,https://n.news.naver.com/mnews/article/422/0000925079?sid=101
+2026-11-12,20261111,보도,,"[1보] 롯데웰푸드, 3분기 영업익 899억…전년比 29.7% ↑",ebn.co.kr,,https://www.ebn.co.kr/news/articleView.html?idxno=1731269
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 899억원…인도·카자흐 앞세워 30% 껑충",ebn.co.kr,,https://www.ebn.co.kr/news/articleView.html?idxno=1731270
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업이익 899억원…전년비 29.7%↑",srtimes.kr,,http://www.srtimes.kr/news/articleView.html?idxno=217313
+2026-11-12,20261111,보도,,롯데웰푸드 해외법인 3분기 성과 인상적 : 인도·카자흐스탄서 외형·이...,huffingtonpost.kr,,https://www.huffingtonpost.kr/article/261988
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 899억…상승세 지속",shinailbo.co.kr,,https://www.shinailbo.co.kr/news/articleView.html?idxno=5082318
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 899억원 29.7%↑…해외 사업 순항",it.chosun.com,,https://it.chosun.com/news/articleView.html?idxno=3000000000774
+2026-11-12,20261111,보도,,"롯데웰푸드, 3Q 영업익 전년比 29.7％↑…해외가 국내 부진 상쇄",1conomynews.co.kr,,https://www.1conomynews.co.kr/news/articleView.html?idxno=51269
+2026-11-12,20261111,보도,,"롯데웰푸드, 3Q 영업익 899억원…전년비 29.7% 증가",weekly.hankooki.com,,https://weekly.hankooki.com/news/articleView.html?idxno=7193365
+2026-11-12,20261111,보도,,"롯데웰푸드, 해외 사업 호조에 3분기 영업익 29.7%↑… 인도·카자흐 성...",s-journal.co.kr,,https://www.s-journal.co.kr/news/articleView.html?idxno=45254
+2026-11-12,20261111,보도,,"롯데웰푸드, 해외시장 성장에 3분기 영업익 29.7% 증가",whitepaper.co.kr,,http://www.whitepaper.co.kr/news/articleView.html?idxno=268669
+2026-11-12,20261111,보도,,"인도서 초코파이 잘 팔리더니…롯데웰푸드, 영업익 30% '껑충'",dailian.co.kr,,https://n.news.naver.com/mnews/article/119/0003153983?sid=101
+2026-11-12,20261111,보도,,"롯데웰푸드, 매출 정체 속 이익 개선…국내외 수익성 엇갈려",lcnews.co.kr,,https://www.lcnews.co.kr/news/articleView.html?idxno=211220
+2026-11-12,20261111,보도,,롯데웰푸드 3분기 영업이익 29.7% 증가,newsclaim.co.kr,,https://www.newsclaim.co.kr/news/articleView.html?idxno=3082219
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 29.7% 증가…해외 성장에 국내 부진 상쇄",industrynews.co.kr,,https://www.industrynews.co.kr/news/articleView.html?idxno=89324
+2026-11-12,20261111,보도,,"""인도·카자흐스탄이 끌었다""…롯데웰푸드, 3분기 영업이익 899억…전년...",ftoday.co.kr,,http://www.ftoday.co.kr/news/articleView.html?idxno=369425
+2026-11-12,20261111,보도,,"롯데웰푸드 3분기 영업익 899억, 전년比 29.7%↑…인도·카자흐 ‘쌍끌이...",mk.co.kr,,https://n.news.naver.com/mnews/article/009/0005762218?sid=101
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 29.7% 증가⋯ “해외사업 호조”",viva100.com,,https://www.viva100.com/article/20261111500934
+2026-11-12,20261111,보도,,"롯데웰푸드, 해외 성장에 3분기 영업익 '29.7%' 껑충...인도·카자흐스탄...",consumernews.co.kr,,http://www.consumernews.co.kr/news/articleView.html?idxno=768048
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업이익 899억 원…글로벌 시장서 호조",news.tvchosun.com,,https://n.news.naver.com/mnews/article/448/0000650402?sid=101
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 29.7% ↑…국내 매출 감소에도 해외 호조",sisafocus.co.kr,,http://www.sisafocus.co.kr/news/articleView.html?idxno=367464
+2026-11-12,20261111,보도,,"[마켓포인트] 롯데웰푸드, 3분기 영업이익 899억원…전년 동기比 29.7%↑",pinpointnews.co.kr,,https://www.pinpointnews.co.kr/news/articleView.html?idxno=503114
+2026-11-12,20261111,보도,,"롯데웰푸드, 3Q 영업익 899억원…인도·카자흐서 '고성장'",socialvalue.kr,,https://www.socialvalue.kr/news/view/1065596769812559
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업이익 29.7% 증가…해외 법인이 성장 견인",lawissue.co.kr,,https://www.lawissue.co.kr/view.php?ud=20261111161325138204ead0791_12
+2026-11-12,20261111,보도,,"인도·카자흐스탄 등 해외 선전…롯데웰푸드, 3Q 영업익 29.7%↑",mhj21.com,,https://www.mhj21.com/news/articleView.html?idxno=254759
+2026-11-12,20261111,보도,,"롯데웰푸드, 영업익 58.7% 껑충…인도·카자흐스탄이 살렸다",maxmovie.com,,https://www.maxmovie.com/news/articleView.html?idxno=502916
+2026-11-12,20261111,보도,,"롯데웰푸드, 3Q 매출·영업익↑…해외 사업 효과 '톡톡'",topdaily.kr,,https://www.topdaily.kr/articles/112851
+2026-11-12,20261111,보도,,롯데웰푸드 3분기 영업이익 899억원... 견고한 해외 사업 성장세,dnews.co.kr,,https://www.dnews.co.kr/uhtml/view.jsp?idxno=202611111413001950604
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 29.7% 증가…인도·카자흐스탄 실적 견인",digitalchosun.dizzo.com,,http://digitalchosun.dizzo.com/site/data/html_dir/2026/11/11/2026111180174.html
+2026-11-12,20261111,보도,,"해외 법인 날았다...롯데웰푸드, 3분기 영업익 29.7%↑",womentimes.co.kr,,https://www.womentimes.co.kr/news/articleView.html?idxno=107824
+2026-11-12,20261111,보도,,"롯데웰푸드 3분기 영업이익 899억으로 29.7% 증가, 인도·카자흐스탄 성...",businesspost.co.kr,,https://www.businesspost.co.kr/BP?command=article_view&num=451747
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 매출 1조1739억원·영업이익 899억원 기록",ttlnews.com,,http://www.ttlnews.com/news/articleView.html?idxno=3161248
+2026-11-12,20261111,보도,,인도·카자흐스탄이 끌어올렸다…롯데웰푸드 3분기 영업이익 29.7% 증가,ekn.kr,,https://www.ekn.kr/web/view.php?key=20261111027228388
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 29.7% 증가...해외법인 약진이 성장 견인",updownnews.co.kr,,https://www.updownnews.co.kr/news/articleView.html?idxno=319534
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 899억원 전년비 29.7%↑…""해외 실적 호조""",newspost.kr,,https://www.newspost.kr/news/articleView.html?idxno=227283
+2026-11-12,20261111,보도,,"롯데웰푸드, 3Q 매출액 1.1조...전년동기比 1.5%↑",thevaluenews.co.kr,,http://www.thevaluenews.co.kr/news/view.php?idx=203177
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업이익 899억원…전년보다 29.7% 증가",nextdaily.co.kr,,https://www.nextdaily.co.kr/news/articleView.html?idxno=254804
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 29.7% 증가…인도·카자흐스탄이 실적 견인",sateconomy.co.kr,,https://sateconomy.co.kr/news/view/1065598907300593
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 899억원…인도·카자흐스탄 성장에 29.7%↑",newslock.co.kr,,http://www.newslock.co.kr/news/articleView.html?idxno=139891
+2026-11-12,20261111,보도,,"롯데웰푸드, 3Q 영업익 899억…해외사업 호조에 29.7%↑",sports.hankooki.com,,https://sports.hankooki.com/news/articleView.html?idxno=6943335
+2026-11-12,20261111,보도,,"롯데웰푸드 3분기 영업이익 30% 증가…""해외사업 성장""",nocutnews.co.kr,,https://n.news.naver.com/mnews/article/079/0004208811?sid=101
+2026-11-12,20261111,보도,,"롯데웰푸드, 3Q 영업익 899억…""해외법인 고성장세""",businessplus.kr,,https://www.businessplus.kr/news/articleView.html?idxno=119699
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업이익 899억 원…전년보다 29.7% 늘어",wikitree.co.kr,,https://www.wikitree.co.kr/articles/1173774
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업이익 899억원…전년 대비 30%↑",ceoscoredaily.com,,https://www.ceoscoredaily.com/page/view/2026111117004796699
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 899억 원…전년比 29.7%↑",iminju.net,,http://www.iminju.net/news/articleView.html?idxno=172317
+2026-11-12,20261111,보도,,"[위클리오늘] 농심, 롯데웰푸드(11.11)",weeklytoday.com,,http://www.weeklytoday.com/news/articleView.html?idxno=801762
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업이익 899억원…전년 대비 29.7% 증가",segye.com,,https://n.news.naver.com/mnews/article/022/0004174367?sid=101
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 899억…해외사업 호조",dealsite.co.kr,,https://dealsite.co.kr/articles/172580
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 해외 법인 영업익 2배 이상 증가…국내 수익성도 개...",wikileaks-kr.org,,https://www.wikileaks-kr.org/news/articleView.html?idxno=194496
+2026-11-12,20261111,보도,,"롯데웰푸드 ""인도, 초코파이 제4라인 안정화""",hansbiz.co.kr,,http://www.hansbiz.co.kr/news/articleView.html?idxno=882181
+2026-11-12,20261111,보도,,"롯데웰푸드, 해외사업 성장에 3분기 영업익 29.7%↑… 인도·카자흐스탄...",newscj.com,,https://www.newscj.com/news/articleView.html?idxno=3447840
+2026-11-12,20261111,보도,,해외사업 호조에 롯데웰푸드 '활짝'···3분기 영업익 29.7% 증가,enewstoday.co.kr,,http://www.enewstoday.co.kr/news/articleView.html?idxno=2491283
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 29.7% 증가…해외 사업 성장 견인",mydaily.co.kr,,https://n.news.naver.com/mnews/article/117/0004124242?sid=102
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업이익 899억원… 전년 대비 29.7% 증가",biztribune.co.kr,,http://www.biztribune.co.kr/news/articleView.html?idxno=362355
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업익 899억…전년比 29.7% 증가",kfenews.co.kr,,https://www.kfenews.co.kr/news/articleView.html?idxno=667945
+2026-11-12,20261111,보도,,"롯데웰푸드, 빼빼로에 '궁궐 단청' 입혔다…전통문화로 차별화 나선 빼...",ftoday.co.kr,,http://www.ftoday.co.kr/news/articleView.html?idxno=369417
+2026-11-12,20261111,보도,,"롯데웰푸드, 3분기 영업이익 29.7% 증가…해외 사업 성장 견인",eroun.net,,https://www.eroun.net/news/articleView.html?idxno=95173
+2026-11-12,20261111,보도,,"3Q 영업익 29.7%↑…서정호, 롯데웰푸드 '수익성' 체급을 바꿨다",apnews.kr,,https://www.apnews.kr/news/articleView.html?idxno=3053052
+2026-11-12,20261111,보도,,"[식음료] 롯데웰푸드, 3분기 영업이익 29.7% 증가…농심, 동반성장지수...",webeconomy.co.kr,,https://www.webeconomy.co.kr/news/articleView.html?idxno=2370732
+2026-11-12,20261112,보도,,"3분기, 실적 회복세 지속... 롯데웰푸드 ""본원 경쟁력 더욱 강화""",newsbrite.net,,http://www.newsbrite.net/news/articleView.html?idxno=201411
+2026-11-12,20261112,보도,,[인물+] 서정호號 롯데웰푸드 '순항'…체질개선·글로벌 전략 통했다,econovill.com,,https://www.econovill.com/news/articleView.html?idxno=756854
+2026-11-12,20261112,보도,,"롯데웰푸드, 경영 개선 효과에 해외 사업 순항…'매수'-NH",edaily.co.kr,,https://n.news.naver.com/mnews/article/018/0006408559?sid=101
+2026-11-12,20261112,보도,,"NH투자증권 ""롯데웰푸드, 3분기 이익 기대치 상회…연간 목표 달성 기대...",popcornnews.net,,http://www.popcornnews.net/news/articleView.html?idxno=139667
+2026-11-12,20261112,보도,,"한화證 ""롯데웰푸드, 해외 성장·국내 비용 개선에 호실적 지속""",popcornnews.net,,http://www.popcornnews.net/news/articleView.html?idxno=139672
+2026-11-12,20261112,보도,,"롯데웰푸드 3Q 이익 개선, 해외 성장·효율화 효과-다올",press9.kr,,http://www.press9.kr/news/articleView.html?idxno=86078
+2026-11-12,20261112,보도,,"롯데웰푸드, 유엔참전용사에 감사키트 550개 전달",eroun.net,,https://www.eroun.net/news/articleView.html?idxno=95200
+2026-11-12,20261112,보도,,"롯데웰푸드, 국내 원가 부담에도 해외 성장세 '뚜렷'…저평가 매력 부각",newsprime.co.kr,,http://www.newsprime.co.kr/news/article.html?no=754634
+2026-11-12,20261112,보도,,"롯데웰푸드, 3분기 영업이익 899억…인도·카자흐 등 해외 법인 고성장...",mdtoday.co.kr,,https://www.mdtoday.co.kr/news/articleView.html?idxno=624548
+2026-11-12,20261112,보도,,"롯데웰푸드, 해외 성장·비용 절감에 실적 반등…주가 재평가 기대[애널...",newsway.co.kr,,https://www.newsway.co.kr/news/view?ud=2026111208421005693
+2026-11-12,20261112,보도,,"교보증권 ""롯데웰푸드, 해외 수익성 견조…목표주가 17만5000원 유지""",ajunews.com,,https://www.ajunews.com/view/20261112085139958
+2026-11-12,20261112,보도,,"롯데웰푸드, 유엔참전용사에 빼빼로로 감사 전해",4th.kr,,http://www.4th.kr/news/articleView.html?idxno=2121676
+2026-11-12,20261112,보도,,"[똑똑한한끼] 풀무원, 삼양사, 대상웰라이프, 오리온, 롯데웰푸드, 남양...",ekn.kr,,https://www.ekn.kr/web/view.php?key=20261112026078618
+2026-11-12,20261112,보도,,"롯데웰푸드, 유엔참전용사에 빼빼로 감사키트 550개 전달",fetv.co.kr,,https://www.fetv.co.kr/news/articleView.html?idxno=313552
+2026-11-12,20261112,보도,,"롯데웰푸드 ""유엔참전용사에 감사와 존경""...턴 투워드 부산서 빼빼로 ...",popcornnews.net,,http://www.popcornnews.net/news/articleView.html?idxno=139713
+2026-11-12,20261112,보도,,"빼빼로데이에 전하는 특별한 감사…롯데웰푸드, 유엔참전용사에 온정",newsquest.co.kr,,https://www.newsquest.co.kr/news/articleView.html?idxno=304806
+2026-11-12,20261112,보도,,"롯데웰푸드, 유엔참전용사에 감사키트 550개 전달",biz.heraldcorp.com,,https://n.news.naver.com/mnews/article/016/0002722420?sid=101
+2026-11-12,20261112,보도,,"롯데웰푸드, 국내외 유엔참전용사에 빼빼로 감사키트 550개 전달",news1.kr,,https://n.news.naver.com/mnews/article/421/0009284900?sid=101
+2026-11-12,20261112,보도,,"[모닝 리포트] ""롯데웰푸드, 해외 성장에 실적 개선 지속""",newspim.com,,https://www.newspim.com/news/view/20261112000071
+2026-11-12,20261112,보도,,"[식음료브리핑] 롯데웰푸드, 유엔참전용사에 감사키트 전달 외",seoulfn.com,,https://www.seoulfn.com/news/articleView.html?idxno=642606
+2026-11-12,20261112,보도,,"롯데웰푸드, 유엔참전용사에 감사키트 550개 전달",koreaittimes.com,,https://www.koreaittimes.com/news/articleView.html?idxno=159068
+2026-11-12,20261112,보도,,"롯데웰푸드, 칸쵸 컬래버 호빵 선봬",bokuennews.com,,http://www.bokuennews.com/news/article.html?no=287026
+2026-11-12,20261112,보도,,"[게시판] 롯데웰푸드, 유엔 참전용사에 감사 키트 전달",yna.co.kr,,https://n.news.naver.com/mnews/article/001/0016437618?sid=101
+2026-11-12,20261112,보도,,"롯데웰푸드, '턴 투워드 부산' 동참…유엔참전용사에 감사키트 전달",newsdream.kr,,http://www.newsdream.kr/news/articleView.html?idxno=121995
+2026-11-12,20261112,보도,,"롯데웰푸드, 빼빼로로 유엔참전용사에 감사 전해…7년째 보훈활동 이어...",dailysmart.co.kr,,http://www.dailysmart.co.kr/news/articleView.html?idxno=132394
+2026-11-12,20261112,보도,,"롯데웰푸드, '턴 투워드 부산' 기념식 참석…유엔참전용사에 감사키트 ...",m-i.kr,,https://www.m-i.kr/news/articleView.html?idxno=2017595
+2026-11-12,20261112,보도,,"한화투자 ""롯데웰푸드 4분기 흑자 전망, 해외법인 가격 인상 효과 본격...",businesspost.co.kr,,https://www.businesspost.co.kr/BP?command=article_view&num=451795
+2026-11-12,20261112,보도,,"해외 성장에 내실까지 잡은 롯데웰푸드, 4분기 글로벌 시장 지배력 확대...",starnewskorea.com,,https://n.news.naver.com/mnews/article/108/0003486839?sid=004
+2026-11-12,20261112,보도,,"""빼빼로에 감사의 마음"" 롯데웰푸드, 유엔참전용사에 선물 550개",newsis.com,,https://n.news.naver.com/mnews/article/003/0014317550?sid=101
+2026-11-12,20261112,보도,,"롯데웰푸드, '턴 투워드 부산' 7년째 동참…참전용사에 감사키트 550개",etnews.com,,https://n.news.naver.com/mnews/article/030/0003484870?sid=103
+2026-11-12,20261112,보도,,"롯데웰푸드, 빼빼로데이 맞아 유엔참전용사에 감사키트 550개 전달",viva100.com,,https://www.viva100.com/article/20261112500434
+2026-11-12,20261112,보도,,"롯데웰푸드, 사상 최대 이익에도 성장 고민…내년 '인도'에 사활건다",newsmap.co.kr,,https://www.newsmap.co.kr/news/articleView.html?idxno=5125
+2026-11-12,20261112,보도,,제과 신유통 채널된 다이소·이커머스 … 롯데웰푸드·오리온 1조2700억...,biz.newdaily.co.kr,,https://biz.newdaily.co.kr/site/data/html/2026/11/12/2026111200094.html
+2026-11-12,20261112,보도,,"""인도서 벌고 국내서 깎였다…롯데웰푸드, 환율·내수 둔화에 갇힌 '빛...",newsquest.co.kr,,https://www.newsquest.co.kr/news/articleView.html?idxno=304859
+2026-11-12,20261112,보도,,"롯데웰푸드, 비용 절감에 해외 성장까지···실적 개선 기대",finomy.com,,http://www.finomy.com/news/articleView.html?idxno=266425
+2026-11-12,20261112,보도,,"롯데웰푸드, 부산 '턴 투워드 부산' 기념식 참석…유엔참전용사에 감사...",nextdaily.co.kr,,https://www.nextdaily.co.kr/news/articleView.html?idxno=254850
+2026-11-12,20261112,보도,,"롯데웰푸드, 유엔참전용사에 감사키트 550개 전달",lawissue.co.kr,,https://www.lawissue.co.kr/view.php?ud=202611121145078379204ead0791_12
+2026-11-12,20261112,보도,,"롯데웰푸드, 인도·카자흐 새 성장동력되나",naeil.com,,https://www.naeil.com/news/read/608520?ref=naver
+2026-11-12,20261112,보도,,"빼빼로에 담은 감사의 마음…롯데웰푸드, 유엔참전용사에 선물",etoday.co.kr,,https://www.etoday.co.kr/news/view/2647383
+2026-11-12,20261112,보도,,"롯데웰푸드, 유엔참전용사에 빼빼로·전통굿즈 선물",foodnews.co.kr,,http://www.foodnews.co.kr/news/articleView.html?idxno=120957
+2026-11-12,20261112,보도,,"롯데웰푸드, 실적 발표 속 '장중 껑충'...증권계도 '긍정 진단'",choicenews.co.kr,,http://www.choicenews.co.kr/news/articleView.html?idxno=173139
+2026-11-12,20261112,보도,,K푸드 열풍에 음식료주 희비…롯데웰푸드·삼양식품 강세 '눈에 띄네',pinpointnews.co.kr,,https://www.pinpointnews.co.kr/news/articleView.html?idxno=503374
+2026-11-12,20261112,보도,,"롯데웰푸드, '턴 투워드 부산' 참석해 유엔참전용사 감사키트 550개 지원",pinpointnews.co.kr,,https://www.pinpointnews.co.kr/news/articleView.html?idxno=503376
+2026-11-12,20261112,보도,,[오늘의식탁] 대상ㆍ동원ㆍ롯데웰푸드ㆍ오뚜기ㆍCJ프레시웨이ㆍ풀무원...,dnews.co.kr,,https://www.dnews.co.kr/uhtml/view.jsp?idxno=202611120759019340689
+2026-11-12,20261112,보도,,"롯데웰푸드, 유엔참전용사 국제추모의 날 맞아 추모행사 동참…빼뺴로...",sisacast.kr,,http://www.sisacast.kr/news/articleView.html?idxno=101871
+2026-11-12,20261112,보도,,[오늘의 먹거리] 롯데웰푸드·크라운제과·오리온·오뚜기·풀무원,financialreview.co.kr,,http://www.financialreview.co.kr/news/articleView.html?idxno=46240
+2026-11-12,20261112,보도,,롯데웰푸드 3분기 영업실적 개선,bokuennews.com,,http://www.bokuennews.com/news/article.html?no=287072
+2026-11-12,20261112,보도,,"롯데웰푸드, ‘칸쵸 호빵’ 출시",sports.donga.com,,https://n.news.naver.com/mnews/article/382/0001304479?sid=101
+2026-11-12,20261112,보도,,[굿모닝! 12일 식품업계 소식] 롯데웰푸드·오뚜기·삼립·매일유업·CJ프...,goodkyung.com,,https://www.goodkyung.com/news/articleView.html?idxno=293390
+2026-11-12,20261112,보도,,"롯데웰푸드, 빼빼로로 잇는 보훈의 의미…감사키트 550개 전달",thefirstmedia.net,,http://www.thefirstmedia.net/news/articleView.html?idxno=213445
+2026-11-12,20261112,보도,,"롯데웰푸드, 빼빼로에 담은 보훈의 마음…유엔참전용사에 감사키트 550개...",megaeconomy.co.kr,,https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065596685206730
+2026-11-12,20261112,보도,,빼빼로 수익금으로 청소년 공간 조성…롯데웰푸드 해피홈 14호 문 열어,shinailbo.co.kr,,https://www.shinailbo.co.kr/news/articleView.html?idxno=5082525
+2026-11-12,20261112,보도,,롯데웰푸드 '턴 투워드 부산' 동참,newsclaim.co.kr,,https://www.newsclaim.co.kr/news/articleView.html?idxno=3082446
+2026-11-12,20261112,보도,,"롯데웰푸드, '턴 투워드 부산' 동참…유엔참전용사에 감사키트 550개 전...",kdfnews.com,,http://www.kdfnews.com/news/articleView.html?idxno=190843
+2026-11-12,20261112,보도,,"롯데웰푸드, 3분기 호실적 뒤 숨은 명암…'인도 특수' 웃고 '국내 정체'...",newsquest.co.kr,,https://www.newsquest.co.kr/news/articleView.html?idxno=304904
+2026-11-12,20261112,보도,,"롯데웰푸드, '턴 투워드 부산' 참석…유엔참전용사 감사키트 지원",sports.hankooki.com,,https://sports.hankooki.com/news/articleView.html?idxno=6943460
+2026-11-12,20261112,보도,,"""해외 비즈니스 '맑음'에도 국내 사업 '기상 악화'…롯데웰푸드, 호실적...",newsquest.co.kr,,https://www.newsquest.co.kr/news/articleView.html?idxno=304912
+2026-11-12,20261112,보도,,"롯데웰푸드, 유엔참전용사에 감사키트 550개 전달",financialpost.co.kr,,https://www.financialpost.co.kr/news/articleView.html?idxno=300597
+2026-11-12,20261112,보도,,"롯데웰푸드, 유엔참전용사에 감사키트 550개 전달",thepublic.kr,,https://www.thepublic.kr/news/articleView.html?idxno=326392
+2026-11-12,20261112,보도,,"롯데웰푸드, 해외 사업 실적 견인…인도 성장세 주목",consumuch.com,,https://www.consumuch.com/news/articleView.html?idxno=79550
+2026-11-12,20261112,보도,,"부산 향한 1분의 묵념…롯데웰푸드, 참전용사에 감사키트 전달",sportsseoul.com,,https://n.news.naver.com/mnews/article/468/0001280678?sid=101
