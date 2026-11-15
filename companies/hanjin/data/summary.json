@@ -1,0 +1,35 @@
+{
+  "slug": "hanjin",
+  "company_id": "HJ",
+  "name": "한진",
+  "dashboard_path": "dashboard.html?c=hanjin",
+  "name_en": "Hanjin",
+  "stock_code": "002320",
+  "industry": "service",
+  "industry_name": "서비스",
+  "categories": [
+    "택배·물류"
+  ],
+  "competitors": [
+    "CJ대한통운"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=hanjin",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 3064925190779,
+    "operating_profit": 112195809190,
+    "net_income": 984901814,
+    "operating_margin_pct": 3.6606,
+    "revenue_growth_pct": 1.6397,
+    "debt_ratio_pct": 183.401
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 130,
+    "불일치": 0,
+    "미확인": 0
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 8,
+  "updated_at": "2026-11-15 15:01 KST"
+}

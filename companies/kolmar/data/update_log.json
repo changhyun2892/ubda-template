@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-15 09:35 KST",
+    "checked_at": "2026-11-15 15:08 KST",
     "corp_code": "00939331",
     "reports_total": 17,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-15 09:35 KST",
+    "checked_at": "2026-11-15 15:08 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 102900,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-15 09:35 KST",
+    "checked_at": "2026-11-15 15:08 KST",
     "spike_days": 39,
     "with_major_disclosure": 14,
     "news_total": 564,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-15 09:35 KST",
+    "checked_at": "2026-11-15 15:08 KST",
     "rows": 406,
     "groups": [
       "한국콜마",
@@ -45,8 +45,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-15 09:35 KST",
-    "new": 1,
+    "checked_at": "2026-11-15 15:08 KST",
+    "new": 0,
     "total": 564,
     "first": "2026-10-26 11:23",
     "pages": 2,
@@ -54,14 +54,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-15 09:35 KST",
+    "checked_at": "2026-11-15 15:08 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-15 09:35 KST",
+    "checked_at": "2026-11-15 15:08 KST",
     "rows": 889,
     "as_of": "2026-11-13",
     "per": 13.14,

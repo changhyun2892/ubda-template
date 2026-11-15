@@ -1,0 +1,35 @@
+{
+  "slug": "jejuair",
+  "company_id": "JA",
+  "name": "제주항공",
+  "dashboard_path": "dashboard.html?c=jejuair",
+  "name_en": "Jeju Air",
+  "stock_code": "089590",
+  "industry": "service",
+  "industry_name": "서비스",
+  "categories": [
+    "저비용항공(LCC)"
+  ],
+  "competitors": [
+    "진에어"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=jejuair",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 1579940872409,
+    "operating_profit": -111660044639,
+    "net_income": -116400560741,
+    "operating_margin_pct": -7.0674,
+    "revenue_growth_pct": -18.3827,
+    "debt_ratio_pct": 754.4306
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 126,
+    "불일치": 0,
+    "미확인": 0
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 8,
+  "updated_at": "2026-11-15 15:08 KST"
+}

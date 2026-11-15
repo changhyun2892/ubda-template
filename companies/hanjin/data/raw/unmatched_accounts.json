@@ -1,0 +1,30 @@
+{
+ "2025-11013-sga": [
+  "CIS | dart_NonOperatingProfitLoss | 영업외손익",
+  "CIS | dart_OperatingIncomeLoss | 영업이익(손실)",
+  "CIS | ifrs-full_ComprehensiveIncome | 총포괄손익",
+  "CIS | ifrs-full_ComprehensiveIncomeAttributableToNoncontrollingInterests | 포괄손익, 비지배지분",
+  "CIS | ifrs-full_ComprehensiveIncomeAttributableToOwnersOfParent | 포괄손익, 지배기업의 소유주에게 귀속되는 지분",
+  "CIS | ifrs-full_CostOfSales | 매출원가",
+  "CIS | ifrs-full_BasicEarningsLossPerShare | 기본주당이익(손실)",
+  "CIS | ifrs-full_DilutedEarningsLossPerShare | 희석주당이익(손실)",
+  "CIS | ifrs-full_FinanceCosts | 금융원가",
+  "CIS | ifrs-full_FinanceIncome | 금융수익",
+  "CIS | ifrs-full_GrossProfit | 매출총이익",
+  "CIS | ifrs-full_IncomeTaxExpenseContinuingOperations | 법인세수익(비용)",
+  "CIS | ifrs-full_OtherComprehensiveIncome | 기타포괄손익",
+  "CIS | ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax | 당기손익으로 재분류될 수 있는 항목(세후기타포괄손익)",
+  "CIS | ifrs-full_GainsLossesOnExchangeDifferencesOnTranslationNetOfTax | 해외사업장환산외환차이(세후기타포괄손익)",
+  "CIS | ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossNetOfTax | 지분법자본변동 - 후속적으로 재분류 되는 항목",
+  "CIS | ifrs-full_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax | 당기손익으로 재분류되지 않는항목(세후기타포괄손익)",
+  "CIS | dart_OtherComprehensiveIncomeNetOfTaxChangeInFairValueOfFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome | 기타포괄손익-공정가치측정금융자산평가손익",
+  "CIS | ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans | 확정급여제도의재측정요소",
+  "CIS | ifrs-full_ProfitLoss | 분기순이익(손실)",
+  "CIS | ifrs-full_ProfitLossAttributableToNoncontrollingInterests | 비지배지분에 귀속되는 당기순이익(손실)",
+  "CIS | ifrs-full_ProfitLossAttributableToOwnersOfParent | 지배기업의 소유주에게 귀속되는 당기순이익(손실)",
+  "CIS | ifrs-full_ProfitLossBeforeTax | 법인세비용차감전순이익(손실)",
+  "CIS | ifrs-full_Revenue | 수익(매출액)",
+  "CIS | ifrs-full_SellingGeneralAndAdministrativeExpense | 관리비",
+  "CIS | ifrs-full_ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod | 지분법 적용대상인 관계기업과 공동기업의 당기순손익에 대한 지분"
+ ]
+}

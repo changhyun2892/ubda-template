@@ -1,0 +1,35 @@
+{
+  "slug": "paradise",
+  "company_id": "PD",
+  "name": "파라다이스",
+  "dashboard_path": "dashboard.html?c=paradise",
+  "name_en": "Paradise",
+  "stock_code": "034230",
+  "industry": "service",
+  "industry_name": "서비스",
+  "categories": [
+    "복합리조트"
+  ],
+  "competitors": [
+    "롯데관광개발"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=paradise",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 1149867026461,
+    "operating_profit": 155816230766,
+    "net_income": 144781456677,
+    "operating_margin_pct": 13.5508,
+    "revenue_growth_pct": 7.2528,
+    "debt_ratio_pct": 84.407
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 131,
+    "불일치": 0,
+    "미확인": 0
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 8,
+  "updated_at": "2026-11-15 15:17 KST"
+}
