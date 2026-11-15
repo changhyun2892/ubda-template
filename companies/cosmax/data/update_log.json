@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-15 09:35 KST",
+    "checked_at": "2026-11-15 14:44 KST",
     "corp_code": "01009789",
     "reports_total": 19,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-15 09:35 KST",
+    "checked_at": "2026-11-15 14:44 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 280500,
@@ -24,17 +24,17 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-15 09:35 KST",
+    "checked_at": "2026-11-15 14:44 KST",
     "spike_days": 40,
     "with_major_disclosure": 15,
-    "news_total": 507,
+    "news_total": 508,
     "disclosures_total": 347,
     "disclosures_new": 0,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-15 09:35 KST",
+    "checked_at": "2026-11-15 14:44 KST",
     "rows": 406,
     "groups": [
       "코스맥스",
@@ -45,23 +45,23 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-15 09:35 KST",
+    "checked_at": "2026-11-15 14:44 KST",
     "new": 1,
-    "total": 507,
+    "total": 508,
     "first": "2026-10-14 09:16",
     "pages": 1,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-15 09:35 KST",
+    "checked_at": "2026-11-15 14:44 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-15 09:35 KST",
+    "checked_at": "2026-11-15 14:44 KST",
     "rows": 888,
     "as_of": "2026-11-13",
     "per": 14.61,
