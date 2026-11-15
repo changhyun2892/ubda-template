@@ -6,24 +6,135 @@ date,rcept_dt,category,major,report_nm,flr_nm,rcept_no,viewer_url
 2024-08-13,20240812,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),코스맥스,20240812800213,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240812800213
 2024-11-11,20241111,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),코스맥스,20241111800347,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241111800347
 2025-02-25,20250224,실적,Y,매출액또는손익구조30%(대규모법인은15%)이상변경,코스맥스,20250224800647,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250224800647
+2025-03-06,20250305,기타,,주주총회소집결의,코스맥스,20250305800572,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250305800572
+2025-03-06,20250305,배당,Y,현금ㆍ현물배당결정,코스맥스,20250305800579,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250305800579
 2025-05-14,20250513,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),코스맥스,20250513800554,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250513800554
 2025-05-14,20250514,정기보고서,Y,분기보고서 (2025.03),코스맥스,20250514001171,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250514001171
 2025-08-11,20250811,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),코스맥스,20250811800469,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250811800469
 2025-08-12,20250811,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),코스맥스,20250811800469,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250811800469
 2025-11-11,20251110,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),코스맥스,20251110800303,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251110800303
-2025-12-16,20251216,기타,,주주명부폐쇄기간또는기준일설정,코스맥스,20251216801406,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251216801406
-2025-12-16,20251216,기타,,기타경영사항(자율공시),코스맥스,20251216801410,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251216801410
+2026-01-02,20251230,기타,,유형자산취득결정,코스맥스,20251230800565,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251230800565
+2026-01-02,20260102,기타,,주식등의대량보유상황보고서(약식),국민연금공단,20260102000337,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260102000337
 2026-03-27,20260326,기타,,독립이사의선임ㆍ해임또는중도퇴임에관한신고,코스맥스,20260326001302,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260326001302
 2026-03-27,20260326,기타,,정기주주총회결과,코스맥스,20260326802416,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260326802416
 2026-03-27,20260326,배당,Y,기업가치제고계획(자율공시) (고배당기업 표시를 위한 재공시),코스맥스,20260326803537,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260326803537
 2026-05-13,20260512,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),코스맥스,20260512800590,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260512800590
 2026-06-29,20260629,기타,,타인에대한채무보증결정,코스맥스,20260629800819,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260629800819
-2026-07-02,20260701,기타,,주식등의대량보유상황보고서(약식),국민연금공단,20260701000290,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260701000290
-2026-07-02,20260702,기타,,임원ㆍ주요주주특정증권등소유상황보고서,국민연금공단,20260702000366,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260702000366
 2026-08-12,20260811,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),코스맥스,20260811800420,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811800420
 2026-10-06,20261006,기타,,임원ㆍ주요주주특정증권등소유상황보고서,국민연금공단,20261006000233,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261006000233
-2026-11-05,20261105,기타,,주식등의대량보유상황보고서(약식),NorgesBank,20261105000080,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000080
-2026-11-05,20261105,기타,,결산실적공시예고(안내공시),코스맥스,20261105800147,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800147
-2026-11-05,20261105,기타,,기업설명회(IR)개최(안내공시),코스맥스,20261105800169,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800169
-2026-11-05,20261104,보도,,"""글로벌 뷰티 삼켰다""…코스맥스·한국콜마, '초격차 R&D'로 독식",theguru.co.kr,,https://www.theguru.co.kr/news/article.html?no=109218
-2026-11-05,20261105,보도,,코스맥스 5%대 강세…급락장서 K뷰티주 동반 상승 [종목NOW],fnnews.com,,https://n.news.naver.com/mnews/article/014/0005599810?sid=101
+2026-11-11,20261111,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),코스맥스,20261111800375,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800375
+2026-11-11,20261110,보도,,"하나증권 ""ODM 생산시설 부족 현실화…한국콜마·코스메카·코스맥스 증...",pinpointnews.co.kr,,https://www.pinpointnews.co.kr/news/articleView.html?idxno=502790
+2026-11-11,20261111,보도,,"[이너뷰티 열풍 下]먹는 뷰티 열풍, 제조업계로 확산…코스맥스·콜마 ...",asiatime.co.kr,,https://www.asiatime.co.kr/article/20261110500337
+2026-11-11,20261111,보도,,[오늘의 증시일정] JYP·네오위즈·코스맥스 등,etoday.co.kr,,https://www.etoday.co.kr/news/view/2646526
+2026-11-11,20261111,보도,,"코스맥스, 3분기 영업익 833억…전년비 94.9% ↑",biz.heraldcorp.com,,https://n.news.naver.com/mnews/article/016/0002722152?sid=101
+2026-11-11,20261111,보도,,"코스맥스, 3Q 영업익 833억…전년 比 94.9% 증가(1보)",news1.kr,,https://n.news.naver.com/mnews/article/421/0009283669?sid=101
+2026-11-11,20261111,보도,,"코스맥스, 3분기 매출 8758억원 '역대 최대'…미국도 2분기 연속 흑자",thetracker.co.kr,,https://thetracker.co.kr/View.aspx?No=4307956
+2026-11-11,20261111,보도,,"코스맥스, 3분기 매출 8760억 ‘역대 최대’…“기초·더마 화장품 주문...",etoday.co.kr,,https://www.etoday.co.kr/news/view/2646918
+2026-11-11,20261111,보도,,"코스맥스, 3분기 영업익 833억…전년비 94.9%↑",newsis.com,,https://n.news.naver.com/mnews/article/003/0014316098?sid=101
+2026-11-11,20261111,보도,,코스맥스 3분기 영업이익 833억원…작년 동기 대비 94.9%↑,yna.co.kr,,https://n.news.naver.com/mnews/article/001/0016436262?sid=101
+2026-11-11,20261111,보도,,코스맥스 3Q 영업이익 95% 급증…비수기에도 분기 매출 사상 최대,newspim.com,,https://www.newspim.com/news/view/20261111001185
+2026-11-11,20261111,보도,,"코스맥스, 3분기 연결 매출 8758억… '초격차'로 분기 최대 실적 경신",newsdream.kr,,http://www.newsdream.kr/news/articleView.html?idxno=121930
+2026-11-11,20261111,보도,,"이병만의 코스맥스, 3Q 영업익 95% 급증…매출 8758억 '역대 최대'",peoplewatch.co.kr,,https://www.peoplewatch.co.kr/article/view/ppw202611110011
+2026-11-11,20261111,보도,,"코스맥스, 3분기 영업이익 833억원···전년比 95% 증가",newsfreezone.co.kr,,https://www.newsfreezone.co.kr/news/articleView.html?idxno=718846
+2026-11-11,20261111,보도,,"코스맥스, 3분기 매출 8758억 '역대 최대'…한국·해외법인 동반 성장",view.asiae.co.kr,,https://n.news.naver.com/mnews/article/277/0005841268?sid=101
+2026-11-11,20261111,보도,,"코스맥스, 3분기 매출 8758억원 전년比 50% 증가…한국·중국·미국 법인...",thefirstmedia.net,,http://www.thefirstmedia.net/news/articleView.html?idxno=213304
+2026-11-11,20261111,보도,,"코스맥스, 3분기 영업이익 833억원…전년比 94.9% 증가",news.tf.co.kr,,https://n.news.naver.com/mnews/article/629/0000550921?sid=101
+2026-11-11,20261111,보도,,K뷰티 수출 훈풍 탄 코스맥스…3분기 매출 8758억 ‘역대 최대’,mk.co.kr,,https://n.news.naver.com/mnews/article/009/0005762202?sid=103
+2026-11-11,20261111,보도,,"코스맥스, 3Q 영업익 833억…예상치 상회",news.einfomax.co.kr,,https://news.einfomax.co.kr/news/articleView.html?idxno=4444221
+2026-11-11,20261111,보도,,코스맥스 3분기 영업이익 95% 늘린 비결,globalepic.co.kr,,https://www.globalepic.co.kr/view.php?ud=20261111152222614248439a4874_29
+2026-11-11,20261111,보도,,"코스맥스, 화장품 비수기에도 ‘분기 최대 매출’…영업이익 95%↑",biz.chosun.com,,https://n.news.naver.com/mnews/article/366/0001204094?sid=101
+2026-11-11,20261111,보도,,"코스맥스, 3분기 영업익 833억…전년비 95% 증가(1보)",news2day.co.kr,,https://www.news2day.co.kr/article/20261111500238
+2026-11-11,20261111,보도,,"코스맥스, 3분기 영업이익 833억 전년비 95% ↑…""韓美中 고른 성장""",it.chosun.com,,https://it.chosun.com/news/articleView.html?idxno=3000000000776
+2026-11-11,20261111,보도,,"코스맥스, 3분기 영업익 833억…전년比 94.9%↑",jasm.co.kr,,https://www.jasm.co.kr/news/view/324974/?sc=Naver
+2026-11-11,20261111,보도,,"코스맥스, 3분기 실적 개선···국내 매출 증가·미국 흑자 지속",datasom.co.kr,,https://www.datasom.co.kr/news/articleView.html?idxno=210765
+2026-11-11,20261111,보도,,"코스맥스, 3Q 매출 8758억 ‘역대 최대’…영업이익 95% 급증",biz.heraldcorp.com,,https://n.news.naver.com/mnews/article/016/0002722169?sid=101
+2026-11-11,20261111,보도,,"코스맥스, 3분기 영업익 833억…전년비 94.9%↑ ‘분기 최대’",fntimes.com,,https://www.fntimes.com/html/view.php?ud=2026111115293020197fd637f543_18
+2026-11-11,20261111,보도,,코스맥스 3Q 영업익 677억·97%↑...국내외 성장,fnnews.com,,https://n.news.naver.com/mnews/article/014/0005602779?sid=101
+2026-11-11,20261111,보도,,"코스맥스, 3분기 매출 8758억원 '역대 최대'...영업이익 95% 증가",hbnpress.com,,https://hbnpress.com/news/view/1065594816682564
+2026-11-11,20261111,보도,,"코스맥스, 3분기 매출 8758억원…역대 최대 경신",financialpost.co.kr,,https://www.financialpost.co.kr/news/articleView.html?idxno=300168
+2026-11-11,20261111,보도,,"'K-뷰티 날자' 코스맥스, 3Q 매출 8758억 '역대최대'…영업익 95%↑(종합...",newsis.com,,https://n.news.naver.com/mnews/article/003/0014316235?sid=101
+2026-11-11,20261111,보도,,"코스맥스, 3Q 영업익 833억…사상 최대 분기 매출(종합)",news.einfomax.co.kr,,https://news.einfomax.co.kr/news/articleView.html?idxno=4444224
+2026-11-11,20261111,보도,,"코스맥스, 3분기 매출 8758억…전년비 50% 올라 ‘분기 최대’",seoul.co.kr,,https://n.news.naver.com/mnews/article/081/0003698282?sid=101
+2026-11-11,20261111,보도,,"[2026 3분기 실적] 코스맥스, 비수기 공식 깼다…매출 8758억원",inthenews.co.kr,,https://www.inthenews.co.kr/news/article.html?no=94365
+2026-11-11,20261111,보도,,"한국서만 6000억 팔았다…코스맥스, 3분기 매출 역대 최대·영업익 95%↑",kukinews.com,,https://www.kukinews.com/article/view/kuk202611110145
+2026-11-11,20261111,보도,,비수기 없는 코스맥스…3분기 매출 8758억 또 최대,mt.co.kr,,https://n.news.naver.com/mnews/article/008/0005439720?sid=101
+2026-11-11,20261111,보도,,"코스맥스, 3분기 매출 8758억원…비수기에도 분기 최대 경신",dnews.co.kr,,https://www.dnews.co.kr/uhtml/view.jsp?idxno=202611111523187910640
+2026-11-11,20261111,보도,,"코스맥스, 3Q 영업익 95%↑…매출 8758억 최대치 경신(상보)",news1.kr,,https://n.news.naver.com/mnews/article/421/0009283849?sid=101
+2026-11-11,20261111,보도,,"코스맥스, 3분기 영업익 833억원으로 95%↑…분기 최대 매출",yonhapnewstv.co.kr,,https://n.news.naver.com/mnews/article/422/0000925113?sid=101
+2026-11-11,20261111,보도,,"코스맥스, 3분기 영업익 833억·전년比 94.9% 증가…한국 법인 분기 매출...",socialvalue.kr,,https://www.socialvalue.kr/news/view/1065595279189436
+2026-11-11,20261111,보도,,코스맥스 3분기 영업익 95% 성장…매출 8천758억원 '역대 최대'(종합),yna.co.kr,,https://n.news.naver.com/mnews/article/001/0016436388?sid=101
+2026-11-11,20261111,보도,,"코스맥스, 3분기 영업익 833억원...전년비 95%↑ ""한국 고성장·미국 흑...",asiaa.co.kr,,https://www.asiaa.co.kr/news/articleView.html?idxno=270614
+2026-11-11,20261111,보도,,"코스맥스, 3분기 영업이익 833억원 '95%↑'…글로벌 법인 동반 성장",m-i.kr,,https://www.m-i.kr/news/articleView.html?idxno=2017347
+2026-11-11,20261111,보도,,"코스맥스, 3분기 영업이익 833억…'어닝 서프라이즈'로 2배 가까이 급증",newsroad.co.kr,,http://www.newsroad.co.kr/news/articleView.html?idxno=67542
+2026-11-11,20261111,보도,,"코스맥스, 한국·해외법인 동반 성장에 3분기 최대 실적",fetv.co.kr,,https://www.fetv.co.kr/news/articleView.html?idxno=313518
+2026-11-11,20261111,보도,,"한국이 끌고 미국이 밀었다…코스맥스, 분기 최대 매출 경신",dailian.co.kr,,https://n.news.naver.com/mnews/article/119/0003153999?sid=101
+2026-11-11,20261111,보도,,"코스맥스, 3분기 매출 8758억원 ‘역대 최대’⋯ 영업익 95% 급증",viva100.com,,https://www.viva100.com/article/20261111500945
+2026-11-11,20261111,보도,,"코스맥스, 3분기 매출 8758억원…""사상 최대 분기 매출""",srtimes.kr,,http://www.srtimes.kr/news/articleView.html?idxno=217319
+2026-11-11,20261111,보도,,"코스맥스, 3분기 매출 8758억원 '역대 최대'…영업이익 95% 급증",biz.sbs.co.kr,,https://n.news.naver.com/mnews/article/374/0000543059?sid=101
+2026-11-11,20261111,보도,,K-뷰티 열풍에 날개 단 코스맥스… 3분기 영업익 95% 급증,the-biz.co.kr,,http://www.the-biz.co.kr/news/articleView.html?idxno=731171
+2026-11-11,20261111,보도,,'비수기 공식' 깬 코스맥스···3Q 매출도 '역대 최대',enewstoday.co.kr,,http://www.enewstoday.co.kr/news/articleView.html?idxno=2491212
+2026-11-11,20261111,보도,,코스맥스 9.58% 급등…K뷰티 수주 기대에 26만원대,job-post.co.kr,,https://www.job-post.co.kr/news/articleView.html?idxno=237946
+2026-11-11,20261111,보도,,코스맥스 3분기 매출액 8758억…50% 증가,sedaily.com,,https://n.news.naver.com/mnews/article/011/0004681092?sid=101
+2026-11-11,20261111,보도,,코스맥스 K-뷰티 붐 타고 분기 매출 첫 8천억 원 돌파 : 한국 본사 매출...,huffingtonpost.kr,,https://www.huffingtonpost.kr/article/261993
+2026-11-11,20261111,보도,,"코스맥스, 3분기 매출 8758억원 사상 최대…미국 법인 2분기 연속 흑자",thebk.co.kr,,https://www.thebk.co.kr/news/articleView.html?idxno=312774
+2026-11-11,20261111,보도,,"한국서 벌고 미국서 흑자… 코스맥스, 글로벌 성장 가속",newsmap.co.kr,,https://www.newsmap.co.kr/news/articleView.html?idxno=5101
+2026-11-11,20261111,보도,,코스맥스 3분기 연결 영업이익 832억8800만원,vegannews.co.kr,,https://www.vegannews.co.kr/news/article.html?no=403622
+2026-11-11,20261111,보도,,"코스맥스, 글로벌 뷰티 ODM 1인자 입지 굳건",econovill.com,,https://www.econovill.com/news/articleView.html?idxno=756882
+2026-11-11,20261111,보도,,"코스맥스, 3분기 매출 8758억 '역대 최대'…한국·해외 성장 주효",shinailbo.co.kr,,https://www.shinailbo.co.kr/news/articleView.html?idxno=5082391
+2026-11-11,20261111,보도,,"코스맥스, 3Q 매출 8758억원으로 사상 최대...영업익도 95% 급증",livebiz.today,,https://www.livebiz.today/news/articleView.html?idxno=206414
+2026-11-11,20261111,보도,,"코스맥스, 3Q 영업익 95% 증가한 833억원 ""한국 이끌고 중국·미국 밀어...",ftoday.co.kr,,http://www.ftoday.co.kr/news/articleView.html?idxno=369432
+2026-11-11,20261111,보도,,"코스맥스, 3분기 매출 8758억원···전년 比 50%↑",seoulfn.com,,https://www.seoulfn.com/news/articleView.html?idxno=642537
+2026-11-11,20261111,보도,,"코스맥스, 3분기 영업이익 833억원…전년比 95%↑",ceoscoredaily.com,,https://www.ceoscoredaily.com/page/view/2026111116153735497
+2026-11-11,20261111,보도,,"코스맥스, 3분기 매출 역대 최대⋯영업익 전년 대비 95%↑",inews24.com,,https://n.news.naver.com/mnews/article/031/0001074158?sid=101
+2026-11-11,20261111,보도,,"한국 매출 첫 6천억원 돌파…코스맥스, 3분기 영업익 94.9% 증가",youthdaily.co.kr,,https://www.youthdaily.co.kr/news/article.html?no=229695
+2026-11-11,20261111,보도,,코스맥스 3분기 영업익 833억 94.9%↑…분기 매출 사상 최대,newsworks.co.kr,,https://www.newsworks.co.kr/news/articleView.html?idxno=902750
+2026-11-11,20261111,보도,,"코스맥스, 매출 사상 최대·영업익 95%↑…첫 ‘3조 클럽’ 청신호",g-enews.com,,https://www.g-enews.com/view.php?ud=20261111161407810740eacf404_1
+2026-11-11,20261111,보도,,"“비수기에도 최대 매출”…코스맥스, 3분기 영업익 전년 比 95% ↑",ddaily.co.kr,,https://n.news.naver.com/mnews/article/138/0002248157?sid=101
+2026-11-11,20261111,보도,,코스맥스 영업익 2배 '껑충'…K뷰티 수주 확대에 호실적,hankyung.com,,https://n.news.naver.com/mnews/article/015/0005352789?sid=103
+2026-11-11,20261111,보도,,"코스맥스, 3분기 영업익 95% 급증…국내 호조에 美흑자까지",daily.hankooki.com,,https://daily.hankooki.com/news/articleView.html?idxno=1424158
+2026-11-11,20261111,보도,,"코스맥스, 분기 매출 역대 최대 8758억원…영업이익 95% 증가",kdfnews.com,,http://www.kdfnews.com/news/articleView.html?idxno=190802
+2026-11-11,20261111,보도,,"코스맥스, 비수기에도 매출 신기록…3분기 8758억원",financialreview.co.kr,,http://www.financialreview.co.kr/news/articleView.html?idxno=46221
+2026-11-11,20261111,보도,,"[1보] 코스맥스, 3Q 영업익 833억원…전년比 94.9%↑",ebn.co.kr,,https://www.ebn.co.kr/news/articleView.html?idxno=1731305
+2026-11-11,20261111,보도,,"코스맥스, 3분기 영업익 833억원 전년비 95%↑…""고객사 주문 증대 영향...",newspost.kr,,https://www.newspost.kr/news/articleView.html?idxno=227284
+2026-11-11,20261111,보도,,"코스맥스 3Q 매출 8758억, 사상 최대 분기 실적",bokuennews.com,,http://www.bokuennews.com/news/article.html?no=287004
+2026-11-11,20261111,보도,,코스맥스 3분기 매출 8758억…비수기 깨고 분기 최대 실적,pointe.co.kr,,https://www.pointe.co.kr/news/articleView.html?idxno=87581
+2026-11-11,20261111,보도,,"코스맥스, 3분기 역대 최대 매출…국내외 고른 성과 덕",topdaily.kr,,https://www.topdaily.kr/articles/112854
+2026-11-11,20261111,보도,,"코스맥스, 3Q 영업익 833억원 '95%↑'…분기 매출 '또 최대'",ebn.co.kr,,https://www.ebn.co.kr/news/articleView.html?idxno=1731309
+2026-11-11,20261111,보도,,코스맥스 '3Q 8758억원' 사상 최대 분기 매출 경신…영업이익 95% ↑,sportschosun.com,,https://n.news.naver.com/mnews/article/076/0004465844?sid=101
+2026-11-11,20261111,보도,,"[특징주] 코스맥스, 3분기 영업익 95% 급증에 9.6% 상승…분기 매출 신기...",moneystorm.kr,,https://www.moneystorm.kr/news/articleView.html?idxno=8331
+2026-11-11,20261111,보도,,"코스맥스, 비수기에도 역대 최대 분기 매출…한국 법인 6000억 돌파(종합...",news2day.co.kr,,https://www.news2day.co.kr/article/20261111500304
+2026-11-11,20261111,보도,,"코스맥스, 3분기 영업익 833억…전년비 95%↑",pointdaily.co.kr,,https://www.pointdaily.co.kr/news/articleView.html?idxno=325609
+2026-11-11,20261111,보도,,"코스맥스, 3분기 매출 8758억원 '역대 최대'···영업익 95% 급증",smartbizn.com,,https://www.smartbizn.com/news/articleView.html?idxno=159125
+2026-11-11,20261111,보도,,"코스맥스, 3분기 매출 8758억원 '역대 최대'…영업이익 95%↑",asiatime.co.kr,,https://www.asiatime.co.kr/article/20261111500421
+2026-11-11,20261111,보도,,"코스맥스, 3Q 매출액 8758억...전년동기比 50%↑",thevaluenews.co.kr,,http://www.thevaluenews.co.kr/news/view.php?idx=203179
+2026-11-11,20261111,보도,,"코스맥스, 한국 법인 분기 매출 사상 첫 6000억 돌파…3분기 매출 8758억...",sisacast.kr,,http://www.sisacast.kr/news/articleView.html?idxno=101852
+2026-11-11,20261111,보도,,"코스맥스, 3분기 영업익 833억 전년比 95% 증가",ajunews.com,,https://www.ajunews.com/view/20261111152336562
+2026-11-11,20261111,보도,,"'글로벌 ODM 1위' 코스맥스, 3분기도 사상 최대 실적 달성",apparelnews.co.kr,,http://www.apparelnews.co.kr/news/news_view/?idx=228923
+2026-11-11,20261111,보도,,"코스맥스, 3Q 영업익 95%↑…K-뷰티 수출 호조에 '역대 최대'",joseilbo.com,,https://n.news.naver.com/mnews/article/123/0002393848?sid=101
+2026-11-11,20261111,보도,,"코스맥스, 3Q 영업익 전년比 95％↑…美법인도 흑자",1conomynews.co.kr,,https://www.1conomynews.co.kr/news/articleView.html?idxno=51277
+2026-11-11,20261111,보도,,"코스맥스, 3Q 영업익 94.9%↑···""분기 기준 사상 최대""",todaykorea.co.kr,,https://www.todaykorea.co.kr/news/articleView.html?idxno=408514
+2026-11-11,20261111,보도,,"코스맥스, 3분기 영업익 833억 원…전년比 95%↑",iminju.net,,http://www.iminju.net/news/articleView.html?idxno=172315
+2026-11-11,20261111,보도,,"코스맥스, 3분기 영업익 833억원…전년比 95%↑",weekly.hankooki.com,,https://weekly.hankooki.com/news/articleView.html?idxno=7193390
+2026-11-11,20261111,보도,,K뷰티 '폭풍성장' 견인…거침없는 코스맥스,mk.co.kr,,https://n.news.naver.com/mnews/article/009/0005762346?sid=101
+2026-11-11,20261111,보도,,"코스맥스, 3분기 매출 사상 최대…영업익 95%↑",newsprime.co.kr,,http://www.newsprime.co.kr/news/article.html?no=754585
+2026-11-11,20261111,보도,,"코스맥스 3분기 매출 8758억으로 50% 증가, 분기 최대 매출 기록 새로 썼...",businesspost.co.kr,,https://www.businesspost.co.kr/BP?command=article_view&num=451764
+2026-11-11,20261111,보도,,"코스맥스, 3분기 매출 8758억원···분기 최대 실적 경신",finomy.com,,http://www.finomy.com/news/articleView.html?idxno=266376
+2026-11-11,20261111,보도,,"코스맥스, 3분기 영업익 833억원…전년 동기 比 95% 급증",industrynews.co.kr,,https://www.industrynews.co.kr/news/articleView.html?idxno=89332
+2026-11-11,20261111,보도,,"화장품 주문 밀려든 코스맥스, 실적 '고공행진'",hankyung.com,,https://n.news.naver.com/mnews/article/015/0005352830?sid=101
+2026-11-11,20261111,보도,,"코스맥스, 3분기 매출 8758억원...""이번에도 사상 최대 분기 매출""",koreareport.co.kr,,https://www.koreareport.co.kr/news/articleView.html?idxno=54588
+2026-11-11,20261111,보도,,"코스맥스, 국내외 쌍끌이 성장…3분기 실적 '고공행진'",dealsite.co.kr,,https://dealsite.co.kr/articles/172547
+2026-11-11,20261111,보도,,코스맥스 3분기 영업익 95% 증가…미국 흑자 안착,sidae.com,,https://n.news.naver.com/mnews/article/417/0001164019?sid=103
+2026-11-11,20261111,보도,,"코스맥스, 3Q 영업익 833억…""美법인 흑자 지속""",businessplus.kr,,https://www.businessplus.kr/news/articleView.html?idxno=119705
+2026-11-11,20261111,보도,,"코스맥스, 3분기 매출 8758억원 '역대 최대'…영업익 95% ↑",smarttimes.co.kr,,http://www.smarttimes.co.kr/news/articleView.html?idxno=50504
+2026-11-11,20261111,보도,,"""고마진 '에센스·미스트' 타고 세계1위 초격차"" 코스맥스, 3Q영업익 833...",catchnews.kr,,https://www.catchnews.kr/news/articleView.html?idxno=130397
+2026-11-11,20261111,보도,,'설화수 대신 조선미녀'…중소뷰티 뜨자 한국콜마·코스맥스 날개 [취재...,biz.sbs.co.kr,,https://n.news.naver.com/mnews/article/374/0000543104?sid=101
+2026-11-11,20261111,보도,,"코스맥스, 3분기 매출 8758억원…전년比 50% 증가",joongangenews.com,,https://www.joongangenews.com/news/articleView.html?idxno=563147
+2026-11-11,20261111,보도,,"""한국이 끌고 미국이 살아났다""…코스맥스, 3분기 영업익 95% 급증",megaeconomy.co.kr,,https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065603294857379
+2026-11-11,20261111,보도,,"코스맥스, 3분기 매출 8758억원…분기 최대 기록",etnews.com,,https://n.news.naver.com/mnews/article/030/0003484746?sid=101
+2026-11-11,20261111,보도,,"“K-뷰티 타고 날았다”…코스맥스, 3분기 영업익 833억 전년比 95% ↑",mydaily.co.kr,,https://n.news.naver.com/mnews/article/117/0004124235?sid=103
+2026-11-11,20261111,보도,,"""하반기에 실적 주춤"" 공식 깬 코스맥스, 비결은 한국 법인",hansbiz.co.kr,,http://www.hansbiz.co.kr/news/articleView.html?idxno=882267
+2026-11-11,20261111,보도,,"코스맥스, 3Q 영업익 95% 뛰었다 … 국내 매출 첫 6000억·美 88% 성장",biz.newdaily.co.kr,,https://biz.newdaily.co.kr/site/data/html/2026/11/11/2026111100350.html
+2026-11-11,20261111,보도,,K뷰티 돌풍에 코스맥스 ‘함박웃음’…美 법인도 흑자,sentv.co.kr,,https://www.sentv.co.kr/article/view/sentv202611110184
+2026-11-11,20261111,보도,,"코스맥스, 3Q 매출 8758억원 '역대 최대'…영업익 95%↑",newsway.co.kr,,https://www.newsway.co.kr/news/view?ud=2026111121291610910
+2026-11-11,20261111,보도,,“경쟁사보다 2배 빠르면 이렇게 법니다”…영업익 95% 폭등한 코스맥스,mk.co.kr,,https://n.news.naver.com/mnews/article/009/0005762457?sid=101
+2026-11-11,20261111,보도,,"코스맥스, 3분기 매출 8758억원 ‘역대 최대’…글로벌 화장품 ODM 시장...",wemakenews.co.kr,,http://www.wemakenews.co.kr/news/view.php?no=26813
