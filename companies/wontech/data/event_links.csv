@@ -1,11 +1,10 @@
 date,rcept_dt,category,major,report_nm,flr_nm,rcept_no,viewer_url
 2023-05-09,20230509,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),원텍,20230509900099,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230509900099
 2023-05-09,20230509,기타,,기업설명회(IR)개최,원텍,20230509900100,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230509900100
-2023-08-07,20230807,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),원텍,20230807900077,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230807900077
-2023-08-07,20230807,기타,,기업설명회(IR)개최,원텍,20230807900078,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230807900078
 2023-09-15,20230915,기타,,증권발행결과(자율공시)(제2회차 CB),원텍,20230915900282,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230915900282
 2023-11-08,20231108,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),원텍,20231108900105,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231108900105
 2023-11-08,20231108,기타,,기업설명회(IR)개최,원텍,20231108900107,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231108900107
+2023-11-10,20231110,정기보고서,Y,분기보고서 (2023.09),원텍,20231110000317,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231110000317
 2023-12-15,20231214,기타,,주주명부폐쇄기간또는기준일설정,원텍,20231214900166,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231214900166
 2023-12-15,20231214,배당,Y,현금ㆍ현물배당을위한주주명부폐쇄(기준일)결정,원텍,20231214900172,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231214900172
 2024-04-03,20240402,기타,,주식등의대량보유상황보고서(약식),국민연금공단,20240402002032,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240402002032
@@ -21,6 +20,7 @@ date,rcept_dt,category,major,report_nm,flr_nm,rcept_no,viewer_url
 2025-11-12,20251112,기타,,[기재정정]분기보고서 (2025.09),원텍,20251112000559,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251112000559
 2026-01-30,20260129,보도,,"""전 세계가 한국산 리프팅에 빠졌다""... 클래시스·원텍 주가 기세등등",pinpointnews.co.kr,,https://www.pinpointnews.co.kr/news/articleView.html?idxno=423168
 2026-01-30,20260130,보도,,"증권가가 꼽은 의료기기 4선 ""클래시스·휴젤·파마·원텍""",medicaltimes.com,,https://www.medicaltimes.com/Main/News/NewsView.html?ID=1167089&ref=naverpc
+2026-02-02,20260130,보도,,"증권가가 꼽은 의료기기 4선 ""클래시스·휴젤·파마·원텍""",medicaltimes.com,,https://www.medicaltimes.com/Main/News/NewsView.html?ID=1167089&ref=naverpc
 2026-02-06,20260206,실적,Y,매출액또는손익구조30%(대규모법인은15%)이상변동,원텍,20260206900274,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260206900274
 2026-02-06,20260205,보도,,"원텍, '세계 최초' 레이저·전기자극 융합한 '엘리제'로 통증 시장 개척...",newsprime.co.kr,,http://www.newsprime.co.kr/news/article.html?no=723178
 2026-02-06,20260205,보도,,"원텍, 세계 최초 레이저·전기자극 융합 ‘엘리제’로 통증 시장 개척",etoday.co.kr,,https://www.etoday.co.kr/news/view/2553353
@@ -40,7 +40,6 @@ date,rcept_dt,category,major,report_nm,flr_nm,rcept_no,viewer_url
 2026-02-06,20260206,보도,,"원텍, '엘리제'로 통증 시장 개척·성장동력 다각화 나서",bokuennews.com,,http://www.bokuennews.com/news/article.html?no=273512
 2026-02-06,20260206,보도,,"원텍, 지난해 영업이익 525억7747만7231원… 전년 대비 51.1% 증가",digitaltoday.co.kr,,https://www.digitaltoday.co.kr/news/articleView.html?idxno=627909
 2026-02-06,20260206,보도,,"[실적] 원텍, 해외 시장 성장으로 매출액 1568억원 달성",hitnews.co.kr,,https://www.hitnews.co.kr/news/articleView.html?idxno=73671
-2026-05-11,20260511,보도,,[대전상장기업지수] 시총 75조 5929억 원 규모… 민테크·원텍 등 강세,ggilbo.com,,https://www.ggilbo.com/news/articleView.html?idxno=1157100
 2026-05-15,20260514,증자·사채,Y,주요사항보고서(전환사채권발행결정),원텍,20260514000557,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000557
 2026-05-15,20260514,보도,,"원텍, 해외 매출 확대에 1분기 성장…""수출 비중 77% 돌파""",edaily.co.kr,,https://n.news.naver.com/mnews/article/018/0006280737?sid=101
 2026-05-15,20260514,보도,,"원텍, 1분기 수출 비중 77.5% 돌파…매출총이익률 71.1% 체질 개선",news1.kr,,https://n.news.naver.com/mnews/article/421/0008943752?sid=103
@@ -75,10 +74,6 @@ date,rcept_dt,category,major,report_nm,flr_nm,rcept_no,viewer_url
 2026-05-21,20260521,보도,,"원지안, 원텍 아시아 모델 발탁",ggilbo.com,,https://www.ggilbo.com/news/articleView.html?idxno=1159632
 2026-05-21,20260521,보도,,"장비 팔리니 소모품도 대박... 원텍, 안정적 수입원 확보에 매수 '활활'",pinpointnews.co.kr,,https://www.pinpointnews.co.kr/news/articleView.html?idxno=454442
 2026-05-21,20260521,보도,,"원텍 주가, 5월 21일 8,900원 21.09% 상승 마감",topstarnews.net,,https://www.topstarnews.net/news/articleView.html?idxno=16067770
-2026-07-02,20260701,보도,,"원텍, 전 직원 주주화 통해 성공 공유한다",edaily.co.kr,,https://n.news.naver.com/mnews/article/018/0006319714?sid=101
-2026-07-02,20260701,보도,,"원텍, 전 직원 주주화 추진…성과공유로 글로벌 성장 동력 강화",biotimes.co.kr,,https://www.biotimes.co.kr/news/articleView.html?idxno=32861
-2026-07-02,20260701,보도,,"원텍, 전 직원 주주화 추진…성과공유로 글로벌 성장동력 강화",ebn.co.kr,,https://www.ebn.co.kr/news/articleView.html?idxno=1714661
-2026-07-02,20260701,보도,,"원텍, 전 직원 주주화 추진…글로벌 시장 성과 공유한다",news1.kr,,https://n.news.naver.com/mnews/article/421/0009034935?sid=103
 2026-09-11,20260911,보도,,"원텍, 中 대형 의료미용그룹 예스타와 맞손…현지 공략 확대",news1.kr,,https://n.news.naver.com/mnews/article/421/0009164385?sid=103
 2026-09-11,20260911,보도,,"원텍, 中 예스타와 협력…33개 의료기관 네트워크 공략",medipana.com,,https://www.medipana.com/news/articleView.html?idxno=417463
 2026-09-11,20260911,보도,,"원텍, 中 예스타와 업무협약…""임상·교육 등 현지화 전략 강화""",rapportian.com,,https://www.rapportian.com/news/articleView.html?idxno=240243

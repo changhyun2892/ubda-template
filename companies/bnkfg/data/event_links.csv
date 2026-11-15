@@ -8,9 +8,11 @@ date,rcept_dt,category,major,report_nm,flr_nm,rcept_no,viewer_url
 2023-07-27,20230726,배당,Y,현금ㆍ현물배당결정,BNK금융지주,20230726800629,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230726800629
 2023-09-20,20230920,소송·제재,Y,조회공시요구(풍문또는보도)(자회사의 주요경영사항),유가증권시장본부,20230920800114,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230920800114
 2023-09-20,20230920,소송·제재,Y,조회공시요구(풍문또는보도)에대한답변(미확정)(자회사의 주요경영사항),BNK금융지주,20230920800437,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230920800437
-2023-11-02,20231101,기타,,주식등의대량보유상황보고서(약식),국민연금공단,20231101000117,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231101000117
-2024-02-28,20240228,기타,,기업지배구조보고서공시,BNK금융지주,20240228800806,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240228800806
-2024-02-28,20240228,기타,,주주총회소집결의,BNK금융지주,20240228801116,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240228801116
+2024-02-01,20240131,기타,,기업설명회(IR)개최(안내공시),BNK금융지주,20240131800706,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240131800706
+2024-02-01,20240201,기타,,[기재정정]주요사항보고서(상각형조건부자본증권발행결정),BNK금융지주,20240201000391,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240201000391
+2024-02-01,20240201,기타,,증권신고서(채무증권),BNK금융지주,20240201000624,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240201000624
+2024-02-01,20240201,실적,Y,매출액또는손익구조30%(대규모법인은15%)이상변경(자회사의 주요경영사항),BNK금융지주,20240201800552,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240201800552
+2024-02-01,20240201,배당,Y,현금ㆍ현물배당결정(자회사의 주요경영사항)(자회사의 주요경영사항),BNK금융지주,20240201800717,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240201800717
 2024-03-14,20240313,기타,,감사보고서제출,BNK금융지주,20240313801551,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240313801551
 2024-03-14,20240314,정기보고서,Y,사업보고서 (2023.12),BNK금융지주,20240314001564,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240314001564
 2024-03-14,20240314,기타,,[기재정정]일괄신고서,BNK금융지주,20240314001623,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240314001623
@@ -35,8 +37,15 @@ date,rcept_dt,category,major,report_nm,flr_nm,rcept_no,viewer_url
 2025-07-28,20250725,기타,,신탁계약해지결과보고서,BNK금융지주,20250725000575,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250725000575
 2025-07-28,20250725,자기주식,Y,[기재정정]주식소각결정,BNK금융지주,20250725800437,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250725800437
 2025-07-28,20250728,기타,,기업설명회(IR)개최(안내공시),BNK금융지주,20250728800362,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250728800362
-2026-03-03,20260227,기타,,기업설명회(IR)개최(안내공시),BNK금융지주,20260227800373,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260227800373
-2026-03-03,20260227,기타,,주주총회소집결의,BNK금융지주,20260227801954,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260227801954
+2026-02-06,20260206,실적,Y,연결재무제표기준영업(잠정)실적(공정공시)(자회사의 주요경영사항),BNK금융지주,20260206800443,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260206800443
+2026-02-06,20260206,실적,Y,연결재무제표기준영업(잠정)실적(공정공시)(자회사의 주요경영사항),BNK금융지주,20260206800450,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260206800450
+2026-02-06,20260206,배당,Y,현금ㆍ현물배당을위한주주명부폐쇄(기준일)결정,BNK금융지주,20260206800509,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260206800509
+2026-02-06,20260206,배당,Y,현금ㆍ현물배당결정,BNK금융지주,20260206800525,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260206800525
+2026-02-06,20260206,실적,Y,연결재무제표기준영업(잠정)실적(공정공시)(자회사의 주요경영사항),BNK금융지주,20260206801086,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260206801086
+2026-02-06,20260206,실적,Y,매출액또는손익구조30%(대규모법인은15%)이상변경(자회사의 주요경영사항),BNK금융지주,20260206801169,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260206801169
+2026-02-06,20260206,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),BNK금융지주,20260206801345,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260206801345
+2026-02-06,20260206,기타,,기업가치제고계획(자율공시),BNK금융지주,20260206801495,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260206801495
+2026-04-10,20260410,기타,,임원ㆍ주요주주특정증권등소유상황보고서,박혜진,20260410001635,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260410001635
 2026-05-04,20260430,자기주식,Y,주요사항보고서(자기주식취득신탁계약체결결정),BNK금융지주,20260430000910,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260430000910
 2026-05-04,20260430,실적,Y,연결재무제표기준영업(잠정)실적(공정공시)(자회사의 주요경영사항),BNK금융지주,20260430800243,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260430800243
 2026-05-04,20260430,실적,Y,연결재무제표기준영업(잠정)실적(공정공시)(자회사의 주요경영사항),BNK금융지주,20260430800305,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260430800305
@@ -46,11 +55,15 @@ date,rcept_dt,category,major,report_nm,flr_nm,rcept_no,viewer_url
 2026-05-04,20260430,배당,Y,현금ㆍ현물배당결정,BNK금융지주,20260430800627,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260430800627
 2026-05-04,20260430,자기주식,Y,주식소각결정,BNK금융지주,20260430800736,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260430800736
 2026-05-04,20260504,기타,,기업설명회(IR)개최(안내공시),BNK금융지주,20260504800774,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260504800774
-2026-05-06,20260504,기타,,기업설명회(IR)개최(안내공시),BNK금융지주,20260504800774,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260504800774
+2026-06-29,20260626,기타,,증권발행실적보고서,BNK금융지주,20260626000661,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260626000661
 2026-07-02,20260701,기타,,주식등의대량보유상황보고서(약식),국민연금공단,20260701000287,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260701000287
-2026-07-31,20260730,기타,,일괄신고추가서류,BNK금융지주,20260730000384,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260730000384
-2026-07-31,20260730,기타,,투자설명서(일괄신고),BNK금융지주,20260730000390,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260730000390
-2026-07-31,20260731,기타,,증권발행실적보고서,BNK금융지주,20260731000442,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260731000442
+2026-07-29,20260728,실적,Y,연결재무제표기준영업(잠정)실적(공정공시)(자회사의 주요경영사항),BNK금융지주,20260728800292,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260728800292
+2026-07-29,20260728,실적,Y,연결재무제표기준영업(잠정)실적(공정공시)(자회사의 주요경영사항),BNK금융지주,20260728800399,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260728800399
+2026-07-29,20260728,실적,Y,연결재무제표기준영업(잠정)실적(공정공시)(자회사의 주요경영사항),BNK금융지주,20260728800412,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260728800412
+2026-07-29,20260728,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),BNK금융지주,20260728800461,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260728800461
+2026-07-29,20260728,배당,Y,현금ㆍ현물배당을위한주주명부폐쇄(기준일)결정,BNK금융지주,20260728800526,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260728800526
+2026-07-29,20260728,배당,Y,현금ㆍ현물배당결정,BNK금융지주,20260728800533,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260728800533
+2026-07-29,20260728,기타,,기타안내사항(안내공시),BNK금융지주,20260728800615,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260728800615
 2026-10-26,20261023,기타,,기업설명회(IR)개최(안내공시),BNK금융지주,20261023800577,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261023800577
 2026-10-26,20261023,배당,Y,현금ㆍ현물배당을위한주주명부폐쇄(기준일)결정(자회사의 주요경영사항),BNK금융지주,20261023800582,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261023800582
 2026-10-26,20261023,배당,Y,현금ㆍ현물배당결정(자회사의 주요경영사항),BNK금융지주,20261023800592,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261023800592
@@ -78,3 +91,36 @@ date,rcept_dt,category,major,report_nm,flr_nm,rcept_no,viewer_url
 2026-10-26,20261026,보도,,"BNK금융지주 3분기 누적 순이익 6223억 19% 줄어, 비이자이익 감소 영향",businesspost.co.kr,,https://www.businesspost.co.kr/BP?command=article_view&num=450324
 2026-10-26,20261026,보도,,"BNK금융지주, 3일간 16.75% 하락에 소수계좌 매도 집중으로 투자주의종목...",topstarnews.net,,https://www.topstarnews.net/news/articleView.html?idxno=16258600
 2026-10-26,20261026,보도,,"BNK금융지주, 3분기 누적 순익 6223억 밸류업 가속도",gnnews.co.kr,,https://www.gnnews.co.kr/news/articleView.html?idxno=648179
+2026-10-27,20261026,자기주식,Y,주요사항보고서(자기주식취득신탁계약체결결정),BNK금융지주,20261026000150,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000150
+2026-10-27,20261026,실적,Y,연결재무제표기준영업(잠정)실적(공정공시)(자회사의 주요경영사항),BNK금융지주,20261026800201,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026800201
+2026-10-27,20261026,실적,Y,연결재무제표기준영업(잠정)실적(공정공시)(자회사의 주요경영사항),BNK금융지주,20261026800204,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026800204
+2026-10-27,20261026,실적,Y,연결재무제표기준영업(잠정)실적(공정공시)(자회사의 주요경영사항),BNK금융지주,20261026800205,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026800205
+2026-10-27,20261026,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),BNK금융지주,20261026800206,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026800206
+2026-10-27,20261026,배당,Y,현금ㆍ현물배당을위한주주명부폐쇄(기준일)결정,BNK금융지주,20261026800290,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026800290
+2026-10-27,20261026,배당,Y,현금ㆍ현물배당결정,BNK금융지주,20261026800296,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026800296
+2026-10-27,20261027,기타,,임원ㆍ주요주주특정증권등소유상황보고서,박근서,20261027000211,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027000211
+2026-10-27,20261026,보도,,[오늘의 IR] HD현대마린솔루션ㆍBNK금융지주ㆍ달바글로벌 등,etoday.co.kr,,https://www.etoday.co.kr/news/view/2639808
+2026-10-27,20261026,보도,,"BNK금융지주 3분기 실적 쇼크, 영업이익 37% 급감... 투자자들 '촉각'",gokorea.kr,,https://www.gokorea.kr/news/articleView.html?idxno=882749
+2026-10-27,20261026,보도,,"BNK금융지주, 3분기 예상치 대폭 하회..52주 신저가",smarttoday.co.kr,,https://www.smarttoday.co.kr/ko-kr/articles/113123
+2026-10-27,20261026,보도,,"BNK금융지주 3분기 영업이익 2,395억 원…전년 대비 37%↓",mbnmoney.mbn.co.kr,,http://mbnmoney.mbn.co.kr/news/view?news_no=MM1005947185
+2026-10-27,20261026,보도,,BNK금융지주 3분기 순익 28%↓…부산·경남은행 실적 뒷걸음,edaily.co.kr,,https://n.news.naver.com/mnews/article/018/0006396365?sid=101
+2026-10-27,20261026,보도,,BNK금융지주 13.53% 급락…주주환원보다 건전성 우려 부각,job-post.co.kr,,https://www.job-post.co.kr/news/articleView.html?idxno=234482
+2026-10-27,20261026,보도,,"BNK금융지주, 3분기 당기순이익 2105억...전년 동기比 28.45%↓",g-enews.com,,https://www.g-enews.com/view.php?ud=202610261510408592bb91c46fcd_1
+2026-10-27,20261026,보도,,BNK금융지주 3분기 순익 28%↓…부산·경남은행 실적 뒷걸음(종합),edaily.co.kr,,https://n.news.naver.com/mnews/article/018/0006396415?sid=101
+2026-10-27,20261026,보도,,BNK금융지주 3분기 순익 2105억원…전년比 28.5%↓,dt.co.kr,,https://n.news.naver.com/mnews/article/029/0003055283?sid=101
+2026-10-27,20261026,보도,,"BNK금융지주, 부울경 데이터산업과 AX 생태계 성장 지원",mk.co.kr,,https://n.news.naver.com/mnews/article/009/0005754132?sid=105
+2026-10-27,20261026,보도,,"BNK금융지주, 보통주 1주당 150원 분기 현금배당 결정",industrynews.co.kr,,https://www.industrynews.co.kr/news/articleView.html?idxno=88228
+2026-10-27,20261026,보도,,"BNK금융지주 3분기 누적 순이익 6223억 19% 줄어, 비이자이익 감소 영향",businesspost.co.kr,,https://www.businesspost.co.kr/BP?command=article_view&num=450324
+2026-10-27,20261026,보도,,"BNK금융지주, 3일간 16.75% 하락에 소수계좌 매도 집중으로 투자주의종목...",topstarnews.net,,https://www.topstarnews.net/news/articleView.html?idxno=16258600
+2026-10-27,20261026,보도,,"BNK금융지주, 3분기 누적 순익 6223억 밸류업 가속도",gnnews.co.kr,,https://www.gnnews.co.kr/news/articleView.html?idxno=648179
+2026-10-27,20261027,보도,,"BNK금융지주, 주가 하락 과도-NH",smarttoday.co.kr,,https://www.smarttoday.co.kr/ko-kr/articles/113142
+2026-10-27,20261027,보도,,"상상인증권 ""BNK금융지주, 기말 배당에 주목할 시점""",cstimes.com,,https://www.cstimes.com/news/articleView.html?idxno=725389
+2026-10-27,20261027,보도,,"BNK금융지주, 3분기 순익 컨센서스 6% 하회…목표가 1.9만원으로 하향-한...",edaily.co.kr,,https://n.news.naver.com/mnews/article/018/0006396811?sid=101
+2026-10-27,20261027,보도,,"하나증권 ""BNK금융지주 목표주가 하향, 3분기 연속 어닝쇼크로 이익 전...",businesspost.co.kr,,https://www.businesspost.co.kr/BP?command=article_view&num=450345
+2026-10-27,20261027,보도,,"키움증권, “BNK금융지주, 수익성 신뢰 높여야”",ekn.kr,,https://www.ekn.kr/web/view.php?key=20261027026511551
+2026-10-27,20261027,보도,,[특징주] 외국인·기관 '삼성전자·BNK금융지주' 러브콜…'SK텔레콤'은 매...,newstnt.com,,https://www.newstnt.com/news/articleView.html?idxno=725128
+2026-10-27,20261027,보도,,"""BNK금융지주, 주주환원율 40%대 진입에도 빛 바랜 이유…순이익이 먼저...",newsquest.co.kr,,https://www.newsquest.co.kr/news/articleView.html?idxno=303503
+2026-10-27,20261027,보도,,"""BNK금융지주, 3분기 어닝쇼크…4분기 실적 반등의 열쇠는 '운용손익 회...",newsquest.co.kr,,https://www.newsquest.co.kr/news/articleView.html?idxno=303547
+2026-10-27,20261027,보도,,"BNK금융지주, 600억원 자사주 취득 추진",vegannews.co.kr,,https://www.vegannews.co.kr/news/article.html?no=397578
+2026-10-27,20261027,보도,,"""3분기 실적은 미끄러졌지만…BNK금융지주, 4분기 '이익 폭발·충당금 감...",newsquest.co.kr,,https://www.newsquest.co.kr/news/articleView.html?idxno=303549
+2026-10-27,20261027,보도,,"""대손 비용·유가증권 손익에 14% 급락 맞은 BNK금융지주…지금이 저가...",newsquest.co.kr,,https://www.newsquest.co.kr/news/articleView.html?idxno=303554
