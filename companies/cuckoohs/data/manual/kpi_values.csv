@@ -1,1 +1,41 @@
 kpi_key,year,period,item,value,unit,scope,source_url,source_location,status,checked_on,note
+segment_revenue,2025,2025,가전(제품),804516000000,KRW,사업부문별 매출,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 4. 가. 매출실적,자동 수집 · 원문 대조 전,2026-11-15,원문 단위 백만원 · 매출할인 포함(원문 주1)
+segment_revenue,2025,2025,기타,40130000000,KRW,사업부문별 매출,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 4. 가. 매출실적,자동 수집 · 원문 대조 전,2026-11-15,원문 단위 백만원 · 매출할인 포함(원문 주1)
+segment_revenue,2025,2025,렌탈,276696000000,KRW,사업부문별 매출,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 4. 가. 매출실적,자동 수집 · 원문 대조 전,2026-11-15,원문 단위 백만원 · 매출할인 포함(원문 주1)
+segment_revenue,2024,2024,가전(제품),713434000000,KRW,사업부문별 매출,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 4. 가. 매출실적,자동 수집 · 원문 대조 전,2026-11-15,원문 단위 백만원 · 매출할인 포함(원문 주1)
+segment_revenue,2024,2024,기타,32843000000,KRW,사업부문별 매출,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 4. 가. 매출실적,자동 수집 · 원문 대조 전,2026-11-15,원문 단위 백만원 · 매출할인 포함(원문 주1)
+segment_revenue,2024,2024,렌탈,310932000000,KRW,사업부문별 매출,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 4. 가. 매출실적,자동 수집 · 원문 대조 전,2026-11-15,원문 단위 백만원 · 매출할인 포함(원문 주1)
+segment_revenue,2023,2023,가전(제품),549813000000,KRW,사업부문별 매출,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 4. 가. 매출실적,자동 수집 · 원문 대조 전,2026-11-15,원문 단위 백만원 · 매출할인 포함(원문 주1)
+segment_revenue,2023,2023,기타,45425000000,KRW,사업부문별 매출,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 4. 가. 매출실적,자동 수집 · 원문 대조 전,2026-11-15,원문 단위 백만원 · 매출할인 포함(원문 주1)
+segment_revenue,2023,2023,렌탈,359313000000,KRW,사업부문별 매출,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 4. 가. 매출실적,자동 수집 · 원문 대조 전,2026-11-15,원문 단위 백만원 · 매출할인 포함(원문 주1)
+region_revenue,2025,2025,내수,715583000000,KRW,내수·수출,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 4. 가. 매출실적,자동 수집 · 원문 대조 전,2026-11-15,원문 단위 백만원
+region_revenue,2025,2025,수출,405760000000,KRW,내수·수출,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 4. 가. 매출실적,자동 수집 · 원문 대조 전,2026-11-15,원문 단위 백만원
+region_revenue,2024,2024,내수,657587000000,KRW,내수·수출,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 4. 가. 매출실적,자동 수집 · 원문 대조 전,2026-11-15,원문 단위 백만원
+region_revenue,2024,2024,수출,399622000000,KRW,내수·수출,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 4. 가. 매출실적,자동 수집 · 원문 대조 전,2026-11-15,원문 단위 백만원
+region_revenue,2023,2023,내수,608805000000,KRW,내수·수출,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 4. 가. 매출실적,자동 수집 · 원문 대조 전,2026-11-15,원문 단위 백만원
+region_revenue,2023,2023,수출,345746000000,KRW,내수·수출,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 4. 가. 매출실적,자동 수집 · 원문 대조 전,2026-11-15,원문 단위 백만원
+production_volume,2025,2025,생산실적 합계,761556,대,시흥사업장,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 3. 라. 생산실적 및 가동률,자동 수집 · 원문 대조 전,2026-11-15,
+production_volume,2025,2025,정수기 외,740109,대,시흥사업장,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 3. 라. 생산실적 및 가동률,자동 수집 · 원문 대조 전,2026-11-15,
+production_volume,2024,2024,생산실적 합계,738485,대,시흥사업장,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 3. 라. 생산실적 및 가동률,자동 수집 · 원문 대조 전,2026-11-15,
+production_volume,2024,2024,정수기 외,717682,대,시흥사업장,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 3. 라. 생산실적 및 가동률,자동 수집 · 원문 대조 전,2026-11-15,
+production_volume,2023,2023,생산실적 합계,621779,대,시흥사업장,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 3. 라. 생산실적 및 가동률,자동 수집 · 원문 대조 전,2026-11-15,
+production_volume,2023,2023,정수기 외,599843,대,시흥사업장,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 3. 라. 생산실적 및 가동률,자동 수집 · 원문 대조 전,2026-11-15,
+capacity_utilization,2025,2025,평균가동률(시흥),94.46,%,실제가동시간 ÷ 가동가능시간,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 3. 라. 생산실적 및 가동률,자동 수집 · 원문 대조 전,2026-11-15,
+price_trend,2025,2025,정수기 내수,909460,원,일시불 평균 판매단가,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 2. 가격변동추이,자동 수집 · 원문 대조 전,2026-11-15,
+price_trend,2025,2025,정수기 수출,272086,원,일시불 평균 판매단가,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 2. 가격변동추이,자동 수집 · 원문 대조 전,2026-11-15,
+price_trend,2024,2024,정수기 내수,883014,원,일시불 평균 판매단가,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 2. 가격변동추이,자동 수집 · 원문 대조 전,2026-11-15,
+price_trend,2024,2024,정수기 수출,274222,원,일시불 평균 판매단가,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 2. 가격변동추이,자동 수집 · 원문 대조 전,2026-11-15,
+price_trend,2023,2023,정수기 내수,872919,원,일시불 평균 판매단가,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 2. 가격변동추이,자동 수집 · 원문 대조 전,2026-11-15,
+price_trend,2023,2023,정수기 수출,250769,원,일시불 평균 판매단가,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 2. 가격변동추이,자동 수집 · 원문 대조 전,2026-11-15,
+raw_material_prices,2025,2025,FILTER,2520,원,국내 매입 단가,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 3. 가. 원재료 가격변동추이,자동 수집 · 원문 대조 전,2026-11-15,
+raw_material_prices,2025,2025,WATER TANK,20751,원,국내 매입 단가,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 3. 가. 원재료 가격변동추이,자동 수집 · 원문 대조 전,2026-11-15,
+raw_material_prices,2025,2025,COMPRESSOR,30719,원,국내 매입 단가,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 3. 가. 원재료 가격변동추이,자동 수집 · 원문 대조 전,2026-11-15,
+raw_material_prices,2024,2024,FILTER,2567,원,국내 매입 단가,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 3. 가. 원재료 가격변동추이,자동 수집 · 원문 대조 전,2026-11-15,
+raw_material_prices,2024,2024,WATER TANK,20449,원,국내 매입 단가,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 3. 가. 원재료 가격변동추이,자동 수집 · 원문 대조 전,2026-11-15,
+raw_material_prices,2024,2024,COMPRESSOR,30571,원,국내 매입 단가,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 3. 가. 원재료 가격변동추이,자동 수집 · 원문 대조 전,2026-11-15,
+raw_material_prices,2023,2023,FILTER,2470,원,국내 매입 단가,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 3. 가. 원재료 가격변동추이,자동 수집 · 원문 대조 전,2026-11-15,
+raw_material_prices,2023,2023,WATER TANK,18127,원,국내 매입 단가,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 3. 가. 원재료 가격변동추이,자동 수집 · 원문 대조 전,2026-11-15,
+raw_material_prices,2023,2023,COMPRESSOR,32502,원,국내 매입 단가,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337,2025 사업보고서 II. 3. 가. 원재료 가격변동추이,자동 수집 · 원문 대조 전,2026-11-15,
+service_volume,2025,2025,핵심 이용량,,,,,2025 사업보고서 II. 사업의 내용,미확인,2026-11-15,2025 사업보고서 II. 사업의 내용에서 표를 찾지 못함
+capex,2025,2025,설비투자,,,,,2025 사업보고서 II. 사업의 내용,미확인,2026-11-15,2025 사업보고서 II. 사업의 내용에서 표를 찾지 못함
+market_share,2025,2025,시장점유율,,,,,2025 사업보고서 II. 사업의 내용,미확인,2026-11-15,정수기 시장 점유율 2위권이라는 서술만 있고 수치 없음

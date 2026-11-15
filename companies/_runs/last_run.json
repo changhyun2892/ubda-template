@@ -1,188 +1,22 @@
 {
- "started_at": "2026-11-13 09:16:47 KST",
+ "started_at": "2026-11-15 15:20:37 KST",
  "steps": [
-  "collect",
-  "text",
-  "stock",
   "build",
   "verify"
  ],
  "companies": {
-  "bgfretail": {
-   "collect": {
-    "sec": 364.1,
-    "result": 0
-   },
-   "text": {
-    "sec": 36.8,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.5,
-    "result": 0
-   },
+  "lottetour": {
    "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "binggrae": {
-   "collect": {
-    "sec": 1.2,
-    "result": 0
-   },
-   "text": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "stock": {
     "sec": 0.2,
     "result": 0
    },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
    "verify": {
     "sec": 0.1,
     "result": 0
-   }
-  },
-  "crown": {
-   "collect": {
-    "sec": 1.1,
-    "result": 0
-   },
-   "text": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.3,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "emart": {
-   "collect": {
-    "sec": 376.1,
-    "result": 0
-   },
-   "text": {
-    "sec": 60.6,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.2,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "gsretail": {
-   "collect": {
-    "sec": 378.3,
-    "result": 0
-   },
-   "text": {
-    "sec": 61.5,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.3,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 1
-   }
-  },
-  "haitai": {
-   "collect": {
-    "sec": 1.6,
-    "result": 0
-   },
-   "text": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.3,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "hanmisemi": {
-   "collect": {
-    "sec": 354.0,
-    "result": 0
-   },
-   "text": {
-    "sec": 29.1,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.4,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 0
-   }
-  },
-  "hanon": {
-   "collect": {
-    "sec": 385.2,
-    "result": 0
-   },
-   "text": {
-    "sec": 46.2,
-    "result": 0
-   },
-   "stock": {
-    "sec": 0.4,
-    "result": 0
-   },
-   "build": {
-    "sec": 0.1,
-    "result": 0
-   },
-   "verify": {
-    "sec": 0.1,
-    "result": 1
    }
   }
- }
+ },
+ "finished_at": "2026-11-15 15:20:37 KST",
+ "failed": [],
+ "deferred": []
 }
