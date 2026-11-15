@@ -1,4 +1,5 @@
 date,rcept_dt,category,major,report_nm,flr_nm,rcept_no,viewer_url
+2023-08-10,20230810,기타,,기업설명회(IR)개최,클래시스,20230810900626,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230810900626
 2023-11-08,20231107,자기주식,Y,주요사항보고서(자기주식취득신탁계약해지결정),클래시스,20231107000060,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231107000060
 2023-11-08,20231107,기타,,기업설명회(IR)개최,클래시스,20231107900319,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231107900319
 2023-11-08,20231107,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),클래시스,20231107900352,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231107900352
@@ -11,9 +12,6 @@ date,rcept_dt,category,major,report_nm,flr_nm,rcept_no,viewer_url
 2024-05-08,20240508,기타,,기업설명회(IR)개최,클래시스,20240508900163,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240508900163
 2024-05-09,20240508,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),클래시스,20240508900145,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240508900145
 2024-05-09,20240508,기타,,기업설명회(IR)개최,클래시스,20240508900163,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240508900163
-2024-08-05,20240805,기타,,기업설명회(IR)개최,클래시스,20240805900548,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240805900548
-2024-11-08,20241107,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),클래시스,20241107900202,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241107900202
-2024-11-08,20241107,기타,,기업설명회(IR)개최,클래시스,20241107900213,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241107900213
 2025-02-17,20250214,기타,,기업설명회(IR)개최,클래시스,20250214900673,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250214900673
 2025-02-17,20250214,실적,Y,매출액또는손익구조30%(대규모법인은15%)이상변동,클래시스,20250214901127,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250214901127
 2025-03-04,20250228,기타,,기업설명회(IR)개최,클래시스,20250228900226,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250228900226
@@ -76,4 +74,3 @@ date,rcept_dt,category,major,report_nm,flr_nm,rcept_no,viewer_url
 2026-08-13,20260813,보도,,"클래시스, 해외 '질주' · 내수 '주춤'‥ 하반기 회복 시험대",medipana.com,,https://www.medipana.com/news/articleView.html?idxno=415945
 2026-08-13,20260813,보도,,"DB증권 ""클래시스 목표주가 하향, 국내 판매 부진 회복할 시간 필요""",businesspost.co.kr,,https://www.businesspost.co.kr/BP?command=article_view&num=444664
 2026-08-13,20260813,보도,,[헬로스톡] 8/13 주목할 종목 : 한화손해보험·한국전력·클래시스·SK오...,hellot.net,,https://www.hellot.net/news/article.html?no=114342
-2026-11-11,20261111,기타,,기업설명회(IR)개최,클래시스,20261111900155,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111900155

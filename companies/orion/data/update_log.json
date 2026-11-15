@@ -1,16 +1,16 @@
 {
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:47 KST",
+    "checked_at": "2026-11-15 09:36 KST",
     "rows": 942,
     "last_date": "2026-11-13",
     "last_close": 113600,
-    "source": "Yahoo Finance 271560.KS 일봉 (비수정 종가)",
+    "source": "Yahoo Finance 271560.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:45 KST",
+    "checked_at": "2026-11-15 09:36 KST",
     "corp_code": "01238169",
     "reports_total": 17,
     "new_reports": [],
@@ -24,17 +24,17 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:47 KST",
-    "spike_days": 23,
-    "with_major_disclosure": 9,
+    "checked_at": "2026-11-15 09:36 KST",
+    "spike_days": 25,
+    "with_major_disclosure": 12,
     "news_total": 322,
     "disclosures_total": 258,
     "disclosures_new": 0,
-    "rule": "|초과 등락률| ≥ 2.5σ(직전 250거래일) 또는 ≥ 5.0%, 연도별 상위 10일, 공시 창 D-2(다음 날)~D"
+    "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:47 KST",
+    "checked_at": "2026-11-15 09:36 KST",
     "rows": 1012,
     "groups": [
       "오리온",
@@ -48,7 +48,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:47 KST",
+    "checked_at": "2026-11-15 09:36 KST",
     "new": 0,
     "total": 322,
     "first": "2026-10-20 06:38",
@@ -57,14 +57,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:45 KST",
+    "checked_at": "2026-11-15 09:36 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
-    "new_owner_reports": 17
+    "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-15 00:47 KST",
+    "checked_at": "2026-11-15 09:36 KST",
     "rows": 893,
     "as_of": "2026-11-13",
     "per": 10.71,

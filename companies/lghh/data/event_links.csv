@@ -21,6 +21,252 @@ date,rcept_dt,category,major,report_nm,flr_nm,rcept_no,viewer_url
 2025-04-29,20250428,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),LG생활건강,20250428800413,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250428800413
 2025-04-29,20250428,지분·출자,Y,타법인주식및출자증권취득결정,LG생활건강,20250428800414,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250428800414
 2025-04-29,20250428,증자·사채,Y,유상증자결정(종속회사의주요경영사항),LG생활건강,20250428800417,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250428800417
+2025-08-01,20250731,기타,,주식등의대량보유상황보고서(약식),SilchesterInternationalInvestorsLLP,20250731000214,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250731000214
+2025-08-01,20250731,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),LG생활건강,20250731800433,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250731800433
+2025-08-01,20250731,배당,Y,현금ㆍ현물배당결정,LG생활건강,20250731800441,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250731800441
+2025-08-01,20250731,배당,Y,현금ㆍ현물배당을위한주주명부폐쇄(기준일)결정,LG생활건강,20250731800460,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250731800460
+2025-08-01,20250731,자기주식,Y,주식소각결정,LG생활건강,20250731800469,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250731800469
+2026-03-20,20260320,기타,,임원ㆍ주요주주특정증권등소유상황보고서,이선주,20260320001051,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320001051
+2026-03-20,20260320,기타,,최대주주등소유주식변동신고서,LG생활건강,20260320801014,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320801014
+2026-05-04,20260430,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),LG생활건강,20260430801033,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260430801033
+2026-05-04,20260430,자기주식,Y,주식소각결정,LG생활건강,20260430801057,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260430801057
 2026-07-30,20260729,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),LG생활건강,20260729800683,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260729800683
 2026-07-30,20260729,배당,Y,현금ㆍ현물배당결정,LG생활건강,20260729800735,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260729800735
 2026-07-30,20260729,배당,Y,현금ㆍ현물배당을위한주주명부폐쇄(기준일)결정,LG생활건강,20260729800757,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260729800757
+2026-11-04,20261103,기타,,특수관계인으로부터주식의취득,LG생활건강,20261103000257,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000257
+2026-11-04,20261103,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),LG생활건강,20261103800407,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103800407
+2026-11-04,20261103,보도,,[Weekly 뷰티] 에이피알·코스맥스·아모레퍼시픽·LG생활건강,startuptoday.co.kr,,https://www.startuptoday.co.kr/news/articleView.html?idxno=817934
+2026-11-04,20261103,보도,,LG생활건강 3분기 영업익 704억원…작년 동기 대비 52.4% 증가,yna.co.kr,,https://n.news.naver.com/mnews/article/001/0016419096?sid=101
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 누적 영업익 2810억원…전년比 15.5%↑",etoday.co.kr,,https://www.etoday.co.kr/news/view/2643614
+2026-11-04,20261103,보도,,"[속보] LG생활건강, 3분기 영업이익 704억원…전년 동기 대비 52.4% 증가",cbci.co.kr,,https://www.cbci.co.kr/news/articleView.html?idxno=622699
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 52.4%↑…매출·순익은 뒷걸음",joongangenews.com,,https://www.joongangenews.com/news/articleView.html?idxno=560806
+2026-11-04,20261103,보도,,"LG생활건강, 3Q 영업익 704억…전년 比 52.4% 증가(1보)",news1.kr,,https://n.news.naver.com/mnews/article/421/0009267609?sid=101
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억…화장품 적자 축소",magazine.hankyung.com,,https://n.news.naver.com/mnews/article/050/0000112775?sid=101
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억원…전년比 52.4% 증가",m-i.kr,,https://www.m-i.kr/news/articleView.html?idxno=2013876
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억원 52%↑…뷰티 적자 축소",etoday.co.kr,,https://www.etoday.co.kr/news/view/2643622
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억원⋯ 전년비 52.4% 증가",viva100.com,,https://www.viva100.com/article/20261103501097
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억…전년비 52.4% 증가(1보)",news2day.co.kr,,https://www.news2day.co.kr/article/20261103500250
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억…뷰티 적자 축소·음료 부진",kukinews.com,,https://www.kukinews.com/article/view/kuk202611030149
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억원…전년比 52.4%↑",socialvalue.kr,,https://www.socialvalue.kr/news/view/1065596766369231
+2026-11-04,20261103,보도,,"면세 살아나자 뷰티 적자 줄었다 … LG생활건강, 3Q 영업익 52.4% ↑",biz.newdaily.co.kr,,https://biz.newdaily.co.kr/site/data/html/2026/11/03/2026110300288.html
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억원…전년 동기比 52.4% 증가",youthdaily.co.kr,,https://www.youthdaily.co.kr/news/article.html?no=229302
+2026-11-04,20261103,보도,,"LG생활건강, 화장품 적자 줄여 영업익 반등…해외 매출은 뒷걸음",joseilbo.com,,https://n.news.naver.com/mnews/article/123/0002393229?sid=101
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억원…뷰티는 회복·음료는 부진",daily.hankooki.com,,https://daily.hankooki.com/news/articleView.html?idxno=1421301
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억원…전년비 52.4% 증가",srtimes.kr,,http://www.srtimes.kr/news/articleView.html?idxno=216633
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 음료 매출 4974억…전년 동기보다 3.1% 감소",foodnews.co.kr,,http://www.foodnews.co.kr/news/articleView.html?idxno=120809
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억원…전년비 52.4%↑",cstimes.com,,https://www.cstimes.com/news/articleView.html?idxno=726462
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억원…전년比 52.4% 증가",etnews.com,,https://n.news.naver.com/mnews/article/030/0003481705?sid=101
+2026-11-04,20261103,보도,,"LG생활건강, 3Q 영업익 704억원…전년 동기대비 52.4%↑",newsway.co.kr,,https://www.newsway.co.kr/news/view?ud=2026110316052028283
+2026-11-04,20261103,보도,,"LG생활건강, 뷰티 적자에 中 매출도 21% 줄어… 3Q 부진한 성적표",biz.chosun.com,,https://n.news.naver.com/mnews/article/366/0001202285?sid=101
+2026-11-04,20261103,보도,,"""북미 자회사 매각에도 선방""…LG생활건강, 3분기 매출 1조5774억원",ftoday.co.kr,,http://www.ftoday.co.kr/news/articleView.html?idxno=368829
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업이익 704억원...전년 比 52.4%↑",getnews.co.kr,,https://www.getnews.co.kr/news/articleView.html?idxno=885845
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업이익 52.4% 늘어…뷰티 적자폭 축소",lawissue.co.kr,,https://www.lawissue.co.kr/view.php?ud=202611031610022213204ead0791_12
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업이익 52% 급증",businesskorea.co.kr,,https://www.businesskorea.co.kr/news/articleView.html?idxno=280354
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억원…전년비 52.4% 증가",dailian.co.kr,,https://n.news.naver.com/mnews/article/119/0003150803?sid=101
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 52% ↑…뷰티 사업 적자 축소",view.asiae.co.kr,,https://n.news.naver.com/mnews/article/277/0005837493?sid=101
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억…전년비 52%↑",pointdaily.co.kr,,https://www.pointdaily.co.kr/news/articleView.html?idxno=324648
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억원…전년比 52.4%↑",newspim.com,,https://www.newspim.com/news/view/20261103001175
+2026-11-04,20261103,보도,,"LG생활건강, 3Q 영업익 704억·전년比 52.4%↑ ...에이본 매각에도 외형...",popcornnews.net,,http://www.popcornnews.net/news/articleView.html?idxno=138544
+2026-11-04,20261103,보도,,뷰티 적자 줄자 영업익 ‘껑충’…LG생활건강 52% 급증,g-enews.com,,https://www.g-enews.com/view.php?ud=202611031610036931740eacf404_1
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 52.4% 증가…뷰티 적자 축소에 수익성 개선",dailysmart.co.kr,,http://www.dailysmart.co.kr/news/articleView.html?idxno=131933
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억원…전년比 52.4%↑",news.mtn.co.kr,,https://news.mtn.co.kr/article/2026110316140143683
+2026-11-04,20261103,보도,,"LG생활건강 3분기 영업익 52% 증가…""뷰티 적자 축소""",edaily.co.kr,,https://n.news.naver.com/mnews/article/018/0006402949?sid=101
+2026-11-04,20261103,보도,,"LG생활건강, 뷰티 수익성 개선에 3분기 영업익 52.4% 증가",fetv.co.kr,,https://www.fetv.co.kr/news/articleView.html?idxno=313017
+2026-11-04,20261103,보도,,"""체질 개선 통한 수익성 방어""…LG생활건강, 3분기 영업익 704억으로 52....",thefairnews.co.kr,,https://www.thefairnews.co.kr/news/articleView.html?idxno=92928
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업이익 52.4% 증가…뷰티 적자폭 축소",fntimes.com,,https://www.fntimes.com/html/view.php?ud=202611031613397515b5b890e35c_18
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 52% 증가…뷰티사업 적자 축소",wowtv.co.kr,,https://n.news.naver.com/mnews/article/215/0001271511?sid=103
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업이익 704억…뷰티 적자 축소",news.tf.co.kr,,https://n.news.naver.com/mnews/article/629/0000548362?sid=101
+2026-11-04,20261103,보도,,"LG생활건강, 매출 지키고 이익 늘렸다… 3분기 영업익 52.4%↑",pressman.kr,,https://www.pressman.kr/news/articleView.html?idxno=104312
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업이익 704억원…전년 대비 52.4% 증가",dnews.co.kr,,https://www.dnews.co.kr/uhtml/view.jsp?idxno=202611031616508320477
+2026-11-04,20261103,보도,,"LG생활건강 3분기 영업이익 704억으로 52.4% 증가, 화장품 사업 적자 축...",businesspost.co.kr,,https://www.businesspost.co.kr/BP?command=article_view&num=451048
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 52% 급증…뷰티 영업적자 폭 줄여",topdaily.kr,,https://www.topdaily.kr/articles/112673
+2026-11-04,20261103,보도,,LG생활건강 3분기 영업익 704억원…작년 동기 대비 52.4% 증가(종합),yna.co.kr,,https://n.news.naver.com/mnews/article/001/0016419232?sid=101
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억원 52.4%↑..""면세 회복""",4th.kr,,http://www.4th.kr/news/articleView.html?idxno=2121033
+2026-11-04,20261103,보도,,"LG생활건강 3분기 매출 1조5774억…영업이익 52.4% 급증, 해외 12.5% 감소",gukjenews.com,,https://www.gukjenews.com/news/articleView.html?idxno=3741077
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업이익 704억원…전년比 52.4% 증가",seoultimes.news,,https://www.seoultimes.news/news/article.html?no=2000101732
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억원…전년비 52.4% 증가",dizzotv.com,,https://www.dizzotv.com/site/data/html_dir/2026/11/03/2026110380144.html
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 52% 증가···뷰티 적자 축소에 수익성 개선",smartbizn.com,,https://www.smartbizn.com/news/articleView.html?idxno=158332
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억.. 전년比 52%↑ ""뷰티 적자 축소""",ajunews.com,,https://www.ajunews.com/view/20261103155618524
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 52.4% ↑...""뷰티 적자 줄였다""",metroseoul.co.kr,,http://www.metroseoul.co.kr/article/20261103500451
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 52% 증가…매출은 제자리걸음",hankyung.com,,https://n.news.naver.com/mnews/article/015/0005349734?sid=103
+2026-11-04,20261103,보도,,"LG생활건강, 체질 개선 속도 내지만···중국 부진·마케팅비 부담 여전",seoulfn.com,,https://www.seoulfn.com/news/articleView.html?idxno=641770
+2026-11-04,20261103,보도,,"LG생활건강, 3Q 영업익 52.4% ↑…뷰티 적자 대폭 축소(상보)",news1.kr,,https://n.news.naver.com/mnews/article/421/0009267744?sid=101
+2026-11-04,20261103,보도,,"LG생활건강, 3Q 영업익 704억…""국내 뷰티 실적 호조""",businessplus.kr,,https://www.businessplus.kr/news/articleView.html?idxno=119214
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억 '52.4%↑'… 뷰티 부문 적자 대폭 개선",newsdream.kr,,http://www.newsdream.kr/news/articleView.html?idxno=121400
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 52.4% 증가...뷰티 적자 축소에 수익성 개선",asiaa.co.kr,,https://www.asiaa.co.kr/news/articleView.html?idxno=269187
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업이익 52.4% 증가…뷰티 적자폭 줄였다",the-pr.co.kr,,https://www.the-pr.co.kr/news/articleView.html?idxno=63141
+2026-11-04,20261103,보도,,"LG생활건강, 3Q 영업익 704억·52.4%↑…""뷰티 적자폭 축소""",newsis.com,,https://n.news.naver.com/mnews/article/003/0014298653?sid=101
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업이익 52.4%↑…뷰티 적자 줄였다",zdnet.co.kr,,https://n.news.naver.com/mnews/article/092/0002443670?sid=103
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 52.4% 증가…뷰티 적자 축소",lcnews.co.kr,,https://www.lcnews.co.kr/news/articleView.html?idxno=210786
+2026-11-04,20261103,보도,,"LG생활건강, 3Q 영업익 704억·52%↑...뷰티 적자 축소",fnnews.com,,https://n.news.naver.com/mnews/article/014/0005598768?sid=101
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업이익 52.4% 증가…뷰티 사업 적자폭 축소",thebk.co.kr,,https://www.thebk.co.kr/news/articleView.html?idxno=312654
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억…전년比 52.4% 증가",sentv.co.kr,,https://www.sentv.co.kr/article/view/sentv202611030196
+2026-11-04,20261103,보도,,"LG생활건강, 영업익 52% 반등에도…쓰디쓴 '콜라맛'",biz.sbs.co.kr,,https://n.news.naver.com/mnews/article/374/0000541464?sid=101
+2026-11-04,20261103,보도,,"[3Q 실적] LG생활건강, 3분기 영업익 52% 증가…뷰티 적자 축소",financialpost.co.kr,,https://www.financialpost.co.kr/news/articleView.html?idxno=284414
+2026-11-04,20261103,보도,,"LG생활건강 3분기 영업이익 704억, 전년比 52%↑…매출은 소폭 감소",newsquest.co.kr,,https://www.newsquest.co.kr/news/articleView.html?idxno=304127
+2026-11-04,20261103,보도,,"LG생활건강, 뷰티 적자폭 줄였다…힌스는 완전 자회사로",mt.co.kr,,https://n.news.naver.com/mnews/article/008/0005435997?sid=101
+2026-11-04,20261103,보도,,"LG생활건강, 전년 대비 수익성 개선…뷰티 적자 줄이며 3분기 영업익 52...",thepublic.kr,,https://www.thepublic.kr/news/articleView.html?idxno=324955
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억 전년비 52.4%↑…""뷰티 적자 축소가 실...",industrynews.co.kr,,https://www.industrynews.co.kr/news/articleView.html?idxno=88831
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억 원…전년대비 52.4% 늘어",yonhapnewstv.co.kr,,https://n.news.naver.com/mnews/article/422/0000922477?sid=101
+2026-11-04,20261103,보도,,"LG생활건강, 3Q 영업익 704억, 전년比 52%↑",bokuennews.com,,http://www.bokuennews.com/news/article.html?no=286590
+2026-11-04,20261103,보도,,"뷰티 살아난 LG생활건강, 3분기 영업익 16% 성장…美 시장이 다음 승부처",asiatoday.co.kr,,https://www.asiatoday.co.kr/kn/view.php?key=20261103010001202
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 52.4% 증가…뷰티 적자 축소",ddaily.co.kr,,https://n.news.naver.com/mnews/article/138/0002247118?sid=101
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 전년比 52% 증가···뷰티 적자 축소",ziksir.com,,https://www.ziksir.com/news/articleView.html?idxno=151898
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 매출 1.5조···영업이익 704억·전년比 52.4%↑",whitepaper.co.kr,,http://www.whitepaper.co.kr/news/articleView.html?idxno=268406
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업이익 704억원…뷰티 적자 축소에 52.4% 증가",sateconomy.co.kr,,https://sateconomy.co.kr/news/view/1065597953310144
+2026-11-04,20261103,보도,,"[위클리오늘] 산업일반 소식_보람그룹, LG생활건강(11.3)",weeklytoday.com,,http://www.weeklytoday.com/news/articleView.html?idxno=800741
+2026-11-04,20261103,보도,,"화장품 부진 털어내나… LG생활건강, 실적 반등 시동",the-biz.co.kr,,http://www.the-biz.co.kr/news/articleView.html?idxno=730575
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업이익 704억원…전년 대비 52.4% 증가",delighti.co.kr,,https://www.delighti.co.kr/news/articleView.html?idxno=124313
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업이익 52% 급증…뷰티 적자 축소·음료 부진",thepowernews.co.kr,,https://www.thepowernews.co.kr/view.php?ud=202611031648591205de3f0aa1be_7
+2026-11-04,20261103,보도,,"[2026 3분기 실적] LG생활건강, 영업이익 52%↑…뷰티 적자 축소",inthenews.co.kr,,https://www.inthenews.co.kr/news/article.html?no=93966
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억 '52.4%↑'…뷰티 적자 축소",newsworks.co.kr,,https://www.newsworks.co.kr/news/articleView.html?idxno=901788
+2026-11-04,20261103,보도,,"LG생활건강, 영업이익 704억원…뷰티 사업 적자폭 축소",ceoscoredaily.com,,https://www.ceoscoredaily.com/page/view/2026110316491255207
+2026-11-04,20261103,보도,,"LG생활건강, 수익성 반등 성공…뷰티 적자폭 축소",dealsite.co.kr,,https://dealsite.co.kr/articles/171985
+2026-11-04,20261103,보도,,[뉴스워커_LG생활건강] 3분기 영업이익 52.4% 증가…뷰티 적자 축소,newsworker.co.kr,,https://www.newsworker.co.kr/news/articleView.html?idxno=512119
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 매출 1조5774억·영업이익 704억",mk.co.kr,,https://n.news.naver.com/mnews/article/009/0005758374?sid=103
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억…적자 줄였지만 시장 기대치 하회",pointe.co.kr,,https://www.pointe.co.kr/news/articleView.html?idxno=87106
+2026-11-04,20261103,보도,,LG생활건강 3분기 영업익 704억… 전년비 52% 증가,newsclaim.co.kr,,https://www.newsclaim.co.kr/news/articleView.html?idxno=3081239
+2026-11-04,20261103,보도,,"갈길 먼 LG생활건강, 3Q 영업익 증가 불구 중국·음료사업 부진에 시장 ...",livebiz.today,,https://www.livebiz.today/news/articleView.html?idxno=206168
+2026-11-04,20261103,보도,,LG생활건강 영업익 52%↑,smedaily.co.kr,,http://www.smedaily.co.kr/news/articleView.html?idxno=365635
+2026-11-04,20261103,보도,,"LG생활건강, 3Q 영업익 52.4% 증가…뷰티 적자 줄여",weekly.hankooki.com,,https://weekly.hankooki.com/news/articleView.html?idxno=7192052
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억원 전년비 52.4%↑…""국내 뷰티 실적 호...",newspost.kr,,https://www.newspost.kr/news/articleView.html?idxno=227011
+2026-11-04,20261103,보도,,"LG생활건강 ‘프라엘’, ‘피부과학 자문단’ 발족",sports.donga.com,,https://n.news.naver.com/mnews/article/382/0001302703?sid=101
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업이익 704억원…전년 동기 대비 52.4% 증가",newslock.co.kr,,http://www.newslock.co.kr/news/articleView.html?idxno=139220
+2026-11-04,20261103,보도,,"LG생활건강, 뷰티 적자 축소에도 中 매출 부진",kfenews.co.kr,,https://www.kfenews.co.kr/news/articleView.html?idxno=667486
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 52%↑…뷰티 적자 폭 축소",newstomato.com,,http://www.newstomato.com/ReadNews.aspx?no=1319128&inflow=N
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억원…전년 대비 52.4% 증가",asiatime.co.kr,,https://www.asiatime.co.kr/article/20261103500377
+2026-11-04,20261103,보도,,"LG생활건강, 3Q 매출액 1.5조...전년동기比 0.2%↓",thevaluenews.co.kr,,http://www.thevaluenews.co.kr/news/view.php?idx=202942
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 52.4% 증가...""뷰티 적자 축소""",shinailbo.co.kr,,https://www.shinailbo.co.kr/news/articleView.html?idxno=5079383
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 52% 껑충… '선택과 집중' 포트폴리오 재편 통...",maxmovie.com,,https://www.maxmovie.com/news/articleView.html?idxno=502751
+2026-11-04,20261103,보도,,"LG생활건강, 뷰티 적자 대폭 축소…북미 닥터그루트 성장에 수익성 개선...",news2day.co.kr,,https://www.news2day.co.kr/article/20261103500300
+2026-11-04,20261103,보도,,"뷰티 적자 줄였다…LG생활건강, 3분기 영업이익 52.4% 증가",mk.co.kr,,https://n.news.naver.com/mnews/article/009/0005758401?sid=103
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 뷰티 적자 축소…'힌스' 지분 100% 확보",apparelnews.co.kr,,http://www.apparelnews.co.kr/news/news_view/?idx=228732
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억원·52%↑…뷰티 적자 축소",newsinside.kr,,https://www.newsinside.kr/news/articleView.html?idxno=5039664
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업이익 704억원 '52.4% 증가'…뷰티 적자폭 축소",job-post.co.kr,,https://www.job-post.co.kr/news/articleView.html?idxno=236283
+2026-11-04,20261103,보도,,LG생활건강 2026년 3분기 영업이익 704억 원… 전년比 52.4% 대폭 성장,fntoday.co.kr,,https://www.fntoday.co.kr/news/articleView.html?idxno=396928
+2026-11-04,20261103,보도,,"LG생활건강, 매출 1조5774억 영업이익 704억 기록·피부 전문의 손잡고 ...",wsobi.com,,http://www.wsobi.com/news/articleView.html?idxno=320975
+2026-11-04,20261103,보도,,LG생활건강 3분기 영업익 704억원 달성…전년 대비 52.4% 반등,ttlnews.com,,http://www.ttlnews.com/news/articleView.html?idxno=3158432
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억원…뷰티 적자 축소로 실적 개선",efnews.co.kr,,http://www.efnews.co.kr/news/articleView.html?idxno=133702
+2026-11-04,20261103,보도,,수익성 큰 폭 개선한 LG생활건강…힌스 지분 100% 품었다,econovill.com,,https://www.econovill.com/news/articleView.html?idxno=755896
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업이익 52%↑…뷰티 적자 축소",iminju.net,,http://www.iminju.net/news/articleView.html?idxno=171878
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업이익 52.4% 증가…뷰티 적자 대폭 축소",eroun.net,,https://www.eroun.net/news/articleView.html?idxno=94281
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업이익 52% 증가···뷰티 적자폭 축소",finomy.com,,http://www.finomy.com/news/articleView.html?idxno=265505
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 52% 증가…뷰티사업 적자 축소",smarttimes.co.kr,,http://www.smarttimes.co.kr/news/articleView.html?idxno=50296
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 52.4% 증가…뷰티 적자폭 축소",sports.hankooki.com,,https://sports.hankooki.com/news/articleView.html?idxno=6942777
+2026-11-04,20261103,보도,,"LG생활건강, 뷰티 적자 폭 대폭 축소",hansbiz.co.kr,,http://www.hansbiz.co.kr/news/articleView.html?idxno=879405
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억원…전년比 52.4% ↑",inews24.com,,https://n.news.naver.com/mnews/article/031/0001071893?sid=101
+2026-11-04,20261103,보도,,"LG생활건강, 3Q 영업익 52.4%↑…뷰티 적자 축소",newsprime.co.kr,,http://www.newsprime.co.kr/news/article.html?no=753560
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 매출 제자리에도 영업익 52%↑",news.dealsitetv.com,,https://news.dealsitetv.com/articles/177976
+2026-11-04,20261103,보도,,"LG생활건강, 화장품 적자 폭 축소로 3분기 영업익 전년比 52.4% 증가",wikileaks-kr.org,,https://www.wikileaks-kr.org/news/articleView.html?idxno=194152
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업이익 704억원…전년동기대비 52.4% 성장",100ssd.co.kr,,https://www.100ssd.co.kr/news/articleView.html?idxno=214140
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 704억원…뷰티 적자 지속",segye.com,,https://n.news.naver.com/mnews/article/022/0004172196?sid=101
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 52%↑… 뷰티 적자폭 줄였다",newscj.com,,https://www.newscj.com/news/articleView.html?idxno=3445609
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업이익 704억원...전년 대비 52.4% 증가",womentimes.co.kr,,https://www.womentimes.co.kr/news/articleView.html?idxno=107556
+2026-11-04,20261103,보도,,"LG생활건강, 뷰티 회복세에 수익성 개선 본격화",enewstoday.co.kr,,http://www.enewstoday.co.kr/news/articleView.html?idxno=2487993
+2026-11-04,20261103,보도,,"LG생활건강, 뷰티 적자 축소에 3분기 영업익 52.4% 증가",swtvnews.com,,https://www.swtvnews.com/news/newsview.php?ncode=1065603072700881
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 52.4%↑…뷰티 적자 축소·음료 부진",sisafocus.co.kr,,http://www.sisafocus.co.kr/news/articleView.html?idxno=367157
+2026-11-04,20261103,보도,,"LG생활건강, 3Q 영업익 52.4% ↑···""뷰티 사업 적자 축소""",todaykorea.co.kr,,https://www.todaykorea.co.kr/news/articleView.html?idxno=408047
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업익 전년比 52.4% 증가…뷰티 부문 적자 감소",digitalchosun.dizzo.com,,http://digitalchosun.dizzo.com/site/data/html_dir/2026/11/03/2026110380197.html
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업이익 704억원…전년比 52.4% 증가",mydaily.co.kr,,https://n.news.naver.com/mnews/article/117/0004121541?sid=103
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업이익 52.4%↑…뷰티 적자 축소",wolyo.co.kr,,https://www.wolyo.co.kr/news/articleView.html?idxno=320003
+2026-11-04,20261103,보도,,"LG생활건강, 국내서 적자 줄였지만 해외는 '수익성 늪'..중국 적자 제자...",kpenews.com,,https://kpenews.com/View.aspx?No=4295641
+2026-11-04,20261103,보도,,"LG생활건강, 매출 제자리에도 영업익 52.4%↑... 뷰티 적자 축소에 실적...",meconomynews.com,,https://www.meconomynews.com/news/articleView.html?idxno=203245
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 영업이익 52.4% 증가…매출 1조5,774억원",gokorea.kr,,https://www.gokorea.kr/news/articleView.html?idxno=883908
+2026-11-04,20261103,보도,,"LG생활건강, 2026년 3분기 실적 공시… ""매출 1.57조·영업이익 52.4% 증가...",woodkorea.co.kr,,https://www.woodkorea.co.kr/news/articleView.html?idxno=92326
+2026-11-04,20261103,보도,,LG생활건강 3분기 영업이익 늘고 순이익 45.2% 감소,vegannews.co.kr,,https://www.vegannews.co.kr/news/article.html?no=400011
+2026-11-04,20261103,보도,,"LG생활건강, 3분기 매출 1조5774억·영업익 704억 기록…""브랜드·유통 혁...",bizwnews.com,,http://www.bizwnews.com/news/articleView.html?idxno=150847
+2026-11-04,20261104,보도,,"LG생활건강, 3분기 영업익 704억원…전년比 52.4% 증가",kjdaily.com,,http://www.kjdaily.com/article.php?aid=1793721168691200276
+2026-11-04,20261104,보도,,"중국보다 미국, 백화점보다 세포라…체질 바꿔가는 LG생활건강",kukinews.com,,https://www.kukinews.com/article/view/kuk202611030192
+2026-11-04,20261104,보도,,"LG생활건강, 힌스 운영사 지분 100% 확보 추진",vegannews.co.kr,,https://www.vegannews.co.kr/news/article.html?no=400215
+2026-11-04,20261104,보도,,"LG생활건강, 화장품 펀더멘털 회복 논하기 일러…목표가↓-상상인",edaily.co.kr,,https://n.news.naver.com/mnews/article/018/0006403276?sid=101
+2026-11-04,20261104,보도,,"영업이익 52% 급증한 LG생활건강, 북미·중국 부진 속 '수익성 방어'",newsroad.co.kr,,http://www.newsroad.co.kr/news/articleView.html?idxno=66993
+2026-11-04,20261104,보도,,"""LG생활건강, 3분기 영업익 시장 기대치 30% 하회…목표가↓""-한투",hankyung.com,,https://n.news.naver.com/mnews/article/015/0005349990?sid=101
+2026-11-04,20261104,보도,,"한화證 ""LG생활건강, 북미 성장세 주목…실적 반등 기대""",ajunews.com,,https://www.ajunews.com/view/20261104075842679
+2026-11-04,20261104,보도,,"키움證 “LG생활건강, 수익성 개선 확인 필요…투자의견 하향”",biz.chosun.com,,https://n.news.naver.com/mnews/article/366/0001202372?sid=101
+2026-11-04,20261104,보도,,"LG생활건강, 3분기 영업익 52.4% 증가…뷰티 수익성 개선·브랜드 투자 ...",kdfnews.com,,http://www.kdfnews.com/news/articleView.html?idxno=190389
+2026-11-04,20261104,보도,,"[모닝 리포트] ""LG생활건강, 뷰티 적자에 실적 부진…목표가 하향""",newspim.com,,https://www.newspim.com/news/view/20261104000052
+2026-11-04,20261104,보도,,"신한證, “LG생활건강, 실적 회복세지만 비용 부담 여전⋯목표가 유지”",etoday.co.kr,,https://www.etoday.co.kr/news/view/2643788
+2026-11-04,20261104,보도,,"LG생활건강, 북미 수익성 지켜봐야…투자의견·목표가↓-키움",mt.co.kr,,https://n.news.naver.com/mnews/article/008/0005436225?sid=101
+2026-11-04,20261104,보도,,"LG생활건강, 미국·중국 부진에 실적 가시성↓…목표가 32만원",fnnews.com,,https://n.news.naver.com/mnews/article/014/0005599034?sid=101
+2026-11-04,20261104,보도,,"LG생활건강, 3분기 영업이익 52% 급증…뷰티 수익성 회복·글로벌 확장 ...",ilyoseoul.co.kr,,https://www.ilyoseoul.co.kr/news/articleView.html?idxno=524570
+2026-11-04,20261104,보도,,"LG생활건강, 2026년 3분기 영업이익 704억원... 뷰티 적자 축소로 52.4% 성...",insight.co.kr,,https://www.insight.co.kr/news/580529
+2026-11-04,20261104,보도,,"LG생활건강, 해외 사업 재편에도 실적 부진…투자의견 줄하향[애널리스...",newsway.co.kr,,https://www.newsway.co.kr/news/view?ud=2026110408255409287
+2026-11-04,20261104,보도,,"메리츠證 ""LG생활건강, 성장동력 부족""…목표주가 하향 32만원",news1.kr,,https://n.news.naver.com/mnews/article/421/0009268928?sid=101
+2026-11-04,20261104,보도,,‘어닝 쇼크’ LG생활건강…하나증권 “투자의견 중립으로 하향”,mk.co.kr,,https://n.news.naver.com/mnews/article/009/0005758638?sid=101
+2026-11-04,20261104,보도,,"LG생활건강, 더 나빠질 게 없다는데…목표가 하향 [NH투자증권]",ekn.kr,,https://www.ekn.kr/web/view.php?key=20261104028245136
+2026-11-04,20261104,보도,,"LG생활건강 더페이스샵, 美 얼타 뷰티 500여개 매장 입점…북미 공략 확...",m-i.kr,,https://www.m-i.kr/news/articleView.html?idxno=2014123
+2026-11-04,20261104,보도,,"LG생활건강 더페이스샵, 美 얼타 뷰티 500여개 매장 입점",newsfreezone.co.kr,,https://www.newsfreezone.co.kr/news/articleView.html?idxno=717557
+2026-11-04,20261104,보도,,"LG생활건강, 화장품 적자 줄였지만…실적 회복은 비용 해소가 관건",financialpost.co.kr,,https://www.financialpost.co.kr/news/articleView.html?idxno=284517
+2026-11-04,20261104,보도,,[유통街] 배민B마트·교촌엔프앤비·한국필립모리스·LG생활건강,news.ifm.kr,,https://news.ifm.kr/news/articleView.html?idxno=483431
+2026-11-04,20261104,보도,,"LG생활건강, 3분기 '어닝 쇼크'에 장 초반 9% 급락[특징주]",newsway.co.kr,,https://www.newsway.co.kr/news/view?ud=2026110409290970495
+2026-11-04,20261104,보도,,"LG생활건강, 3분기 어닝쇼크에 장 초반 10%대 '급락'",hankyung.com,,https://n.news.naver.com/mnews/article/015/0005350042?sid=101
+2026-11-04,20261104,보도,,"LG생활건강 더페이스샵, 美 얼타 뷰티 500여곳 입점…북미 공략 확대",theviewers.co.kr,,https://theviewers.co.kr/View.aspx?No=4296358
+2026-11-04,20261104,보도,,"LG생활건강 더페이스샵, 미국 얼타뷰티 입점",fnnews.com,,https://n.news.naver.com/mnews/article/014/0005599110?sid=101
+2026-11-04,20261104,보도,,"[특징주] LG생활건강, ‘어닝 쇼크’에 11% 급락…증권가 목표가 줄하향",biz.chosun.com,,https://n.news.naver.com/mnews/article/366/0001202415?sid=101
+2026-11-04,20261104,보도,,"LG생활건강 더페이스샵, 美 유통망 확대…스킨케어 시장 공략 속도",daily.hankooki.com,,https://daily.hankooki.com/news/articleView.html?idxno=1421518
+2026-11-04,20261104,보도,,"LG생활건강 더페이스샵, 美 얼타 뷰티 500여개 매장 입점…북미 유통망...",kukinews.com,,https://www.kukinews.com/article/view/kuk202611040033
+2026-11-04,20261104,보도,,"LG생활건강 더페이스샵, 美 얼타 뷰티 500여개 매장 입점···북미 유통...",ziksir.com,,https://www.ziksir.com/news/articleView.html?idxno=151972
+2026-11-04,20261104,보도,,"“아, 옛날이여”…한때 황제주 LG생활건강, 3분기 실적 부진에 11% 급락",mk.co.kr,,https://n.news.naver.com/mnews/article/009/0005758681?sid=101
+2026-11-04,20261104,보도,,"LG생활건강 3분기 실적 부진, 목표 주가 하향…중국 시장 회복 지연 우려",gokorea.kr,,https://www.gokorea.kr/news/articleView.html?idxno=884016
+2026-11-04,20261104,보도,,"LG생활건강 더페이스샵, 美 얼타뷰티 500곳 입점…'미감수' 북미 확장",newsinside.kr,,https://www.newsinside.kr/news/articleView.html?idxno=5040286
+2026-11-04,20261104,보도,,"LG생활건강, 에이본 덜고 북미 재공략…더페이스샵 유통망 확대",joseilbo.com,,https://n.news.naver.com/mnews/article/123/0002393290?sid=101
+2026-11-04,20261104,보도,,"[특징주] LG생활건강, 기대치 밑돈 실적에 10% 이상 급락",yna.co.kr,,https://n.news.naver.com/mnews/article/001/0016420578?sid=101
+2026-11-04,20261104,보도,,"""에이본 정리하고 닥터그루트 넣었지만…LG생활건강, 북미 실적 검증까...",newsquest.co.kr,,https://www.newsquest.co.kr/news/articleView.html?idxno=304187
+2026-11-04,20261104,보도,,"LG생활건강, 3분기 아쉬운 실적…적자 줄였지만 매출 1.5조 그쳐",financialreview.co.kr,,http://www.financialreview.co.kr/news/articleView.html?idxno=46013
+2026-11-04,20261104,보도,,"LG생활건강 더페이스샵, 美얼타 뷰티 온·오프라인 입점",mt.co.kr,,https://n.news.naver.com/mnews/article/008/0005436330?sid=101
+2026-11-04,20261104,보도,,"LG생활건강 더페이스샵, 美얼타 뷰티 500곳 입점…북미 유통망 확대",4th.kr,,http://www.4th.kr/news/articleView.html?idxno=2121069
+2026-11-04,20261104,보도,,"LG생활건강 더페이스샵, 美 얼타 뷰티 500여개 매장 입점",womentimes.co.kr,,https://www.womentimes.co.kr/news/articleView.html?idxno=107574
+2026-11-04,20261104,보도,,"LG생활건강, 실적 쇼크에 주가 12% 급락…증권가 목표가 줄하향",newsquest.co.kr,,https://www.newsquest.co.kr/news/articleView.html?idxno=304188
+2026-11-04,20261104,보도,,"[쩐의흔적] LG생활건강은 '힌스' 100%, 허재석은 154억…마지막 지분 정...",thepublic.kr,,https://www.thepublic.kr/news/articleView.html?idxno=325030
+2026-11-04,20261104,보도,,"LG생활건강, 영업익 반등에도 순익 뒷걸음",ktnews.com,,http://www.ktnews.com/news/articleView.html?idxno=149898
+2026-11-04,20261104,보도,,"LG생활건강, 3분기 영업익 52.4% 증가…뷰티 적자 축소",ntoday.co.kr,,https://www.ntoday.co.kr/news/articleView.html?idxno=130591
+2026-11-04,20261104,보도,,"LG생활건강, 중국·북미 화장품 사업 부진..3분기 '어닝쇼크'에 엇갈린 ...",kpenews.com,,https://kpenews.com/View.aspx?No=4296556
+2026-11-04,20261104,보도,,"LG생활건강 더페이스샵, 美 얼타 뷰티 500여개 매장 입점",smarttimes.co.kr,,http://www.smarttimes.co.kr/news/articleView.html?idxno=50300
+2026-11-04,20261104,보도,,"LG생활건강, 3분기 어닝쇼크에 12%대 급락 [종목NOW]",fnnews.com,,https://n.news.naver.com/mnews/article/014/0005599200?sid=101
+2026-11-04,20261104,보도,,"키움증권 ""LG생활건강 목표주가 하향, 북미 마케팅 비용 부담에 수익성...",businesspost.co.kr,,https://www.businesspost.co.kr/BP?command=article_view&num=451093
+2026-11-04,20261104,보도,,"신영증권, LG생활건강 매수 유지...""내년 수익성 주목""",kdfnews.com,,http://www.kdfnews.com/news/articleView.html?idxno=190421
+2026-11-04,20261104,보도,,"LG생활건강, 미국 뷰티 유통망 확대… 얼타 뷰티 온·오프라인 동시 진...",newsdream.kr,,http://www.newsdream.kr/news/articleView.html?idxno=121459
+2026-11-04,20261104,보도,,"LG생활건강 더페이스샵, 美얼타 뷰티 온·오프라인 전격 입점",apparelnews.co.kr,,http://www.apparelnews.co.kr/news/news_view/?idx=228738
+2026-11-04,20261104,보도,,"LG생활건강 더페이스샵, 美 얼타 뷰티 입점…북미 유통망 확대",ebn.co.kr,,https://www.ebn.co.kr/news/articleView.html?idxno=1730407
+2026-11-04,20261104,보도,,"LG생활건강 더페이스샵, 美 얼타 뷰티 500여개 매장 입점",etoday.co.kr,,https://www.etoday.co.kr/news/view/2643965
+2026-11-04,20261104,보도,,"'닥터그루트' 흥해라 … LG생활건강, 유럽·중남미 헤어 진출 채비",ilovepc.co.kr,,https://www.ilovepc.co.kr/news/articleView.html?idxno=61190
+2026-11-04,20261104,보도,,[굿모닝! 4일 유통가 소식] 파리바게뜨·이디야커피·LG생활건강·스타벅...,goodkyung.com,,https://www.goodkyung.com/news/articleView.html?idxno=293092
+2026-11-04,20261104,보도,,"월마트 이어 얼타 뷰티까지…LG생활건강 더페이스샵, 미국 리테일 거점...",thefairnews.co.kr,,https://www.thefairnews.co.kr/news/articleView.html?idxno=93023
+2026-11-04,20261104,보도,,"LG생활건강 더페이스샵, 美 얼타 뷰티 500곳 입점…북미 공략 확대",sisafocus.co.kr,,http://www.sisafocus.co.kr/news/articleView.html?idxno=367182
+2026-11-04,20261104,보도,,"LG생활건강 더페이스샵, 美얼타 뷰티 온오프라인 입점…북미 공략 가속",newspost.kr,,https://www.newspost.kr/news/articleView.html?idxno=227033
+2026-11-04,20261104,보도,,"[특징주] LG생활건강, 3분기 실적 하회 영향 '하락'",jeonmae.co.kr,,https://www.jeonmae.co.kr/news/articleView.html?idxno=1308414
+2026-11-04,20261104,보도,,"'후'의 다음을 준비한다… LG생활건강, 글로벌 뷰티 판 다시 짠다",newsmap.co.kr,,https://www.newsmap.co.kr/news/articleView.html?idxno=4780
+2026-11-04,20261104,보도,,"LG생활건강, '3분기 어닝쇼크'에 증권가 목표가 하향... 금일 주가도 급...",joseilbo.com,,https://n.news.naver.com/mnews/article/123/0002393316?sid=101
+2026-11-04,20261104,보도,,[유통家 단신] 우아한청년들·KGC·LG생활건강·웅진 등,ezyeconomy.com,,https://www.ezyeconomy.com/news/articleView.html?idxno=241532
+2026-11-04,20261104,보도,,"""클렌징서 스킨케어로 확장""...LG생활건강 더페이스샵, 美 월마트 이어...",youthdaily.co.kr,,https://www.youthdaily.co.kr/news/article.html?no=229355
+2026-11-04,20261104,보도,,"LG생활건강, 12%대 급락…3분기 실적 전망치 하회",econonews.co.kr,,http://www.econonews.co.kr/news/articleView.html?idxno=446712
+2026-11-04,20261104,보도,,[민주 유통가] 에이피알·LG생활건강·아모레퍼시픽,iminju.net,,http://www.iminju.net/news/articleView.html?idxno=171912
+2026-11-04,20261104,보도,,"[ET특징주]LG생활건강, 기대치 밑돈 실적에 하락세",etnews.com,,https://n.news.naver.com/mnews/article/030/0003482119?sid=101
+2026-11-04,20261104,보도,,월마트로 문 열고 얼타로 넓혔다…LG생활건강의 美 유통망 확대,the-pr.co.kr,,https://www.the-pr.co.kr/news/articleView.html?idxno=63155
+2026-11-04,20261104,보도,,"LG생활건강 더페이스샵, 美 얼타 뷰티 500여개 매장 입점…북미 시장 공...",job-post.co.kr,,https://www.job-post.co.kr/news/articleView.html?idxno=236461
+2026-11-04,20261104,보도,,"LG생활건강 더페이스샵, 美 얼타 뷰티 입점…북미 시장 확대",seoultimes.news,,https://www.seoultimes.news/news/article.html?no=2000101764
+2026-11-04,20261104,보도,,"""중국은 답 없고 미국은 밑 빠진 독…LG생활건강, 해외 잔혹사에 등 터...",newsquest.co.kr,,https://www.newsquest.co.kr/news/articleView.html?idxno=304222
+2026-11-04,20261104,보도,,LG생활건강 11% 급락…화장품 회복 기대에 경계 매물,job-post.co.kr,,https://www.job-post.co.kr/news/articleView.html?idxno=236499
+2026-11-04,20261104,보도,,[유통 브리핑] LG생활건강·CJ올리브네트웍스,niceeconomy.co.kr,,https://www.niceeconomy.co.kr/news/articleView.html?idxno=91691
+2026-11-04,20261104,보도,,"[증시 리포트 종합] LG생활건강, 3분기 영업익 늘었지만…화장품 적자에...",s-journal.co.kr,,https://www.s-journal.co.kr/news/articleView.html?idxno=45049
+2026-11-04,20261104,보도,,"LG생활건강, '천기단' 따이공 거래 재개 검토…면세 회복과 가격 방어 사...",sateconomy.co.kr,,https://sateconomy.co.kr/news/view/1065574726662893
+2026-11-04,20261104,보도,,"LG생활건강 더페이스샵, 美 얼타 뷰티 입점…북미 공략 확대",ajunews.com,,https://www.ajunews.com/view/20261104143905273
+2026-11-04,20261104,보도,,"브랜드 혁신·글로벌 공략 속도…LG생활건강, 수익성 반등 본격화",mkhealth.co.kr,,https://www.mkhealth.co.kr/news/articleView.html?idxno=80774
+2026-11-04,20261104,보도,,"K뷰티 미국 오프라인 경쟁…LG생활건강, 얼타 뷰티 합류",lcnews.co.kr,,https://www.lcnews.co.kr/news/articleView.html?idxno=210847
+2026-11-04,20261104,보도,,"LG생활건강 더페이스샵, 얼타뷰티 온·오프라인 입점…'미감수 레디'로...",updownnews.co.kr,,https://www.updownnews.co.kr/news/articleView.html?idxno=319427
+2026-11-04,20261104,보도,,"[특징주] LG생활건강, 기대치 밑돈 실적에 11% 급락(종합)",yna.co.kr,,https://n.news.naver.com/mnews/article/001/0016421838?sid=101
+2026-11-04,20261104,보도,,"에이피알, 영업익 1위 굳혔다…LG생활건강·아모레와 격차 1000억 이상 벌...",consumernews.co.kr,,http://www.consumernews.co.kr/news/articleView.html?idxno=767538
+2026-11-04,20261104,보도,,"LG생활건강, 국내 뷰티가 이끈 이익 개선…중국 매출은 '뒷걸음'",bloter.net,,https://n.news.naver.com/mnews/article/293/0000092706?sid=101
+2026-11-04,20261104,보도,,"LG생활건강, 3분기 영업이익 704억…전년比52.4%↑",biztribune.co.kr,,http://www.biztribune.co.kr/news/articleView.html?idxno=361870
+2026-11-04,20261104,보도,,"[마켓H] LG생활건강, 3분기 실적 '참사'…증권가 눈높이 줄줄이 낮춰",hansbiz.co.kr,,http://www.hansbiz.co.kr/news/articleView.html?idxno=879877
+2026-11-04,20261104,보도,,"LG생활건강 '더페이스샵', 美 얼타 뷰티 온·오프라인 전격 입점",techholic.co.kr,,http://www.techholic.co.kr/news/articleView.html?idxno=223532
+2026-11-04,20261104,보도,,"K-뷰티 2강, 아모레퍼시픽·LG생활건강 3분기 성적표 어땠나",greened.kr,,https://www.greened.kr/news/articleView.html?idxno=353852
+2026-11-04,20261104,보도,,"LG생활건강, 북미 중심 포트폴리오 확장 본격화",ekoreanews.co.kr,,https://www.ekoreanews.co.kr/news/articleView.html?idxno=89034
+2026-11-04,20261104,보도,,3분기 'K뷰티' 투톱…LG생활건강 '선방'·아모레퍼시픽 '성장',goodkyung.com,,https://www.goodkyung.com/news/articleView.html?idxno=293118
+2026-11-04,20261104,보도,,"""'더후·닥터그루트' 외엔 없다…LG생활건강, 구원투수 부재 비상""",newsquest.co.kr,,https://www.newsquest.co.kr/news/articleView.html?idxno=304252
+2026-11-04,20261104,보도,,"LG생활건강 더페이스샵, 미국 얼타 뷰티 500여개 매장 진출…스킨케어로...",lawissue.co.kr,,https://www.lawissue.co.kr/view.php?ud=202611041944315284204ead0791_12
+2026-11-04,20261104,보도,,"LG생활건강, '탈(脫)중국' 힌스 품었다",hansbiz.co.kr,,http://www.hansbiz.co.kr/news/articleView.html?idxno=879763
+2026-11-04,20261104,보도,,[헬로스톡] 11/4 주목할 종목 : LG생활건강·풍산·비에이치·한국항공우...,hellot.net,,https://www.hellot.net/news/article.html?no=116041
+2026-11-04,20261104,보도,,"LG생활건강, 3분기매출 1조5774억원, 영업이익 52.4% 증가…브랜드·유통...",thefirstmedia.net,,http://www.thefirstmedia.net/news/articleView.html?idxno=212739
+2026-11-04,20261104,보도,,쌀뜨물이 美 화장품 매대로…LG생활건강 더페이스샵 '얼타 뷰티' 입점,newsworks.co.kr,,https://www.newsworks.co.kr/news/articleView.html?idxno=901985
+2026-11-04,20261104,보도,,에이본 매각에도 버틴 LG생활건강…3분기 영업익 52.4%↑,megaeconomy.co.kr,,https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065620355514589
