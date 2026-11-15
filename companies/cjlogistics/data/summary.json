@@ -1,0 +1,35 @@
+{
+  "slug": "cjlogistics",
+  "company_id": "CJ",
+  "name": "CJ대한통운",
+  "dashboard_path": "dashboard.html?c=cjlogistics",
+  "name_en": "CJ Logistics",
+  "stock_code": "000120",
+  "industry": "service",
+  "industry_name": "서비스",
+  "categories": [
+    "택배·물류"
+  ],
+  "competitors": [
+    "한진"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=cjlogistics",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 12284652471280,
+    "operating_profit": 508080820628,
+    "net_income": 258742959823,
+    "operating_margin_pct": 4.1359,
+    "revenue_growth_pct": 1.3856,
+    "debt_ratio_pct": 132.884
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 129,
+    "불일치": 0,
+    "미확인": 1
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 8,
+  "updated_at": "2026-11-15 14:45 KST"
+}

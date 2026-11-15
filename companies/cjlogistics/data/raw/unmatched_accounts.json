@@ -1,0 +1,31 @@
+{
+ "2023-11011-sga": [
+  "IS | dart_OperatingIncomeLoss | 영업이익(손실)",
+  "IS | dart_OtherGains | 기타이익",
+  "IS | dart_OtherLosses | 기타비용",
+  "IS | ifrs-full_CostOfSales | 매출원가",
+  "IS | ifrs-full_BasicEarningsLossPerShare | 기본 및 희석 주당이익",
+  "IS | ifrs-full_FinanceCosts | 금융원가",
+  "IS | ifrs-full_FinanceIncome | 금융수익",
+  "IS | ifrs-full_GrossProfit | 매출총이익",
+  "IS | ifrs-full_IncomeTaxExpenseContinuingOperations | 법인세 수익(비용)",
+  "IS | ifrs-full_ProfitLoss | 당기순이익",
+  "IS | ifrs-full_ProfitLossAttributableToNoncontrollingInterests | 비지배지분",
+  "IS | ifrs-full_ProfitLossAttributableToOwnersOfParent | 지배기업 소유주 귀속 당기순이익",
+  "IS | ifrs-full_ProfitLossBeforeTax | 법인세비용차감전순이익",
+  "IS | ifrs-full_Revenue | 매출액",
+  "IS | ifrs-full_SellingGeneralAndAdministrativeExpense | 판매 및 일반관리비",
+  "IS | ifrs-full_ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod | 지분법이익(손실)",
+  "CIS | ifrs-full_ComprehensiveIncome | 총포괄손익",
+  "CIS | ifrs-full_ComprehensiveIncomeAttributableToNoncontrollingInterests | 비지배지분",
+  "CIS | ifrs-full_ComprehensiveIncomeAttributableToOwnersOfParent | 지배기업소유주지분",
+  "CIS | ifrs-full_OtherComprehensiveIncome | 기타포괄손익",
+  "CIS | -표준계정코드 미사용- | 파생상품평가손익",
+  "CIS | -표준계정코드 미사용- | 해외사업장환산외환차이",
+  "CIS | ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossNetOfTax | 관계기업의 자본변동",
+  "CIS | -표준계정코드 미사용- | 해외사업장환산외환차이",
+  "CIS | ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments | 기타포괄손익-공정가치측정지분상품평가손익",
+  "CIS | ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans | 확정급여제도의 재측정손익(세후기타포괄손익)",
+  "CIS | ifrs-full_ProfitLoss | 당기순이익"
+ ]
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "modetour",
+  "company_id": "MT",
+  "name": "모두투어",
+  "dashboard_path": "dashboard.html?c=modetour",
+  "name_en": "Modetour",
+  "stock_code": "080160",
+  "industry": "service",
+  "industry_name": "서비스",
+  "categories": [
+    "여행사"
+  ],
+  "competitors": [
+    "하나투어"
+  ],
+  "dashboard_url": "https://ubda-template.onrender.com/dashboard.html?c=modetour",
+  "latest_year": 2025,
+  "kpis": {
+    "revenue": 210407391445,
+    "operating_profit": 7438478888,
+    "net_income": 14479086684,
+    "operating_margin_pct": 3.5353,
+    "revenue_growth_pct": -16.3562,
+    "debt_ratio_pct": 150.2804
+  },
+  "verification": {
+    "원문 대조 일치": 0,
+    "자동 수집 · 원문 대조 전": 122,
+    "불일치": 0,
+    "미확인": 4
+  },
+  "industry_kpis_found": 0,
+  "industry_kpis_total": 8,
+  "updated_at": "2026-11-15 14:50 KST"
+}

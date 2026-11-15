@@ -1,0 +1,85 @@
+date,rcept_dt,category,major,report_nm,flr_nm,rcept_no,viewer_url
+2024-01-18,20240117,실적,Y,매출액또는손익구조30%(대규모법인은15%)이상변경,진에어,20240117800291,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240117800291
+2024-01-18,20240118,기타,,특수관계인과의리스거래,진에어,20240118000163,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240118000163
+2024-03-04,20240304,기타,,감사보고서제출,진에어,20240304800614,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240304800614
+2024-11-15,20241114,정기보고서,Y,분기보고서 (2024.09),진에어,20241114001834,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241114001834
+2025-12-08,20251208,소송·제재,Y,풍문또는보도에대한해명(미확정),진에어,20251208800222,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251208800222
+2026-02-26,20260225,기타,,주주총회소집공고,진에어,20260225004416,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260225004416
+2026-02-26,20260225,기타,,의결권대리행사권유참고서류,진에어,20260225004447,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260225004447
+2026-02-26,20260225,기타,,특수관계인과의리스거래,진에어,20260225004699,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260225004699
+2026-02-26,20260225,기타,,주주총회소집결의,진에어,20260225801055,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260225801055
+2026-02-26,20260225,실적,Y,[기재정정]매출액또는손익구조30%(대규모법인은15%)이상변경,진에어,20260225801212,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260225801212
+2026-06-01,20260529,기타,,대규모기업집단현황공시[연1회공시및1/4분기용(개별회사)],진에어,20260529001916,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260529001916
+2026-06-01,20260529,기타,,기업지배구조보고서공시,진에어,20260529801913,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260529801913
+2026-08-24,20260821,합병·분할,Y,주요사항보고서(회사합병결정),진에어,20260821000552,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000552
+2026-08-24,20260821,소송·제재,Y,매매거래정지및정지해제(중요내용공시),유가증권시장본부,20260821800671,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821800671
+2026-08-24,20260821,기타,,주주총회소집결의,진에어,20260821800760,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821800760
+2026-08-24,20260821,기타,,주주명부폐쇄기간또는기준일설정,진에어,20260821800771,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821800771
+2026-11-05,20261104,보도,,"통합 LCC 앞둔 진에어, 박병률 대표이사 돌연 사임",financialpost.co.kr,,https://www.financialpost.co.kr/news/articleView.html?idxno=284479
+2026-11-05,20261104,보도,,진에어 대표 공석…박병률 사임 후 직무대행 체제,vegannews.co.kr,,https://www.vegannews.co.kr/news/article.html?no=400173
+2026-11-05,20261104,보도,,통합 LCC 출범 4개월 남았는데…박병률 진에어 대표 돌연 사임,sedaily.com,,https://n.news.naver.com/mnews/article/011/0004678453?sid=101
+2026-11-05,20261104,보도,,박병률 진에어 대표 돌연 사임…통합 LCC 출범 4개월 앞두고 수장 공백,etoday.co.kr,,https://www.etoday.co.kr/news/view/2643786
+2026-11-05,20261104,보도,,통합 진에어 출범 4개월 앞두고…박병률 대표 돌연 사임,daily.hankooki.com,,https://daily.hankooki.com/news/articleView.html?idxno=1421453
+2026-11-05,20261104,보도,,"진에어 박병률 대표, 일신상 사유로 사임… 신규 선임 전까지 직무대행...",cstimes.com,,https://www.cstimes.com/news/articleView.html?idxno=726544
+2026-11-05,20261104,보도,,"통합 진에어 출범 앞두고 대표 교체… 박병률, 임기 남기고 사임",the-biz.co.kr,,http://www.the-biz.co.kr/news/articleView.html?idxno=730604
+2026-11-05,20261104,보도,,"진에어, 통합 LCC 출범 4개월 앞두고 수장 공백…박병률 대표 사임",newstomato.com,,http://www.newstomato.com/ReadNews.aspx?no=1319176&inflow=N
+2026-11-05,20261104,보도,,"""통합 진에어 출범 코앞인데""... 박병률 대표, 임기 남기고 물러났다",insight.co.kr,,https://www.insight.co.kr/news/580522
+2026-11-05,20261104,보도,,진에어 박병률 대표 사임…통합 LCC 출범 앞두고 직무대행 체제 전환,news2day.co.kr,,https://www.news2day.co.kr/article/20261104500072
+2026-11-05,20261104,보도,,통합 LCC 출범 4개월 남았는데…박병률 진에어 대표 돌연 사임,dailian.co.kr,,https://n.news.naver.com/mnews/article/119/0003151031?sid=101
+2026-11-05,20261104,보도,,"진에어 대표 사임, 통합 LCC 출범 4개월 앞두고",gokorea.kr,,https://www.gokorea.kr/news/articleView.html?idxno=883967
+2026-11-05,20261104,보도,,"진에어 박병률 대표, 내년 3월 '통합 LCC' 출범 앞두고 돌연 사임",getnews.co.kr,,https://www.getnews.co.kr/news/articleView.html?idxno=885936
+2026-11-05,20261104,보도,,박병률 진에어 대표 돌연 사임...통합 LCC 출범 4개월 앞둬,seouleconews.com,,http://www.seouleconews.com/news/articleView.html?idxno=94775
+2026-11-05,20261104,보도,,통합 LCC 출범 4개월 앞두고…진에어 박병률 대표 돌연 사임,hansbiz.co.kr,,http://www.hansbiz.co.kr/news/articleView.html?idxno=879709
+2026-11-05,20261104,보도,,통합 LCC 출범 4개월 앞둔 진에어…박병률 대표 돌연 사임,econovill.com,,https://www.econovill.com/news/articleView.html?idxno=755969
+2026-11-05,20261104,보도,,"[단독] 박병률 진에어 대표 돌발 사임...""개인정보 유출 사고 책임""",bloter.net,,https://n.news.naver.com/mnews/article/293/0000092689?sid=101
+2026-11-05,20261104,보도,,"‘대표 사임·정보 유출’ 진에어, 잇단 변수에 메가 LCC 합병 시험대",viva100.com,,https://www.viva100.com/article/20261104501050
+2026-11-05,20261104,보도,,"박병률 진에어 대표, 통합 LCC 출범 앞두고 돌연 사임",edaily.co.kr,,https://n.news.naver.com/mnews/article/018/0006403678?sid=101
+2026-11-05,20261104,보도,,"박병률 진에어 대표, '통합 LCC' 출범 앞두고 사임",it.chosun.com,,https://it.chosun.com/news/articleView.html?idxno=3000000000259
+2026-11-05,20261105,보도,,[특징주] 유가 급락에 항공주 날았다···제주항공 12%·진에어 8%↑,finomy.com,,http://www.finomy.com/news/articleView.html?idxno=265700
+2026-11-05,20261105,보도,,[통합 진에어 카운트다운]④ 출범 넉달 앞 '선장' 잃은 진에어,bloter.net,,https://n.news.naver.com/mnews/article/293/0000092756?sid=101
+2026-11-05,20261105,보도,,"""하늘길 넘어 마음길 잇는다""…진에어, 서울서진학교 학생들과 가을빛 ...",thefairnews.co.kr,,https://www.thefairnews.co.kr/news/articleView.html?idxno=93189
+2026-11-05,20261105,보도,,"진에어, 장애 학생 현장체험학습 지원…임직원 봉사활동 진행",megaeconomy.co.kr,,https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065591732013663
+2026-11-05,20261105,보도,,"진에어, 서울서진학교 학생 교외 현장체험학습 지원",discoverynews.kr,,https://www.discoverynews.kr/news/articleView.html?idxno=1105928
+2026-11-05,20261105,보도,,"진에어, 서울서진학교 학생들과 가을 추억 쌓기…체험학습 동행",g-enews.com,,https://www.g-enews.com/view.php?ud=202611051509326767ea14faf6f5_1
+2026-11-05,20261105,보도,,"진에어 임직원, 서울서진학교 학생 현장체험학습 지원",sports.hankooki.com,,https://sports.hankooki.com/news/articleView.html?idxno=6942971
+2026-11-05,20261105,보도,,"진에어, 서울서진학교 학생들과 가을 나들이…""지역사회와 상생""",dailian.co.kr,,https://n.news.naver.com/mnews/article/119/0003151782?sid=101
+2026-11-05,20261105,보도,,"진에어, 서울서진학교 학생들과 가을 나들이…현장체험학습 동행",ppss.kr,,https://www.ppss.kr/news/articleView.html?idxno=319315
+2026-11-05,20261105,보도,,[특징주] 제주항공·진에어 등 항공주 강세…S-Oil·SK이노베이션은 급락,moneystorm.kr,,https://www.moneystorm.kr/news/articleView.html?idxno=8118
+2026-11-05,20261105,보도,,"진에어, 서울서진학교 현장체험학습 동행…여주 테마파크·들꽃마을 체...",cstimes.com,,https://www.cstimes.com/news/articleView.html?idxno=726799
+2026-11-05,20261105,보도,,"[ESG] 진에어, 특수학교 학생들과 가을 나들이...현장체험학습 지원",joongangenews.com,,https://www.joongangenews.com/news/articleView.html?idxno=561480
+2026-11-05,20261105,보도,,"[ESG] 진에어·에어부산·에어서울, 제주 해변서 환경정화 활동...100여명...",joongangenews.com,,https://www.joongangenews.com/news/articleView.html?idxno=561638
+2026-11-05,20261105,보도,,"진에어·에어부산·에어서울, 제주서 민관 합동 해양 정화 활동",dailian.co.kr,,https://n.news.naver.com/mnews/article/119/0003151890?sid=101
+2026-11-05,20261105,보도,,"진에어·에어부산·에어서울, 제주 해양 정화 활동…임직원 100여 명 참...",etoday.co.kr,,https://www.etoday.co.kr/news/view/2644770
+2026-11-05,20261105,보도,,"​진에어·에어부산·에어서울 임직원, 제주서 해양정화 활동",slist.kr,,https://www.slist.kr/news/articleView.html?idxno=779342
+2026-11-05,20261105,보도,,"진에어·에어부산·에어서울, 제주 해양 정화활동…민관 100여 명 참여",ppss.kr,,https://www.ppss.kr/news/articleView.html?idxno=319374
+2026-11-10,20261107,보도,,"진에어, 엔저 효과로 최대 매출 기록하며 흑자 전환 성공",gokorea.kr,,https://www.gokorea.kr/news/articleView.html?idxno=884548
+2026-11-10,20261107,보도,,"진에어 노사, 2026년 임금협약 잠정 합의…인상분 4월부터 소급 적용",thefirstmedia.net,,http://www.thefirstmedia.net/news/articleView.html?idxno=212945
+2026-11-10,20261108,보도,,"진에어, 3분기 영업이익 78억…전년比 흑자 전환",g-enews.com,,https://www.g-enews.com/view.php?ud=20261106175507977224debea800_1
+2026-11-10,20261108,보도,,진에어 3분기 영업익 78억원…누적 영업손실 77억원,vegannews.co.kr,,https://www.vegannews.co.kr/news/article.html?no=402078
+2026-11-10,20261108,보도,,"통합 앞두고 임금 협상 매듭…진에어 노사, 협력 기조 이어간다",sportsseoul.com,,https://n.news.naver.com/mnews/article/468/0001279433?sid=101
+2026-11-10,20261108,보도,,"진에어, 12·13일 기관 대상 3분기 실적 설명회",vegannews.co.kr,,https://www.vegannews.co.kr/news/article.html?no=402194
+2026-11-10,20261109,보도,,LCC 3분기 일제히 실적 반등…진에어·제주항공·에어부산 흑자 전환,pinpointnews.co.kr,,https://www.pinpointnews.co.kr/news/articleView.html?idxno=501970
+2026-11-10,20261109,보도,,적자 털고 보안 다지고 부산 품고 … 통합 진에어 ‘세 가지 숙제’,biz.newdaily.co.kr,,https://biz.newdaily.co.kr/site/data/html/2026/11/09/2026110900085.html
+2026-11-10,20261109,보도,,[단독] 진에어 새 수장에 ‘대한항공 출신’ 이진호 부사장 내정…통합...,etoday.co.kr,,https://www.etoday.co.kr/news/view/2645679
+2026-11-10,20261109,보도,,LCC 통합 앞둔 진에어…부사장에 '대한항공' 출신 이진호 선임,biz.sbs.co.kr,,https://n.news.naver.com/mnews/article/374/0000542515?sid=101
+2026-11-10,20261109,보도,,진에어 이진호 부사장 선임..차기 사령탑 과제 '산더미',kpenews.com,,https://kpenews.com/View.aspx?No=4303834
+2026-11-10,20261109,보도,,진에어 새 수장에 ‘대한항공 출신’ 이진호 부사장 발탁,newstomato.com,,http://www.newstomato.com/ReadNews.aspx?no=1319728&inflow=N
+2026-11-10,20261109,보도,,"몸집 커지는 진에어, 수익성 개선은 숙제…노선·조직 통합 시험대 [하...",etoday.co.kr,,https://www.etoday.co.kr/news/view/2645771
+2026-11-10,20261109,보도,,"진에어, 박병률 전 대표 사임 속 '대한항공 출신' 이진호 부사장 선임",cstimes.com,,https://www.cstimes.com/news/articleView.html?idxno=727180
+2026-11-10,20261109,보도,,진에어 새 수장에 이진호…항공사 통합·수익 개선 과제,1conomynews.co.kr,,https://www.1conomynews.co.kr/news/articleView.html?idxno=51231
+2026-11-10,20261109,보도,,"진에어, 통합 앞두고 '여객 영업통' 이진호 투입…노선 경쟁력 강화",fetv.co.kr,,https://www.fetv.co.kr/news/articleView.html?idxno=313365
+2026-11-10,20261110,보도,,"진에어, 에어부산·에어서울 통합 기대…목표가 1만원 유지-NH",edaily.co.kr,,https://n.news.naver.com/mnews/article/018/0006407025?sid=101
+2026-11-10,20261110,보도,,출범 4개월 앞둔 '통합 진에어'…LCC 3사 노선·인력 재편 어디까지,news.tf.co.kr,,https://n.news.naver.com/mnews/article/629/0000550327?sid=101
+2026-11-10,20261110,보도,,진에어·한진칼·아시아나항공 등 항공주 일제히 상승…두 자릿수 급등...,cbci.co.kr,,https://www.cbci.co.kr/news/articleView.html?idxno=625185
+2026-11-10,20261110,보도,,"진에어 29%, 대한항공 아시아나항공 11% 넘게 급등...국제유가 급락 영향",beyondpost.co.kr,,http://www.beyondpost.co.kr/view.php?ud=2026111013465214472aaae0046f_30
+2026-11-10,20261110,보도,,"진에어, 합병 증권신고서 아직 못 냈다…내달 주총 지연 불가피",topdaily.kr,,https://www.topdaily.kr/articles/112806
+2026-11-10,20261110,보도,,"""2027년 3사 통합 깃발 든다…진에어, 항공기 60대 '공룡 LCC' 도약""",newsquest.co.kr,,https://www.newsquest.co.kr/news/articleView.html?idxno=304651
+2026-11-10,20261110,보도,,"진에어 28.78% 상승…고저 폭 1,720원",job-post.co.kr,,https://www.job-post.co.kr/news/articleView.html?idxno=237557
+2026-11-10,20261110,보도,,"(단독)대한항공 통합 갈등 재연되나…에어부산·서울 노조, 진에어에 시...",newstomato.com,,http://www.newstomato.com/ReadNews.aspx?no=1319874&inflow=N
+2026-11-10,20261110,보도,,"[특징주] 진에어, LCC 3사 통합 시너지 긍정론에 30% 육박 '급등'",widedaily.com,,https://www.widedaily.com/news/articleView.html?idxno=303278
+2026-11-10,20261110,보도,,[특징주] 진에어 상한가…에어부산·에어서울 통합 시너지 기대 확산,moneystorm.kr,,https://www.moneystorm.kr/news/articleView.html?idxno=8271
+2026-11-10,20261110,보도,,[오늘의 특징주] 대한항공·진에어·삼성전기,bigtanews.co.kr,,https://www.bigtanews.co.kr/article/view/big202611100018
+2026-11-10,20261110,보도,,"진에어, 국토부 합병 인가 지연에 증권신고서 제출 차질 … 내달 17일 합...",biz.newdaily.co.kr,,https://biz.newdaily.co.kr/site/data/html/2026/11/10/2026111000342.html
+2026-11-10,20261110,보도,,"[주식마감] 국제유가 급락에 '항공주' 급등세... 대한항공, 진에어, 예선...",ggilbo.com,,https://www.ggilbo.com/news/articleView.html?idxno=1192329
+2026-11-10,20261110,보도,,대한항공우·진에어 등 13개 상한가…상승 종목 속출,kjdaily.com,,http://www.kjdaily.com/article.php?aid=1794311477691869276
+2026-11-10,20261110,보도,,[상한가 종목] NHN-진에어 이어 삼익제약 등 마감,econonews.co.kr,,http://www.econonews.co.kr/news/articleView.html?idxno=446987
