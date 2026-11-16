@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:23 KST",
+    "checked_at": "2026-11-16 19:08 KST",
     "corp_code": "00231372",
     "reports_total": 17,
     "new_reports": [],
@@ -9,7 +9,7 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:23 KST",
+    "checked_at": "2026-11-16 19:08 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
@@ -22,16 +22,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:23 KST",
-    "rows": 942,
-    "last_date": "2026-11-13",
-    "last_close": 9990,
+    "checked_at": "2026-11-16 19:08 KST",
+    "rows": 943,
+    "last_date": "2026-11-16",
+    "last_close": 9810,
     "source": "Yahoo Finance 032350.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:23 KST",
+    "checked_at": "2026-11-16 19:08 KST",
     "rows": 406,
     "groups": [
       "롯데관광개발",
@@ -42,29 +42,29 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:24 KST",
-    "new": 0,
-    "total": 400,
+    "checked_at": "2026-11-16 19:08 KST",
+    "new": 7,
+    "total": 407,
     "first": "2026-06-16 16:52",
-    "pages": 2,
+    "pages": 4,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:24 KST",
+    "checked_at": "2026-11-16 19:08 KST",
     "spike_days": 37,
     "with_major_disclosure": 9,
-    "news_total": 400,
+    "news_total": 407,
     "disclosures_total": 340,
     "disclosures_new": 0,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:24 KST",
-    "rows": 892,
-    "as_of": "2026-11-13",
-    "per": 17.96,
-    "pbr": 2.132
+    "checked_at": "2026-11-16 19:08 KST",
+    "rows": 893,
+    "as_of": "2026-11-16",
+    "per": 17.64,
+    "pbr": 2.094
   }
 }

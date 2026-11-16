@@ -1,15 +1,17 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:22 KST",
+    "checked_at": "2026-11-16 19:05 KST",
     "corp_code": "01267684",
     "reports_total": 18,
-    "new_reports": [],
+    "new_reports": [
+      "분기보고서 (2026.09) (20261116) — 재무 데이터 대기"
+    ],
     "errors": []
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:22 KST",
+    "checked_at": "2026-11-16 19:05 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
@@ -22,16 +24,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:22 KST",
-    "rows": 942,
-    "last_date": "2026-11-13",
-    "last_close": 23250,
+    "checked_at": "2026-11-16 19:05 KST",
+    "rows": 943,
+    "last_date": "2026-11-16",
+    "last_close": 23450,
     "source": "Yahoo Finance 284740.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:22 KST",
+    "checked_at": "2026-11-16 19:05 KST",
     "rows": 406,
     "groups": [
       "쿠쿠홈시스",
@@ -42,7 +44,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:22 KST",
+    "checked_at": "2026-11-16 19:05 KST",
     "new": 0,
     "total": 66,
     "first": "2025-09-10 10:46",
@@ -51,20 +53,20 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:22 KST",
+    "checked_at": "2026-11-16 19:05 KST",
     "spike_days": 22,
     "with_major_disclosure": 4,
     "news_total": 66,
-    "disclosures_total": 82,
-    "disclosures_new": 0,
+    "disclosures_total": 83,
+    "disclosures_new": 1,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:22 KST",
-    "rows": 890,
-    "as_of": "2026-11-13",
-    "per": 3.68,
-    "pbr": 0.456
+    "checked_at": "2026-11-16 19:05 KST",
+    "rows": 891,
+    "as_of": "2026-11-16",
+    "per": 3.72,
+    "pbr": 0.46
   }
 }
