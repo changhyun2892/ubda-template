@@ -1,18 +1,20 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:24 KST",
+    "checked_at": "2026-11-16 19:10 KST",
     "corp_code": "00141529",
-    "reports_total": 16,
-    "new_reports": [],
+    "reports_total": 17,
+    "new_reports": [
+      "분기보고서 (2026.09) (20261116) — 반영 (14/14개 계정 · CFS)"
+    ],
     "errors": []
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:24 KST",
-    "rows": 942,
-    "last_date": "2026-11-13",
-    "last_close": 304500,
+    "checked_at": "2026-11-16 19:10 KST",
+    "rows": 943,
+    "last_date": "2026-11-16",
+    "last_close": 295000,
     "source": "Yahoo Finance 007310.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
@@ -24,17 +26,17 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:24 KST",
+    "checked_at": "2026-11-16 19:10 KST",
     "spike_days": 29,
     "with_major_disclosure": 3,
-    "news_total": 456,
-    "disclosures_total": 135,
-    "disclosures_new": 0,
+    "news_total": 537,
+    "disclosures_total": 136,
+    "disclosures_new": 1,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:24 KST",
+    "checked_at": "2026-11-16 19:10 KST",
     "rows": 1015,
     "groups": [
       "오뚜기",
@@ -48,26 +50,26 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:24 KST",
-    "new": 0,
-    "total": 456,
+    "checked_at": "2026-11-16 19:10 KST",
+    "new": 81,
+    "total": 537,
     "first": "2026-10-28 17:52",
-    "pages": 1,
+    "pages": 2,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:24 KST",
-    "new_share_reports": 0,
+    "checked_at": "2026-11-16 19:10 KST",
+    "new_share_reports": 1,
     "new_dividend_reports": 0,
-    "new_owner_reports": 0
+    "new_owner_reports": 1
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:24 KST",
-    "rows": 889,
-    "as_of": "2026-11-13",
-    "per": 14.34,
-    "pbr": 0.489
+    "checked_at": "2026-11-16 19:10 KST",
+    "rows": 890,
+    "as_of": "2026-11-16",
+    "per": 18.43,
+    "pbr": 0.478
   }
 }

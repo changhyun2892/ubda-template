@@ -1,12 +1,12 @@
 {
- "as_of": "2026-11-13",
- "close": 304500,
- "market_cap": 1220384235000,
- "per": 14.34,
- "pbr": 0.489,
- "div_yield_pct": 2.956,
- "eps": 21227.4,
- "bps": 622346.5,
+ "as_of": "2026-11-16",
+ "close": 295000,
+ "market_cap": 1182309850000,
+ "per": 18.43,
+ "pbr": 0.478,
+ "div_yield_pct": 3.051,
+ "eps": 16005.4,
+ "bps": 617202.2,
  "dps": 9000.0,
  "inputs": {
   "common_issued": 4007830.0,
@@ -14,11 +14,11 @@
   "preferred_outstanding": 0.0,
   "shares_report": "반기보고서 (2026.06)",
   "shares_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001966",
-  "ttm_net_income": 73008003105.0,
-  "ttm_period": "최근 4분기 (2026 반기 누적 기준)",
+  "ttm_net_income": 55047853772.0,
+  "ttm_period": "최근 4분기 (2026 3분기 누적 기준)",
   "ni_basis": "지배주주 순이익",
-  "equity": 2140453262932.0,
-  "equity_period": "2026 반기보고서",
+  "equity": 2122760149916.0,
+  "equity_period": "2026 3분기보고서",
   "equity_basis": "지배주주 자본",
   "dps_year": "2025",
   "payout_pct": 44.72
@@ -29,5 +29,5 @@
   "순이익·자본은 지배주주 기준 (공시에 없으면 비지배 포함 값으로 대신하고 위에 표시)",
   "각 날짜의 실제 거래 가격과 그날까지 공시된 주식 수로 계산 · 자동 계산 · 원문 대조 전"
  ],
- "built_at": "2026-11-15 15:24 KST"
+ "built_at": "2026-11-16 19:10 KST"
 }

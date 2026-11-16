@@ -1,10 +1,13 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:22 KST",
+    "checked_at": "2026-11-16 19:07 KST",
     "corp_code": "00980122",
-    "reports_total": 18,
-    "new_reports": [],
+    "reports_total": 20,
+    "new_reports": [
+      "[기재정정]반기보고서 (2026.06) (20261116) — 반영 (17/23개 계정 · CFS)",
+      "분기보고서 (2026.09) (20261116) — 반영 (17/23개 계정 · CFS)"
+    ],
     "errors": []
   },
   "business_text": {
@@ -15,26 +18,26 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:22 KST",
-    "rows": 942,
-    "last_date": "2026-11-13",
-    "last_close": 26950,
+    "checked_at": "2026-11-16 19:07 KST",
+    "rows": 943,
+    "last_date": "2026-11-16",
+    "last_close": 27450,
     "source": "Yahoo Finance 175330.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:23 KST",
+    "checked_at": "2026-11-16 19:08 KST",
     "spike_days": 28,
     "with_major_disclosure": 3,
-    "news_total": 43,
-    "disclosures_total": 676,
-    "disclosures_new": 0,
+    "news_total": 44,
+    "disclosures_total": 679,
+    "disclosures_new": 3,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:22 KST",
+    "checked_at": "2026-11-16 19:07 KST",
     "rows": 537,
     "groups": [
       "JB금융지주",
@@ -46,26 +49,26 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:22 KST",
-    "new": 0,
-    "total": 43,
+    "checked_at": "2026-11-16 19:07 KST",
+    "new": 1,
+    "total": 44,
     "first": "2026-08-13 19:40",
     "pages": 10,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:22 KST",
-    "new_share_reports": 0,
+    "checked_at": "2026-11-16 19:07 KST",
+    "new_share_reports": 2,
     "new_dividend_reports": 0,
-    "new_owner_reports": 0
+    "new_owner_reports": 2
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:23 KST",
-    "rows": 729,
-    "as_of": "2026-11-13",
-    "per": 6.83,
-    "pbr": 0.824
+    "checked_at": "2026-11-16 19:08 KST",
+    "rows": 730,
+    "as_of": "2026-11-16",
+    "per": 6.95,
+    "pbr": 0.833
   }
 }
