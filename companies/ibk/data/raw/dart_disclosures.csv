@@ -236,3 +236,6 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20261019800376,20261019,결산실적공시예고(안내공시),기업은행,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800376
 20261023800699,20261023,주식소각결정,기업은행,유,자기주식,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261023800699
 20261026800442,20261026,연결재무제표기준영업(잠정)실적(공정공시),기업은행,유,실적,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026800442
+20261116000455,20261116,[기재정정]주요사항보고서(상각형조건부자본증권발행결정),기업은행,정,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000455
+20261116000750,20261116,[첨부정정]주요사항보고서(상각형조건부자본증권발행결정),기업은행,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000750
+20261116001350,20261116,분기보고서 (2026.09),기업은행,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116001350

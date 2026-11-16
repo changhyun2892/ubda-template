@@ -1,10 +1,12 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:21 KST",
+    "checked_at": "2026-11-16 19:08 KST",
     "corp_code": "00164779",
     "reports_total": 15,
-    "new_reports": [],
+    "new_reports": [
+      "분기보고서 (2026.09) (20261116) — 재무 데이터 대기"
+    ],
     "errors": []
   },
   "business_text": {
@@ -15,26 +17,26 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:21 KST",
-    "rows": 942,
-    "last_date": "2026-11-13",
-    "last_close": 1216000,
+    "checked_at": "2026-11-16 19:08 KST",
+    "rows": 943,
+    "last_date": "2026-11-16",
+    "last_close": 1120000,
     "source": "Yahoo Finance 000660.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:21 KST",
+    "checked_at": "2026-11-16 19:08 KST",
     "spike_days": 26,
     "with_major_disclosure": 8,
-    "news_total": 102,
-    "disclosures_total": 1413,
-    "disclosures_new": 0,
+    "news_total": 130,
+    "disclosures_total": 1414,
+    "disclosures_new": 1,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:21 KST",
+    "checked_at": "2026-11-16 19:08 KST",
     "rows": 609,
     "groups": [
       "SK하이닉스",
@@ -46,26 +48,26 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:21 KST",
-    "new": 2,
-    "total": 102,
+    "checked_at": "2026-11-16 19:08 KST",
+    "new": 28,
+    "total": 130,
     "first": "2026-11-13 07:40",
-    "pages": 10,
+    "pages": 1,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:21 KST",
+    "checked_at": "2026-11-16 19:08 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:21 KST",
-    "rows": 889,
-    "as_of": "2026-11-13",
-    "per": 5.34,
-    "pbr": 3.295
+    "checked_at": "2026-11-16 19:08 KST",
+    "rows": 890,
+    "as_of": "2026-11-16",
+    "per": 4.92,
+    "pbr": 3.035
   }
 }

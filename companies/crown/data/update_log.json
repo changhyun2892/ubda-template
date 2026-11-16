@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:22 KST",
+    "checked_at": "2026-11-16 19:05 KST",
     "corp_code": "01205329",
     "reports_total": 17,
     "new_reports": [],
@@ -15,26 +15,26 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:22 KST",
-    "rows": 942,
-    "last_date": "2026-11-13",
-    "last_close": 6900,
+    "checked_at": "2026-11-16 19:05 KST",
+    "rows": 943,
+    "last_date": "2026-11-16",
+    "last_close": 6930,
     "source": "Yahoo Finance 264900.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:22 KST",
+    "checked_at": "2026-11-16 19:05 KST",
     "spike_days": 20,
     "with_major_disclosure": 1,
-    "news_total": 183,
+    "news_total": 186,
     "disclosures_total": 75,
     "disclosures_new": 0,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:22 KST",
+    "checked_at": "2026-11-16 19:05 KST",
     "rows": 809,
     "groups": [
       "크라운제과",
@@ -47,26 +47,26 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:22 KST",
-    "new": 0,
-    "total": 183,
+    "checked_at": "2026-11-16 19:05 KST",
+    "new": 3,
+    "total": 186,
     "first": "2026-06-30 08:56",
     "pages": 10,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:22 KST",
+    "checked_at": "2026-11-16 19:05 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-15 15:22 KST",
-    "rows": 882,
-    "as_of": "2026-11-13",
-    "per": 9.47,
-    "pbr": 0.382
+    "checked_at": "2026-11-16 19:05 KST",
+    "rows": 883,
+    "as_of": "2026-11-16",
+    "per": 9.51,
+    "pbr": 0.383
   }
 }
