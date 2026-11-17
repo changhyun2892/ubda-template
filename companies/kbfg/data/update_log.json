@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:33 KST",
+    "checked_at": "2026-11-17 12:05 KST",
     "corp_code": "00688996",
     "reports_total": 31,
     "new_reports": [],
@@ -15,26 +15,26 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:33 KST",
+    "checked_at": "2026-11-17 12:05 KST",
     "rows": 944,
     "last_date": "2026-11-17",
-    "last_close": 158100,
+    "last_close": 158500,
     "source": "Yahoo Finance 105560.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:33 KST",
+    "checked_at": "2026-11-17 12:05 KST",
     "spike_days": 30,
     "with_major_disclosure": 5,
-    "news_total": 128,
+    "news_total": 130,
     "disclosures_total": 718,
-    "disclosures_new": 1,
+    "disclosures_new": 0,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:33 KST",
+    "checked_at": "2026-11-17 12:05 KST",
     "rows": 816,
     "groups": [
       "KB금융",
@@ -47,26 +47,26 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:33 KST",
-    "new": 0,
-    "total": 128,
+    "checked_at": "2026-11-17 12:05 KST",
+    "new": 2,
+    "total": 130,
     "first": "2026-11-10 10:36",
     "pages": 10,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:33 KST",
+    "checked_at": "2026-11-17 12:05 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:33 KST",
+    "checked_at": "2026-11-17 12:05 KST",
     "rows": 650,
     "as_of": "2026-11-17",
-    "per": 8.79,
-    "pbr": 0.92
+    "per": 8.81,
+    "pbr": 0.923
   }
 }

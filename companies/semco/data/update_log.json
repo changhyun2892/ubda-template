@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:34 KST",
+    "checked_at": "2026-11-17 12:06 KST",
     "corp_code": "00126371",
     "reports_total": 17,
     "new_reports": [],
@@ -15,16 +15,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:34 KST",
+    "checked_at": "2026-11-17 12:06 KST",
     "rows": 944,
     "last_date": "2026-11-17",
-    "last_close": 773000,
+    "last_close": 775000,
     "source": "Yahoo Finance 009150.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:34 KST",
+    "checked_at": "2026-11-17 12:06 KST",
     "spike_days": 30,
     "with_major_disclosure": 4,
     "news_total": 121,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:34 KST",
+    "checked_at": "2026-11-17 12:06 KST",
     "rows": 612,
     "groups": [
       "삼성전기",
@@ -46,7 +46,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:34 KST",
+    "checked_at": "2026-11-17 12:06 KST",
     "new": 0,
     "total": 121,
     "first": "2026-11-11 06:22",
@@ -55,17 +55,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:34 KST",
+    "checked_at": "2026-11-17 12:06 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:34 KST",
+    "checked_at": "2026-11-17 12:06 KST",
     "rows": 901,
     "as_of": "2026-11-17",
-    "per": 46.48,
-    "pbr": 5.716
+    "per": 46.6,
+    "pbr": 5.731
   }
 }

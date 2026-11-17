@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:34 KST",
+    "checked_at": "2026-11-17 12:06 KST",
     "corp_code": "01190568",
     "reports_total": 16,
     "new_reports": [],
@@ -15,26 +15,26 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:34 KST",
+    "checked_at": "2026-11-17 12:06 KST",
     "rows": 661,
     "last_date": "2026-11-17",
-    "last_close": 224500,
+    "last_close": 221500,
     "source": "Yahoo Finance 278470.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:34 KST",
+    "checked_at": "2026-11-17 12:06 KST",
     "spike_days": 30,
     "with_major_disclosure": 7,
-    "news_total": 527,
+    "news_total": 529,
     "disclosures_total": 214,
     "disclosures_new": 0,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:34 KST",
+    "checked_at": "2026-11-17 12:06 KST",
     "rows": 612,
     "groups": [
       "에이피알",
@@ -46,26 +46,26 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:34 KST",
+    "checked_at": "2026-11-17 12:06 KST",
     "new": 2,
-    "total": 527,
+    "total": 529,
     "first": "2026-10-19 14:26",
     "pages": 2,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:34 KST",
+    "checked_at": "2026-11-17 12:06 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:34 KST",
+    "checked_at": "2026-11-17 12:06 KST",
     "rows": 661,
     "as_of": "2026-11-17",
-    "per": 17.97,
-    "pbr": 12.658
+    "per": 17.73,
+    "pbr": 12.489
   }
 }

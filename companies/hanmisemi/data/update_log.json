@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:32 KST",
+    "checked_at": "2026-11-17 12:04 KST",
     "corp_code": "00161383",
     "reports_total": 16,
     "new_reports": [],
@@ -15,16 +15,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:32 KST",
+    "checked_at": "2026-11-17 12:04 KST",
     "rows": 944,
     "last_date": "2026-11-17",
-    "last_close": 168400,
+    "last_close": 167200,
     "source": "Yahoo Finance 042700.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:32 KST",
+    "checked_at": "2026-11-17 12:04 KST",
     "spike_days": 40,
     "with_major_disclosure": 8,
     "news_total": 361,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:32 KST",
+    "checked_at": "2026-11-17 12:04 KST",
     "rows": 612,
     "groups": [
       "한미반도체",
@@ -46,7 +46,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:32 KST",
+    "checked_at": "2026-11-17 12:04 KST",
     "new": 0,
     "total": 361,
     "first": "2026-10-14 10:12",
@@ -55,17 +55,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:32 KST",
+    "checked_at": "2026-11-17 12:04 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:32 KST",
+    "checked_at": "2026-11-17 12:04 KST",
     "rows": 894,
     "as_of": "2026-11-17",
-    "per": 83.52,
-    "pbr": 20.436
+    "per": 82.92,
+    "pbr": 20.29
   }
 }
