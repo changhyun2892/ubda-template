@@ -1,12 +1,10 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:52 KST",
+    "checked_at": "2026-11-17 11:32 KST",
     "corp_code": "00164830",
     "reports_total": 16,
-    "new_reports": [
-      "분기보고서 (2026.09) (20261116) — 반영 (14/14개 계정 · CFS)"
-    ],
+    "new_reports": [],
     "errors": []
   },
   "business_text": {
@@ -17,16 +15,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:52 KST",
+    "checked_at": "2026-11-17 11:32 KST",
     "rows": 944,
     "last_date": "2026-11-17",
-    "last_close": 234000,
+    "last_close": 236000,
     "source": "Yahoo Finance 009540.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:52 KST",
+    "checked_at": "2026-11-17 11:32 KST",
     "spike_days": 35,
     "with_major_disclosure": 18,
     "news_total": 167,
@@ -36,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:52 KST",
+    "checked_at": "2026-11-17 11:32 KST",
     "rows": 801,
     "groups": [
       "HD한국조선해양",
@@ -49,8 +47,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:52 KST",
-    "new": 2,
+    "checked_at": "2026-11-17 11:32 KST",
+    "new": 0,
     "total": 167,
     "first": "2026-10-28 15:40",
     "pages": 10,
@@ -58,17 +56,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:52 KST",
-    "new_share_reports": 1,
+    "checked_at": "2026-11-17 11:32 KST",
+    "new_share_reports": 0,
     "new_dividend_reports": 0,
-    "new_owner_reports": 1
+    "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:52 KST",
+    "checked_at": "2026-11-17 11:32 KST",
     "rows": 892,
     "as_of": "2026-11-17",
-    "per": 4.81,
-    "pbr": 1.111
+    "per": 4.85,
+    "pbr": 1.121
   }
 }

@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:53 KST",
+    "checked_at": "2026-11-17 11:33 KST",
     "corp_code": "00760971",
     "reports_total": 17,
     "new_reports": [],
@@ -15,16 +15,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:53 KST",
+    "checked_at": "2026-11-17 11:33 KST",
     "rows": 944,
     "last_date": "2026-11-17",
-    "last_close": 196100,
+    "last_close": 195300,
     "source": "Yahoo Finance 259960.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:53 KST",
+    "checked_at": "2026-11-17 11:33 KST",
     "spike_days": 35,
     "with_major_disclosure": 9,
     "news_total": 555,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:53 KST",
+    "checked_at": "2026-11-17 11:33 KST",
     "rows": 612,
     "groups": [
       "크래프톤",
@@ -46,8 +46,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:53 KST",
-    "new": 15,
+    "checked_at": "2026-11-17 11:33 KST",
+    "new": 0,
     "total": 555,
     "first": "2026-11-05 23:10",
     "pages": 2,
@@ -55,17 +55,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:53 KST",
+    "checked_at": "2026-11-17 11:33 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:53 KST",
+    "checked_at": "2026-11-17 11:33 KST",
     "rows": 892,
     "as_of": "2026-11-17",
-    "per": 21.13,
-    "pbr": 1.243
+    "per": 21.04,
+    "pbr": 1.238
   }
 }
