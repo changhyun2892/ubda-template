@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:05 KST",
+    "checked_at": "2026-11-17 17:41 KST",
     "corp_code": "00401731",
     "reports_total": 17,
     "new_reports": [],
@@ -15,26 +15,26 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:05 KST",
+    "checked_at": "2026-11-17 17:41 KST",
     "rows": 944,
     "last_date": "2026-11-17",
-    "last_close": 130800,
+    "last_close": 129300,
     "source": "Yahoo Finance 066570.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:05 KST",
+    "checked_at": "2026-11-17 17:42 KST",
     "spike_days": 32,
     "with_major_disclosure": 7,
-    "news_total": 627,
+    "news_total": 644,
     "disclosures_total": 345,
     "disclosures_new": 0,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:05 KST",
+    "checked_at": "2026-11-17 17:41 KST",
     "rows": 612,
     "groups": [
       "LG전자",
@@ -46,26 +46,26 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:05 KST",
-    "new": 2,
-    "total": 627,
+    "checked_at": "2026-11-17 17:41 KST",
+    "new": 17,
+    "total": 644,
     "first": "2026-11-09 17:02",
-    "pages": 5,
+    "pages": 6,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:05 KST",
+    "checked_at": "2026-11-17 17:41 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:05 KST",
+    "checked_at": "2026-11-17 17:42 KST",
     "rows": 893,
     "as_of": "2026-11-17",
-    "per": 17.79,
-    "pbr": 0.95
+    "per": 17.58,
+    "pbr": 0.939
   }
 }

@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:05 KST",
+    "checked_at": "2026-11-17 17:40 KST",
     "corp_code": "00980122",
     "reports_total": 20,
     "new_reports": [],
@@ -15,16 +15,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:05 KST",
+    "checked_at": "2026-11-17 17:41 KST",
     "rows": 944,
     "last_date": "2026-11-17",
-    "last_close": 27900,
+    "last_close": 27500,
     "source": "Yahoo Finance 175330.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:05 KST",
+    "checked_at": "2026-11-17 17:41 KST",
     "spike_days": 28,
     "with_major_disclosure": 3,
     "news_total": 44,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:05 KST",
+    "checked_at": "2026-11-17 17:41 KST",
     "rows": 540,
     "groups": [
       "JB금융지주",
@@ -46,7 +46,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:05 KST",
+    "checked_at": "2026-11-17 17:41 KST",
     "new": 0,
     "total": 44,
     "first": "2026-08-13 19:40",
@@ -55,17 +55,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:05 KST",
+    "checked_at": "2026-11-17 17:41 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:05 KST",
+    "checked_at": "2026-11-17 17:41 KST",
     "rows": 731,
     "as_of": "2026-11-17",
-    "per": 7.06,
-    "pbr": 0.847
+    "per": 6.96,
+    "pbr": 0.835
   }
 }
