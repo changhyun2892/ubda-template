@@ -1,12 +1,10 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:52 KST",
+    "checked_at": "2026-11-17 11:32 KST",
     "corp_code": "00878915",
     "reports_total": 26,
-    "new_reports": [
-      "분기보고서 (2026.09) (20261116) — 반영 (16/23개 계정 · CFS)"
-    ],
+    "new_reports": [],
     "errors": []
   },
   "business_text": {
@@ -17,16 +15,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:53 KST",
+    "checked_at": "2026-11-17 11:32 KST",
     "rows": 944,
     "last_date": "2026-11-17",
-    "last_close": 15780,
+    "last_close": 15810,
     "source": "Yahoo Finance 139130.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:53 KST",
+    "checked_at": "2026-11-17 11:33 KST",
     "spike_days": 30,
     "with_major_disclosure": 8,
     "news_total": 55,
@@ -36,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:53 KST",
+    "checked_at": "2026-11-17 11:32 KST",
     "rows": 540,
     "groups": [
       "iM금융지주",
@@ -48,8 +46,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:53 KST",
-    "new": 1,
+    "checked_at": "2026-11-17 11:32 KST",
+    "new": 0,
     "total": 55,
     "first": "2026-10-13 07:00",
     "pages": 10,
@@ -57,17 +55,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:52 KST",
-    "new_share_reports": 1,
+    "checked_at": "2026-11-17 11:32 KST",
+    "new_share_reports": 0,
     "new_dividend_reports": 0,
-    "new_owner_reports": 1
+    "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:53 KST",
+    "checked_at": "2026-11-17 11:33 KST",
     "rows": 731,
     "as_of": "2026-11-17",
-    "per": 5.78,
-    "pbr": 0.39
+    "per": 5.79,
+    "pbr": 0.391
   }
 }

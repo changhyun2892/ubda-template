@@ -1,12 +1,10 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:51 KST",
+    "checked_at": "2026-11-17 11:32 KST",
     "corp_code": "00547583",
     "reports_total": 22,
-    "new_reports": [
-      "분기보고서 (2026.09) (20261116) — 반영 (16/23개 계정 · CFS)"
-    ],
+    "new_reports": [],
     "errors": []
   },
   "business_text": {
@@ -17,16 +15,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:52 KST",
+    "checked_at": "2026-11-17 11:32 KST",
     "rows": 944,
     "last_date": "2026-11-17",
-    "last_close": 125600,
+    "last_close": 126000,
     "source": "Yahoo Finance 086790.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:52 KST",
+    "checked_at": "2026-11-17 11:32 KST",
     "spike_days": 25,
     "with_major_disclosure": 5,
     "news_total": 63,
@@ -36,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:52 KST",
+    "checked_at": "2026-11-17 11:32 KST",
     "rows": 816,
     "groups": [
       "하나금융지주",
@@ -49,7 +47,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:52 KST",
+    "checked_at": "2026-11-17 11:32 KST",
     "new": 0,
     "total": 63,
     "first": "2026-10-12 12:22",
@@ -58,17 +56,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:51 KST",
-    "new_share_reports": 1,
+    "checked_at": "2026-11-17 11:32 KST",
+    "new_share_reports": 0,
     "new_dividend_reports": 0,
-    "new_owner_reports": 1
+    "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:52 KST",
+    "checked_at": "2026-11-17 11:32 KST",
     "rows": 650,
     "as_of": "2026-11-17",
-    "per": 8.1,
-    "pbr": 0.744
+    "per": 8.13,
+    "pbr": 0.746
   }
 }

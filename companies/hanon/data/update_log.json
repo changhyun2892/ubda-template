@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:52 KST",
+    "checked_at": "2026-11-17 11:32 KST",
     "corp_code": "00161125",
     "reports_total": 19,
     "new_reports": [],
@@ -15,16 +15,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:52 KST",
+    "checked_at": "2026-11-17 11:32 KST",
     "rows": 944,
     "last_date": "2026-11-17",
-    "last_close": 3022,
+    "last_close": 3020,
     "source": "Yahoo Finance 018880.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:52 KST",
+    "checked_at": "2026-11-17 11:32 KST",
     "spike_days": 36,
     "with_major_disclosure": 15,
     "news_total": 259,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:52 KST",
+    "checked_at": "2026-11-17 11:32 KST",
     "rows": 612,
     "groups": [
       "한온시스템",
@@ -46,8 +46,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:52 KST",
-    "new": 1,
+    "checked_at": "2026-11-17 11:32 KST",
+    "new": 0,
     "total": 259,
     "first": "2026-08-29 09:52",
     "pages": 5,
@@ -55,17 +55,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:52 KST",
+    "checked_at": "2026-11-17 11:32 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:52 KST",
+    "checked_at": "2026-11-17 11:32 KST",
     "rows": 891,
     "as_of": "2026-11-17",
     "per": null,
-    "pbr": 0.873
+    "pbr": 0.872
   }
 }

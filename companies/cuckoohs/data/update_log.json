@@ -1,20 +1,18 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:51 KST",
+    "checked_at": "2026-11-17 11:32 KST",
     "corp_code": "01267684",
     "reports_total": 19,
-    "new_reports": [
-      "분기보고서 (2026.09) (20261116) — 반영 (14/14개 계정 · CFS)"
-    ],
+    "new_reports": [],
     "errors": []
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:51 KST",
-    "new_share_reports": 1,
+    "checked_at": "2026-11-17 11:32 KST",
+    "new_share_reports": 0,
     "new_dividend_reports": 0,
-    "new_owner_reports": 1
+    "new_owner_reports": 0
   },
   "business_text": {
     "status": "성공",
@@ -24,16 +22,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:51 KST",
+    "checked_at": "2026-11-17 11:32 KST",
     "rows": 944,
     "last_date": "2026-11-17",
-    "last_close": 23250,
+    "last_close": 23300,
     "source": "Yahoo Finance 284740.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:51 KST",
+    "checked_at": "2026-11-17 11:32 KST",
     "rows": 408,
     "groups": [
       "쿠쿠홈시스",
@@ -44,7 +42,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:51 KST",
+    "checked_at": "2026-11-17 11:32 KST",
     "new": 0,
     "total": 66,
     "first": "2025-09-10 10:46",
@@ -53,7 +51,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:51 KST",
+    "checked_at": "2026-11-17 11:32 KST",
     "spike_days": 22,
     "with_major_disclosure": 4,
     "news_total": 66,
@@ -63,10 +61,10 @@
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-17 10:51 KST",
+    "checked_at": "2026-11-17 11:32 KST",
     "rows": 892,
     "as_of": "2026-11-17",
-    "per": 4.11,
-    "pbr": 0.46
+    "per": 4.12,
+    "pbr": 0.461
   }
 }
