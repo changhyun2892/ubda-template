@@ -254,6 +254,93 @@ function kpiCard(label, value, sub, onclick) {
 }
 const big = (v) => (v === null ? '<small>데이터 없음</small>' : Math.abs(v) >= 1e12 ? `${joNum(v)}<small>조원</small>` : `${fmt(v / 1e8, 0)}<small>억원</small>`);
 
+/* ---- 성과체계 (개요 상단): ROE = 순이익률 × 총자산회전율 × 재무레버리지 (은행: ROA × 레버리지) ----
+   기여도 = 순차 대체: 이익률 효과 = Δ이익률×회전율₀×레버리지₀, 회전율 효과 = 이익률₁×Δ회전율×레버리지₀, 레버리지 효과 = 이익률₁×회전율₁×Δ레버리지 (합 = ΔROE)
+   산업 동인(점선 칸)은 사업보고서 산업 KPI를 연결만 하고 기여도는 계산하지 않는다. */
+const PT_SKIP = new Set(['segment_revenue', 'product_segment_revenue', 'region_revenue', 'export_revenue', 'overseas_entities', 'sales_channels', 'loan_mix', 'platform_mix', 'top_title_revenue', 'brand_revenue']);
+const PT_PRI = ['capacity_utilization', 'production_volume', 'service_volume', 'price_trend', 'raw_material_prices', 'market_share'];
+function ptDrivers(y) {
+  const out = [], keys = [...new Set(D.kpi.filter((r) => r.value !== '' && !PT_SKIP.has(r.kpi_key)).map((r) => r.kpi_key))].sort((a, b) => ((PT_PRI.indexOf(a) + 1 || 99) - (PT_PRI.indexOf(b) + 1 || 99)));
+  for (const key of keys) {
+    const all = [...new Set(D.kpi.filter((r) => r.kpi_key === key).map((r) => r.item))];
+    for (const it of all) {
+      const a = D.kpi.find((r) => r.kpi_key === key && r.item === it && +r.year === y && r.value !== ''), b = D.kpi.find((r) => r.kpi_key === key && r.item === it && +r.year === y - 1 && r.value !== '');
+      if (a && b) { out.push({ key, ii: all.indexOf(it), item: it, label: D.status.find((x) => x.key === key)?.label || key, unit: a.unit, v: N(a.value), p: N(b.value) }); break; }
+    }
+    if (out.length >= 3) break;
+  }
+  return out;
+}
+function perfTree(y) {
+  const bank = BANK(), roe = met(y, 'roe_pct'), roe0 = met(y - 1, 'roe_pct');
+  if (roe === null) return '';
+  const d = (a, b) => (a === null || b === null ? null : a - b);
+  const arrow = (dv, unit, goodUp = true, prev = '') => { if (dv === null) return '<span class="pt-d">전년 자료 없음</span>';
+    const dg = unit === '%p' || unit === '%' ? 1 : 2, flat = Math.abs(dv) < 0.5 * 10 ** -dg, good = flat ? null : (dv > 0) === goodUp; // 표시 자릿수에서 0이면 변화 없음
+    return `<span class="pt-d ${good === null ? '' : good ? 'up' : 'dn'}">${flat ? '– 변화 없음' : `${dv > 0 ? '▲' : '▼'} ${fmt(Math.abs(dv), dg)}${unit}`}${prev ? ` <small>(${prev})</small>` : ''}</span>`; };
+  const gr = (a, b) => (a === null || b === null || !b ? null : (a / Math.abs(b) - 1) * 100);
+  const node = (label, val, sub, act, cls = '') => `<div class="pt-n ${cls}"${act ? ` data-act="${act}" role="button" tabindex="0"` : ''} title="${label.replace(/<[^>]+>/g, '')}${label === '재무레버리지' ? ' = 평균 자산 ÷ 평균 자본' : ''}"><span class="pt-l">${label}</span><span class="pt-v">${val}</span>${sub}</div>`;
+  const pct = (v, dg = 1) => (v === null ? '<small>–</small>' : `${fmt(v, dg)}<small>%</small>`);
+  let A, B, C, A0, B0, C0, labels, rows;
+  const ni = fin(y, 'net_income'), ni0 = fin(y - 1, 'net_income'), top = fin(y, TOPK()), top0 = fin(y - 1, TOPK());
+  if (bank) {
+    A = met(y, 'roa_pct'); A0 = met(y - 1, 'roa_pct'); B = 1; B0 = 1; C = A ? roe / A : null; C0 = A0 && roe0 !== null ? roe0 / A0 : null;
+    labels = ['ROA', null, '재무레버리지'];
+  } else {
+    A = met(y, 'net_margin_pct'); A0 = met(y - 1, 'net_margin_pct'); B = met(y, 'asset_turnover'); B0 = met(y - 1, 'asset_turnover');
+    C = A && B ? roe / (A * B) : null; C0 = A0 && B0 && roe0 !== null ? roe0 / (A0 * B0) : null;
+    labels = ['순이익률', '총자산회전율', '재무레버리지'];
+  }
+  const ok = [A, B, C, A0, B0, C0].every((v) => v !== null && Number.isFinite(v));
+  const eA = ok ? (A - A0) * B0 * C0 : null, eB = ok && !bank ? A * (B - B0) * C0 : 0, eC = ok ? A * B * (C - C0) : null;
+  const cls = (e) => (e === null || Math.abs(e) < 0.05 ? '' : e > 0 ? 'gp' : 'gn');
+  const eff = (e) => (e === null ? '' : `<span class="pt-e">ROE 기여 ${e >= 0 ? '+' : '−'}${fmt(Math.abs(e), 1)}%p</span>`);
+  const kids = (arr) => `<div class="pt-kids">${arr.join('')}</div>`;
+  if (bank) {
+    rows = [
+      [node('ROA', pct(A, 2), arrow(d(A, A0), '%p') + eff(eA), `met:${y}:roa_pct`, cls(eA)), kids([
+        node(TOPL(), big(top), arrow(gr(top, top0), '%'), `fin:${y}:${TOPK()}`),
+        node('순이자이익/총자산', pct(met(y, 'nii_to_assets_pct'), 2), arrow(d(met(y, 'nii_to_assets_pct'), met(y - 1, 'nii_to_assets_pct')), '%p'), `met:${y}:nii_to_assets_pct`),
+        node('CIR', pct(met(y, 'cir_pct')), arrow(d(met(y, 'cir_pct'), met(y - 1, 'cir_pct')), '%p', false), `met:${y}:cir_pct`),
+        node('대손비용률', pct(met(y, 'credit_cost_pct'), 2), arrow(d(met(y, 'credit_cost_pct'), met(y - 1, 'credit_cost_pct')), '%p', false), `met:${y}:credit_cost_pct`)])],
+      [node(labels[2], C === null ? '–' : `${fmt(C, 1)}<small>배</small>`, arrow(d(C, C0), '배') + eff(eC), 'pt:lev', cls(eC)), kids([
+        node('자기자본비율', pct(met(y, 'equity_ratio_pct')), arrow(d(met(y, 'equity_ratio_pct'), met(y - 1, 'equity_ratio_pct')), '%p'), `met:${y}:equity_ratio_pct`)])],
+    ];
+  } else {
+    rows = [
+      [node('순이익률', pct(A), arrow(d(A, A0), '%p') + eff(eA), `met:${y}:net_margin_pct`, cls(eA)), kids([
+        node('영업이익', big(fin(y, 'operating_profit')), arrow(gr(fin(y, 'operating_profit'), fin(y - 1, 'operating_profit')), '%') + `<span class="pt-e">영업이익률 ${met(y, 'operating_margin_pct') === null ? '–' : fmt(met(y, 'operating_margin_pct'), 1) + '%'}</span>`, `fin:${y}:operating_profit`),
+        node('매출원가율', pct(met(y, 'cost_ratio_pct')), arrow(d(met(y, 'cost_ratio_pct'), met(y - 1, 'cost_ratio_pct')), '%p', false), `met:${y}:cost_ratio_pct`),
+        node('판관비율', pct(met(y, 'sga_ratio_pct')), arrow(d(met(y, 'sga_ratio_pct'), met(y - 1, 'sga_ratio_pct')), '%p', false), `met:${y}:sga_ratio_pct`)])],
+      [node('총자산회전율', B === null ? '–' : `${fmt(B, 2)}<small>회</small>`, arrow(d(B, B0), '회') + eff(eB), `met:${y}:asset_turnover`, cls(eB)), kids([
+        node(TOPL(), big(top), arrow(gr(top, top0), '%'), `fin:${y}:${TOPK()}`)])],
+      [node(labels[2], C === null ? '–' : `${fmt(C, 2)}<small>배</small>`, arrow(d(C, C0), '배') + eff(eC), 'pt:lev', cls(eC)), kids([
+        node('부채비율', pct(met(y, 'debt_ratio_pct'), 0), arrow(d(met(y, 'debt_ratio_pct'), met(y - 1, 'debt_ratio_pct')), '%p', false), `met:${y}:debt_ratio_pct`)])],
+    ];
+  }
+  const drv = ptDrivers(y);
+  const drvHtml = drv.length ? drv.map((x) => node(`${esc(x.label)} · ${esc(x.item)}`, kpiFmt(x.v, x.unit), (() => { const lowGood = /원가|원재료|연체|고정이하|NPL|대손|부실|비용률|CIR/.test(x.label + x.item) && x.key !== 'price_trend'; return x.unit === '%' ? arrow(x.v - x.p, '%p', !lowGood) : arrow(gr(x.v, x.p), '%', !lowGood); })(), `kpi:${x.key}:${x.ii}`, 'ind')).join('')
+    : `<div class="pt-n na"><span class="pt-l">산업 동인</span><span class="pt-v"><small>전년과 비교할 산업 KPI 없음</small></span></div>`;
+  const tot = ok ? roe - roe0 : null;
+  const parts = ok ? [[labels[0], eA], ...(bank ? [] : [[labels[1], eB]]), ['재무레버리지', eC]] : [];
+  const sum = parts.reduce((a, [, e]) => a + Math.abs(e), 0) || 1;
+  const bar = ok ? `<div class="pt-bar">${parts.map(([l, e]) => `<div style="flex:${Math.max(Math.abs(e) / sum, 0.04)};background:${e >= 0 ? 'var(--up)' : 'var(--down)'}" title="${esc(l)} ${e >= 0 ? '+' : '−'}${fmt(Math.abs(e), 1)}%p">${Math.abs(e) / sum > 0.18 ? `${esc(l)} ${e >= 0 ? '+' : '−'}${fmt(Math.abs(e), 1)}%p` : ''}</div>`).join('')}</div>
+    <p class="pt-sum">ROE ${tot >= 0 ? '+' : '−'}${fmt(Math.abs(tot), 1)}%p = ${parts.map(([l, e]) => `${l} ${e >= 0 ? '+' : '−'}${fmt(Math.abs(e), 1)}%p`).join(' · ')}</p>` : '<p class="pt-sum">전년 자료가 없어 ROE 변화를 나누지 않았습니다.</p>';
+  return `<div class="card w6 pt" data-k="성과체계"><h3>성과체계 <small>${y} vs ${y - 1} · ROE를 만든 요인과 그 아래 숫자 · 칸을 누르면 산식과 출처</small></h3>
+    <div class="pt-grid">
+      <div class="pt-root">${node('ROE', pct(roe), arrow(d(roe, roe0), '%p', true, roe0 === null ? '' : `${fmt(roe0, 1)}%`) + `<span class="pt-e">당기순이익 ${ni === null ? '–' : eok(ni, 0)} ${gr(ni, ni0) === null ? '' : `(${gr(ni, ni0) >= 0 ? '+' : ''}${fmt(gr(ni, ni0), 1)}%)`}</span>`, `met:${y}:roe_pct`, 'root')}</div>
+      <div class="pt-rows">${rows.map(([p, k]) => `<div class="pt-row">${p}${k}</div>`).join('')}</div>
+      <div class="pt-drv"><span class="pt-cap">산업 동인 · 사업보고서 <a data-page="industry" href="#industry">전체 보기</a></span>${drvHtml}</div>
+    </div>${bar}
+    <p class="foot">실선 칸 = DART 재무제표로 계산 · 점선 칸 = 사업보고서 산업 KPI(연결만 보여 주고 ROE 기여도는 계산하지 않음) · 초록·빨강 = 전년보다 ROE를 끌어올린·끌어내린 요인 · 기여도는 순서대로 바꿔 넣는 방식이라 순서에 따라 조금 달라질 수 있음</p></div>`;
+}
+function showLev(y) {
+  const roe = met(y, 'roe_pct'), bank = BANK(), A = bank ? met(y, 'roa_pct') : met(y, 'net_margin_pct'), B = bank ? 1 : met(y, 'asset_turnover');
+  openPanel(`<div class="panel-head"><h2>재무레버리지 (${y})</h2><button class="x" aria-label="닫기">✕</button></div>
+    <div class="ev-val">${A && B && roe !== null ? fmt(roe / (A * B), 2) + '배' : '–'}</div>
+    <div class="formula">재무레버리지 = 평균 자산총계 ÷ 평균 자본총계<br>${bank ? 'ROE ÷ ROA' : 'ROE ÷ (순이익률 × 총자산회전율)'}로 계산 (ROE·ROA·회전율 모두 평균 잔액 기준이라 같은 값)<br>= ${fmt(roe, 2)}% ÷ ${bank ? `${fmt(A, 2)}%` : `(${fmt(A, 2)}% × ${fmt(B, 2)}회)`}</div>
+    <p style="font-size:12.5px">자본이 자산보다 빨리 늘면(이익이 쌓이거나 증자) 레버리지가 내려가 ROE를 끌어내립니다. 부채가 늘면 반대입니다. 입력값의 출처는 재무비율 탭의 ROE·${bank ? 'ROA' : '순이익률·총자산회전율'}을 누르면 나옵니다.</p>`);
+}
 function pageOverview() {
   if (!D.fin.length) return noData();
   const y = S.year, Y = YEARS();
@@ -269,7 +356,7 @@ function pageOverview() {
   const got = st.filter((r) => ['원문 대조 일치', '자동 수집 · 원문 대조 전'].includes(r.status)).length;
   const vr = D.verify?.counts || {};
   const latest = [...D.reg].filter((r) => r.type === 'DART 정기보고서').sort((a, b) => (a.source_date < b.source_date ? 1 : -1)).slice(0, 5);
-  return `<div class="kpis">${k}</div>${valuationRow()}<div class="grid">${diagCard()}
+  return `${perfTree(y) || `<div class="kpis">${k}</div>`}${valuationRow()}<div class="grid">${diagCard()}
     ${card('w4', `${TOPL()}·영업이익 추이`, `막대: 억원 · 선: ${MRGL()}(%) · 막대를 누르면 출처`, `<div class="seg" style="margin-bottom:6px"><button data-per="annual" aria-pressed="${S.period === 'annual'}">연간</button><button data-per="quarter" aria-pressed="${S.period === 'quarter'}">분기</button></div>` + legend([[TOPL(), COLORS()[1]], ['영업이익', COLORS()[0]], [MRGL(), COLORS()[3]]]) + '<div class="chart" id="c1"></div>', S.period === 'quarter' ? 'Q4 = 사업보고서 연간 − 3분기 누적 (연말 결산조정 포함)' : '')}
     ${card('w2', '데이터 검증 현황', '값마다 출처와 대조 상태를 기록', `<table class="tbl"><tbody>
       <tr><td>${badge('원문 대조 일치')}</td><td>${sm['원문 대조 일치'] ?? 0}</td></tr>
@@ -906,7 +993,7 @@ function render() {
   if (fresh && !REDUCED() && id !== 'screen' && !ws.querySelector('.loading')) {
     ws.querySelectorAll('.kpi, .card').forEach((c, k) => c.style.setProperty('--i', Math.min(k, 12)));
     void ws.offsetWidth; ws.classList.add('anim'); clearTimeout(render.t); render.t = setTimeout(() => ws.classList.remove('anim'), 1600);
-    ws.querySelectorAll('.kpi-v').forEach(countUp);
+    ws.querySelectorAll('.kpi-v, .pt-v').forEach(countUp);
   }
   DRAW[id]?.();
   enableEdit();
@@ -964,7 +1051,7 @@ function onClick(e) {
   else if (t.dataset.lf) { S.ledgerFilter = t.dataset.lf; render(); }
   else if (t.dataset.act) {
     const [k, a, b] = t.dataset.act.split(':');
-    if (k === 'fin') showFin(+a, b); else if (k === 'met') showMetric(+a, b); else if (k === 'cmp') showCmp(+a, b); else if (k === 'kpi') showKpi(a, +b); else if (k === 'ev') showEvent(a); else if (k === 'dg') showDiag(a); else if (k === 'val') showValuation(a); else if (k === 'valm') { S.valMode = a; drawVal(); document.querySelectorAll('[data-act^="valm:"]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.act === 'valm:' + a))); } else if (k === 'tlc') { const c = new Set(S.tlCats || TL_DEFAULT); c.has(a) ? c.delete(a) : c.add(a); S.tlCats = [...c]; S.tlAll = false; render(); }
+    if (k === 'fin') showFin(+a, b); else if (k === 'met') showMetric(+a, b); else if (k === 'cmp') showCmp(+a, b); else if (k === 'kpi') showKpi(a, +b); else if (k === 'ev') showEvent(a); else if (k === 'dg') showDiag(a); else if (k === 'pt' && a === 'lev') showLev(S.year); else if (k === 'val') showValuation(a); else if (k === 'valm') { S.valMode = a; drawVal(); document.querySelectorAll('[data-act^="valm:"]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.act === 'valm:' + a))); } else if (k === 'tlc') { const c = new Set(S.tlCats || TL_DEFAULT); c.has(a) ? c.delete(a) : c.add(a); S.tlCats = [...c]; S.tlAll = false; render(); }
     else if (k === 'tly') { S.tlYear = a; S.tlAll = false; render(); }
     else if (k === 'tlall') { S.tlAll = true; $('#tlList').innerHTML = tlList(); }
     else if (k === 'newsall') { S.newsAll = true; $('#newsList').innerHTML = newsList(); }

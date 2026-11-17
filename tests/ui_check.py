@@ -219,6 +219,7 @@ def main() -> int:
                     ok("기업 비교 후보는 같은 산업만", _names and all(_ind.get(n) == _me for n in _names), ", ".join(_names))
                     if (ROOT / "companies" / slug / "data" / "diagnosis.json").exists():
                         pg.click('[data-page="overview"]'); time.sleep(1.2)
+                        ok("개요 성과체계: ROE 분해 합계 = ROE 변화", pg.locator(".pt .pt-n.root").count() == 1 and "ROE" in pg.locator(".pt-sum").inner_text())
                         ok("종합 진단 카드: 레이더 + 성향 3개", pg.locator(".card.diag .radar").count() == 1 and pg.locator(".dg-row").count() == 3)
                         pg.locator('[data-act="dg:neutral"]').click(); time.sleep(0.4)
                         ok("진단 근거 패널", "위험중립형" in pg.locator("#panelIn h2").inner_text())
