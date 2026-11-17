@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:05 KST",
+    "checked_at": "2026-11-17 17:40 KST",
     "corp_code": "01390344",
     "reports_total": 16,
     "new_reports": [],
@@ -15,26 +15,26 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:05 KST",
+    "checked_at": "2026-11-17 17:40 KST",
     "rows": 944,
     "last_date": "2026-11-17",
-    "last_close": 262000,
+    "last_close": 256500,
     "source": "Yahoo Finance 329180.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:05 KST",
+    "checked_at": "2026-11-17 17:40 KST",
     "spike_days": 36,
     "with_major_disclosure": 19,
-    "news_total": 217,
+    "news_total": 224,
     "disclosures_total": 574,
     "disclosures_new": 0,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:05 KST",
+    "checked_at": "2026-11-17 17:40 KST",
     "rows": 605,
     "groups": [
       "HD현대중공업",
@@ -46,26 +46,26 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:05 KST",
-    "new": 0,
-    "total": 217,
+    "checked_at": "2026-11-17 17:40 KST",
+    "new": 7,
+    "total": 224,
     "first": "2026-11-02 15:02",
     "pages": 10,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:05 KST",
+    "checked_at": "2026-11-17 17:40 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:05 KST",
+    "checked_at": "2026-11-17 17:40 KST",
     "rows": 892,
     "as_of": "2026-11-17",
-    "per": 11.27,
-    "pbr": 2.69
+    "per": 11.03,
+    "pbr": 2.634
   }
 }

@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:08 KST",
+    "checked_at": "2026-11-17 17:42 KST",
     "corp_code": "00126955",
     "reports_total": 17,
     "new_reports": [],
@@ -9,10 +9,10 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:08 KST",
+    "checked_at": "2026-11-17 17:42 KST",
     "rows": 944,
     "last_date": "2026-11-17",
-    "last_close": 1275000,
+    "last_close": 1271000,
     "source": "Yahoo Finance 003230.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
@@ -24,17 +24,17 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:08 KST",
+    "checked_at": "2026-11-17 17:42 KST",
     "spike_days": 38,
     "with_major_disclosure": 8,
-    "news_total": 400,
+    "news_total": 404,
     "disclosures_total": 236,
     "disclosures_new": 0,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:08 KST",
+    "checked_at": "2026-11-17 17:42 KST",
     "rows": 816,
     "groups": [
       "삼양식품",
@@ -47,26 +47,26 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:08 KST",
-    "new": 2,
-    "total": 400,
+    "checked_at": "2026-11-17 17:42 KST",
+    "new": 4,
+    "total": 404,
     "first": "2026-10-28 17:12",
     "pages": 3,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:08 KST",
+    "checked_at": "2026-11-17 17:42 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:08 KST",
+    "checked_at": "2026-11-17 17:42 KST",
     "rows": 891,
     "as_of": "2026-11-17",
-    "per": 20.56,
-    "pbr": 6.124
+    "per": 20.49,
+    "pbr": 6.105
   }
 }
