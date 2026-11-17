@@ -1,5 +1,5 @@
 {
- "built_at": "2026-11-17 12:09 KST",
+ "built_at": "2026-11-17 17:44 KST",
  "method": "같은 산업 기업 사이 백분위(0~100, 50 = 가운데) · 성향별 가중치는 UBDA가 임의로 정한 기준 · 투자 권유 아님",
  "weights": {
   "stable": {
@@ -68,7 +68,7 @@
   },
   "value": {
    "label": "가격 매력",
-   "score": 88,
+   "score": 82,
    "factors": [
     "per",
     "pbr"
@@ -79,9 +79,9 @@
   "stable": {
    "label": "안정형",
    "focus": "재무 안정·배당·주가 변동",
-   "score": 74,
+   "score": 71,
    "level": "높음",
-   "comment": "배당수익률 5.45%(업종 9곳 중 1위)는 강점, ROA 0.6%(업종 9곳 중 7위)는 확인할 지점",
+   "comment": "주가 변동성(연환산) 29.3%(업종 9곳 중 1위)는 강점, ROA 0.6%(업종 9곳 중 7위)는 확인할 지점",
    "parts": [
     {
      "key": "axis:stable",
@@ -95,7 +95,7 @@
      "key": "div_yield",
      "label": "배당수익률",
      "weight": 0.25,
-     "score": 100,
+     "score": 88,
      "best": "div_yield",
      "worst": "div_yield"
     },
@@ -120,9 +120,9 @@
   "neutral": {
    "label": "위험중립형",
    "focus": "수익성과 가격의 균형",
-   "score": 48,
+   "score": 47,
    "level": "보통",
-   "comment": "PER 5.8배(업종 9곳 중 1위)는 강점, 매출 증가율 -1.8%(업종 9곳 중 9위)는 확인할 지점",
+   "comment": "PER 5.7배(업종 9곳 중 2위)는 강점, 매출 증가율 -1.8%(업종 9곳 중 9위)는 확인할 지점",
    "parts": [
     {
      "key": "axis:profit",
@@ -136,7 +136,7 @@
      "key": "axis:value",
      "label": "가격 매력",
      "weight": 0.3,
-     "score": 88,
+     "score": 82,
      "best": "per",
      "worst": "pbr"
     },
@@ -161,7 +161,7 @@
   "active": {
    "label": "적극투자형",
    "focus": "성장과 주가 흐름",
-   "score": 21,
+   "score": 25,
    "level": "낮음",
    "comment": "CIR(영업이익경비율) 37.0%(업종 9곳 중 2위)는 강점, 매출 증가율 -1.8%(업종 9곳 중 9위)는 확인할 지점 · 2023년 이후 주가 급변일 30일",
    "parts": [
@@ -177,7 +177,7 @@
      "key": "ret_1y",
      "label": "1년 시장 대비 수익률",
      "weight": 0.3,
-     "score": 12,
+     "score": 25,
      "best": "ret_1y",
      "worst": "ret_1y"
     },
@@ -302,16 +302,16 @@
   },
   "per": {
    "label": "PER",
-   "value": 5.76,
-   "text": "5.8배",
-   "pctile": 100,
-   "rank": 1,
+   "value": 5.74,
+   "text": "5.7배",
+   "pctile": 88,
+   "rank": 2,
    "n": 9,
    "higher_better": false
   },
   "pbr": {
    "label": "PBR",
-   "value": 0.406,
+   "value": 0.405,
    "text": "0.41배",
    "pctile": 75,
    "rank": 3,
@@ -320,16 +320,16 @@
   },
   "div_yield": {
    "label": "배당수익률",
-   "value": 5.45,
-   "text": "5.45%",
-   "pctile": 100,
-   "rank": 1,
+   "value": 5.47,
+   "text": "5.47%",
+   "pctile": 88,
+   "rank": 2,
    "n": 9,
    "higher_better": true
   },
   "vol_1y": {
    "label": "주가 변동성(연환산)",
-   "value": 29.342533255245463,
+   "value": 29.343034316554807,
    "text": "29.3%",
    "pctile": 100,
    "rank": 1,
@@ -347,10 +347,10 @@
   },
   "ret_1y": {
    "label": "1년 시장 대비 수익률",
-   "value": -24.064478480953966,
-   "text": "-24.1%p",
-   "pctile": 12,
-   "rank": 8,
+   "value": -22.657059916361078,
+   "text": "-22.7%p",
+   "pctile": 25,
+   "rank": 7,
    "n": 9,
    "higher_better": true
   }

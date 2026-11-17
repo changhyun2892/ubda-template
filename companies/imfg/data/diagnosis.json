@@ -1,5 +1,5 @@
 {
- "built_at": "2026-11-17 12:09 KST",
+ "built_at": "2026-11-17 17:44 KST",
  "method": "같은 산업 기업 사이 백분위(0~100, 50 = 가운데) · 성향별 가중치는 UBDA가 임의로 정한 기준 · 투자 권유 아님",
  "weights": {
   "stable": {
@@ -68,7 +68,7 @@
   },
   "value": {
    "label": "가격 매력",
-   "score": 88,
+   "score": 94,
    "factors": [
     "per",
     "pbr"
@@ -81,7 +81,7 @@
    "focus": "재무 안정·배당·주가 변동",
    "score": 44,
    "level": "보통",
-   "comment": "배당수익률 4.41%(업종 9곳 중 3위)는 강점, ROA 0.5%(업종 9곳 중 9위)는 확인할 지점",
+   "comment": "배당수익률 4.48%(업종 9곳 중 3위)는 강점, ROA 0.5%(업종 9곳 중 9위)는 확인할 지점",
    "parts": [
     {
      "key": "axis:stable",
@@ -120,9 +120,9 @@
   "neutral": {
    "label": "위험중립형",
    "focus": "수익성과 가격의 균형",
-   "score": 44,
+   "score": 46,
    "level": "보통",
-   "comment": "PER 5.8배(업종 9곳 중 2위)는 강점, ROA 0.5%(업종 9곳 중 9위)는 확인할 지점",
+   "comment": "PER 5.7배(업종 9곳 중 1위)는 강점, ROA 0.5%(업종 9곳 중 9위)는 확인할 지점",
    "parts": [
     {
      "key": "axis:profit",
@@ -136,9 +136,9 @@
      "key": "axis:value",
      "label": "가격 매력",
      "weight": 0.3,
-     "score": 88,
+     "score": 94,
      "best": "per",
-     "worst": "per"
+     "worst": "pbr"
     },
     {
      "key": "axis:growth",
@@ -302,16 +302,16 @@
   },
   "per": {
    "label": "PER",
-   "value": 5.81,
-   "text": "5.8배",
-   "pctile": 88,
-   "rank": 2,
+   "value": 5.72,
+   "text": "5.7배",
+   "pctile": 100,
+   "rank": 1,
    "n": 9,
    "higher_better": false
   },
   "pbr": {
    "label": "PBR",
-   "value": 0.392,
+   "value": 0.386,
    "text": "0.39배",
    "pctile": 88,
    "rank": 2,
@@ -320,8 +320,8 @@
   },
   "div_yield": {
    "label": "배당수익률",
-   "value": 4.414,
-   "text": "4.41%",
+   "value": 4.484,
+   "text": "4.48%",
    "pctile": 75,
    "rank": 3,
    "n": 9,
@@ -329,8 +329,8 @@
   },
   "vol_1y": {
    "label": "주가 변동성(연환산)",
-   "value": 39.038568814866885,
-   "text": "39.0%",
+   "value": 39.06956190353994,
+   "text": "39.1%",
    "pctile": 62,
    "rank": 4,
    "n": 9,
@@ -347,8 +347,8 @@
   },
   "ret_1y": {
    "label": "1년 시장 대비 수익률",
-   "value": -8.042199632474123,
-   "text": "-8.0%p",
+   "value": -8.054839712729823,
+   "text": "-8.1%p",
    "pctile": 38,
    "rank": 6,
    "n": 9,

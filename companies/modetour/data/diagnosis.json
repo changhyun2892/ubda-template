@@ -1,5 +1,5 @@
 {
- "built_at": "2026-11-17 12:09 KST",
+ "built_at": "2026-11-17 17:44 KST",
  "method": "같은 산업 기업 사이 백분위(0~100, 50 = 가운데) · 성향별 가중치는 UBDA가 임의로 정한 기준 · 투자 권유 아님",
  "weights": {
   "stable": {
@@ -68,7 +68,7 @@
   },
   "value": {
    "label": "가격 매력",
-   "score": 22,
+   "score": 16,
    "factors": [
     "per",
     "pbr"
@@ -120,9 +120,9 @@
   "neutral": {
    "label": "위험중립형",
    "focus": "수익성과 가격의 균형",
-   "score": 46,
+   "score": 44,
    "level": "보통",
-   "comment": "ROE 17.7%(업종 10곳 중 3위)는 강점, PER 46.8배(업종 8곳 중 8위)는 확인할 지점",
+   "comment": "ROE 17.7%(업종 10곳 중 3위)는 강점, PER 47.1배(업종 8곳 중 8위)는 확인할 지점",
    "parts": [
     {
      "key": "axis:profit",
@@ -136,7 +136,7 @@
      "key": "axis:value",
      "label": "가격 매력",
      "weight": 0.3,
-     "score": 22,
+     "score": 16,
      "best": "pbr",
      "worst": "per"
     },
@@ -302,8 +302,8 @@
   },
   "per": {
    "label": "PER",
-   "value": 46.83,
-   "text": "46.8배",
+   "value": 47.06,
+   "text": "47.1배",
    "pctile": 0,
    "rank": 8,
    "n": 8,
@@ -311,17 +311,17 @@
   },
   "pbr": {
    "label": "PBR",
-   "value": 1.947,
-   "text": "1.95배",
-   "pctile": 44,
-   "rank": 6,
+   "value": 1.957,
+   "text": "1.96배",
+   "pctile": 33,
+   "rank": 7,
    "n": 10,
    "higher_better": false
   },
   "div_yield": {
    "label": "배당수익률",
-   "value": 3.525,
-   "text": "3.52%",
+   "value": 3.507,
+   "text": "3.51%",
    "pctile": 75,
    "rank": 3,
    "n": 9,
@@ -329,8 +329,8 @@
   },
   "vol_1y": {
    "label": "주가 변동성(연환산)",
-   "value": 51.166990465884275,
-   "text": "51.2%",
+   "value": 51.14971608395216,
+   "text": "51.1%",
    "pctile": 44,
    "rank": 6,
    "n": 10,
@@ -347,8 +347,8 @@
   },
   "ret_1y": {
    "label": "1년 시장 대비 수익률",
-   "value": 19.554378086443236,
-   "text": "+19.6%p",
+   "value": 21.255784371370122,
+   "text": "+21.3%p",
    "pctile": 100,
    "rank": 1,
    "n": 10,
