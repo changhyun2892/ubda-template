@@ -213,6 +213,16 @@ let SITE_DATA=null;
 try{ const r=await fetch(DATA_URL,{cache:'no-cache'}); if(r.ok){ const j=await r.json(); if(j&&Array.isArray(j.companies)&&j.companies.length) SITE_DATA=j; } }catch(e){}
 // 랜딩페이지: 사이트에서 처음 들어온 방문자는 landing.html 로 (기존 index.html 과 같은 규칙)
 try{ if(SITE_DATA && !sessionStorage.getItem('ubda_entered') && !location.search && !location.hash){ location.replace('landing.html'); return; } }catch(e){}
+// 뒤로 가기 = 랜딩페이지: 랜딩을 거치지 않고 들어온 경우(주소 직접 입력·대시보드에서 이동·새로고침)에도 뒤로 가기를 누르면 랜딩으로 가게 한다
+try{ if(SITE_DATA){
+  let fromLanding=false; try{ fromLanding=/landing\.html$/.test(new URL(document.referrer).pathname); }catch(e){}
+  if(!fromLanding || (history.state&&history.state.ubdaGraph)){
+    const arm=()=>{ removeEventListener('pointerdown',arm,true); removeEventListener('keydown',arm,true); if(!(history.state&&history.state.ubdaGraph)){ history.replaceState({ubdaGuard:1},''); history.pushState({ubdaGraph:1},''); } };
+    addEventListener('pointerdown',arm,true); addEventListener('keydown',arm,true);   // 사용자가 한 번 조작한 뒤에 넣어야 브라우저가 건너뛰지 않는다
+    addEventListener('popstate',e=>{ if(e.state&&e.state.ubdaGuard) location.replace('landing.html'); });
+    addEventListener('pageshow',()=>{ if(history.state&&history.state.ubdaGuard) location.replace('landing.html'); });
+  }
+} }catch(e){}
 
 /* =====================================================================
    스냅샷 데이터 (index.json 을 못 읽을 때만 사용) — 2026-11-14 20:50 KST 기준 54개 기업

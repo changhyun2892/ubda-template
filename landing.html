@@ -323,6 +323,10 @@ function enter(){
     markEntered(); location.href=HOME;
   }, REDUCED?0:1050);
 }
+// 뒤로 가기로 돌아왔을 때: 브라우저가 '들어가는 중'(화면이 사라진) 상태 그대로 되살리므로 처음 상태로 되돌린다
+function resetLeaving(){ leaving=false; burst=0; document.body.classList.remove('leaving'); }
+addEventListener('pageshow',resetLeaving);
+addEventListener('pagehide',resetLeaving);
 $$('[data-enter]').forEach(b=>b.addEventListener('click',enter));
 $$('[data-list]').forEach(a=>a.addEventListener('click',e=>{ if(PREVIEW){ e.preventDefault(); toast('실제 사이트에서는 기업 목록(list.html)으로 이동합니다'); return; } markEntered(); }));
 addEventListener('keydown',e=>{ if(e.key==='Enter' && !(document.activeElement&&document.activeElement.matches('button,a'))){ e.preventDefault(); enter(); }});
