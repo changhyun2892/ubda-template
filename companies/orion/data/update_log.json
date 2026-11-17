@@ -1,7 +1,7 @@
 {
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:38 KST",
+    "checked_at": "2026-11-17 21:17 KST",
     "rows": 944,
     "last_date": "2026-11-17",
     "last_close": 113900,
@@ -10,7 +10,7 @@
   },
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:38 KST",
+    "checked_at": "2026-11-17 21:17 KST",
     "corp_code": "01238169",
     "reports_total": 18,
     "new_reports": [],
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:38 KST",
+    "checked_at": "2026-11-17 21:17 KST",
     "spike_days": 25,
     "with_major_disclosure": 12,
     "news_total": 470,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:38 KST",
+    "checked_at": "2026-11-17 21:17 KST",
     "rows": 1017,
     "groups": [
       "오리온",
@@ -48,8 +48,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:38 KST",
-    "new": 1,
+    "checked_at": "2026-11-17 21:17 KST",
+    "new": 0,
     "total": 470,
     "first": "2026-10-20 06:38",
     "pages": 2,
@@ -57,14 +57,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:38 KST",
+    "checked_at": "2026-11-17 21:17 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:38 KST",
+    "checked_at": "2026-11-17 21:17 KST",
     "rows": 895,
     "as_of": "2026-11-17",
     "per": 12.12,
