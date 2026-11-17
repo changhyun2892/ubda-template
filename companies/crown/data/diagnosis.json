@@ -1,0 +1,359 @@
+{
+ "built_at": "2026-11-17 10:45 KST",
+ "method": "같은 산업 기업 사이 백분위(0~100, 50 = 가운데) · 성향별 가중치는 UBDA가 임의로 정한 기준 · 투자 권유 아님",
+ "weights": {
+  "stable": {
+   "label": "안정형",
+   "weights": {
+    "axis:stable": 0.35,
+    "div_yield": 0.25,
+    "vol_1y": 0.25,
+    "axis:profit": 0.15
+   }
+  },
+  "neutral": {
+   "label": "위험중립형",
+   "weights": {
+    "axis:profit": 0.3,
+    "axis:value": 0.3,
+    "axis:growth": 0.2,
+    "axis:stable": 0.2
+   }
+  },
+  "active": {
+   "label": "적극투자형",
+   "weights": {
+    "axis:growth": 0.4,
+    "ret_1y": 0.3,
+    "axis:profit": 0.2,
+    "axis:efficiency": 0.1
+   }
+  }
+ },
+ "year": "2025",
+ "industry": "식품",
+ "peers": 8,
+ "bank": false,
+ "axes": {
+  "growth": {
+   "label": "성장성",
+   "score": 14,
+   "factors": [
+    "rev_growth",
+    "op_growth"
+   ]
+  },
+  "profit": {
+   "label": "수익성",
+   "score": 22,
+   "factors": [
+    "op_margin",
+    "roe"
+   ]
+  },
+  "stable": {
+   "label": "안정성",
+   "score": 57,
+   "factors": [
+    "debt_ratio",
+    "current_ratio"
+   ]
+  },
+  "efficiency": {
+   "label": "효율성",
+   "score": 86,
+   "factors": [
+    "asset_turnover"
+   ]
+  },
+  "value": {
+   "label": "가격 매력",
+   "score": 86,
+   "factors": [
+    "per",
+    "pbr"
+   ]
+  }
+ },
+ "profiles": {
+  "stable": {
+   "label": "안정형",
+   "focus": "재무 안정·배당·주가 변동",
+   "score": 66,
+   "level": "높음",
+   "comment": "주가 변동성(연환산) 19.9%(업종 8곳 중 1위)는 강점, 영업이익률 3.4%(업종 8곳 중 7위)는 확인할 지점",
+   "parts": [
+    {
+     "key": "axis:stable",
+     "label": "안정성",
+     "weight": 0.35,
+     "score": 57,
+     "best": "debt_ratio",
+     "worst": "debt_ratio"
+    },
+    {
+     "key": "div_yield",
+     "label": "배당수익률",
+     "weight": 0.25,
+     "score": 71,
+     "best": "div_yield",
+     "worst": "div_yield"
+    },
+    {
+     "key": "vol_1y",
+     "label": "주가 변동성(연환산)",
+     "weight": 0.25,
+     "score": 100,
+     "best": "vol_1y",
+     "worst": "vol_1y"
+    },
+    {
+     "key": "axis:profit",
+     "label": "수익성",
+     "weight": 0.15,
+     "score": 22,
+     "best": "roe",
+     "worst": "op_margin"
+    }
+   ]
+  },
+  "neutral": {
+   "label": "위험중립형",
+   "focus": "수익성과 가격의 균형",
+   "score": 47,
+   "level": "보통",
+   "comment": "PBR 0.38배(업종 8곳 중 1위)는 강점, 매출 증가율 1.5%(업종 8곳 중 8위)는 확인할 지점",
+   "parts": [
+    {
+     "key": "axis:profit",
+     "label": "수익성",
+     "weight": 0.3,
+     "score": 22,
+     "best": "roe",
+     "worst": "op_margin"
+    },
+    {
+     "key": "axis:value",
+     "label": "가격 매력",
+     "weight": 0.3,
+     "score": 86,
+     "best": "pbr",
+     "worst": "per"
+    },
+    {
+     "key": "axis:growth",
+     "label": "성장성",
+     "weight": 0.2,
+     "score": 14,
+     "best": "op_growth",
+     "worst": "rev_growth"
+    },
+    {
+     "key": "axis:stable",
+     "label": "안정성",
+     "weight": 0.2,
+     "score": 57,
+     "best": "debt_ratio",
+     "worst": "debt_ratio"
+    }
+   ]
+  },
+  "active": {
+   "label": "적극투자형",
+   "focus": "성장과 주가 흐름",
+   "score": 27,
+   "level": "낮음",
+   "comment": "총자산회전율 1.26회(업종 8곳 중 2위)는 강점, 매출 증가율 1.5%(업종 8곳 중 8위)는 확인할 지점",
+   "parts": [
+    {
+     "key": "axis:growth",
+     "label": "성장성",
+     "weight": 0.4,
+     "score": 14,
+     "best": "op_growth",
+     "worst": "rev_growth"
+    },
+    {
+     "key": "ret_1y",
+     "label": "1년 시장 대비 수익률",
+     "weight": 0.3,
+     "score": 29,
+     "best": "ret_1y",
+     "worst": "ret_1y"
+    },
+    {
+     "key": "axis:profit",
+     "label": "수익성",
+     "weight": 0.2,
+     "score": 22,
+     "best": "roe",
+     "worst": "op_margin"
+    },
+    {
+     "key": "axis:efficiency",
+     "label": "효율성",
+     "weight": 0.1,
+     "score": 86,
+     "best": "asset_turnover",
+     "worst": "asset_turnover"
+    }
+   ]
+  }
+ },
+ "factors": {
+  "rev_growth": {
+   "label": "매출 증가율",
+   "value": 1.5376,
+   "text": "1.5%",
+   "pctile": 0,
+   "rank": 8,
+   "n": 8,
+   "higher_better": true
+  },
+  "op_growth": {
+   "label": "영업이익 증가율",
+   "value": -27.4708,
+   "text": "-27.5%",
+   "pctile": 29,
+   "rank": 6,
+   "n": 8,
+   "higher_better": true
+  },
+  "op_margin": {
+   "label": "영업이익률",
+   "value": 3.4316,
+   "text": "3.4%",
+   "pctile": 14,
+   "rank": 7,
+   "n": 8,
+   "higher_better": true
+  },
+  "roe": {
+   "label": "ROE",
+   "value": 5.569,
+   "text": "5.6%",
+   "pctile": 29,
+   "rank": 6,
+   "n": 8,
+   "higher_better": true
+  },
+  "roa": {
+   "label": "ROA",
+   "value": 3.4926,
+   "text": "3.5%",
+   "pctile": 43,
+   "rank": 5,
+   "n": 8,
+   "higher_better": true
+  },
+  "debt_ratio": {
+   "label": "부채비율",
+   "value": 56.0152,
+   "text": "56%",
+   "pctile": 57,
+   "rank": 4,
+   "n": 8,
+   "higher_better": false
+  },
+  "current_ratio": {
+   "label": "유동비율",
+   "value": 163.3946,
+   "text": "163%",
+   "pctile": 57,
+   "rank": 4,
+   "n": 8,
+   "higher_better": true
+  },
+  "equity_ratio": {
+   "label": "자기자본비율",
+   "value": 64.0963,
+   "text": "64.1%",
+   "pctile": 57,
+   "rank": 4,
+   "n": 8,
+   "higher_better": true
+  },
+  "credit_cost": {
+   "label": "대손비용률",
+   "value": null,
+   "text": "–",
+   "pctile": null,
+   "rank": null,
+   "n": 0,
+   "higher_better": false
+  },
+  "asset_turnover": {
+   "label": "총자산회전율",
+   "value": 1.2604,
+   "text": "1.26회",
+   "pctile": 86,
+   "rank": 2,
+   "n": 8,
+   "higher_better": true
+  },
+  "cir": {
+   "label": "CIR(영업이익경비율)",
+   "value": null,
+   "text": "–",
+   "pctile": null,
+   "rank": null,
+   "n": 0,
+   "higher_better": false
+  },
+  "per": {
+   "label": "PER",
+   "value": 9.51,
+   "text": "9.5배",
+   "pctile": 71,
+   "rank": 3,
+   "n": 8,
+   "higher_better": false
+  },
+  "pbr": {
+   "label": "PBR",
+   "value": 0.383,
+   "text": "0.38배",
+   "pctile": 100,
+   "rank": 1,
+   "n": 8,
+   "higher_better": false
+  },
+  "div_yield": {
+   "label": "배당수익률",
+   "value": 4.04,
+   "text": "4.04%",
+   "pctile": 71,
+   "rank": 3,
+   "n": 8,
+   "higher_better": true
+  },
+  "vol_1y": {
+   "label": "주가 변동성(연환산)",
+   "value": 19.91379146783103,
+   "text": "19.9%",
+   "pctile": 100,
+   "rank": 1,
+   "n": 8,
+   "higher_better": false
+  },
+  "mdd_1y": {
+   "label": "1년 최대 낙폭",
+   "value": -22.698398095396232,
+   "text": "-22.7%",
+   "pctile": 100,
+   "rank": 1,
+   "n": 8,
+   "higher_better": true
+  },
+  "ret_1y": {
+   "label": "1년 시장 대비 수익률",
+   "value": -46.97909608735996,
+   "text": "-47.0%p",
+   "pctile": 29,
+   "rank": 6,
+   "n": 8,
+   "higher_better": true
+  }
+ },
+ "stock_asof": "2026-11-16"
+}

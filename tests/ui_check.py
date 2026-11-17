@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import functools
 import json
+import time
 import http.server
 import os
 import sys
@@ -216,6 +217,12 @@ def main() -> int:
                     _me = json.loads((ROOT / "companies" / slug / "company.json").read_text(encoding="utf-8"))["industry"]
                     _names = pg.locator("[data-cmp]").all_inner_texts()
                     ok("기업 비교 후보는 같은 산업만", _names and all(_ind.get(n) == _me for n in _names), ", ".join(_names))
+                    if (ROOT / "companies" / slug / "data" / "diagnosis.json").exists():
+                        pg.click('[data-page="overview"]'); time.sleep(1.2)
+                        ok("종합 진단 카드: 레이더 + 성향 3개", pg.locator(".card.diag .radar").count() == 1 and pg.locator(".dg-row").count() == 3)
+                        pg.locator('[data-act="dg:neutral"]').click(); time.sleep(0.4)
+                        ok("진단 근거 패널", "위험중립형" in pg.locator("#panelIn h2").inner_text())
+                        pg.locator("#panelIn .x").click()
                     pg.click('.nav-btn[data-page="overview"]')
                     pg.wait_for_timeout(200)
                     pg.locator(".chart .bar").first.click()

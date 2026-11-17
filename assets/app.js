@@ -12,7 +12,7 @@ const FILE_MAP = {
   company: 'company.json', summary: 'data/summary.json', verify: 'data/verify_report.json', log: 'data/update_log.json',
   fin: 'data/financials.csv', qtr: 'data/quarterly.csv', met: 'data/metrics.csv', ledger: 'data/audit_ledger.csv',
   reg: 'data/source_registry.csv', status: 'data/research_status.csv', kpi: 'data/manual/kpi_values.csv', stock: 'data/stock_daily.csv',
-  reports: 'data/raw/dart_reports.csv', events: 'data/events_auto.csv', evlinks: 'data/event_links.csv', search: 'data/search_trend.csv', news: 'data/raw/news.csv', valuation: 'data/valuation.json', vdaily: 'data/valuation_daily.csv',
+  reports: 'data/raw/dart_reports.csv', events: 'data/events_auto.csv', evlinks: 'data/event_links.csv', search: 'data/search_trend.csv', news: 'data/raw/news.csv', valuation: 'data/valuation.json', diag: 'data/diagnosis.json', vdaily: 'data/valuation_daily.csv',
 };
 const COMPARE_KEYS = ['company', 'summary', 'fin', 'met', 'qtr', 'ledger', 'reg'];
 
@@ -269,7 +269,7 @@ function pageOverview() {
   const got = st.filter((r) => ['원문 대조 일치', '자동 수집 · 원문 대조 전'].includes(r.status)).length;
   const vr = D.verify?.counts || {};
   const latest = [...D.reg].filter((r) => r.type === 'DART 정기보고서').sort((a, b) => (a.source_date < b.source_date ? 1 : -1)).slice(0, 5);
-  return `<div class="kpis">${k}</div>${valuationRow()}<div class="grid">
+  return `<div class="kpis">${k}</div>${valuationRow()}<div class="grid">${diagCard()}
     ${card('w4', `${TOPL()}·영업이익 추이`, `막대: 억원 · 선: ${MRGL()}(%) · 막대를 누르면 출처`, `<div class="seg" style="margin-bottom:6px"><button data-per="annual" aria-pressed="${S.period === 'annual'}">연간</button><button data-per="quarter" aria-pressed="${S.period === 'quarter'}">분기</button></div>` + legend([[TOPL(), COLORS()[1]], ['영업이익', COLORS()[0]], [MRGL(), COLORS()[3]]]) + '<div class="chart" id="c1"></div>', S.period === 'quarter' ? 'Q4 = 사업보고서 연간 − 3분기 누적 (연말 결산조정 포함)' : '')}
     ${card('w2', '데이터 검증 현황', '값마다 출처와 대조 상태를 기록', `<table class="tbl"><tbody>
       <tr><td>${badge('원문 대조 일치')}</td><td>${sm['원문 대조 일치'] ?? 0}</td></tr>
@@ -376,6 +376,42 @@ const VAL_DEF = {
 };
 const median = (a) => { const b = a.filter((x) => typeof x === 'number' && Number.isFinite(x)).sort((x, y) => x - y); if (!b.length) return null; const m = b.length >> 1; return b.length % 2 ? b[m] : (b[m - 1] + b[m]) / 2; };
 function peerVals(k) { return (INDEX?.companies || []).filter((c) => c.industry === D.company.industry && c.valuation).map((c) => c.valuation[k]); }
+/* ---- 종합 진단 요약 (scripts/build_diagnosis.py → data/diagnosis.json, 규칙 기반) ---- */
+function radarSvg(axes) {
+  const K = Object.keys(axes), W = 260, H = 230, cx = 130, cy = 118, R = 82;
+  const pt = (i, v) => { const a = -Math.PI / 2 + (i * 2 * Math.PI) / K.length; return [cx + Math.cos(a) * R * v / 100, cy + Math.sin(a) * R * v / 100]; };
+  const poly = (vals) => vals.map((v, i) => pt(i, v).map((n) => n.toFixed(1)).join(',')).join(' ');
+  let g = [25, 50, 75, 100].map((v) => `<polygon points="${poly(K.map(() => v))}" fill="none" stroke="var(--line)" stroke-width="${v === 50 ? 1.2 : 0.6}" ${v === 50 ? 'stroke-dasharray="3 3"' : ''}/>`).join('');
+  g += K.map((k, i) => { const [x, y] = pt(i, 100); return `<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}" stroke="var(--line)" stroke-width="0.6"/>`; }).join('');
+  g += `<polygon points="${poly(K.map((k) => axes[k].score ?? 0))}" fill="${COLORS()[0]}" fill-opacity=".18" stroke="${COLORS()[0]}" stroke-width="2"/>`;
+  g += K.map((k, i) => { const [x, y] = pt(i, axes[k].score ?? 0); return axes[k].score == null ? '' : `<circle cx="${x}" cy="${y}" r="3" fill="${COLORS()[0]}"/>`; }).join('');
+  g += K.map((k, i) => { const [x, y] = pt(i, 122); const sc = axes[k].score; return `<text x="${x}" y="${y}" text-anchor="middle" dominant-baseline="middle" font-size="11.5"><tspan font-weight="600">${esc(axes[k].label)}</tspan><tspan x="${x}" dy="13" fill="var(--muted)" font-size="10.5">${sc == null ? '자료 없음' : sc}</tspan></text>`; }).join('');
+  return `<svg viewBox="0 0 ${W} ${H + 12}" class="radar" role="img" aria-label="5개 축 산업 내 위치">${g}</svg>`;
+}
+function diagCard() {
+  const G = D.diag; if (!G?.profiles) return '';
+  const lv = (p) => (p.level === '높음' ? 'var(--up)' : p.level === '낮음' ? 'var(--down)' : 'var(--warn)');
+  const rows = Object.entries(G.profiles).map(([k, p]) => `<div class="dg-row" data-act="dg:${k}" title="누르면 계산 근거">
+      <div class="dg-h"><b>${esc(p.label)}</b><small>${esc(p.focus)}</small><span class="dg-sc" style="color:${p.score == null ? 'var(--muted)' : lv(p)}">${p.score == null ? '판단 보류' : `부합도 ${p.score} · ${esc(p.level)}`}</span></div>
+      <div class="dg-bar"><i style="width:${p.score ?? 0}%;background:${p.score == null ? 'var(--line)' : lv(p)}"></i></div>
+      <p>${esc(p.comment)}</p></div>`).join('');
+  return card('w6 diag', '종합 진단', `${esc(G.industry)} 산업 ${G.peers}곳 안에서의 위치 · ${esc(G.year)} 사업연도 재무 + 최신 주가 · 매일 자동 갱신`,
+    `<div class="dg-wrap"><div class="dg-radar">${radarSvg(G.axes)}<small>점선 = 산업 가운데(50) · 0~100은 같은 산업 안 백분위</small></div><div class="dg-prof">${rows}</div></div>`,
+    `투자 권유가 아닙니다. 공시 숫자를 투자 성향별 관점으로 정리한 규칙 기반 결과이며, 성향별 가중치는 UBDA가 임의로 정한 기준입니다. 행을 누르면 계산 근거가 나옵니다. 계산 ${esc(G.built_at || '')}`);
+}
+function showDiag(k) {
+  const G = D.diag, p = G?.profiles?.[k]; if (!p) return;
+  const F = G.factors, fx = (key) => F[key];
+  const line = (key) => { const f = fx(key); return `<tr><td class="l">${esc(f.label)}${f.higher_better ? '' : ' <small>(낮을수록 좋음)</small>'}</td><td>${esc(f.text)}</td><td>${f.rank ? `${f.n}곳 중 ${f.rank}위` : '–'}</td><td>${f.pctile ?? '–'}</td></tr>`; };
+  const body = p.parts.map((pt) => { const keys = pt.key.startsWith('axis:') ? G.axes[pt.key.slice(5)].factors : [pt.key];
+    return `<tr style="background:var(--sunk)"><td class="l"><b>${esc(pt.label)}</b></td><td colspan="2">가중치 ${Math.round(pt.weight * 100)}%</td><td><b>${pt.score ?? '–'}</b></td></tr>${keys.map(line).join('')}`; }).join('');
+  openPanel(`<div class="panel-head"><h2>${esc(p.label)} 관점</h2><button class="x" aria-label="닫기">✕</button></div>
+    <div class="ev-val">${p.score == null ? '판단 보류' : `부합도 ${p.score}`} <small style="font-size:12px;color:var(--muted)">${esc(p.level || '')}</small></div>
+    <div class="formula"><b>계산</b><br>부합도 = 아래 요인 점수의 가중평균 (자료 없는 요인은 빼고 다시 나눔)<br>요인 점수 = 같은 ${esc(G.industry)} 산업 ${G.peers}곳 사이 백분위 (100 = 가장 좋음)<br>65 이상 높음 · 35~64 보통 · 34 이하 낮음</div>
+    <p style="font-size:13px;margin:10px 0">${esc(p.comment)}</p>
+    <div class="tbl-wrap"><table class="tbl"><thead><tr><th class="l">요인</th><th>값</th><th>업종 순위</th><th>점수</th></tr></thead><tbody>${body}</tbody></table></div>
+    <div class="note" style="margin-top:10px">재무는 ${esc(G.year)} 사업보고서 기준, 주가 지표는 ${esc(G.stock_asof || '-')}까지 1년. 가중치는 UBDA가 임의로 정한 기준이며 투자 권유가 아닙니다. 재무비율 산식은 '재무비율' 탭, PER·PBR 산식은 개요의 밸류에이션 카드에 있습니다.</div>`);
+}
 function valuationRow() {
   const V = D.valuation; if (!V) return '';
   const cards = Object.entries(VAL_DEF).map(([k, [l, f]]) => {
@@ -928,7 +964,7 @@ function onClick(e) {
   else if (t.dataset.lf) { S.ledgerFilter = t.dataset.lf; render(); }
   else if (t.dataset.act) {
     const [k, a, b] = t.dataset.act.split(':');
-    if (k === 'fin') showFin(+a, b); else if (k === 'met') showMetric(+a, b); else if (k === 'cmp') showCmp(+a, b); else if (k === 'kpi') showKpi(a, +b); else if (k === 'ev') showEvent(a); else if (k === 'val') showValuation(a); else if (k === 'valm') { S.valMode = a; drawVal(); document.querySelectorAll('[data-act^="valm:"]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.act === 'valm:' + a))); } else if (k === 'tlc') { const c = new Set(S.tlCats || TL_DEFAULT); c.has(a) ? c.delete(a) : c.add(a); S.tlCats = [...c]; S.tlAll = false; render(); }
+    if (k === 'fin') showFin(+a, b); else if (k === 'met') showMetric(+a, b); else if (k === 'cmp') showCmp(+a, b); else if (k === 'kpi') showKpi(a, +b); else if (k === 'ev') showEvent(a); else if (k === 'dg') showDiag(a); else if (k === 'val') showValuation(a); else if (k === 'valm') { S.valMode = a; drawVal(); document.querySelectorAll('[data-act^="valm:"]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.act === 'valm:' + a))); } else if (k === 'tlc') { const c = new Set(S.tlCats || TL_DEFAULT); c.has(a) ? c.delete(a) : c.add(a); S.tlCats = [...c]; S.tlAll = false; render(); }
     else if (k === 'tly') { S.tlYear = a; S.tlAll = false; render(); }
     else if (k === 'tlall') { S.tlAll = true; $('#tlList').innerHTML = tlList(); }
     else if (k === 'newsall') { S.newsAll = true; $('#newsList').innerHTML = newsList(); }

@@ -252,3 +252,15 @@ body.screen-mode .card-tools { display: none; }
 #coSugg span { display: block; color: var(--muted); font-size: 11px; } #coSugg .none { color: var(--muted); cursor: default; }
 .vol-wrap { position: relative; margin-top: -4px; } .vol-wrap small { position: absolute; left: 0; top: 22px; font-size: 10px; color: var(--muted); }
 .chart-sub svg { width: 100%; height: auto; display: block; } .chart-sub text { font-size: 10px; fill: var(--muted); }
+
+/* 종합 진단 */
+.dg-wrap { display: grid; grid-template-columns: 280px 1fr; gap: 18px; align-items: center; }
+.dg-radar { text-align: center; } .dg-radar small { display: block; color: var(--muted); font-size: 10.5px; margin-top: -4px; }
+.radar { width: 100%; max-width: 280px; height: auto; } .radar text { fill: var(--fg); }
+.dg-row { padding: 9px 10px; border-radius: var(--r-sm); cursor: pointer; border: 1px solid transparent; }
+.dg-row:hover { background: var(--sunk); border-color: var(--line2); }
+.dg-row + .dg-row { margin-top: 4px; }
+.dg-h { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; } .dg-h small { color: var(--muted); font-size: 11px; } .dg-sc { margin-left: auto; font-size: 12px; font-weight: 600; }
+.dg-bar { height: 5px; background: var(--line2); border-radius: 3px; overflow: hidden; margin: 6px 0 5px; } .dg-bar i { display: block; height: 100%; border-radius: 3px; }
+.dg-row p { margin: 0; font-size: 12.5px; line-height: 1.5; }
+@media (max-width: 760px) { .dg-wrap { grid-template-columns: 1fr; } .dg-radar svg { max-width: 240px; } }
