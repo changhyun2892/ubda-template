@@ -12,7 +12,7 @@
 1. `.claude/skills/ubda-company-dashboard/SKILL.md`를 먼저 읽고 그 절차를 따른다.
 2. 재무와 산업 KPI를 한 번에 진행한다.
 3. 화면은 불닭(삼양식품) 원본 대시보드 구성을 그대로 이식한다. 임의로 새 레이아웃을 만들지 않는다.
-   - 예외(2026-11-17 사용자 결정): '기업 토론' 탭 추가. 매달 1일 GitHub Actions '기업 토론'이 prompts/debate_council.md로 5명의 고문(AI) 토론을 만들어 companies/<기업>/data/debate/<YYYY-MM>.json에 저장하고 말풍선으로 보여준다. 발언 속 숫자는 데이터 시트에 있는 값만 허용(자동 검사). 발화자 캐릭터는 assets/debate-cast.json(현재 임시).
+   - 예외(2026-11-17 사용자 결정): '기업 토론' 탭 추가. 사용자가 요청할 때만 Claude가 docs/토론_생성절차.md대로 prompts/debate_council.md에 따라 5명의 고문 토론을 직접 작성하고, scripts/build_debate.py --save로 검사(발언 속 숫자는 데이터 시트에 있는 값만)해 companies/<기업>/data/debate/<YYYY-MM>.json에 저장한다. 유료 API·예약 작업은 쓰지 않는다. 발화자 캐릭터는 assets/debate-cast.json(현재 임시).
    - 예외(2026-11-17 사용자 결정): 개요 탭 맨 위의 숫자 카드 4개는 "성과체계"(ROE → 순이익률·총자산회전율·재무레버리지 → 손익·산업 동인, 은행은 ROA·레버리지) 배치로 바꿨다. 그 아래 밸류에이션·종합 진단·추이 차트는 유지.
 4. 그래프 뷰 노드는 `companies/index.json`으로 자동 반영되므로 index.html·그래프 파일은 직접 수정하지 않는다.
 5. main 브랜치에 push한다. 데이터 수집 Actions는 main push에서만 실행되므로 별도 브랜치·PR로 작업하지 않는다. push 전에는 항상 `git pull --rebase`를 한다.
@@ -26,7 +26,7 @@
 
 ## 기술·보안
 - 무료·오픈소스 기술을 우선 사용한다.
-- API 키(DART 등)는 코드나 커밋에 넣지 않는다. DART_API_KEY는 이미 GitHub Secrets에 있으므로 작업자에게 키를 요구하지 않는다. 기업 토론용 ANTHROPIC_API_KEY도 Secrets에만 둔다(유료 API — 무료 우선 원칙의 예외, 사용자 결정).
+- API 키(DART 등)는 코드나 커밋에 넣지 않는다. DART_API_KEY는 이미 GitHub Secrets에 있으므로 작업자에게 키를 요구하지 않는다.
 - 기존 `vuldak-dashboard` 저장소는 수정하지 않는다.
 
 ## 협업

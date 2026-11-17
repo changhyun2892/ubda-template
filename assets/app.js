@@ -233,7 +233,7 @@ const PAGES = [
   ['stock', '주가', '주가와 시장지수, 급변일과 같은 시기 공시'],
   ['timeline', '사건 연표', 'DART 주요 공시를 시간순으로 · 주가 급변일과 같은 시기 표시 · 자동 수집'],
   ['news', '관련 보도', '네이버 뉴스에서 찾은 이 회사 기사 · 주가 급변일과 같은 날 표시 · 확인 전'],
-  ['debate', '기업 토론', '매달 1회 · 5명의 고문이 이 대시보드 데이터만으로 토론 · AI 생성 의견 · 투자 추천 아님'],
+  ['debate', '기업 토론', '월 단위 · 5명의 고문이 이 대시보드 데이터만으로 토론 · AI 생성 의견 · 투자 추천 아님'],
   ['production', '생산', '생산능력·가동률·생산 실적과 설비투자 · 사업보고서 공시 범위만'],
   ['industry', '산업 KPI', '산업별로 추가 확인할 지표의 확보 현황'],
   ['dart', 'DART 자동 업데이트', '정기보고서를 평일마다 확인해 자동 반영 · 원문 대조 전 값은 따로 표시'],
@@ -997,8 +997,8 @@ function pageDebate() {
   if (!DEB || (DEB.cur && DEB.data[DEB.cur] === undefined)) { loadDebate().then(() => S.page === 'debate' && render()); return '<div class="empty loading">토론을 불러오는 중…</div>'; }
   const castNote = DEB_CAST.temporary ? '<span class="deb-tmp">임시 캐릭터</span>' : '';
   const roster = Object.entries(DEB_CAST.cast || {}).map(([role, c]) => `<div class="deb-ro">${debAvatar(c, 'sm')}<div><b>${esc(c.name)}</b><small>${esc(role)} · ${esc(c.tagline || '')}</small></div></div>`).join('');
-  const head = `<div class="card deb-head"><div class="deb-roster">${roster}</div><p class="note">매달 1일, 이 대시보드의 데이터(재무·밸류에이션·종합 진단·공시·보도·KPI)만 근거로 5명의 고문이 토론합니다. AI가 생성한 의견이며 투자 추천이 아닙니다. ${castNote}</p></div>`;
-  if (!DEB.months.length) return head + `<div class="empty"><b>아직 열린 토론이 없습니다</b>토론은 매달 1일 자동으로 열립니다 (GitHub Actions '기업 토론' · ANTHROPIC_API_KEY 필요).</div>`;
+  const head = `<div class="card deb-head"><div class="deb-roster">${roster}</div><p class="note">월 단위로, 이 대시보드의 데이터(재무·밸류에이션·종합 진단·공시·보도·KPI)만 근거로 5명의 고문이 토론합니다. AI가 생성한 의견이며 투자 추천이 아닙니다. ${castNote}</p></div>`;
+  if (!DEB.months.length) return head + `<div class="empty"><b>아직 열린 토론이 없습니다</b>토론은 요청할 때 Claude가 이 대시보드 데이터로 작성합니다 (docs/토론_생성절차.md).</div>`;
   const d = DEB.data[DEB.cur];
   const tabs = `<div class="seg deb-months">${DEB.months.map((m) => `<button data-act="deb:m:${m}" aria-pressed="${m === DEB.cur}">${ymLabel(m)}</button>`).join('')}</div>`;
   if (!d) return head + tabs + `<div class="empty"><b>${ymLabel(DEB.cur)} 토론 파일을 읽지 못했습니다</b></div>`;

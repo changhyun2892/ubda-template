@@ -1,21 +1,14 @@
 """
-기업 토론(평의회) 생성 — 한 달에 한 번, 기업마다 5명의 고문이 대시보드 데이터만으로 토론한 결과를 만듭니다.
+기업 토론(평의회) — API 없이, 사용자가 요청할 때 Claude(구독 세션)가 직접 토론을 작성하고 이 스크립트로 검사·저장합니다.
 
-  python scripts/build_debate.py                       # 이번 달 토론이 없는 기업만 생성
-  python scripts/build_debate.py --only samyang,kbfg   # 일부 기업만
-  python scripts/build_debate.py --force               # 이번 달 것이 있어도 다시 생성
-  python scripts/build_debate.py --dry --only samyang  # AI를 부르지 않고 프롬프트만 출력 (점검용)
+  python scripts/build_debate.py --todo                      # 이번 달 토론이 아직 없는 기업 목록
+  python scripts/build_debate.py --prompt samyang            # 데이터가 채워진 프롬프트 출력 → 이걸 읽고 토론 JSON 작성
+  python scripts/build_debate.py --save samyang /tmp/a.json  # 작성한 JSON 검사 → 통과하면 debate/<YYYY-MM>.json 저장
 
-흐름
-  1) 기업 폴더의 CSV·JSON에서 '데이터 시트'를 만든다 (모든 줄에 출처 항목·기준일)
-  2) prompts/debate_council.md 의 {{DATA}} 등을 채워 AI(Claude API)에 보낸다
-  3) 응답을 검사한다: JSON 형식, 고문 5명, 확신도 0~100, 그리고
-     "발언 속 숫자가 데이터 시트에 있는 숫자인가" (없는 숫자를 지어냈으면 한 번 다시 요청, 그래도 틀리면 저장하지 않음)
-  4) companies/<기업>/data/debate/<YYYY-MM>.json 저장, debate/index.json 에 월 목록 갱신
-
-필요한 것: GitHub Secrets 의 ANTHROPIC_API_KEY (코드·커밋에 키를 넣지 않습니다)
-선택: DEBATE_MODEL (기본 claude-sonnet-5-5), DEBATE_API_URL (테스트용 가짜 서버 주소)
-표준 라이브러리만 사용합니다.
+검사: JSON 형식, 고문 5명(순서·이름), 확신도 0~100, 그리고
+      "발언·결론 속 숫자가 데이터 시트에 있는 숫자인가" (반올림 허용, 연도·12 이하 정수 제외). 하나라도 틀리면 저장하지 않음.
+절차 문서: docs/토론_생성절차.md · 프롬프트: prompts/debate_council.md
+비용: API를 쓰지 않으므로 별도 요금 없음 (구독 사용량만 씀). 표준 라이브러리만 사용.
 """
 from __future__ import annotations
 
@@ -23,13 +16,8 @@ import argparse
 import csv
 import json
 import math
-import os
 import re
 import sys
-import time
-import urllib.error
-import urllib.request
-from concurrent.futures import ThreadPoolExecutor
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
@@ -38,8 +26,6 @@ COMPANIES = ROOT / "companies"
 PROMPT_FILE = ROOT / "prompts" / "debate_council.md"
 KST = timezone(timedelta(hours=9))
 ROLES = ["약세론자", "본질 분석가", "기회 탐색가", "외부자", "점검 담당"]
-MODEL = os.environ.get("DEBATE_MODEL", "claude-sonnet-5-5")
-API_URL = os.environ.get("DEBATE_API_URL", "https://api.anthropic.com/v1/messages")
 
 
 # ---------------------------------------------------------------- 읽기 도우미
@@ -332,63 +318,23 @@ def parse_json(text: str) -> dict:
     return json.loads(t[a:b + 1])
 
 
-# ---------------------------------------------------------------- AI 호출
-def call_ai(messages: list[dict], key: str) -> str:
-    body = json.dumps({"model": MODEL, "max_tokens": 4000, "messages": messages}).encode()
-    req = urllib.request.Request(API_URL, data=body, headers={
-        "content-type": "application/json", "x-api-key": key, "anthropic-version": "2023-06-01"})
-    for attempt in range(3):
-        try:
-            with urllib.request.urlopen(req, timeout=180) as r:
-                data = json.loads(r.read())
-            return "".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text")
-        except urllib.error.HTTPError as e:
-            if e.code in (429, 500, 502, 503, 529) and attempt < 2:
-                time.sleep(20 * (attempt + 1)); continue
-            raise RuntimeError(f"API {e.code}: {e.read()[:200]!r}")
-        except (urllib.error.URLError, TimeoutError) as e:
-            if attempt < 2:
-                time.sleep(10); continue
-            raise RuntimeError(f"API 연결 실패: {e}")
-    raise RuntimeError("API 재시도 초과")
-
-
-def debate_one(slug: str, month: str, index: dict | None, key: str, question: str | None, dry: bool) -> dict:
-    sheet, meta = fact_sheet(slug, index)
-    if not meta.get("years"):
-        return {"slug": slug, "status": "건너뜀", "detail": "재무 데이터 없음"}
-    prompt = build_prompt(sheet, meta, question)
-    if dry:
-        print(prompt)
-        return {"slug": slug, "status": "dry", "detail": f"프롬프트 {len(prompt)}자"}
-    msgs = [{"role": "user", "content": prompt}]
-    errs: list[str] = []
-    for attempt in range(2):
-        raw = call_ai(msgs, key)
-        try:
-            out = parse_json(raw)
-            errs = validate(out, sheet)
-        except Exception as e:
-            out, errs = None, [f"JSON 해석 실패: {e}"]
-        if not errs:
-            break
-        msgs += [{"role": "assistant", "content": raw},
-                 {"role": "user", "content": "다음 문제를 고쳐 같은 JSON 형식으로 다시 출력하세요. 숫자는 [데이터]에 적힌 값만 그대로 쓰세요.\n- " + "\n- ".join(errs)}]
-    if errs:
-        return {"slug": slug, "status": "검증 실패", "detail": "; ".join(errs)[:400]}
+# ---------------------------------------------------------------- 저장
+def save_debate(slug: str, month: str, out: dict, sheet: str, meta: dict, author: str) -> Path:
     out["confidence"] = int(round(out["confidence"]))
+    out.setdefault("disclaimer", "수업용 경영분석이며 투자 추천이 아닙니다.")
     out["meta"] = {
-        "month": month, "generated_at": datetime.now(KST).strftime("%Y-%m-%d %H:%M KST"), "model": MODEL,
+        "month": month, "generated_at": datetime.now(KST).strftime("%Y-%m-%d %H:%M KST"), "model": author,
         "data_years": meta.get("years"), "latest_quarter": meta.get("latest_quarter"), "stock_asof": meta.get("stock_asof"),
         "valuation_asof": meta.get("val_asof"), "prompt": "prompts/debate_council.md",
         "check": "형식·고문 5명·확신도 범위·발언 속 숫자가 데이터 시트에 있는지 자동 검사 통과",
-        "note": "AI가 생성한 토론입니다. 숫자는 대시보드 데이터에서만 인용하도록 검사했지만 해석은 AI의 의견입니다.",
+        "note": "AI가 작성한 토론입니다. 숫자는 대시보드 데이터에서만 인용하도록 검사했지만 해석은 AI의 의견입니다.",
     }
     ddir = COMPANIES / slug / "data" / "debate"
     ddir.mkdir(parents=True, exist_ok=True)
-    (ddir / f"{month}.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
+    f = ddir / f"{month}.json"
+    f.write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
     write_index(ddir)
-    return {"slug": slug, "status": "생성", "detail": f"확신도 {out['confidence']}%"}
+    return f
 
 
 def write_index(ddir: Path):
@@ -407,44 +353,53 @@ def write_all_index():
     (COMPANIES / "debate_index.json").write_text(json.dumps(allm, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
+def all_slugs() -> list[str]:
+    return sorted(p.parent.name for p in COMPANIES.glob("*/company.json"))
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--only", default="")
+    g = ap.add_mutually_exclusive_group(required=True)
+    g.add_argument("--todo", action="store_true", help="이번 달 토론이 없는 기업 목록")
+    g.add_argument("--prompt", metavar="SLUG", help="데이터가 채워진 프롬프트 출력")
+    g.add_argument("--save", nargs=2, metavar=("SLUG", "JSON"), help="작성한 토론 JSON 검사 후 저장")
     ap.add_argument("--month", default=datetime.now(KST).strftime("%Y-%m"))
-    ap.add_argument("--force", action="store_true")
-    ap.add_argument("--dry", action="store_true")
     ap.add_argument("--question", default=None)
-    ap.add_argument("--workers", type=int, default=4)
+    ap.add_argument("--author", default="Claude (구독 세션)")
     a = ap.parse_args()
-    key = os.environ.get("ANTHROPIC_API_KEY", "")
-    if not key and not a.dry:
-        print("ANTHROPIC_API_KEY 가 없습니다. GitHub → Settings → Secrets and variables → Actions 에 등록하세요. (토론 생성 건너뜀)")
-        sys.exit(0)
     index = rjson(COMPANIES / "index.json")
-    only = [s for s in a.only.split(",") if s]
-    slugs = sorted(p.parent.name for p in COMPANIES.glob("*/company.json"))
-    slugs = [s for s in slugs if not only or s in only]
-    if not a.force:
-        slugs = [s for s in slugs if not (COMPANIES / s / "data" / "debate" / f"{a.month}.json").exists()]
-    print(f"토론 생성 대상 {len(slugs)}곳 · {a.month} · 모델 {MODEL}")
 
-    def run(s):
-        try:
-            return debate_one(s, a.month, index, key, a.question, a.dry)
-        except Exception as e:
-            return {"slug": s, "status": "실패", "detail": str(e)[:300]}
+    if a.todo:
+        todo = [s for s in all_slugs() if not (COMPANIES / s / "data" / "debate" / f"{a.month}.json").exists()
+                and (COMPANIES / s / "data" / "financials.csv").exists()]
+        print(f"{a.month} 토론이 없는 기업 {len(todo)}곳")
+        print(" ".join(todo))
+        return
 
-    with ThreadPoolExecutor(max_workers=1 if a.dry else a.workers) as ex:
-        res = list(ex.map(run, slugs))
-    if not a.dry:
-        write_all_index()
-    for r in res:
-        print(f"  {r['slug']:<16} {r['status']:<6} {r['detail']}")
-    log = {"month": a.month, "ran_at": datetime.now(KST).strftime("%Y-%m-%d %H:%M KST"), "model": MODEL, "results": res}
-    if not a.dry:
-        (COMPANIES / "debate_log.json").write_text(json.dumps(log, ensure_ascii=False, indent=1), encoding="utf-8")
-    bad = [r for r in res if r["status"] in ("실패", "검증 실패")]
-    print(f"생성 {sum(r['status'] == '생성' for r in res)} · 건너뜀 {sum(r['status'] == '건너뜀' for r in res)} · 실패 {len(bad)}")
+    slug = a.prompt or a.save[0]
+    if slug not in all_slugs():
+        sys.exit(f"없는 기업: {slug}")
+    sheet, meta = fact_sheet(slug, index)
+    if not meta.get("years"):
+        sys.exit(f"{slug}: 재무 데이터가 없어 토론을 만들 수 없음")
+
+    if a.prompt:
+        print(build_prompt(sheet, meta, a.question))
+        return
+
+    raw = Path(a.save[1]).read_text(encoding="utf-8")
+    try:
+        out = parse_json(raw)
+    except Exception as e:
+        sys.exit(f"검증 실패 — JSON 해석 실패: {e}")
+    errs = validate(out, sheet)
+    if errs:
+        print("검증 실패 — 저장하지 않음")
+        for e in errs:
+            print(f"  - {e}")
+        sys.exit(1)
+    f = save_debate(slug, a.month, out, sheet, meta, a.author)
+    print(f"저장: {f.relative_to(ROOT)} (확신도 {out['confidence']}%)")
 
 
 if __name__ == "__main__":
