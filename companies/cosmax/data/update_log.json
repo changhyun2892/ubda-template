@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:05 KST",
+    "checked_at": "2026-11-17 10:51 KST",
     "corp_code": "01009789",
     "reports_total": 19,
     "new_reports": [],
@@ -15,38 +15,38 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:05 KST",
-    "rows": 943,
-    "last_date": "2026-11-16",
-    "last_close": 285000,
+    "checked_at": "2026-11-17 10:51 KST",
+    "rows": 944,
+    "last_date": "2026-11-17",
+    "last_close": 292500,
     "source": "Yahoo Finance 192820.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:05 KST",
+    "checked_at": "2026-11-17 10:51 KST",
     "spike_days": 40,
     "with_major_disclosure": 15,
     "news_total": 516,
     "disclosures_total": 348,
-    "disclosures_new": 1,
+    "disclosures_new": 0,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:05 KST",
-    "rows": 406,
+    "checked_at": "2026-11-17 10:51 KST",
+    "rows": 408,
     "groups": [
       "코스맥스",
       "한국콜마"
     ],
-    "last_period": "2026-11-09",
+    "last_period": "2026-11-16",
     "source": "NAVER API HUB 검색어 트렌드 (주 단위, 상대 비율)"
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:05 KST",
-    "new": 8,
+    "checked_at": "2026-11-17 10:51 KST",
+    "new": 0,
     "total": 516,
     "first": "2026-10-14 09:16",
     "pages": 2,
@@ -54,17 +54,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:05 KST",
+    "checked_at": "2026-11-17 10:51 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:05 KST",
-    "rows": 889,
-    "as_of": "2026-11-16",
-    "per": 14.84,
-    "pbr": 5.064
+    "checked_at": "2026-11-17 10:51 KST",
+    "rows": 890,
+    "as_of": "2026-11-17",
+    "per": 15.23,
+    "pbr": 5.197
   }
 }

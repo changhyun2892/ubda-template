@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:06 KST",
+    "checked_at": "2026-11-17 10:51 KST",
     "corp_code": "00111704",
     "reports_total": 21,
     "new_reports": [],
@@ -15,57 +15,57 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:06 KST",
-    "rows": 943,
-    "last_date": "2026-11-16",
-    "last_close": 46800,
+    "checked_at": "2026-11-17 10:51 KST",
+    "rows": 944,
+    "last_date": "2026-11-17",
+    "last_close": 45650,
     "source": "Yahoo Finance 042660.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:06 KST",
+    "checked_at": "2026-11-17 10:51 KST",
     "spike_days": 40,
     "with_major_disclosure": 16,
-    "news_total": 255,
+    "news_total": 267,
     "disclosures_total": 766,
     "disclosures_new": 0,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:06 KST",
-    "rows": 602,
+    "checked_at": "2026-11-17 10:51 KST",
+    "rows": 605,
     "groups": [
       "한화오션",
       "HD현대중공업",
       "삼성중공업"
     ],
-    "last_period": "2026-11-09",
+    "last_period": "2026-11-16",
     "source": "NAVER API HUB 검색어 트렌드 (주 단위, 상대 비율)"
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:06 KST",
-    "new": 21,
-    "total": 255,
+    "checked_at": "2026-11-17 10:51 KST",
+    "new": 12,
+    "total": 267,
     "first": "2026-11-03 15:29",
-    "pages": 10,
+    "pages": 9,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:06 KST",
+    "checked_at": "2026-11-17 10:51 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:06 KST",
-    "rows": 896,
-    "as_of": "2026-11-16",
-    "per": 7.35,
-    "pbr": 1.93
+    "checked_at": "2026-11-17 10:51 KST",
+    "rows": 897,
+    "as_of": "2026-11-17",
+    "per": 7.17,
+    "pbr": 1.883
   }
 }
