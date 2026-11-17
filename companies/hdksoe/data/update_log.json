@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-17 17:40 KST",
+    "checked_at": "2026-11-17 19:36 KST",
     "corp_code": "00164830",
     "reports_total": 16,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-17 17:40 KST",
+    "checked_at": "2026-11-17 19:36 KST",
     "rows": 944,
     "last_date": "2026-11-17",
     "last_close": 233000,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-17 17:41 KST",
+    "checked_at": "2026-11-17 19:36 KST",
     "spike_days": 35,
     "with_major_disclosure": 18,
     "news_total": 169,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-17 17:40 KST",
+    "checked_at": "2026-11-17 19:36 KST",
     "rows": 801,
     "groups": [
       "HD한국조선해양",
@@ -47,8 +47,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-17 17:40 KST",
-    "new": 2,
+    "checked_at": "2026-11-17 19:36 KST",
+    "new": 0,
     "total": 169,
     "first": "2026-10-28 15:40",
     "pages": 10,
@@ -56,14 +56,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-17 17:40 KST",
+    "checked_at": "2026-11-17 19:36 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-17 17:41 KST",
+    "checked_at": "2026-11-17 19:36 KST",
     "rows": 892,
     "as_of": "2026-11-17",
     "per": 4.79,
