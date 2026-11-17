@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:31 KST",
+    "checked_at": "2026-11-17 12:04 KST",
     "corp_code": "01061327",
     "reports_total": 16,
     "new_reports": [],
@@ -15,16 +15,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:31 KST",
+    "checked_at": "2026-11-17 12:04 KST",
     "rows": 944,
     "last_date": "2026-11-17",
-    "last_close": 23550,
+    "last_close": 23400,
     "source": "Yahoo Finance 214150.KQ 일봉 (분할 반영 종가)",
     "index": "^KQ11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:32 KST",
+    "checked_at": "2026-11-17 12:04 KST",
     "spike_days": 40,
     "with_major_disclosure": 12,
     "news_total": 362,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:31 KST",
+    "checked_at": "2026-11-17 12:04 KST",
     "rows": 408,
     "groups": [
       "클래시스",
@@ -45,7 +45,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:32 KST",
+    "checked_at": "2026-11-17 12:04 KST",
     "new": 0,
     "total": 362,
     "first": "2026-06-04 06:02",
@@ -54,17 +54,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:31 KST",
+    "checked_at": "2026-11-17 12:04 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:32 KST",
+    "checked_at": "2026-11-17 12:04 KST",
     "rows": 890,
     "as_of": "2026-11-17",
-    "per": 13.85,
-    "pbr": 2.776
+    "per": 13.76,
+    "pbr": 2.758
   }
 }

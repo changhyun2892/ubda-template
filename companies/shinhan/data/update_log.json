@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:34 KST",
+    "checked_at": "2026-11-17 12:07 KST",
     "corp_code": "00382199",
     "reports_total": 19,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:34 KST",
+    "checked_at": "2026-11-17 12:07 KST",
     "rows": 944,
     "last_date": "2026-11-17",
     "last_close": 88600,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:34 KST",
+    "checked_at": "2026-11-17 12:07 KST",
     "spike_days": 26,
     "with_major_disclosure": 5,
     "news_total": 28,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:34 KST",
+    "checked_at": "2026-11-17 12:07 KST",
     "rows": 816,
     "groups": [
       "신한지주",
@@ -47,7 +47,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:34 KST",
+    "checked_at": "2026-11-17 12:07 KST",
     "new": 0,
     "total": 28,
     "first": "2026-10-27 20:22",
@@ -56,14 +56,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:34 KST",
+    "checked_at": "2026-11-17 12:07 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:34 KST",
+    "checked_at": "2026-11-17 12:07 KST",
     "rows": 731,
     "as_of": "2026-11-17",
     "per": 7.51,
