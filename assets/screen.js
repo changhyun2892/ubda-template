@@ -564,6 +564,8 @@ function setCompany(c) {
 }
 function initPresenterKeys() {
   $('fsBtn').onclick = toggleFS;
+  $('homeBtn').onclick = () => { if (window.parent !== window) window.parent.postMessage({ ubda: 'screen-home' }, '*'); else location.href = 'index.html'; };
+  initEnterDlg();
   $('playBtn').onclick = () => (playing ? pauseGlobe() : playGlobe());
   addEventListener('keydown', (e) => {
     if (e.target.tagName === 'INPUT') return;
@@ -576,6 +578,7 @@ function initPresenterKeys() {
     else if (k === 'r' || k === 'R') { if (!REDUCED && globe) restartGlobe(); }
     else if (k === '?' || k === '/') $('help').classList.toggle('show');
     else if (k === 'Escape') {
+      if (!$('enterDlg').hidden) { closeEnterDlg(); return; }
       if ($('help').classList.contains('show')) { $('help').classList.remove('show'); return; }
       if (document.fullscreenElement) return;
       if (window.parent !== window) window.parent.postMessage({ ubda: 'screen-exit' }, '*'); else location.href = `dashboard.html?c=${SLUG}`;
@@ -583,6 +586,21 @@ function initPresenterKeys() {
   });
   let ct; const show = () => { document.body.classList.remove('hide-cursor'); clearTimeout(ct); ct = setTimeout(() => document.body.classList.add('hide-cursor'), 3000); };
   addEventListener('mousemove', show); show();
+}
+/* 지구본 더블클릭 → "개요 창으로 입장하시겠습니까?" 확인창 (Yes: 개요로, No: 메인 스크린 유지) */
+function exitToOverview() { if (window.parent !== window) window.parent.postMessage({ ubda: 'screen-exit' }, '*'); else location.href = `dashboard.html?c=${SLUG}#overview`; }
+function openEnterDlg() { const d = $('enterDlg'); d.classList.remove('closing'); d.hidden = false; $('enterYes').focus(); }
+function closeEnterDlg() {
+  const d = $('enterDlg'); if (d.hidden) return;
+  if (REDUCED) { d.hidden = true; return; }
+  d.classList.add('closing'); setTimeout(() => { d.hidden = true; d.classList.remove('closing'); }, 170);
+}
+function initEnterDlg() {
+  $('globePanel').addEventListener('dblclick', (e) => { e.preventDefault(); openEnterDlg(); });
+  $('enterYes').onclick = () => { $('enterDlg').hidden = true; exitToOverview(); };
+  $('enterNo').onclick = closeEnterDlg;
+  $('enterDlg').addEventListener('click', (e) => { if (e.target.id === 'enterDlg') closeEnterDlg(); });
+  $('enterDlg').addEventListener('keydown', (e) => { if (e.key === 'Tab') { e.preventDefault(); (document.activeElement === $('enterYes') ? $('enterNo') : $('enterYes')).focus(); } });
 }
 function safe(fn, id) {
   try { fn(); }

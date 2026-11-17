@@ -149,6 +149,31 @@ def main() -> int:
                 pg.on("console", lambda m: errs.append(m.text) if m.type == "error" else None)
                 pg.goto(url)
                 pg.wait_for_selector(".page", timeout=10000)
+                if has_data:
+                    # 기본 진입 = 메인 스크린 → 지구본 더블클릭 확인창(No: 유지, Yes: 개요)
+                    ok("기본 진입 화면이 메인 스크린", "screen-mode" in (pg.get_attribute("body", "class") or ""))
+                    sf = None
+                    for _ in range(60):
+                        sf = next((f for f in pg.frames if "screen.html" in f.url), None)
+                        if sf and sf.evaluate("!!window.__screenReady"):
+                            break
+                        pg.wait_for_timeout(250)
+                    if sf:
+                        sf.dblclick("#globePanel")
+                        pg.wait_for_timeout(500)
+                        ok("지구본 더블클릭 → 입장 확인창", sf.evaluate("!document.getElementById('enterDlg').hidden") and "입장하시겠습니까" in sf.inner_text("#enterQ"))
+                        if SHOTS:
+                            pg.screenshot(path=str(SHOTS / f"{slug}_{label}_enter.png"))
+                        sf.click("#enterNo")
+                        pg.wait_for_timeout(400)
+                        ok("No → 메인 스크린 유지", sf.evaluate("document.getElementById('enterDlg').hidden") and "screen-mode" in (pg.get_attribute("body", "class") or ""))
+                        sf.dblclick("#globePanel")
+                        pg.wait_for_timeout(500)
+                        sf.click("#enterYes")
+                        pg.wait_for_timeout(500)
+                        ok("Yes → 개요로 입장", pg.inner_text("#pageTitle") == "개요" and "screen-mode" not in (pg.get_attribute("body", "class") or ""))
+                    else:
+                        ok("메인 스크린 프레임 로드", False)
                 for pid in PAGES:
                     if label == "모바일":
                         pg.click("#menuBtn")

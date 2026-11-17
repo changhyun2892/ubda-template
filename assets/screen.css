@@ -147,3 +147,20 @@ main{position:absolute;left:20px;right:20px;top:104px;bottom:18px;display:grid;
 
 /* UBDA: 연도 수가 기업마다 달라 타임라인 점을 JS로 그림 */
 #tlDots{display:contents}
+
+/* ---------- 지구본 더블클릭 → 개요 입장 확인창 ---------- */
+.home-btn{width:auto;padding:0 12px;font-size:16px;font-weight:600;margin-left:8px}
+#enterDlg{position:absolute;inset:0;z-index:60;display:flex;align-items:center;justify-content:center;background:rgba(5,12,22,.6);animation:edFade .2s ease-out}
+#enterDlg[hidden]{display:none}
+#enterDlg .box{background:var(--panel);border:1.5px solid var(--cyan);box-shadow:0 0 40px rgba(63,200,232,.25);padding:40px 56px;text-align:center;transform-origin:center;animation:edScale .32s cubic-bezier(.2,1.3,.4,1)}
+#enterDlg .eq{font-size:30px;font-weight:700;color:var(--text);margin-bottom:30px}
+#enterDlg .btns{display:flex;gap:20px;justify-content:center}
+#enterDlg button{min-width:150px;height:56px;font-size:22px;font-weight:700;border-radius:3px;cursor:pointer;font-family:inherit}
+#enterDlg .yes{background:var(--cyan);border:1.5px solid var(--cyan);color:#071121}
+#enterDlg .no{background:transparent;border:1.5px solid var(--line);color:var(--text)}
+#enterDlg button:focus-visible{outline:3px solid #fff;outline-offset:3px}
+#enterDlg.closing{animation:edFade .16s ease-in reverse forwards}
+#enterDlg.closing .box{animation:edScale .16s ease-in reverse forwards}
+@keyframes edScale{from{transform:scale(.6);opacity:0}to{transform:scale(1);opacity:1}}
+@keyframes edFade{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion: reduce){#enterDlg,#enterDlg .box{animation:none}}

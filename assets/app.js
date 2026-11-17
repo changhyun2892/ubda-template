@@ -927,13 +927,25 @@ function pageDart() {
 /* ---------- 메인 스크린 (불닭 대시보드와 같은 1920×1080 관제 화면: screen.html을 그대로 띄움) ---------- */
 function pageScreen() {
   if (!D.fin.length) return noData();
-  return `<iframe class="screen-frame" id="screenFrame" title="메인 스크린" src="screen.html?c=${encodeURIComponent(SLUG)}" allow="fullscreen"></iframe>`;
+  return `<iframe class="screen-frame" id="screenFrame" title="메인 스크린" allow="fullscreen"></iframe>`;
 }
 function drawScreen() {
-  const f = $('#screenFrame'); if (!f) return;
+  const f = $('#screenFrame'); if (!f || f.dataset.on) return; f.dataset.on = '1';
   f.addEventListener('load', () => { try { f.contentWindow.focus(); } catch (e) { /* 무시 */ } });
+  // src 속성 대신 location.replace로 열어 브라우저 방문 기록(뒤로 가기)에 iframe 항목이 쌓이지 않게 한다
+  const url = `screen.html?c=${encodeURIComponent(SLUG)}`;
+  try { f.contentWindow.location.replace(url); } catch (e) { f.src = url; }
 }
-addEventListener('message', (e) => { if (e.data && e.data.ubda === 'screen-exit' && S.page === 'screen') { S.page = 'overview'; render(); } });
+/* 기업 네트워크(뉴런)로 돌아가기: 바로 전 페이지가 같은 사이트의 네트워크·목록이면 뒤로 가기, 아니면 index.html로 이동 */
+function goHome() {
+  let prev = null; try { const r = new URL(document.referrer); if (r.origin === location.origin) prev = r.pathname.split('/').pop() || 'index.html'; } catch (e) { /* 직접 접속 */ }
+  if (prev && /^(index|list)\.html$|^$/.test(prev) && history.length > 1) history.back(); else location.href = 'index.html';
+}
+addEventListener('message', (e) => {
+  if (!e.data || e.source !== $('#screenFrame')?.contentWindow) return;
+  if (e.data.ubda === 'screen-exit' && S.page === 'screen') { S.page = 'overview'; render(); }
+  if (e.data.ubda === 'screen-home') goHome();
+});
 
 /* ---------- 편집 모드: 카드를 끌어 순서 변경, 이 브라우저에만 저장 ---------- */
 const store = {
@@ -1075,9 +1087,10 @@ function onClick(e) {
   const Y = YEARS(); S.year = Y[Y.length - 1] ?? null;
   const fsScope = D.fin[0]?.scope || '-';
   $('#scope').innerHTML = `<span><b>${esc(c.name)}</b> ${esc(c.stock_code || '')}</span><span>재무 <b>${esc(fsScope)}</b> 기준 · DART</span><span>기간 <b>${Y.length ? `${Y[0]}~${Y[Y.length - 1]}` : '-'}</b></span><span>업데이트 ${esc(D.summary?.updated_at || '-')}</span>`;
-  $('#navFoot').innerHTML = `<a href="index.html">← 전체 기업</a><br><br>수업용 경영분석이며 투자 추천이 아닙니다.<br>UBDA · 정적 CSV`;
-  const h = location.hash.slice(1); if (PAGES.some((p) => p[0] === h)) S.page = h;
+  $('#navFoot').innerHTML = `<a href="index.html" id="homeLink">← 기업 네트워크</a><br><br>수업용 경영분석이며 투자 추천이 아닙니다.<br>UBDA · 정적 CSV`;
+  const h = location.hash.slice(1); S.page = PAGES.some((p) => p[0] === h) ? h : (D.fin.length ? 'screen' : 'overview'); // 기본 진입 = 메인 스크린
   document.addEventListener('click', onClick);
+  $('#homeLink')?.addEventListener('click', (e) => { e.preventDefault(); goHome(); });
   $('#menuBtn').addEventListener('click', () => $('#app').classList.toggle('nav-open'));
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') { if (S.page === 'screen') { if (document.fullscreenElement) return; S.page = 'overview'; render(); } else closePanel(); }

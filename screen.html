@@ -32,6 +32,7 @@
       <div class="toggle" id="coToggle"></div>
       <div class="clock num" id="clock">--:--:--<small id="clockSub">사업보고서</small></div>
       <button class="fs-btn" id="fsBtn" title="전체 화면 (F)">⛶</button>
+      <button class="fs-btn home-btn" id="homeBtn" title="기업 네트워크로 돌아가기">← 네트워크</button>
     </div>
   </header>
 
@@ -94,6 +95,10 @@
   </main>
   <div id="helpHint">? 단축키</div>
 
+  <div id="enterDlg" role="dialog" aria-modal="true" aria-labelledby="enterQ" hidden><div class="box">
+    <div class="eq" id="enterQ">메인스크린에서 대시보드 개요 창으로 입장하시겠습니까?</div>
+    <div class="btns"><button class="yes" id="enterYes">Yes</button><button class="no" id="enterNo">No</button></div>
+  </div></div>
   <div id="help"><div class="box">
     <h3>발표 단축키</h3>
     <table>
