@@ -1,11 +1,11 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:06 KST",
+    "checked_at": "2026-11-17 10:52 KST",
     "corp_code": "00939331",
-    "reports_total": 17,
+    "reports_total": 18,
     "new_reports": [
-      "분기보고서 (2026.09) (20261116) — 재무 데이터 대기"
+      "분기보고서 (2026.09) (20261116) — 반영 (14/14개 계정 · CFS)"
     ],
     "errors": []
   },
@@ -17,56 +17,56 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:06 KST",
-    "rows": 943,
-    "last_date": "2026-11-16",
-    "last_close": 107400,
+    "checked_at": "2026-11-17 10:52 KST",
+    "rows": 944,
+    "last_date": "2026-11-17",
+    "last_close": 109600,
     "source": "Yahoo Finance 161890.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:06 KST",
+    "checked_at": "2026-11-17 10:52 KST",
     "spike_days": 39,
     "with_major_disclosure": 14,
-    "news_total": 569,
+    "news_total": 570,
     "disclosures_total": 456,
-    "disclosures_new": 1,
+    "disclosures_new": 0,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:06 KST",
-    "rows": 406,
+    "checked_at": "2026-11-17 10:52 KST",
+    "rows": 408,
     "groups": [
       "한국콜마",
       "코스맥스"
     ],
-    "last_period": "2026-11-09",
+    "last_period": "2026-11-16",
     "source": "NAVER API HUB 검색어 트렌드 (주 단위, 상대 비율)"
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:06 KST",
-    "new": 5,
-    "total": 569,
+    "checked_at": "2026-11-17 10:52 KST",
+    "new": 1,
+    "total": 570,
     "first": "2026-10-26 11:23",
     "pages": 3,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:06 KST",
-    "new_share_reports": 0,
+    "checked_at": "2026-11-17 10:52 KST",
+    "new_share_reports": 1,
     "new_dividend_reports": 0,
-    "new_owner_reports": 0
+    "new_owner_reports": 1
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:06 KST",
-    "rows": 890,
-    "as_of": "2026-11-16",
-    "per": 13.71,
-    "pbr": 2.531
+    "checked_at": "2026-11-17 10:52 KST",
+    "rows": 891,
+    "as_of": "2026-11-17",
+    "per": 13.36,
+    "pbr": 2.485
   }
 }

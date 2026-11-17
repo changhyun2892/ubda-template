@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:07 KST",
+    "checked_at": "2026-11-17 10:53 KST",
     "corp_code": "00171265",
     "reports_total": 19,
     "new_reports": [],
@@ -9,7 +9,7 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:07 KST",
+    "checked_at": "2026-11-17 10:53 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
@@ -22,49 +22,49 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:07 KST",
-    "rows": 943,
-    "last_date": "2026-11-16",
-    "last_close": 10050,
+    "checked_at": "2026-11-17 10:53 KST",
+    "rows": 944,
+    "last_date": "2026-11-17",
+    "last_close": 10240,
     "source": "Yahoo Finance 034230.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:07 KST",
-    "rows": 406,
+    "checked_at": "2026-11-17 10:53 KST",
+    "rows": 408,
     "groups": [
       "파라다이스",
       "롯데관광개발"
     ],
-    "last_period": "2026-11-09",
+    "last_period": "2026-11-16",
     "source": "NAVER API HUB 검색어 트렌드 (주 단위, 상대 비율)"
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:07 KST",
-    "new": 20,
-    "total": 234,
+    "checked_at": "2026-11-17 10:53 KST",
+    "new": 16,
+    "total": 250,
     "first": "2026-10-29 16:26",
     "pages": 3,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:07 KST",
+    "checked_at": "2026-11-17 10:53 KST",
     "spike_days": 31,
     "with_major_disclosure": 20,
-    "news_total": 234,
+    "news_total": 250,
     "disclosures_total": 299,
     "disclosures_new": 0,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:07 KST",
-    "rows": 893,
-    "as_of": "2026-11-16",
-    "per": 11.32,
-    "pbr": 0.497
+    "checked_at": "2026-11-17 10:53 KST",
+    "rows": 894,
+    "as_of": "2026-11-17",
+    "per": 11.54,
+    "pbr": 0.507
   }
 }

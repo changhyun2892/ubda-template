@@ -1,12 +1,10 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:07 KST",
+    "checked_at": "2026-11-17 10:53 KST",
     "corp_code": "00164788",
     "reports_total": 19,
-    "new_reports": [
-      "[첨부추가]분기보고서 (2026.09) (20261116) — 반영 (14/14개 계정 · CFS)"
-    ],
+    "new_reports": [],
     "errors": []
   },
   "business_text": {
@@ -17,57 +15,57 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:07 KST",
-    "rows": 943,
-    "last_date": "2026-11-16",
-    "last_close": 356000,
+    "checked_at": "2026-11-17 10:53 KST",
+    "rows": 944,
+    "last_date": "2026-11-17",
+    "last_close": 352000,
     "source": "Yahoo Finance 012330.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:07 KST",
+    "checked_at": "2026-11-17 10:53 KST",
     "spike_days": 34,
     "with_major_disclosure": 9,
-    "news_total": 219,
+    "news_total": 254,
     "disclosures_total": 599,
-    "disclosures_new": 1,
+    "disclosures_new": 0,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:07 KST",
-    "rows": 609,
+    "checked_at": "2026-11-17 10:53 KST",
+    "rows": 612,
     "groups": [
       "현대모비스",
       "HL만도",
       "한온시스템"
     ],
-    "last_period": "2026-11-09",
+    "last_period": "2026-11-16",
     "source": "NAVER API HUB 검색어 트렌드 (주 단위, 상대 비율)"
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:07 KST",
-    "new": 8,
-    "total": 219,
+    "checked_at": "2026-11-17 10:53 KST",
+    "new": 35,
+    "total": 254,
     "first": "2026-11-03 21:43",
-    "pages": 7,
+    "pages": 9,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:07 KST",
-    "new_share_reports": 1,
+    "checked_at": "2026-11-17 10:53 KST",
+    "new_share_reports": 0,
     "new_dividend_reports": 0,
-    "new_owner_reports": 1
+    "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:07 KST",
-    "rows": 926,
-    "as_of": "2026-11-16",
-    "per": 9.54,
-    "pbr": 0.636
+    "checked_at": "2026-11-17 10:53 KST",
+    "rows": 927,
+    "as_of": "2026-11-17",
+    "per": 9.43,
+    "pbr": 0.629
   }
 }

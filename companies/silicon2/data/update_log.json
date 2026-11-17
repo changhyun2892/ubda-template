@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:07 KST",
+    "checked_at": "2026-11-17 10:53 KST",
     "corp_code": "00982023",
     "reports_total": 18,
     "new_reports": [],
@@ -15,16 +15,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:07 KST",
-    "rows": 943,
-    "last_date": "2026-11-16",
-    "last_close": 23850,
+    "checked_at": "2026-11-17 10:53 KST",
+    "rows": 944,
+    "last_date": "2026-11-17",
+    "last_close": 23450,
     "source": "Yahoo Finance 257720.KQ 일봉 (분할 반영 종가)",
     "index": "^KQ11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:08 KST",
+    "checked_at": "2026-11-17 10:53 KST",
     "spike_days": 40,
     "with_major_disclosure": 13,
     "news_total": 180,
@@ -34,20 +34,20 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:07 KST",
-    "rows": 609,
+    "checked_at": "2026-11-17 10:53 KST",
+    "rows": 612,
     "groups": [
       "실리콘투",
       "아모레퍼시픽",
       "LG생활건강"
     ],
-    "last_period": "2026-11-09",
+    "last_period": "2026-11-16",
     "source": "NAVER API HUB 검색어 트렌드 (주 단위, 상대 비율)"
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:07 KST",
-    "new": 1,
+    "checked_at": "2026-11-17 10:53 KST",
+    "new": 0,
     "total": 180,
     "first": "2026-08-25 00:46",
     "pages": 10,
@@ -55,17 +55,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:07 KST",
+    "checked_at": "2026-11-17 10:53 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:08 KST",
-    "rows": 889,
-    "as_of": "2026-11-16",
-    "per": 10.04,
-    "pbr": 2.397
+    "checked_at": "2026-11-17 10:53 KST",
+    "rows": 890,
+    "as_of": "2026-11-17",
+    "per": 9.87,
+    "pbr": 2.357
   }
 }
