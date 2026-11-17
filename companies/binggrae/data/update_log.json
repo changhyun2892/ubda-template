@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:34 KST",
+    "checked_at": "2026-11-17 12:07 KST",
     "corp_code": "00124726",
     "reports_total": 16,
     "new_reports": [],
@@ -15,16 +15,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:34 KST",
+    "checked_at": "2026-11-17 12:07 KST",
     "rows": 944,
     "last_date": "2026-11-17",
-    "last_close": 79400,
+    "last_close": 79200,
     "source": "Yahoo Finance 005180.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:34 KST",
+    "checked_at": "2026-11-17 12:07 KST",
     "spike_days": 37,
     "with_major_disclosure": 9,
     "news_total": 501,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:34 KST",
+    "checked_at": "2026-11-17 12:07 KST",
     "rows": 609,
     "groups": [
       "빙그레",
@@ -46,8 +46,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:34 KST",
-    "new": 1,
+    "checked_at": "2026-11-17 12:07 KST",
+    "new": 0,
     "total": 501,
     "first": "2026-10-13 10:04",
     "pages": 1,
@@ -55,17 +55,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:34 KST",
+    "checked_at": "2026-11-17 12:07 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:34 KST",
+    "checked_at": "2026-11-17 12:07 KST",
     "rows": 895,
     "as_of": "2026-11-17",
-    "per": 8.05,
-    "pbr": 0.851
+    "per": 8.03,
+    "pbr": 0.848
   }
 }

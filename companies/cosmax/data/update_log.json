@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:31 KST",
+    "checked_at": "2026-11-17 12:04 KST",
     "corp_code": "01009789",
     "reports_total": 19,
     "new_reports": [],
@@ -15,16 +15,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:31 KST",
+    "checked_at": "2026-11-17 12:04 KST",
     "rows": 944,
     "last_date": "2026-11-17",
-    "last_close": 292000,
+    "last_close": 293000,
     "source": "Yahoo Finance 192820.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:31 KST",
+    "checked_at": "2026-11-17 12:04 KST",
     "spike_days": 40,
     "with_major_disclosure": 15,
     "news_total": 516,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:31 KST",
+    "checked_at": "2026-11-17 12:04 KST",
     "rows": 408,
     "groups": [
       "코스맥스",
@@ -45,7 +45,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:31 KST",
+    "checked_at": "2026-11-17 12:04 KST",
     "new": 0,
     "total": 516,
     "first": "2026-10-14 09:16",
@@ -54,17 +54,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:31 KST",
+    "checked_at": "2026-11-17 12:04 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:31 KST",
+    "checked_at": "2026-11-17 12:04 KST",
     "rows": 890,
     "as_of": "2026-11-17",
-    "per": 15.2,
-    "pbr": 5.188
+    "per": 15.26,
+    "pbr": 5.206
   }
 }
