@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:04 KST",
+    "checked_at": "2026-11-17 17:40 KST",
     "corp_code": "01205329",
     "reports_total": 17,
     "new_reports": [],
@@ -15,16 +15,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:04 KST",
+    "checked_at": "2026-11-17 17:40 KST",
     "rows": 944,
     "last_date": "2026-11-17",
-    "last_close": 6860,
+    "last_close": 6840,
     "source": "Yahoo Finance 264900.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:04 KST",
+    "checked_at": "2026-11-17 17:40 KST",
     "spike_days": 20,
     "with_major_disclosure": 1,
     "news_total": 187,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:04 KST",
+    "checked_at": "2026-11-17 17:40 KST",
     "rows": 813,
     "groups": [
       "크라운제과",
@@ -47,7 +47,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:04 KST",
+    "checked_at": "2026-11-17 17:40 KST",
     "new": 0,
     "total": 187,
     "first": "2026-06-30 08:56",
@@ -56,17 +56,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:04 KST",
+    "checked_at": "2026-11-17 17:40 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-17 12:04 KST",
+    "checked_at": "2026-11-17 17:40 KST",
     "rows": 884,
     "as_of": "2026-11-17",
-    "per": 9.42,
-    "pbr": 0.379
+    "per": 9.39,
+    "pbr": 0.378
   }
 }
