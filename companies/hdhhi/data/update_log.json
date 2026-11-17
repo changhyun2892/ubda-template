@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:36 KST",
+    "checked_at": "2026-11-17 21:16 KST",
     "corp_code": "01390344",
     "reports_total": 16,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:36 KST",
+    "checked_at": "2026-11-17 21:16 KST",
     "rows": 944,
     "last_date": "2026-11-17",
     "last_close": 256500,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:36 KST",
+    "checked_at": "2026-11-17 21:17 KST",
     "spike_days": 36,
     "with_major_disclosure": 19,
     "news_total": 226,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:36 KST",
+    "checked_at": "2026-11-17 21:16 KST",
     "rows": 605,
     "groups": [
       "HD현대중공업",
@@ -46,8 +46,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:36 KST",
-    "new": 2,
+    "checked_at": "2026-11-17 21:16 KST",
+    "new": 0,
     "total": 226,
     "first": "2026-11-02 15:02",
     "pages": 10,
@@ -55,14 +55,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:36 KST",
+    "checked_at": "2026-11-17 21:16 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:36 KST",
+    "checked_at": "2026-11-17 21:17 KST",
     "rows": 892,
     "as_of": "2026-11-17",
     "per": 11.03,

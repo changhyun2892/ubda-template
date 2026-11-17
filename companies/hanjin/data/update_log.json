@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:36 KST",
+    "checked_at": "2026-11-17 21:16 KST",
     "corp_code": "00163512",
     "reports_total": 18,
     "new_reports": [],
@@ -9,7 +9,7 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:36 KST",
+    "checked_at": "2026-11-17 21:16 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
@@ -22,7 +22,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:36 KST",
+    "checked_at": "2026-11-17 21:16 KST",
     "rows": 944,
     "last_date": "2026-11-17",
     "last_close": 18010,
@@ -31,7 +31,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:36 KST",
+    "checked_at": "2026-11-17 21:16 KST",
     "rows": 408,
     "groups": [
       "한진",
@@ -42,8 +42,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:36 KST",
-    "new": 2,
+    "checked_at": "2026-11-17 21:16 KST",
+    "new": 0,
     "total": 464,
     "first": "2026-11-05 16:51",
     "pages": 6,
@@ -51,7 +51,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:36 KST",
+    "checked_at": "2026-11-17 21:16 KST",
     "spike_days": 27,
     "with_major_disclosure": 4,
     "news_total": 464,
@@ -61,7 +61,7 @@
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:36 KST",
+    "checked_at": "2026-11-17 21:16 KST",
     "rows": 895,
     "as_of": "2026-11-17",
     "per": null,
