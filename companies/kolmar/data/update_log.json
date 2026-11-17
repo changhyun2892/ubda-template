@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:33 KST",
+    "checked_at": "2026-11-17 12:07 KST",
     "corp_code": "00939331",
     "reports_total": 18,
     "new_reports": [],
@@ -15,16 +15,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:33 KST",
+    "checked_at": "2026-11-17 12:07 KST",
     "rows": 944,
     "last_date": "2026-11-17",
-    "last_close": 111500,
+    "last_close": 111900,
     "source": "Yahoo Finance 161890.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:33 KST",
+    "checked_at": "2026-11-17 12:07 KST",
     "spike_days": 39,
     "with_major_disclosure": 14,
     "news_total": 570,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:33 KST",
+    "checked_at": "2026-11-17 12:07 KST",
     "rows": 408,
     "groups": [
       "한국콜마",
@@ -45,7 +45,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:33 KST",
+    "checked_at": "2026-11-17 12:07 KST",
     "new": 0,
     "total": 570,
     "first": "2026-10-26 11:23",
@@ -54,17 +54,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:33 KST",
+    "checked_at": "2026-11-17 12:07 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:33 KST",
+    "checked_at": "2026-11-17 12:07 KST",
     "rows": 891,
     "as_of": "2026-11-17",
-    "per": 13.59,
-    "pbr": 2.528
+    "per": 13.64,
+    "pbr": 2.537
   }
 }

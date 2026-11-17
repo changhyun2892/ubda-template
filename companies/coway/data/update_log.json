@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:31 KST",
+    "checked_at": "2026-11-17 12:04 KST",
     "corp_code": "00170558",
     "reports_total": 18,
     "new_reports": [],
@@ -9,7 +9,7 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:31 KST",
+    "checked_at": "2026-11-17 12:04 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
@@ -22,16 +22,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:31 KST",
+    "checked_at": "2026-11-17 12:04 KST",
     "rows": 944,
     "last_date": "2026-11-17",
-    "last_close": 105800,
+    "last_close": 105500,
     "source": "Yahoo Finance 021240.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:31 KST",
+    "checked_at": "2026-11-17 12:04 KST",
     "rows": 408,
     "groups": [
       "코웨이",
@@ -42,8 +42,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:31 KST",
-    "new": 1,
+    "checked_at": "2026-11-17 12:04 KST",
+    "new": 0,
     "total": 796,
     "first": "2026-10-27 09:18",
     "pages": 1,
@@ -51,7 +51,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:31 KST",
+    "checked_at": "2026-11-17 12:04 KST",
     "spike_days": 38,
     "with_major_disclosure": 11,
     "news_total": 796,
@@ -61,10 +61,10 @@
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:32 KST",
+    "checked_at": "2026-11-17 12:04 KST",
     "rows": 891,
     "as_of": "2026-11-17",
-    "per": 11.99,
-    "pbr": 2.004
+    "per": 11.95,
+    "pbr": 1.998
   }
 }

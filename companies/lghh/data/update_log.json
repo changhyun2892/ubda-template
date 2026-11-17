@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:33 KST",
+    "checked_at": "2026-11-17 12:07 KST",
     "corp_code": "00356370",
     "reports_total": 16,
     "new_reports": [],
@@ -15,16 +15,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:33 KST",
+    "checked_at": "2026-11-17 12:07 KST",
     "rows": 944,
     "last_date": "2026-11-17",
-    "last_close": 243000,
+    "last_close": 243500,
     "source": "Yahoo Finance 051900.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:33 KST",
+    "checked_at": "2026-11-17 12:07 KST",
     "spike_days": 30,
     "with_major_disclosure": 12,
     "news_total": 442,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:33 KST",
+    "checked_at": "2026-11-17 12:07 KST",
     "rows": 408,
     "groups": [
       "LG생활건강",
@@ -45,8 +45,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:33 KST",
-    "new": 2,
+    "checked_at": "2026-11-17 12:07 KST",
+    "new": 0,
     "total": 442,
     "first": "2026-11-02 14:18",
     "pages": 6,
@@ -54,17 +54,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:33 KST",
+    "checked_at": "2026-11-17 12:07 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:33 KST",
+    "checked_at": "2026-11-17 12:07 KST",
     "rows": 892,
     "as_of": "2026-11-17",
     "per": null,
-    "pbr": 0.739
+    "pbr": 0.741
   }
 }

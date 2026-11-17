@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:32 KST",
+    "checked_at": "2026-11-17 12:05 KST",
     "corp_code": "00163512",
     "reports_total": 18,
     "new_reports": [],
@@ -9,7 +9,7 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:32 KST",
+    "checked_at": "2026-11-17 12:05 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
@@ -22,16 +22,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:32 KST",
+    "checked_at": "2026-11-17 12:05 KST",
     "rows": 944,
     "last_date": "2026-11-17",
-    "last_close": 18280,
+    "last_close": 18340,
     "source": "Yahoo Finance 002320.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:32 KST",
+    "checked_at": "2026-11-17 12:05 KST",
     "rows": 408,
     "groups": [
       "한진",
@@ -42,8 +42,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:32 KST",
-    "new": 5,
+    "checked_at": "2026-11-17 12:05 KST",
+    "new": 0,
     "total": 448,
     "first": "2026-11-05 16:51",
     "pages": 6,
@@ -51,7 +51,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:32 KST",
+    "checked_at": "2026-11-17 12:05 KST",
     "spike_days": 27,
     "with_major_disclosure": 4,
     "news_total": 448,
@@ -61,10 +61,10 @@
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-17 11:32 KST",
+    "checked_at": "2026-11-17 12:05 KST",
     "rows": 895,
     "as_of": "2026-11-17",
     "per": null,
-    "pbr": 0.198
+    "pbr": 0.199
   }
 }
