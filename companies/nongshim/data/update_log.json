@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:08 KST",
+    "checked_at": "2026-11-17 10:54 KST",
     "corp_code": "00108241",
     "reports_total": 16,
     "new_reports": [],
@@ -15,27 +15,27 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:08 KST",
-    "rows": 943,
-    "last_date": "2026-11-16",
-    "last_close": 359000,
+    "checked_at": "2026-11-17 10:54 KST",
+    "rows": 944,
+    "last_date": "2026-11-17",
+    "last_close": 351000,
     "source": "Yahoo Finance 004370.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:08 KST",
+    "checked_at": "2026-11-17 10:54 KST",
     "spike_days": 33,
     "with_major_disclosure": 9,
-    "news_total": 488,
+    "news_total": 530,
     "disclosures_total": 289,
     "disclosures_new": 0,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:08 KST",
-    "rows": 1015,
+    "checked_at": "2026-11-17 10:54 KST",
+    "rows": 1020,
     "groups": [
       "농심",
       "오뚜기",
@@ -43,31 +43,31 @@
       "팔도",
       "오리온"
     ],
-    "last_period": "2026-11-09",
+    "last_period": "2026-11-16",
     "source": "NAVER API HUB 검색어 트렌드 (주 단위, 상대 비율)"
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:08 KST",
-    "new": 99,
-    "total": 488,
+    "checked_at": "2026-11-17 10:54 KST",
+    "new": 42,
+    "total": 530,
     "first": "2026-11-10 16:42",
-    "pages": 4,
+    "pages": 5,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:08 KST",
+    "checked_at": "2026-11-17 10:54 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:08 KST",
-    "rows": 893,
-    "as_of": "2026-11-16",
-    "per": 11.9,
-    "pbr": 0.722
+    "checked_at": "2026-11-17 10:54 KST",
+    "rows": 894,
+    "as_of": "2026-11-17",
+    "per": 11.64,
+    "pbr": 0.705
   }
 }

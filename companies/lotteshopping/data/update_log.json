@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:07 KST",
+    "checked_at": "2026-11-17 10:53 KST",
     "corp_code": "00120526",
     "reports_total": 17,
     "new_reports": [],
@@ -15,16 +15,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:07 KST",
-    "rows": 943,
-    "last_date": "2026-11-16",
-    "last_close": 80500,
+    "checked_at": "2026-11-17 10:53 KST",
+    "rows": 944,
+    "last_date": "2026-11-17",
+    "last_close": 83000,
     "source": "Yahoo Finance 023530.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:07 KST",
+    "checked_at": "2026-11-17 10:54 KST",
     "spike_days": 29,
     "with_major_disclosure": 7,
     "news_total": 258,
@@ -34,21 +34,21 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:07 KST",
-    "rows": 812,
+    "checked_at": "2026-11-17 10:53 KST",
+    "rows": 816,
     "groups": [
       "롯데쇼핑",
       "신세계",
       "현대백화점",
       "이마트"
     ],
-    "last_period": "2026-11-09",
+    "last_period": "2026-11-16",
     "source": "NAVER API HUB 검색어 트렌드 (주 단위, 상대 비율)"
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:07 KST",
-    "new": 8,
+    "checked_at": "2026-11-17 10:53 KST",
+    "new": 0,
     "total": 258,
     "first": "2026-11-01 19:50",
     "pages": 10,
@@ -56,17 +56,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:07 KST",
+    "checked_at": "2026-11-17 10:53 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:07 KST",
-    "rows": 894,
-    "as_of": "2026-11-16",
-    "per": 6.16,
-    "pbr": 0.15
+    "checked_at": "2026-11-17 10:54 KST",
+    "rows": 895,
+    "as_of": "2026-11-17",
+    "per": 6.36,
+    "pbr": 0.154
   }
 }

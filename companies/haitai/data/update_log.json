@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:05 KST",
+    "checked_at": "2026-11-17 10:51 KST",
     "corp_code": "00428321",
     "reports_total": 20,
     "new_reports": [],
@@ -15,16 +15,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:05 KST",
-    "rows": 943,
-    "last_date": "2026-11-16",
-    "last_close": 4650,
+    "checked_at": "2026-11-17 10:51 KST",
+    "rows": 944,
+    "last_date": "2026-11-17",
+    "last_close": 4545,
     "source": "Yahoo Finance 101530.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:05 KST",
+    "checked_at": "2026-11-17 10:51 KST",
     "spike_days": 25,
     "with_major_disclosure": 2,
     "news_total": 468,
@@ -34,21 +34,21 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:05 KST",
-    "rows": 809,
+    "checked_at": "2026-11-17 10:51 KST",
+    "rows": 813,
     "groups": [
       "해태제과",
       "오리온",
       "롯데웰푸드",
       "크라운제과"
     ],
-    "last_period": "2026-11-09",
+    "last_period": "2026-11-16",
     "source": "NAVER API HUB 검색어 트렌드 (주 단위, 상대 비율)"
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:05 KST",
-    "new": 27,
+    "checked_at": "2026-11-17 10:51 KST",
+    "new": 0,
     "total": 468,
     "first": "2026-09-21 08:56",
     "pages": 3,
@@ -56,17 +56,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:05 KST",
+    "checked_at": "2026-11-17 10:51 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:05 KST",
-    "rows": 882,
-    "as_of": "2026-11-16",
-    "per": 6.08,
-    "pbr": 0.391
+    "checked_at": "2026-11-17 10:51 KST",
+    "rows": 883,
+    "as_of": "2026-11-17",
+    "per": 5.95,
+    "pbr": 0.382
   }
 }
