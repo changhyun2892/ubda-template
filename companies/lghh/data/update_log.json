@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-17 17:41 KST",
+    "checked_at": "2026-11-17 19:37 KST",
     "corp_code": "00356370",
     "reports_total": 16,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-17 17:41 KST",
+    "checked_at": "2026-11-17 19:37 KST",
     "rows": 944,
     "last_date": "2026-11-17",
     "last_close": 241000,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-17 17:41 KST",
+    "checked_at": "2026-11-17 19:37 KST",
     "spike_days": 30,
     "with_major_disclosure": 12,
     "news_total": 452,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-17 17:41 KST",
+    "checked_at": "2026-11-17 19:37 KST",
     "rows": 408,
     "groups": [
       "LG생활건강",
@@ -45,8 +45,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-17 17:41 KST",
-    "new": 10,
+    "checked_at": "2026-11-17 19:37 KST",
+    "new": 0,
     "total": 452,
     "first": "2026-11-02 14:18",
     "pages": 6,
@@ -54,14 +54,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-17 17:41 KST",
+    "checked_at": "2026-11-17 19:37 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-17 17:41 KST",
+    "checked_at": "2026-11-17 19:37 KST",
     "rows": 892,
     "as_of": "2026-11-17",
     "per": null,
