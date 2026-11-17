@@ -1,12 +1,10 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:06 KST",
+    "checked_at": "2026-11-17 10:52 KST",
     "corp_code": "01042775",
     "reports_total": 18,
-    "new_reports": [
-      "분기보고서 (2026.09) (20261116) — 반영 (14/14개 계정 · CFS)"
-    ],
+    "new_reports": [],
     "errors": []
   },
   "business_text": {
@@ -17,38 +15,38 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:06 KST",
-    "rows": 943,
-    "last_date": "2026-11-16",
-    "last_close": 33800,
+    "checked_at": "2026-11-17 10:52 KST",
+    "rows": 944,
+    "last_date": "2026-11-17",
+    "last_close": 33300,
     "source": "Yahoo Finance 204320.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:06 KST",
+    "checked_at": "2026-11-17 10:52 KST",
     "spike_days": 37,
     "with_major_disclosure": 6,
     "news_total": 522,
     "disclosures_total": 364,
-    "disclosures_new": 2,
+    "disclosures_new": 0,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:06 KST",
-    "rows": 609,
+    "checked_at": "2026-11-17 10:52 KST",
+    "rows": 612,
     "groups": [
       "HL만도",
       "현대모비스",
       "한온시스템"
     ],
-    "last_period": "2026-11-09",
+    "last_period": "2026-11-16",
     "source": "NAVER API HUB 검색어 트렌드 (주 단위, 상대 비율)"
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:06 KST",
+    "checked_at": "2026-11-17 10:52 KST",
     "new": 0,
     "total": 522,
     "first": "2026-09-16 11:13",
@@ -57,17 +55,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:06 KST",
-    "new_share_reports": 1,
+    "checked_at": "2026-11-17 10:52 KST",
+    "new_share_reports": 0,
     "new_dividend_reports": 0,
-    "new_owner_reports": 1
+    "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:06 KST",
-    "rows": 893,
-    "as_of": "2026-11-16",
-    "per": 20.26,
-    "pbr": 0.58
+    "checked_at": "2026-11-17 10:52 KST",
+    "rows": 894,
+    "as_of": "2026-11-17",
+    "per": 19.96,
+    "pbr": 0.572
   }
 }

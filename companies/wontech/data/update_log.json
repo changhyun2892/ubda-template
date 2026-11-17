@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:09 KST",
+    "checked_at": "2026-11-17 10:56 KST",
     "corp_code": "01407909",
     "reports_total": 24,
     "new_reports": [],
@@ -15,18 +15,18 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:09 KST",
-    "rows": 943,
-    "last_date": "2026-11-16",
-    "last_close": 3340,
+    "checked_at": "2026-11-17 10:56 KST",
+    "rows": 944,
+    "last_date": "2026-11-17",
+    "last_close": 3285,
     "source": "Yahoo Finance 336570.KQ 일봉 (분할 반영 종가)",
     "index": "^KQ11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:09 KST",
+    "checked_at": "2026-11-17 10:56 KST",
     "spike_days": 40,
-    "with_major_disclosure": 11,
+    "with_major_disclosure": 12,
     "news_total": 478,
     "disclosures_total": 273,
     "disclosures_new": 0,
@@ -34,19 +34,19 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:09 KST",
-    "rows": 406,
+    "checked_at": "2026-11-17 10:56 KST",
+    "rows": 408,
     "groups": [
       "원텍",
       "클래시스"
     ],
-    "last_period": "2026-11-09",
+    "last_period": "2026-11-16",
     "source": "NAVER API HUB 검색어 트렌드 (주 단위, 상대 비율)"
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:09 KST",
-    "new": 5,
+    "checked_at": "2026-11-17 10:56 KST",
+    "new": 0,
     "total": 478,
     "first": "2026-01-26 15:26",
     "pages": 3,
@@ -54,17 +54,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:09 KST",
+    "checked_at": "2026-11-17 10:56 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:09 KST",
-    "rows": 893,
-    "as_of": "2026-11-16",
-    "per": 10.05,
-    "pbr": 1.786
+    "checked_at": "2026-11-17 10:56 KST",
+    "rows": 894,
+    "as_of": "2026-11-17",
+    "per": 9.88,
+    "pbr": 1.757
   }
 }

@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:08 KST",
+    "checked_at": "2026-11-17 10:54 KST",
     "corp_code": "00266961",
     "reports_total": 16,
     "new_reports": [],
@@ -15,16 +15,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:08 KST",
-    "rows": 943,
-    "last_date": "2026-11-16",
-    "last_close": 172900,
+    "checked_at": "2026-11-17 10:54 KST",
+    "rows": 944,
+    "last_date": "2026-11-17",
+    "last_close": 171400,
     "source": "Yahoo Finance 035420.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:08 KST",
+    "checked_at": "2026-11-17 10:54 KST",
     "spike_days": 35,
     "with_major_disclosure": 8,
     "news_total": 23,
@@ -34,19 +34,19 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:08 KST",
-    "rows": 406,
+    "checked_at": "2026-11-17 10:54 KST",
+    "rows": 408,
     "groups": [
       "NAVER",
       "카카오"
     ],
-    "last_period": "2026-11-09",
+    "last_period": "2026-11-16",
     "source": "NAVER API HUB 검색어 트렌드 (주 단위, 상대 비율)"
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:08 KST",
-    "new": 2,
+    "checked_at": "2026-11-17 10:54 KST",
+    "new": 0,
     "total": 23,
     "first": "2026-11-10 14:12",
     "pages": 10,
@@ -54,17 +54,17 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:08 KST",
+    "checked_at": "2026-11-17 10:54 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-16 19:08 KST",
-    "rows": 895,
-    "as_of": "2026-11-16",
-    "per": 15.27,
-    "pbr": 0.94
+    "checked_at": "2026-11-17 10:54 KST",
+    "rows": 896,
+    "as_of": "2026-11-17",
+    "per": 15.13,
+    "pbr": 0.932
   }
 }
