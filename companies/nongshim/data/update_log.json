@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:37 KST",
+    "checked_at": "2026-11-17 21:16 KST",
     "corp_code": "00108241",
     "reports_total": 16,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:37 KST",
+    "checked_at": "2026-11-17 21:16 KST",
     "rows": 944,
     "last_date": "2026-11-17",
     "last_close": 347000,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:37 KST",
+    "checked_at": "2026-11-17 21:17 KST",
     "spike_days": 33,
     "with_major_disclosure": 9,
     "news_total": 582,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:37 KST",
+    "checked_at": "2026-11-17 21:16 KST",
     "rows": 1020,
     "groups": [
       "농심",
@@ -48,8 +48,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:37 KST",
-    "new": 7,
+    "checked_at": "2026-11-17 21:16 KST",
+    "new": 0,
     "total": 582,
     "first": "2026-11-10 16:42",
     "pages": 2,
@@ -57,14 +57,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:37 KST",
+    "checked_at": "2026-11-17 21:16 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:37 KST",
+    "checked_at": "2026-11-17 21:17 KST",
     "rows": 894,
     "as_of": "2026-11-17",
     "per": 11.51,
