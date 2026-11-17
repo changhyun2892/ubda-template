@@ -233,6 +233,7 @@ const PAGES = [
   ['stock', '주가', '주가와 시장지수, 급변일과 같은 시기 공시'],
   ['timeline', '사건 연표', 'DART 주요 공시를 시간순으로 · 주가 급변일과 같은 시기 표시 · 자동 수집'],
   ['news', '관련 보도', '네이버 뉴스에서 찾은 이 회사 기사 · 주가 급변일과 같은 날 표시 · 확인 전'],
+  ['debate', '기업 토론', '매달 1회 · 5명의 고문이 이 대시보드 데이터만으로 토론 · AI 생성 의견 · 투자 추천 아님'],
   ['production', '생산', '생산능력·가동률·생산 실적과 설비투자 · 사업보고서 공시 범위만'],
   ['industry', '산업 KPI', '산업별로 추가 확인할 지표의 확보 현황'],
   ['dart', 'DART 자동 업데이트', '정기보고서를 평일마다 확인해 자동 반영 · 원문 대조 전 값은 따로 표시'],
@@ -972,8 +973,83 @@ function enableEdit() {
   });
 }
 
-const DRAW = { industry: drawIndustry, screen: drawScreen, compare: drawCompare, overview: drawOverview, pl: drawPL, quarterly: drawQuarterly, bs: drawBS, stock: drawStock, news: drawNews, timeline: drawTimeline, production: drawProduction };
-const RENDER = { screen: pageScreen, compare: pageCompare, dart: pageDart, overview: pageOverview, pl: pagePL, quarterly: pageQuarterly, ratios: pageRatios, bs: pageBS, stock: pageStock, news: pageNews, timeline: pageTimeline, production: pageProduction, industry: pageIndustry, audit: pageAudit };
+
+/* ---------- 기업 토론 (매달 1회 · AI 평의회 · 말풍선) ---------- */
+let DEB = null, DEB_CAST = { cast: {}, chair: {} }; const DEB_PLAYED = new Set(); let debTimer = 0;
+async function loadDebate(month) {
+  if (!DEB) {
+    let idx = { months: [] };
+    try { const r = await fetch('companies/debate_index.json', { cache: 'no-cache' }); if (r.ok) idx = { months: (await r.json())[SLUG] || [] }; } catch (e) { /* 아직 없음 */ }
+    try { DEB_CAST = await (await fetch('assets/debate-cast.json', { cache: 'no-cache' })).json(); } catch (e) { /* 기본값 */ }
+    DEB = { months: idx.months || [], cur: null, data: {} };
+  }
+  const m = month || DEB.cur || DEB.months[0] || null;
+  if (m && DEB.data[m] === undefined) {
+    try { const r = await fetch(`companies/${SLUG}/data/debate/${m}.json`, { cache: 'no-cache' }); DEB.data[m] = r.ok ? await r.json() : false; } catch (e) { DEB.data[m] = false; }
+  }
+  DEB.cur = m;
+}
+const debWho = (role) => DEB_CAST.cast?.[role] || { name: role, emoji: '💬', color: '#888' };
+const debAvatar = (c, cls = '') => `<div class="deb-av ${cls}" style="--c:${esc(c.color || '#888')}">${c.img ? `<img src="${esc(c.img)}" alt="">` : `<span aria-hidden="true">${esc(c.emoji || '💬')}</span>`}</div>`;
+const debText = (t) => esc(t || '').replace(/추정:/g, '<em class="deb-est">추정:</em>').replace(/(미확인|미공개)/g, '<span class="deb-na">$1</span>');
+const ymLabel = (m) => `${m.slice(0, 4)}년 ${+m.slice(5)}월`;
+function pageDebate() {
+  if (!DEB || (DEB.cur && DEB.data[DEB.cur] === undefined)) { loadDebate().then(() => S.page === 'debate' && render()); return '<div class="empty loading">토론을 불러오는 중…</div>'; }
+  const castNote = DEB_CAST.temporary ? '<span class="deb-tmp">임시 캐릭터</span>' : '';
+  const roster = Object.entries(DEB_CAST.cast || {}).map(([role, c]) => `<div class="deb-ro">${debAvatar(c, 'sm')}<div><b>${esc(c.name)}</b><small>${esc(role)} · ${esc(c.tagline || '')}</small></div></div>`).join('');
+  const head = `<div class="card deb-head"><div class="deb-roster">${roster}</div><p class="note">매달 1일, 이 대시보드의 데이터(재무·밸류에이션·종합 진단·공시·보도·KPI)만 근거로 5명의 고문이 토론합니다. AI가 생성한 의견이며 투자 추천이 아닙니다. ${castNote}</p></div>`;
+  if (!DEB.months.length) return head + `<div class="empty"><b>아직 열린 토론이 없습니다</b>토론은 매달 1일 자동으로 열립니다 (GitHub Actions '기업 토론' · ANTHROPIC_API_KEY 필요).</div>`;
+  const d = DEB.data[DEB.cur];
+  const tabs = `<div class="seg deb-months">${DEB.months.map((m) => `<button data-act="deb:m:${m}" aria-pressed="${m === DEB.cur}">${ymLabel(m)}</button>`).join('')}</div>`;
+  if (!d) return head + tabs + `<div class="empty"><b>${ymLabel(DEB.cur)} 토론 파일을 읽지 못했습니다</b></div>`;
+  const play = !DEB_PLAYED.has(DEB.cur) && !REDUCED();
+  const hide = play ? ' deb-hide' : '';
+  const roles = d.advisors.map((a) => a.role);
+  const bubbles = d.advisors.map((a, i) => {
+    const c = debWho(a.role), side = i % 2 ? 'r' : 'l';
+    const rep = a.reply_to ? `<span class="deb-rep ${a.stance === '동의' ? 'ag' : a.stance === '반박' ? 'dis' : ''}">↩ ${esc(debWho(a.reply_to).name)}에게 ${esc(a.stance && a.stance !== '없음' ? a.stance : '응답')}</span>` : '';
+    const src = (a.sources || []).map((x) => `<span class="deb-src">${esc(x)}</span>`).join('');
+    return `<div class="deb-row ${side}${hide}" data-i="${i}">${debAvatar(c)}<div class="deb-body"><div class="deb-name" style="color:${esc(c.color)}">${esc(c.name)} <small>${esc(a.role)}</small></div>
+      <div class="deb-bub" style="--c:${esc(c.color)}">${rep}<p>${debText(a.text)}</p>${src ? `<div class="deb-srcs">${src}</div>` : ''}</div></div></div>`;
+  }).join('');
+  const ch = DEB_CAST.chair || { name: '의장', emoji: '⚖️' };
+  const conf = Math.max(0, Math.min(100, +d.confidence || 0));
+  const dropped = (d.dropped || []).map((x) => `<li><b>${esc(debWho(x.role).name)}</b> (${esc(x.role)}) — ${debText(x.reason)}</li>`).join('');
+  const check = (d.to_check || []).map((x) => `<li>${debText(x)}</li>`).join('');
+  const verdict = `<div class="deb-row c${hide}" data-i="${roles.length}">${debAvatar(ch)}<div class="deb-body"><div class="deb-name">${esc(ch.name)} <small>최종 결론</small></div>
+    <div class="deb-bub deb-final"><p class="deb-concl">${debText(d.conclusion)}</p>
+      <div class="deb-conf"><span>확신도</span><div class="deb-meter"><i style="width:${conf}%"></i></div><b>${conf}%</b></div>
+      <p class="deb-basis">근거: ${debText(d.confidence_basis)}</p>
+      ${dropped ? `<h4>버린 주장</h4><ul>${dropped}</ul>` : ''}${check ? `<h4>다음에 확인할 것</h4><ul>${check}</ul>` : ''}
+      <p class="deb-disc">${esc(d.disclaimer || '수업용 경영분석이며 투자 추천이 아닙니다.')}</p></div></div></div>`;
+  const m = d.meta || {};
+  const tools = `<div class="deb-tools">${play ? '<button class="tb-btn" data-act="deb:skip">전체 보기</button>' : '<button class="tb-btn" data-act="deb:replay">다시 재생</button>'}</div>`;
+  return head + `<div class="deb-bar">${tabs}${tools}</div>
+    <div class="card deb-stage"><div class="deb-topic"><small>${ymLabel(DEB.cur)} 토론 주제</small><h3>${esc(d.topic)}</h3></div>
+      <div class="deb-chat" id="debChat">${bubbles}${verdict}<div class="deb-typing" id="debTyping" hidden><span></span><span></span><span></span></div></div>
+      <p class="note deb-meta">생성 ${esc(m.generated_at || '-')} · ${esc(m.model || '')} · 데이터 기준: 재무 ${esc((m.data_years || []).slice(-1)[0] || '-')}, 분기 ${esc(m.latest_quarter || '-')}, 주가 ${esc(m.stock_asof || '-')} · ${esc(m.check || '')}</p></div>`;
+}
+function drawDebate() {
+  clearTimeout(debTimer);
+  const chat = $('#debChat'); if (!chat || !DEB?.cur) return;
+  const rows = [...chat.querySelectorAll('.deb-row.deb-hide')]; if (!rows.length) return;
+  const typing = $('#debTyping'), month = DEB.cur; let k = 0;
+  const step = () => {
+    if (S.page !== 'debate' || DEB.cur !== month || !document.body.contains(chat)) return;
+    if (k >= rows.length) { typing.hidden = true; DEB_PLAYED.add(month); const t = chat.closest('.deb-stage')?.parentElement.querySelector('[data-act="deb:skip"]'); if (t) { t.dataset.act = 'deb:replay'; t.textContent = '다시 재생'; } return; }
+    const r = rows[k]; r.after(typing); typing.className = 'deb-typing ' + (r.classList.contains('r') ? 'r' : r.classList.contains('c') ? 'c' : 'l'); typing.hidden = false;
+    debTimer = setTimeout(() => {
+      typing.hidden = true; r.classList.remove('deb-hide'); r.classList.add('deb-in');
+      r.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      const len = (r.querySelector('.deb-bub p')?.textContent || '').length;
+      k++; debTimer = setTimeout(step, Math.min(2600, 700 + len * 12));
+    }, 900);
+  };
+  debTimer = setTimeout(step, 400);
+}
+
+const DRAW = { debate: drawDebate, industry: drawIndustry, screen: drawScreen, compare: drawCompare, overview: drawOverview, pl: drawPL, quarterly: drawQuarterly, bs: drawBS, stock: drawStock, news: drawNews, timeline: drawTimeline, production: drawProduction };
+const RENDER = { debate: pageDebate, screen: pageScreen, compare: pageCompare, dart: pageDart, overview: pageOverview, pl: pagePL, quarterly: pageQuarterly, ratios: pageRatios, bs: pageBS, stock: pageStock, news: pageNews, timeline: pageTimeline, production: pageProduction, industry: pageIndustry, audit: pageAudit };
 
 let LAST_PAGE = null;
 const REDUCED = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -1064,6 +1140,11 @@ function onClick(e) {
   else if (t.dataset.act) {
     const [k, a, b] = t.dataset.act.split(':');
     if (k === 'fin') showFin(+a, b); else if (k === 'met') showMetric(+a, b); else if (k === 'cmp') showCmp(+a, b); else if (k === 'kpi') showKpi(a, +b); else if (k === 'ev') showEvent(a); else if (k === 'dg') showDiag(a); else if (k === 'pt' && a === 'lev') showLev(S.year); else if (k === 'val') showValuation(a); else if (k === 'valm') { S.valMode = a; drawVal(); document.querySelectorAll('[data-act^="valm:"]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.act === 'valm:' + a))); } else if (k === 'tlc') { const c = new Set(S.tlCats || TL_DEFAULT); c.has(a) ? c.delete(a) : c.add(a); S.tlCats = [...c]; S.tlAll = false; render(); }
+    else if (k === 'deb') {
+      if (a === 'm') { loadDebate(b).then(() => render()); }
+      else if (a === 'skip') { DEB_PLAYED.add(DEB.cur); clearTimeout(debTimer); render(); }
+      else if (a === 'replay') { DEB_PLAYED.delete(DEB.cur); render(); }
+    }
     else if (k === 'tly') { S.tlYear = a; S.tlAll = false; render(); }
     else if (k === 'tlall') { S.tlAll = true; $('#tlList').innerHTML = tlList(); }
     else if (k === 'newsall') { S.newsAll = true; $('#newsList').innerHTML = newsList(); }

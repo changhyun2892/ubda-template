@@ -1,0 +1,12 @@
+{
+ "_설명": "기업 토론 탭의 발화자(캐릭터) 설정. 지금은 임시 캐릭터입니다. 캐릭터 그림이 생기면 img 에 경로(예: assets/cast/bear.png)를 넣으면 이모지 대신 그림이 나옵니다. 키(약세론자 등)는 프롬프트의 고문 이름과 같아야 합니다.",
+ "temporary": true,
+ "cast": {
+  "약세론자": { "name": "곰 고문", "emoji": "🐻", "color": "#E0574F", "img": null, "tagline": "낙관론의 약한 고리를 공격" },
+  "본질 분석가": { "name": "현미경 고문", "emoji": "🔬", "color": "#2F80D8", "img": null, "tagline": "이익이 어디서 나오는지" },
+  "기회 탐색가": { "name": "망원경 고문", "emoji": "🔭", "color": "#2BAA6E", "img": null, "tagline": "놓친 기회와 변화 신호" },
+  "외부자": { "name": "행인 고문", "emoji": "🚶", "color": "#9B6BD3", "img": null, "tagline": "모르는 사람 눈에 보이는 것" },
+  "점검 담당": { "name": "체크 고문", "emoji": "📋", "color": "#D9902B", "img": null, "tagline": "다음에 확인할 것" }
+ },
+ "chair": { "name": "의장", "emoji": "⚖️", "color": "#444", "img": null }
+}

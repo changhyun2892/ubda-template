@@ -30,6 +30,7 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: python tests/test_pipeline.py
+      - run: python tests/test_debate.py
 
   update:
     # 기업을 4묶음으로 나눠 동시에 실행 (DART 응답이 느린 날 기업 수가 많아도 시간 안에 끝나도록)

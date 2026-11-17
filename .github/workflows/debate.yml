@@ -1,0 +1,57 @@
+# 기업 토론: 매달 1일, 기업마다 5명의 고문(AI)이 대시보드 데이터만으로 토론한 결과를 만들어 커밋합니다.
+#  - 프롬프트: prompts/debate_council.md  (고치면 다음 달부터 반영, 바로 보려면 Run workflow → force)
+#  - 결과: companies/<기업>/data/debate/<YYYY-MM>.json  → 대시보드 '기업 토론' 탭
+#  - 필요한 Secret: ANTHROPIC_API_KEY (없으면 아무것도 만들지 않고 끝납니다)
+#  - 발언 속 숫자가 데이터에 없는 값이면 한 번 다시 요청하고, 그래도 틀리면 그 기업은 저장하지 않습니다.
+name: 기업 토론
+
+on:
+  schedule:
+    - cron: "10 2 1 * *"   # 매달 1일 11:10 (KST)
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "일부 기업만 (쉼표로 구분, 예: samyang,kbfg) — 비우면 전체"
+        required: false
+        default: ""
+      force:
+        description: "이번 달 토론이 있어도 다시 만들기"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: debate
+  cancel-in-progress: false
+
+jobs:
+  debate:
+    name: 토론 생성 → 검사 → 커밋
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: 토론 생성기 테스트 (가짜 API)
+        run: python tests/test_debate.py
+      - name: 기업별 토론 생성
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          ARGS=""
+          if [ -n "${{ github.event.inputs.only }}" ]; then ARGS="$ARGS --only ${{ github.event.inputs.only }}"; fi
+          if [ "${{ github.event.inputs.force }}" = "true" ]; then ARGS="$ARGS --force"; fi
+          python scripts/build_debate.py $ARGS
+      - name: 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for f in companies/debate_index.json companies/debate_log.json companies/*/data/debate; do git add "$f" 2>/dev/null || true; done
+          if git diff --cached --quiet; then echo "변경 없음"; else
+            git commit -m "기업 토론 $(TZ=Asia/Seoul date '+%Y-%m')"
+            for i in 1 2 3 4 5; do git pull --rebase -X theirs origin main && git push && break; sleep $((i * 7)); done
+          fi

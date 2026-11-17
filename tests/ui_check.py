@@ -24,7 +24,7 @@ from playwright.sync_api import sync_playwright
 
 ROOT = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(__file__).resolve().parent.parent
 SHOTS = Path(sys.argv[2]) if len(sys.argv) > 2 else None
-PAGES = ["overview", "compare", "pl", "quarterly", "ratios", "bs", "stock", "timeline", "news", "production", "industry", "dart", "audit", "screen"]
+PAGES = ["overview", "compare", "pl", "quarterly", "ratios", "bs", "stock", "timeline", "news", "debate", "production", "industry", "dart", "audit", "screen"]
 fails: list[str] = []
 
 
@@ -275,6 +275,28 @@ def main() -> int:
                     ok(f"{label} 빈 상태 안내 표시", "아직 재무 데이터가 없습니다" in pg.inner_text("#workspace"))
                 ok(f"{label} 자바스크립트 오류 없음", not errs, "; ".join(errs[:3]))
                 pg.close()
+        # 기업 토론 탭: 테스트 픽스처(가짜 토론)를 가로채 넣어 말풍선 재생·결론 표시를 확인 (사이트 데이터는 건드리지 않음)
+        fx = (ROOT / "tests/fixtures/debate_sample.json").read_text(encoding="utf-8")
+        tslug = next((x for x in slugs if (not only or x in only) and (ROOT / "companies" / x / "data" / "financials.csv").exists()), None)
+        if tslug:
+            print(f"\n[기업 토론 탭 · {tslug} · 테스트 픽스처]")
+            pg = b.new_page(viewport={"width": 1366, "height": 860})
+            errs = []
+            pg.on("pageerror", lambda e: errs.append(str(e)))
+            pg.route("**/companies/debate_index.json", lambda r: r.fulfill(status=200, content_type="application/json", body=json.dumps({tslug: ["2026-11"]})))
+            pg.route(f"**/companies/{tslug}/data/debate/2026-11.json", lambda r: r.fulfill(status=200, content_type="application/json", body=fx))
+            pg.goto(root + f"dashboard.html?c={tslug}#debate")
+            pg.wait_for_timeout(1500)
+            first = pg.evaluate("document.querySelectorAll('.deb-row:not(.deb-hide)').length")
+            ok("토론: 말풍선이 하나씩 나타남", 0 < first < 6, f"처음 {first}개")
+            pg.click('[data-act="deb:skip"]')
+            pg.wait_for_timeout(300)
+            ok("토론: 전체 보기 → 고문 5명 + 결론", pg.locator(".deb-row").count() == 6 and pg.locator(".deb-row.deb-hide").count() == 0)
+            ok("토론: 확신도·답글 표시", "62%" in pg.inner_text(".deb-conf") and pg.locator(".deb-rep").count() == 4)
+            if SHOTS:
+                pg.screenshot(path=str(SHOTS / f"{tslug}_debate.png"), full_page=True)
+            ok("토론: 자바스크립트 오류 없음", not errs, "; ".join(errs[:3]))
+            pg.close()
         b.close()
     srv.shutdown()
     print(f"\n결과: 실패 {len(fails)}건")
