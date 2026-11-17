@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:36 KST",
+    "checked_at": "2026-11-17 21:15 KST",
     "corp_code": "00111704",
     "reports_total": 21,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:36 KST",
+    "checked_at": "2026-11-17 21:15 KST",
     "rows": 944,
     "last_date": "2026-11-17",
     "last_close": 44850,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:36 KST",
+    "checked_at": "2026-11-17 21:15 KST",
     "spike_days": 40,
     "with_major_disclosure": 16,
     "news_total": 295,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:36 KST",
+    "checked_at": "2026-11-17 21:15 KST",
     "rows": 605,
     "groups": [
       "한화오션",
@@ -46,23 +46,23 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:36 KST",
-    "new": 1,
+    "checked_at": "2026-11-17 21:15 KST",
+    "new": 0,
     "total": 295,
     "first": "2026-11-03 15:29",
-    "pages": 10,
+    "pages": 9,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:36 KST",
+    "checked_at": "2026-11-17 21:15 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-17 19:36 KST",
+    "checked_at": "2026-11-17 21:16 KST",
     "rows": 897,
     "as_of": "2026-11-17",
     "per": 7.05,
