@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:43 KST",
+    "checked_at": "2026-11-19 01:11 KST",
     "corp_code": "00456218",
     "reports_total": 17,
     "new_reports": [],
@@ -9,7 +9,7 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:43 KST",
+    "checked_at": "2026-11-19 01:11 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
@@ -22,7 +22,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:43 KST",
+    "checked_at": "2026-11-19 01:11 KST",
     "rows": 944,
     "last_date": "2026-11-17",
     "last_close": 9980,
@@ -31,7 +31,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:43 KST",
+    "checked_at": "2026-11-19 01:11 KST",
     "rows": 408,
     "groups": [
       "모두투어",
@@ -42,7 +42,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:43 KST",
+    "checked_at": "2026-11-19 01:11 KST",
     "new": 0,
     "total": 424,
     "first": "2026-08-07 14:32",
@@ -51,7 +51,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:43 KST",
+    "checked_at": "2026-11-19 01:11 KST",
     "spike_days": 20,
     "with_major_disclosure": 1,
     "news_total": 424,
@@ -61,17 +61,17 @@
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:43 KST",
+    "checked_at": "2026-11-19 01:11 KST",
     "rows": 889,
     "as_of": "2026-11-17",
     "per": 47.06,
     "pbr": 1.957
   },
   "fincheck": {
-    "status": "일부",
-    "checked_at": "2026-11-19 00:43 KST",
-    "matched": 22,
+    "status": "성공",
+    "checked_at": "2026-11-19 01:11 KST",
+    "matched": 52,
     "total": 52,
-    "message": "2023: 다음 실행으로 미룸(한 번에 2개); 2022: 다음 실행으로 미룸(한 번에 2개)"
+    "message": ""
   }
 }

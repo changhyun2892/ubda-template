@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:43 KST",
+    "checked_at": "2026-11-19 01:11 KST",
     "corp_code": "00108241",
     "reports_total": 16,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:43 KST",
+    "checked_at": "2026-11-19 01:11 KST",
     "rows": 944,
     "last_date": "2026-11-17",
     "last_close": 347000,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:43 KST",
+    "checked_at": "2026-11-19 01:11 KST",
     "spike_days": 33,
     "with_major_disclosure": 9,
     "news_total": 677,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:43 KST",
+    "checked_at": "2026-11-19 01:11 KST",
     "rows": 1020,
     "groups": [
       "농심",
@@ -48,7 +48,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:43 KST",
+    "checked_at": "2026-11-19 01:11 KST",
     "new": 0,
     "total": 677,
     "first": "2026-11-10 16:42",
@@ -57,24 +57,24 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:43 KST",
+    "checked_at": "2026-11-19 01:11 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:43 KST",
+    "checked_at": "2026-11-19 01:11 KST",
     "rows": 894,
     "as_of": "2026-11-17",
     "per": 11.51,
     "pbr": 0.697
   },
   "fincheck": {
-    "status": "일부",
-    "checked_at": "2026-11-19 00:43 KST",
-    "matched": 28,
+    "status": "성공",
+    "checked_at": "2026-11-19 01:11 KST",
+    "matched": 56,
     "total": 56,
-    "message": "2023: 다음 실행으로 미룸(한 번에 2개); 2022: 다음 실행으로 미룸(한 번에 2개)"
+    "message": ""
   }
 }

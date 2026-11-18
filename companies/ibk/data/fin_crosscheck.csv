@@ -1,46 +1,46 @@
 audit_id,year,metric,value,fs_div,sj_div,rcept_no,result,found_in,unit,note
-F-2023-credit_loss,2023,credit_loss,2076147000000,CFS,CIS,20240430000630,,,,원문 재무제표를 아직 받지 못함
-F-2023-deposits,2023,deposits,154044994000000,CFS,BS,20240430000630,,,,원문 재무제표를 아직 받지 못함
-F-2023-general_admin,2023,general_admin,2685598000000,CFS,CIS,20240430000630,,,,원문 재무제표를 아직 받지 못함
-F-2023-interest_expense,2023,interest_expense,10437491000000,CFS,CIS,20240430000630,,,,원문 재무제표를 아직 받지 못함
-F-2023-interest_income,2023,interest_income,18364055000000,CFS,CIS,20240430000630,,,,원문 재무제표를 아직 받지 못함
-F-2023-loans,2023,loans,315882890000000,CFS,BS,20240430000630,,,,원문 재무제표를 아직 받지 못함
-F-2023-net_fee_income,2023,net_fee_income,476972000000,CFS,CIS,20240430000630,,,,원문 재무제표를 아직 받지 못함
-F-2023-net_income,2023,net_income,2675188000000,CFS,CIS,20240430000630,,,,원문 재무제표를 아직 받지 못함
-F-2023-net_income_owners,2023,net_income_owners,2669685000000,CFS,CIS,20240430000630,,,,원문 재무제표를 아직 받지 못함
-F-2023-net_interest_income,2023,net_interest_income,7926564000000,CFS,CIS,20240430000630,,,,원문 재무제표를 아직 받지 못함
-F-2023-operating_cashflow,2023,operating_cashflow,-2319950000000,CFS,CF,20240430000630,,,,원문 재무제표를 아직 받지 못함
-F-2023-operating_profit,2023,operating_profit,3432281000000,CFS,CIS,20240430000630,,,,원문 재무제표를 아직 받지 못함
-F-2023-total_assets,2023,total_assets,448427279000000,CFS,BS,20240430000630,,,,원문 재무제표를 아직 받지 못함
-F-2023-total_equity,2023,total_equity,31816761000000,CFS,BS,20240430000630,,,,원문 재무제표를 아직 받지 못함
-F-2023-total_liabilities,2023,total_liabilities,416610518000000,CFS,BS,20240430000630,,,,원문 재무제표를 아직 받지 못함
-F-2024-credit_loss,2024,credit_loss,1720064000000,CFS,CIS,20250318001325,원문 자동 대조 일치,기타포괄손익금융자산 관련 순손익,백만원,
-F-2024-deposits,2024,deposits,158255737000000,CFS,BS,20250318001325,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
-F-2024-general_admin,2024,general_admin,2813350000000,CFS,CIS,20250318001325,원문 자동 대조 일치,기타포괄손익금융자산 관련 순손익,백만원,
-F-2024-interest_expense,2024,interest_expense,11062971000000,CFS,CIS,20250318001325,원문 자동 대조 일치,기타포괄손익과 상각후원가금융자산 이자수익,백만원,
+F-2023-credit_loss,2023,credit_loss,2076147000000,CFS,CIS,20240430000630,원문 자동 대조 일치,연결 포괄손익계산서,백만원,
+F-2023-deposits,2023,deposits,154044994000000,CFS,BS,20240430000630,원문 자동 대조 일치,연결 재무상태표,백만원,
+F-2023-general_admin,2023,general_admin,2685598000000,CFS,CIS,20240430000630,원문 자동 대조 일치,연결 포괄손익계산서,백만원,
+F-2023-interest_expense,2023,interest_expense,10437491000000,CFS,CIS,20240430000630,원문 자동 대조 일치,연결 포괄손익계산서,백만원,
+F-2023-interest_income,2023,interest_income,18364055000000,CFS,CIS,20240430000630,원문 자동 대조 일치,연결 포괄손익계산서,백만원,
+F-2023-loans,2023,loans,315882890000000,CFS,BS,20240430000630,원문 자동 대조 일치,연결 재무상태표,백만원,
+F-2023-net_fee_income,2023,net_fee_income,476972000000,CFS,CIS,20240430000630,원문 자동 대조 일치,연결 포괄손익계산서,백만원,
+F-2023-net_income,2023,net_income,2675188000000,CFS,CIS,20240430000630,원문 자동 대조 일치,연결 포괄손익계산서,백만원,
+F-2023-net_income_owners,2023,net_income_owners,2669685000000,CFS,CIS,20240430000630,원문 자동 대조 일치,연결 포괄손익계산서,백만원,
+F-2023-net_interest_income,2023,net_interest_income,7926564000000,CFS,CIS,20240430000630,원문 자동 대조 일치,연결 포괄손익계산서,백만원,
+F-2023-operating_cashflow,2023,operating_cashflow,-2319950000000,CFS,CF,20240430000630,원문 자동 대조 일치,연결 현금흐름표,백만원,
+F-2023-operating_profit,2023,operating_profit,3432281000000,CFS,CIS,20240430000630,원문 자동 대조 일치,연결 포괄손익계산서,백만원,
+F-2023-total_assets,2023,total_assets,448427279000000,CFS,BS,20240430000630,원문 자동 대조 일치,연결 재무상태표,백만원,
+F-2023-total_equity,2023,total_equity,31816761000000,CFS,BS,20240430000630,원문 자동 대조 일치,연결 재무상태표,백만원,
+F-2023-total_liabilities,2023,total_liabilities,416610518000000,CFS,BS,20240430000630,원문 자동 대조 일치,연결 재무상태표,백만원,
+F-2024-credit_loss,2024,credit_loss,1720064000000,CFS,CIS,20250318001325,원문 자동 대조 일치,연결 포괄손익계산서,백만원,
+F-2024-deposits,2024,deposits,158255737000000,CFS,BS,20250318001325,원문 자동 대조 일치,연결 재무상태표,백만원,
+F-2024-general_admin,2024,general_admin,2813350000000,CFS,CIS,20250318001325,원문 자동 대조 일치,연결 포괄손익계산서,백만원,
+F-2024-interest_expense,2024,interest_expense,11062971000000,CFS,CIS,20250318001325,원문 자동 대조 일치,연결 포괄손익계산서,백만원,
 F-2024-interest_income,2024,interest_income,18954860000000,CFS,CIS,20250318001325,원문 자동 대조 일치,연결 포괄손익계산서,백만원,
-F-2024-loans,2024,loans,343900399000000,CFS,BS,20250318001325,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
-F-2024-net_fee_income,2024,net_fee_income,472055000000,CFS,CIS,20250318001325,원문 자동 대조 일치,기타포괄손익과 상각후원가금융자산 이자수익,백만원,
-F-2024-net_income,2024,net_income,2654338000000,CFS,CIS,20250318001325,원문 자동 대조 일치,기타포괄손익금융자산 관련 순손익,백만원,
-F-2024-net_income_owners,2024,net_income_owners,2644524000000,CFS,CIS,20250318001325,원문 자동 대조 일치,포괄손익,백만원,
+F-2024-loans,2024,loans,343900399000000,CFS,BS,20250318001325,원문 자동 대조 일치,연결 재무상태표,백만원,
+F-2024-net_fee_income,2024,net_fee_income,472055000000,CFS,CIS,20250318001325,원문 자동 대조 일치,연결 포괄손익계산서,백만원,
+F-2024-net_income,2024,net_income,2654338000000,CFS,CIS,20250318001325,원문 자동 대조 일치,연결 포괄손익계산서,백만원,
+F-2024-net_income_owners,2024,net_income_owners,2644524000000,CFS,CIS,20250318001325,원문 자동 대조 일치,연결 포괄손익계산서,백만원,
 F-2024-net_interest_income,2024,net_interest_income,7891889000000,CFS,CIS,20250318001325,원문 자동 대조 일치,연결 포괄손익계산서,백만원,
 F-2024-operating_cashflow,2024,operating_cashflow,-19717432000000,CFS,CF,20250318001325,원문 자동 대조 일치,연결 현금흐름표,백만원,
-F-2024-operating_profit,2024,operating_profit,3594087000000,CFS,CIS,20250318001325,원문 자동 대조 일치,기타포괄손익금융자산 관련 순손익,백만원,
-F-2024-total_assets,2024,total_assets,472219838000000,CFS,BS,20250318001325,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
-F-2024-total_equity,2024,total_equity,34231091000000,CFS,BS,20250318001325,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
-F-2024-total_liabilities,2024,total_liabilities,437988747000000,CFS,BS,20250318001325,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
-F-2025-credit_loss,2025,credit_loss,1774175000000,CFS,CIS,20260318000761,원문 자동 대조 일치,기타포괄손익금융자산 관련 순손익 |,백만원,
-F-2025-deposits,2025,deposits,168162978000000,CFS,BS,20260318000761,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
-F-2025-general_admin,2025,general_admin,3182639000000,CFS,CIS,20260318000761,원문 자동 대조 일치,기타포괄손익금융자산 관련 순손익 |,백만원,
-F-2025-interest_expense,2025,interest_expense,10014775000000,CFS,CIS,20260318000761,원문 자동 대조 일치,기타포괄손익과 상각후원가금융자산 이자수익 |,백만원,
-F-2025-interest_income,2025,interest_income,17764200000000,CFS,CIS,20260318000761,원문 자동 대조 일치,연결 포괄손익계산서 |,백만원,
-F-2025-loans,2025,loans,357806218000000,CFS,BS,20260318000761,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
-F-2025-net_fee_income,2025,net_fee_income,431629000000,CFS,CIS,20260318000761,원문 자동 대조 일치,기타포괄손익과 상각후원가금융자산 이자수익 |,백만원,
-F-2025-net_income,2025,net_income,2718868000000,CFS,CIS,20260318000761,원문 자동 대조 일치,기타포괄손익금융자산 관련 순손익 |,백만원,
-F-2025-net_income_owners,2025,net_income_owners,2711103000000,CFS,CIS,20260318000761,원문 자동 대조 일치,당기손익으로 재분류되는 세후기타포괄손익 |,백만원,
-F-2025-net_interest_income,2025,net_interest_income,7749425000000,CFS,CIS,20260318000761,원문 자동 대조 일치,연결 포괄손익계산서 |,백만원,
-F-2025-operating_cashflow,2025,operating_cashflow,-3022146000000,CFS,CF,20260318000761,원문 자동 대조 일치,연결 현금흐름표 |,백만원,
-F-2025-operating_profit,2025,operating_profit,3655589000000,CFS,CIS,20260318000761,원문 자동 대조 일치,기타포괄손익금융자산 관련 순손익 |,백만원,
-F-2025-total_assets,2025,total_assets,500692621000000,CFS,BS,20260318000761,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
-F-2025-total_equity,2025,total_equity,36856024000000,CFS,BS,20260318000761,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
-F-2025-total_liabilities,2025,total_liabilities,463836597000000,CFS,BS,20260318000761,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
+F-2024-operating_profit,2024,operating_profit,3594087000000,CFS,CIS,20250318001325,원문 자동 대조 일치,연결 포괄손익계산서,백만원,
+F-2024-total_assets,2024,total_assets,472219838000000,CFS,BS,20250318001325,원문 자동 대조 일치,연결 재무상태표,백만원,
+F-2024-total_equity,2024,total_equity,34231091000000,CFS,BS,20250318001325,원문 자동 대조 일치,연결 재무상태표,백만원,
+F-2024-total_liabilities,2024,total_liabilities,437988747000000,CFS,BS,20250318001325,원문 자동 대조 일치,연결 재무상태표,백만원,
+F-2025-credit_loss,2025,credit_loss,1774175000000,CFS,CIS,20260318000761,원문 자동 대조 일치,연결 포괄손익계산서,백만원,
+F-2025-deposits,2025,deposits,168162978000000,CFS,BS,20260318000761,원문 자동 대조 일치,연결 재무상태표,백만원,
+F-2025-general_admin,2025,general_admin,3182639000000,CFS,CIS,20260318000761,원문 자동 대조 일치,연결 포괄손익계산서,백만원,
+F-2025-interest_expense,2025,interest_expense,10014775000000,CFS,CIS,20260318000761,원문 자동 대조 일치,연결 포괄손익계산서,백만원,
+F-2025-interest_income,2025,interest_income,17764200000000,CFS,CIS,20260318000761,원문 자동 대조 일치,연결 포괄손익계산서,백만원,
+F-2025-loans,2025,loans,357806218000000,CFS,BS,20260318000761,원문 자동 대조 일치,연결 재무상태표,백만원,
+F-2025-net_fee_income,2025,net_fee_income,431629000000,CFS,CIS,20260318000761,원문 자동 대조 일치,연결 포괄손익계산서,백만원,
+F-2025-net_income,2025,net_income,2718868000000,CFS,CIS,20260318000761,원문 자동 대조 일치,연결 포괄손익계산서,백만원,
+F-2025-net_income_owners,2025,net_income_owners,2711103000000,CFS,CIS,20260318000761,원문 자동 대조 일치,연결 포괄손익계산서,백만원,
+F-2025-net_interest_income,2025,net_interest_income,7749425000000,CFS,CIS,20260318000761,원문 자동 대조 일치,연결 포괄손익계산서,백만원,
+F-2025-operating_cashflow,2025,operating_cashflow,-3022146000000,CFS,CF,20260318000761,원문 자동 대조 일치,연결 현금흐름표,백만원,
+F-2025-operating_profit,2025,operating_profit,3655589000000,CFS,CIS,20260318000761,원문 자동 대조 일치,연결 포괄손익계산서,백만원,
+F-2025-total_assets,2025,total_assets,500692621000000,CFS,BS,20260318000761,원문 자동 대조 일치,연결 재무상태표,백만원,
+F-2025-total_equity,2025,total_equity,36856024000000,CFS,BS,20260318000761,원문 자동 대조 일치,연결 재무상태표,백만원,
+F-2025-total_liabilities,2025,total_liabilities,463836597000000,CFS,BS,20260318000761,원문 자동 대조 일치,연결 재무상태표,백만원,

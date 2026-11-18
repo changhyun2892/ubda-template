@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:44 KST",
+    "checked_at": "2026-11-19 01:12 KST",
     "corp_code": "01190568",
     "reports_total": 16,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:44 KST",
+    "checked_at": "2026-11-19 01:13 KST",
     "rows": 661,
     "last_date": "2026-11-17",
     "last_close": 231000,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:44 KST",
+    "checked_at": "2026-11-19 01:13 KST",
     "spike_days": 30,
     "with_major_disclosure": 7,
     "news_total": 536,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:44 KST",
+    "checked_at": "2026-11-19 01:13 KST",
     "rows": 612,
     "groups": [
       "에이피알",
@@ -46,7 +46,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:44 KST",
+    "checked_at": "2026-11-19 01:13 KST",
     "new": 0,
     "total": 536,
     "first": "2026-10-19 14:26",
@@ -55,24 +55,24 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:44 KST",
+    "checked_at": "2026-11-19 01:12 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:44 KST",
+    "checked_at": "2026-11-19 01:13 KST",
     "rows": 661,
     "as_of": "2026-11-17",
     "per": 18.49,
     "pbr": 13.024
   },
   "fincheck": {
-    "status": "일부",
-    "checked_at": "2026-11-19 00:44 KST",
-    "matched": 26,
+    "status": "성공",
+    "checked_at": "2026-11-19 01:12 KST",
+    "matched": 52,
     "total": 52,
-    "message": "2023: 다음 실행으로 미룸(한 번에 2개); 2022: 다음 실행으로 미룸(한 번에 2개)"
+    "message": ""
   }
 }

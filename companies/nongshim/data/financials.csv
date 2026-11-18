@@ -1,11 +1,11 @@
 company_id,year,metric,label,value,unit,scope,source_id,source_url,account_nm,audit_id,status
 NS,2022,capex,유형자산의 취득 (지출액),92861152156,KRW,연결,20230316000448,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230316000448,유형자산의 취득,F-2022-capex,원문 대조 일치
-NS,2022,cash,현금및현금성자산,127900573250,KRW,연결,20230316000448,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230316000448,현금및현금성자산,F-2022-cash,자동 수집 · 원문 대조 전
+NS,2022,cash,현금및현금성자산,127900573250,KRW,연결,20230316000448,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230316000448,현금및현금성자산,F-2022-cash,원문 자동 대조 일치
 NS,2022,cost_of_sales,매출원가,2229502633084,KRW,연결,20230316000448,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230316000448,매출원가,F-2022-cost_of_sales,원문 대조 일치
 NS,2022,current_assets,유동자산,1208524614820,KRW,연결,20230316000448,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230316000448,유동자산,F-2022-current_assets,원문 대조 일치
 NS,2022,current_liabilities,유동부채,616485543701,KRW,연결,20230316000448,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230316000448,유동부채,F-2022-current_liabilities,원문 대조 일치
 NS,2022,inventories,재고자산,296880553453,KRW,연결,20230316000448,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230316000448,재고자산,F-2022-inventories,원문 대조 일치
-NS,2022,net_income,당기순이익,116033570018,KRW,연결,20230316000448,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230316000448,당기순이익,F-2022-net_income,자동 수집 · 원문 대조 전
+NS,2022,net_income,당기순이익,116033570018,KRW,연결,20230316000448,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230316000448,당기순이익,F-2022-net_income,원문 자동 대조 일치
 NS,2022,operating_cashflow,영업활동현금흐름,159650440148,KRW,연결,20230316000448,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230316000448,영업활동으로 인한 현금흐름,F-2022-operating_cashflow,원문 대조 일치
 NS,2022,operating_profit,영업이익,112172856716,KRW,연결,20230316000448,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230316000448,영업이익,F-2022-operating_profit,원문 대조 일치
 NS,2022,revenue,매출액,3129065208087,KRW,연결,20230316000448,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230316000448,매출액,F-2022-revenue,원문 대조 일치
@@ -14,12 +14,12 @@ NS,2022,total_assets,자산총계,3034718535547,KRW,연결,20230316000448,https:
 NS,2022,total_equity,자본총계,2315340178664,KRW,연결,20230316000448,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230316000448,자본총계,F-2022-total_equity,원문 대조 일치
 NS,2022,total_liabilities,부채총계,719378356883,KRW,연결,20230316000448,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230316000448,부채총계,F-2022-total_liabilities,원문 대조 일치
 NS,2023,capex,유형자산의 취득 (지출액),108011202694,KRW,연결,20240314000698,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240314000698,유형자산의 취득,F-2023-capex,원문 대조 일치
-NS,2023,cash,현금및현금성자산,142899537581,KRW,연결,20240314000698,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240314000698,현금및현금성자산,F-2023-cash,자동 수집 · 원문 대조 전
+NS,2023,cash,현금및현금성자산,142899537581,KRW,연결,20240314000698,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240314000698,현금및현금성자산,F-2023-cash,원문 자동 대조 일치
 NS,2023,cost_of_sales,매출원가,2375319699349,KRW,연결,20240314000698,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240314000698,매출원가,F-2023-cost_of_sales,원문 대조 일치
 NS,2023,current_assets,유동자산,1419816691135,KRW,연결,20240314000698,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240314000698,유동자산,F-2023-current_assets,원문 대조 일치
 NS,2023,current_liabilities,유동부채,696493722736,KRW,연결,20240314000698,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240314000698,유동부채,F-2023-current_liabilities,원문 대조 일치
 NS,2023,inventories,재고자산,318234266905,KRW,연결,20240314000698,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240314000698,재고자산,F-2023-inventories,원문 대조 일치
-NS,2023,net_income,당기순이익,171469224876,KRW,연결,20240314000698,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240314000698,당기순이익,F-2023-net_income,자동 수집 · 원문 대조 전
+NS,2023,net_income,당기순이익,171469224876,KRW,연결,20240314000698,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240314000698,당기순이익,F-2023-net_income,원문 자동 대조 일치
 NS,2023,operating_cashflow,영업활동현금흐름,327223955699,KRW,연결,20240314000698,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240314000698,영업활동으로 인한 현금흐름,F-2023-operating_cashflow,원문 대조 일치
 NS,2023,operating_profit,영업이익,212064743455,KRW,연결,20240314000698,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240314000698,영업이익(손실),F-2023-operating_profit,원문 대조 일치
 NS,2023,revenue,매출액,3410559367259,KRW,연결,20240314000698,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240314000698,매출액,F-2023-revenue,원문 대조 일치
