@@ -74,8 +74,8 @@ const YEARS = () => [...new Set(D.fin.map((r) => +r.year))].sort();
 const LEDGER = () => new Map(D.ledger.map((r) => [r.audit_id, r]));
 const REG = () => new Map(D.reg.map((r) => [r.source_id, r]));
 
-const ST_CLASS = { '원문 대조 일치': 'st-ok', '자동 수집 · 원문 대조 전': 'st-auto', '미확인': 'st-na', '미공개': 'st-na', '불일치': 'st-bad', '통과': 'st-ok', '실패': 'st-bad', '경고': 'st-warn', '미실행': 'st-na' };
-const ST_SHORT = { '자동 수집 · 원문 대조 전': '자동 · 대조 전' };
+const ST_CLASS = { '원문 대조 일치': 'st-ok', '원문 자동 대조 일치': 'st-okauto', '자동 수집 · 원문 대조 전': 'st-auto', '미확인': 'st-na', '미공개': 'st-na', '불일치': 'st-bad', '통과': 'st-ok', '실패': 'st-bad', '경고': 'st-warn', '미실행': 'st-na' };
+const ST_SHORT = { '자동 수집 · 원문 대조 전': '자동 · 대조 전', '원문 자동 대조 일치': '원문 자동 대조' };
 const badge = (s) => `<span class="st ${ST_CLASS[s] || 'st-na'}" title="${esc(s)}">${esc(ST_SHORT[s] || s || '미확인')}</span>`;
 const pill = (v, unit = '%', d = 1) => `<span class="pill ${v === null ? 'na' : v > 0 ? 'up' : v < 0 ? 'down' : 'na'}">${v === null ? '전년 비교 없음' : (v > 0 ? '▲ ' : v < 0 ? '▼ ' : '') + fmt(Math.abs(v), d) + unit}</span>`;
 
@@ -354,13 +354,14 @@ function pageOverview() {
   ].join('');
   const sm = D.summary?.verification || {};
   const st = D.status.filter((r) => r.group !== '공통 재무');
-  const got = st.filter((r) => ['원문 대조 일치', '자동 수집 · 원문 대조 전'].includes(r.status)).length;
+  const got = st.filter((r) => ['원문 대조 일치', '원문 자동 대조 일치', '자동 수집 · 원문 대조 전'].includes(r.status)).length;
   const vr = D.verify?.counts || {};
   const latest = [...D.reg].filter((r) => r.type === 'DART 정기보고서').sort((a, b) => (a.source_date < b.source_date ? 1 : -1)).slice(0, 5);
   return `${perfTree(y) || `<div class="kpis">${k}</div>`}${valuationRow()}<div class="grid">${diagCard()}
     ${card('w4', `${TOPL()}·영업이익 추이`, `막대: 억원 · 선: ${MRGL()}(%) · 막대를 누르면 출처`, `<div class="seg" style="margin-bottom:6px"><button data-per="annual" aria-pressed="${S.period === 'annual'}">연간</button><button data-per="quarter" aria-pressed="${S.period === 'quarter'}">분기</button></div>` + legend([[TOPL(), COLORS()[1]], ['영업이익', COLORS()[0]], [MRGL(), COLORS()[3]]]) + '<div class="chart" id="c1"></div>', S.period === 'quarter' ? 'Q4 = 사업보고서 연간 − 3분기 누적 (연말 결산조정 포함)' : '')}
     ${card('w2', '데이터 검증 현황', '값마다 출처와 대조 상태를 기록', `<table class="tbl"><tbody>
       <tr><td>${badge('원문 대조 일치')}</td><td>${sm['원문 대조 일치'] ?? 0}</td></tr>
+      <tr><td>${badge('원문 자동 대조 일치')}</td><td>${sm['원문 자동 대조 일치'] ?? 0}</td></tr>
       <tr><td>${badge('자동 수집 · 원문 대조 전')}</td><td>${sm['자동 수집 · 원문 대조 전'] ?? 0}</td></tr>
       <tr><td>${badge('불일치')}</td><td>${sm['불일치'] ?? 0}</td></tr>
       <tr><td>${badge('미확인')}</td><td>${sm['미확인'] ?? 0}</td></tr></tbody></table>
@@ -834,8 +835,8 @@ function pageAudit() {
   return `<div class="grid">
   ${card('w3', '자동 점검 결과', vr ? `${esc(vr.checked_at)} · 통과 ${vr.counts['통과'] || 0} · 실패 ${vr.counts['실패'] || 0} · 경고 ${vr.counts['경고'] || 0}` : '아직 점검 전',
     vr ? `<div class="tbl-wrap" style="max-height:340px"><table class="tbl"><tbody>${vr.results.map((r) => `<tr><td>${badge(r.state)}</td><td class="l">${esc(r.name)}${r.detail ? `<br><small style="color:var(--muted)">${esc(r.detail)}</small>` : ''}</td></tr>`).join('')}</tbody></table></div>` : '<div class="empty">scripts/verify_data.py 실행 후 표시됩니다</div>')}
-  ${card('w3', '자동 업데이트 기록', '', `<table class="tbl"><tbody>${Object.entries(log).map(([k, v]) => `<tr><td>${esc({ dart: 'DART 공시', stock: '주가', events: '급변일·공시', search: '검색 관심도', news: '뉴스', text: '사업보고서 본문' }[k] || k)}</td><td>${badge(v.status === '성공' ? '통과' : v.status === '건너뜀' ? '미실행' : '경고')} ${esc(v.status)}</td><td class="l">${esc(v.checked_at || '')}<br><small>${esc(v.message || (v.new_reports || []).slice(-2).join(' / '))}</small></td></tr>`).join('') || '<tr><td>기록 없음</td></tr>'}</tbody></table>`)}
-  ${card('w6', '검증 장부', '값 하나하나의 출처·원문 위치·대조 상태', `<div class="seg" style="margin-bottom:8px">${['all', '원문 대조 일치', '자동 수집 · 원문 대조 전', '불일치', '미확인'].map((s) => `<button data-lf="${esc(s)}" aria-pressed="${res === s}">${s === 'all' ? '전체' : esc(ST_SHORT[s] || s)} (${s === 'all' ? D.ledger.length : D.ledger.filter((r) => r.result === s).length})</button>`).join('')}</div>
+  ${card('w3', '자동 업데이트 기록', '', `<table class="tbl"><tbody>${Object.entries(log).map(([k, v]) => `<tr><td>${esc({ dart: 'DART 공시', fincheck: '재무 원문 자동 대조', stock: '주가', events: '급변일·공시', search: '검색 관심도', news: '뉴스', text: '사업보고서 본문' }[k] || k)}</td><td>${badge(v.status === '성공' ? '통과' : v.status === '건너뜀' ? '미실행' : '경고')} ${esc(v.status)}</td><td class="l">${esc(v.checked_at || '')}<br><small>${esc(v.message || (v.new_reports || []).slice(-2).join(' / '))}</small></td></tr>`).join('') || '<tr><td>기록 없음</td></tr>'}</tbody></table>`)}
+  ${card('w6', '검증 장부', '값 하나하나의 출처·원문 위치·대조 상태', `<div class="seg" style="margin-bottom:8px">${['all', '원문 대조 일치', '원문 자동 대조 일치', '자동 수집 · 원문 대조 전', '불일치', '미확인'].map((s) => `<button data-lf="${esc(s)}" aria-pressed="${res === s}">${s === 'all' ? '전체' : esc(ST_SHORT[s] || s)} (${s === 'all' ? D.ledger.length : D.ledger.filter((r) => r.result === s).length})</button>`).join('')}</div>
     <div class="tbl-wrap" style="max-height:420px"><table class="tbl"><thead><tr><th>검증번호</th><th>값(억원)</th><th>상태</th><th class="l">원문 위치</th><th class="l">방법</th></tr></thead><tbody>
     ${led.slice(0, 400).map((r) => `<tr class="click" data-act="aud:${esc(r.audit_id)}"><td>${esc(r.audit_id)}</td><td>${r.value === '' ? '–' : fmt(N(r.value) / 1e8)}</td><td>${badge(r.result)}</td><td class="l">${esc(r.source_location)}</td><td class="l">${esc(r.method)}</td></tr>`).join('')}
     </tbody></table></div>`, '사람이 사업보고서 원문과 대조한 결과는 data/manual/audit_overrides.csv에 적으면 다음 빌드부터 반영됩니다.')}
@@ -915,7 +916,7 @@ function pageDart() {
   return `<div class="kpis">
     ${kpiCard('반영한 정기보고서', `${reps.length}<small>건</small>`, `정정보고서 ${corr}건 포함`, '')}
     ${kpiCard('마지막 확인', `<small>${esc(lg.checked_at || '기록 없음')}</small>`, `상태 ${esc(lg.status || '-')}`, '')}
-    ${kpiCard('원문 대조 전 값', `${auto}<small>개</small>`, '공식 API 값 · 사람 대조 대기', '')}
+    ${kpiCard('원문 대조 전 값', `${auto}<small>개</small>`, `원문 자동 대조 일치 ${D.ledger.filter((r) => r.result === '원문 자동 대조 일치').length}개 · 사람 대조 ${D.ledger.filter((r) => r.result === '원문 대조 일치').length}개`, '')}
     ${kpiCard('자동 실행', '<small>평일 16:40</small>', 'GitHub Actions → Render 자동 배포', '')}
   </div><div class="grid">
     ${card('w6', '정기보고서 처리 기록', '새 보고서·정정보고서가 올라오면 해당 기간을 다시 받아 덮어씁니다', `<div class="tbl-wrap" style="max-height:460px"><table class="tbl"><thead><tr><th class="l">보고서</th><th>접수일</th><th>구분</th><th>처리</th><th class="l">내용</th></tr></thead><tbody>

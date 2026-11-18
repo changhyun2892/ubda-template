@@ -27,14 +27,14 @@ import json
 import sys
 from collections import defaultdict
 
-from ubda_common import (DATA, RAW, ROOT, ST_AUTO, ST_MISMATCH, ST_UNCONFIRMED, ST_UNDISCLOSED, ST_VERIFIED,
+from ubda_common import (CDIR, DATA, RAW, ROOT, ST_AUTO, ST_AUTO_MATCH, ST_MISMATCH, ST_UNCONFIRMED, ST_UNDISCLOSED, ST_VERIFIED,
                          load_config, now_kst, num, read_csv, write_csv)
 
 MANUAL = DATA / "manual"
 FLOW = ["revenue", "cost_of_sales", "sga", "operating_profit", "net_income"]
 EXPENSE_ABS = {"interest_expense", "general_admin", "credit_loss"}  # 은행 비용 계정: 회사·보고서마다 부호가 달라 금액(절댓값)으로 통일
 BANK_FLOW = ["interest_income", "interest_expense", "net_interest_income", "net_fee_income", "general_admin", "credit_loss", "net_income_owners"]
-STATUS_RANK = {ST_VERIFIED: 4, ST_AUTO: 3, ST_UNDISCLOSED: 2, ST_UNCONFIRMED: 1, ST_MISMATCH: 0}
+STATUS_RANK = {ST_VERIFIED: 5, ST_AUTO_MATCH: 4, ST_AUTO: 3, ST_UNDISCLOSED: 2, ST_UNCONFIRMED: 1, ST_MISMATCH: 0}
 KPI_COLS = ["kpi_key", "year", "period", "item", "value", "unit", "scope", "source_url", "source_location", "status", "checked_on", "note"]
 OVR_COLS = ["audit_id", "result", "verified_value", "source_location", "checked_on", "checked_by", "note"]
 
@@ -73,6 +73,12 @@ def main() -> int:
     kpi_rows = read_csv(MANUAL / "kpi_values.csv")
 
     by = {(r["bsns_year"], r["reprt_code"], r["metric"]): r for r in raw}
+    # 원문 자동 대조 결과(crosscheck_fin.py)와 사람이 원문 대조한 기준값(verify_expectations.json)
+    fincheck = {r["audit_id"]: r for r in read_csv(DATA / "fin_crosscheck.csv") if r.get("result") == ST_AUTO_MATCH}
+    try:
+        human = {f"F-{c['year']}-{c['metric']}": c for c in json.loads((CDIR / "verify_expectations.json").read_text(encoding="utf-8")).get("checks", []) if c.get("value") is not None}
+    except (OSError, ValueError):
+        human = {}
     ledger: list[dict] = []
 
     def audit(aid: str, dataset: str, value, r: dict | None, location: str, method: str) -> str:
@@ -80,6 +86,13 @@ def main() -> int:
         result = ST_AUTO if r and value not in ("", None) else ST_UNCONFIRMED
         o = overrides.get(aid)
         note = ""
+        by_who = ""
+        if result == ST_AUTO and aid in human and int(value) == int(human[aid]["value"]):
+            result, by_who, note = ST_VERIFIED, "사람(원문 대조 기준값)", human[aid].get("evidence", "")
+        elif result == ST_AUTO and aid in fincheck and fincheck[aid].get("rcept_no"):
+            fc = fincheck[aid]
+            result, by_who = ST_AUTO_MATCH, "자동(사업보고서 원문 표 숫자 대조)"
+            location = f"{location} → 원문 {fc['found_in'] or '재무제표'} (단위 {fc['unit']}, 접수번호 {fc['rcept_no']})"
         if o and o.get("result"):
             vv = num(o.get("verified_value"))
             if vv is not None and value not in ("", None) and int(value) != vv:
@@ -89,7 +102,7 @@ def main() -> int:
             location = o.get("source_location") or location
         ledger.append({"audit_id": aid, "dataset": dataset, "value": value, "source_id": r["rcept_no"] if r else "", "source_location": location,
                        "method": method, "result": result, "checked_on": (o or {}).get("checked_on", "") if o else (r or {}).get("fetched_at", ""),
-                       "checked_by": (o or {}).get("checked_by", "") if o else "자동(OpenDART API)", "note": note or (o or {}).get("note", "")})
+                       "checked_by": (o or {}).get("checked_by", "") if o else (by_who or "자동(OpenDART API)"), "note": note or (o or {}).get("note", "")})
         return result
 
     # ---------- 연간 재무
@@ -218,7 +231,7 @@ def main() -> int:
 
     # ---------- 산업 KPI 확보 현황 (없으면 '미확인'으로 남김 — 임의 생성 금지)
     status_rows = []
-    fin_auto = sum(1 for r in fin_rows if r["status"] == ST_AUTO)
+    fin_auto = sum(1 for r in fin_rows if r["status"] in (ST_AUTO, ST_AUTO_MATCH))
     fin_ok = sum(1 for r in fin_rows if r["status"] == ST_VERIFIED)
     fin_bad = sum(1 for r in fin_rows if r["status"] == ST_MISMATCH)
     fin_na = sum(1 for r in fin_rows if r["status"] == ST_UNCONFIRMED)
@@ -250,7 +263,7 @@ def main() -> int:
         "competitors": cfg.get("competitors", []), "dashboard_url": cfg.get("dashboard_url", ""), "latest_year": ly,
         "kpis": None if ly is None else {"revenue": F[ly].get("revenue"), "operating_profit": F[ly].get("operating_profit"), "net_income": F[ly].get("net_income"),
                                           "operating_margin_pct": pick("operating_margin_pct"), "revenue_growth_pct": pick("revenue_growth_pct"), "debt_ratio_pct": pick("debt_ratio_pct")},
-        "verification": {s: sum(1 for r in ledger if r["result"] == s) for s in (ST_VERIFIED, ST_AUTO, ST_MISMATCH, ST_UNCONFIRMED)},
+        "verification": {s: sum(1 for r in ledger if r["result"] == s) for s in (ST_VERIFIED, ST_AUTO_MATCH, ST_AUTO, ST_MISMATCH, ST_UNCONFIRMED)},
         "industry_kpis_found": sum(1 for r in status_rows[2:] if r["status"] in (ST_VERIFIED, ST_AUTO)), "industry_kpis_total": len(status_rows) - 2,
         "updated_at": now_kst(),
     }

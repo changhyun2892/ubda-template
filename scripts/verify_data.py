@@ -15,7 +15,7 @@ import json
 import sys
 from collections import defaultdict
 
-from ubda_common import (CDIR, DATA, ST_AUTO, ST_MISMATCH, ST_UNCONFIRMED, ST_UNDISCLOSED, ST_VERIFIED,
+from ubda_common import (CDIR, DATA, ST_AUTO, ST_AUTO_MATCH, ST_MISMATCH, ST_UNCONFIRMED, ST_UNDISCLOSED, ST_VERIFIED,
                          load_config, now_kst, num, read_csv)
 
 results: list[dict] = []

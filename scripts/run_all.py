@@ -21,10 +21,10 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-STEPS = {"collect": "collect_dart.py", "shares": "collect_shares.py", "text": "collect_business_text.py", "stock": "update_stock.py", "search": "collect_search.py", "news": "collect_news.py", "events": "collect_events.py", "valuation": "build_valuation.py", "build": "build_dataset.py", "verify": "verify_data.py"}
+STEPS = {"collect": "collect_dart.py", "shares": "collect_shares.py", "text": "collect_business_text.py", "fincheck": "crosscheck_fin.py", "stock": "update_stock.py", "search": "collect_search.py", "news": "collect_news.py", "events": "collect_events.py", "valuation": "build_valuation.py", "build": "build_dataset.py", "verify": "verify_data.py"}
 # 단계별 제한 시간(초). 넘기면 그 단계만 중단하고 다음으로 진행 — 한 곳이 막혀도 전체가 멈추지 않게
 LOCAL = ("valuation", "build", "verify")  # 인터넷 없이 되는 단계
-LIMIT = {"collect": 600, "shares": 420, "text": 300, "stock": 90, "search": 60, "news": 120, "events": 240, "valuation": 60, "build": 120, "verify": 60}
+LIMIT = {"collect": 600, "shares": 420, "text": 300, "fincheck": 300, "stock": 90, "search": 60, "news": 120, "events": 240, "valuation": 60, "build": 120, "verify": 60}
 
 
 def arg(name: str, default: str | None = None) -> str | None:
@@ -32,7 +32,7 @@ def arg(name: str, default: str | None = None) -> str | None:
 
 
 def main() -> int:
-    steps = (arg("--steps") or "collect,shares,text,stock,search,news,events,valuation,build,verify").split(",")
+    steps = (arg("--steps") or "collect,shares,text,fincheck,stock,search,news,events,valuation,build,verify").split(",")
     only = arg("--only")
     shard = arg("--shard")  # "i/n": 기업 목록을 n묶음으로 나눠 i번째만 처리 (DART가 느릴 때 동시 실행)
     slugs = []

@@ -28,6 +28,18 @@ def _rows(name):
 
 
 class Data:
+    def fin_section(self, rcept_no: str) -> str:
+        """가짜 사업보고서의 '2. 연결재무제표' 절: 그 보고서의 BS·IS 값을 백만원 단위 표로 (현금흐름표는 일부러 뺌 → '못 찾음' 확인용)."""
+        its = [it for k, v in self.items.items() if k[1] == "11011" for it in v if it["rcept_no"] == rcept_no]
+        out = ""
+        for sj, name in (("BS", "연결 재무상태표"), ("IS", "연결 포괄손익계산서")):
+            rows = "".join(f"<TR><TD>{it['account_nm']}</TD><TD>{round(int(it['thstrm_amount']) / 1e6):,}</TD></TR>"
+                           for it in its if it["sj_div"] in (sj, "CIS" if sj == "IS" else sj) and it["thstrm_amount"])
+            out += f"<P>{name}</P><P>(단위 : 백만원)</P><TABLE><TR><TH>과목</TH><TH>당기</TH></TR>{rows}</TABLE>"
+        return ("<SECTION-2><TITLE ATOC=\"Y\">1. 요약재무정보</TITLE><P>요약</P></SECTION-2>"
+                f"<SECTION-2><TITLE ATOC=\"Y\">2. 연결재무제표</TITLE>{out}</SECTION-2>"
+                "<SECTION-2><TITLE ATOC=\"Y\">3. 연결재무제표 주석</TITLE><P>주석 999,999</P></SECTION-2>")
+
     def __init__(self, stock_code="003230", corp_code="00126283", corp_name="삼양식품", no_cfs=False):
         self.stock_code, self.corp_code, self.corp_name, self.no_cfs = stock_code, corp_code, corp_name, no_cfs
         self.reports = _rows("dart_reports.csv")
@@ -107,7 +119,8 @@ def make_handler(d: Data):
                 xml = ("<DOCUMENT><BODY><SECTION-1><TITLE ATOC=\"Y\">I. 회사의 개요</TITLE><P>개요</P></SECTION-1>"
                        "<SECTION-1><TITLE ATOC=\"Y\">II. 사업의 내용</TITLE><SECTION-2><TITLE ATOC=\"Y\">4. 매출 및 수주상황</TITLE>"
                        "<P>(단위 : 백만원)</P><TABLE><TR><TH>구분</TH><TH>제71기</TH></TR><TR><TD>면스낵 수출</TD><TD>1,234</TD></TR></TABLE></SECTION-2></SECTION-1>"
-                       "<SECTION-1><TITLE ATOC=\"Y\">III. 재무에 관한 사항</TITLE><P>재무</P></SECTION-1></BODY></DOCUMENT>")
+                       "<SECTION-1><TITLE ATOC=\"Y\">III. 재무에 관한 사항</TITLE><P>재무</P>" + d.fin_section(p["rcept_no"]) + "</SECTION-1>"
+                       "<SECTION-1><TITLE ATOC=\"Y\">IV. 이사의 경영진단 및 분석의견</TITLE><P>-</P></SECTION-1></BODY></DOCUMENT>")
                 buf = io.BytesIO()
                 with zipfile.ZipFile(buf, "w") as z:
                     z.writestr(f"{p['rcept_no']}.xml", xml.encode("utf-8"))

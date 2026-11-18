@@ -108,6 +108,14 @@ def main() -> int:
     r = run(d, "collect_business_text.py", base)
     ok("같은 보고서는 다시 받지 않음", "이미 저장됨" in r.stdout)
 
+    # 연간 재무 원문 자동 대조: 가짜 원문(백만원 표, 현금흐름표 없음)에서 BS·IS 값은 찾고 CF 값은 못 찾아야 함
+    r = run(d, "crosscheck_fin.py", base)
+    fc = rows(d / "companies" / SLUG / "data" / "fin_crosscheck.csv")
+    st = {(x["year"], x["metric"]): x for x in fc}
+    ok("원문 자동 대조: 재무상태표·손익 값 일치", st.get(("2025", "total_assets"), {}).get("result") == "원문 자동 대조 일치" and st.get(("2025", "revenue"), {}).get("unit") == "백만원", r.stdout.strip()[-120:])
+    ok("원문 자동 대조: 원문에 없는 현금흐름표 값은 일치로 치지 않음", st.get(("2025", "capex"), {}).get("result") == "", str(st.get(("2025", "capex"))))
+    ok("원문 자동 대조: 한 번에 2개 보고서만 받고 나머지는 미룸", "다음 실행으로 미룸" in r.stdout, r.stdout.strip()[-160:])
+
     sys.path.insert(0, str(d / "scripts"))
     os.environ["UBDA_COMPANY"] = SLUG
     import importlib
