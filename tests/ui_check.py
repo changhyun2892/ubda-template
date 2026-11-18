@@ -149,6 +149,19 @@ def main() -> int:
                 pg.on("console", lambda m: errs.append(m.text) if m.type == "error" else None)
                 pg.goto(url)
                 pg.wait_for_selector(".page", timeout=10000)
+                if label == "PC" and has_data:
+                    # PC 사이드바 자동 숨김: 기본은 숨김, 왼쪽 끝에 마우스 → 나옴, 벗어나면 숨김
+                    pg.goto("about:blank"); pg.goto(url + "#overview")   # 메인 스크린에서는 사이드바가 없으므로 개요에서 확인
+                    pg.wait_for_timeout(1500)
+                    nx = lambda: pg.evaluate("document.querySelector('.nav').getBoundingClientRect().right")
+                    ok("사이드바: 기본 숨김(PC)", nx() <= 1)
+                    pg.mouse.move(600, 400); pg.mouse.move(4, 430); pg.wait_for_timeout(700)
+                    ok("사이드바: 왼쪽 끝 마우스 → 나옴", nx() > 150)
+                    pg.mouse.move(120, 430); pg.mouse.move(800, 430); pg.wait_for_timeout(900)
+                    ok("사이드바: 벗어나면 숨김", nx() <= 1)
+                    pg.evaluate("localStorage.setItem('ubda_nav_pin','1')")   # 이하 탭별 점검은 사이드바 고정 상태에서
+                    pg.goto("about:blank"); pg.goto(url)
+                    pg.wait_for_selector(".page", timeout=10000)
                 if has_data:
                     # 기본 진입 = 메인 스크린 → 지구본 더블클릭 확인창(No: 유지, Yes: 개요)
                     ok("기본 진입 화면이 메인 스크린", "screen-mode" in (pg.get_attribute("body", "class") or ""))

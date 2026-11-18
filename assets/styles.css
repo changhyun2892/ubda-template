@@ -163,12 +163,37 @@ table.tbl { width: 100%; border-collapse: collapse; font-size: 12px; font-varian
 .note.warn { background: var(--warn-soft); color: var(--warn); }
 .menu-btn { display: none; border: 1px solid var(--line); background: var(--panel); border-radius: var(--r-sm); padding: 4px 9px; }
 
+/* 사이드바 자동 숨김 (PC): 왼쪽 끝에 마우스를 대면 위에 덮으며 나옴 · 핀으로 고정 */
+.nav-pin { margin-top: auto; display: flex; align-items: center; gap: 7px; width: 100%; border: 1px solid var(--line); background: var(--panel); color: var(--muted); border-radius: var(--r-sm); padding: 6px 10px; font-size: 12px; }
+.nav-pin + .nav-foot { margin-top: 0; }
+.nav-pin:hover { color: var(--fg); border-color: var(--line-strong); }
+.nav-pin[aria-pressed="true"] { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
+.nav-pin svg { transition: transform .2s var(--ease); transform: rotate(45deg); }
+.nav-pin[aria-pressed="true"] svg { transform: none; }
+.nav-edge, .nav-scrim { display: none; }
+@media (min-width: 901px) {
+  html:not(.nav-pinned) .app { grid-template-columns: minmax(0, 1fr) 0; }
+  html:not(.nav-pinned) .app.panel-open { grid-template-columns: minmax(0, 1fr) 340px; }
+  html:not(.nav-pinned) .nav { position: fixed; top: 0; bottom: 0; left: 0; width: 210px; z-index: 40; transform: translateX(-100%); transition: transform .25s var(--ease), box-shadow .25s; }
+  html:not(.nav-pinned) .app.nav-peek .nav { transform: none; box-shadow: 0 0 30px var(--shadow), 0 0 0 1px var(--line); }
+  html:not(.nav-pinned) .nav-edge { display: flex; position: fixed; top: 0; bottom: 0; left: 0; width: 12px; z-index: 39; align-items: center; }
+  html:not(.nav-pinned) .nav-edge span { width: 12px; height: 46px; display: grid; place-items: center; border-radius: 0 6px 6px 0; background: var(--panel); border: 1px solid var(--line); border-left: 0; color: var(--dim); font-size: 12px; transition: width .15s var(--ease), color .15s; }
+  html:not(.nav-pinned) .nav-edge:hover span { width: 16px; color: var(--accent); }
+  html:not(.nav-pinned) .menu-btn { display: inline-block; }
+  html.nav-pinned .menu-btn { display: none; }
+}
+body.screen-mode .nav-edge, body.screen-mode .nav-scrim { display: none !important; }
+@media (prefers-reduced-motion: reduce) { .nav, .nav-pin svg { transition: none !important; } }
+
 /* 모바일: 1열 · 메뉴는 버튼으로 · 근거 패널은 아래에서 올라옴 */
 @media (max-width: 900px) {
   .app, .app.panel-open { grid-template-columns: 1fr; height: auto; min-height: 100vh; }
   .nav { position: fixed; inset: 0 auto 0 0; width: 230px; z-index: 40; transform: translateX(-100%); transition: transform .25s var(--ease); box-shadow: 0 0 30px rgba(0,0,0,.15); }
   .app.nav-open .nav { transform: none; }
   .menu-btn { display: inline-block; }
+  .nav-pin { display: none; }
+  .nav-scrim { display: block; position: fixed; inset: 0; z-index: 35; background: rgba(0,0,0,.35); opacity: 0; pointer-events: none; transition: opacity .25s var(--ease); }
+  .app.nav-open .nav-scrim { opacity: 1; pointer-events: auto; }
   .center { overflow: visible; }
   .workspace { overflow: visible; padding: 12px; }
   .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }

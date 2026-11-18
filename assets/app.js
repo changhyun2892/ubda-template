@@ -974,6 +974,45 @@ function enableEdit() {
 }
 
 
+/* ---------- 사이드바: PC는 자동 숨김(왼쪽 끝에 마우스) + 핀 고정, 모바일은 왼쪽 끝에서 스와이프 ---------- */
+const isMobile = () => matchMedia('(max-width: 900px)').matches;
+function initNav() {
+  const app = $('#app'), nav = $('.nav'), edge = $('#navEdge'), pin = $('#navPin'), root = document.documentElement;
+  const pinned = () => root.classList.contains('nav-pinned');
+  const syncPin = () => { pin.setAttribute('aria-pressed', String(pinned())); $('#navPinLabel').textContent = pinned() ? '고정됨 · 누르면 자동 숨김' : '사이드바 고정'; };
+  syncPin();
+  pin.addEventListener('click', () => {
+    root.classList.toggle('nav-pinned'); app.classList.remove('nav-peek'); syncPin();
+    try { localStorage.setItem('ubda_nav_pin', pinned() ? '1' : '0'); } catch (e) { /* 저장 불가 */ }
+    setTimeout(() => dispatchEvent(new Event('resize')), 320);   // 본문 폭이 바뀌므로 차트 다시 그림
+  });
+  let openT = 0, closeT = 0;
+  const peek = (on) => { clearTimeout(openT); clearTimeout(closeT); app.classList.toggle('nav-peek', on); };
+  const busy = () => { const a = document.activeElement; return nav.contains(a) && a.id === 'coQ' && (a.value || !$('#coSugg').hidden); };
+  edge.addEventListener('mouseenter', () => { if (pinned() || isMobile()) return; clearTimeout(openT); openT = setTimeout(() => peek(true), 300); });
+  edge.addEventListener('mouseleave', () => clearTimeout(openT));
+  edge.addEventListener('click', () => !pinned() && peek(true));
+  nav.addEventListener('mouseenter', () => clearTimeout(closeT));
+  nav.addEventListener('mouseleave', () => { if (pinned() || isMobile()) return; clearTimeout(closeT); closeT = setTimeout(() => { if (!busy()) peek(false); }, 350); });
+  nav.addEventListener('focusin', () => { if (!pinned() && !isMobile()) peek(true); });
+  nav.addEventListener('focusout', (e) => { if (!pinned() && !isMobile() && !nav.contains(e.relatedTarget)) peek(false); });
+  addEventListener('keydown', (e) => { if (e.key === 'Escape') { app.classList.remove('nav-peek'); if (isMobile()) app.classList.remove('nav-open'); } });
+  $('#navScrim').addEventListener('click', () => app.classList.remove('nav-open'));
+  // 모바일 스와이프: 왼쪽 끝(24px)에서 오른쪽으로 → 열기, 열린 상태에서 왼쪽으로 → 닫기
+  let sx = 0, sy = 0, mode = null;
+  addEventListener('touchstart', (e) => {
+    if (!isMobile() || document.body.classList.contains('screen-mode') || e.touches.length !== 1) { mode = null; return; }
+    sx = e.touches[0].clientX; sy = e.touches[0].clientY;
+    mode = app.classList.contains('nav-open') ? 'close' : sx < 24 ? 'open' : null;
+  }, { passive: true });
+  addEventListener('touchmove', (e) => {
+    if (!mode) return;
+    const dx = e.touches[0].clientX - sx, dy = Math.abs(e.touches[0].clientY - sy);
+    if (mode === 'open' && dx > 50 && dy < dx * 0.7) { app.classList.add('nav-open'); mode = null; }
+    else if (mode === 'close' && dx < -50 && dy < -dx * 0.7) { app.classList.remove('nav-open'); mode = null; }
+  }, { passive: true });
+}
+
 /* ---------- 화면 테마 (흰색 · 다크 · 메인 스크린 남색) ---------- */
 function setTheme(th, anim) {
   const root = document.documentElement;
@@ -1145,7 +1184,7 @@ function onClick(e) {
   if (t.dataset.per) { S.period = t.dataset.per; render(); return; }
   if (t.dataset.cmp) { S.cmp = t.dataset.cmp; closePanel(); render(); return; }
   if (t.dataset.edit) { if (t.dataset.edit === 'reset') store.set(`order:${SLUG}:${S.page}`, null); if (t.dataset.edit === 'done') S.edit = false; render(); return; }
-  if (t.dataset.page) { S.page = t.dataset.page; $('#app').classList.remove('nav-open'); if (!t.closest('#panel')) closePanel(); render(); }
+  if (t.dataset.page) { S.page = t.dataset.page; $('#app').classList.remove('nav-open', 'nav-peek'); if (!t.closest('#panel')) closePanel(); render(); }
   else if (t.dataset.year) { S.year = +t.dataset.year; render(); }
   else if (t.dataset.q) { S.qmetric = t.dataset.q; render(); }
   else if (t.dataset.sm) { S.stockMode = t.dataset.sm; render(); }
@@ -1186,7 +1225,8 @@ function onClick(e) {
   document.addEventListener('click', onClick);
   $('#homeLink')?.addEventListener('click', (e) => { e.preventDefault(); goHome(); });
   initTheme();
-  $('#menuBtn').addEventListener('click', () => $('#app').classList.toggle('nav-open'));
+  $('#menuBtn').addEventListener('click', () => (isMobile() ? $('#app').classList.toggle('nav-open') : $('#app').classList.toggle('nav-peek')));
+  initNav();
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') { if (S.page === 'screen') { if (document.fullscreenElement) return; S.page = 'overview'; render(); } else closePanel(); }
     if ((e.key === 'f' || e.key === 'F') && S.page === 'screen' && !e.target.closest('input,textarea')) { try { document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen(); } catch (er) { /* 미지원 */ } }
