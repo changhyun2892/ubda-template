@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-18 18:21 KST",
+    "checked_at": "2026-11-19 00:20 KST",
     "corp_code": "00171265",
     "reports_total": 19,
     "new_reports": [],
@@ -9,7 +9,7 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-18 18:21 KST",
+    "checked_at": "2026-11-19 00:20 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
@@ -22,16 +22,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-18 18:21 KST",
-    "rows": 945,
-    "last_date": "2026-11-18",
-    "last_close": 10470,
+    "checked_at": "2026-11-19 00:20 KST",
+    "rows": 944,
+    "last_date": "2026-11-17",
+    "last_close": 10390,
     "source": "Yahoo Finance 034230.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-18 18:21 KST",
+    "checked_at": "2026-11-19 00:20 KST",
     "rows": 408,
     "groups": [
       "파라다이스",
@@ -42,7 +42,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-18 18:21 KST",
+    "checked_at": "2026-11-19 00:20 KST",
     "new": 0,
     "total": 286,
     "first": "2026-10-29 16:26",
@@ -51,7 +51,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-18 18:21 KST",
+    "checked_at": "2026-11-19 00:20 KST",
     "spike_days": 31,
     "with_major_disclosure": 20,
     "news_total": 286,
@@ -61,10 +61,17 @@
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-18 18:21 KST",
-    "rows": 895,
-    "as_of": "2026-11-18",
-    "per": 11.8,
-    "pbr": 0.518
+    "checked_at": "2026-11-19 00:20 KST",
+    "rows": 894,
+    "as_of": "2026-11-17",
+    "per": 11.71,
+    "pbr": 0.514
+  },
+  "fincheck": {
+    "status": "일부",
+    "checked_at": "2026-11-19 00:20 KST",
+    "matched": 0,
+    "total": 56,
+    "message": "2023: 다음 실행으로 미룸(한 번에 2개); 2022: 다음 실행으로 미룸(한 번에 2개)"
   }
 }
