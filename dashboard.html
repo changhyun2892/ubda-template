@@ -6,7 +6,7 @@
 <title>경영분석 대시보드</title>
 <meta name="description" content="DART 공시 기반 기업 경영분석 대시보드 (UBDA 템플릿). 수업용 분석이며 투자 추천이 아닙니다.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23444'/%3E%3C/svg%3E">
-<script>try { var t = localStorage.getItem('ubda_theme'); if (t === 'dark' || t === 'navy') document.documentElement.dataset.theme = t; if (localStorage.getItem('ubda_nav_pin') === '1') document.documentElement.classList.add('nav-pinned'); } catch (e) {}</script>
+<script>try { if (localStorage.getItem('ubda_nav_pin') === '1') document.documentElement.classList.add('nav-pinned'); } catch (e) {}</script>
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -27,11 +27,6 @@
       <button class="menu-btn" id="menuBtn" aria-label="메뉴 열기">☰</button>
       <div class="page-title"><h1 id="pageTitle">경영분석</h1><p id="pageDesc"></p></div>
       <div id="topFilters"></div>
-      <div class="theme-dots" role="group" aria-label="화면 색" data-tip="배경색상을 변경할 수 있습니다">
-        <button class="theme-dot" data-t="light" aria-label="흰색 화면"></button>
-        <button class="theme-dot" data-t="dark" aria-label="다크 모드"></button>
-        <button class="theme-dot" data-t="navy" aria-label="메인 스크린 색"></button>
-      </div>
       <button class="tb-btn" id="editBtn" aria-pressed="false" title="카드를 끌어 배치 변경">배치 편집</button>
       <button class="tb-btn primary" id="askBtn" title="질문하면 CSV로 계산해 답합니다">데이터 질의</button>
     </header>

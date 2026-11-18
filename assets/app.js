@@ -1013,19 +1013,6 @@ function initNav() {
   }, { passive: true });
 }
 
-/* ---------- 화면 테마 (흰색 · 다크 · 메인 스크린 남색) ---------- */
-function setTheme(th, anim) {
-  const root = document.documentElement;
-  if (anim && !REDUCED()) { root.classList.add('theme-anim'); setTimeout(() => root.classList.remove('theme-anim'), 400); }
-  if (th === 'light') delete root.dataset.theme; else root.dataset.theme = th;
-  try { localStorage.setItem('ubda_theme', th); } catch (e) { /* 저장 불가 환경 */ }
-  document.querySelectorAll('.theme-dot').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.t === th)));
-}
-function initTheme() {
-  document.querySelectorAll('.theme-dot').forEach((b) => b.addEventListener('click', () => setTheme(b.dataset.t, true)));
-  setTheme(document.documentElement.dataset.theme || 'light', false);
-}
-
 /* ---------- 기업 토론 (매달 1회 · AI 평의회 · 말풍선) ---------- */
 let DEB = null, DEB_CAST = { cast: {}, chair: {} }; const DEB_PLAYED = new Set(); let debTimer = 0;
 async function loadDebate(month) {
@@ -1224,7 +1211,6 @@ function onClick(e) {
   const h = location.hash.slice(1); S.page = PAGES.some((p) => p[0] === h) ? h : (D.fin.length ? 'screen' : 'overview'); // 기본 진입 = 메인 스크린
   document.addEventListener('click', onClick);
   $('#homeLink')?.addEventListener('click', (e) => { e.preventDefault(); goHome(); });
-  initTheme();
   $('#menuBtn').addEventListener('click', () => (isMobile() ? $('#app').classList.toggle('nav-open') : $('#app').classList.toggle('nav-peek')));
   initNav();
   document.addEventListener('keydown', (e) => {
