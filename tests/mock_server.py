@@ -35,7 +35,9 @@ class Data:
         for sj, name in (("BS", "연결 재무상태표"), ("IS", "연결 포괄손익계산서")):
             rows = "".join(f"<TR><TD>{it['account_nm']}</TD><TD>{round(int(it['thstrm_amount']) / 1e6):,}</TD></TR>"
                            for it in its if it["sj_div"] in (sj, "CIS" if sj == "IS" else sj) and it["thstrm_amount"])
-            out += f"<P>{name}</P><P>(단위 : 백만원)</P><TABLE><TR><TH>과목</TH><TH>당기</TH></TR>{rows}</TABLE>"
+            # 실제 DART처럼 표 묶음 안에 번호 없는 TITLE(재무제표 이름)이 들어 있음
+            out += (f"<TABLE-GROUP><TITLE ATOC=\"N\">{name}</TITLE><P>(단위 : 백만원)</P>"
+                    f"<TABLE><TR><TH>과목</TH><TH>당기</TH></TR>{rows}</TABLE></TABLE-GROUP>")
         return ("<SECTION-2><TITLE ATOC=\"Y\">1. 요약재무정보</TITLE><P>요약</P></SECTION-2>"
                 f"<SECTION-2><TITLE ATOC=\"Y\">2. 연결재무제표</TITLE>{out}</SECTION-2>"
                 "<SECTION-2><TITLE ATOC=\"Y\">3. 연결재무제표 주석</TITLE><P>주석 999,999</P></SECTION-2>")

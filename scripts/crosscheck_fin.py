@@ -30,6 +30,7 @@ from ubda_common import DATA, RAW, DartError, dart_get, load_config, now_kst, re
 from collect_business_text import xml_to_text
 
 MAX_DL = int(os.environ.get("FINCHECK_MAX_DL", "2"))      # 한 번 실행에 새로 받는 보고서 수 (시간 예산)
+PARSER = 2   # 원문 추출 방식이 바뀌면 올림 → 예전 방식으로 저장한 파일은 다시 받음
 III = re.compile(r"<TITLE[^>]*>\s*I{3}\.\s*재무에\s*관한\s*사항\s*</TITLE>", re.I)
 IV = re.compile(r"<TITLE[^>]*>\s*IV\.\s*[^<]*</TITLE>", re.I)
 TITLE = re.compile(r"<TITLE[^>]*>(.*?)</TITLE>", re.I | re.S)
@@ -47,7 +48,8 @@ def sections(x: str) -> dict[str, str]:
         return {}
     e = IV.search(x, s.end())
     body = x[s.start(): e.start() if e else len(x)]
-    ts = list(TITLE.finditer(body))
+    # 절 경계는 번호 붙은 제목(예: '3. 연결재무제표 주석')만. 재무제표 표 안에도 '연결 재무상태표' 같은 TITLE 태그가 있어 그건 경계가 아님
+    ts = [t for t in TITLE.finditer(body) if re.match(r"\s*(\d+|[IVX]+)\.", re.sub(r"<[^>]+>", "", t.group(1)))]
     out = {}
     for i, t in enumerate(ts):
         name = re.sub(r"\s+", "", re.sub(r"<[^>]+>", "", t.group(1)))
@@ -149,7 +151,7 @@ def main() -> int:
     for y in years:
         rcept = next(r["rcept_no"] for r in fin if r["bsns_year"] == y)
         f = RAW / f"finstmt_{y}.txt"
-        if f.exists() and meta.get(y, {}).get("for") == rcept:
+        if f.exists() and meta.get(y, {}).get("for") == rcept and meta.get(y, {}).get("parser") == PARSER:
             continue
         if not key:
             msgs.append(f"{y}: DART_API_KEY 없음")
@@ -167,7 +169,7 @@ def main() -> int:
         rep = next((r for r in reports if r["rcept_no"] == used), {})
         f.write_text(f"# {cfg['name']} {rep.get('report_nm', '')} — III. 재무에 관한 사항 중 재무제표 절 (원문 텍스트)\n"
                      f"# 접수번호 {used} · 원문 {rep.get('viewer_url', '')} · 저장 {now}\n\n" + txt + "\n", encoding="utf-8")
-        meta[y] = {"for": rcept, "rcept_no": used, "saved_at": now, "chars": len(txt)}
+        meta[y] = {"for": rcept, "rcept_no": used, "saved_at": now, "chars": len(txt), "parser": PARSER}
     meta_p.write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     rows, n_ok = [], 0
@@ -176,7 +178,7 @@ def main() -> int:
         y = r["bsns_year"]
         if y not in cache:
             p = RAW / f"finstmt_{y}.txt"
-            txt = p.read_text(encoding="utf-8") if p.exists() else ""
+            txt = p.read_text(encoding="utf-8") if p.exists() and meta.get(y, {}).get("parser") == PARSER else ""
             cache[y] = {div: index_text(part) for div, part in re.findall(r"=== (CFS|OFS) ===\n(.*?)(?=\n=== |\Z)", txt, re.S)}
         try:
             v = int(float(r["value"]))
