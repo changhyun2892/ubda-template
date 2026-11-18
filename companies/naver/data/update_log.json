@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:19 KST",
+    "checked_at": "2026-11-19 00:43 KST",
     "corp_code": "00266961",
     "reports_total": 16,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:19 KST",
+    "checked_at": "2026-11-19 00:43 KST",
     "rows": 944,
     "last_date": "2026-11-17",
     "last_close": 170000,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:20 KST",
+    "checked_at": "2026-11-19 00:43 KST",
     "spike_days": 35,
     "with_major_disclosure": 8,
     "news_total": 32,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:19 KST",
+    "checked_at": "2026-11-19 00:43 KST",
     "rows": 408,
     "groups": [
       "NAVER",
@@ -45,7 +45,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:19 KST",
+    "checked_at": "2026-11-19 00:43 KST",
     "new": 0,
     "total": 32,
     "first": "2026-11-10 14:12",
@@ -54,14 +54,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:19 KST",
+    "checked_at": "2026-11-19 00:43 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:20 KST",
+    "checked_at": "2026-11-19 00:43 KST",
     "rows": 896,
     "as_of": "2026-11-17",
     "per": 15.01,
@@ -69,8 +69,8 @@
   },
   "fincheck": {
     "status": "일부",
-    "checked_at": "2026-11-19 00:19 KST",
-    "matched": 0,
+    "checked_at": "2026-11-19 00:43 KST",
+    "matched": 18,
     "total": 52,
     "message": "2023: 다음 실행으로 미룸(한 번에 2개); 2022: 다음 실행으로 미룸(한 번에 2개)"
   }

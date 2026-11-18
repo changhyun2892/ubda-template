@@ -1,5 +1,5 @@
 {
- "started_at": "2026-11-19 00:15:30 KST",
+ "started_at": "2026-11-19 00:41:12 KST",
  "steps": [
   "collect",
   "shares",
@@ -16,7 +16,7 @@
  "companies": {
   "hanafg": {
    "collect": {
-    "sec": 1.4,
+    "sec": 1.2,
     "result": 0
    },
    "shares": {
@@ -28,23 +28,23 @@
     "result": 0
    },
    "fincheck": {
-    "sec": 7.2,
+    "sec": 6.9,
     "result": 0
    },
    "stock": {
-    "sec": 0.4,
+    "sec": 0.6,
     "result": 0
    },
    "search": {
-    "sec": 3.7,
+    "sec": 1.8,
     "result": 0
    },
    "news": {
-    "sec": 26.4,
+    "sec": 11.5,
     "result": 0
    },
    "events": {
-    "sec": 1.0,
+    "sec": 0.8,
     "result": 0
    },
    "valuation": {
@@ -52,7 +52,7 @@
     "result": 0
    },
    "build": {
-    "sec": 0.5,
+    "sec": 0.4,
     "result": 0
    },
    "verify": {
@@ -62,7 +62,7 @@
   },
   "hanon": {
    "collect": {
-    "sec": 0.7,
+    "sec": 0.9,
     "result": 0
    },
    "shares": {
@@ -74,23 +74,23 @@
     "result": 0
    },
    "fincheck": {
-    "sec": 5.0,
+    "sec": 4.5,
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.4,
     "result": 0
    },
    "search": {
-    "sec": 3.0,
+    "sec": 1.0,
     "result": 0
    },
    "news": {
-    "sec": 13.1,
+    "sec": 5.5,
     "result": 0
    },
    "events": {
-    "sec": 4.6,
+    "sec": 0.8,
     "result": 0
    },
    "valuation": {
@@ -98,7 +98,7 @@
     "result": 0
    },
    "build": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -120,7 +120,7 @@
     "result": 0
    },
    "fincheck": {
-    "sec": 4.4,
+    "sec": 4.6,
     "result": 0
    },
    "stock": {
@@ -128,15 +128,15 @@
     "result": 0
    },
    "search": {
-    "sec": 2.4,
+    "sec": 1.0,
     "result": 0
    },
    "news": {
-    "sec": 2.8,
+    "sec": 1.2,
     "result": 0
    },
    "events": {
-    "sec": 0.8,
+    "sec": 0.7,
     "result": 0
    },
    "valuation": {
@@ -144,7 +144,7 @@
     "result": 0
    },
    "build": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -154,7 +154,7 @@
   },
   "imfg": {
    "collect": {
-    "sec": 0.9,
+    "sec": 0.7,
     "result": 0
    },
    "shares": {
@@ -166,23 +166,23 @@
     "result": 0
    },
    "fincheck": {
-    "sec": 4.8,
+    "sec": 4.7,
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "search": {
-    "sec": 2.4,
+    "sec": 1.0,
     "result": 0
    },
    "news": {
-    "sec": 26.2,
+    "sec": 11.3,
     "result": 0
    },
    "events": {
-    "sec": 1.0,
+    "sec": 0.8,
     "result": 0
    },
    "valuation": {
@@ -200,7 +200,7 @@
   },
   "jusung": {
    "collect": {
-    "sec": 0.9,
+    "sec": 0.8,
     "result": 0
    },
    "shares": {
@@ -212,19 +212,19 @@
     "result": 0
    },
    "fincheck": {
-    "sec": 4.1,
+    "sec": 3.9,
     "result": 0
    },
    "stock": {
-    "sec": 0.4,
+    "sec": 0.6,
     "result": 0
    },
    "search": {
-    "sec": 2.6,
+    "sec": 1.1,
     "result": 0
    },
    "news": {
-    "sec": 26.2,
+    "sec": 11.1,
     "result": 0
    },
    "events": {
@@ -236,7 +236,7 @@
     "result": 0
    },
    "build": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -258,23 +258,23 @@
     "result": 0
    },
    "fincheck": {
-    "sec": 4.6,
+    "sec": 4.8,
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "search": {
-    "sec": 2.5,
+    "sec": 1.0,
     "result": 0
    },
    "news": {
-    "sec": 26.0,
+    "sec": 11.1,
     "result": 0
    },
    "events": {
-    "sec": 0.9,
+    "sec": 0.7,
     "result": 0
    },
    "valuation": {
@@ -282,7 +282,7 @@
     "result": 0
    },
    "build": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -292,7 +292,7 @@
   },
   "lgdisplay": {
    "collect": {
-    "sec": 0.7,
+    "sec": 0.8,
     "result": 0
    },
    "shares": {
@@ -304,19 +304,19 @@
     "result": 0
    },
    "fincheck": {
-    "sec": 4.5,
+    "sec": 4.3,
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "search": {
-    "sec": 2.5,
+    "sec": 1.0,
     "result": 0
    },
    "news": {
-    "sec": 21.0,
+    "sec": 9.0,
     "result": 0
    },
    "events": {
@@ -338,7 +338,7 @@
   },
   "lottetour": {
    "collect": {
-    "sec": 0.9,
+    "sec": 0.7,
     "result": 0
    },
    "shares": {
@@ -354,19 +354,19 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "search": {
-    "sec": 2.5,
+    "sec": 1.0,
     "result": 0
    },
    "news": {
-    "sec": 7.7,
+    "sec": 3.4,
     "result": 0
    },
    "events": {
-    "sec": 0.9,
+    "sec": 0.7,
     "result": 0
    },
    "valuation": {
@@ -374,7 +374,7 @@
     "result": 0
    },
    "build": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -396,19 +396,19 @@
     "result": 0
    },
    "fincheck": {
-    "sec": 5.2,
+    "sec": 5.8,
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "search": {
-    "sec": 2.4,
+    "sec": 1.0,
     "result": 0
    },
    "news": {
-    "sec": 25.9,
+    "sec": 11.0,
     "result": 0
    },
    "events": {
@@ -430,7 +430,7 @@
   },
   "orion": {
    "collect": {
-    "sec": 0.7,
+    "sec": 1.2,
     "result": 0
    },
    "shares": {
@@ -442,7 +442,7 @@
     "result": 0
    },
    "fincheck": {
-    "sec": 4.3,
+    "sec": 4.1,
     "result": 0
    },
    "stock": {
@@ -450,15 +450,15 @@
     "result": 0
    },
    "search": {
-    "sec": 2.7,
+    "sec": 1.0,
     "result": 0
    },
    "news": {
-    "sec": 5.2,
+    "sec": 2.3,
     "result": 0
    },
    "events": {
-    "sec": 0.8,
+    "sec": 0.7,
     "result": 0
    },
    "valuation": {
@@ -466,7 +466,7 @@
     "result": 0
    },
    "build": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -488,19 +488,19 @@
     "result": 0
    },
    "fincheck": {
-    "sec": 4.6,
+    "sec": 4.3,
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "search": {
-    "sec": 2.4,
+    "sec": 1.0,
     "result": 0
    },
    "news": {
-    "sec": 7.8,
+    "sec": 3.4,
     "result": 0
    },
    "events": {
@@ -512,7 +512,7 @@
     "result": 0
    },
    "build": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -534,23 +534,23 @@
     "result": 0
    },
    "fincheck": {
-    "sec": 6.9,
+    "sec": 6.7,
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "search": {
-    "sec": 2.8,
+    "sec": 1.0,
     "result": 0
    },
    "news": {
-    "sec": 25.9,
+    "sec": 11.3,
     "result": 0
    },
    "events": {
-    "sec": 0.9,
+    "sec": 0.8,
     "result": 0
    },
    "valuation": {
@@ -558,7 +558,7 @@
     "result": 0
    },
    "build": {
-    "sec": 0.4,
+    "sec": 0.3,
     "result": 0
    },
    "verify": {
@@ -568,7 +568,7 @@
   },
   "wontech": {
    "collect": {
-    "sec": 0.8,
+    "sec": 0.7,
     "result": 0
    },
    "shares": {
@@ -580,23 +580,23 @@
     "result": 0
    },
    "fincheck": {
-    "sec": 4.0,
+    "sec": 3.6,
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "search": {
-    "sec": 3.2,
+    "sec": 1.0,
     "result": 0
    },
    "news": {
-    "sec": 21.1,
+    "sec": 8.9,
     "result": 0
    },
    "events": {
-    "sec": 0.9,
+    "sec": 0.8,
     "result": 0
    },
    "valuation": {
@@ -604,7 +604,7 @@
     "result": 0
    },
    "build": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -626,19 +626,19 @@
     "result": 0
    },
    "fincheck": {
-    "sec": 4.6,
+    "sec": 4.4,
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.4,
     "result": 0
    },
    "search": {
-    "sec": 2.4,
+    "sec": 1.0,
     "result": 0
    },
    "news": {
-    "sec": 15.8,
+    "sec": 6.8,
     "result": 0
    },
    "events": {
@@ -650,7 +650,7 @@
     "result": 0
    },
    "build": {
-    "sec": 0.4,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -676,15 +676,15 @@
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.3,
     "result": 0
    },
    "search": {
-    "sec": 2.5,
+    "sec": 1.0,
     "result": 0
    },
    "news": {
-    "sec": 5.2,
+    "sec": 2.2,
     "result": 0
    },
    "events": {
@@ -696,7 +696,7 @@
     "result": 0
    },
    "build": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -706,7 +706,7 @@
   },
   "cuckoohs": {
    "collect": {
-    "sec": 0.9,
+    "sec": 0.7,
     "result": 0
    },
    "shares": {
@@ -718,19 +718,19 @@
     "result": 0
    },
    "fincheck": {
-    "sec": 3.4,
+    "sec": 3.7,
     "result": 0
    },
    "stock": {
-    "sec": 0.2,
+    "sec": 0.4,
     "result": 0
    },
    "search": {
-    "sec": 2.5,
+    "sec": 1.1,
     "result": 0
    },
    "news": {
-    "sec": 26.3,
+    "sec": 11.2,
     "result": 0
    },
    "events": {
@@ -742,7 +742,7 @@
     "result": 0
    },
    "build": {
-    "sec": 0.3,
+    "sec": 0.2,
     "result": 0
    },
    "verify": {
@@ -751,7 +751,7 @@
    }
   }
  },
- "finished_at": "2026-11-19 00:22:57 KST",
+ "finished_at": "2026-11-19 00:45:24 KST",
  "failed": [],
  "deferred": []
 }
