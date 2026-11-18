@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-18 18:21 KST",
+    "checked_at": "2026-11-19 00:20 KST",
     "corp_code": "00126478",
     "reports_total": 19,
     "new_reports": [],
@@ -15,16 +15,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-18 18:21 KST",
-    "rows": 945,
-    "last_date": "2026-11-18",
-    "last_close": 15760,
+    "checked_at": "2026-11-19 00:20 KST",
+    "rows": 944,
+    "last_date": "2026-11-17",
+    "last_close": 16000,
     "source": "Yahoo Finance 010140.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-18 18:21 KST",
+    "checked_at": "2026-11-19 00:20 KST",
     "spike_days": 34,
     "with_major_disclosure": 9,
     "news_total": 307,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-18 18:21 KST",
+    "checked_at": "2026-11-19 00:20 KST",
     "rows": 605,
     "groups": [
       "삼성중공업",
@@ -46,7 +46,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-18 18:21 KST",
+    "checked_at": "2026-11-19 00:20 KST",
     "new": 0,
     "total": 307,
     "first": "2026-10-29 13:34",
@@ -55,17 +55,24 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-18 18:21 KST",
+    "checked_at": "2026-11-19 00:20 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-18 18:21 KST",
-    "rows": 900,
-    "as_of": "2026-11-18",
-    "per": 15.06,
-    "pbr": 3.221
+    "checked_at": "2026-11-19 00:20 KST",
+    "rows": 899,
+    "as_of": "2026-11-17",
+    "per": 15.29,
+    "pbr": 3.27
+  },
+  "fincheck": {
+    "status": "일부",
+    "checked_at": "2026-11-19 00:20 KST",
+    "matched": 0,
+    "total": 55,
+    "message": "2023: 다음 실행으로 미룸(한 번에 2개); 2022: 다음 실행으로 미룸(한 번에 2개)"
   }
 }

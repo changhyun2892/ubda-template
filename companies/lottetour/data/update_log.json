@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-18 18:21 KST",
+    "checked_at": "2026-11-19 00:19 KST",
     "corp_code": "00231372",
     "reports_total": 17,
     "new_reports": [],
@@ -9,7 +9,7 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-18 18:21 KST",
+    "checked_at": "2026-11-19 00:19 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
@@ -22,16 +22,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-18 18:21 KST",
-    "rows": 945,
-    "last_date": "2026-11-18",
-    "last_close": 10170,
+    "checked_at": "2026-11-19 00:19 KST",
+    "rows": 944,
+    "last_date": "2026-11-17",
+    "last_close": 9800,
     "source": "Yahoo Finance 032350.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-18 18:21 KST",
+    "checked_at": "2026-11-19 00:19 KST",
     "rows": 408,
     "groups": [
       "롯데관광개발",
@@ -42,8 +42,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-18 18:21 KST",
-    "new": 1,
+    "checked_at": "2026-11-19 00:19 KST",
+    "new": 0,
     "total": 439,
     "first": "2026-06-16 16:52",
     "pages": 3,
@@ -51,7 +51,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-18 18:21 KST",
+    "checked_at": "2026-11-19 00:19 KST",
     "spike_days": 37,
     "with_major_disclosure": 9,
     "news_total": 439,
@@ -61,10 +61,17 @@
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-18 18:21 KST",
-    "rows": 895,
-    "as_of": "2026-11-18",
-    "per": 18.29,
-    "pbr": 2.171
+    "checked_at": "2026-11-19 00:19 KST",
+    "rows": 894,
+    "as_of": "2026-11-17",
+    "per": 17.62,
+    "pbr": 2.092
+  },
+  "fincheck": {
+    "status": "일부",
+    "checked_at": "2026-11-19 00:19 KST",
+    "matched": 0,
+    "total": 52,
+    "message": "2023: 다음 실행으로 미룸(한 번에 2개); 2022: 다음 실행으로 미룸(한 번에 2개)"
   }
 }
