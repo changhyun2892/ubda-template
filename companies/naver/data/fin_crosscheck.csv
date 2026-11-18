@@ -1,53 +1,53 @@
 audit_id,year,metric,value,fs_div,sj_div,rcept_no,result,found_in,unit,note
-F-2022-capex,2022,capex,700733545914,CFS,CF,20230314001049,,,,원문 재무제표를 아직 받지 못함
-F-2022-cash,2022,cash,2724168321708,CFS,BS,20230314001049,,,,원문 재무제표를 아직 받지 못함
-F-2022-cost_of_sales,2022,cost_of_sales,-6915414298267,CFS,CIS,20230314001049,,,,원문 재무제표를 아직 받지 못함
-F-2022-current_assets,2022,current_assets,6439570710743,CFS,BS,20230314001049,,,,원문 재무제표를 아직 받지 못함
-F-2022-current_liabilities,2022,current_liabilities,5480633710849,CFS,BS,20230314001049,,,,원문 재무제표를 아직 받지 못함
-F-2022-inventories,2022,inventories,8651839041,CFS,BS,20230314001049,,,,원문 재무제표를 아직 받지 못함
-F-2022-net_income,2022,net_income,673180300087,CFS,CIS,20230314001049,,,,원문 재무제표를 아직 받지 못함
-F-2022-operating_cashflow,2022,operating_cashflow,1453390444990,CFS,CF,20230314001049,,,,원문 재무제표를 아직 받지 못함
-F-2022-operating_profit,2022,operating_profit,1304664410543,CFS,CIS,20230314001049,,,,원문 재무제표를 아직 받지 못함
-F-2022-revenue,2022,revenue,8220078708810,CFS,CIS,20230314001049,,,,원문 재무제표를 아직 받지 못함
-F-2022-total_assets,2022,total_assets,33899042889136,CFS,BS,20230314001049,,,,원문 재무제표를 아직 받지 못함
-F-2022-total_equity,2022,total_equity,23450322480451,CFS,BS,20230314001049,,,,원문 재무제표를 아직 받지 못함
-F-2022-total_liabilities,2022,total_liabilities,10448720408685,CFS,BS,20230314001049,,,,원문 재무제표를 아직 받지 못함
-F-2023-capex,2023,capex,640623697250,CFS,CF,20240318000844,,,,원문 재무제표를 아직 받지 못함
-F-2023-cash,2023,cash,3576456533329,CFS,BS,20240318000844,,,,원문 재무제표를 아직 받지 못함
-F-2023-cost_of_sales,2023,cost_of_sales,8181823306977,CFS,CIS,20240318000844,,,,원문 재무제표를 아직 받지 못함
-F-2023-current_assets,2023,current_assets,7028076457880,CFS,BS,20240318000844,,,,원문 재무제표를 아직 받지 못함
-F-2023-current_liabilities,2023,current_liabilities,6305568632198,CFS,BS,20240318000844,,,,원문 재무제표를 아직 받지 못함
-F-2023-inventories,2023,inventories,14811319796,CFS,BS,20240318000844,,,,원문 재무제표를 아직 받지 못함
-F-2023-net_income,2023,net_income,985017762493,CFS,CIS,20240318000844,,,,원문 재무제표를 아직 받지 못함
-F-2023-operating_cashflow,2023,operating_cashflow,2002233273518,CFS,CF,20240318000844,,,,원문 재무제표를 아직 받지 못함
-F-2023-operating_profit,2023,operating_profit,1488820269608,CFS,CIS,20240318000844,,,,원문 재무제표를 아직 받지 못함
-F-2023-revenue,2023,revenue,9670643576585,CFS,CIS,20240318000844,,,,원문 재무제표를 아직 받지 못함
-F-2023-total_assets,2023,total_assets,35737826964395,CFS,BS,20240318000844,,,,원문 재무제표를 아직 받지 못함
-F-2023-total_equity,2023,total_equity,24237998815553,CFS,BS,20240318000844,,,,원문 재무제표를 아직 받지 못함
-F-2023-total_liabilities,2023,total_liabilities,11499828148842,CFS,BS,20240318000844,,,,원문 재무제표를 아직 받지 못함
+F-2022-capex,2022,capex,700733545914,CFS,CF,20230314001049,원문 자동 대조 일치,연결 현금흐름표,원,
+F-2022-cash,2022,cash,2724168321708,CFS,BS,20230314001049,원문 자동 대조 일치,연결 재무상태표,원,
+F-2022-cost_of_sales,2022,cost_of_sales,-6915414298267,CFS,CIS,20230314001049,원문 자동 대조 일치,연결 포괄손익계산서,원,
+F-2022-current_assets,2022,current_assets,6439570710743,CFS,BS,20230314001049,원문 자동 대조 일치,연결 재무상태표,원,
+F-2022-current_liabilities,2022,current_liabilities,5480633710849,CFS,BS,20230314001049,원문 자동 대조 일치,연결 재무상태표,원,
+F-2022-inventories,2022,inventories,8651839041,CFS,BS,20230314001049,원문 자동 대조 일치,연결 재무상태표,원,
+F-2022-net_income,2022,net_income,673180300087,CFS,CIS,20230314001049,원문 자동 대조 일치,연결 포괄손익계산서,원,
+F-2022-operating_cashflow,2022,operating_cashflow,1453390444990,CFS,CF,20230314001049,원문 자동 대조 일치,연결 현금흐름표,원,
+F-2022-operating_profit,2022,operating_profit,1304664410543,CFS,CIS,20230314001049,원문 자동 대조 일치,연결 포괄손익계산서,원,
+F-2022-revenue,2022,revenue,8220078708810,CFS,CIS,20230314001049,원문 자동 대조 일치,연결 포괄손익계산서,원,
+F-2022-total_assets,2022,total_assets,33899042889136,CFS,BS,20230314001049,원문 자동 대조 일치,연결 재무상태표,원,
+F-2022-total_equity,2022,total_equity,23450322480451,CFS,BS,20230314001049,원문 자동 대조 일치,연결 재무상태표,원,
+F-2022-total_liabilities,2022,total_liabilities,10448720408685,CFS,BS,20230314001049,원문 자동 대조 일치,연결 재무상태표,원,
+F-2023-capex,2023,capex,640623697250,CFS,CF,20240318000844,원문 자동 대조 일치,연결 현금흐름표,원,
+F-2023-cash,2023,cash,3576456533329,CFS,BS,20240318000844,원문 자동 대조 일치,연결 재무상태표,원,
+F-2023-cost_of_sales,2023,cost_of_sales,8181823306977,CFS,CIS,20240318000844,원문 자동 대조 일치,연결 포괄손익계산서,원,
+F-2023-current_assets,2023,current_assets,7028076457880,CFS,BS,20240318000844,원문 자동 대조 일치,연결 재무상태표,원,
+F-2023-current_liabilities,2023,current_liabilities,6305568632198,CFS,BS,20240318000844,원문 자동 대조 일치,연결 재무상태표,원,
+F-2023-inventories,2023,inventories,14811319796,CFS,BS,20240318000844,원문 자동 대조 일치,연결 재무상태표,원,
+F-2023-net_income,2023,net_income,985017762493,CFS,CIS,20240318000844,원문 자동 대조 일치,연결 포괄손익계산서,원,
+F-2023-operating_cashflow,2023,operating_cashflow,2002233273518,CFS,CF,20240318000844,원문 자동 대조 일치,연결 현금흐름표,원,
+F-2023-operating_profit,2023,operating_profit,1488820269608,CFS,CIS,20240318000844,원문 자동 대조 일치,연결 포괄손익계산서,원,
+F-2023-revenue,2023,revenue,9670643576585,CFS,CIS,20240318000844,원문 자동 대조 일치,연결 포괄손익계산서,원,
+F-2023-total_assets,2023,total_assets,35737826964395,CFS,BS,20240318000844,원문 자동 대조 일치,연결 재무상태표,원,
+F-2023-total_equity,2023,total_equity,24237998815553,CFS,BS,20240318000844,원문 자동 대조 일치,연결 재무상태표,원,
+F-2023-total_liabilities,2023,total_liabilities,11499828148842,CFS,BS,20240318000844,원문 자동 대조 일치,연결 재무상태표,원,
 F-2024-capex,2024,capex,553997155009,CFS,CF,20250318000645,원문 자동 대조 일치,연결 현금흐름표,원,
 F-2024-cash,2024,cash,4195524637851,CFS,BS,20250318000645,원문 자동 대조 일치,연결 재무상태표,원,
 F-2024-cost_of_sales,2024,cost_of_sales,8758455825820,CFS,CIS,20250318000645,원문 자동 대조 일치,연결 포괄손익계산서,원,
 F-2024-current_assets,2024,current_assets,9374912034828,CFS,BS,20250318000645,원문 자동 대조 일치,연결 재무상태표,원,
-F-2024-current_liabilities,2024,current_liabilities,6092160669672,CFS,BS,20250318000645,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
+F-2024-current_liabilities,2024,current_liabilities,6092160669672,CFS,BS,20250318000645,원문 자동 대조 일치,연결 재무상태표,원,
 F-2024-inventories,2024,inventories,21743796031,CFS,BS,20250318000645,원문 자동 대조 일치,연결 재무상태표,원,
 F-2024-net_income,2024,net_income,1931976372953,CFS,CIS,20250318000645,원문 자동 대조 일치,연결 포괄손익계산서,원,
 F-2024-operating_cashflow,2024,operating_cashflow,2589874337746,CFS,CF,20250318000645,원문 자동 대조 일치,연결 현금흐름표,원,
 F-2024-operating_profit,2024,operating_profit,1979263438827,CFS,CIS,20250318000645,원문 자동 대조 일치,연결 포괄손익계산서,원,
 F-2024-revenue,2024,revenue,10737719264647,CFS,CIS,20250318000645,원문 자동 대조 일치,연결 포괄손익계산서,원,
-F-2024-total_assets,2024,total_assets,38167876036020,CFS,BS,20250318000645,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
-F-2024-total_equity,2024,total_equity,27000911848337,CFS,BS,20250318000645,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
-F-2024-total_liabilities,2024,total_liabilities,11166964187683,CFS,BS,20250318000645,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
-F-2025-capex,2025,capex,1234693161100,CFS,CF,20260313001021,원문 자동 대조 일치,연결 현금흐름표 |,원,
-F-2025-cash,2025,cash,5984018799741,CFS,BS,20260313001021,원문 자동 대조 일치,연결 재무상태표 |,원,
-F-2025-cost_of_sales,2025,cost_of_sales,9826868830255,CFS,CIS,20260313001021,원문 자동 대조 일치,연결 포괄손익계산서 |,원,
-F-2025-current_assets,2025,current_assets,10928462735839,CFS,BS,20260313001021,원문 자동 대조 일치,연결 재무상태표 |,원,
-F-2025-current_liabilities,2025,current_liabilities,8018876510291,CFS,BS,20260313001021,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
-F-2025-inventories,2025,inventories,20235420058,CFS,BS,20260313001021,원문 자동 대조 일치,연결 재무상태표 |,원,
-F-2025-net_income,2025,net_income,1818746310015,CFS,CIS,20260313001021,원문 자동 대조 일치,연결 포괄손익계산서 |,원,
-F-2025-operating_cashflow,2025,operating_cashflow,3095806604677,CFS,CF,20260313001021,원문 자동 대조 일치,연결 현금흐름표 |,원,
-F-2025-operating_profit,2025,operating_profit,2208138388720,CFS,CIS,20260313001021,원문 자동 대조 일치,연결 포괄손익계산서 |,원,
-F-2025-revenue,2025,revenue,12035007218975,CFS,CIS,20260313001021,원문 자동 대조 일치,연결 포괄손익계산서 |,원,
-F-2025-total_assets,2025,total_assets,41084496327318,CFS,BS,20260313001021,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
-F-2025-total_equity,2025,total_equity,28953013365595,CFS,BS,20260313001021,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
-F-2025-total_liabilities,2025,total_liabilities,12131482961723,CFS,BS,20260313001021,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
+F-2024-total_assets,2024,total_assets,38167876036020,CFS,BS,20250318000645,원문 자동 대조 일치,연결 재무상태표,원,
+F-2024-total_equity,2024,total_equity,27000911848337,CFS,BS,20250318000645,원문 자동 대조 일치,연결 재무상태표,원,
+F-2024-total_liabilities,2024,total_liabilities,11166964187683,CFS,BS,20250318000645,원문 자동 대조 일치,연결 재무상태표,원,
+F-2025-capex,2025,capex,1234693161100,CFS,CF,20260313001021,원문 자동 대조 일치,연결 현금흐름표,원,
+F-2025-cash,2025,cash,5984018799741,CFS,BS,20260313001021,원문 자동 대조 일치,연결 재무상태표,원,
+F-2025-cost_of_sales,2025,cost_of_sales,9826868830255,CFS,CIS,20260313001021,원문 자동 대조 일치,연결 포괄손익계산서,원,
+F-2025-current_assets,2025,current_assets,10928462735839,CFS,BS,20260313001021,원문 자동 대조 일치,연결 재무상태표,원,
+F-2025-current_liabilities,2025,current_liabilities,8018876510291,CFS,BS,20260313001021,원문 자동 대조 일치,연결 재무상태표,원,
+F-2025-inventories,2025,inventories,20235420058,CFS,BS,20260313001021,원문 자동 대조 일치,연결 재무상태표,원,
+F-2025-net_income,2025,net_income,1818746310015,CFS,CIS,20260313001021,원문 자동 대조 일치,연결 포괄손익계산서,원,
+F-2025-operating_cashflow,2025,operating_cashflow,3095806604677,CFS,CF,20260313001021,원문 자동 대조 일치,연결 현금흐름표,원,
+F-2025-operating_profit,2025,operating_profit,2208138388720,CFS,CIS,20260313001021,원문 자동 대조 일치,연결 포괄손익계산서,원,
+F-2025-revenue,2025,revenue,12035007218975,CFS,CIS,20260313001021,원문 자동 대조 일치,연결 포괄손익계산서,원,
+F-2025-total_assets,2025,total_assets,41084496327318,CFS,BS,20260313001021,원문 자동 대조 일치,연결 재무상태표,원,
+F-2025-total_equity,2025,total_equity,28953013365595,CFS,BS,20260313001021,원문 자동 대조 일치,연결 재무상태표,원,
+F-2025-total_liabilities,2025,total_liabilities,12131482961723,CFS,BS,20260313001021,원문 자동 대조 일치,연결 재무상태표,원,
