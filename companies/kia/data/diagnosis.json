@@ -1,5 +1,5 @@
 {
- "built_at": "2026-11-17 21:20 KST",
+ "built_at": "2026-11-18 17:47 KST",
  "method": "같은 산업 기업 사이 백분위(0~100, 50 = 가운데) · 성향별 가중치는 UBDA가 임의로 정한 기준 · 투자 권유 아님",
  "weights": {
   "stable": {
@@ -68,7 +68,7 @@
   },
   "value": {
    "label": "가격 매력",
-   "score": 80,
+   "score": 90,
    "factors": [
     "per",
     "pbr"
@@ -120,7 +120,7 @@
   "neutral": {
    "label": "위험중립형",
    "focus": "수익성과 가격의 균형",
-   "score": 70,
+   "score": 73,
    "level": "높음",
    "comment": "PER 5.2배(업종 4곳 중 1위)는 강점, 매출 증가율 6.2%(업종 6곳 중 6위)는 확인할 지점",
    "parts": [
@@ -136,7 +136,7 @@
      "key": "axis:value",
      "label": "가격 매력",
      "weight": 0.3,
-     "score": 80,
+     "score": 90,
      "best": "per",
      "worst": "pbr"
     },
@@ -302,7 +302,7 @@
   },
   "per": {
    "label": "PER",
-   "value": 5.17,
+   "value": 5.18,
    "text": "5.2배",
    "pctile": 100,
    "rank": 1,
@@ -313,14 +313,14 @@
    "label": "PBR",
    "value": 0.575,
    "text": "0.57배",
-   "pctile": 60,
-   "rank": 3,
+   "pctile": 80,
+   "rank": 2,
    "n": 6,
    "higher_better": false
   },
   "div_yield": {
    "label": "배당수익률",
-   "value": 7.383,
+   "value": 7.375,
    "text": "7.38%",
    "pctile": 100,
    "rank": 1,
@@ -329,7 +329,7 @@
   },
   "vol_1y": {
    "label": "주가 변동성(연환산)",
-   "value": 57.20773865076121,
+   "value": 57.153674583443895,
    "text": "57.2%",
    "pctile": 80,
    "rank": 2,
@@ -347,13 +347,13 @@
   },
   "ret_1y": {
    "label": "1년 시장 대비 수익률",
-   "value": -39.60737905315717,
-   "text": "-39.6%p",
+   "value": -44.11319124828344,
+   "text": "-44.1%p",
    "pctile": 40,
    "rank": 4,
    "n": 6,
    "higher_better": true
   }
  },
- "stock_asof": "2026-11-17"
+ "stock_asof": "2026-11-18"
 }
