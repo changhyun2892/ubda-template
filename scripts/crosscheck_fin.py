@@ -36,7 +36,7 @@ IV = re.compile(r"<TITLE[^>]*>\s*IV\.\s*[^<]*</TITLE>", re.I)
 TITLE = re.compile(r"<TITLE[^>]*>(.*?)</TITLE>", re.I | re.S)
 NUM = re.compile(r"\(?-?\d{1,3}(?:,\d{3})+\)?|\(?-?\d{4,}\)?")
 UNIT = re.compile(r"단위\s*[:：]?\s*(백만\s*원|천\s*원|원)")
-SJ_WORDS = {"BS": ("재무상태표", "대차대조표"), "IS": ("손익계산서", "포괄손익"), "CIS": ("포괄손익", "손익계산서"), "CF": ("현금흐름표",)}
+SJ_WORDS = {"BS": ("재무상태표", "대차대조표"), "IS": ("손익계산서",), "CIS": ("손익계산서",), "CF": ("현금흐름표",)}
 COLS = ["audit_id", "year", "metric", "value", "fs_div", "sj_div", "rcept_no", "result", "found_in", "unit", "note"]
 ST_MATCH = "원문 자동 대조 일치"
 
@@ -69,38 +69,47 @@ def to_int(tok: str) -> int | None:
     return (-int(d) if neg else int(d)) if d else None
 
 
-def index_text(txt: str) -> list[tuple[str, str, int, set[int]]]:
-    """표 텍스트를 '표 이름 → (단위, 숫자 집합)'으로. 단위·표 이름은 그 표 위쪽에서 가장 가까운 것."""
+STMT = re.compile(r"^(?:##\s*[\d\-.]*\s*)?(?:연결\s*)?(재무상태표|대차대조표|포괄\s*손익계산서|손익계산서|현금흐름표|자본변동표)$")
+
+
+def index_text(txt: str) -> list[tuple[str, set[tuple[int, int]]]]:
+    """표 텍스트를 '재무제표 이름 → (숫자, 그 숫자의 단위) 집합'으로.
+    이름은 '연결 재무상태표'처럼 그 줄 전체가 재무제표 이름일 때만 바꾼다(계정 이름 '기타포괄손익…'은 이름이 아님).
+    단위는 숫자가 나온 시점에 가장 최근의 '(단위 : …)'. 같은 줄 안의 '(단위 : 원)'(주당이익)은 그 줄에만 적용."""
     blocks, cur_name, cur_unit, nums = [], "", 1, set()
     for line in txt.splitlines():
-        u = UNIT.search(line)
-        if u:
-            cur_unit = {"원": 1, "천원": 1000, "백만원": 1_000_000}[re.sub(r"\s", "", u.group(1))]
-        plain = line.replace(" | ", " ").strip()
-        if plain and len(plain) < 40 and any(w in plain for ws in SJ_WORDS.values() for w in ws) and not NUM.search(plain.split("(")[0]):
+        plain = re.sub(r"\s*\|\s*$", "", line.replace(" | ", " ")).strip()
+        if STMT.match(plain):
             if nums:
-                blocks.append((cur_name, "", cur_unit, nums))
+                blocks.append((cur_name, nums))
             cur_name, nums = plain, set()
             continue
+        u = UNIT.search(line)
+        unit_here = cur_unit
+        if u:
+            unit_here = {"원": 1, "천원": 1000, "백만원": 1_000_000}[re.sub(r"\s", "", u.group(1))]
+            if not re.sub(r"\(?단위\s*[:：]?\s*(백만\s*원|천\s*원|원)\)?", "", plain).strip(" |"):
+                cur_unit = unit_here          # 단위만 적힌 줄 → 이후 숫자 전체에 적용
         for tok in NUM.findall(line):
             v = to_int(tok)
             if v is not None:
-                nums.add(abs(v))
+                nums.add((abs(v), unit_here))
     if nums:
-        blocks.append((cur_name, "", cur_unit, nums))
+        blocks.append((cur_name, nums))
     return blocks
 
 
 def match(v: int, sj: str, blocks) -> tuple[str, int] | None:
     words = SJ_WORDS.get(sj, ())
-    for name, _, unit, nums in blocks:
-        if words and not any(w in name for w in words):
+    for name, nums in blocks:
+        if words and not any(w in name.replace(" ", "") for w in words):
             continue
-        q = abs(v) / unit
-        if q < 1000:                       # 작은 수는 우연 일치 가능
-            continue
-        if round(q) in nums or int(q) in nums or int(q) + 1 in nums:
-            return name, unit
+        for unit in (1_000_000, 1000, 1):
+            q = abs(v) / unit
+            if q < 1000:                   # 작은 수는 우연 일치 가능
+                continue
+            if any((c, unit) in nums for c in {round(q), int(q), int(q) + 1}):
+                return name, unit
     return None
 
 
