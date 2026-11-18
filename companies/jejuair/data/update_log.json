@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:18 KST",
+    "checked_at": "2026-11-19 00:48 KST",
     "corp_code": "00555874",
     "reports_total": 17,
     "new_reports": [],
@@ -9,7 +9,7 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:18 KST",
+    "checked_at": "2026-11-19 00:48 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
@@ -22,7 +22,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:18 KST",
+    "checked_at": "2026-11-19 00:49 KST",
     "rows": 944,
     "last_date": "2026-11-17",
     "last_close": 7450,
@@ -31,7 +31,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:18 KST",
+    "checked_at": "2026-11-19 00:49 KST",
     "rows": 408,
     "groups": [
       "제주항공",
@@ -42,8 +42,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:18 KST",
-    "new": 6,
+    "checked_at": "2026-11-19 00:49 KST",
+    "new": 0,
     "total": 504,
     "first": "2026-10-29 09:40",
     "pages": 6,
@@ -51,7 +51,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:18 KST",
+    "checked_at": "2026-11-19 00:49 KST",
     "spike_days": 29,
     "with_major_disclosure": 3,
     "news_total": 504,
@@ -61,7 +61,7 @@
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:18 KST",
+    "checked_at": "2026-11-19 00:49 KST",
     "rows": 895,
     "as_of": "2026-11-17",
     "per": 4.01,
@@ -69,8 +69,8 @@
   },
   "fincheck": {
     "status": "일부",
-    "checked_at": "2026-11-19 00:18 KST",
-    "matched": 0,
+    "checked_at": "2026-11-19 00:48 KST",
+    "matched": 28,
     "total": 56,
     "message": "2023: 다음 실행으로 미룸(한 번에 2개); 2022: 다음 실행으로 미룸(한 번에 2개)"
   }
