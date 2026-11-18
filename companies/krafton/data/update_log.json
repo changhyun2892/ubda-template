@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:25 KST",
+    "checked_at": "2026-11-19 00:42 KST",
     "corp_code": "00760971",
     "reports_total": 17,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:26 KST",
+    "checked_at": "2026-11-19 00:42 KST",
     "rows": 944,
     "last_date": "2026-11-17",
     "last_close": 191200,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:26 KST",
+    "checked_at": "2026-11-19 00:42 KST",
     "spike_days": 35,
     "with_major_disclosure": 9,
     "news_total": 574,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:26 KST",
+    "checked_at": "2026-11-19 00:42 KST",
     "rows": 612,
     "groups": [
       "크래프톤",
@@ -46,8 +46,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:26 KST",
-    "new": 3,
+    "checked_at": "2026-11-19 00:42 KST",
+    "new": 0,
     "total": 574,
     "first": "2026-11-05 23:10",
     "pages": 4,
@@ -55,14 +55,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:25 KST",
+    "checked_at": "2026-11-19 00:42 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:26 KST",
+    "checked_at": "2026-11-19 00:42 KST",
     "rows": 892,
     "as_of": "2026-11-17",
     "per": 20.6,
@@ -70,8 +70,8 @@
   },
   "fincheck": {
     "status": "일부",
-    "checked_at": "2026-11-19 00:25 KST",
-    "matched": 0,
+    "checked_at": "2026-11-19 00:42 KST",
+    "matched": 14,
     "total": 49,
     "message": "2023: 다음 실행으로 미룸(한 번에 2개); 2022: 다음 실행으로 미룸(한 번에 2개)"
   }

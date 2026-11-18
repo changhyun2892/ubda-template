@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:19 KST",
+    "checked_at": "2026-11-19 00:42 KST",
     "corp_code": "00149646",
     "reports_total": 26,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:21 KST",
+    "checked_at": "2026-11-19 00:42 KST",
     "rows": 944,
     "last_date": "2026-11-17",
     "last_close": 19160,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:22 KST",
+    "checked_at": "2026-11-19 00:42 KST",
     "spike_days": 30,
     "with_major_disclosure": 3,
     "news_total": 521,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:21 KST",
+    "checked_at": "2026-11-19 00:42 KST",
     "rows": 612,
     "groups": [
       "기업은행",
@@ -46,8 +46,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:22 KST",
-    "new": 3,
+    "checked_at": "2026-11-19 00:42 KST",
+    "new": 0,
     "total": 521,
     "first": "2026-11-11 13:02",
     "pages": 1,
@@ -55,14 +55,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:19 KST",
+    "checked_at": "2026-11-19 00:42 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:22 KST",
+    "checked_at": "2026-11-19 00:42 KST",
     "rows": 648,
     "as_of": "2026-11-17",
     "per": 5.74,
@@ -70,8 +70,8 @@
   },
   "fincheck": {
     "status": "일부",
-    "checked_at": "2026-11-19 00:19 KST",
-    "matched": 0,
+    "checked_at": "2026-11-19 00:42 KST",
+    "matched": 20,
     "total": 45,
     "message": "2023: 다음 실행으로 미룸(한 번에 2개)"
   }

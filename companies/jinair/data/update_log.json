@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:22 KST",
+    "checked_at": "2026-11-19 00:42 KST",
     "corp_code": "00653024",
     "reports_total": 16,
     "new_reports": [],
@@ -9,7 +9,7 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:22 KST",
+    "checked_at": "2026-11-19 00:42 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
@@ -22,7 +22,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:22 KST",
+    "checked_at": "2026-11-19 00:42 KST",
     "rows": 944,
     "last_date": "2026-11-17",
     "last_close": 7830,
@@ -31,7 +31,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:22 KST",
+    "checked_at": "2026-11-19 00:42 KST",
     "rows": 408,
     "groups": [
       "진에어",
@@ -42,7 +42,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:22 KST",
+    "checked_at": "2026-11-19 00:42 KST",
     "new": 0,
     "total": 510,
     "first": "2026-10-27 10:16",
@@ -51,7 +51,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:22 KST",
+    "checked_at": "2026-11-19 00:42 KST",
     "spike_days": 32,
     "with_major_disclosure": 5,
     "news_total": 510,
@@ -61,7 +61,7 @@
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:22 KST",
+    "checked_at": "2026-11-19 00:42 KST",
     "rows": 896,
     "as_of": "2026-11-17",
     "per": null,
@@ -69,8 +69,8 @@
   },
   "fincheck": {
     "status": "일부",
-    "checked_at": "2026-11-19 00:22 KST",
-    "matched": 0,
+    "checked_at": "2026-11-19 00:42 KST",
+    "matched": 24,
     "total": 56,
     "message": "2023: 다음 실행으로 미룸(한 번에 2개); 2022: 다음 실행으로 미룸(한 번에 2개)"
   }
