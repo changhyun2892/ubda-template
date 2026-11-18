@@ -39,7 +39,7 @@ HH,2024,operating_profit,영업이익,705223483000,KRW,연결,20250318000897,htt
 HH,2024,revenue,매출액,14486453544000,KRW,연결,20250318000897,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318000897,매출액,F-2024-revenue,원문 자동 대조 일치
 HH,2024,sga,판매비와관리비,788707391000,KRW,연결,20250318000897,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318000897,판매비와관리비,F-2024-sga,원문 자동 대조 일치
 HH,2024,total_assets,자산총계,19390946750000,KRW,연결,20250318000897,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318000897,자산총계,F-2024-total_assets,원문 자동 대조 일치
-HH,2024,total_equity,자본총계,5704448501000,KRW,연결,20250318000897,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318000897,자본총계,F-2024-total_equity,자동 수집 · 원문 대조 전
+HH,2024,total_equity,자본총계,5704448501000,KRW,연결,20250318000897,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318000897,자본총계,F-2024-total_equity,원문 자동 대조 일치
 HH,2024,total_liabilities,부채총계,13686498249000,KRW,연결,20250318000897,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318000897,부채총계,F-2024-total_liabilities,원문 자동 대조 일치
 HH,2025,capex,유형자산의 취득 (지출액),511943688000,KRW,연결,20260320000859,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000859,유형자산의 취득,F-2025-capex,원문 자동 대조 일치
 HH,2025,cash,현금및현금성자산,1869917695000,KRW,연결,20260320000859,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000859,현금및현금성자산,F-2025-cash,원문 자동 대조 일치
@@ -53,5 +53,5 @@ HH,2025,operating_profit,영업이익,2037510103000,KRW,연결,20260320000859,ht
 HH,2025,revenue,매출액,17580633257000,KRW,연결,20260320000859,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000859,매출액,F-2025-revenue,원문 자동 대조 일치
 HH,2025,sga,판매비와관리비,926706215000,KRW,연결,20260320000859,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000859,판매비와관리비,F-2025-sga,원문 자동 대조 일치
 HH,2025,total_assets,자산총계,26163044535000,KRW,연결,20260320000859,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000859,자산총계,F-2025-total_assets,원문 자동 대조 일치
-HH,2025,total_equity,자본총계,9341620098000,KRW,연결,20260320000859,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000859,자본총계,F-2025-total_equity,자동 수집 · 원문 대조 전
+HH,2025,total_equity,자본총계,9341620098000,KRW,연결,20260320000859,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000859,자본총계,F-2025-total_equity,원문 자동 대조 일치
 HH,2025,total_liabilities,부채총계,16821424437000,KRW,연결,20260320000859,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000859,부채총계,F-2025-total_liabilities,원문 자동 대조 일치

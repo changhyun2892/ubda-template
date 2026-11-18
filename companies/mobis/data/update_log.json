@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:53 KST",
+    "checked_at": "2026-11-19 01:23 KST",
     "corp_code": "00164788",
     "reports_total": 19,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:54 KST",
+    "checked_at": "2026-11-19 01:25 KST",
     "rows": 944,
     "last_date": "2026-11-17",
     "last_close": 346000,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:55 KST",
+    "checked_at": "2026-11-19 01:25 KST",
     "spike_days": 34,
     "with_major_disclosure": 9,
     "news_total": 352,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:54 KST",
+    "checked_at": "2026-11-19 01:25 KST",
     "rows": 612,
     "groups": [
       "현대모비스",
@@ -46,7 +46,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:54 KST",
+    "checked_at": "2026-11-19 01:25 KST",
     "new": 1,
     "total": 352,
     "first": "2026-11-03 21:43",
@@ -55,14 +55,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:53 KST",
+    "checked_at": "2026-11-19 01:23 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:55 KST",
+    "checked_at": "2026-11-19 01:25 KST",
     "rows": 927,
     "as_of": "2026-11-17",
     "per": 9.27,
@@ -70,8 +70,8 @@
   },
   "fincheck": {
     "status": "일부",
-    "checked_at": "2026-11-19 00:53 KST",
-    "matched": 18,
+    "checked_at": "2026-11-19 01:23 KST",
+    "matched": 28,
     "total": 56,
     "message": "2023: 다음 실행으로 미룸(한 번에 2개); 2022: 다음 실행으로 미룸(한 번에 2개)"
   }
