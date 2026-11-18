@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:04 KST",
+    "checked_at": "2026-11-19 01:32 KST",
     "corp_code": "00124726",
     "reports_total": 16,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:05 KST",
+    "checked_at": "2026-11-19 01:33 KST",
     "rows": 944,
     "last_date": "2026-11-17",
     "last_close": 79600,
@@ -24,17 +24,17 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:05 KST",
+    "checked_at": "2026-11-19 01:33 KST",
     "spike_days": 37,
     "with_major_disclosure": 9,
-    "news_total": 549,
+    "news_total": 550,
     "disclosures_total": 126,
     "disclosures_new": 0,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:05 KST",
+    "checked_at": "2026-11-19 01:33 KST",
     "rows": 609,
     "groups": [
       "빙그레",
@@ -46,23 +46,23 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:05 KST",
-    "new": 0,
-    "total": 549,
+    "checked_at": "2026-11-19 01:33 KST",
+    "new": 1,
+    "total": 550,
     "first": "2026-10-13 10:04",
     "pages": 1,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:04 KST",
+    "checked_at": "2026-11-19 01:32 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:05 KST",
+    "checked_at": "2026-11-19 01:33 KST",
     "rows": 895,
     "as_of": "2026-11-17",
     "per": 8.07,
@@ -70,7 +70,7 @@
   },
   "fincheck": {
     "status": "일부",
-    "checked_at": "2026-11-19 01:04 KST",
+    "checked_at": "2026-11-19 01:32 KST",
     "matched": 28,
     "total": 56,
     "message": "2023: 다음 실행으로 미룸(한 번에 2개); 2022: 다음 실행으로 미룸(한 번에 2개)"

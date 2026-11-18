@@ -27,7 +27,7 @@ NC,2023,total_assets,자산총계,4393800423903,KRW,연결,20240322000989,https:
 NC,2023,total_equity,자본총계,3253028540550,KRW,연결,20240322000989,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240322000989,자본총계,F-2023-total_equity,자동 수집 · 원문 대조 전
 NC,2023,total_liabilities,부채총계,1140771883353,KRW,연결,20240322000989,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240322000989,부채총계,F-2023-total_liabilities,자동 수집 · 원문 대조 전
 NC,2023,cost_of_sales,매출원가,,KRW,,,,,F-2023-cost_of_sales,미확인
-NC,2024,capex,유형자산의 취득 (지출액),84187207659,KRW,연결,20250328002285,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250328002285,유형자산의 취득,F-2024-capex,자동 수집 · 원문 대조 전
+NC,2024,capex,유형자산의 취득 (지출액),84187207659,KRW,연결,20250328002285,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250328002285,유형자산의 취득,F-2024-capex,원문 자동 대조 일치
 NC,2024,cash,현금및현금성자산,1260473495762,KRW,연결,20250328002285,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250328002285,현금및현금성자산,F-2024-cash,원문 자동 대조 일치
 NC,2024,current_assets,유동자산,1788536858276,KRW,연결,20250328002285,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250328002285,유동자산,F-2024-current_assets,원문 자동 대조 일치
 NC,2024,current_liabilities,유동부채,322187630188,KRW,연결,20250328002285,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250328002285,유동부채,F-2024-current_liabilities,원문 자동 대조 일치
@@ -41,7 +41,7 @@ NC,2024,total_assets,자산총계,3953941191414,KRW,연결,20250328002285,https:
 NC,2024,total_equity,자본총계,3063588634574,KRW,연결,20250328002285,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250328002285,자본총계,F-2024-total_equity,원문 자동 대조 일치
 NC,2024,total_liabilities,부채총계,890352556840,KRW,연결,20250328002285,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250328002285,부채총계,F-2024-total_liabilities,원문 자동 대조 일치
 NC,2024,cost_of_sales,매출원가,,KRW,,,,,F-2024-cost_of_sales,미확인
-NC,2025,capex,유형자산의 취득 (지출액),103460096418,KRW,연결,20260318001448,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001448,유형자산의 취득,F-2025-capex,자동 수집 · 원문 대조 전
+NC,2025,capex,유형자산의 취득 (지출액),103460096418,KRW,연결,20260318001448,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001448,유형자산의 취득,F-2025-capex,원문 자동 대조 일치
 NC,2025,cash,현금및현금성자산,503522487163,KRW,연결,20260318001448,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001448,현금및현금성자산,F-2025-cash,원문 자동 대조 일치
 NC,2025,current_assets,유동자산,2266589528444,KRW,연결,20260318001448,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001448,유동자산,F-2025-current_assets,원문 자동 대조 일치
 NC,2025,current_liabilities,유동부채,641189944715,KRW,연결,20260318001448,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001448,유동부채,F-2025-current_liabilities,원문 자동 대조 일치

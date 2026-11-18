@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:45 KST",
+    "checked_at": "2026-11-19 01:14 KST",
     "corp_code": "00980122",
     "reports_total": 20,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:48 KST",
+    "checked_at": "2026-11-19 01:16 KST",
     "rows": 944,
     "last_date": "2026-11-17",
     "last_close": 27500,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:48 KST",
+    "checked_at": "2026-11-19 01:16 KST",
     "spike_days": 28,
     "with_major_disclosure": 3,
     "news_total": 46,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:48 KST",
+    "checked_at": "2026-11-19 01:16 KST",
     "rows": 540,
     "groups": [
       "JB금융지주",
@@ -46,7 +46,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:48 KST",
+    "checked_at": "2026-11-19 01:16 KST",
     "new": 0,
     "total": 46,
     "first": "2026-08-13 19:40",
@@ -55,14 +55,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:46 KST",
+    "checked_at": "2026-11-19 01:14 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-19 00:48 KST",
+    "checked_at": "2026-11-19 01:16 KST",
     "rows": 731,
     "as_of": "2026-11-17",
     "per": 6.96,
@@ -70,8 +70,8 @@
   },
   "fincheck": {
     "status": "일부",
-    "checked_at": "2026-11-19 00:46 KST",
-    "matched": 23,
+    "checked_at": "2026-11-19 01:14 KST",
+    "matched": 33,
     "total": 50,
     "message": "2023: 다음 실행으로 미룸(한 번에 2개)"
   }

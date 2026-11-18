@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:05 KST",
+    "checked_at": "2026-11-19 01:33 KST",
     "corp_code": "01009789",
     "reports_total": 19,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:06 KST",
+    "checked_at": "2026-11-19 01:34 KST",
     "rows": 944,
     "last_date": "2026-11-17",
     "last_close": 292500,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:06 KST",
+    "checked_at": "2026-11-19 01:34 KST",
     "spike_days": 40,
     "with_major_disclosure": 15,
     "news_total": 582,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:06 KST",
+    "checked_at": "2026-11-19 01:34 KST",
     "rows": 408,
     "groups": [
       "코스맥스",
@@ -45,7 +45,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:06 KST",
+    "checked_at": "2026-11-19 01:34 KST",
     "new": 1,
     "total": 582,
     "first": "2026-10-14 09:16",
@@ -54,14 +54,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:05 KST",
+    "checked_at": "2026-11-19 01:33 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:06 KST",
+    "checked_at": "2026-11-19 01:34 KST",
     "rows": 890,
     "as_of": "2026-11-17",
     "per": 15.23,
@@ -69,8 +69,8 @@
   },
   "fincheck": {
     "status": "일부",
-    "checked_at": "2026-11-19 01:05 KST",
-    "matched": 24,
+    "checked_at": "2026-11-19 01:33 KST",
+    "matched": 28,
     "total": 56,
     "message": "2023: 다음 실행으로 미룸(한 번에 2개); 2022: 다음 실행으로 미룸(한 번에 2개)"
   }
