@@ -105,7 +105,7 @@ function barLine(el, cats, bars, line, opt = {}) {
   const bw = iw / cats.length, gw = bw * 0.7, sw = opt.stacked ? gw : gw / bars.length;
   const f = opt.fmt || axisWon(ticks);
   let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(opt.label || '')}">`;
-  ticks.forEach((t) => { s += `<line x1="${m.l}" x2="${W - m.r}" y1="${Y(t)}" y2="${Y(t)}" stroke="${t === 0 ? '#c9c3b8' : '#eeeae4'}"/><text x="${m.l - 6}" y="${Y(t) + 3}" text-anchor="end">${f(t)}</text>`; });
+  ticks.forEach((t) => { s += `<line x1="${m.l}" x2="${W - m.r}" y1="${Y(t)}" y2="${Y(t)}" class="${t === 0 ? 'g0' : 'g'}"/><text x="${m.l - 6}" y="${Y(t) + 3}" text-anchor="end">${f(t)}</text>`; });
   cats.forEach((c, i) => {
     let acc = 0;
     bars.forEach((b, j) => {
@@ -125,7 +125,7 @@ function barLine(el, cats, bars, line, opt = {}) {
       const pts = line.values.map((v, i) => (v === null ? null : [m.l + i * bw + bw / 2, LY(v)]));
       let d = ''; pts.forEach((p, i) => { if (p) d += (d && pts[i - 1] ? 'L' : 'M') + p[0] + ',' + p[1]; });
       s += `<path d="${d}" fill="none" stroke="${line.color}" stroke-width="2"/>`;
-      pts.forEach((p, i) => { if (p) s += `<circle class="bar" data-i="${i}" data-j="L" cx="${p[0]}" cy="${p[1]}" r="3.5" fill="#fff" stroke="${line.color}" stroke-width="2"/>`; });
+      pts.forEach((p, i) => { if (p) s += `<circle class="bar pt" data-i="${i}" data-j="L" cx="${p[0]}" cy="${p[1]}" r="3.5" stroke="${line.color}" stroke-width="2"/>`; });
     }
   }
   el.innerHTML = s + '</svg>';
@@ -149,7 +149,7 @@ function lineChart(el, xs, series, markers = [], opt = {}) {
   const X = (i) => m.l + (i / Math.max(1, xs.length - 1)) * iw, Y = (v) => m.t + ih - ((v - y0) / (y1 - y0)) * ih;
   const f = opt.fmt || ((v) => fmt(v, 0));
   let s = `<svg viewBox="0 0 ${W} ${H}">`;
-  ticks.forEach((t) => { s += `<line x1="${m.l}" x2="${W - m.r}" y1="${Y(t)}" y2="${Y(t)}" stroke="#eeeae4"/><text x="${m.l - 6}" y="${Y(t) + 3}" text-anchor="end">${f(t)}</text>`; });
+  ticks.forEach((t) => { s += `<line x1="${m.l}" x2="${W - m.r}" y1="${Y(t)}" y2="${Y(t)}" class="g"/><text x="${m.l - 6}" y="${Y(t) + 3}" text-anchor="end">${f(t)}</text>`; });
   const years = [...new Set(xs.map((x) => x.slice(0, 4)))];
   const monthly = xs.length <= 300 && /^\d{4}-\d{2}-\d{2}$/.test(xs[0] || ''); // 1년 이하 일별 자료는 월 단위 눈금
   if (monthly) { let lx = -99; [...new Set(xs.map((x) => x.slice(0, 7)))].forEach((ym) => { const i = xs.findIndex((x) => x.startsWith(ym)); if (X(i) - lx < 44) return; lx = X(i); s += `<text x="${X(i)}" y="${H - 8}">${ym.slice(2).replace('-', '.')}</text>`; }); }
@@ -167,9 +167,9 @@ function lineChart(el, xs, series, markers = [], opt = {}) {
   s += `<rect class="hit" x="${m.l}" y="${m.t}" width="${iw}" height="${ih}" fill="transparent"/><line class="cur" y1="${m.t}" y2="${m.t + ih}" stroke="#999" opacity="0"/>`;
   (opt.dots || []).forEach((dt) => { // 급변일 점 (첫 번째 선 위). 클릭하면 opt.onDot(key)
     const i = idx.get(dt.date), v = i === undefined ? null : series[0].values[i]; if (v === null || v === undefined) return;
-    s += `<circle class="dot" data-key="${esc(dt.key)}" data-l="${esc(dt.label)}" cx="${X(i)}" cy="${Y(v)}" r="${dt.big ? 5.5 : 4}" fill="${dt.color}" stroke="#fff" stroke-width="1.5" style="cursor:pointer"/>`;
+    s += `<circle class="dot ring" data-key="${esc(dt.key)}" data-l="${esc(dt.label)}" cx="${X(i)}" cy="${Y(v)}" r="${dt.big ? 5.5 : 4}" fill="${dt.color}" stroke-width="1.5" style="cursor:pointer"/>`;
   });
-  s += `<g class="hov" opacity="0" pointer-events="none">${series.map((se) => `<circle r="3.6" fill="${se.color}" stroke="#fff" stroke-width="1.5"/>`).join('')}</g>`;
+  s += `<g class="hov" opacity="0" pointer-events="none">${series.map((se) => `<circle r="3.6" class="ring" fill="${se.color}" stroke-width="1.5"/>`).join('')}</g>`;
   el.innerHTML = s + '</svg>';
   const svg = el.querySelector('svg'), cur = el.querySelector('.cur'), hov = el.querySelector('.hov'), hc = [...hov.querySelectorAll('circle')];
   el.querySelector('.hit').addEventListener('mousemove', (e) => {
@@ -974,6 +974,19 @@ function enableEdit() {
 }
 
 
+/* ---------- 화면 테마 (흰색 · 다크 · 메인 스크린 남색) ---------- */
+function setTheme(th, anim) {
+  const root = document.documentElement;
+  if (anim && !REDUCED()) { root.classList.add('theme-anim'); setTimeout(() => root.classList.remove('theme-anim'), 400); }
+  if (th === 'light') delete root.dataset.theme; else root.dataset.theme = th;
+  try { localStorage.setItem('ubda_theme', th); } catch (e) { /* 저장 불가 환경 */ }
+  document.querySelectorAll('.theme-dot').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.t === th)));
+}
+function initTheme() {
+  document.querySelectorAll('.theme-dot').forEach((b) => b.addEventListener('click', () => setTheme(b.dataset.t, true)));
+  setTheme(document.documentElement.dataset.theme || 'light', false);
+}
+
 /* ---------- 기업 토론 (매달 1회 · AI 평의회 · 말풍선) ---------- */
 let DEB = null, DEB_CAST = { cast: {}, chair: {} }; const DEB_PLAYED = new Set(); let debTimer = 0;
 async function loadDebate(month) {
@@ -1100,10 +1113,10 @@ function downloadPng(cardEl) {
   const svg = cardEl.querySelector('.chart svg'); if (!svg) return;
   const vb = svg.viewBox.baseVal, W = vb.width, H = vb.height, top = 46, clone = svg.cloneNode(true);
   const src = svg.querySelectorAll('*'), dst = clone.querySelectorAll('*'); // 화면 CSS(글자 크기·색)를 그림 안에 그대로 넣음
-  src.forEach((el, i) => { const cs = getComputedStyle(el), d = dst[i]; if (el.tagName === 'text') { d.setAttribute('font-size', cs.fontSize); d.setAttribute('font-family', cs.fontFamily); d.setAttribute('fill', cs.fill); } if (el.classList.contains('hit') || el.classList.contains('cur') || el.classList.contains('hov')) d.remove(); else { d.style.animation = 'none'; d.removeAttribute('stroke-dasharray'); } });
+  src.forEach((el, i) => { const cs = getComputedStyle(el), d = dst[i]; if (el.tagName === 'text') { d.setAttribute('font-size', cs.fontSize); d.setAttribute('font-family', cs.fontFamily); d.setAttribute('fill', cs.fill); } if (el.classList.contains('hit') || el.classList.contains('cur') || el.classList.contains('hov')) d.remove(); else { d.style.animation = 'none'; d.removeAttribute('stroke-dasharray'); if (el.matches('line.g, line.g0, circle.pt, circle.ring')) { d.setAttribute('stroke', cs.stroke); d.setAttribute('fill', cs.fill); } } });
   const ff = getComputedStyle(document.body).fontFamily, leg = [...cardEl.querySelectorAll('.legend span')].map((x) => x.textContent.trim()).filter(Boolean).join(' · ');
-  const out = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H + top + 22}" viewBox="0 0 ${W} ${H + top + 22}"><rect width="100%" height="100%" fill="#fff"/>
-    <text x="12" y="20" font-family="${esc(ff)}" font-size="14" font-weight="700" fill="#1c1a17">${esc(D.company.name)} · ${esc(cardEl.dataset.k)}</text>
+  const out = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H + top + 22}" viewBox="0 0 ${W} ${H + top + 22}"><rect width="100%" height="100%" fill="${getComputedStyle(cardEl).backgroundColor}"/>
+    <text x="12" y="20" font-family="${esc(ff)}" font-size="14" font-weight="700" fill="${getComputedStyle(cardEl).color}">${esc(D.company.name)} · ${esc(cardEl.dataset.k)}</text>
     <text x="12" y="38" font-family="${esc(ff)}" font-size="11" fill="#555">${[...cardEl.querySelectorAll('.legend span')].map((x) => { const i = x.querySelector('i'); return `<tspan fill="${i ? getComputedStyle(i).backgroundColor : '#777'}">■</tspan> ${esc(x.textContent.trim())}   `; }).join('')}</text>
     <g transform="translate(0,${top})">${clone.innerHTML}</g>
     <text x="12" y="${H + top + 14}" font-family="${esc(ff)}" font-size="10" fill="#999">UBDA · DART 공시·Yahoo Finance 기반 자동 수집 · ${esc(D.summary?.updated_at || '')}</text></svg>`;
@@ -1172,6 +1185,7 @@ function onClick(e) {
   const h = location.hash.slice(1); S.page = PAGES.some((p) => p[0] === h) ? h : (D.fin.length ? 'screen' : 'overview'); // 기본 진입 = 메인 스크린
   document.addEventListener('click', onClick);
   $('#homeLink')?.addEventListener('click', (e) => { e.preventDefault(); goHome(); });
+  initTheme();
   $('#menuBtn').addEventListener('click', () => $('#app').classList.toggle('nav-open'));
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') { if (S.page === 'screen') { if (document.fullscreenElement) return; S.page = 'overview'; render(); } else closePanel(); }
