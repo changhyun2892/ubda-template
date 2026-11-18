@@ -1,0 +1,49 @@
+audit_id,year,metric,value,fs_div,sj_div,rcept_no,result,found_in,unit,note
+F-2022-capex,2022,capex,1810935558,CFS,CF,20230316001406,,,,원문 재무제표를 아직 받지 못함
+F-2022-cash,2022,cash,92497218052,CFS,BS,20230316001406,,,,원문 재무제표를 아직 받지 못함
+F-2022-current_assets,2022,current_assets,270540219474,CFS,BS,20230316001406,,,,원문 재무제표를 아직 받지 못함
+F-2022-current_liabilities,2022,current_liabilities,232758647249,CFS,BS,20230316001406,,,,원문 재무제표를 아직 받지 못함
+F-2022-inventories,2022,inventories,8274559901,CFS,BS,20230316001406,,,,원문 재무제표를 아직 받지 못함
+F-2022-net_income,2022,net_income,-64572425272,CFS,CIS,20230316001406,,,,원문 재무제표를 아직 받지 못함
+F-2022-operating_cashflow,2022,operating_cashflow,-10240865980,CFS,CF,20230316001406,,,,원문 재무제표를 아직 받지 못함
+F-2022-operating_profit,2022,operating_profit,-101184086176,CFS,CIS,20230316001406,,,,원문 재무제표를 아직 받지 못함
+F-2022-revenue,2022,revenue,114969462998,CFS,CIS,20230316001406,,,,원문 재무제표를 아직 받지 못함
+F-2022-total_assets,2022,total_assets,455429440460,CFS,BS,20230316001406,,,,원문 재무제표를 아직 받지 못함
+F-2022-total_equity,2022,total_equity,99701647938,CFS,BS,20230316001406,,,,원문 재무제표를 아직 받지 못함
+F-2022-total_liabilities,2022,total_liabilities,355727792522,CFS,BS,20230316001406,,,,원문 재무제표를 아직 받지 못함
+F-2023-capex,2023,capex,5300618227,CFS,CF,20240321001614,,,,원문 재무제표를 아직 받지 못함
+F-2023-cash,2023,cash,118664727516,CFS,BS,20240321001614,,,,원문 재무제표를 아직 받지 못함
+F-2023-current_assets,2023,current_assets,446957657864,CFS,BS,20240321001614,,,,원문 재무제표를 아직 받지 못함
+F-2023-current_liabilities,2023,current_liabilities,370078106352,CFS,BS,20240321001614,,,,원문 재무제표를 아직 받지 못함
+F-2023-inventories,2023,inventories,59064707669,CFS,BS,20240321001614,,,,원문 재무제표를 아직 받지 못함
+F-2023-net_income,2023,net_income,59056762065,CFS,CIS,20240321001614,,,,원문 재무제표를 아직 받지 못함
+F-2023-operating_cashflow,2023,operating_cashflow,116726601632,CFS,CF,20240321001614,,,,원문 재무제표를 아직 받지 못함
+F-2023-operating_profit,2023,operating_profit,34047986427,CFS,CIS,20240321001614,,,,원문 재무제표를 아직 받지 못함
+F-2023-revenue,2023,revenue,411611609463,CFS,CIS,20240321001614,,,,원문 재무제표를 아직 받지 못함
+F-2023-total_assets,2023,total_assets,644596377665,CFS,BS,20240321001614,,,,원문 재무제표를 아직 받지 못함
+F-2023-total_equity,2023,total_equity,159304079247,CFS,BS,20240321001614,,,,원문 재무제표를 아직 받지 못함
+F-2023-total_liabilities,2023,total_liabilities,485292298418,CFS,BS,20240321001614,,,,원문 재무제표를 아직 받지 못함
+F-2024-capex,2024,capex,3571115450,CFS,CF,20250320001129,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
+F-2024-cash,2024,cash,105683073045,CFS,BS,20250320001129,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
+F-2024-current_assets,2024,current_assets,480374608896,CFS,BS,20250320001129,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
+F-2024-current_liabilities,2024,current_liabilities,383113105005,CFS,BS,20250320001129,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
+F-2024-inventories,2024,inventories,70111978681,CFS,BS,20250320001129,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
+F-2024-net_income,2024,net_income,99079352536,CFS,CIS,20250320001129,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
+F-2024-operating_cashflow,2024,operating_cashflow,88012813077,CFS,CF,20250320001129,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
+F-2024-operating_profit,2024,operating_profit,50919001973,CFS,CIS,20250320001129,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
+F-2024-revenue,2024,revenue,616606993658,CFS,CIS,20250320001129,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
+F-2024-total_assets,2024,total_assets,668789503298,CFS,BS,20250320001129,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
+F-2024-total_equity,2024,total_equity,180536987571,CFS,BS,20250320001129,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
+F-2024-total_liabilities,2024,total_liabilities,488252515727,CFS,BS,20250320001129,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
+F-2025-capex,2025,capex,3175669045,CFS,CF,20260319001345,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
+F-2025-cash,2025,cash,81675283020,CFS,BS,20260319001345,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
+F-2025-current_assets,2025,current_assets,468243227538,CFS,BS,20260319001345,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
+F-2025-current_liabilities,2025,current_liabilities,377478662478,CFS,BS,20260319001345,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
+F-2025-inventories,2025,inventories,46212129694,CFS,BS,20260319001345,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
+F-2025-net_income,2025,net_income,48091672930,CFS,CIS,20260319001345,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
+F-2025-operating_cashflow,2025,operating_cashflow,101086158079,CFS,CF,20260319001345,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
+F-2025-operating_profit,2025,operating_profit,57626875763,CFS,CIS,20260319001345,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
+F-2025-revenue,2025,revenue,586902971424,CFS,CIS,20260319001345,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
+F-2025-total_assets,2025,total_assets,657531604606,CFS,BS,20260319001345,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
+F-2025-total_equity,2025,total_equity,167123092679,CFS,BS,20260319001345,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
+F-2025-total_liabilities,2025,total_liabilities,490408511927,CFS,BS,20260319001345,,,,원문 표에서 같은 숫자를 찾지 못함 (재분류·합산 계정이거나 표기 차이)
