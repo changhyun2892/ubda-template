@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-18 17:43 KST",
+    "checked_at": "2026-11-18 18:22 KST",
     "corp_code": "00141529",
     "reports_total": 17,
     "new_reports": [],
@@ -9,7 +9,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-18 17:43 KST",
+    "checked_at": "2026-11-18 18:22 KST",
     "rows": 945,
     "last_date": "2026-11-18",
     "last_close": 297000,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-18 17:43 KST",
+    "checked_at": "2026-11-18 18:23 KST",
     "spike_days": 29,
     "with_major_disclosure": 3,
     "news_total": 588,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-18 17:43 KST",
+    "checked_at": "2026-11-18 18:23 KST",
     "rows": 1020,
     "groups": [
       "오뚜기",
@@ -48,8 +48,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-18 17:43 KST",
-    "new": 4,
+    "checked_at": "2026-11-18 18:23 KST",
+    "new": 0,
     "total": 588,
     "first": "2026-10-28 17:52",
     "pages": 2,
@@ -57,14 +57,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-18 17:43 KST",
+    "checked_at": "2026-11-18 18:22 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-18 17:43 KST",
+    "checked_at": "2026-11-18 18:23 KST",
     "rows": 892,
     "as_of": "2026-11-18",
     "per": 18.56,

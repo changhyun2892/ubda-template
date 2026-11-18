@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-18 17:44 KST",
+    "checked_at": "2026-11-18 18:24 KST",
     "corp_code": "01350869",
     "reports_total": 21,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-18 17:44 KST",
+    "checked_at": "2026-11-18 18:24 KST",
     "rows": 945,
     "last_date": "2026-11-18",
     "last_close": 32150,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-18 17:44 KST",
+    "checked_at": "2026-11-18 18:24 KST",
     "spike_days": 28,
     "with_major_disclosure": 7,
     "news_total": 52,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-18 17:44 KST",
+    "checked_at": "2026-11-18 18:24 KST",
     "rows": 816,
     "groups": [
       "우리금융지주",
@@ -47,7 +47,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-18 17:44 KST",
+    "checked_at": "2026-11-18 18:24 KST",
     "new": 0,
     "total": 52,
     "first": "2026-10-23 16:21",
@@ -56,14 +56,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-18 17:44 KST",
+    "checked_at": "2026-11-18 18:24 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-18 17:44 KST",
+    "checked_at": "2026-11-18 18:24 KST",
     "rows": 651,
     "as_of": "2026-11-18",
     "per": 7.84,
