@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-18 17:44 KST",
+    "checked_at": "2026-11-18 18:22 KST",
     "corp_code": "01190568",
     "reports_total": 16,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-18 17:44 KST",
+    "checked_at": "2026-11-18 18:22 KST",
     "rows": 662,
     "last_date": "2026-11-18",
     "last_close": 235000,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-18 17:44 KST",
+    "checked_at": "2026-11-18 18:22 KST",
     "spike_days": 30,
     "with_major_disclosure": 7,
     "news_total": 535,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-18 17:44 KST",
+    "checked_at": "2026-11-18 18:22 KST",
     "rows": 612,
     "groups": [
       "에이피알",
@@ -46,7 +46,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-18 17:44 KST",
+    "checked_at": "2026-11-18 18:22 KST",
     "new": 0,
     "total": 535,
     "first": "2026-10-19 14:26",
@@ -55,14 +55,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-18 17:44 KST",
+    "checked_at": "2026-11-18 18:22 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-18 17:44 KST",
+    "checked_at": "2026-11-18 18:22 KST",
     "rows": 662,
     "as_of": "2026-11-18",
     "per": 18.81,
