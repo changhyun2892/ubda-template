@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:26 KST",
+    "checked_at": "2026-11-19 11:53 KST",
     "corp_code": "00126186",
     "reports_total": 17,
     "new_reports": [],
@@ -15,16 +15,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:27 KST",
-    "rows": 944,
-    "last_date": "2026-11-17",
-    "last_close": 226000,
+    "checked_at": "2026-11-19 11:53 KST",
+    "rows": 946,
+    "last_date": "2026-11-19",
+    "last_close": 208500,
     "source": "Yahoo Finance 018260.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:27 KST",
+    "checked_at": "2026-11-19 11:53 KST",
     "spike_days": 37,
     "with_major_disclosure": 11,
     "news_total": 167,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:27 KST",
+    "checked_at": "2026-11-19 11:53 KST",
     "rows": 612,
     "groups": [
       "삼성에스디에스",
@@ -46,7 +46,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:27 KST",
+    "checked_at": "2026-11-19 11:53 KST",
     "new": 0,
     "total": 167,
     "first": "2026-05-29 13:56",
@@ -55,24 +55,24 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:26 KST",
+    "checked_at": "2026-11-19 11:53 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:27 KST",
-    "rows": 901,
-    "as_of": "2026-11-17",
-    "per": 27.74,
-    "pbr": 1.736
+    "checked_at": "2026-11-19 11:53 KST",
+    "rows": 903,
+    "as_of": "2026-11-19",
+    "per": 25.59,
+    "pbr": 1.602
   },
   "fincheck": {
-    "status": "일부",
-    "checked_at": "2026-11-19 01:26 KST",
-    "matched": 28,
+    "status": "성공",
+    "checked_at": "2026-11-19 11:53 KST",
+    "matched": 56,
     "total": 56,
-    "message": "2023: 다음 실행으로 미룸(한 번에 2개); 2022: 다음 실행으로 미룸(한 번에 2개)"
+    "message": ""
   }
 }

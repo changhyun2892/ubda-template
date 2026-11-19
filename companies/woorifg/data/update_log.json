@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:29 KST",
+    "checked_at": "2026-11-19 11:53 KST",
     "corp_code": "01350869",
     "reports_total": 21,
     "new_reports": [],
@@ -15,16 +15,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:32 KST",
-    "rows": 944,
-    "last_date": "2026-11-17",
-    "last_close": 32600,
+    "checked_at": "2026-11-19 11:53 KST",
+    "rows": 946,
+    "last_date": "2026-11-19",
+    "last_close": 32050,
     "source": "Yahoo Finance 316140.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:32 KST",
+    "checked_at": "2026-11-19 11:54 KST",
     "spike_days": 28,
     "with_major_disclosure": 7,
     "news_total": 52,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:32 KST",
+    "checked_at": "2026-11-19 11:53 KST",
     "rows": 816,
     "groups": [
       "우리금융지주",
@@ -47,7 +47,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:32 KST",
+    "checked_at": "2026-11-19 11:53 KST",
     "new": 0,
     "total": 52,
     "first": "2026-10-23 16:21",
@@ -56,24 +56,24 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:29 KST",
+    "checked_at": "2026-11-19 11:53 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:32 KST",
-    "rows": 650,
-    "as_of": "2026-11-17",
-    "per": 7.95,
-    "pbr": 0.606
+    "checked_at": "2026-11-19 11:54 KST",
+    "rows": 652,
+    "as_of": "2026-11-19",
+    "per": 7.81,
+    "pbr": 0.596
   },
   "fincheck": {
-    "status": "일부",
-    "checked_at": "2026-11-19 01:29 KST",
-    "matched": 33,
+    "status": "성공",
+    "checked_at": "2026-11-19 11:53 KST",
+    "matched": 50,
     "total": 50,
-    "message": "2023: 다음 실행으로 미룸(한 번에 2개)"
+    "message": ""
   }
 }

@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:23 KST",
+    "checked_at": "2026-11-19 11:52 KST",
     "corp_code": "00261443",
     "reports_total": 18,
     "new_reports": [],
@@ -15,16 +15,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:24 KST",
-    "rows": 944,
-    "last_date": "2026-11-17",
-    "last_close": 177800,
+    "checked_at": "2026-11-19 11:52 KST",
+    "rows": 946,
+    "last_date": "2026-11-19",
+    "last_close": 185300,
     "source": "Yahoo Finance 036570.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:24 KST",
+    "checked_at": "2026-11-19 11:53 KST",
     "spike_days": 38,
     "with_major_disclosure": 6,
     "news_total": 25,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:24 KST",
+    "checked_at": "2026-11-19 11:52 KST",
     "rows": 612,
     "groups": [
       "엔씨소프트",
@@ -46,7 +46,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:24 KST",
+    "checked_at": "2026-11-19 11:52 KST",
     "new": 0,
     "total": 25,
     "first": "2026-08-06 12:16",
@@ -55,24 +55,24 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:23 KST",
+    "checked_at": "2026-11-19 11:52 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:24 KST",
-    "rows": 891,
-    "as_of": "2026-11-17",
-    "per": 12.07,
-    "pbr": 1.012
+    "checked_at": "2026-11-19 11:53 KST",
+    "rows": 893,
+    "as_of": "2026-11-19",
+    "per": 12.58,
+    "pbr": 1.055
   },
   "fincheck": {
-    "status": "일부",
-    "checked_at": "2026-11-19 01:23 KST",
-    "matched": 26,
+    "status": "성공",
+    "checked_at": "2026-11-19 11:52 KST",
+    "matched": 51,
     "total": 51,
-    "message": "2023: 다음 실행으로 미룸(한 번에 2개); 2022: 다음 실행으로 미룸(한 번에 2개)"
+    "message": ""
   }
 }
