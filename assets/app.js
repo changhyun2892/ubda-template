@@ -1012,8 +1012,7 @@ function pageHero() {
   if (!D.fin.length) return noData();
   if (DISC === null) loadDisc().then(() => S.page === 'overview' && HERO() && render());
   if (!S.hzInit) { S.hzInit = true; S.period = 'quarter'; }   // 그래프는 분기가 기본
-  const y = S.year, V = D.valuation, G = D.diag, th = hzTheme();
-  const theme = `<div class="hz-theme" role="group" aria-label="화면 색"><button data-hz="dark" aria-pressed="${th === 'dark'}" title="다크 화면"><i class="d"></i>다크</button><button data-hz="light" aria-pressed="${th === 'light'}" title="화이트 화면"><i class="l"></i>화이트</button></div>`;
+  const y = S.year, V = D.valuation, G = D.diag;
   const lines = hzLines().map(([t, b, s]) => `<span class="hz-sc ${t}"><b>${esc(b)}</b><small>${esc(s)}</small></span>`).join('');
   const vd = D.vdaily || [], c1 = N(vd[vd.length - 1]?.close ?? null), c0 = N(vd[vd.length - 2]?.close ?? null), chg = c1 && c0 ? (c1 / c0 - 1) * 100 : null;
   const kp = (l, v, u, sub, act) => `<button class="hz-k" data-act="${act}"><span class="hz-kl">${l}</span><span class="hz-kv">${v}<small>${u}</small></span><span class="hz-kd">${sub}</span></button>`;
@@ -1055,7 +1054,7 @@ function pageHero() {
     <button class="hz-leaf" data-act="lev:${y}"><small>재무레버리지</small><b>${P(lev, 2, '배')}</b><span>${dl(lev, lev0, '', 2, false)}</span></button></div>
     <p class="hz-foot">ROE = 순이익률 × 총자산회전율 × 재무레버리지 · ${y - 1}년 대비 · 칸을 누르면 산식과 출처</p></div>`;
   return `<div class="hz">
-    <div class="hz-top"><div class="hz-strip"><span class="hz-st">한 줄 진단</span>${lines || '<small class="hz-none">조건에 맞는 문장 없음</small>'}<span class="hz-note">규칙 기반 자동 작성</span></div>${theme}</div>
+    <div class="hz-top"><div class="hz-strip"><span class="hz-st">한 줄 진단</span>${lines || '<small class="hz-none">조건에 맞는 문장 없음</small>'}<span class="hz-note">규칙 기반 자동 작성</span></div></div>
     <div class="hz-kpis">${kpis}</div>
     <div class="hz-grid">
       <section class="hz-card hz-hero"><div class="hz-ch"><h3>종합 진단</h3><small>${G ? `${esc(G.industry)} ${G.peers}곳 중 위치 · ${esc(G.year)} 사업연도` : ''}</small></div>${hero}</section>
@@ -1063,7 +1062,7 @@ function pageHero() {
       <section class="hz-card hz-perf"><div class="hz-ch"><h3>성과체계</h3><small>ROE 분해 · ${y} 사업연도</small></div>${perf}</section>
       <section class="hz-card hz-rev"><div class="hz-ch"><h3>${TOPL()} · ${MRGL()}</h3><small>막대: 억원 · 선: % · 막대를 누르면 출처</small><div class="seg"><button data-per="quarter" aria-pressed="${S.period === 'quarter'}">분기</button><button data-per="annual" aria-pressed="${S.period === 'annual'}">연간</button></div></div><div class="chart" id="c1"></div></section>
     </div>
-    <p class="hz-foot">임시 미리보기 디자인 (삼양식품에만 적용) · 화면 색은 이 브라우저에 저장됩니다.</p></div>`;
+    <p class="hz-foot">임시 미리보기 디자인 (삼양식품에만 적용) · 화면 색(다크/화이트)은 위쪽 버튼으로 바꾸며 이 브라우저에 저장됩니다.</p></div>`;
 }
 function drawHero() {
   const el = $('#c1'); if (!el) return;
@@ -1243,7 +1242,11 @@ function render() {
   const Y = YEARS();
   $('#topFilters').innerHTML = id === 'overview' && Y.length ? `<div class="seg">${Y.map((y) => `<button data-year="${y}" aria-pressed="${y === S.year}">${y}</button>`).join('')}</div>` : '';
   document.body.classList.toggle('screen-mode', id === 'screen');
-  hzApply(id === 'overview' && HERO());
+  hzApply(HERO());
+  { let t = $('#hzTop'); if (HERO()) { const th = hzTheme(); if (!t) { t = document.createElement('div'); t.id = 'hzTop'; $('#askBtn').before(t); }
+      t.className = 'hz-theme'; t.setAttribute('role', 'group'); t.setAttribute('aria-label', '화면 색');
+      t.innerHTML = `<button data-hz="dark" aria-pressed="${th === 'dark'}" title="다크 화면"><i class="d"></i>다크</button><button data-hz="light" aria-pressed="${th === 'light'}" title="화이트 화면"><i class="l"></i>화이트</button>`; }
+    else if (t) t.remove(); }
   const editable = !['screen', 'audit', 'dart'].includes(id) && !(id === 'overview' && HERO());
   $('#editBtn').hidden = !editable; $('#editBtn').setAttribute('aria-pressed', String(S.edit && editable));
   if (!editable) S.edit = false;
