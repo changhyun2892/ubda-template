@@ -864,14 +864,23 @@ function cmpCandidates() {
   const all = (INDEX?.companies || []).filter((c) => c.slug !== SLUG && c.has_data);
   return all.filter((c) => c.industry === D.company.industry); // 같은 산업끼리만 비교 (산업이 다르면 손익 구조·지표 의미가 달라짐)
 }
+// 비교 후보를 카테고리별로 묶음 (한 기업이 여러 카테고리면 각 묶음에 중복 표시). 우리 기업의 카테고리를 앞에.
+function cmpGroups(cands) {
+  const mine = D.company.categories || [];
+  const cats = [...new Set([...mine, ...cands.flatMap((c) => c.categories?.length ? c.categories : ['기타'])])];
+  return cats.map((cat) => ({ cat, mine: mine.includes(cat), list: cands.filter((c) => (c.categories?.length ? c.categories : ['기타']).includes(cat)) }))
+    .filter((g) => g.mine || g.list.length);
+}
 function pageCompare() {
   if (!D.fin.length) return noData();
   const cands = cmpCandidates();
   const indName = INDEX?.industries?.[D.company.industry]?.name || D.company.industry;
   if (!cands.length) return `<div class="empty"><b>같은 산업(${esc(indName)})의 다른 기업이 없습니다</b>기업 비교는 같은 산업 안에서만 합니다. 같은 산업의 기업을 추가하면 이 화면에서 비교할 수 있습니다.</div>`;
-  if (!S.cmp || !cands.some((c) => c.slug === S.cmp)) S.cmp = cands[0].slug;
+  const groups = cmpGroups(cands);
+  if (!S.cmp || !cands.some((c) => c.slug === S.cmp)) S.cmp = (groups.find((g) => g.mine && g.list.length)?.list[0] || cands[0]).slug;
   const O = OTHER[S.cmp];
-  const pick = `<div class="seg seg-wrap">${cands.map((c) => `<button data-cmp="${esc(c.slug)}" aria-pressed="${c.slug === S.cmp}">${esc(c.name)}</button>`).join('')}</div><p class="sub" style="margin:6px 2px 0">${esc(indName)} 산업 ${cands.length + 1}곳 중에서 비교 · 산업이 다르면 손익 구조와 지표 의미가 달라 비교하지 않습니다</p>`;
+  const pick = `<div class="cmp-groups">${groups.map((g) => `<div class="cmp-grp${g.mine ? ' mine' : ''}"><span class="cmp-cat">${esc(g.cat)}${g.mine ? '<small>우리 카테고리</small>' : ''}</span><div class="seg seg-wrap">${g.list.length ? g.list.map((c) => { const dup = (c.categories || []).length > 1; return `<button data-cmp="${esc(c.slug)}" aria-pressed="${c.slug === S.cmp}"${dup ? ` class="cmp-dup" title="여러 카테고리에 속함: ${esc(c.categories.join(', '))}"` : ''}>${esc(c.name)}</button>`; }).join('') : '<span class="cmp-none">같은 카테고리의 다른 기업 없음</span>'}</div></div>`).join('')}</div>
+    <p class="sub" style="margin:6px 2px 0">${esc(indName)} 산업 ${cands.length + 1}곳을 카테고리별로 묶음 · <span class="cmp-dup-t">주황 글씨</span> = 여러 카테고리에 함께 들어간 기업 · 산업이 다르면 손익 구조와 지표 의미가 달라 비교하지 않습니다</p>`;
   if (!O) { loadOther(S.cmp).then(() => S.page === 'compare' && render()); return `${pick}<div class="empty loading" style="margin-top:12px">비교 기업 데이터를 불러오는 중…</div>`; }
   const me = D.company.name, other = O.company?.name || S.cmp;
   const Y = [...new Set([...YEARS(), ...O.fin.map((r) => +r.year)])].sort().filter((y) => YEARS().includes(y) && O.fin.some((r) => +r.year === y));
