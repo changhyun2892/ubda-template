@@ -232,10 +232,21 @@ def main() -> int:
                     pg.wait_for_timeout(200)
                     ok("개요 연간→분기 전환", pg.locator("#c1 text").filter(has_text="Q").count() > 0)
                     pg.click('[data-per="annual"]')
-                    pg.click("#editBtn")
-                    pg.wait_for_timeout(200)
-                    ok("배치 편집 모드 표시", pg.locator(".edit-banner").count() == 1 and pg.locator(".grid > .card[draggable=true]").count() > 0)
-                    pg.click('[data-edit="done"]')
+                    if pg.locator(".bd-grid").count():
+                        # 보드형 개요(임시 미리보기 기업): 카드 5개, 키보드로 순서 이동 → 저장 → 기본 배치로
+                        order = lambda: pg.evaluate("[...document.querySelectorAll('.bd-grid>.bd-card')].map(c=>c.dataset.bk).join()")
+                        before = order()
+                        ok("보드: 카드 5개", pg.locator(".bd-grid > .bd-card").count() == 5, before)
+                        pg.focus('.bd-grid [data-grip="diag"]'); pg.keyboard.press("ArrowLeft"); pg.wait_for_timeout(300)
+                        moved = order()
+                        ok("보드: 손잡이 ← 키로 카드 이동", moved != before and moved.startswith("diag"), moved)
+                        pg.click('[data-bd="reset"]'); pg.wait_for_timeout(300)
+                        ok("보드: 기본 배치로 복원", order() == before)
+                    else:
+                        pg.click("#editBtn")
+                        pg.wait_for_timeout(200)
+                        ok("배치 편집 모드 표시", pg.locator(".edit-banner").count() == 1 and pg.locator(".grid > .card[draggable=true]").count() > 0)
+                        pg.click('[data-edit="done"]')
                     pg.click("#askBtn")
                     pg.wait_for_timeout(200)
                     chips = pg.locator("[data-ask]")
@@ -257,8 +268,12 @@ def main() -> int:
                     ok("기업 비교 후보는 같은 산업만", _names and all(_ind.get(n) == _me for n in _names), ", ".join(_names))
                     if (ROOT / "companies" / slug / "data" / "diagnosis.json").exists():
                         pg.click('[data-page="overview"]'); time.sleep(1.2)
-                        ok("개요 성과체계: ROE 분해 합계 = ROE 변화", pg.locator(".pt .pt-n.root").count() == 1 and "ROE" in pg.locator(".pt-sum").inner_text())
-                        ok("종합 진단 카드: 레이더 + 성향 3개", pg.locator(".card.diag .radar").count() == 1 and pg.locator(".dg-row").count() == 3)
+                        if pg.locator(".bd-grid").count():
+                            ok("보드 성과체계: ROE + 3요인 + 손익·부채 4칸", pg.locator(".bp .bp-n.root").count() == 1 and pg.locator(".bp-r3 .bp-n").count() == 3 and pg.locator(".bp-r4 .bp-n").count() == 4)
+                            ok("보드 종합 진단: 레이더 + 성향 3개", pg.locator(".bd-radar svg").count() == 1 and pg.locator(".bd-prof").count() == 3)
+                        else:
+                            ok("개요 성과체계: ROE 분해 합계 = ROE 변화", pg.locator(".pt .pt-n.root").count() == 1 and "ROE" in pg.locator(".pt-sum").inner_text())
+                            ok("종합 진단 카드: 레이더 + 성향 3개", pg.locator(".card.diag .radar").count() == 1 and pg.locator(".dg-row").count() == 3)
                         pg.locator('[data-act="dg:neutral"]').click(); time.sleep(0.4)
                         ok("진단 근거 패널", "위험중립형" in pg.locator("#panelIn h2").inner_text())
                         pg.locator("#panelIn .x").click()

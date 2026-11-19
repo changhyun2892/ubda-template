@@ -949,6 +949,121 @@ addEventListener('message', (e) => {
   if (e.data.ubda === 'screen-home') goHome();
 });
 
+
+/* ---------- 보드형 개요 (임시: company.json "ui_preview": "board"인 기업만) ----------
+   카드 = 성과체계 · 종합 진단 · 최근 공시 · 주가 급변일 · 매출액 그래프.
+   손잡이(⠿)를 끌어 위치를 바꾸고(마우스·터치·키보드 ←/→), 폭·높이 버튼으로 크기를 바꿈. 배치는 이 브라우저에 저장, 모든 보드 기업에 공통 */
+const BOARD = () => D?.company?.ui_preview === 'board';
+const BD_DEF = { perf: { w: 5, h: 2 }, diag: { w: 4, h: 2 }, disc: { w: 3, h: 1 }, spike: { w: 3, h: 1 }, rev: { w: 12, h: 2 } };
+const BD_W = [3, 4, 5, 6, 8, 12];
+function bdState() {
+  const s = store.get('board:v1') || {}, order = (s.order || []).filter((k) => BD_DEF[k]);
+  Object.keys(BD_DEF).forEach((k) => { if (!order.includes(k)) order.push(k); });
+  const size = {}; Object.keys(BD_DEF).forEach((k) => { size[k] = { ...BD_DEF[k], ...(s.size?.[k] || {}) }; });
+  return { order, size };
+}
+const bdSave = (st) => store.set('board:v1', st);
+function bdCard(k, title, sub, body, st) {
+  const z = st.size[k];
+  return `<section class="bd-card" data-bk="${k}" style="--w:${z.w};--h:${z.h}" aria-label="${esc(title)}">
+    <header class="bd-h"><button class="bd-grip" data-grip="${k}" aria-label="${esc(title)} 카드 옮기기 (←/→ 키로도 이동)" title="끌어서 옮기기">⠿</button>
+      <div class="bd-t"><h3>${esc(title)}</h3>${sub ? `<small>${sub}</small>` : ''}</div>
+      <span class="bd-tools"><button data-bd="narrow:${k}" title="좁게" aria-label="좁게">−</button><button data-bd="wide:${k}" title="넓게" aria-label="넓게">+</button><button data-bd="tall:${k}" title="높이 바꾸기" aria-label="높이 바꾸기">↕</button></span></header>
+    <div class="bd-b">${body}</div></section>`;
+}
+function bdPerf(y) {   // 보드용 세로형 성과체계 (위: ROE → 3요인 → 손익·부채)
+  if (BANK()) return perfTree(y);
+  const v = (k, yy = y) => met(yy, k), roe = v('roe_pct'); if (roe === null) return '';
+  const nm = v('net_margin_pct'), at = v('asset_turnover'), lev = roe !== null && nm && at ? roe / (nm * at) : null;
+  const nm0 = v('net_margin_pct', y - 1), at0 = v('asset_turnover', y - 1), roe0 = v('roe_pct', y - 1), lev0 = roe0 !== null && nm0 && at0 ? roe0 / (nm0 * at0) : null;
+  const dlt = (a, b, u, d, goodUp = true) => { if (a === null || b === null) return '<em>전년 없음</em>'; const dv = a - b, flat = Math.abs(dv) < 0.5 * 10 ** -d;
+    return `<em class="${flat ? '' : (dv > 0) === goodUp ? 'g' : 'r'}">${flat ? '– 변화 없음' : `${dv > 0 ? '▲' : '▼'} ${fmt(Math.abs(dv), d)}${u}`}</em>`; };
+  const n = (l, val, d, act, cls = '') => `<button class="bp-n ${cls}" ${act ? `data-act="${act}"` : ''}><small>${l}</small><b>${val}</b>${d}</button>`;
+  const P = (x, d = 1) => (x === null ? '–' : fmt(x, d) + '%');
+  return `<div class="bp">
+    <div class="bp-r1">${n('ROE', P(roe), dlt(roe, roe0, '%p', 1), `met:${y}:roe_pct`, 'root')}</div>
+    <svg class="bp-l" viewBox="0 0 300 18" preserveAspectRatio="none"><path d="M150 0V8M50 8H250M50 8V18M150 8V18M250 8V18"/></svg>
+    <div class="bp-r3">${n('순이익률', P(nm), dlt(nm, nm0, '%p', 1), `met:${y}:net_margin_pct`)}${n('총자산회전율', at === null ? '–' : fmt(at, 2) + '회', dlt(at, at0, '', 2), `met:${y}:asset_turnover`)}${n('재무레버리지', lev === null ? '–' : fmt(lev, 2) + '배', dlt(lev, lev0, '', 2, false), `lev:${y}`)}</div>
+    <svg class="bp-l" viewBox="0 0 300 18" preserveAspectRatio="none"><path d="M50 0V8M37.5 8H187.5M37.5 8V18M112.5 8V18M187.5 8V18M250 0V8M250 8H262.5V18"/></svg>
+    <div class="bp-r4">${n('영업이익률', P(v('operating_margin_pct')), dlt(v('operating_margin_pct'), v('operating_margin_pct', y - 1), '%p', 1), `met:${y}:operating_margin_pct`)}${n('매출원가율', P(v('cost_ratio_pct')), dlt(v('cost_ratio_pct'), v('cost_ratio_pct', y - 1), '%p', 1, false), `met:${y}:cost_ratio_pct`)}${n('판관비율', P(v('sga_ratio_pct')), dlt(v('sga_ratio_pct'), v('sga_ratio_pct', y - 1), '%p', 1, false), `met:${y}:sga_ratio_pct`)}${n('부채비율', P(v('debt_ratio_pct')), dlt(v('debt_ratio_pct'), v('debt_ratio_pct', y - 1), '%p', 1, false), `met:${y}:debt_ratio_pct`)}</div>
+    <p class="bp-f">ROE = 순이익률 × 총자산회전율 × 재무레버리지 · 칸을 누르면 산식과 출처 · ▲▼는 ${y - 1}년 대비 (초록 = 좋아짐)</p></div>`;
+}
+function bdAccent(on) {   // 보드 화면에서만 연보라 강조색, 다른 탭은 기업 고유색
+  const r = document.documentElement.style, c = D?.company?.theme_color;
+  if (on) { r.setProperty('--accent', '#6c4cf0'); r.setProperty('--accent-soft', '#6c4cf01a'); }
+  else if (c) { r.setProperty('--accent', c); r.setProperty('--accent-soft', c + '1a'); }
+}
+function pageBoard() {
+  if (!D.fin.length) return noData();
+  if (DISC === null) loadDisc().then(() => S.page === 'overview' && BOARD() && render());
+  if (!S.bdInit) { S.bdInit = true; S.period = 'quarter'; }   // 보드는 분기 그래프가 기본
+  const y = S.year, st = bdState(), V = D.valuation, G = D.diag;
+  const vchips = V ? [['시가총액', V.market_cap == null ? '–' : eok(V.market_cap)], ['PER', V.per == null ? '–' : fmt(V.per, 2) + '배'], ['PBR', V.pbr == null ? '–' : fmt(V.pbr, 2) + '배'], ['배당수익률', V.div_yield_pct == null ? '–' : fmt(V.div_yield_pct, 2) + '%']]
+    .map(([l, v], i) => `<button class="bd-chip" data-act="val:${['market_cap', 'per', 'pbr', 'div_yield_pct'][i]}"><small>${l}</small><b>${v}</b></button>`).join('') : '';
+  const lv = (p) => (p.level === '높음' ? 'var(--up)' : p.level === '낮음' ? 'var(--down)' : 'var(--warn)');
+  const prof = G?.profiles ? Object.entries(G.profiles).map(([k, p]) => `<button class="bd-prof" data-act="dg:${k}"><small>${esc(p.label)}</small><b style="color:${p.score == null ? 'var(--muted)' : lv(p)}">${p.score ?? '–'}</b></button>`).join('') : '';
+  const disc = DISC === null ? '<div class="empty loading">불러오는 중…</div>' : (DISC || []).slice().sort((a, b) => (a.rcept_dt < b.rcept_dt ? 1 : -1)).slice(0, 5)
+    .map((r) => `<a class="bd-li" href="${esc(r.viewer_url)}" target="_blank" rel="noopener"><span class="tl-cat" data-c="${esc(r.category)}">${esc(r.category)}</span><span class="bd-lt">${esc(r.report_nm.trim())}</span><span class="bd-ld">${esc(ymd(r.rcept_dt).slice(5).replace('-', '/'))}</span></a>`).join('') || '<div class="empty">공시 없음</div>';
+  const spikes = EVROWS().slice(0, 3).map((e) => { const up = e.direction !== '하락';
+    return `<button class="bd-sp" data-act="ev:${esc(e.date)}"><span class="bd-date"><small>${+e.date.slice(5, 7)}월</small><b>${+e.date.slice(8)}</b></span>
+      <span class="bd-spc ${up ? 'up' : 'dn'}"><b>${esc(e.direction)} · 시장 대비 ${spct(e.excess_pct)}</b><small>같은 시기 공시 · ${esc(e.headline || '없음')}</small></span></button>`; }).join('') || '<div class="empty">최근 급변일 없음</div>';
+  const cards = {
+    perf: bdCard('perf', '성과체계', `ROE 분해 · ${y} 사업연도`, bdPerf(y) || '<div class="empty">ROE 자료 없음</div>', st),
+    diag: bdCard('diag', '종합 진단', G ? `${esc(G.industry)} ${G.peers}곳 안 백분위 · ${esc(G.year)}` : '', G?.axes ? `<div class="bd-radar">${radarSvg(G.axes)}</div><small class="bd-note">점선 = 업종 가운데(50)</small><div class="bd-profs">${prof}</div>` : '<div class="empty">진단 자료 없음</div>', st),
+    disc: bdCard('disc', '최근 공시', 'DART 원문으로 이동', disc, st),
+    spike: bdCard('spike', '주가 급변일', '시장 대비 크게 움직인 날 · 누르면 상세', spikes, st),
+    rev: bdCard('rev', `${TOPL()} · 영업이익`, `막대: 억원 · 선: ${MRGL()}(%) · 막대를 누르면 출처`, `<div class="seg" style="margin-bottom:6px"><button data-per="quarter" aria-pressed="${S.period === 'quarter'}">분기</button><button data-per="annual" aria-pressed="${S.period === 'annual'}">연간</button></div><div class="chart" id="c1"></div>`, st),
+  };
+  return `<div class="board">
+    <div class="bd-top"><div class="bd-chips">${vchips}</div><span class="bd-hint">⠿ 손잡이를 끌어 카드 위치를 바꿀 수 있습니다 <button class="tb-btn" data-bd="reset">기본 배치로</button></span></div>
+    <div class="bd-grid">${st.order.map((k) => cards[k]).join('')}</div>
+    <p class="bd-foot">임시 미리보기 디자인 (삼양식품에만 적용) · 배치는 이 브라우저에만 저장됩니다.</p></div>`;
+}
+function bdAct(v) {
+  const st = bdState(), [op, k] = v.split(':');
+  if (op === 'reset') { store.set('board:v1', null); render(); return; }
+  const z = st.size[k]; if (!z) return;
+  if (op === 'wide' || op === 'narrow') { const i = BD_W.indexOf(z.w); z.w = BD_W[Math.max(0, Math.min(BD_W.length - 1, (i < 0 ? 2 : i) + (op === 'wide' ? 1 : -1)))]; }
+  if (op === 'tall') z.h = z.h === 1 ? 2 : 1;
+  bdSave(st); render();
+}
+function drawBoard() {
+  drawOverview();
+  const grid = $('#workspace .bd-grid'); if (!grid) return;
+  const save = () => { const st = bdState(); st.order = [...grid.children].map((c) => c.dataset.bk); bdSave(st); };
+  grid.querySelectorAll('.bd-grip').forEach((g) => {
+    g.addEventListener('keydown', (e) => {
+      if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return; e.preventDefault();
+      const c = g.closest('.bd-card'), sib = e.key === 'ArrowLeft' ? c.previousElementSibling : c.nextElementSibling; if (!sib) return;
+      if (e.key === 'ArrowLeft') grid.insertBefore(c, sib); else grid.insertBefore(sib, c);
+      save(); const k = c.dataset.bk; render(); $(`#workspace [data-grip="${k}"]`)?.focus();
+    });
+    g.addEventListener('pointerdown', (e) => {
+      if (e.button !== 0) return; e.preventDefault();
+      const c = g.closest('.bd-card'); if (c.classList.contains('bd-hole') || document.querySelector('.bd-ghost')) return;
+      const r = c.getBoundingClientRect(), ox = e.clientX - r.left, oy = e.clientY - r.top;
+      const ghost = c.cloneNode(true); ghost.classList.add('bd-ghost'); Object.assign(ghost.style, { width: r.width + 'px', height: r.height + 'px', left: r.left + 'px', top: r.top + 'px' });
+      document.body.append(ghost); c.classList.add('bd-hole');
+      let last = 0, swapEl = null, swapT = 0;
+      const move = (ev) => {
+        ghost.style.left = ev.clientX - ox + 'px'; ghost.style.top = ev.clientY - oy + 'px';
+        const now = performance.now(); if (now - last < 60) return; last = now;
+        const over = document.elementsFromPoint(ev.clientX, ev.clientY).find((el) => el.classList?.contains('bd-card') && el !== c && el.parentNode === grid);
+        if (!over || (over === swapEl && now - swapT < 450)) return;   // 방금 자리를 바꾼 카드 위에서 왔다 갔다 하지 않게
+        const o = over.getBoundingClientRect(), before = (ev.clientX - o.left) / o.width < 0.5;
+        swapEl = over; swapT = now;
+        const ref = before ? over : over.nextElementSibling; if (ref !== c && ref !== c.nextElementSibling) grid.insertBefore(c, ref);
+        else if (!before && over.nextElementSibling === c) grid.insertBefore(c, over);
+        const vh = innerHeight; if (ev.clientY < 70) scrollBy(0, -18); else if (ev.clientY > vh - 70) scrollBy(0, 18);
+      };
+      // 카드를 DOM에서 옮기면 포인터 캡처가 풀리므로 창 전체에서 듣는다
+      const up = () => { removeEventListener('pointermove', move); removeEventListener('pointerup', up); removeEventListener('pointercancel', up);
+        ghost.remove(); c.classList.remove('bd-hole'); save(); render(); };
+      addEventListener('pointermove', move); addEventListener('pointerup', up); addEventListener('pointercancel', up);
+    });
+  });
+}
+
 /* ---------- 편집 모드: 카드를 끌어 순서 변경, 이 브라우저에만 저장 ---------- */
 const store = {
   get(k) { try { return JSON.parse(localStorage.getItem('ubda:' + k)); } catch (e) { return null; } },
@@ -1088,8 +1203,8 @@ function drawDebate() {
   debTimer = setTimeout(step, 400);
 }
 
-const DRAW = { debate: drawDebate, industry: drawIndustry, screen: drawScreen, compare: drawCompare, overview: drawOverview, pl: drawPL, quarterly: drawQuarterly, bs: drawBS, stock: drawStock, news: drawNews, timeline: drawTimeline, production: drawProduction };
-const RENDER = { debate: pageDebate, screen: pageScreen, compare: pageCompare, dart: pageDart, overview: pageOverview, pl: pagePL, quarterly: pageQuarterly, ratios: pageRatios, bs: pageBS, stock: pageStock, news: pageNews, timeline: pageTimeline, production: pageProduction, industry: pageIndustry, audit: pageAudit };
+const DRAW = { debate: drawDebate, industry: drawIndustry, screen: drawScreen, compare: drawCompare, overview: () => (BOARD() ? drawBoard() : drawOverview()), pl: drawPL, quarterly: drawQuarterly, bs: drawBS, stock: drawStock, news: drawNews, timeline: drawTimeline, production: drawProduction };
+const RENDER = { debate: pageDebate, screen: pageScreen, compare: pageCompare, dart: pageDart, overview: () => (BOARD() ? pageBoard() : pageOverview()), pl: pagePL, quarterly: pageQuarterly, ratios: pageRatios, bs: pageBS, stock: pageStock, news: pageNews, timeline: pageTimeline, production: pageProduction, industry: pageIndustry, audit: pageAudit };
 
 let LAST_PAGE = null;
 const REDUCED = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -1111,7 +1226,8 @@ function render() {
   const Y = YEARS();
   $('#topFilters').innerHTML = id === 'overview' && Y.length ? `<div class="seg">${Y.map((y) => `<button data-year="${y}" aria-pressed="${y === S.year}">${y}</button>`).join('')}</div>` : '';
   document.body.classList.toggle('screen-mode', id === 'screen');
-  const editable = !['screen', 'audit', 'dart'].includes(id);
+  document.body.classList.toggle('board-on', id === 'overview' && BOARD()); bdAccent(id === 'overview' && BOARD());
+  const editable = !['screen', 'audit', 'dart'].includes(id) && !(id === 'overview' && BOARD());
   $('#editBtn').hidden = !editable; $('#editBtn').setAttribute('aria-pressed', String(S.edit && editable));
   if (!editable) S.edit = false;
   const fresh = id !== LAST_PAGE || !!$('#workspace .loading'); LAST_PAGE = id; // 탭을 바꿨을 때(또는 불러오기 직후)만 효과 — 필터 변경 땐 바로 표시
@@ -1164,11 +1280,12 @@ function initCoSearch() {
   q.addEventListener('blur', () => setTimeout(() => { box.hidden = true; }, 150));
 }
 function onClick(e) {
-  const t = e.target.closest('[data-page],[data-year],[data-act],[data-q],[data-sm],[data-lf],[data-per],[data-cmp],[data-edit],[data-sr]'); if (!t) return;
+  const t = e.target.closest('[data-page],[data-year],[data-act],[data-q],[data-sm],[data-lf],[data-per],[data-cmp],[data-edit],[data-sr],[data-bd]'); if (!t) return;
   if (t.dataset.act === 'dlcsv') { downloadCsv(t.closest('.card')); return; }
   if (t.dataset.act === 'dlpng') { downloadPng(t.closest('.card')); return; }
   if (t.dataset.sr) { S.stockRange = t.dataset.sr; render(); return; }
   if (S.edit && t.closest('.chart')) return; // 편집 중에는 차트 클릭 끔
+  if (t.dataset.bd) { bdAct(t.dataset.bd); return; }
   if (t.dataset.per) { S.period = t.dataset.per; render(); return; }
   if (t.dataset.cmp) { S.cmp = t.dataset.cmp; closePanel(); render(); return; }
   if (t.dataset.edit) { if (t.dataset.edit === 'reset') store.set(`order:${SLUG}:${S.page}`, null); if (t.dataset.edit === 'done') S.edit = false; render(); return; }
