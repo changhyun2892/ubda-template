@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:17 KST",
+    "checked_at": "2026-11-19 11:52 KST",
     "corp_code": "00266961",
     "reports_total": 16,
     "new_reports": [],
@@ -15,16 +15,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:18 KST",
-    "rows": 944,
-    "last_date": "2026-11-17",
-    "last_close": 170000,
+    "checked_at": "2026-11-19 11:52 KST",
+    "rows": 946,
+    "last_date": "2026-11-19",
+    "last_close": 168100,
     "source": "Yahoo Finance 035420.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:18 KST",
+    "checked_at": "2026-11-19 11:52 KST",
     "spike_days": 35,
     "with_major_disclosure": 8,
     "news_total": 32,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:18 KST",
+    "checked_at": "2026-11-19 11:52 KST",
     "rows": 408,
     "groups": [
       "NAVER",
@@ -45,7 +45,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:18 KST",
+    "checked_at": "2026-11-19 11:52 KST",
     "new": 0,
     "total": 32,
     "first": "2026-11-10 14:12",
@@ -54,22 +54,22 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:17 KST",
+    "checked_at": "2026-11-19 11:52 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:18 KST",
-    "rows": 896,
-    "as_of": "2026-11-17",
-    "per": 15.01,
-    "pbr": 0.924
+    "checked_at": "2026-11-19 11:52 KST",
+    "rows": 898,
+    "as_of": "2026-11-19",
+    "per": 14.84,
+    "pbr": 0.914
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:17 KST",
+    "checked_at": "2026-11-19 11:52 KST",
     "matched": 52,
     "total": 52,
     "message": ""
