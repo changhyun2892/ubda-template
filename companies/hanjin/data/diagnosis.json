@@ -1,5 +1,5 @@
 {
- "built_at": "2026-11-19 01:36 KST",
+ "built_at": "2026-11-19 12:05 KST",
  "method": "같은 산업 기업 사이 백분위(0~100, 50 = 가운데) · 성향별 가중치는 UBDA가 임의로 정한 기준 · 투자 권유 아님",
  "weights": {
   "stable": {
@@ -79,9 +79,9 @@
   "stable": {
    "label": "안정형",
    "focus": "재무 안정·배당·주가 변동",
-   "score": 45,
+   "score": 52,
    "level": "보통",
-   "comment": "배당수익률 3.33%(업종 9곳 중 4위)는 강점, ROE 0.1%(업종 10곳 중 8위)는 확인할 지점 · 최근 4분기 적자",
+   "comment": "배당수익률 3.27%(업종 9곳 중 2위)는 강점, ROE 0.1%(업종 10곳 중 8위)는 확인할 지점 · 최근 4분기 적자",
    "parts": [
     {
      "key": "axis:stable",
@@ -95,7 +95,7 @@
      "key": "div_yield",
      "label": "배당수익률",
      "weight": 0.25,
-     "score": 62,
+     "score": 88,
      "best": "div_yield",
      "worst": "div_yield"
     },
@@ -163,7 +163,7 @@
    "focus": "성장과 주가 흐름",
    "score": 43,
    "level": "보통",
-   "comment": "강점으로 꼽을 지표가 없고 ROE 0.1%(업종 10곳 중 8위)가 가장 약함",
+   "comment": "강점으로 꼽을 지표가 없고 총자산회전율 0.72회(업종 10곳 중 8위)가 가장 약함",
    "parts": [
     {
      "key": "axis:growth",
@@ -311,7 +311,7 @@
   },
   "pbr": {
    "label": "PBR",
-   "value": 0.195,
+   "value": 0.199,
    "text": "0.20배",
    "pctile": 100,
    "rank": 1,
@@ -320,17 +320,17 @@
   },
   "div_yield": {
    "label": "배당수익률",
-   "value": 3.331,
-   "text": "3.33%",
-   "pctile": 62,
-   "rank": 4,
+   "value": 3.275,
+   "text": "3.27%",
+   "pctile": 88,
+   "rank": 2,
    "n": 9,
    "higher_better": true
   },
   "vol_1y": {
    "label": "주가 변동성(연환산)",
-   "value": 46.36814315499506,
-   "text": "46.4%",
+   "value": 46.34680154890315,
+   "text": "46.3%",
    "pctile": 56,
    "rank": 5,
    "n": 10,
@@ -347,13 +347,13 @@
   },
   "ret_1y": {
    "label": "1년 시장 대비 수익률",
-   "value": -31.205359428475788,
-   "text": "-31.2%p",
+   "value": -33.40801653750998,
+   "text": "-33.4%p",
    "pctile": 44,
    "rank": 6,
    "n": 10,
    "higher_better": true
   }
  },
- "stock_asof": "2026-11-17"
+ "stock_asof": "2026-11-19"
 }

@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-19 01:36 KST",
+ "updated_at": "2026-11-19 12:05 KST",
  "industries": {
   "auto": {
    "name": "자동차",
@@ -77,20 +77,20 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 28,
-    "자동 수집 · 원문 대조 전": 103,
+    "원문 자동 대조 일치": 56,
+    "자동 수집 · 원문 대조 전": 75,
     "불일치": 0,
     "미확인": 0
    },
    "industry_kpis_found": 9,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-19 01:32 KST",
+   "updated_at": "2026-11-19 12:03 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 7604058670000,
-    "per": 32.46,
-    "pbr": 1.607,
-    "div_yield_pct": 0.954
+    "as_of": "2026-11-19",
+    "market_cap": 8124644225100,
+    "per": 34.68,
+    "pbr": 1.717,
+    "div_yield_pct": 0.893
    }
   },
   {
@@ -133,13 +133,13 @@
    },
    "industry_kpis_found": 2,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-19 01:13 KST",
+   "updated_at": "2026-11-19 11:53 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 8648213805000,
-    "per": 18.49,
-    "pbr": 13.024,
-    "div_yield_pct": 2.203
+    "as_of": "2026-11-19",
+    "market_cap": 8835404580000,
+    "per": 18.89,
+    "pbr": 13.306,
+    "div_yield_pct": 2.157
    }
   },
   {
@@ -182,13 +182,13 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-19 01:22 KST",
+   "updated_at": "2026-11-19 11:53 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 2433573964800,
-    "per": 11.58,
-    "pbr": 1.74,
-    "div_yield_pct": 2.912
+    "as_of": "2026-11-19",
+    "market_cap": 2459499823800,
+    "per": 11.7,
+    "pbr": 1.759,
+    "div_yield_pct": 2.881
    }
   },
   {
@@ -223,20 +223,20 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 28,
-    "자동 수집 · 원문 대조 전": 103,
+    "원문 자동 대조 일치": 56,
+    "자동 수집 · 원문 대조 전": 75,
     "불일치": 0,
     "미확인": 0
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-19 01:33 KST",
+   "updated_at": "2026-11-19 11:54 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 737814867600,
-    "per": 8.07,
-    "pbr": 0.853,
-    "div_yield_pct": 4.146
+    "as_of": "2026-11-19",
+    "market_cap": 728545836600,
+    "per": 7.97,
+    "pbr": 0.842,
+    "div_yield_pct": 4.198
    }
   },
   {
@@ -272,20 +272,20 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 32,
-    "자동 수집 · 원문 대조 전": 134,
+    "원문 자동 대조 일치": 48,
+    "자동 수집 · 원문 대조 전": 118,
     "불일치": 0,
     "미확인": 21
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-19 01:34 KST",
+   "updated_at": "2026-11-19 12:04 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 4111652663400,
-    "per": 6.16,
-    "pbr": 0.374,
-    "div_yield_pct": 5.485
+    "as_of": "2026-11-19",
+    "market_cap": 4105515868380,
+    "per": 6.15,
+    "pbr": 0.373,
+    "div_yield_pct": 5.493
    }
   },
   {
@@ -328,13 +328,13 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-19 01:13 KST",
+   "updated_at": "2026-11-19 11:53 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 1567208032800,
-    "per": 6.66,
-    "pbr": 0.334,
-    "div_yield_pct": 1.164
+    "as_of": "2026-11-19",
+    "market_cap": 1621957658400,
+    "per": 6.9,
+    "pbr": 0.345,
+    "div_yield_pct": 1.125
    }
   },
   {
@@ -375,13 +375,13 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-19 01:23 KST",
+   "updated_at": "2026-11-19 11:53 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 1464540544550,
-    "per": 13.2,
-    "pbr": 2.646,
-    "div_yield_pct": 4.454
+    "as_of": "2026-11-19",
+    "market_cap": 1418875583250,
+    "per": 12.79,
+    "pbr": 2.564,
+    "div_yield_pct": 4.598
    }
   },
   {
@@ -414,20 +414,20 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 28,
-    "자동 수집 · 원문 대조 전": 103,
+    "원문 자동 대조 일치": 56,
+    "자동 수집 · 원문 대조 전": 75,
     "불일치": 0,
     "미확인": 0
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-19 01:34 KST",
+   "updated_at": "2026-11-19 11:54 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 3319731382500,
-    "per": 15.23,
-    "pbr": 5.197,
-    "div_yield_pct": 1.128
+    "as_of": "2026-11-19",
+    "market_cap": 3365129418500,
+    "per": 15.44,
+    "pbr": 5.268,
+    "div_yield_pct": 1.113
    }
   },
   {
@@ -463,20 +463,20 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 28,
-    "자동 수집 · 원문 대조 전": 103,
+    "원문 자동 대조 일치": 56,
+    "자동 수집 · 원문 대조 전": 75,
     "불일치": 0,
     "미확인": 0
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-19 01:36 KST",
+   "updated_at": "2026-11-19 12:05 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 7437656472600,
-    "per": 11.91,
-    "pbr": 1.99,
-    "div_yield_pct": 1.237
+    "as_of": "2026-11-19",
+    "market_cap": 7444733215200,
+    "per": 11.92,
+    "pbr": 1.992,
+    "div_yield_pct": 1.236
    }
   },
   {
@@ -519,13 +519,13 @@
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-19 01:13 KST",
+   "updated_at": "2026-11-19 11:53 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 85663134000,
-    "per": 9.39,
-    "pbr": 0.378,
-    "div_yield_pct": 4.094
+    "as_of": "2026-11-19",
+    "market_cap": 85036941500,
+    "per": 9.32,
+    "pbr": 0.375,
+    "div_yield_pct": 4.124
    }
   },
   {
@@ -567,13 +567,13 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-19 01:24 KST",
+   "updated_at": "2026-11-19 11:53 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 518302323000,
-    "per": 4.08,
-    "pbr": 0.457,
-    "div_yield_pct": 5.195
+    "as_of": "2026-11-19",
+    "market_cap": 512692990500,
+    "per": 4.04,
+    "pbr": 0.452,
+    "div_yield_pct": 5.252
    }
   },
   {
@@ -609,20 +609,20 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 28,
-    "자동 수집 · 원문 대조 전": 102,
+    "원문 자동 대조 일치": 55,
+    "자동 수집 · 원문 대조 전": 75,
     "불일치": 0,
     "미확인": 1
    },
    "industry_kpis_found": 2,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-19 01:36 KST",
+   "updated_at": "2026-11-19 11:54 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 1760613252200,
+    "as_of": "2026-11-19",
+    "market_cap": 1785449489300,
     "per": null,
-    "pbr": 0.152,
-    "div_yield_pct": 3.918
+    "pbr": 0.154,
+    "div_yield_pct": 3.864
    }
   },
   {
@@ -656,20 +656,20 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 28,
-    "자동 수집 · 원문 대조 전": 103,
+    "원문 자동 대조 일치": 56,
+    "자동 수집 · 원문 대조 전": 75,
     "불일치": 0,
     "미확인": 0
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-19 01:12 KST",
+   "updated_at": "2026-11-19 11:52 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 1843543500750,
-    "per": 21.55,
-    "pbr": 0.542,
-    "div_yield_pct": 2.721
+    "as_of": "2026-11-19",
+    "market_cap": 1851904242250,
+    "per": 21.65,
+    "pbr": 0.545,
+    "div_yield_pct": 2.709
    }
   },
   {
@@ -713,13 +713,13 @@
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-19 01:10 KST",
+   "updated_at": "2026-11-19 11:51 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 132481540100,
-    "per": 5.95,
-    "pbr": 0.382,
-    "div_yield_pct": 5.495
+    "as_of": "2026-11-19",
+    "market_cap": 131316867220,
+    "per": 5.9,
+    "pbr": 0.379,
+    "div_yield_pct": 5.543
    }
   },
   {
@@ -762,13 +762,13 @@
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-19 01:10 KST",
+   "updated_at": "2026-11-19 11:51 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 34818559331400,
-    "per": 8.07,
-    "pbr": 0.741,
-    "div_yield_pct": 3.281
+    "as_of": "2026-11-19",
+    "market_cap": 34762894168600,
+    "per": 8.06,
+    "pbr": 0.74,
+    "div_yield_pct": 3.287
    }
   },
   {
@@ -803,20 +803,20 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 24,
-    "자동 수집 · 원문 대조 전": 69,
+    "원문 자동 대조 일치": 48,
+    "자동 수집 · 원문 대조 전": 45,
     "불일치": 0,
     "미확인": 8
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-19 01:10 KST",
+   "updated_at": "2026-11-19 11:51 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 474766415800,
-    "per": 11.69,
-    "pbr": 3.086,
-    "div_yield_pct": 3.915
+    "as_of": "2026-11-19",
+    "market_cap": 579323456800,
+    "per": 14.26,
+    "pbr": 3.765,
+    "div_yield_pct": 3.209
    }
   },
   {
@@ -850,20 +850,20 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 28,
-    "자동 수집 · 원문 대조 전": 102,
+    "원문 자동 대조 일치": 56,
+    "자동 수집 · 원문 대조 전": 74,
     "불일치": 0,
     "미확인": 0
    },
    "industry_kpis_found": 1,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-19 01:14 KST",
+   "updated_at": "2026-11-19 11:53 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 279490274160,
+    "as_of": "2026-11-19",
+    "market_cap": 284301045120,
     "per": null,
-    "pbr": 0.195,
-    "div_yield_pct": 3.331
+    "pbr": 0.199,
+    "div_yield_pct": 3.275
    }
   },
   {
@@ -905,13 +905,13 @@
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-19 01:10 KST",
+   "updated_at": "2026-11-19 11:51 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 15755106660000,
-    "per": 81.98,
-    "pbr": 20.06,
-    "div_yield_pct": 0.484
+    "as_of": "2026-11-19",
+    "market_cap": 15269014440000,
+    "per": 79.45,
+    "pbr": 19.441,
+    "div_yield_pct": 0.499
    }
   },
   {
@@ -952,12 +952,12 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-19 01:11 KST",
+   "updated_at": "2026-11-19 11:51 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 3073656343240,
+    "as_of": "2026-11-19",
+    "market_cap": 3053131092200,
     "per": null,
-    "pbr": 0.865,
+    "pbr": 0.859,
     "div_yield_pct": null
    }
   },
@@ -993,19 +993,19 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 28,
-    "자동 수집 · 원문 대조 전": 102,
+    "원문 자동 대조 일치": 55,
+    "자동 수집 · 원문 대조 전": 75,
     "불일치": 0,
     "미확인": 1
    },
    "industry_kpis_found": 10,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-19 01:12 KST",
+   "updated_at": "2026-11-19 11:51 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 13742640720900,
-    "per": 7.05,
-    "pbr": 1.85,
+    "as_of": "2026-11-19",
+    "market_cap": 13466868666300,
+    "per": 6.9,
+    "pbr": 1.813,
     "div_yield_pct": null
    }
   },
@@ -1041,20 +1041,20 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 28,
-    "자동 수집 · 원문 대조 전": 103,
+    "원문 자동 대조 일치": 56,
+    "자동 수집 · 원문 대조 전": 75,
     "불일치": 0,
     "미확인": 0
    },
    "industry_kpis_found": 10,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-19 01:16 KST",
+   "updated_at": "2026-11-19 11:54 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 26922554212500,
-    "per": 11.03,
-    "pbr": 2.634,
-    "div_yield_pct": 2.207
+    "as_of": "2026-11-19",
+    "market_cap": 26765112375000,
+    "per": 10.97,
+    "pbr": 2.619,
+    "div_yield_pct": 2.22
    }
   },
   {
@@ -1097,13 +1097,13 @@
    },
    "industry_kpis_found": 9,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-19 01:10 KST",
+   "updated_at": "2026-11-19 11:51 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 16490136028000,
-    "per": 4.79,
-    "pbr": 1.106,
-    "div_yield_pct": 5.279
+    "as_of": "2026-11-19",
+    "market_cap": 16171657006000,
+    "per": 4.7,
+    "pbr": 1.085,
+    "div_yield_pct": 5.383
    }
   },
   {
@@ -1145,13 +1145,13 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-19 01:12 KST",
+   "updated_at": "2026-11-19 11:51 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 1547237104000,
-    "per": 19.75,
-    "pbr": 0.566,
-    "div_yield_pct": 2.276
+    "as_of": "2026-11-19",
+    "market_cap": 1528454256000,
+    "per": 19.51,
+    "pbr": 0.559,
+    "div_yield_pct": 2.304
    }
   },
   {
@@ -1189,20 +1189,20 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 28,
-    "자동 수집 · 원문 대조 전": 98,
+    "원문 자동 대조 일치": 55,
+    "자동 수집 · 원문 대조 전": 71,
     "불일치": 0,
     "미확인": 1
    },
    "industry_kpis_found": 8,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-19 01:14 KST",
+   "updated_at": "2026-11-19 11:51 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 53032261394000,
-    "per": 8.94,
-    "pbr": 0.583,
-    "div_yield_pct": 3.861
+    "as_of": "2026-11-19",
+    "market_cap": 53237019160000,
+    "per": 8.97,
+    "pbr": 0.586,
+    "div_yield_pct": 3.846
    }
   },
   {
@@ -1237,20 +1237,20 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 28,
-    "자동 수집 · 원문 대조 전": 103,
+    "원문 자동 대조 일치": 56,
+    "자동 수집 · 원문 대조 전": 75,
     "불일치": 0,
     "미확인": 0
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-19 01:17 KST",
+   "updated_at": "2026-11-19 11:55 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 2078857516800,
-    "per": 8.67,
-    "pbr": 0.439,
-    "div_yield_pct": 2.23
+    "as_of": "2026-11-19",
+    "market_cap": 2145708744000,
+    "per": 8.95,
+    "pbr": 0.453,
+    "div_yield_pct": 2.161
    }
   },
   {
@@ -1293,13 +1293,13 @@
    },
    "industry_kpis_found": 2,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-19 01:10 KST",
+   "updated_at": "2026-11-19 11:51 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 15278679650040,
-    "per": 5.74,
-    "pbr": 0.405,
-    "div_yield_pct": 5.47
+    "as_of": "2026-11-19",
+    "market_cap": 15326525202180,
+    "per": 5.76,
+    "pbr": 0.406,
+    "div_yield_pct": 5.453
    }
   },
   {
@@ -1343,13 +1343,13 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-19 01:13 KST",
+   "updated_at": "2026-11-19 11:51 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 2472052798880,
-    "per": 5.72,
-    "pbr": 0.386,
-    "div_yield_pct": 4.484
+    "as_of": "2026-11-19",
+    "market_cap": 2513227284960,
+    "per": 5.81,
+    "pbr": 0.392,
+    "div_yield_pct": 4.411
    }
   },
   {
@@ -1385,20 +1385,20 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 33,
-    "자동 수집 · 원문 대조 전": 145,
+    "원문 자동 대조 일치": 50,
+    "자동 수집 · 원문 대조 전": 128,
     "불일치": 0,
     "미확인": 19
    },
    "industry_kpis_found": 1,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-19 01:16 KST",
+   "updated_at": "2026-11-19 11:51 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 5176973560000,
-    "per": 6.96,
-    "pbr": 0.835,
-    "div_yield_pct": 4.145
+    "as_of": "2026-11-19",
+    "market_cap": 4875767825600,
+    "per": 6.55,
+    "pbr": 0.786,
+    "div_yield_pct": 4.402
    }
   },
   {
@@ -1434,19 +1434,19 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 28,
-    "자동 수집 · 원문 대조 전": 103,
+    "원문 자동 대조 일치": 56,
+    "자동 수집 · 원문 대조 전": 75,
     "불일치": 0,
     "미확인": 0
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-19 01:19 KST",
+   "updated_at": "2026-11-19 11:56 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 600775338250,
-    "per": 4.01,
-    "pbr": 1.13,
+    "as_of": "2026-11-19",
+    "market_cap": 733832963500,
+    "per": 4.89,
+    "pbr": 1.381,
     "div_yield_pct": null
    }
   },
@@ -1490,12 +1490,12 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-19 01:10 KST",
+   "updated_at": "2026-11-19 11:51 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 408726000000,
+    "as_of": "2026-11-19",
+    "market_cap": 434826000000,
     "per": null,
-    "pbr": 1.93,
+    "pbr": 2.053,
     "div_yield_pct": null
    }
   },
@@ -1539,13 +1539,13 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-19 01:14 KST",
+   "updated_at": "2026-11-19 11:51 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 6865261571700,
-    "per": 243.98,
-    "pbr": 10.954,
-    "div_yield_pct": 0.036
+    "as_of": "2026-11-19",
+    "market_cap": 6735114432900,
+    "per": 239.35,
+    "pbr": 10.746,
+    "div_yield_pct": 0.037
    }
   },
   {
@@ -1580,20 +1580,20 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 24,
-    "자동 수집 · 원문 대조 전": 73,
+    "원문 자동 대조 일치": 49,
+    "자동 수집 · 원문 대조 전": 48,
     "불일치": 0,
     "미확인": 7
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-19 01:18 KST",
+   "updated_at": "2026-11-19 11:52 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 14043116167000,
-    "per": 36.85,
-    "pbr": 1.187,
-    "div_yield_pct": 0.237
+    "as_of": "2026-11-19",
+    "market_cap": 14087416218000,
+    "per": 36.96,
+    "pbr": 1.19,
+    "div_yield_pct": 0.236
    }
   },
   {
@@ -1628,20 +1628,20 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 30,
-    "자동 수집 · 원문 대조 전": 122,
+    "원문 자동 대조 일치": 45,
+    "자동 수집 · 원문 대조 전": 107,
     "불일치": 0,
     "미확인": 21
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-19 01:20 KST",
+   "updated_at": "2026-11-19 11:56 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 10043385198850,
-    "per": 17.45,
-    "pbr": 1.485,
-    "div_yield_pct": 2.185
+    "as_of": "2026-11-19",
+    "market_cap": 10234233373650,
+    "per": 17.78,
+    "pbr": 1.514,
+    "div_yield_pct": 2.145
    }
   },
   {
@@ -1685,13 +1685,13 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-19 01:11 KST",
+   "updated_at": "2026-11-19 11:51 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 55615036691200,
-    "per": 8.72,
-    "pbr": 0.913,
-    "div_yield_pct": 2.785
+    "as_of": "2026-11-19",
+    "market_cap": 55189411410400,
+    "per": 8.65,
+    "pbr": 0.906,
+    "div_yield_pct": 2.807
    }
   },
   {
@@ -1735,12 +1735,12 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-19 01:15 KST",
+   "updated_at": "2026-11-19 11:52 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 403130824704,
+    "as_of": "2026-11-19",
+    "market_cap": 417904193280,
     "per": null,
-    "pbr": 0.286,
+    "pbr": 0.297,
     "div_yield_pct": null
    }
   },
@@ -1777,20 +1777,20 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 28,
-    "자동 수집 · 원문 대조 전": 103,
+    "원문 자동 대조 일치": 56,
+    "자동 수집 · 원문 대조 전": 75,
     "불일치": 0,
     "미확인": 0
    },
    "industry_kpis_found": 8,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-19 01:20 KST",
+   "updated_at": "2026-11-19 11:52 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 35957037115800,
-    "per": 5.17,
-    "pbr": 0.575,
-    "div_yield_pct": 7.383
+    "as_of": "2026-11-19",
+    "market_cap": 35371417618800,
+    "per": 5.09,
+    "pbr": 0.565,
+    "div_yield_pct": 7.506
    }
   },
   {
@@ -1824,20 +1824,20 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 28,
-    "자동 수집 · 원문 대조 전": 103,
+    "원문 자동 대조 일치": 56,
+    "자동 수집 · 원문 대조 전": 75,
     "불일치": 0,
     "미확인": 0
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-19 01:21 KST",
+   "updated_at": "2026-11-19 11:57 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 2610721516200,
-    "per": 13.48,
-    "pbr": 2.508,
-    "div_yield_pct": 0.781
+    "as_of": "2026-11-19",
+    "market_cap": 2735828424300,
+    "per": 14.13,
+    "pbr": 2.628,
+    "div_yield_pct": 0.745
    }
   },
   {
@@ -1881,13 +1881,13 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-19 01:11 KST",
+   "updated_at": "2026-11-19 11:51 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 8821553669600,
-    "per": 20.6,
-    "pbr": 1.212,
-    "div_yield_pct": 1.172
+    "as_of": "2026-11-19",
+    "market_cap": 9107608234200,
+    "per": 21.27,
+    "pbr": 1.252,
+    "div_yield_pct": 1.135
    }
   },
   {
@@ -1929,12 +1929,12 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-19 01:16 KST",
+   "updated_at": "2026-11-19 11:52 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 3460000000000,
+    "as_of": "2026-11-19",
+    "market_cap": 3482500000000,
     "per": null,
-    "pbr": 0.556,
+    "pbr": 0.559,
     "div_yield_pct": null
    }
   },
@@ -1971,20 +1971,20 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 28,
-    "자동 수집 · 원문 대조 전": 103,
+    "원문 자동 대조 일치": 56,
+    "자동 수집 · 원문 대조 전": 75,
     "불일치": 0,
     "미확인": 0
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-19 01:22 KST",
+   "updated_at": "2026-11-19 11:52 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 21060983693400,
-    "per": 17.58,
-    "pbr": 0.939,
-    "div_yield_pct": 1.044
+    "as_of": "2026-11-19",
+    "market_cap": 21419329897000,
+    "per": 17.88,
+    "pbr": 0.955,
+    "div_yield_pct": 1.027
    }
   },
   {
@@ -2019,20 +2019,20 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 28,
-    "자동 수집 · 원문 대조 전": 103,
+    "원문 자동 대조 일치": 56,
+    "자동 수집 · 원문 대조 전": 75,
     "불일치": 0,
     "미확인": 0
    },
    "industry_kpis_found": 8,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-19 01:23 KST",
+   "updated_at": "2026-11-19 11:58 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 3609101043000,
+    "as_of": "2026-11-19",
+    "market_cap": 3811270603500,
     "per": null,
-    "pbr": 0.733,
-    "div_yield_pct": 0.83
+    "pbr": 0.774,
+    "div_yield_pct": 0.786
    }
   },
   {
@@ -2077,13 +2077,13 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-19 01:11 KST",
+   "updated_at": "2026-11-19 11:52 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 2370597669000,
-    "per": 6.42,
-    "pbr": 0.156,
-    "div_yield_pct": 4.773
+    "as_of": "2026-11-19",
+    "market_cap": 2342308914000,
+    "per": 6.34,
+    "pbr": 0.154,
+    "div_yield_pct": 4.831
    }
   },
   {
@@ -2126,12 +2126,12 @@
    },
    "industry_kpis_found": 1,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-19 01:17 KST",
+   "updated_at": "2026-11-19 11:52 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 781309488400,
-    "per": 17.62,
-    "pbr": 2.092,
+    "as_of": "2026-11-19",
+    "market_cap": 892127875020,
+    "per": 20.12,
+    "pbr": 2.388,
     "div_yield_pct": null
    }
   },
@@ -2171,20 +2171,20 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 28,
-    "자동 수집 · 원문 대조 전": 103,
+    "원문 자동 대조 일치": 56,
+    "자동 수집 · 원문 대조 전": 75,
     "불일치": 0,
     "미확인": 0
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-19 01:23 KST",
+   "updated_at": "2026-11-19 11:52 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 1241697032600,
-    "per": 13.6,
-    "pbr": 0.535,
-    "div_yield_pct": 2.446
+    "as_of": "2026-11-19",
+    "market_cap": 1290481274800,
+    "per": 14.14,
+    "pbr": 0.556,
+    "div_yield_pct": 2.354
    }
   },
   {
@@ -2219,20 +2219,20 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 28,
-    "자동 수집 · 원문 대조 전": 113,
+    "원문 자동 대조 일치": 56,
+    "자동 수집 · 원문 대조 전": 85,
     "불일치": 0,
     "미확인": 0
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-19 01:25 KST",
+   "updated_at": "2026-11-19 11:59 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 31393473718000,
-    "per": 9.27,
-    "pbr": 0.618,
-    "div_yield_pct": 1.879
+    "as_of": "2026-11-19",
+    "market_cap": 30531514179500,
+    "per": 9.02,
+    "pbr": 0.601,
+    "div_yield_pct": 1.932
    }
   },
   {
@@ -2273,13 +2273,13 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-19 01:11 KST",
+   "updated_at": "2026-11-19 11:52 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 188622000000,
-    "per": 47.06,
-    "pbr": 1.957,
-    "div_yield_pct": 3.507
+    "as_of": "2026-11-19",
+    "market_cap": 203742000000,
+    "per": 50.84,
+    "pbr": 2.114,
+    "div_yield_pct": 3.247
    }
   },
   {
@@ -2322,13 +2322,13 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-19 01:18 KST",
+   "updated_at": "2026-11-19 11:52 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 26680521140000,
-    "per": 15.01,
-    "pbr": 0.924,
-    "div_yield_pct": 1.547
+    "as_of": "2026-11-19",
+    "market_cap": 26382327080200,
+    "per": 14.84,
+    "pbr": 0.914,
+    "div_yield_pct": 1.565
    }
   },
   {
@@ -2364,20 +2364,20 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 24,
-    "자동 수집 · 원문 대조 전": 68,
+    "원문 자동 대조 일치": 47,
+    "자동 수집 · 원문 대조 전": 45,
     "불일치": 0,
     "미확인": 9
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-19 01:24 KST",
+   "updated_at": "2026-11-19 11:53 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 3830527111600,
-    "per": 12.07,
-    "pbr": 1.012,
-    "div_yield_pct": 0.647
+    "as_of": "2026-11-19",
+    "market_cap": 3992107276600,
+    "per": 12.58,
+    "pbr": 1.055,
+    "div_yield_pct": 0.621
    }
   },
   {
@@ -2411,20 +2411,20 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 26,
-    "자동 수집 · 원문 대조 전": 82,
+    "원문 자동 대조 일치": 51,
+    "자동 수집 · 원문 대조 전": 57,
     "불일치": 0,
     "미확인": 5
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-19 01:27 KST",
+   "updated_at": "2026-11-19 12:00 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 2556358615200,
-    "per": 6.6,
-    "pbr": 0.452,
-    "div_yield_pct": 2.808
+    "as_of": "2026-11-19",
+    "market_cap": 2671067014600,
+    "per": 6.89,
+    "pbr": 0.472,
+    "div_yield_pct": 2.687
    }
   },
   {
@@ -2470,13 +2470,13 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-19 01:11 KST",
+   "updated_at": "2026-11-19 11:52 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 2110676774000,
-    "per": 11.51,
-    "pbr": 0.697,
-    "div_yield_pct": 1.729
+    "as_of": "2026-11-19",
+    "market_cap": 2122842058000,
+    "per": 11.57,
+    "pbr": 0.701,
+    "div_yield_pct": 1.719
    }
   },
   {
@@ -2520,13 +2520,13 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-19 01:19 KST",
+   "updated_at": "2026-11-19 11:52 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 4502328953200,
-    "per": 12.12,
-    "pbr": 1.188,
-    "div_yield_pct": 3.073
+    "as_of": "2026-11-19",
+    "market_cap": 4696020014400,
+    "per": 12.64,
+    "pbr": 1.239,
+    "div_yield_pct": 2.946
    }
   },
   {
@@ -2563,20 +2563,20 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 28,
-    "자동 수집 · 원문 대조 전": 103,
+    "원문 자동 대조 일치": 56,
+    "자동 수집 · 원문 대조 전": 75,
     "불일치": 0,
     "미확인": 0
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-19 01:26 KST",
+   "updated_at": "2026-11-19 11:53 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 1198341170000,
-    "per": 18.68,
-    "pbr": 0.484,
-    "div_yield_pct": 3.01
+    "as_of": "2026-11-19",
+    "market_cap": 1202349000000,
+    "per": 18.74,
+    "pbr": 0.486,
+    "div_yield_pct": 3.0
    }
   },
   {
@@ -2612,20 +2612,20 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 26,
-    "자동 수집 · 원문 대조 전": 105,
+    "원문 자동 대조 일치": 52,
+    "자동 수집 · 원문 대조 전": 79,
     "불일치": 0,
     "미확인": 0
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-19 01:28 KST",
+   "updated_at": "2026-11-19 12:01 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 962419278980,
-    "per": 11.71,
-    "pbr": 0.514,
-    "div_yield_pct": 1.444
+    "as_of": "2026-11-19",
+    "market_cap": 1067090480640,
+    "per": 12.98,
+    "pbr": 0.57,
+    "div_yield_pct": 1.302
    }
   },
   {
@@ -2670,13 +2670,13 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-19 01:12 KST",
+   "updated_at": "2026-11-19 11:52 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 1112546819102400,
-    "per": 5.87,
-    "pbr": 2.064,
-    "div_yield_pct": 0.877
+    "as_of": "2026-11-19",
+    "market_cap": 1114885330545600,
+    "per": 5.88,
+    "pbr": 2.068,
+    "div_yield_pct": 0.875
    }
   },
   {
@@ -2718,12 +2718,12 @@
    },
    "industry_kpis_found": 9,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-19 01:20 KST",
+   "updated_at": "2026-11-19 11:52 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 14080000000000,
-    "per": 15.29,
-    "pbr": 3.27,
+    "as_of": "2026-11-19",
+    "market_cap": 13974400000000,
+    "per": 15.18,
+    "pbr": 3.246,
     "div_yield_pct": null
    }
   },
@@ -2759,20 +2759,20 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 28,
-    "자동 수집 · 원문 대조 전": 103,
+    "원문 자동 대조 일치": 56,
+    "자동 수집 · 원문 대조 전": 75,
     "불일치": 0,
     "미확인": 0
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-19 01:27 KST",
+   "updated_at": "2026-11-19 11:53 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 17487382800000,
-    "per": 27.74,
-    "pbr": 1.736,
-    "div_yield_pct": 1.412
+    "as_of": "2026-11-19",
+    "market_cap": 16133271300000,
+    "per": 25.59,
+    "pbr": 1.602,
+    "div_yield_pct": 1.53
    }
   },
   {
@@ -2811,20 +2811,20 @@
    },
    "verification": {
     "원문 대조 일치": 48,
-    "원문 자동 대조 일치": 4,
-    "자동 수집 · 원문 대조 전": 79,
+    "원문 자동 대조 일치": 8,
+    "자동 수집 · 원문 대조 전": 75,
     "불일치": 0,
     "미확인": 0
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-19 01:29 KST",
+   "updated_at": "2026-11-19 12:01 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 9574462065000,
-    "per": 20.49,
-    "pbr": 6.105,
-    "div_yield_pct": 0.378
+    "as_of": "2026-11-19",
+    "market_cap": 9468999855000,
+    "per": 20.27,
+    "pbr": 6.038,
+    "div_yield_pct": 0.382
    }
   },
   {
@@ -2867,13 +2867,13 @@
    },
    "industry_kpis_found": 8,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-19 01:12 KST",
+   "updated_at": "2026-11-19 11:52 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 56319046784000,
-    "per": 45.34,
-    "pbr": 5.575,
-    "div_yield_pct": 0.312
+    "as_of": "2026-11-19",
+    "market_cap": 60427200064000,
+    "per": 48.65,
+    "pbr": 5.982,
+    "div_yield_pct": 0.29
    }
   },
   {
@@ -2917,13 +2917,13 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-19 01:21 KST",
+   "updated_at": "2026-11-19 11:53 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 41532256587500,
-    "per": 7.42,
-    "pbr": 0.688,
-    "div_yield_pct": 2.96
+    "as_of": "2026-11-19",
+    "market_cap": 41247463970900,
+    "per": 7.37,
+    "pbr": 0.683,
+    "div_yield_pct": 2.98
    }
   },
   {
@@ -2958,20 +2958,20 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 28,
-    "자동 수집 · 원문 대조 전": 103,
+    "원문 자동 대조 일치": 56,
+    "자동 수집 · 원문 대조 전": 75,
     "불일치": 0,
     "미확인": 0
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-19 01:29 KST",
+   "updated_at": "2026-11-19 11:53 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 2502972965000,
-    "per": 9.23,
-    "pbr": 0.454,
-    "div_yield_pct": 1.962
+    "as_of": "2026-11-19",
+    "market_cap": 2743825080500,
+    "per": 10.12,
+    "pbr": 0.498,
+    "div_yield_pct": 1.79
    }
   },
   {
@@ -3007,20 +3007,20 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 28,
-    "자동 수집 · 원문 대조 전": 103,
+    "원문 자동 대조 일치": 56,
+    "자동 수집 · 원문 대조 전": 75,
     "불일치": 0,
     "미확인": 0
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-19 01:31 KST",
+   "updated_at": "2026-11-19 12:02 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 1704932864800,
-    "per": 9.94,
-    "pbr": 2.372,
-    "div_yield_pct": 1.297
+    "as_of": "2026-11-19",
+    "market_cap": 1697708573000,
+    "per": 9.9,
+    "pbr": 2.362,
+    "div_yield_pct": 1.302
    }
   },
   {
@@ -3064,13 +3064,13 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-19 01:12 KST",
+   "updated_at": "2026-11-19 11:53 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 802080616770000,
-    "per": 4.13,
-    "pbr": 2.531,
-    "div_yield_pct": 0.273
+    "as_of": "2026-11-19",
+    "market_cap": 821803910625000,
+    "per": 4.23,
+    "pbr": 2.593,
+    "div_yield_pct": 0.267
    }
   },
   {
@@ -3111,13 +3111,13 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-19 01:21 KST",
+   "updated_at": "2026-11-19 11:53 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 287930083350,
-    "per": 9.7,
-    "pbr": 1.725,
-    "div_yield_pct": 1.55
+    "as_of": "2026-11-19",
+    "market_cap": 301322180250,
+    "per": 10.15,
+    "pbr": 1.805,
+    "div_yield_pct": 1.481
    }
   },
   {
@@ -3153,20 +3153,20 @@
    },
    "verification": {
     "원문 대조 일치": 0,
-    "원문 자동 대조 일치": 33,
-    "자동 수집 · 원문 대조 전": 133,
+    "원문 자동 대조 일치": 50,
+    "자동 수집 · 원문 대조 전": 116,
     "불일치": 0,
     "미확인": 19
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-19 01:32 KST",
+   "updated_at": "2026-11-19 11:54 KST",
    "valuation": {
-    "as_of": "2026-11-17",
-    "market_cap": 23735723633200,
-    "per": 7.95,
-    "pbr": 0.606,
-    "div_yield_pct": 4.172
+    "as_of": "2026-11-19",
+    "market_cap": 23335274308100,
+    "per": 7.81,
+    "pbr": 0.596,
+    "div_yield_pct": 4.243
    }
   }
  ],

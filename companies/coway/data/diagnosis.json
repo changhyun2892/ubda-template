@@ -1,5 +1,5 @@
 {
- "built_at": "2026-11-19 01:36 KST",
+ "built_at": "2026-11-19 12:05 KST",
  "method": "같은 산업 기업 사이 백분위(0~100, 50 = 가운데) · 성향별 가중치는 UBDA가 임의로 정한 기준 · 투자 권유 아님",
  "weights": {
   "stable": {
@@ -68,7 +68,7 @@
   },
   "value": {
    "label": "가격 매력",
-   "score": 26,
+   "score": 50,
    "factors": [
     "per",
     "pbr"
@@ -79,9 +79,9 @@
   "stable": {
    "label": "안정형",
    "focus": "재무 안정·배당·주가 변동",
-   "score": 64,
-   "level": "보통",
-   "comment": "부채비율 94%(업종 10곳 중 3위)는 강점, 배당수익률 1.24%(업종 9곳 중 6위)는 확인할 지점",
+   "score": 66,
+   "level": "높음",
+   "comment": "주가 변동성(연환산) 40.6%(업종 10곳 중 2위)는 강점, 배당수익률 1.24%(업종 9곳 중 6위)는 확인할 지점",
    "parts": [
     {
      "key": "axis:stable",
@@ -103,7 +103,7 @@
      "key": "vol_1y",
      "label": "주가 변동성(연환산)",
      "weight": 0.25,
-     "score": 78,
+     "score": 89,
      "best": "vol_1y",
      "worst": "vol_1y"
     },
@@ -120,9 +120,9 @@
   "neutral": {
    "label": "위험중립형",
    "focus": "수익성과 가격의 균형",
-   "score": 60,
-   "level": "보통",
-   "comment": "영업이익률 17.7%(업종 10곳 중 2위)는 강점, PBR 1.99배(업종 10곳 중 8위)는 확인할 지점",
+   "score": 67,
+   "level": "높음",
+   "comment": "영업이익률 17.7%(업종 10곳 중 2위) 등 이 성향이 보는 지표가 업종 중간 이상",
    "parts": [
     {
      "key": "axis:profit",
@@ -136,7 +136,7 @@
      "key": "axis:value",
      "label": "가격 매력",
      "weight": 0.3,
-     "score": 26,
+     "score": 50,
      "best": "per",
      "worst": "pbr"
     },
@@ -302,25 +302,25 @@
   },
   "per": {
    "label": "PER",
-   "value": 11.91,
+   "value": 11.92,
    "text": "11.9배",
-   "pctile": 29,
-   "rank": 6,
+   "pctile": 57,
+   "rank": 4,
    "n": 8,
    "higher_better": false
   },
   "pbr": {
    "label": "PBR",
-   "value": 1.99,
+   "value": 1.992,
    "text": "1.99배",
-   "pctile": 22,
-   "rank": 8,
+   "pctile": 44,
+   "rank": 6,
    "n": 10,
    "higher_better": false
   },
   "div_yield": {
    "label": "배당수익률",
-   "value": 1.237,
+   "value": 1.236,
    "text": "1.24%",
    "pctile": 38,
    "rank": 6,
@@ -329,10 +329,10 @@
   },
   "vol_1y": {
    "label": "주가 변동성(연환산)",
-   "value": 40.56181107940428,
+   "value": 40.555331444681265,
    "text": "40.6%",
-   "pctile": 78,
-   "rank": 3,
+   "pctile": 89,
+   "rank": 2,
    "n": 10,
    "higher_better": false
   },
@@ -347,13 +347,13 @@
   },
   "ret_1y": {
    "label": "1년 시장 대비 수익률",
-   "value": 2.6685409379678227,
-   "text": "+2.7%p",
+   "value": -1.59830861347674,
+   "text": "-1.6%p",
    "pctile": 78,
    "rank": 3,
    "n": 10,
    "higher_better": true
   }
  },
- "stock_asof": "2026-11-17"
+ "stock_asof": "2026-11-19"
 }
