@@ -1,7 +1,7 @@
 {
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-19 17:45 KST",
+    "checked_at": "2026-11-19 19:56 KST",
     "rows": 946,
     "last_date": "2026-11-19",
     "last_close": 139400,
@@ -10,7 +10,7 @@
   },
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-19 17:45 KST",
+    "checked_at": "2026-11-19 19:56 KST",
     "corp_code": "01258507",
     "reports_total": 21,
     "new_reports": [],
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-19 17:45 KST",
+    "checked_at": "2026-11-19 19:56 KST",
     "spike_days": 27,
     "with_major_disclosure": 13,
     "news_total": 613,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-19 17:45 KST",
+    "checked_at": "2026-11-19 19:56 KST",
     "rows": 1017,
     "groups": [
       "롯데웰푸드",
@@ -48,8 +48,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-19 17:45 KST",
-    "new": 2,
+    "checked_at": "2026-11-19 19:56 KST",
+    "new": 0,
     "total": 613,
     "first": "2026-11-02 11:06",
     "pages": 2,
@@ -57,14 +57,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-19 17:45 KST",
+    "checked_at": "2026-11-19 19:56 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-19 17:45 KST",
+    "checked_at": "2026-11-19 19:56 KST",
     "rows": 897,
     "as_of": "2026-11-19",
     "per": 14.06,
@@ -72,7 +72,7 @@
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-19 17:45 KST",
+    "checked_at": "2026-11-19 19:56 KST",
     "matched": 56,
     "total": 56,
     "message": ""
