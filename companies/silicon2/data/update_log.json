@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:29 KST",
+    "checked_at": "2026-11-19 12:01 KST",
     "corp_code": "00982023",
     "reports_total": 18,
     "new_reports": [],
@@ -15,16 +15,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:30 KST",
-    "rows": 944,
-    "last_date": "2026-11-17",
-    "last_close": 23600,
+    "checked_at": "2026-11-19 12:02 KST",
+    "rows": 946,
+    "last_date": "2026-11-19",
+    "last_close": 23500,
     "source": "Yahoo Finance 257720.KQ 일봉 (분할 반영 종가)",
     "index": "^KQ11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:31 KST",
+    "checked_at": "2026-11-19 12:02 KST",
     "spike_days": 40,
     "with_major_disclosure": 13,
     "news_total": 182,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:30 KST",
+    "checked_at": "2026-11-19 12:02 KST",
     "rows": 612,
     "groups": [
       "실리콘투",
@@ -46,7 +46,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:30 KST",
+    "checked_at": "2026-11-19 12:02 KST",
     "new": 0,
     "total": 182,
     "first": "2026-08-25 00:46",
@@ -55,24 +55,24 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:29 KST",
+    "checked_at": "2026-11-19 12:02 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-19 01:31 KST",
-    "rows": 890,
-    "as_of": "2026-11-17",
-    "per": 9.94,
-    "pbr": 2.372
+    "checked_at": "2026-11-19 12:02 KST",
+    "rows": 892,
+    "as_of": "2026-11-19",
+    "per": 9.9,
+    "pbr": 2.362
   },
   "fincheck": {
-    "status": "일부",
-    "checked_at": "2026-11-19 01:29 KST",
-    "matched": 28,
+    "status": "성공",
+    "checked_at": "2026-11-19 12:02 KST",
+    "matched": 56,
     "total": 56,
-    "message": "2023: 다음 실행으로 미룸(한 번에 2개); 2022: 다음 실행으로 미룸(한 번에 2개)"
+    "message": ""
   }
 }

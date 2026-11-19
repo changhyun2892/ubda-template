@@ -1,19 +1,19 @@
 audit_id,year,metric,value,fs_div,sj_div,rcept_no,result,found_in,unit,note
-F-2023-capex,2023,capex,22242000000,OFS,CF,20240320001487,,,,원문 재무제표를 아직 받지 못함
-F-2023-credit_loss,2023,credit_loss,248348000000,OFS,CIS,20240320001487,,,,원문 재무제표를 아직 받지 못함
-F-2023-deposits,2023,deposits,47142842000000,OFS,BS,20240320001487,,,,원문 재무제표를 아직 받지 못함
-F-2023-general_admin,2023,general_admin,-435542000000,OFS,CIS,20240320001487,,,,원문 재무제표를 아직 받지 못함
-F-2023-interest_expense,2023,interest_expense,-932200000000,OFS,CIS,20240320001487,,,,원문 재무제표를 아직 받지 못함
-F-2023-interest_income,2023,interest_income,2048170000000,OFS,CIS,20240320001487,,,,원문 재무제표를 아직 받지 못함
-F-2023-loans,2023,loans,38649038000000,OFS,BS,20240320001487,,,,원문 재무제표를 아직 받지 못함
-F-2023-net_income,2023,net_income,354912000000,OFS,CIS,20240320001487,,,,원문 재무제표를 아직 받지 못함
-F-2023-operating_cashflow,2023,operating_cashflow,2890812000000,OFS,CF,20240320001487,,,,원문 재무제표를 아직 받지 못함
-F-2023-operating_profit,2023,operating_profit,478485000000,OFS,CIS,20240320001487,,,,원문 재무제표를 아직 받지 못함
-F-2023-revenue,2023,revenue,2494045000000,OFS,CIS,20240320001487,,,,원문 재무제표를 아직 받지 못함
-F-2023-sga,2023,sga,-435542000000,OFS,CIS,20240320001487,,,,원문 재무제표를 아직 받지 못함
-F-2023-total_assets,2023,total_assets,54488157000000,OFS,BS,20240320001487,,,,원문 재무제표를 아직 받지 못함
-F-2023-total_equity,2023,total_equity,6117694000000,OFS,BS,20240320001487,,,,원문 재무제표를 아직 받지 못함
-F-2023-total_liabilities,2023,total_liabilities,48370463000000,OFS,BS,20240320001487,,,,원문 재무제표를 아직 받지 못함
+F-2023-capex,2023,capex,22242000000,OFS,CF,20240320001487,원문 자동 대조 일치,현금흐름표,백만원,
+F-2023-credit_loss,2023,credit_loss,248348000000,OFS,CIS,20240320001487,원문 자동 대조 일치,포괄손익계산서,백만원,
+F-2023-deposits,2023,deposits,47142842000000,OFS,BS,20240320001487,원문 자동 대조 일치,재무상태표,백만원,
+F-2023-general_admin,2023,general_admin,-435542000000,OFS,CIS,20240320001487,원문 자동 대조 일치,포괄손익계산서,백만원,
+F-2023-interest_expense,2023,interest_expense,-932200000000,OFS,CIS,20240320001487,원문 자동 대조 일치,포괄손익계산서,백만원,
+F-2023-interest_income,2023,interest_income,2048170000000,OFS,CIS,20240320001487,원문 자동 대조 일치,포괄손익계산서,백만원,
+F-2023-loans,2023,loans,38649038000000,OFS,BS,20240320001487,원문 자동 대조 일치,재무상태표,백만원,
+F-2023-net_income,2023,net_income,354912000000,OFS,CIS,20240320001487,원문 자동 대조 일치,포괄손익계산서,백만원,
+F-2023-operating_cashflow,2023,operating_cashflow,2890812000000,OFS,CF,20240320001487,원문 자동 대조 일치,현금흐름표,백만원,
+F-2023-operating_profit,2023,operating_profit,478485000000,OFS,CIS,20240320001487,원문 자동 대조 일치,포괄손익계산서,백만원,
+F-2023-revenue,2023,revenue,2494045000000,OFS,CIS,20240320001487,원문 자동 대조 일치,포괄손익계산서,백만원,
+F-2023-sga,2023,sga,-435542000000,OFS,CIS,20240320001487,원문 자동 대조 일치,포괄손익계산서,백만원,
+F-2023-total_assets,2023,total_assets,54488157000000,OFS,BS,20240320001487,원문 자동 대조 일치,재무상태표,백만원,
+F-2023-total_equity,2023,total_equity,6117694000000,OFS,BS,20240320001487,원문 자동 대조 일치,재무상태표,백만원,
+F-2023-total_liabilities,2023,total_liabilities,48370463000000,OFS,BS,20240320001487,원문 자동 대조 일치,재무상태표,백만원,
 F-2024-capex,2024,capex,26845000000,OFS,CF,20250411001905,원문 자동 대조 일치,현금흐름표,백만원,
 F-2024-credit_loss,2024,credit_loss,270530000000,OFS,CIS,20250411001905,원문 자동 대조 일치,포괄손익계산서,백만원,
 F-2024-deposits,2024,deposits,54971042000000,OFS,BS,20250411001905,원문 자동 대조 일치,재무상태표,백만원,
