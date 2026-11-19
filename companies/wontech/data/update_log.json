@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-19 17:49 KST",
+    "checked_at": "2026-11-19 19:57 KST",
     "corp_code": "01407909",
     "reports_total": 24,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-19 17:49 KST",
+    "checked_at": "2026-11-19 19:58 KST",
     "rows": 946,
     "last_date": "2026-11-19",
     "last_close": 3465,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-19 17:49 KST",
+    "checked_at": "2026-11-19 19:58 KST",
     "spike_days": 40,
     "with_major_disclosure": 11,
     "news_total": 482,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-19 17:49 KST",
+    "checked_at": "2026-11-19 19:58 KST",
     "rows": 408,
     "groups": [
       "원텍",
@@ -45,8 +45,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-19 17:49 KST",
-    "new": 2,
+    "checked_at": "2026-11-19 19:58 KST",
+    "new": 0,
     "total": 482,
     "first": "2026-01-26 15:26",
     "pages": 7,
@@ -54,14 +54,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-19 17:49 KST",
+    "checked_at": "2026-11-19 19:58 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-19 17:49 KST",
+    "checked_at": "2026-11-19 19:58 KST",
     "rows": 896,
     "as_of": "2026-11-19",
     "per": 10.42,
@@ -69,7 +69,7 @@
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-19 17:49 KST",
+    "checked_at": "2026-11-19 19:58 KST",
     "matched": 56,
     "total": 56,
     "message": ""
