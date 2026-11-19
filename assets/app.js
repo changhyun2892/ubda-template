@@ -959,118 +959,126 @@ addEventListener('message', (e) => {
 });
 
 
-/* ---------- 보드형 개요 (임시: company.json "ui_preview": "board"인 기업만) ----------
-   카드 = 성과체계 · 종합 진단 · 최근 공시 · 주가 급변일 · 매출액 그래프.
-   손잡이(⠿)를 끌어 위치를 바꾸고(마우스·터치·키보드 ←/→), 폭·높이 버튼으로 크기를 바꿈. 배치는 이 브라우저에 저장, 모든 보드 기업에 공통 */
-const BOARD = () => D?.company?.ui_preview === 'board';
-const BD_DEF = { perf: { w: 5, h: 2 }, diag: { w: 4, h: 2 }, disc: { w: 3, h: 1 }, spike: { w: 3, h: 1 }, rev: { w: 12, h: 2 } };
-const BD_W = [3, 4, 5, 6, 8, 12];
-function bdState() {
-  const s = store.get('board:v1') || {}, order = (s.order || []).filter((k) => BD_DEF[k]);
-  Object.keys(BD_DEF).forEach((k) => { if (!order.includes(k)) order.push(k); });
-  const size = {}; Object.keys(BD_DEF).forEach((k) => { size[k] = { ...BD_DEF[k], ...(s.size?.[k] || {}) }; });
-  return { order, size };
-}
-const bdSave = (st) => store.set('board:v1', st);
-function bdCard(k, title, sub, body, st) {
-  const z = st.size[k];
-  return `<section class="bd-card" data-bk="${k}" style="--w:${z.w};--h:${z.h}" aria-label="${esc(title)}">
-    <header class="bd-h"><button class="bd-grip" data-grip="${k}" aria-label="${esc(title)} 카드 옮기기 (←/→ 키로도 이동)" title="끌어서 옮기기">⠿</button>
-      <div class="bd-t"><h3>${esc(title)}</h3>${sub ? `<small>${sub}</small>` : ''}</div>
-      <span class="bd-tools"><button data-bd="narrow:${k}" title="좁게" aria-label="좁게">−</button><button data-bd="wide:${k}" title="넓게" aria-label="넓게">+</button><button data-bd="tall:${k}" title="높이 바꾸기" aria-label="높이 바꾸기">↕</button></span></header>
-    <div class="bd-b">${body}</div></section>`;
-}
-function bdPerf(y) {   // 보드용 세로형 성과체계 (위: ROE → 3요인 → 손익·부채)
-  if (BANK()) return perfTree(y);
-  const v = (k, yy = y) => met(yy, k), roe = v('roe_pct'); if (roe === null) return '';
-  const nm = v('net_margin_pct'), at = v('asset_turnover'), lev = roe !== null && nm && at ? roe / (nm * at) : null;
-  const nm0 = v('net_margin_pct', y - 1), at0 = v('asset_turnover', y - 1), roe0 = v('roe_pct', y - 1), lev0 = roe0 !== null && nm0 && at0 ? roe0 / (nm0 * at0) : null;
-  const dlt = (a, b, u, d, goodUp = true) => { if (a === null || b === null) return '<em>전년 없음</em>'; const dv = a - b, flat = Math.abs(dv) < 0.5 * 10 ** -d;
-    return `<em class="${flat ? '' : (dv > 0) === goodUp ? 'g' : 'r'}">${flat ? '– 변화 없음' : `${dv > 0 ? '▲' : '▼'} ${fmt(Math.abs(dv), d)}${u}`}</em>`; };
-  const n = (l, val, d, act, cls = '') => `<button class="bp-n ${cls}" ${act ? `data-act="${act}"` : ''}><small>${l}</small><b>${val}</b>${d}</button>`;
-  const P = (x, d = 1) => (x === null ? '–' : fmt(x, d) + '%');
-  return `<div class="bp">
-    <div class="bp-r1">${n('ROE', P(roe), dlt(roe, roe0, '%p', 1), `met:${y}:roe_pct`, 'root')}</div>
-    <svg class="bp-l" viewBox="0 0 300 18" preserveAspectRatio="none"><path d="M150 0V8M50 8H250M50 8V18M150 8V18M250 8V18"/></svg>
-    <div class="bp-r3">${n('순이익률', P(nm), dlt(nm, nm0, '%p', 1), `met:${y}:net_margin_pct`)}${n('총자산회전율', at === null ? '–' : fmt(at, 2) + '회', dlt(at, at0, '', 2), `met:${y}:asset_turnover`)}${n('재무레버리지', lev === null ? '–' : fmt(lev, 2) + '배', dlt(lev, lev0, '', 2, false), `lev:${y}`)}</div>
-    <svg class="bp-l" viewBox="0 0 300 18" preserveAspectRatio="none"><path d="M50 0V8M37.5 8H187.5M37.5 8V18M112.5 8V18M187.5 8V18M250 0V8M250 8H262.5V18"/></svg>
-    <div class="bp-r4">${n('영업이익률', P(v('operating_margin_pct')), dlt(v('operating_margin_pct'), v('operating_margin_pct', y - 1), '%p', 1), `met:${y}:operating_margin_pct`)}${n('매출원가율', P(v('cost_ratio_pct')), dlt(v('cost_ratio_pct'), v('cost_ratio_pct', y - 1), '%p', 1, false), `met:${y}:cost_ratio_pct`)}${n('판관비율', P(v('sga_ratio_pct')), dlt(v('sga_ratio_pct'), v('sga_ratio_pct', y - 1), '%p', 1, false), `met:${y}:sga_ratio_pct`)}${n('부채비율', P(v('debt_ratio_pct')), dlt(v('debt_ratio_pct'), v('debt_ratio_pct', y - 1), '%p', 1, false), `met:${y}:debt_ratio_pct`)}</div>
-    <p class="bp-f">ROE = 순이익률 × 총자산회전율 × 재무레버리지 · 칸을 누르면 산식과 출처 · ▲▼는 ${y - 1}년 대비 (초록 = 좋아짐)</p></div>`;
-}
-function bdAccent(on) {   // 보드 화면에서만 연보라 강조색, 다른 탭은 기업 고유색
+/* ---------- 관제형 개요 (임시 미리보기: company.json "ui_preview": "hero"인 기업만, 2026-11-19 시안 H) ----------
+   종합 진단 레이더를 가운데 주인공으로, 매출 증가율·영업이익률을 좌우에. 다크/화이트 두 가지 색 (이 브라우저에 저장).
+   한 줄 진단은 AI가 아니라 규칙으로 만든 문장 (연속 증가 분기 수, 업종 1위·최하위 지표). 숫자는 모두 데이터에서 계산. */
+const HERO = () => D?.company?.ui_preview === 'hero';
+const hzTheme = () => (store.get('hero:theme') === 'light' ? 'light' : 'dark');
+function hzApply(on) {
+  const b = document.body, dark = on && hzTheme() === 'dark';
+  b.classList.toggle('hero-on', on); b.classList.toggle('hz-dark', dark); b.classList.toggle('hz-light', on && !dark);
   const r = document.documentElement.style, c = D?.company?.theme_color;
-  if (on) { r.setProperty('--accent', '#6c4cf0'); r.setProperty('--accent-soft', '#6c4cf01a'); }
+  if (on) { const a = dark ? '#4fc3f7' : '#1590d0'; r.setProperty('--accent', a); r.setProperty('--accent-soft', a + '22'); }
   else if (c) { r.setProperty('--accent', c); r.setProperty('--accent-soft', c + '1a'); }
 }
-function pageBoard() {
+const HZ_ACT = { rev_growth: 'met:revenue_growth_pct', op_growth: 'met:op_growth_pct', op_margin: 'met:operating_margin_pct', roe: 'met:roe_pct', asset_turnover: 'met:asset_turnover',
+  debt_ratio: 'met:debt_ratio_pct', current_ratio: 'met:current_ratio_pct', per: 'val:per', pbr: 'val:pbr' };
+const hzQ = (p) => p.slice(2).replace('-', '');   // 2026-Q3 → 26Q3
+function hzLines() {   // 규칙 기반 한 줄 진단: 강점 최대 2개 + 확인할 점 1개
+  const out = [], G = D.diag, k = TOPK();
+  const ps = [...new Set(D.qtr.filter((r) => r.metric === k).map((r) => r.period))].sort();
+  const qv = (p) => N(D.qtr.find((r) => r.period === p && r.metric === k)?.value ?? null), prev = (p) => `${+p.slice(0, 4) - 1}${p.slice(4)}`;
+  let run = 0; for (let i = ps.length - 1; i >= 0; i--) { const a = qv(ps[i]), b = qv(prev(ps[i])); if (a === null || b === null || !(a > b)) break; run++; }
+  const last = ps[ps.length - 1];
+  if (last) { const a = qv(last), b = qv(prev(last)), g = a !== null && b ? (a / b - 1) * 100 : null;
+    if (run >= 2) out.push(['g', `${TOPL()} ${run}분기 연속 증가`, `${hzQ(last)} ${eok(a, 0)} (${spct(g)})`]);
+    else if (g !== null && g < 0) out.push(['w', `최근 분기 ${TOPL()} 전년 대비 감소`, `${hzQ(last)} ${spct(g)}`]); }
+  const F = G?.factors ? Object.values(G.factors).filter((f) => f.rank) : [];
+  const top = F.filter((f) => f.rank === 1).slice(0, 2), bot = F.filter((f) => f.n > 2 && f.rank === f.n).slice(0, 2);
+  if (top.length) out.push(['g', `${top.map((f) => f.label).join('·')} ${G.industry} ${top[0].n}곳 중 1위`, top.map((f) => `${f.label} ${f.text}`).join(' · ')]);
+  if (bot.length) out.push(['w', `${bot.map((f) => f.label).join('·')} ${bot[0].n}곳 중 ${bot[0].n}위`, bot.map((f) => `${f.label} ${f.text}`).join(' · ')]);
+  return out.filter((x) => x[0] === 'g').slice(0, 2).concat(out.filter((x) => x[0] === 'w').slice(0, 1));
+}
+function hzRadar(axes) {
+  const K = Object.keys(axes), cx = 215, cy = 168, R = 116;
+  const P = (i, r) => { const a = -Math.PI / 2 + (i * 2 * Math.PI) / K.length; return [cx + Math.cos(a) * r, cy + Math.sin(a) * r]; };
+  const poly = (f) => K.map((k, i) => P(i, R * f(k)).map((n) => n.toFixed(1)).join(',')).join(' ');
+  let g = `<defs><linearGradient id="hzf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" style="stop-color:var(--hz-a);stop-opacity:.8"/><stop offset="1" style="stop-color:var(--hz-b);stop-opacity:.72"/></linearGradient>
+    <filter id="hzg" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>`;
+  g += [1, 0.75, 0.5, 0.25].map((v) => `<polygon points="${poly(() => v)}" class="${v === 1 ? 'hz-r0' : v === 0.5 ? 'hz-rm' : 'hz-rl'}"/>`).join('');
+  g += K.map((k, i) => { const [x, y] = P(i, R); return `<line x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" class="hz-rl"/>`; }).join('');
+  const sc = (k) => Math.max(axes[k].score ?? 0, 3) / 100;
+  g += `<polygon points="${poly(sc)}" fill="url(#hzf)" class="hz-rp" filter="url(#hzg)"/>`;
+  g += K.map((k, i) => { if (axes[k].score == null) return ''; const [x, y] = P(i, R * sc(k)); return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="4.5" class="hz-rd"/>`; }).join('');
+  g += K.map((k, i) => { const [x, y] = P(i, R + 30), s = axes[k].score, cl = s == null ? '' : s >= 70 ? 'hi' : s <= 10 ? 'lo' : '';
+    return `<text x="${x.toFixed(1)}" y="${(y - 3).toFixed(1)}" text-anchor="middle" class="hz-rt">${esc(axes[k].label)}</text><text x="${x.toFixed(1)}" y="${(y + 15).toFixed(1)}" text-anchor="middle" class="hz-rv ${cl}">${s ?? '자료 없음'}</text>`; }).join('');
+  return `<svg viewBox="0 0 430 335" class="hz-radar" role="img" aria-label="5개 축 업종 내 위치">${g}</svg>`;
+}
+function hzGauge(v, on) {
+  const r = 28, c = 2 * Math.PI * r;
+  return `<svg viewBox="0 0 70 70" width="70" height="70" aria-hidden="true"><circle cx="35" cy="35" r="${r}" class="hz-g0"/>${v == null ? '' : `<circle cx="35" cy="35" r="${r}" class="hz-g1 ${on ? 'on' : ''}" stroke-dasharray="${(c * v) / 100} ${c}" transform="rotate(-90 35 35)"/>`}<text x="35" y="41" text-anchor="middle" class="hz-gt">${v ?? '–'}</text></svg>`;
+}
+function pageHero() {
   if (!D.fin.length) return noData();
-  if (DISC === null) loadDisc().then(() => S.page === 'overview' && BOARD() && render());
-  if (!S.bdInit) { S.bdInit = true; S.period = 'quarter'; }   // 보드는 분기 그래프가 기본
-  const y = S.year, st = bdState(), V = D.valuation, G = D.diag;
-  const vchips = V ? [['시가총액', V.market_cap == null ? '–' : eok(V.market_cap)], ['PER', V.per == null ? '–' : fmt(V.per, 2) + '배'], ['PBR', V.pbr == null ? '–' : fmt(V.pbr, 2) + '배'], ['배당수익률', V.div_yield_pct == null ? '–' : fmt(V.div_yield_pct, 2) + '%']]
-    .map(([l, v], i) => `<button class="bd-chip" data-act="val:${['market_cap', 'per', 'pbr', 'div_yield_pct'][i]}"><small>${l}</small><b>${v}</b></button>`).join('') : '';
-  const lv = (p) => (p.level === '높음' ? 'var(--up)' : p.level === '낮음' ? 'var(--down)' : 'var(--warn)');
-  const prof = G?.profiles ? Object.entries(G.profiles).map(([k, p]) => `<button class="bd-prof" data-act="dg:${k}"><small>${esc(p.label)}</small><b style="color:${p.score == null ? 'var(--muted)' : lv(p)}">${p.score ?? '–'}</b></button>`).join('') : '';
-  const disc = DISC === null ? '<div class="empty loading">불러오는 중…</div>' : (DISC || []).slice().sort((a, b) => (a.rcept_dt < b.rcept_dt ? 1 : -1)).slice(0, 5)
-    .map((r) => `<a class="bd-li" href="${esc(r.viewer_url)}" target="_blank" rel="noopener"><span class="tl-cat" data-c="${esc(r.category)}">${esc(r.category)}</span><span class="bd-lt">${esc(r.report_nm.trim())}</span><span class="bd-ld">${esc(ymd(r.rcept_dt).slice(5).replace('-', '/'))}</span></a>`).join('') || '<div class="empty">공시 없음</div>';
+  if (DISC === null) loadDisc().then(() => S.page === 'overview' && HERO() && render());
+  if (!S.hzInit) { S.hzInit = true; S.period = 'quarter'; }   // 그래프는 분기가 기본
+  const y = S.year, V = D.valuation, G = D.diag, th = hzTheme();
+  const theme = `<div class="hz-theme" role="group" aria-label="화면 색"><button data-hz="dark" aria-pressed="${th === 'dark'}" title="다크 화면"><i class="d"></i>다크</button><button data-hz="light" aria-pressed="${th === 'light'}" title="화이트 화면"><i class="l"></i>화이트</button></div>`;
+  const lines = hzLines().map(([t, b, s]) => `<span class="hz-sc ${t}"><b>${esc(b)}</b><small>${esc(s)}</small></span>`).join('');
+  const vd = D.vdaily || [], c1 = N(vd[vd.length - 1]?.close ?? null), c0 = N(vd[vd.length - 2]?.close ?? null), chg = c1 && c0 ? (c1 / c0 - 1) * 100 : null;
+  const kp = (l, v, u, sub, act) => `<button class="hz-k" data-act="${act}"><span class="hz-kl">${l}</span><span class="hz-kv">${v}<small>${u}</small></span><span class="hz-kd">${sub}</span></button>`;
+  const kpis = V ? [
+    kp('주가', V.close == null ? '–' : fmt(V.close, 0), '원', chg === null ? esc(V.as_of || '') : `<em class="${chg >= 0 ? 'up' : 'dn'}">${chg >= 0 ? '▲' : '▼'} ${fmt(Math.abs(chg), 1)}%</em> 전일 대비`, 'val:market_cap'),
+    kp('시가총액', V.market_cap == null ? '–' : V.market_cap >= 1e12 ? fmt(V.market_cap / 1e12, 2) : fmt(V.market_cap / 1e8, 0), V.market_cap >= 1e12 ? '조원' : '억원', `${esc(V.as_of || '')} 종가 기준`, 'val:market_cap'),
+    kp('PER', V.per == null ? '–' : fmt(V.per, 2), '배', V.eps == null ? '' : `EPS ${fmt(V.eps, 0)}원`, 'val:per'),
+    kp('PBR', V.pbr == null ? '–' : fmt(V.pbr, 2), '배', V.bps == null ? '' : `BPS ${fmt(V.bps, 0)}원`, 'val:pbr'),
+    kp('배당수익률', V.div_yield_pct == null ? '–' : fmt(V.div_yield_pct, 2), '%', V.dps == null ? '' : `주당배당 ${fmt(V.dps, 0)}원`, 'val:div_yield_pct')].join('') : '';
+  // 종합 진단 (주인공)
+  let hero = '<div class="empty">진단 자료 없음</div>';
+  if (G?.axes) {
+    const fx = G.factors || {}, gy = G.year;
+    const act = (k) => { const a = HZ_ACT[k]; return !a ? '' : a.startsWith('val:') ? a : `met:${gy}:${a.slice(4)}`; };
+    const blk = (f) => `<span class="hz-blk ${f.rank === f.n ? 'w' : ''}">${Array.from({ length: f.n }, (_, i) => `<i class="${f.rank && i === f.n - f.rank ? 'on' : ''}"></i>`).join('')}</span>`;
+    const rk = (f) => `<b class="${!f.rank ? '' : f.rank === f.n ? 'w' : f.rank <= 2 ? 'top' : ''}">${f.rank ? f.rank + '위' : '–'}</b>`;
+    const big = (k, ax) => { const f = fx[k]; if (!f) return ''; const A = G.axes[ax];
+      return `<button class="hz-big" data-act="${act(k)}"><span class="hz-bn">${esc(f.label)}${rk(f)}</span><span class="hz-bv">${esc(f.text || '–')}</span>${blk(f)}<span class="hz-cap"><span>하위</span><span>상위</span></span><span class="hz-ds">${A ? `${esc(A.label)} ${A.score ?? '–'} · ` : ''}${esc(G.industry)} ${f.n}곳 중 ${f.rank ?? '–'}위</span></button>`; };
+    const mini = ['roe', 'asset_turnover', 'debt_ratio', 'per'].filter((k) => fx[k]).map((k) => { const f = fx[k];
+      return `<button class="hz-mi" data-act="${act(k)}"><span class="hz-bn">${esc(f.label)}${rk(f)}</span><span class="hz-mv">${esc(f.text || '–')}</span>${blk(f)}</button>`; }).join('');
+    const pr = G.profiles ? Object.entries(G.profiles) : [], best = Math.max(...pr.map(([, p]) => p.score ?? -1));
+    const gauges = pr.map(([k, p]) => `<button class="hz-gg ${p.score === best ? 'on' : ''}" data-act="dg:${k}" title="누르면 계산 근거">${hzGauge(p.score, p.score === best)}<small>${esc(p.label)}</small></button>`).join('');
+    hero = `<div class="hz-hb"><div class="hz-side">${big('rev_growth', 'growth')}</div><div class="hz-cen">${hzRadar(G.axes)}<div class="hz-gauges">${gauges}</div></div><div class="hz-side">${big('op_margin', 'profit')}</div></div>
+      <div class="hz-minis">${mini}</div><p class="hz-foot">점선 = 업종 가운데(50) · 0~100은 같은 업종 안 백분위 · 게이지·칸을 누르면 계산 근거 · 투자 권유 아님</p>`;
+  }
+  const disc = DISC === null ? '<div class="empty loading">불러오는 중…</div>' : (DISC || []).slice().sort((a, b) => (a.rcept_dt < b.rcept_dt ? 1 : -1)).slice(0, 3)
+    .map((r) => `<a class="hz-li" href="${esc(r.viewer_url)}" target="_blank" rel="noopener"><span>${esc(r.report_nm.trim())}</span><small>${esc(ymd(r.rcept_dt).slice(5).replace('-', '/'))}</small></a>`).join('') || '<div class="empty">공시 없음</div>';
   const spikes = EVROWS().slice(0, 3).map((e) => { const up = e.direction !== '하락';
-    return `<button class="bd-sp" data-act="ev:${esc(e.date)}"><span class="bd-date"><small>${+e.date.slice(5, 7)}월</small><b>${+e.date.slice(8)}</b></span>
-      <span class="bd-spc ${up ? 'up' : 'dn'}"><b>${esc(e.direction)} · 시장 대비 ${spct(e.excess_pct)}</b><small>같은 시기 공시 · ${esc(e.headline || '없음')}</small></span></button>`; }).join('') || '<div class="empty">최근 급변일 없음</div>';
-  const cards = {
-    perf: bdCard('perf', '성과체계', `ROE 분해 · ${y} 사업연도`, bdPerf(y) || '<div class="empty">ROE 자료 없음</div>', st),
-    diag: bdCard('diag', '종합 진단', G ? `${esc(G.industry)} ${G.peers}곳 안 백분위 · ${esc(G.year)}` : '', G?.axes ? `<div class="bd-radar">${radarSvg(G.axes)}</div><small class="bd-note">점선 = 업종 가운데(50)</small><div class="bd-profs">${prof}</div>` : '<div class="empty">진단 자료 없음</div>', st),
-    disc: bdCard('disc', '최근 공시', 'DART 원문으로 이동', disc, st),
-    spike: bdCard('spike', '주가 급변일', '시장 대비 크게 움직인 날 · 누르면 상세', spikes, st),
-    rev: bdCard('rev', `${TOPL()} · 영업이익`, `막대: 억원 · 선: ${MRGL()}(%) · 막대를 누르면 출처`, `<div class="seg" style="margin-bottom:6px"><button data-per="quarter" aria-pressed="${S.period === 'quarter'}">분기</button><button data-per="annual" aria-pressed="${S.period === 'annual'}">연간</button></div><div class="chart" id="c1"></div>`, st),
-  };
-  return `<div class="board">
-    <div class="bd-top"><div class="bd-chips">${vchips}</div><span class="bd-hint">⠿ 손잡이를 끌어 카드 위치를 바꿀 수 있습니다 <button class="tb-btn" data-bd="reset">기본 배치로</button></span></div>
-    <div class="bd-grid">${st.order.map((k) => cards[k]).join('')}</div>
-    <p class="bd-foot">임시 미리보기 디자인 (삼양식품에만 적용) · 배치는 이 브라우저에만 저장됩니다.</p></div>`;
+    return `<button class="hz-ev" data-act="ev:${esc(e.date)}"><span>${+e.date.slice(5, 7)}/${+e.date.slice(8)}${e.headline ? ` · ${esc(e.headline)}` : ''}</span><b class="${up ? 'up' : 'dn'}">${up ? '▲' : '▼'} ${fmt(Math.abs(N(e.excess_pct)), 1)}%</b></button>`; }).join('') || '<div class="empty">최근 급변일 없음</div>';
+  // 성과체계 (ROE → 3요인)
+  const v = (k, yy = y) => met(yy, k), roe = v('roe_pct'), nm = v('net_margin_pct'), at = v('asset_turnover'), lev = roe !== null && nm && at ? roe / (nm * at) : null;
+  const roe0 = v('roe_pct', y - 1), nm0 = v('net_margin_pct', y - 1), at0 = v('asset_turnover', y - 1), lev0 = roe0 !== null && nm0 && at0 ? roe0 / (nm0 * at0) : null;
+  const dl = (a, b, u, d, goodUp = true) => { if (a === null || b === null) return '<em>전년 없음</em>'; const dv = a - b; if (Math.abs(dv) < 0.5 * 10 ** -d) return '<em>변화 없음</em>';
+    return `<em class="${dv > 0 ? 'up' : 'dn'}">${dv > 0 ? '▲' : '▼'} ${fmt(Math.abs(dv), d)}${u}</em><span class="hz-tag ${(dv > 0) === goodUp ? 'g' : 'b'}">${(dv > 0) === goodUp ? '개선' : '악화'}</span>`; };
+  const P = (x, d = 1, u = '%') => (x === null ? '–' : fmt(x, d) + u);
+  const perf = roe === null || BANK() ? perfTree(y) || '<div class="empty">ROE 자료 없음</div>' : `<div class="hz-pt"><button class="hz-root" data-act="met:${y}:roe_pct"><small>ROE</small><b>${P(roe)}</b><span>${dl(roe, roe0, '%p', 1)}</span></button><div class="hz-tree"></div>
+    <div class="hz-leaves"><button class="hz-leaf" data-act="met:${y}:net_margin_pct"><small>순이익률</small><b>${P(nm)}</b><span>${dl(nm, nm0, '%p', 1)}</span></button>
+    <button class="hz-leaf" data-act="met:${y}:asset_turnover"><small>총자산회전율</small><b>${P(at, 2, '회')}</b><span>${dl(at, at0, '', 2)}</span></button>
+    <button class="hz-leaf" data-act="lev:${y}"><small>재무레버리지</small><b>${P(lev, 2, '배')}</b><span>${dl(lev, lev0, '', 2, false)}</span></button></div>
+    <p class="hz-foot">ROE = 순이익률 × 총자산회전율 × 재무레버리지 · ${y - 1}년 대비 · 칸을 누르면 산식과 출처</p></div>`;
+  return `<div class="hz">
+    <div class="hz-top"><div class="hz-strip"><span class="hz-st">한 줄 진단</span>${lines || '<small class="hz-none">조건에 맞는 문장 없음</small>'}<span class="hz-note">규칙 기반 자동 작성</span></div>${theme}</div>
+    <div class="hz-kpis">${kpis}</div>
+    <div class="hz-grid">
+      <section class="hz-card hz-hero"><div class="hz-ch"><h3>종합 진단</h3><small>${G ? `${esc(G.industry)} ${G.peers}곳 중 위치 · ${esc(G.year)} 사업연도` : ''}</small></div>${hero}</section>
+      <section class="hz-card hz-act"><div class="hz-ch"><h3>최근 공시</h3><small>DART 원문</small></div>${disc}<div class="hz-sep"><b>주가 급변일</b><small>시장 대비</small></div>${spikes}</section>
+      <section class="hz-card hz-perf"><div class="hz-ch"><h3>성과체계</h3><small>ROE 분해 · ${y} 사업연도</small></div>${perf}</section>
+      <section class="hz-card hz-rev"><div class="hz-ch"><h3>${TOPL()} · ${MRGL()}</h3><small>막대: 억원 · 선: % · 막대를 누르면 출처</small><div class="seg"><button data-per="quarter" aria-pressed="${S.period === 'quarter'}">분기</button><button data-per="annual" aria-pressed="${S.period === 'annual'}">연간</button></div></div><div class="chart" id="c1"></div></section>
+    </div>
+    <p class="hz-foot">임시 미리보기 디자인 (삼양식품에만 적용) · 화면 색은 이 브라우저에 저장됩니다.</p></div>`;
 }
-function bdAct(v) {
-  const st = bdState(), [op, k] = v.split(':');
-  if (op === 'reset') { store.set('board:v1', null); render(); return; }
-  const z = st.size[k]; if (!z) return;
-  if (op === 'wide' || op === 'narrow') { const i = BD_W.indexOf(z.w); z.w = BD_W[Math.max(0, Math.min(BD_W.length - 1, (i < 0 ? 2 : i) + (op === 'wide' ? 1 : -1)))]; }
-  if (op === 'tall') z.h = z.h === 1 ? 2 : 1;
-  bdSave(st); render();
-}
-function drawBoard() {
-  drawOverview();
-  const grid = $('#workspace .bd-grid'); if (!grid) return;
-  const save = () => { const st = bdState(); st.order = [...grid.children].map((c) => c.dataset.bk); bdSave(st); };
-  grid.querySelectorAll('.bd-grip').forEach((g) => {
-    g.addEventListener('keydown', (e) => {
-      if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return; e.preventDefault();
-      const c = g.closest('.bd-card'), sib = e.key === 'ArrowLeft' ? c.previousElementSibling : c.nextElementSibling; if (!sib) return;
-      if (e.key === 'ArrowLeft') grid.insertBefore(c, sib); else grid.insertBefore(sib, c);
-      save(); const k = c.dataset.bk; render(); $(`#workspace [data-grip="${k}"]`)?.focus();
-    });
-    g.addEventListener('pointerdown', (e) => {
-      if (e.button !== 0) return; e.preventDefault();
-      const c = g.closest('.bd-card'); if (c.classList.contains('bd-hole') || document.querySelector('.bd-ghost')) return;
-      const r = c.getBoundingClientRect(), ox = e.clientX - r.left, oy = e.clientY - r.top;
-      const ghost = c.cloneNode(true); ghost.classList.add('bd-ghost'); Object.assign(ghost.style, { width: r.width + 'px', height: r.height + 'px', left: r.left + 'px', top: r.top + 'px' });
-      document.body.append(ghost); c.classList.add('bd-hole');
-      let last = 0, swapEl = null, swapT = 0;
-      const move = (ev) => {
-        ghost.style.left = ev.clientX - ox + 'px'; ghost.style.top = ev.clientY - oy + 'px';
-        const now = performance.now(); if (now - last < 60) return; last = now;
-        const over = document.elementsFromPoint(ev.clientX, ev.clientY).find((el) => el.classList?.contains('bd-card') && el !== c && el.parentNode === grid);
-        if (!over || (over === swapEl && now - swapT < 450)) return;   // 방금 자리를 바꾼 카드 위에서 왔다 갔다 하지 않게
-        const o = over.getBoundingClientRect(), before = (ev.clientX - o.left) / o.width < 0.5;
-        swapEl = over; swapT = now;
-        const ref = before ? over : over.nextElementSibling; if (ref !== c && ref !== c.nextElementSibling) grid.insertBefore(c, ref);
-        else if (!before && over.nextElementSibling === c) grid.insertBefore(c, over);
-        const vh = innerHeight; if (ev.clientY < 70) scrollBy(0, -18); else if (ev.clientY > vh - 70) scrollBy(0, 18);
-      };
-      // 카드를 DOM에서 옮기면 포인터 캡처가 풀리므로 창 전체에서 듣는다
-      const up = () => { removeEventListener('pointermove', move); removeEventListener('pointerup', up); removeEventListener('pointercancel', up);
-        ghost.remove(); c.classList.remove('bd-hole'); save(); render(); };
-      addEventListener('pointermove', move); addEventListener('pointerup', up); addEventListener('pointercancel', up);
-    });
-  });
+function drawHero() {
+  const el = $('#c1'); if (!el) return;
+  const cs = getComputedStyle(document.body), bar = cs.getPropertyValue('--hz-bar').trim(), ln = cs.getPropertyValue('--hz-b').trim();
+  if (S.period === 'quarter') {
+    const ps = [...new Set(D.qtr.map((r) => r.period))].sort();
+    const qv = (p, m) => N(D.qtr.find((r) => r.period === p && r.metric === m)?.value ?? null);
+    barLine(el, ps.map(hzQ), [{ name: TOPL(), color: bar, values: ps.map((p) => qv(p, TOPK())) }],
+      BANK() ? null : { name: '영업이익률', color: ln, unit: '%', values: ps.map((p) => { const r = qv(p, 'revenue'), o = qv(p, 'operating_profit'); return r && o !== null ? (o / r) * 100 : null; }) },
+      { h: 250, onClick: (i) => { const r = D.qtr.find((x) => x.period === ps[i] && x.metric === TOPK()); if (r) openPanel(`<div class="panel-head"><h2>${r.period} ${esc(r.label)}</h2><button class="x">✕</button></div><div class="ev-val">${eok(N(r.value))}</div><div class="formula">${esc(r.method)}</div>${evidenceHTML(r.audit_id)}`); } });
+    return;
+  }
+  const Y = YEARS();
+  barLine(el, Y.map(String), [{ name: TOPL(), color: bar, values: Y.map((y) => fin(y, TOPK())) }], { name: MRGL(), color: ln, unit: '%', values: Y.map((y) => met(y, MRGK())) },
+    { h: 250, onClick: (i, j) => (j === 'L' ? showMetric(Y[i], MRGK()) : showFin(Y[i], TOPK())) });
 }
 
 /* ---------- 편집 모드: 카드를 끌어 순서 변경, 이 브라우저에만 저장 ---------- */
@@ -1212,8 +1220,8 @@ function drawDebate() {
   debTimer = setTimeout(step, 400);
 }
 
-const DRAW = { debate: drawDebate, industry: drawIndustry, screen: drawScreen, compare: drawCompare, overview: () => (BOARD() ? drawBoard() : drawOverview()), pl: drawPL, quarterly: drawQuarterly, bs: drawBS, stock: drawStock, news: drawNews, timeline: drawTimeline, production: drawProduction };
-const RENDER = { debate: pageDebate, screen: pageScreen, compare: pageCompare, dart: pageDart, overview: () => (BOARD() ? pageBoard() : pageOverview()), pl: pagePL, quarterly: pageQuarterly, ratios: pageRatios, bs: pageBS, stock: pageStock, news: pageNews, timeline: pageTimeline, production: pageProduction, industry: pageIndustry, audit: pageAudit };
+const DRAW = { debate: drawDebate, industry: drawIndustry, screen: drawScreen, compare: drawCompare, overview: () => (HERO() ? drawHero() : drawOverview()), pl: drawPL, quarterly: drawQuarterly, bs: drawBS, stock: drawStock, news: drawNews, timeline: drawTimeline, production: drawProduction };
+const RENDER = { debate: pageDebate, screen: pageScreen, compare: pageCompare, dart: pageDart, overview: () => (HERO() ? pageHero() : pageOverview()), pl: pagePL, quarterly: pageQuarterly, ratios: pageRatios, bs: pageBS, stock: pageStock, news: pageNews, timeline: pageTimeline, production: pageProduction, industry: pageIndustry, audit: pageAudit };
 
 let LAST_PAGE = null;
 const REDUCED = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -1235,8 +1243,8 @@ function render() {
   const Y = YEARS();
   $('#topFilters').innerHTML = id === 'overview' && Y.length ? `<div class="seg">${Y.map((y) => `<button data-year="${y}" aria-pressed="${y === S.year}">${y}</button>`).join('')}</div>` : '';
   document.body.classList.toggle('screen-mode', id === 'screen');
-  document.body.classList.toggle('board-on', id === 'overview' && BOARD()); bdAccent(id === 'overview' && BOARD());
-  const editable = !['screen', 'audit', 'dart'].includes(id) && !(id === 'overview' && BOARD());
+  hzApply(id === 'overview' && HERO());
+  const editable = !['screen', 'audit', 'dart'].includes(id) && !(id === 'overview' && HERO());
   $('#editBtn').hidden = !editable; $('#editBtn').setAttribute('aria-pressed', String(S.edit && editable));
   if (!editable) S.edit = false;
   const fresh = id !== LAST_PAGE || !!$('#workspace .loading'); LAST_PAGE = id; // 탭을 바꿨을 때(또는 불러오기 직후)만 효과 — 필터 변경 땐 바로 표시
@@ -1289,12 +1297,12 @@ function initCoSearch() {
   q.addEventListener('blur', () => setTimeout(() => { box.hidden = true; }, 150));
 }
 function onClick(e) {
-  const t = e.target.closest('[data-page],[data-year],[data-act],[data-q],[data-sm],[data-lf],[data-per],[data-cmp],[data-edit],[data-sr],[data-bd]'); if (!t) return;
+  const t = e.target.closest('[data-page],[data-year],[data-act],[data-q],[data-sm],[data-lf],[data-per],[data-cmp],[data-edit],[data-sr],[data-hz]'); if (!t) return;
   if (t.dataset.act === 'dlcsv') { downloadCsv(t.closest('.card')); return; }
   if (t.dataset.act === 'dlpng') { downloadPng(t.closest('.card')); return; }
   if (t.dataset.sr) { S.stockRange = t.dataset.sr; render(); return; }
   if (S.edit && t.closest('.chart')) return; // 편집 중에는 차트 클릭 끔
-  if (t.dataset.bd) { bdAct(t.dataset.bd); return; }
+  if (t.dataset.hz) { store.set('hero:theme', t.dataset.hz); hzApply(true); render(); return; }
   if (t.dataset.per) { S.period = t.dataset.per; render(); return; }
   if (t.dataset.cmp) { S.cmp = t.dataset.cmp; closePanel(); render(); return; }
   if (t.dataset.edit) { if (t.dataset.edit === 'reset') store.set(`order:${SLUG}:${S.page}`, null); if (t.dataset.edit === 'done') S.edit = false; render(); return; }

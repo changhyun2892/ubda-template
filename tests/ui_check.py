@@ -232,16 +232,14 @@ def main() -> int:
                     pg.wait_for_timeout(200)
                     ok("개요 연간→분기 전환", pg.locator("#c1 text").filter(has_text="Q").count() > 0)
                     pg.click('[data-per="annual"]')
-                    if pg.locator(".bd-grid").count():
-                        # 보드형 개요(임시 미리보기 기업): 카드 5개, 키보드로 순서 이동 → 저장 → 기본 배치로
-                        order = lambda: pg.evaluate("[...document.querySelectorAll('.bd-grid>.bd-card')].map(c=>c.dataset.bk).join()")
-                        before = order()
-                        ok("보드: 카드 5개", pg.locator(".bd-grid > .bd-card").count() == 5, before)
-                        pg.focus('.bd-grid [data-grip="diag"]'); pg.keyboard.press("ArrowLeft"); pg.wait_for_timeout(300)
-                        moved = order()
-                        ok("보드: 손잡이 ← 키로 카드 이동", moved != before and moved.startswith("diag"), moved)
-                        pg.click('[data-bd="reset"]'); pg.wait_for_timeout(300)
-                        ok("보드: 기본 배치로 복원", order() == before)
+                    if pg.locator(".hz").count():
+                        # 관제형 개요(임시 미리보기 기업): 레이더·좌우 지표·게이지, 다크↔화이트 전환
+                        ok("관제형: 레이더 + 좌우 큰 지표 2개 + 게이지 3개", pg.locator(".hz-radar").count() == 1 and pg.locator(".hz-big").count() == 2 and pg.locator(".hz-gg").count() == 3)
+                        dark0 = pg.evaluate("document.body.classList.contains('hz-dark')")
+                        pg.click('[data-hz="light"]'); pg.wait_for_timeout(300)
+                        lt = pg.evaluate("document.body.classList.contains('hz-light') && !document.body.classList.contains('hz-dark')")
+                        pg.click('[data-hz="dark"]'); pg.wait_for_timeout(300)
+                        ok("관제형: 다크↔화이트 전환", lt and pg.evaluate("document.body.classList.contains('hz-dark')"), f"처음 다크={dark0}")
                     else:
                         pg.click("#editBtn")
                         pg.wait_for_timeout(200)
@@ -268,9 +266,9 @@ def main() -> int:
                     ok("기업 비교 후보는 같은 산업만", _names and all(_ind.get(n) == _me for n in _names), ", ".join(_names))
                     if (ROOT / "companies" / slug / "data" / "diagnosis.json").exists():
                         pg.click('[data-page="overview"]'); time.sleep(1.2)
-                        if pg.locator(".bd-grid").count():
-                            ok("보드 성과체계: ROE + 3요인 + 손익·부채 4칸", pg.locator(".bp .bp-n.root").count() == 1 and pg.locator(".bp-r3 .bp-n").count() == 3 and pg.locator(".bp-r4 .bp-n").count() == 4)
-                            ok("보드 종합 진단: 레이더 + 성향 3개", pg.locator(".bd-radar svg").count() == 1 and pg.locator(".bd-prof").count() == 3)
+                        if pg.locator(".hz").count():
+                            ok("관제형 성과체계: ROE + 3요인", pg.locator(".hz-root").count() == 1 and pg.locator(".hz-leaf").count() == 3)
+                            ok("관제형 한 줄 진단 문장", pg.locator(".hz-sc").count() >= 1, pg.locator(".hz-strip").inner_text()[:80])
                         else:
                             ok("개요 성과체계: ROE 분해 합계 = ROE 변화", pg.locator(".pt .pt-n.root").count() == 1 and "ROE" in pg.locator(".pt-sum").inner_text())
                             ok("종합 진단 카드: 레이더 + 성향 3개", pg.locator(".card.diag .radar").count() == 1 and pg.locator(".dg-row").count() == 3)
