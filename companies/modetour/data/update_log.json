@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-19 11:52 KST",
+    "checked_at": "2026-11-19 17:46 KST",
     "corp_code": "00456218",
     "reports_total": 17,
     "new_reports": [],
@@ -9,7 +9,7 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-19 11:52 KST",
+    "checked_at": "2026-11-19 17:46 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
@@ -22,16 +22,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-19 11:52 KST",
+    "checked_at": "2026-11-19 17:46 KST",
     "rows": 946,
     "last_date": "2026-11-19",
-    "last_close": 10780,
+    "last_close": 10410,
     "source": "Yahoo Finance 080160.KQ 일봉 (분할 반영 종가)",
     "index": "^KQ11"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-19 11:52 KST",
+    "checked_at": "2026-11-19 17:46 KST",
     "rows": 408,
     "groups": [
       "모두투어",
@@ -42,7 +42,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-19 11:52 KST",
+    "checked_at": "2026-11-19 17:46 KST",
     "new": 0,
     "total": 424,
     "first": "2026-08-07 14:32",
@@ -51,8 +51,8 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-19 11:52 KST",
-    "spike_days": 21,
+    "checked_at": "2026-11-19 17:46 KST",
+    "spike_days": 20,
     "with_major_disclosure": 1,
     "news_total": 424,
     "disclosures_total": 178,
@@ -61,15 +61,15 @@
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-19 11:52 KST",
+    "checked_at": "2026-11-19 17:46 KST",
     "rows": 891,
     "as_of": "2026-11-19",
-    "per": 50.84,
-    "pbr": 2.114
+    "per": 49.09,
+    "pbr": 2.041
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-19 11:52 KST",
+    "checked_at": "2026-11-19 17:46 KST",
     "matched": 52,
     "total": 52,
     "message": ""
