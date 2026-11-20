@@ -962,7 +962,7 @@ addEventListener('message', (e) => {
 /* ---------- 관제형 개요 (임시 미리보기: company.json "ui_preview": "hero"인 기업만, 2026-11-19 시안 H) ----------
    종합 진단 레이더를 가운데 주인공으로, 매출 증가율·영업이익률을 좌우에. 다크/화이트 두 가지 색 (이 브라우저에 저장).
    한 줄 진단은 AI가 아니라 규칙으로 만든 문장 (연속 증가 분기 수, 업종 1위·최하위 지표). 숫자는 모두 데이터에서 계산. */
-const HERO = () => D?.company?.ui_preview === 'hero';
+const HERO = () => !!D?.company && D.company.ui_preview !== 'classic';   // 2026-11-20 전 기업 적용 (company.json "ui_preview": "classic"이면 기존 개요)
 const hzTheme = () => (store.get('hero:theme') === 'light' ? 'light' : 'dark');
 function hzApply(on) {
   const b = document.body, dark = on && hzTheme() === 'dark';
@@ -972,17 +972,20 @@ function hzApply(on) {
   else if (c) { r.setProperty('--accent', c); r.setProperty('--accent-soft', c + '1a'); }
 }
 const HZ_ACT = { rev_growth: 'met:revenue_growth_pct', op_growth: 'met:op_growth_pct', op_margin: 'met:operating_margin_pct', roe: 'met:roe_pct', asset_turnover: 'met:asset_turnover',
-  debt_ratio: 'met:debt_ratio_pct', current_ratio: 'met:current_ratio_pct', per: 'val:per', pbr: 'val:pbr' };
+  debt_ratio: 'met:debt_ratio_pct', current_ratio: 'met:current_ratio_pct', per: 'val:per', pbr: 'val:pbr', roa: 'met:roa_pct', cir: 'met:cir_pct' };
+const HZ_AX = { rev_growth: 'growth', op_growth: 'growth', op_margin: 'profit', roe: 'profit', roa: 'profit', cir: 'efficiency', asset_turnover: 'efficiency' };
 const hzQ = (p) => p.slice(2).replace('-', '');   // 2026-Q3 → 26Q3
+const hzQK = () => (D.qtr.some((r) => r.metric === TOPK()) ? TOPK() : 'revenue');   // 분기 막대 계정 (분기 순이자이익이 없는 은행은 영업수익)
+const hzQL = () => { const k = hzQK(); return k === TOPK() ? TOPL() : D.qtr.find((r) => r.metric === k)?.label || '영업수익'; };
 function hzLines() {   // 규칙 기반 한 줄 진단: 강점 최대 2개 + 확인할 점 1개
-  const out = [], G = D.diag, k = TOPK();
+  const out = [], G = D.diag, k = hzQK();
   const ps = [...new Set(D.qtr.filter((r) => r.metric === k).map((r) => r.period))].sort();
   const qv = (p) => N(D.qtr.find((r) => r.period === p && r.metric === k)?.value ?? null), prev = (p) => `${+p.slice(0, 4) - 1}${p.slice(4)}`;
   let run = 0; for (let i = ps.length - 1; i >= 0; i--) { const a = qv(ps[i]), b = qv(prev(ps[i])); if (a === null || b === null || !(a > b)) break; run++; }
   const last = ps[ps.length - 1];
   if (last) { const a = qv(last), b = qv(prev(last)), g = a !== null && b ? (a / b - 1) * 100 : null;
-    if (run >= 2) out.push(['g', `${TOPL()} ${run}분기 연속 증가`, `${hzQ(last)} ${eok(a, 0)} (${spct(g)})`]);
-    else if (g !== null && g < 0) out.push(['w', `최근 분기 ${TOPL()} 전년 대비 감소`, `${hzQ(last)} ${spct(g)}`]); }
+    if (run >= 2) out.push(['g', `${hzQL()} ${run}분기 연속 증가`, `${hzQ(last)} ${eok(a, 0)} (${spct(g)})`]);
+    else if (g !== null && g < 0) out.push(['w', `최근 분기 ${hzQL()} 전년 대비 감소`, `${hzQ(last)} ${spct(g)}`]); }
   const F = G?.factors ? Object.values(G.factors).filter((f) => f.rank) : [];
   const top = F.filter((f) => f.rank === 1).slice(0, 2), bot = F.filter((f) => f.n > 2 && f.rank === f.n).slice(0, 2);
   if (top.length) out.push(['g', `${top.map((f) => f.label).join('·')} ${G.industry} ${top[0].n}곳 중 1위`, top.map((f) => `${f.label} ${f.text}`).join(' · ')]);
@@ -1031,11 +1034,13 @@ function pageHero() {
     const rk = (f) => `<b class="${!f.rank ? '' : f.rank === f.n ? 'w' : f.rank <= 2 ? 'top' : ''}">${f.rank ? f.rank + '위' : '–'}</b>`;
     const big = (k, ax) => { const f = fx[k]; if (!f) return ''; const A = G.axes[ax];
       return `<button class="hz-big" data-act="${act(k)}"><span class="hz-bn">${esc(f.label)}${rk(f)}</span><span class="hz-bv">${esc(f.text || '–')}</span>${blk(f)}<span class="hz-cap"><span>하위</span><span>상위</span></span><span class="hz-ds">${A ? `${esc(A.label)} ${A.score ?? '–'} · ` : ''}${esc(G.industry)} ${f.n}곳 중 ${f.rank ?? '–'}위</span></button>`; };
-    const mini = ['roe', 'asset_turnover', 'debt_ratio', 'per'].filter((k) => fx[k]).map((k) => { const f = fx[k];
-      return `<button class="hz-mi" data-act="${act(k)}"><span class="hz-bn">${esc(f.label)}${rk(f)}</span><span class="hz-mv">${esc(f.text || '–')}</span>${blk(f)}</button>`; }).join('');
+    const pick = (cands, not = []) => cands.find((k) => fx[k]?.rank && !not.includes(k));   // 값이 있는 첫 지표 (은행처럼 없는 지표는 건너뜀)
     const pr = G.profiles ? Object.entries(G.profiles) : [], best = Math.max(...pr.map(([, p]) => p.score ?? -1));
     const gauges = pr.map(([k, p]) => `<button class="hz-gg ${p.score === best ? 'on' : ''}" data-act="dg:${k}" title="누르면 계산 근거">${hzGauge(p.score, p.score === best)}<small>${esc(p.label)}</small></button>`).join('');
-    hero = `<div class="hz-hb"><div class="hz-side">${big('rev_growth', 'growth')}</div><div class="hz-cen">${hzRadar(G.axes)}<div class="hz-gauges">${gauges}</div></div><div class="hz-side">${big('op_margin', 'profit')}</div></div>
+    const L = pick(['rev_growth', 'op_growth']), R = pick(['op_margin', 'cir', 'roa'], [L]);
+    const mini = [['roe'], ['asset_turnover', 'roa'], ['debt_ratio', 'equity_ratio'], ['per', 'pbr']].map((c) => pick(c, [L, R])).filter(Boolean).slice(0, 4).map((k) => { const f = fx[k];
+      return `<button class="hz-mi" data-act="${act(k)}"><span class="hz-bn">${esc(f.label)}${rk(f)}</span><span class="hz-mv">${esc(f.text || '–')}</span>${blk(f)}</button>`; }).join('');
+    hero = `<div class="hz-hb"><div class="hz-side">${L ? big(L, HZ_AX[L]) : ''}</div><div class="hz-cen">${hzRadar(G.axes)}<div class="hz-gauges">${gauges}</div></div><div class="hz-side">${R ? big(R, HZ_AX[R]) : ''}</div></div>
       <div class="hz-minis">${mini}</div><p class="hz-foot">점선 = 업종 가운데(50) · 0~100은 같은 업종 안 백분위 · 게이지·칸을 누르면 계산 근거 · 투자 권유 아님</p>`;
   }
   const disc = DISC === null ? '<div class="empty loading">불러오는 중…</div>' : (DISC || []).slice().sort((a, b) => (a.rcept_dt < b.rcept_dt ? 1 : -1)).slice(0, 3)
@@ -1062,17 +1067,17 @@ function pageHero() {
       <section class="hz-card hz-perf"><div class="hz-ch"><h3>성과체계</h3><small>ROE 분해 · ${y} 사업연도</small></div>${perf}</section>
       <section class="hz-card hz-rev"><div class="hz-ch"><h3>${TOPL()} · ${MRGL()}</h3><small>막대: 억원 · 선: % · 막대를 누르면 출처</small><div class="seg"><button data-per="quarter" aria-pressed="${S.period === 'quarter'}">분기</button><button data-per="annual" aria-pressed="${S.period === 'annual'}">연간</button></div></div><div class="chart" id="c1"></div></section>
     </div>
-    <p class="hz-foot">임시 미리보기 디자인 (삼양식품에만 적용) · 화면 색(다크/화이트)은 위쪽 버튼으로 바꾸며 이 브라우저에 저장됩니다.</p></div>`;
+    <p class="hz-foot">화면 색(다크/화이트)은 위쪽 버튼으로 바꾸며 이 브라우저에 저장됩니다.</p></div>`;
 }
 function drawHero() {
   const el = $('#c1'); if (!el) return;
   const cs = getComputedStyle(document.body), bar = cs.getPropertyValue('--hz-bar').trim(), ln = cs.getPropertyValue('--hz-b').trim();
   if (S.period === 'quarter') {
-    const ps = [...new Set(D.qtr.map((r) => r.period))].sort();
+    const ps = [...new Set(D.qtr.filter((r) => r.metric === hzQK()).map((r) => r.period))].sort();
     const qv = (p, m) => N(D.qtr.find((r) => r.period === p && r.metric === m)?.value ?? null);
-    barLine(el, ps.map(hzQ), [{ name: TOPL(), color: bar, values: ps.map((p) => qv(p, TOPK())) }],
+    barLine(el, ps.map(hzQ), [{ name: hzQL(), color: bar, values: ps.map((p) => qv(p, hzQK())) }],
       BANK() ? null : { name: '영업이익률', color: ln, unit: '%', values: ps.map((p) => { const r = qv(p, 'revenue'), o = qv(p, 'operating_profit'); return r && o !== null ? (o / r) * 100 : null; }) },
-      { h: 250, onClick: (i) => { const r = D.qtr.find((x) => x.period === ps[i] && x.metric === TOPK()); if (r) openPanel(`<div class="panel-head"><h2>${r.period} ${esc(r.label)}</h2><button class="x">✕</button></div><div class="ev-val">${eok(N(r.value))}</div><div class="formula">${esc(r.method)}</div>${evidenceHTML(r.audit_id)}`); } });
+      { h: 250, onClick: (i) => { const r = D.qtr.find((x) => x.period === ps[i] && x.metric === hzQK()); if (r) openPanel(`<div class="panel-head"><h2>${r.period} ${esc(r.label)}</h2><button class="x">✕</button></div><div class="ev-val">${eok(N(r.value))}</div><div class="formula">${esc(r.method)}</div>${evidenceHTML(r.audit_id)}`); } });
     return;
   }
   const Y = YEARS();

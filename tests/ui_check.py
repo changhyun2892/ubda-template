@@ -267,7 +267,7 @@ def main() -> int:
                     if (ROOT / "companies" / slug / "data" / "diagnosis.json").exists():
                         pg.click('[data-page="overview"]'); time.sleep(1.2)
                         if pg.locator(".hz").count():
-                            ok("관제형 성과체계: ROE + 3요인", pg.locator(".hz-root").count() == 1 and pg.locator(".hz-leaf").count() == 3)
+                            ok("관제형 성과체계: ROE + 3요인 (은행은 ROA·레버리지 나무)", (pg.locator(".hz-root").count() == 1 and pg.locator(".hz-leaf").count() == 3) or pg.locator(".hz-perf .pt-n.root").count() == 1)
                             ok("관제형 한 줄 진단 문장", pg.locator(".hz-sc").count() >= 1, pg.locator(".hz-strip").inner_text()[:80])
                         else:
                             ok("개요 성과체계: ROE 분해 합계 = ROE 변화", pg.locator(".pt .pt-n.root").count() == 1 and "ROE" in pg.locator(".pt-sum").inner_text())
