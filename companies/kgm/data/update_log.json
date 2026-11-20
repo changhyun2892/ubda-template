@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:43 KST",
+    "checked_at": "2026-11-20 23:55 KST",
     "corp_code": "00138242",
     "reports_total": 16,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:43 KST",
+    "checked_at": "2026-11-20 23:55 KST",
     "rows": 947,
     "last_date": "2026-11-20",
     "last_close": 1980,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:43 KST",
+    "checked_at": "2026-11-20 23:55 KST",
     "spike_days": 31,
     "with_major_disclosure": 11,
     "news_total": 105,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:43 KST",
+    "checked_at": "2026-11-20 23:55 KST",
     "rows": 612,
     "groups": [
       "KG모빌리티",
@@ -46,7 +46,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:43 KST",
+    "checked_at": "2026-11-20 23:55 KST",
     "new": 0,
     "total": 105,
     "first": "2026-10-20 11:42",
@@ -55,14 +55,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:43 KST",
+    "checked_at": "2026-11-20 23:55 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:43 KST",
+    "checked_at": "2026-11-20 23:55 KST",
     "rows": 899,
     "as_of": "2026-11-20",
     "per": null,
@@ -70,7 +70,7 @@
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:43 KST",
+    "checked_at": "2026-11-20 23:55 KST",
     "matched": 56,
     "total": 56,
     "message": ""

@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:45 KST",
+    "checked_at": "2026-11-20 23:58 KST",
     "corp_code": "00547583",
     "reports_total": 22,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:45 KST",
+    "checked_at": "2026-11-20 23:58 KST",
     "rows": 947,
     "last_date": "2026-11-20",
     "last_close": 123900,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:45 KST",
+    "checked_at": "2026-11-20 23:58 KST",
     "spike_days": 25,
     "with_major_disclosure": 5,
     "news_total": 73,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:45 KST",
+    "checked_at": "2026-11-20 23:58 KST",
     "rows": 816,
     "groups": [
       "하나금융지주",
@@ -47,7 +47,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:45 KST",
+    "checked_at": "2026-11-20 23:58 KST",
     "new": 0,
     "total": 73,
     "first": "2026-10-12 12:22",
@@ -56,14 +56,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:45 KST",
+    "checked_at": "2026-11-20 23:58 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:45 KST",
+    "checked_at": "2026-11-20 23:58 KST",
     "rows": 653,
     "as_of": "2026-11-20",
     "per": 7.99,
@@ -71,7 +71,7 @@
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:45 KST",
+    "checked_at": "2026-11-20 23:58 KST",
     "matched": 48,
     "total": 48,
     "message": ""
