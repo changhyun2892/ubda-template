@@ -1,5 +1,5 @@
 {
- "built_at": "2026-11-19 19:59 KST",
+ "built_at": "2026-11-20 17:45 KST",
  "method": "같은 산업 기업 사이 백분위(0~100, 50 = 가운데) · 성향별 가중치는 UBDA가 임의로 정한 기준 · 투자 권유 아님",
  "weights": {
   "stable": {
@@ -68,7 +68,7 @@
   },
   "value": {
    "label": "가격 매력",
-   "score": 11,
+   "score": 16,
    "factors": [
     "per",
     "pbr"
@@ -79,8 +79,8 @@
   "stable": {
    "label": "안정형",
    "focus": "재무 안정·배당·주가 변동",
-   "score": 66,
-   "level": "높음",
+   "score": 62,
+   "level": "보통",
    "comment": "유동비율 150%(업종 10곳 중 2위)는 강점, 영업이익률 3.5%(업종 10곳 중 8위)는 확인할 지점",
    "parts": [
     {
@@ -95,7 +95,7 @@
      "key": "div_yield",
      "label": "배당수익률",
      "weight": 0.25,
-     "score": 88,
+     "score": 75,
      "best": "div_yield",
      "worst": "div_yield"
     },
@@ -120,9 +120,9 @@
   "neutral": {
    "label": "위험중립형",
    "focus": "수익성과 가격의 균형",
-   "score": 43,
+   "score": 44,
    "level": "보통",
-   "comment": "ROE 17.7%(업종 10곳 중 3위)는 강점, PER 49.1배(업종 8곳 중 8위)는 확인할 지점",
+   "comment": "ROE 17.7%(업종 10곳 중 3위)는 강점, PER 47.8배(업종 8곳 중 8위)는 확인할 지점",
    "parts": [
     {
      "key": "axis:profit",
@@ -136,7 +136,7 @@
      "key": "axis:value",
      "label": "가격 매력",
      "weight": 0.3,
-     "score": 11,
+     "score": 16,
      "best": "pbr",
      "worst": "per"
     },
@@ -302,8 +302,8 @@
   },
   "per": {
    "label": "PER",
-   "value": 49.09,
-   "text": "49.1배",
+   "value": 47.77,
+   "text": "47.8배",
    "pctile": 0,
    "rank": 8,
    "n": 8,
@@ -311,26 +311,26 @@
   },
   "pbr": {
    "label": "PBR",
-   "value": 2.041,
-   "text": "2.04배",
-   "pctile": 22,
-   "rank": 8,
+   "value": 1.986,
+   "text": "1.99배",
+   "pctile": 33,
+   "rank": 7,
    "n": 10,
    "higher_better": false
   },
   "div_yield": {
    "label": "배당수익률",
-   "value": 3.362,
-   "text": "3.36%",
-   "pctile": 88,
-   "rank": 2,
+   "value": 3.455,
+   "text": "3.46%",
+   "pctile": 75,
+   "rank": 3,
    "n": 9,
    "higher_better": true
   },
   "vol_1y": {
    "label": "주가 변동성(연환산)",
-   "value": 51.37517815267155,
-   "text": "51.4%",
+   "value": 51.30188555064454,
+   "text": "51.3%",
    "pctile": 44,
    "rank": 6,
    "n": 10,
@@ -347,7 +347,7 @@
   },
   "ret_1y": {
    "label": "1년 시장 대비 수익률",
-   "value": 19.61300096405454,
+   "value": 19.61674658003435,
    "text": "+19.6%p",
    "pctile": 89,
    "rank": 2,
@@ -355,5 +355,5 @@
    "higher_better": true
   }
  },
- "stock_asof": "2026-11-19"
+ "stock_asof": "2026-11-20"
 }
