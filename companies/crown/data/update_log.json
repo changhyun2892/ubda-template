@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:45 KST",
+    "checked_at": "2026-11-20 23:56 KST",
     "corp_code": "01205329",
     "reports_total": 17,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:45 KST",
+    "checked_at": "2026-11-20 23:56 KST",
     "rows": 947,
     "last_date": "2026-11-20",
     "last_close": 6700,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:45 KST",
+    "checked_at": "2026-11-20 23:57 KST",
     "spike_days": 20,
     "with_major_disclosure": 1,
     "news_total": 189,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:45 KST",
+    "checked_at": "2026-11-20 23:56 KST",
     "rows": 813,
     "groups": [
       "크라운제과",
@@ -47,8 +47,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:45 KST",
-    "new": 1,
+    "checked_at": "2026-11-20 23:56 KST",
+    "new": 0,
     "total": 189,
     "first": "2026-06-30 08:56",
     "pages": 10,
@@ -56,14 +56,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:45 KST",
+    "checked_at": "2026-11-20 23:56 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:45 KST",
+    "checked_at": "2026-11-20 23:57 KST",
     "rows": 887,
     "as_of": "2026-11-20",
     "per": 9.2,
@@ -71,7 +71,7 @@
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:45 KST",
+    "checked_at": "2026-11-20 23:56 KST",
     "matched": 56,
     "total": 56,
     "message": ""
