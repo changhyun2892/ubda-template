@@ -719,3 +719,5 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20261117000202,20261117,[기재정정]일괄신고서,KB금융,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117000202
 20261117800231,20261117,[기재정정]상각형조건부자본증권발행결정(자회사의 주요경영사항),KB금융,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117800231
 20261119800497,20261119,최대주주등소유주식변동신고서,KB금융,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119800497
+20261120800667,20261120,임시주주총회결과,KB금융,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800667
+20261120800745,20261120,대표이사(대표집행임원)변경(안내공시),KB금융,유,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800745
