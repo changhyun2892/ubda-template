@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:45 KST",
+    "checked_at": "2026-11-20 23:57 KST",
     "corp_code": "00269940",
     "reports_total": 18,
     "new_reports": [],
@@ -9,7 +9,7 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:45 KST",
+    "checked_at": "2026-11-20 23:57 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
@@ -22,7 +22,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:45 KST",
+    "checked_at": "2026-11-20 23:57 KST",
     "rows": 947,
     "last_date": "2026-11-20",
     "last_close": 34550,
@@ -31,7 +31,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:45 KST",
+    "checked_at": "2026-11-20 23:57 KST",
     "rows": 408,
     "groups": [
       "하나투어",
@@ -42,8 +42,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:45 KST",
-    "new": 2,
+    "checked_at": "2026-11-20 23:57 KST",
+    "new": 0,
     "total": 472,
     "first": "2026-09-10 16:28",
     "pages": 4,
@@ -51,7 +51,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:45 KST",
+    "checked_at": "2026-11-20 23:57 KST",
     "spike_days": 24,
     "with_major_disclosure": 9,
     "news_total": 472,
@@ -61,7 +61,7 @@
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:45 KST",
+    "checked_at": "2026-11-20 23:57 KST",
     "rows": 897,
     "as_of": "2026-11-20",
     "per": 13.17,
@@ -69,7 +69,7 @@
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-20 17:45 KST",
+    "checked_at": "2026-11-20 23:57 KST",
     "matched": 48,
     "total": 48,
     "message": ""
