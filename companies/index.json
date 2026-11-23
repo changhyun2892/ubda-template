@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-23 18:02 KST",
+ "updated_at": "2026-11-23 19:32 KST",
  "industries": {
   "auto": {
    "name": "자동차",
@@ -84,7 +84,7 @@
    },
    "industry_kpis_found": 9,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-23 18:00 KST",
+   "updated_at": "2026-11-23 19:30 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 7943316672200,
@@ -133,7 +133,7 @@
    },
    "industry_kpis_found": 2,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-23 18:00 KST",
+   "updated_at": "2026-11-23 19:30 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 9621605835000,
@@ -182,7 +182,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-23 18:00 KST",
+   "updated_at": "2026-11-23 19:30 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 2291845935600,
@@ -230,7 +230,7 @@
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-23 18:00 KST",
+   "updated_at": "2026-11-23 19:30 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 697958034300,
@@ -277,9 +277,9 @@
     "불일치": 0,
     "미확인": 21
    },
-   "industry_kpis_found": 3,
+   "industry_kpis_found": 5,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-23 18:00 KST",
+   "updated_at": "2026-11-23 19:30 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 3777197334810,
@@ -328,7 +328,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-23 18:00 KST",
+   "updated_at": "2026-11-23 19:30 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 1544395688800,
@@ -375,7 +375,7 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-23 18:01 KST",
+   "updated_at": "2026-11-23 19:30 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 1324283877700,
@@ -421,7 +421,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-23 18:00 KST",
+   "updated_at": "2026-11-23 19:31 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 3234610065000,
@@ -470,7 +470,7 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-23 18:00 KST",
+   "updated_at": "2026-11-23 19:30 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 6906900777600,
@@ -519,7 +519,7 @@
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-23 18:00 KST",
+   "updated_at": "2026-11-23 19:30 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 83408841000,
@@ -567,7 +567,7 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-23 18:01 KST",
+   "updated_at": "2026-11-23 19:31 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 482402595000,
@@ -616,7 +616,7 @@
    },
    "industry_kpis_found": 2,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-23 18:00 KST",
+   "updated_at": "2026-11-23 19:31 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 1705421614200,
@@ -663,7 +663,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-23 18:00 KST",
+   "updated_at": "2026-11-23 19:30 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 1726493119750,
@@ -713,7 +713,7 @@
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-23 18:00 KST",
+   "updated_at": "2026-11-23 19:31 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 127386096250,
@@ -760,9 +760,9 @@
     "불일치": 0,
     "미확인": 21
    },
-   "industry_kpis_found": 4,
+   "industry_kpis_found": 6,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-23 18:01 KST",
+   "updated_at": "2026-11-23 19:31 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 32647617982200,
@@ -810,7 +810,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-23 18:01 KST",
+   "updated_at": "2026-11-23 19:31 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 498001313800,
@@ -857,7 +857,7 @@
    },
    "industry_kpis_found": 1,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-23 18:00 KST",
+   "updated_at": "2026-11-23 19:30 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 295008890160,
@@ -905,7 +905,7 @@
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-23 18:01 KST",
+   "updated_at": "2026-11-23 19:31 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 14373079760000,
@@ -952,7 +952,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-23 18:01 KST",
+   "updated_at": "2026-11-23 19:31 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 2965898775280,
@@ -1000,7 +1000,7 @@
    },
    "industry_kpis_found": 10,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-23 18:01 KST",
+   "updated_at": "2026-11-23 19:31 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 12225894420600,
@@ -1048,7 +1048,7 @@
    },
    "industry_kpis_found": 10,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-23 18:00 KST",
+   "updated_at": "2026-11-23 19:31 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 25033252162500,
@@ -1097,7 +1097,7 @@
    },
    "industry_kpis_found": 9,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-23 18:01 KST",
+   "updated_at": "2026-11-23 19:31 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 15110060266000,
@@ -1145,7 +1145,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-23 18:01 KST",
+   "updated_at": "2026-11-23 19:31 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 1420452880000,
@@ -1196,7 +1196,7 @@
    },
    "industry_kpis_found": 8,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-23 18:01 KST",
+   "updated_at": "2026-11-23 19:31 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 50677547085000,
@@ -1244,7 +1244,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-23 18:01 KST",
+   "updated_at": "2026-11-23 19:31 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 1934372606400,
@@ -1293,7 +1293,7 @@
    },
    "industry_kpis_found": 2,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-23 18:01 KST",
+   "updated_at": "2026-11-23 19:31 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 14576944885320,
@@ -1341,9 +1341,9 @@
     "불일치": 0,
     "미확인": 21
    },
-   "industry_kpis_found": 5,
+   "industry_kpis_found": 6,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-23 18:02 KST",
+   "updated_at": "2026-11-23 19:31 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 2411874703840,
@@ -1390,9 +1390,9 @@
     "불일치": 0,
     "미확인": 19
    },
-   "industry_kpis_found": 1,
+   "industry_kpis_found": 2,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-23 18:01 KST",
+   "updated_at": "2026-11-23 19:32 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 4649863524800,
@@ -1441,7 +1441,7 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-23 17:58 KST",
+   "updated_at": "2026-11-23 19:28 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 630612502700,
@@ -1490,7 +1490,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-23 17:58 KST",
+   "updated_at": "2026-11-23 19:28 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 384192000000,
@@ -1539,7 +1539,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-23 17:58 KST",
+   "updated_at": "2026-11-23 19:29 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 6586374845700,
@@ -1587,7 +1587,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-23 17:58 KST",
+   "updated_at": "2026-11-23 19:29 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 12824864764500,
@@ -1635,7 +1635,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-23 17:59 KST",
+   "updated_at": "2026-11-23 19:28 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 9900249067750,
@@ -1683,9 +1683,9 @@
     "불일치": 0,
     "미확인": 21
    },
-   "industry_kpis_found": 6,
+   "industry_kpis_found": 7,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-23 17:58 KST",
+   "updated_at": "2026-11-23 19:29 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 50968627375800,
@@ -1735,7 +1735,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-23 17:59 KST",
+   "updated_at": "2026-11-23 19:29 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 396654827520,
@@ -1784,7 +1784,7 @@
    },
    "industry_kpis_found": 8,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-23 17:58 KST",
+   "updated_at": "2026-11-23 19:29 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 33731683027200,
@@ -1831,7 +1831,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-23 17:59 KST",
+   "updated_at": "2026-11-23 19:29 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 2738188932000,
@@ -1881,7 +1881,7 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-23 17:59 KST",
+   "updated_at": "2026-11-23 19:29 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 8807712319700,
@@ -1929,7 +1929,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-23 17:59 KST",
+   "updated_at": "2026-11-23 19:29 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 3225000000000,
@@ -1978,7 +1978,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-23 17:59 KST",
+   "updated_at": "2026-11-23 19:29 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 20132541256800,
@@ -2026,7 +2026,7 @@
    },
    "industry_kpis_found": 8,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-23 17:59 KST",
+   "updated_at": "2026-11-23 19:29 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 3676490896500,
@@ -2077,7 +2077,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-23 17:59 KST",
+   "updated_at": "2026-11-23 19:29 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 2158432006500,
@@ -2126,7 +2126,7 @@
    },
    "industry_kpis_found": 1,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-23 17:59 KST",
+   "updated_at": "2026-11-23 19:29 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 796457325420,
@@ -2178,7 +2178,7 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-23 17:59 KST",
+   "updated_at": "2026-11-23 19:29 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 1261026638000,
@@ -2226,7 +2226,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-23 17:59 KST",
+   "updated_at": "2026-11-23 19:29 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 28444664770500,
@@ -2273,7 +2273,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-23 17:59 KST",
+   "updated_at": "2026-11-23 19:29 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 186165000000,
@@ -2322,7 +2322,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-23 17:59 KST",
+   "updated_at": "2026-11-23 19:29 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 23541636300000,
@@ -2371,7 +2371,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-23 17:59 KST",
+   "updated_at": "2026-11-23 19:30 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 3638785315800,
@@ -2418,7 +2418,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-23 17:59 KST",
+   "updated_at": "2026-11-23 19:29 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 2470327315650,
@@ -2470,7 +2470,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-23 17:59 KST",
+   "updated_at": "2026-11-23 19:29 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 2022478465000,
@@ -2520,7 +2520,7 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-23 17:59 KST",
+   "updated_at": "2026-11-23 19:29 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 4518140468400,
@@ -2570,7 +2570,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-23 17:59 KST",
+   "updated_at": "2026-11-23 19:30 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 1124196315000,
@@ -2619,7 +2619,7 @@
    },
    "industry_kpis_found": 4,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-23 17:59 KST",
+   "updated_at": "2026-11-23 19:29 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 995765856500,
@@ -2670,7 +2670,7 @@
    },
    "industry_kpis_found": 7,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-23 17:59 KST",
+   "updated_at": "2026-11-23 19:29 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 1037714452920000,
@@ -2718,7 +2718,7 @@
    },
    "industry_kpis_found": 9,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-23 18:00 KST",
+   "updated_at": "2026-11-23 19:30 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 12628000000000,
@@ -2766,7 +2766,7 @@
    },
    "industry_kpis_found": 5,
    "industry_kpis_total": 9,
-   "updated_at": "2026-11-23 17:59 KST",
+   "updated_at": "2026-11-23 19:30 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 13711346160000,
@@ -2818,7 +2818,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-23 17:59 KST",
+   "updated_at": "2026-11-23 19:29 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 8979353880000,
@@ -2867,7 +2867,7 @@
    },
    "industry_kpis_found": 8,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-23 18:00 KST",
+   "updated_at": "2026-11-23 19:30 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 58111695488000,
@@ -2915,9 +2915,9 @@
     "불일치": 0,
     "미확인": 21
    },
-   "industry_kpis_found": 3,
+   "industry_kpis_found": 5,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-23 18:00 KST",
+   "updated_at": "2026-11-23 19:30 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 39064053910300,
@@ -2965,7 +2965,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 7,
-   "updated_at": "2026-11-23 18:00 KST",
+   "updated_at": "2026-11-23 19:30 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 2540753689000,
@@ -3014,7 +3014,7 @@
    },
    "industry_kpis_found": 3,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-23 18:00 KST",
+   "updated_at": "2026-11-23 19:30 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 1712157156600,
@@ -3064,7 +3064,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 10,
-   "updated_at": "2026-11-23 18:00 KST",
+   "updated_at": "2026-11-23 19:30 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 792584216025000,
@@ -3111,7 +3111,7 @@
    },
    "industry_kpis_found": 6,
    "industry_kpis_total": 8,
-   "updated_at": "2026-11-23 18:00 KST",
+   "updated_at": "2026-11-23 19:30 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 282126841360,
@@ -3158,9 +3158,9 @@
     "불일치": 0,
     "미확인": 19
    },
-   "industry_kpis_found": 5,
+   "industry_kpis_found": 6,
    "industry_kpis_total": 11,
-   "updated_at": "2026-11-23 18:00 KST",
+   "updated_at": "2026-11-23 19:30 KST",
    "valuation": {
     "as_of": "2026-11-23",
     "market_cap": 22133926332800,
