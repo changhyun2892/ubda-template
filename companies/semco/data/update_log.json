@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-23 17:59 KST",
+    "checked_at": "2026-11-23 19:29 KST",
     "corp_code": "00126371",
     "reports_total": 17,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-23 17:59 KST",
+    "checked_at": "2026-11-23 19:29 KST",
     "rows": 948,
     "last_date": "2026-11-23",
     "last_close": 778000,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:00 KST",
+    "checked_at": "2026-11-23 19:30 KST",
     "spike_days": 30,
     "with_major_disclosure": 4,
     "news_total": 421,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-23 17:59 KST",
+    "checked_at": "2026-11-23 19:29 KST",
     "rows": 612,
     "groups": [
       "삼성전기",
@@ -46,8 +46,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-23 17:59 KST",
-    "new": 36,
+    "checked_at": "2026-11-23 19:29 KST",
+    "new": 0,
     "total": 421,
     "first": "2026-11-11 06:22",
     "pages": 10,
@@ -55,14 +55,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-23 17:59 KST",
+    "checked_at": "2026-11-23 19:29 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:00 KST",
+    "checked_at": "2026-11-23 19:30 KST",
     "rows": 905,
     "as_of": "2026-11-23",
     "per": 46.78,
@@ -70,7 +70,7 @@
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-23 17:59 KST",
+    "checked_at": "2026-11-23 19:29 KST",
     "matched": 55,
     "total": 55,
     "message": ""
