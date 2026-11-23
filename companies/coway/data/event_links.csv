@@ -39,7 +39,6 @@ date,rcept_dt,category,major,report_nm,flr_nm,rcept_no,viewer_url
 2026-05-06,20260506,기타,,신탁계약해지결과보고서,코웨이,20260506000504,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260506000504
 2026-06-29,20260626,기타,,임원ㆍ주요주주특정증권등소유상황보고서,서장원,20260626000464,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260626000464
 2026-06-29,20260626,기타,,최대주주등소유주식변동신고서,코웨이,20260626800804,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260626800804
-2026-09-18,20260918,기타,,기업설명회(IR)개최(안내공시),코웨이,20260918800771,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260918800771
 2026-11-05,20261105,배당,Y,현금ㆍ현물배당을위한주주명부폐쇄(기준일)결정,코웨이,20261105800904,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800904
 2026-11-05,20261105,기타,,유형자산취득결정,코웨이,20261105800913,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800913
 2026-11-05,20261105,배당,Y,현금ㆍ현물배당결정,코웨이,20261105800921,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800921
@@ -342,3 +341,182 @@ date,rcept_dt,category,major,report_nm,flr_nm,rcept_no,viewer_url
 2026-11-09,20261109,보도,,"코웨이, 3분기 매출 1조4,261억원…전년 대비 13.7% 증가",webeconomy.co.kr,,https://www.webeconomy.co.kr/news/articleView.html?idxno=2364313
 2026-11-09,20261109,보도,,[코웨이] 능률협회컨설팅 고객만족도 3개 부문 1위…음식물처리기·보행...,webeconomy.co.kr,,https://www.webeconomy.co.kr/news/articleView.html?idxno=2344345
 2026-11-09,20261109,보도,,"코웨이, 정수기·비데 렌탈료 최대 15개월 할인…블랙프라이데이 개시",thedailypost.kr,,https://www.thedailypost.kr/news/articleView.html?idxno=116766
+2026-11-23,20261120,기타,,기업설명회(IR)개최(안내공시),코웨이,20261120800723,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800723
+2026-11-23,20261120,보도,,"코웨이, 부산 신세계 센텀시티몰에 팝업스토어 열어",metroseoul.co.kr,,http://www.metroseoul.co.kr/article/20261119500419
+2026-11-23,20261120,보도,,"코웨이, 과천에 신규 R&D 센터 구축…시니어·헬스케어 사업 거점",ceoscoredaily.com,,https://www.ceoscoredaily.com/page/view/2026111916333815855
+2026-11-23,20261120,보도,,"코웨이, 신세계 센텀시티에 125평 규모 체험형 매장 열어...내년 상반기...",thepublic.kr,,https://www.thepublic.kr/news/articleView.html?idxno=327620
+2026-11-23,20261120,보도,,"코웨이, 전국 단위 방문판매 전문가 '코디' 모집…활동 영역 확대",mhns.co.kr,,https://www.mhns.co.kr/news/articleView.html?idxno=769976
+2026-11-23,20261120,보도,,"코웨이, 멤버십 혜택 강화…교보문고와 전략적 마케팅 제휴",newsdream.kr,,http://www.newsdream.kr/news/articleView.html?idxno=122621
+2026-11-23,20261120,보도,,"코웨이, 부산 신세계 센텀시티몰에 대규모 체험형 매장 오픈",cnbizm.com,,https://www.cnbizm.com/news/articleView.html?idxno=322106
+2026-11-23,20261120,보도,,"[위클리오늘] 코웨이, 전국 단위 '코디' 모집…제품군 확대·계정 증가에...",weeklytoday.com,,http://www.weeklytoday.com/news/articleView.html?idxno=802727
+2026-11-23,20261120,보도,,"코웨이, 교보문고와 제휴 확대...고객 대상 전자책 구독 혜택 제공",popcornnews.net,,http://www.popcornnews.net/news/articleView.html?idxno=140856
+2026-11-23,20261120,보도,,"코웨이, 교보문고와 제휴…전자책 구독 혜택 확대",view.asiae.co.kr,,https://n.news.naver.com/mnews/article/277/0005845485?sid=101
+2026-11-23,20261120,보도,,"코웨이, 교보문고와 맞손...""전자책 1년 무료 구독 이벤트""",slist.kr,,https://www.slist.kr/news/articleView.html?idxno=783367
+2026-11-23,20261120,보도,,"코웨이, 교보문고와 마케팅 제휴 MOU",g-enews.com,,https://www.g-enews.com/view.php?ud=20261120093032633a96f092d0c_1
+2026-11-23,20261120,보도,,코웨이 교보문고 마케팅 제휴 업무협약 체결,newsclaim.co.kr,,https://www.newsclaim.co.kr/news/articleView.html?idxno=3083514
+2026-11-23,20261120,보도,,"[위클리오늘] 코웨이, 한샘(11.19)",weeklytoday.com,,http://www.weeklytoday.com/news/articleView.html?idxno=802673
+2026-11-23,20261120,보도,,"코웨이, 교보문고와 제휴…“500명 추첨해 전자책 1년 무료”",datanews.co.kr,,http://www.datanews.co.kr/news/article.html?no=147743
+2026-11-23,20261120,보도,,코웨이와 만나면 '교보문고 전자책'이 1년 무료,mt.co.kr,,https://n.news.naver.com/mnews/article/008/0005444000?sid=101
+2026-11-23,20261120,보도,,"코웨이, 방문판매원 '코디' 전국 모집…'N잡러' 대안 일자리 관심",financialpost.co.kr,,https://www.financialpost.co.kr/news/articleView.html?idxno=302135
+2026-11-23,20261120,보도,,"코웨이·교보문고, 공동 마케팅 업무협약…고객 대상 이벤트 진행",beyondpost.co.kr,,http://www.beyondpost.co.kr/view.php?ud=20261120094228466246a9e4dd7f_30
+2026-11-23,20261120,보도,,"코웨이, 교보문고와 마케팅 제휴…고객에 전자책 구독 혜택",yna.co.kr,,https://n.news.naver.com/mnews/article/001/0016453730?sid=103
+2026-11-23,20261120,보도,,"코웨이, 교보문고와 제휴…고객 500명에 전자책 이용권",financialpost.co.kr,,https://www.financialpost.co.kr/news/articleView.html?idxno=302141
+2026-11-23,20261120,보도,,"""정수기 쓰면 전자책도 공짜""…코웨이, 교보문고 손잡고 고객 혜택 확대",techm.kr,,https://www.techm.kr/news/articleView.html?idxno=157608
+2026-11-23,20261120,보도,,"코웨이·교보문고, 고객 혜택 확대 맞손…전자책 1년 구독권 제공",etoday.co.kr,,https://www.etoday.co.kr/news/view/2650804
+2026-11-23,20261120,보도,,"코웨이, 전국서 세일즈 전문가 '코디' 모집…실적 따라 수수료 지급",mediafine.co.kr,,https://www.mediafine.co.kr/news/articleView.html?idxno=95605
+2026-11-23,20261120,보도,,"코웨이, '코디' 모집 확대하는 까닭은",topdaily.kr,,https://www.topdaily.kr/articles/113021
+2026-11-23,20261120,보도,,"코웨이, 교보문고와 마케팅 제휴…고객 혜택 확대",delighti.co.kr,,https://www.delighti.co.kr/news/articleView.html?idxno=125284
+2026-11-23,20261120,보도,,"코웨이, 교보문고와 마케팅 협업…전자책 구독 혜택 제공",etnews.com,,https://n.news.naver.com/mnews/article/030/0003487878?sid=105
+2026-11-23,20261120,보도,,"코웨이, 신세계 센텀시티몰에 '코웨이갤러리 팝업스토어' 오픈",betanews.net,,https://www.betanews.net/article/view/beta202611190147
+2026-11-23,20261120,보도,,"국내 렌탈 계정 800만 코웨이, '코디' 전국 단위 모집...""코디매칭 서비...",consumernews.co.kr,,http://www.consumernews.co.kr/news/articleView.html?idxno=768739
+2026-11-23,20261120,보도,,"해외 투자업계가 꼽은 한국 기업···코웨이, 글로벌 유망주 10선에 들...",koreastocknews.com,,http://www.koreastocknews.com/news/articleView.html?idxno=122393
+2026-11-23,20261120,보도,,코웨이-교보문고 업무협약…멤버십에 전자책 혜택 더해,cstimes.com,,https://www.cstimes.com/news/articleView.html?idxno=728753
+2026-11-23,20261120,보도,,"코웨이·교보문고, 마케팅 제휴 협약…26일까지 고객 대상 전자책 이벤...",nextdaily.co.kr,,https://www.nextdaily.co.kr/news/articleView.html?idxno=255148
+2026-11-23,20261120,보도,,"코웨이, 전국 단위 '코디' 모집… ""시간은 자유롭게, 소득은 실적따라""",klnews.co.kr,,https://www.klnews.co.kr/news/articleView.html?idxno=323629
+2026-11-23,20261120,보도,,[민주 유통가] 코웨이·SK인텔릭스·한샘,iminju.net,,http://www.iminju.net/news/articleView.html?idxno=172802
+2026-11-23,20261120,보도,,"라이프케어·독서 플랫폼 시너지 모색…코웨이, 교보문고와 마케팅 제휴...",thefairnews.co.kr,,https://www.thefairnews.co.kr/news/articleView.html?idxno=94924
+2026-11-23,20261120,보도,,"코웨이, 세일즈 전문가 '코디' 모집 나서",m-i.kr,,https://www.m-i.kr/news/articleView.html?idxno=2021302
+2026-11-23,20261120,보도,,"코웨이, 교보문고와 마케팅 제휴…전자책 구독 혜택 확대",news1.kr,,https://n.news.naver.com/mnews/article/421/0009300974?sid=101
+2026-11-23,20261120,보도,,"코웨이, 교보문고와 협업...전자책 1년 무료 구독 이벤트",issuenbiz.com,,http://www.issuenbiz.com/news/articleView.html?idxno=81832
+2026-11-23,20261120,보도,,"코웨이, 교보문고와 맞손···멤버십 혜택 확대",finomy.com,,http://www.finomy.com/news/articleView.html?idxno=267361
+2026-11-23,20261120,보도,,"코웨이·교보문고, 고객 혜택 확대 맞손…500명에 전자책 구독권 증정",dailysmart.co.kr,,http://www.dailysmart.co.kr/news/articleView.html?idxno=132866
+2026-11-23,20261120,보도,,"코웨이, 글로벌 투자행사에서 '10개 핵심 주식'에 선정",seouleconews.com,,http://www.seouleconews.com/news/articleView.html?idxno=95143
+2026-11-23,20261120,보도,,"시간은 내 일정에, 수입은 실적에…코웨이 '코디' 전국 모집",mstoday.co.kr,,https://www.mstoday.co.kr/news/articleView.html?idxno=200542
+2026-11-23,20261120,보도,,"코웨이, 교보문고와 제휴…고객 대상 전자책 1년 무료 구독 이벤트",smarttimes.co.kr,,http://www.smarttimes.co.kr/news/articleView.html?idxno=50745
+2026-11-23,20261120,보도,,[유통街] 코웨이·대상·빙그레·비알코리아,news.ifm.kr,,https://news.ifm.kr/news/articleView.html?idxno=485007
+2026-11-23,20261120,보도,,"멤버십의 진화, 코웨이-교보문고 손잡은 까닭 [뉴스큐]",newsq.co.kr,,https://www.newsq.co.kr/news/articleView.html?idxno=500978
+2026-11-23,20261120,보도,,"코웨이라이프솔루션의 실버케어 다각화, AI 영양관리까지 [뉴스큐]",newsq.co.kr,,https://www.newsq.co.kr/news/articleView.html?idxno=500980
+2026-11-23,20261120,보도,,"코웨이, 교보문고와 제휴…고객 500명에 전자책 1년 이용권",dailian.co.kr,,https://n.news.naver.com/mnews/article/119/0003157637?sid=101
+2026-11-23,20261120,보도,,[굿모닝! 20일 유통가 소식] 코웨이·LG생활건강·배민·콜마비앤에이치...,goodkyung.com,,https://www.goodkyung.com/news/articleView.html?idxno=293689
+2026-11-23,20261120,보도,,"코웨이·넷마블, 교보문고와 마케팅 제휴 MOU·'나 혼자만 레벨업:어라이...",wsobi.com,,http://www.wsobi.com/news/articleView.html?idxno=322205
+2026-11-23,20261120,보도,,"코웨이, 방문판매 전문가 ‘코디’ 전국 모집",fntimes.com,,https://www.fntimes.com/html/view.php?ud=202611201137282075923defd0cc_18
+2026-11-23,20261120,보도,,"코웨이, 렌탈 계정 늘자 방문판매원 '코디' 전국 모집",fieldnews.kr,,http://www.fieldnews.kr/news/articleView.html?idxno=33254
+2026-11-23,20261120,보도,,"코웨이·교보문고, 전자책 구독 혜택 확대…고객 500명에 1년 무료 이용...",e-science.co.kr,,https://www.e-science.co.kr/news/articleView.html?idxno=140362
+2026-11-23,20261120,보도,,"코웨이, 교보문고와 마케팅 제휴…전자책 구독 행사 진행",fetv.co.kr,,https://www.fetv.co.kr/news/articleView.html?idxno=314032
+2026-11-23,20261120,보도,,[산업 브리핑] 코웨이·시몬스·한샘,niceeconomy.co.kr,,https://www.niceeconomy.co.kr/news/articleView.html?idxno=91907
+2026-11-23,20261120,보도,,"코웨이, 교보문고와 마케팅 제휴 업무협약…한샘, '이메일 정리' 캠페인...",sisaon.co.kr,,https://www.sisaon.co.kr/news/articleView.html?idxno=206252
+2026-11-23,20261120,보도,,"코웨이, 교보문고와 마케팅 업무협약 체결…고객 대상 전자책 구독 혜택...",economist.co.kr,,https://n.news.naver.com/mnews/article/243/0000105961?sid=105
+2026-11-23,20261120,보도,,[잘먹잘살+]바디프랜드·알럭스·온더바디·배민·코웨이·아모레퍼시픽...,businessplus.kr,,https://www.businessplus.kr/news/articleView.html?idxno=120218
+2026-11-23,20261120,보도,,"코웨이, 교보문고와 마케팅 제휴…전자책 구독 혜택 제공",pinpointnews.co.kr,,https://www.pinpointnews.co.kr/news/articleView.html?idxno=506296
+2026-11-23,20261120,보도,,"코웨이, 교보문고와 마케팅 제휴…고객 500명에 전자책 1년 구독권",newsworks.co.kr,,https://www.newsworks.co.kr/news/articleView.html?idxno=903833
+2026-11-23,20261120,보도,,"코웨이·교보문고, 고객 혜택 확대 맞손…전자책 구독권 500명에 제공",newsfreezone.co.kr,,https://www.newsfreezone.co.kr/news/articleView.html?idxno=720478
+2026-11-23,20261120,보도,,"코웨이, 교보문고와 제휴…전자책 1년 구독권 500명 추첨",kdfnews.com,,http://www.kdfnews.com/news/articleView.html?idxno=191192
+2026-11-23,20261120,보도,,"코웨이, 방문판매원 '코디' 전국 모집",breaknews.com,,http://www.breaknews.com/1252585
+2026-11-23,20261120,보도,,교보문고·코웨이 손잡았다…전자책 구독과 생활가전 서비스 연계 추진,view.asiae.co.kr,,https://n.news.naver.com/mnews/article/277/0005845657?sid=103
+2026-11-23,20261120,보도,,"코웨이, 교보문고와 마케팅 제휴 MOU 체결",thelec.kr,,https://www.thelec.kr/news/articleView.html?idxno=65707
+2026-11-23,20261120,보도,,"'AI천하' 증시서 코웨이 주목한 해외 운용사…""성장 대비 저평가""",inews24.com,,https://n.news.naver.com/mnews/article/031/0001076993?sid=101
+2026-11-23,20261120,보도,,"코웨이, 교보문고와 마케팅 제휴 MOU…전자책 구독 이벤트",ebn.co.kr,,https://www.ebn.co.kr/news/articleView.html?idxno=1732487
+2026-11-23,20261120,보도,,"코웨이-교보문고, 코웨이 고객 대상 전자책 1년 무료 구독 이벤트 진행",ngonews.kr,,https://www.ngonews.kr/news/articleView.html?idxno=243750
+2026-11-23,20261120,보도,,"코웨이-교보문고 맞손, 문화 콘텐츠로 혜택범위 확대",businesskorea.co.kr,,https://www.businesskorea.co.kr/news/articleView.html?idxno=281820
+2026-11-23,20261120,보도,,교보문고·코웨이가 협업을?…독서 콘텐츠·생활가전 서비스에 '맞손',wolyo.co.kr,,https://www.wolyo.co.kr/news/articleView.html?idxno=320819
+2026-11-23,20261120,보도,,"코웨이, 교보문고와 마케팅 제휴…고객에 전자책 구독 혜택",todayeconomic.com,,https://www.todayeconomic.com/news/article.html?no=32930
+2026-11-23,20261120,보도,,"코웨이, 교보문고와 제휴 확대…멤버십 혜택 생활·문화 영역으로 넓힌...",thefirstmedia.net,,http://www.thefirstmedia.net/news/articleView.html?idxno=214258
+2026-11-23,20261120,보도,,"코웨이, 교보문고와 손잡고 고객 혜택 확대…생활밀착형 멤버십 강화",megaeconomy.co.kr,,https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065590923034275
+2026-11-23,20261120,보도,,"코웨이 리엔케이, 다이소 전용 화장품 6종 출시…유통망 확대",financialpost.co.kr,,https://www.financialpost.co.kr/news/articleView.html?idxno=302256
+2026-11-23,20261120,보도,,"코웨이, 교보문고와 고객 대상 공동 마케팅 협력 확대",lawissue.co.kr,,https://www.lawissue.co.kr/view.php?ud=202611201451539365204ead0791_12
+2026-11-23,20261120,보도,,"코웨이 리엔케이, 다이소 입점…전용 화장품 6종 선봬",pinpointnews.co.kr,,https://www.pinpointnews.co.kr/news/articleView.html?idxno=506384
+2026-11-23,20261120,보도,,"코웨이, 교보문고와 마케팅 제휴 특별 이벤트 전개",srtimes.kr,,http://www.srtimes.kr/news/articleView.html?idxno=218227
+2026-11-23,20261120,보도,,교보문고·코웨이 업무협약…고객 500명에 전자책 1년 이용권 제공,fnnews.com,,https://n.news.naver.com/mnews/article/014/0005607463?sid=103
+2026-11-23,20261120,보도,,"코웨이, 교보문고와 마케팅 제휴 협약 체결…고객 대상 이벤트 진행",thedailypost.kr,,https://www.thedailypost.kr/news/articleView.html?idxno=117105
+2026-11-23,20261120,보도,,"코웨이, 교보문고와 마케팅 강화… 고객 혜택 확대",cnbizm.com,,https://www.cnbizm.com/news/articleView.html?idxno=322151
+2026-11-23,20261120,보도,,[지스타 2026] 대학교 출품작 살핀 방준혁 넷마블·코웨이 의장,inews24.com,,https://n.news.naver.com/mnews/article/031/0001077053?sid=105
+2026-11-23,20261120,보도,,"코웨이, 쿠쿠·교원과 정수기 기술특허 공방…법적 분쟁 지속",newstomato.com,,http://www.newstomato.com/ReadNews.aspx?no=1321271&inflow=N
+2026-11-23,20261120,보도,,교보문고와 손잡은 코웨이...'전자책 이용권' 고객 혜택 확대,financialreview.co.kr,,http://www.financialreview.co.kr/news/articleView.html?idxno=46485
+2026-11-23,20261120,보도,,수비하는 코웨이 김상열 '안돼',news1.kr,,https://m.sports.naver.com/basketball/article/421/0009301865
+2026-11-23,20261120,보도,,"코웨이 화장품 브랜드 리엔케이, 다이소 전용 제품 6종 선봬",beyondpost.co.kr,,http://www.beyondpost.co.kr/view.php?ud=20261120161219113246a9e4dd7f_30
+2026-11-23,20261120,보도,,코웨이블루휠스 김상열 '들어가라',news1.kr,,https://m.sports.naver.com/basketball/article/421/0009301897
+2026-11-23,20261120,보도,,"코웨이 리엔케이, 다이소 입점···더마 뷰티 고객 접점 확대",ziksir.com,,https://www.ziksir.com/news/articleView.html?idxno=154201
+2026-11-23,20261120,보도,,"코웨이, 교보문고와 마케팅 제휴 협약…고객 대상 이벤트 진행",sentv.co.kr,,https://www.sentv.co.kr/article/view/sentv202611200190
+2026-11-23,20261120,보도,,[유통가 오늘] 한샘ㆍ현대홈쇼핑ㆍ코웨이ㆍ시몬스,cnbnews.com,,https://www.cnbnews.com/news/articleView.html?idxno=1024692
+2026-11-23,20261120,보도,,"[위클리오늘] 코웨이, 바디프랜드(11.20)",weeklytoday.com,,http://www.weeklytoday.com/news/articleView.html?idxno=802810
+2026-11-23,20261120,보도,,"코웨이 힐러비 리엔케이, 다이소 전용 화장품 출시",daily.hankooki.com,,https://daily.hankooki.com/news/articleView.html?idxno=1427551
+2026-11-23,20261120,보도,,"코웨이 리엔케이, 다이소 전용 화장품 6종 출시",swtvnews.com,,https://www.swtvnews.com/news/newsview.php?ncode=1065602188741740
+2026-11-23,20261120,보도,,"코웨이, 방문판매원 '코디' 전국 모집…'코디매칭 서비스' 등 세일즈 지...",mdtoday.co.kr,,https://www.mdtoday.co.kr/news/articleView.html?idxno=626687
+2026-11-23,20261121,보도,,"코웨이, '멤버스 클럽' 전자책 구독 혜택도 확대…교보문고와 맞손",apnews.kr,,https://www.apnews.kr/news/articleView.html?idxno=3053387
+2026-11-23,20261121,보도,,"""침실·주방으로 고객 접점 확대""…코웨이, 부산 신세계 센텀시티몰에 ...",youthdaily.co.kr,,https://www.youthdaily.co.kr/news/article.html?no=230107
+2026-11-23,20261121,보도,,"외환위기가 만든 렌털 신화…코웨이, 28년 연속 성장의 비밀",magazine.hankyung.com,,https://n.news.naver.com/mnews/article/050/0000113564?sid=101
+2026-11-23,20261121,보도,,교보문고와 손잡은 코웨이…멤버십 회원 전자책 구독 '혜택',econovill.com,,https://www.econovill.com/news/articleView.html?idxno=758058
+2026-11-23,20261121,보도,,"코웨이, 화장품 유통망·고객 제휴 확대…리엔케이 다이소 850여 곳 입점",webeconomy.co.kr,,https://www.webeconomy.co.kr/news/articleView.html?idxno=2385388
+2026-11-23,20261121,보도,,[체험소식] SKT AI 기억 결산표 '시드볼트 26' 개막…코웨이·시몬스 매...,dailypop.kr,,http://www.dailypop.kr/news/articleView.html?idxno=104845
+2026-11-23,20261121,보도,,"코웨이, 교보문고와 손잡았다…전자책 1년 이용권 증정",hansbiz.co.kr,,http://www.hansbiz.co.kr/news/articleView.html?idxno=885754
+2026-11-23,20261121,보도,,"코웨이 리엔케이, 다이소 850개 매장 입점…가성비 뷰티 시장 공략",hansbiz.co.kr,,http://www.hansbiz.co.kr/news/articleView.html?idxno=885747
+2026-11-23,20261121,보도,,[光클릭] 코웨이ㆍLG생활건강ㆍ한화리조트ㆍ빙그레,smarttimes.co.kr,,http://www.smarttimes.co.kr/news/articleView.html?idxno=50773
+2026-11-23,20261122,보도,,"코웨이, 교보문고와 마케팅 제휴…대고객 이벤트",metroseoul.co.kr,,http://www.metroseoul.co.kr/article/20261121500053
+2026-11-23,20261122,보도,,"코웨이, 교보문고와 맞손…고객 멤버십 혜택 확대",thepublic.kr,,https://www.thepublic.kr/news/articleView.html?idxno=327854
+2026-11-23,20261122,보도,,"제주 휠체어농구단, 코웨이 꺾고 2년 만에 챔프전",jejumaeil.net,,https://www.jejumaeil.net/news/articleView.html?idxno=406974
+2026-11-23,20261123,보도,,"[브랜드평판] 코웨이, 가정용품 상장기업 11월 1위···경동나비엔·하...",enetnews.co.kr,,https://www.enetnews.co.kr/news/articleView.html?idxno=56673
+2026-11-23,20261123,보도,,"코웨이, 가정용품 브랜드평판 1위 수성…하츠는 23.75% 급등",pinpointnews.co.kr,,https://www.pinpointnews.co.kr/news/articleView.html?idxno=506789
+2026-11-23,20261123,보도,,"침대 위 ‘꿀잠’에서 야외 ‘활력 보행’까지…코웨이, K-웰니스 영토 ...",sportsseoul.com,,https://n.news.naver.com/mnews/article/468/0001282677?sid=105
+2026-11-23,20261123,보도,,"코웨이, 11월 가정용품 상장기업 브랜드평판 1위...경동나비엔·하츠 뒤...",thebigdata.co.kr,,https://www.thebigdata.co.kr/view.php?ud=202611230744112901d0a8833aad_23
+2026-11-23,20261123,보도,,"코웨이, ""코웨이 하세요""…'국내 계정 수 증가' 전국 중심 '코디(CODY)' 모...",sisacast.kr,,http://www.sisacast.kr/news/articleView.html?idxno=102209
+2026-11-23,20261123,보도,,"코웨이, ‘2026 핀업디자인어워드’ 5관왕…디자인 경영상도 수상",biz.heraldcorp.com,,https://n.news.naver.com/mnews/article/016/0002726956?sid=101
+2026-11-23,20261123,보도,,"코웨이, '2026 핀업디자인어워드' 5관왕…올해의 디자인 경영상",news1.kr,,https://n.news.naver.com/mnews/article/421/0009304249?sid=101
+2026-11-23,20261123,보도,,"코웨이, 핀업디자인어워드 5관왕…비렉스 안마의자 최고상",thepowernews.co.kr,,https://www.thepowernews.co.kr/view.php?ud=202611231001216257de3f0aa1be_7
+2026-11-23,20261123,보도,,"코웨이, 핀업디자인어워드 5관왕…'베스트 오브 베스트'에 '올해의 디자...",nextdaily.co.kr,,https://www.nextdaily.co.kr/news/articleView.html?idxno=255200
+2026-11-23,20261123,보도,,"코웨이, '2026 핀업디자인어워드' 5관왕…디자인 경영상 수상",view.asiae.co.kr,,https://n.news.naver.com/mnews/article/277/0005846306?sid=101
+2026-11-23,20261123,보도,,"코웨이, 핀업디자인어워드 5관왕…디자인 경영상도 수상",ajunews.com,,https://www.ajunews.com/view/20261123100339237
+2026-11-23,20261123,보도,,"코웨이, 핀업디자인어워드 최고상·올해의 디자인 경영상 수상",datanews.co.kr,,http://www.datanews.co.kr/news/article.html?no=147766
+2026-11-23,20261123,보도,,"코웨이, 2026 핀업디자인어워드 5관왕…올해의 디자인 경영상 수상",etnews.com,,https://n.news.naver.com/mnews/article/030/0003488452?sid=101
+2026-11-23,20261123,보도,,"코웨이, '2026 핀업디자인어워드' 5관왕...디자인 경영상까지 석권",popcornnews.net,,http://www.popcornnews.net/news/articleView.html?idxno=141072
+2026-11-23,20261123,보도,,"코웨이, '2026 핀업디자인어워드' 5관왕·최고 영예 '올해의 디자인 경영...",ftoday.co.kr,,http://www.ftoday.co.kr/news/articleView.html?idxno=370330
+2026-11-23,20261123,보도,,"'시간 자유롭게 활용…' 코웨이, 방문판매원 '코디' 찾는다",metroseoul.co.kr,,http://www.metroseoul.co.kr/article/20261123500079
+2026-11-23,20261123,보도,,"가정용품 상장기업 2026년 11월 브랜드평판...코웨이, 경동나비엔, 하츠...",energy-news.co.kr,,https://www.energy-news.co.kr/news/articleView.html?idxno=229981
+2026-11-23,20261123,보도,,"다이닝브랜즈그룹·코웨이, 채용문화·디자인 경영 인정",lcnews.co.kr,,https://www.lcnews.co.kr/news/articleView.html?idxno=211831
+2026-11-23,20261123,보도,,"코웨이, '2026 핀업디자인어워드'서 5관왕 달성",babytimes.co.kr,,http://www.babytimes.co.kr/news/articleView.html?idxno=74747
+2026-11-23,20261123,보도,,"‘디자인이 경쟁력이다’…코웨이, 핀업디자인어워드 5관왕",inthenews.co.kr,,https://www.inthenews.co.kr/news/article.html?no=94833
+2026-11-23,20261123,보도,,"코웨이, 핀업디자인어워드 5관왕…'올해의 디자인 경영상' 수상",dailysmart.co.kr,,http://www.dailysmart.co.kr/news/articleView.html?idxno=132930
+2026-11-23,20261123,보도,,코웨이 핀업디자인어워드 5관왕,globalepic.co.kr,,https://www.globalepic.co.kr/view.php?ud=20261123103548304048439a4874_29
+2026-11-23,20261123,보도,,"코웨이, 2026 핀업디자인어워드 5관왕",businesskorea.co.kr,,https://www.businesskorea.co.kr/news/articleView.html?idxno=281899
+2026-11-23,20261123,보도,,"코웨이, '2026 핀업디자인어워드' 5관왕",zdnet.co.kr,,https://n.news.naver.com/mnews/article/092/0002446442?sid=105
+2026-11-23,20261123,보도,,가정용품 상장기업 브랜드평판 11월 빅데이터…1위 코웨이·2위 경동나비...,cbci.co.kr,,https://www.cbci.co.kr/news/articleView.html?idxno=629744
+2026-11-23,20261123,보도,,"코웨이, 핀업디자인어워드 5관왕…‘올해의 디자인 경영상’ 수상",sentv.co.kr,,https://www.sentv.co.kr/article/view/sentv202611230085
+2026-11-23,20261123,보도,,"가구와 헬스케어의 경계 허문 디자인 혁신…코웨이, 핀업디자인어워드...",thefairnews.co.kr,,https://www.thefairnews.co.kr/news/articleView.html?idxno=95137
+2026-11-23,20261123,보도,,코웨이 핀업디자인어워드 5관왕·디자인 경영상 수상,newsclaim.co.kr,,https://www.newsclaim.co.kr/news/articleView.html?idxno=3083753
+2026-11-23,20261123,보도,,"코웨이, '2026 핀업디자인어워드' 5관왕 달성",the-biz.co.kr,,http://www.the-biz.co.kr/news/articleView.html?idxno=731866
+2026-11-23,20261123,보도,,"코웨이, '핀업디자인어워드'서 5관왕…디자인 경영상도 수상",yna.co.kr,,https://n.news.naver.com/mnews/article/001/0016457835?sid=101
+2026-11-23,20261123,보도,,"코웨이, '핀업디자인어워드' 5관왕⋯디자인 경영상 수상",inews24.com,,https://n.news.naver.com/mnews/article/031/0001077400?sid=101
+2026-11-23,20261123,보도,,"코웨이, '2026 핀업디자인어워드 '베스트 오브 베스트' 등 5관왕 수상",newsdream.kr,,http://www.newsdream.kr/news/articleView.html?idxno=122770
+2026-11-23,20261123,보도,,"코웨이, 핀업디자인어워드 5관왕…'올해의 디자인 경영상' 수상",newsmap.co.kr,,https://www.newsmap.co.kr/news/articleView.html?idxno=5633
+2026-11-23,20261123,보도,,"코웨이, 핀업디자인어워드 5관왕… 디자인 경영 경쟁력 입증",newsfreezone.co.kr,,https://www.newsfreezone.co.kr/news/articleView.html?idxno=720748
+2026-11-23,20261123,보도,,"코웨이, 핀업디자인어워드 5관왕…디자인 경영상도 수상",ebn.co.kr,,https://www.ebn.co.kr/news/articleView.html?idxno=1732663
+2026-11-23,20261123,보도,,"코웨이, 핀업디자인어워드 5관왕…올해의 디자인 경영상 수상",etoday.co.kr,,https://www.etoday.co.kr/news/view/2651640
+2026-11-23,20261123,보도,,"코웨이, 핀업디자인어워드 5관왕에 ‘올해의 디자인 경영상’까지 수상...",socialvalue.kr,,https://www.socialvalue.kr/news/view/1065579981714629
+2026-11-23,20261123,보도,,코웨이 비렉스 5종 핀업디자인어워드 수상…'트리플체어2 슬림' 최고상,industrynews.co.kr,,https://www.industrynews.co.kr/news/articleView.html?idxno=90045
+2026-11-23,20261123,보도,,"코웨이, 비렉스 제품 디자인 경쟁력 입증…'핀업디자인어워드' 5관왕",100ssd.co.kr,,https://www.100ssd.co.kr/news/articleView.html?idxno=214697
+2026-11-23,20261123,보도,,"코웨이, 핀업디자인어워드 5관왕…‘올해의 디자인 경영상’ 수상",fntimes.com,,https://www.fntimes.com/html/view.php?ud=202611231138013517923defd0cc_18
+2026-11-23,20261123,보도,,"코웨이, 핀업디자인어워드 5개 제품 수상…경영상도 받아",financialpost.co.kr,,https://www.financialpost.co.kr/news/articleView.html?idxno=302515
+2026-11-23,20261123,보도,,"코웨이, '핀업디자인어워드' 5관왕...디자인 경영상 수상",job-post.co.kr,,https://www.job-post.co.kr/news/articleView.html?idxno=240144
+2026-11-23,20261123,보도,,"코웨이, 2026 핀업디자인어워드 5관왕 달성",thelec.kr,,https://www.thelec.kr/news/articleView.html?idxno=65752
+2026-11-23,20261123,보도,,"코웨이, '2026 핀업디자인어워드' 5관왕…디자인 경영상 수상",srtimes.kr,,http://www.srtimes.kr/news/articleView.html?idxno=218363
+2026-11-23,20261123,보도,,"[금주의 산업 톡톡] 디자인 5관왕에 대통령표창까지… 코웨이, 제품 경...",mediawatch.kr,,https://www.mediawatch.kr/news/article.html?no=261836
+2026-11-23,20261123,보도,,"코웨이, 비렉스 5종 디자인상…'트리플체어2 슬림' 최고상",kdfnews.com,,http://www.kdfnews.com/news/articleView.html?idxno=191283
+2026-11-23,20261123,보도,,"코웨이, '2026 핀업디자인어워드'서 5관왕 달성",m-i.kr,,https://www.m-i.kr/news/articleView.html?idxno=2022066
+2026-11-23,20261123,보도,,"""혁신성 인정""…코웨이, '핀업디자인어워드' 5관왕",newsis.com,,https://n.news.naver.com/mnews/article/003/0014339814?sid=101
+2026-11-23,20261123,보도,,"코웨이, ‘핀업디자인어워드’서 5관왕…‘올해의 디자인 경영상’ 동시...",g-enews.com,,https://www.g-enews.com/view.php?ud=202611231347203623056c162803_1
+2026-11-23,20261123,보도,,"코웨이 비렉스, 디자인·기능성 모두 잡았다…핀업어워드 5관왕",1conomynews.co.kr,,https://www.1conomynews.co.kr/news/articleView.html?idxno=51463
+2026-11-23,20261123,보도,,"[위클리오늘] 한샘, 시몬스, 코웨이(11.23)",weeklytoday.com,,http://www.weeklytoday.com/news/articleView.html?idxno=802954
+2026-11-23,20261123,보도,,"코웨이, 2026 핀업 디자인어워드 5관왕… 디자인 경영상 수상",s-journal.co.kr,,https://www.s-journal.co.kr/news/articleView.html?idxno=45540
+2026-11-23,20261123,보도,,"코웨이, 핀업디자인어워드 5관왕···디자인 경영상 수상",finomy.com,,http://www.finomy.com/news/articleView.html?idxno=267533
+2026-11-23,20261123,보도,,"코웨이, '2026 핀업디자인어워드' 5관왕…올해의 디자인 경영상 수상",ppss.kr,,https://www.ppss.kr/news/articleView.html?idxno=322408
+2026-11-23,20261123,보도,,"코웨이, '2026 핀업디자인어워드' 5관왕…'올해의 디자인 경영상'도 수상",pinpointnews.co.kr,,https://www.pinpointnews.co.kr/news/articleView.html?idxno=507071
+2026-11-23,20261123,보도,,"[포토뉴스] 코웨이, '2026 핀업디자인어워드' 5관왕",cnbnews.com,,https://www.cnbnews.com/news/articleView.html?idxno=1024848
+2026-11-23,20261123,보도,,"코웨이, '핀업디자인어워드' 5관왕…최고상·디자인 경영상 석권",cstimes.com,,https://www.cstimes.com/news/articleView.html?idxno=728984
+2026-11-23,20261123,보도,,[민주 유통가] 롯데백화점·NS홈쇼핑·코웨이,iminju.net,,http://www.iminju.net/news/articleView.html?idxno=172902
+2026-11-23,20261123,보도,,"코웨이, 핀업디자인어워드 5관왕…슬립·힐링케어 제품 디자인 경쟁력 ...",thefirstmedia.net,,http://www.thefirstmedia.net/news/articleView.html?idxno=214395
+2026-11-23,20261123,보도,,[A오늘의 유통] CU·이마트24·프레비츠·쿠팡·코웨이 外,asiaa.co.kr,,https://www.asiaa.co.kr/news/articleView.html?idxno=272370
+2026-11-23,20261123,보도,,"코웨이, 핀업디자인어워드 5관왕…최고상·디자인경영상 수상",delighti.co.kr,,https://www.delighti.co.kr/news/articleView.html?idxno=125433
+2026-11-23,20261123,보도,,"코웨이, '핀업디자인어워드' 5관왕···디자인·기능성 분야 수상",whitepaper.co.kr,,http://www.whitepaper.co.kr/news/articleView.html?idxno=269059
+2026-11-23,20261123,보도,,"코웨이, '핀업디자인어워드'서 출품작 5종 모두 수상...디자인 경영상도...",hbnpress.com,,https://hbnpress.com/news/view/1065595107780950
+2026-11-23,20261123,보도,,[뉴스워커_코웨이] 안마의자 부피 9% 줄였다…핀업디자인어워드 최고상...,newsworker.co.kr,,https://www.newsworker.co.kr/news/articleView.html?idxno=515612
+2026-11-23,20261123,보도,,"코웨이, '2026 핀업디자인어워드' 5관왕…디자인 경영상도 수상",dailian.co.kr,,https://n.news.naver.com/mnews/article/119/0003158424?sid=101
+2026-11-23,20261123,보도,,"코웨이 비렉스, 안마·수면 기술에 공간 효율성 더해…디자인상 5관왕",e-science.co.kr,,https://www.e-science.co.kr/news/articleView.html?idxno=140487
+2026-11-23,20261123,보도,,"코웨이, 핀업디자인어워드 석권…올해의 디자인 경영상",hansbiz.co.kr,,http://www.hansbiz.co.kr/news/articleView.html?idxno=886124
+2026-11-23,20261123,보도,,"코웨이, 핀업디자인어워드 5관왕… 비렉스 디자인 경쟁력 입증",koreaittimes.com,,https://www.koreaittimes.com/news/articleView.html?idxno=159386
+2026-11-23,20261123,보도,,"'소외된 가치주' 코웨이, 글로벌 펀드매니저 추천 종목에 한국 기업 홀...",ftoday.co.kr,,http://www.ftoday.co.kr/news/articleView.html?idxno=370376
+2026-11-23,20261123,보도,,[수상소식] 코웨이 핀업디자인 5관왕·DB손보 소통어워즈 2관왕·시몬스...,dailypop.kr,,http://www.dailypop.kr/news/articleView.html?idxno=104879
+2026-11-23,20261123,보도,,"""꾸준한 소비 수요 강점"" 글로벌 펀드매니저들 선택 받은 코웨이",fnnews.com,,https://n.news.naver.com/mnews/article/014/0005608421?sid=101
+2026-11-23,20261123,보도,,"코웨이, 핀업디자인어워드 5관왕·올해의 디자인 경영상 수상",lawissue.co.kr,,https://www.lawissue.co.kr/view.php?ud=202611231700191427204ead0791_12
+2026-11-23,20261123,보도,,코웨이·넷마블 '2026 핀업디자인어워드'서 5관왕 달성·'페이트/그랜드...,wsobi.com,,http://www.wsobi.com/news/articleView.html?idxno=322376
+2026-11-23,20261123,보도,,"코웨이, '핀업디자인어워드' 5관왕 쾌거…디자인 경영상도 수상",newsworks.co.kr,,https://www.newsworks.co.kr/news/articleView.html?idxno=904099
+2026-11-23,20261123,보도,,"코웨이, 핀업디자인어워드서 출품작 5종 모두 수상…디자인 경영상도",todayeconomic.com,,https://www.todayeconomic.com/news/article.html?no=32960
+2026-11-23,20261123,보도,,"코웨이, '2026 핀업디자인어워드' 5관왕…'비렉스 트리플체어2 슬림' 최...",consumernews.co.kr,,http://www.consumernews.co.kr/news/articleView.html?idxno=768920

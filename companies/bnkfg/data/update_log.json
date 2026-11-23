@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-20 23:56 KST",
+    "checked_at": "2026-11-23 18:00 KST",
     "corp_code": "00858364",
     "reports_total": 17,
     "new_reports": [],
@@ -15,16 +15,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-20 23:56 KST",
-    "rows": 947,
-    "last_date": "2026-11-20",
-    "last_close": 12800,
+    "checked_at": "2026-11-23 18:00 KST",
+    "rows": 948,
+    "last_date": "2026-11-23",
+    "last_close": 12310,
     "source": "Yahoo Finance 138930.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-20 23:56 KST",
+    "checked_at": "2026-11-23 18:00 KST",
     "spike_days": 26,
     "with_major_disclosure": 12,
     "news_total": 117,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-20 23:56 KST",
+    "checked_at": "2026-11-23 18:00 KST",
     "rows": 540,
     "groups": [
       "BNK금융지주",
@@ -46,7 +46,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-20 23:56 KST",
+    "checked_at": "2026-11-23 18:00 KST",
     "new": 0,
     "total": 117,
     "first": "2026-09-18 08:38",
@@ -55,22 +55,22 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-20 23:56 KST",
+    "checked_at": "2026-11-23 18:00 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-20 23:56 KST",
-    "rows": 734,
-    "as_of": "2026-11-20",
-    "per": 5.89,
-    "pbr": 0.357
+    "checked_at": "2026-11-23 18:00 KST",
+    "rows": 735,
+    "as_of": "2026-11-23",
+    "per": 5.66,
+    "pbr": 0.344
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-20 23:56 KST",
+    "checked_at": "2026-11-23 18:00 KST",
     "matched": 48,
     "total": 48,
     "message": ""
