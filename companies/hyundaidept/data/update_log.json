@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:00 KST",
+    "checked_at": "2026-11-23 19:31 KST",
     "corp_code": "00428251",
     "reports_total": 16,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:00 KST",
+    "checked_at": "2026-11-23 19:31 KST",
     "rows": 948,
     "last_date": "2026-11-23",
     "last_close": 89700,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:01 KST",
+    "checked_at": "2026-11-23 19:31 KST",
     "spike_days": 33,
     "with_major_disclosure": 8,
     "news_total": 381,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:00 KST",
+    "checked_at": "2026-11-23 19:31 KST",
     "rows": 612,
     "groups": [
       "현대백화점",
@@ -46,8 +46,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:01 KST",
-    "new": 24,
+    "checked_at": "2026-11-23 19:31 KST",
+    "new": 0,
     "total": 381,
     "first": "2026-11-09 09:14",
     "pages": 10,
@@ -55,14 +55,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:00 KST",
+    "checked_at": "2026-11-23 19:31 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:01 KST",
+    "checked_at": "2026-11-23 19:31 KST",
     "rows": 896,
     "as_of": "2026-11-23",
     "per": 8.07,
@@ -70,7 +70,7 @@
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:00 KST",
+    "checked_at": "2026-11-23 19:31 KST",
     "matched": 56,
     "total": 56,
     "message": ""
