@@ -476,3 +476,12 @@ body.hz-dark .center, body.hz-dark .workspace, body.hz-dark #workspace, body.hz-
 body.hz-dark input, body.hz-dark select, body.hz-dark textarea { background: var(--sunk) !important; color: var(--fg); border-color: var(--line); }
 body.hz-dark .deb-av { background: color-mix(in srgb, var(--c) 18%, var(--panel)); }
 body.hz-dark .tb-btn.primary, body.hz-dark .qa-form button { color: #0b1a2a; }
+
+/* 관제형 개요: 은행 핵심 지표 줄 */
+.hz-bank { margin-top: 12px; }
+.hz-bh { font-size: 12px; font-weight: 700; color: var(--muted); margin-bottom: 6px; } .hz-bh small { font-weight: 500; color: var(--dim); margin-left: 6px; }
+.hz-bks { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.hz-bk { display: flex; flex-direction: column; background: var(--sunk); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; cursor: pointer; }
+.hz-bk .hz-bn b { font-size: 11px; color: var(--dim); font-weight: 600; } .hz-bk small { font-size: 10.5px; color: var(--dim); margin-top: 2px; }
+.hz-bk.none { cursor: default; opacity: .7; } .hz-bk:hover:not(.none) { border-color: var(--hz-b); }
+@media (max-width: 900px) { .hz-bks { grid-template-columns: repeat(2, 1fr); } }

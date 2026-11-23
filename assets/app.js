@@ -992,6 +992,19 @@ function hzLines() {   // 규칙 기반 한 줄 진단: 강점 최대 2개 + 확
   if (bot.length) out.push(['w', `${bot.map((f) => f.label).join('·')} ${bot[0].n}곳 중 ${bot[0].n}위`, bot.map((f) => `${f.label} ${f.text}`).join(' · ')]);
   return out.filter((x) => x[0] === 'g').slice(0, 2).concat(out.filter((x) => x[0] === 'w').slice(0, 1));
 }
+// 은행 핵심 지표: 사업보고서·회사 실적발표 값(kpi_values.csv)에서 NIM·연체율·고정이하여신비율·BIS의 최신 연도 (2026-11-23)
+function hzBank() {
+  const pick = (key, pref) => { const rows = D.kpi.filter((r) => r.kpi_key === key && r.value !== ''); if (!rows.length) return null;
+    const y = Math.max(...rows.map((r) => +r.year)), cand = rows.filter((r) => +r.year === y), r = cand.find((x) => pref.test(x.item)) || cand[0];
+    const items = [...new Set(D.kpi.filter((x) => x.kpi_key === key).map((x) => x.item))], prev = rows.find((x) => x.item === r.item && +x.year === y - 1);
+    return { r, ii: items.indexOf(r.item), y, d: prev ? N(r.value) - N(prev.value) : null }; };
+  const K = [['nim', '순이자마진(NIM)', /은행|NIM/], ['delinquency_rate', '연체율', /은행|연체율$/], ['npl_ratio', '고정이하여신비율', /은행|고정이하/], ['capital_ratio', 'BIS 자기자본비율', /BIS|총자본/]];
+  const cells = K.map(([key, lab, pref]) => { const x = pick(key, pref);
+    if (!x) return `<div class="hz-bk none"><span class="hz-bn">${lab}</span><span class="hz-mv">미확인</span><small>사업보고서 추출본에 없음</small></div>`;
+    const who = (x.r.item.split('—')[1] || x.r.scope || '').trim();
+    return `<button class="hz-bk" data-act="kpi:${key}:${x.ii}" title="${esc(x.r.source_location)}"><span class="hz-bn">${lab}<b>${x.y}</b></span><span class="hz-mv">${esc(fmt(N(x.r.value), 2))}%</span><small>${esc(who.slice(0, 22))}${x.d === null ? '' : ` · 전년 ${x.d >= 0 ? '+' : ''}${fmt(x.d, 2)}%p`}</small></button>`; }).join('');
+  return `<div class="hz-bank"><div class="hz-bh">은행 핵심 지표 <small>사업보고서 · 회사 실적발표 · 원문 대조 전 · 누르면 출처</small></div><div class="hz-bks">${cells}</div></div>`;
+}
 function hzRadar(axes) {
   const K = Object.keys(axes), cx = 215, cy = 168, R = 116;
   const P = (i, r) => { const a = -Math.PI / 2 + (i * 2 * Math.PI) / K.length; return [cx + Math.cos(a) * r, cy + Math.sin(a) * r]; };
@@ -1041,7 +1054,7 @@ function pageHero() {
     const mini = [['roe'], ['asset_turnover', 'roa'], ['debt_ratio', 'equity_ratio'], ['per', 'pbr']].map((c) => pick(c, [L, R])).filter(Boolean).slice(0, 4).map((k) => { const f = fx[k];
       return `<button class="hz-mi" data-act="${act(k)}"><span class="hz-bn">${esc(f.label)}${rk(f)}</span><span class="hz-mv">${esc(f.text || '–')}</span>${blk(f)}</button>`; }).join('');
     hero = `<div class="hz-hb"><div class="hz-side">${L ? big(L, HZ_AX[L]) : ''}</div><div class="hz-cen">${hzRadar(G.axes)}<div class="hz-gauges">${gauges}</div></div><div class="hz-side">${R ? big(R, HZ_AX[R]) : ''}</div></div>
-      <div class="hz-minis">${mini}</div><p class="hz-foot">점선 = 업종 가운데(50) · 0~100은 같은 업종 안 백분위 · 게이지·칸을 누르면 계산 근거 · 투자 권유 아님</p>`;
+      <div class="hz-minis">${mini}</div>${BANK() ? hzBank() : ''}<p class="hz-foot">점선 = 업종 가운데(50) · 0~100은 같은 업종 안 백분위 · 게이지·칸을 누르면 계산 근거 · 투자 권유 아님</p>`;
   }
   const disc = DISC === null ? '<div class="empty loading">불러오는 중…</div>' : (DISC || []).slice().sort((a, b) => (a.rcept_dt < b.rcept_dt ? 1 : -1)).slice(0, 3)
     .map((r) => `<a class="hz-li" href="${esc(r.viewer_url)}" target="_blank" rel="noopener"><span>${esc(r.report_nm.trim())}</span><small>${esc(ymd(r.rcept_dt).slice(5).replace('-', '/'))}</small></a>`).join('') || '<div class="empty">공시 없음</div>';
