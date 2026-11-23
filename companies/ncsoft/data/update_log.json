@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-23 17:59 KST",
+    "checked_at": "2026-11-23 19:29 KST",
     "corp_code": "00261443",
     "reports_total": 18,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-23 17:59 KST",
+    "checked_at": "2026-11-23 19:29 KST",
     "rows": 948,
     "last_date": "2026-11-23",
     "last_close": 168900,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-23 17:59 KST",
+    "checked_at": "2026-11-23 19:30 KST",
     "spike_days": 38,
     "with_major_disclosure": 6,
     "news_total": 27,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-23 17:59 KST",
+    "checked_at": "2026-11-23 19:29 KST",
     "rows": 612,
     "groups": [
       "엔씨소프트",
@@ -46,8 +46,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-23 17:59 KST",
-    "new": 1,
+    "checked_at": "2026-11-23 19:29 KST",
+    "new": 0,
     "total": 27,
     "first": "2026-08-06 12:16",
     "pages": 10,
@@ -55,14 +55,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-23 17:59 KST",
+    "checked_at": "2026-11-23 19:29 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-23 17:59 KST",
+    "checked_at": "2026-11-23 19:30 KST",
     "rows": 895,
     "as_of": "2026-11-23",
     "per": 11.46,
@@ -70,7 +70,7 @@
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-23 17:59 KST",
+    "checked_at": "2026-11-23 19:29 KST",
     "matched": 51,
     "total": 51,
     "message": ""

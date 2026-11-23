@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:01 KST",
+    "checked_at": "2026-11-23 19:31 KST",
     "corp_code": "00164742",
     "reports_total": 17,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:01 KST",
+    "checked_at": "2026-11-23 19:31 KST",
     "rows": 948,
     "last_date": "2026-11-23",
     "last_close": 247500,
@@ -24,17 +24,17 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:01 KST",
+    "checked_at": "2026-11-23 19:31 KST",
     "spike_days": 30,
     "with_major_disclosure": 7,
-    "news_total": 1585,
+    "news_total": 1594,
     "disclosures_total": 1412,
     "disclosures_new": 0,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:01 KST",
+    "checked_at": "2026-11-23 19:31 KST",
     "rows": 612,
     "groups": [
       "현대차",
@@ -46,23 +46,23 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:01 KST",
-    "new": 336,
-    "total": 1585,
+    "checked_at": "2026-11-23 19:31 KST",
+    "new": 9,
+    "total": 1594,
     "first": "2026-11-12 10:03",
-    "pages": 10,
+    "pages": 3,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:01 KST",
+    "checked_at": "2026-11-23 19:31 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:01 KST",
+    "checked_at": "2026-11-23 19:31 KST",
     "rows": 899,
     "as_of": "2026-11-23",
     "per": 8.54,
@@ -70,7 +70,7 @@
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:01 KST",
+    "checked_at": "2026-11-23 19:31 KST",
     "matched": 55,
     "total": 55,
     "message": ""

@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:00 KST",
+    "checked_at": "2026-11-23 19:30 KST",
     "corp_code": "01009789",
     "reports_total": 19,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:00 KST",
+    "checked_at": "2026-11-23 19:30 KST",
     "rows": 948,
     "last_date": "2026-11-23",
     "last_close": 285000,
@@ -24,17 +24,17 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:00 KST",
+    "checked_at": "2026-11-23 19:31 KST",
     "spike_days": 40,
     "with_major_disclosure": 15,
     "news_total": 600,
     "disclosures_total": 351,
-    "disclosures_new": 1,
+    "disclosures_new": 0,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:00 KST",
+    "checked_at": "2026-11-23 19:30 KST",
     "rows": 408,
     "groups": [
       "코스맥스",
@@ -45,8 +45,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:00 KST",
-    "new": 8,
+    "checked_at": "2026-11-23 19:31 KST",
+    "new": 0,
     "total": 600,
     "first": "2026-10-14 09:16",
     "pages": 2,
@@ -54,14 +54,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:00 KST",
+    "checked_at": "2026-11-23 19:30 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:00 KST",
+    "checked_at": "2026-11-23 19:31 KST",
     "rows": 894,
     "as_of": "2026-11-23",
     "per": 14.84,
@@ -69,7 +69,7 @@
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:00 KST",
+    "checked_at": "2026-11-23 19:30 KST",
     "matched": 56,
     "total": 56,
     "message": ""

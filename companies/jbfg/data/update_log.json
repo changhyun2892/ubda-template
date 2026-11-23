@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:01 KST",
+    "checked_at": "2026-11-23 19:31 KST",
     "corp_code": "00980122",
     "reports_total": 20,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:01 KST",
+    "checked_at": "2026-11-23 19:31 KST",
     "rows": 948,
     "last_date": "2026-11-23",
     "last_close": 24700,
@@ -24,17 +24,17 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:01 KST",
+    "checked_at": "2026-11-23 19:32 KST",
     "spike_days": 28,
     "with_major_disclosure": 3,
     "news_total": 49,
     "disclosures_total": 682,
-    "disclosures_new": 2,
+    "disclosures_new": 0,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:01 KST",
+    "checked_at": "2026-11-23 19:31 KST",
     "rows": 540,
     "groups": [
       "JB금융지주",
@@ -46,8 +46,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:01 KST",
-    "new": 3,
+    "checked_at": "2026-11-23 19:31 KST",
+    "new": 0,
     "total": 49,
     "first": "2026-08-13 19:40",
     "pages": 10,
@@ -55,14 +55,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:01 KST",
+    "checked_at": "2026-11-23 19:31 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:01 KST",
+    "checked_at": "2026-11-23 19:32 KST",
     "rows": 735,
     "as_of": "2026-11-23",
     "per": 6.25,
@@ -70,7 +70,7 @@
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:01 KST",
+    "checked_at": "2026-11-23 19:31 KST",
     "matched": 50,
     "total": 50,
     "message": ""

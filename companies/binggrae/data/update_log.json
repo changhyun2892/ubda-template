@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:00 KST",
+    "checked_at": "2026-11-23 19:30 KST",
     "corp_code": "00124726",
     "reports_total": 16,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:00 KST",
+    "checked_at": "2026-11-23 19:30 KST",
     "rows": 948,
     "last_date": "2026-11-23",
     "last_close": 75300,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:00 KST",
+    "checked_at": "2026-11-23 19:30 KST",
     "spike_days": 37,
     "with_major_disclosure": 9,
     "news_total": 613,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:00 KST",
+    "checked_at": "2026-11-23 19:30 KST",
     "rows": 609,
     "groups": [
       "빙그레",
@@ -46,8 +46,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:00 KST",
-    "new": 7,
+    "checked_at": "2026-11-23 19:30 KST",
+    "new": 0,
     "total": 613,
     "first": "2026-10-13 10:04",
     "pages": 2,
@@ -55,14 +55,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:00 KST",
+    "checked_at": "2026-11-23 19:30 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:00 KST",
+    "checked_at": "2026-11-23 19:30 KST",
     "rows": 899,
     "as_of": "2026-11-23",
     "per": 7.64,
@@ -70,7 +70,7 @@
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:00 KST",
+    "checked_at": "2026-11-23 19:30 KST",
     "matched": 56,
     "total": 56,
     "message": ""
