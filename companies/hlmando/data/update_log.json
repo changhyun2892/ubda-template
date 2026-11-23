@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:01 KST",
+    "checked_at": "2026-11-23 19:31 KST",
     "corp_code": "01042775",
     "reports_total": 18,
     "new_reports": [],
@@ -15,7 +15,7 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:01 KST",
+    "checked_at": "2026-11-23 19:31 KST",
     "rows": 948,
     "last_date": "2026-11-23",
     "last_close": 30250,
@@ -24,7 +24,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:01 KST",
+    "checked_at": "2026-11-23 19:31 KST",
     "spike_days": 37,
     "with_major_disclosure": 6,
     "news_total": 583,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:01 KST",
+    "checked_at": "2026-11-23 19:31 KST",
     "rows": 612,
     "groups": [
       "HL만도",
@@ -46,8 +46,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:01 KST",
-    "new": 4,
+    "checked_at": "2026-11-23 19:31 KST",
+    "new": 0,
     "total": 583,
     "first": "2026-09-16 11:13",
     "pages": 1,
@@ -55,14 +55,14 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:01 KST",
+    "checked_at": "2026-11-23 19:31 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:01 KST",
+    "checked_at": "2026-11-23 19:31 KST",
     "rows": 898,
     "as_of": "2026-11-23",
     "per": 18.14,
@@ -70,7 +70,7 @@
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-23 18:01 KST",
+    "checked_at": "2026-11-23 19:31 KST",
     "matched": 56,
     "total": 56,
     "message": ""
