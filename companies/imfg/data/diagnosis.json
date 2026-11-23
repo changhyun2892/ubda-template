@@ -1,5 +1,5 @@
 {
- "built_at": "2026-11-20 23:58 KST",
+ "built_at": "2026-11-23 18:02 KST",
  "method": "같은 산업 기업 사이 백분위(0~100, 50 = 가운데) · 성향별 가중치는 UBDA가 임의로 정한 기준 · 투자 권유 아님",
  "weights": {
   "stable": {
@@ -68,7 +68,7 @@
   },
   "value": {
    "label": "가격 매력",
-   "score": 94,
+   "score": 88,
    "factors": [
     "per",
     "pbr"
@@ -79,9 +79,9 @@
   "stable": {
    "label": "안정형",
    "focus": "재무 안정·배당·주가 변동",
-   "score": 44,
+   "score": 41,
    "level": "보통",
-   "comment": "배당수익률 4.52%(업종 9곳 중 3위)는 강점, ROA 0.5%(업종 9곳 중 9위)는 확인할 지점",
+   "comment": "주가 변동성(연환산) 39.2%(업종 9곳 중 4위)는 강점, ROA 0.5%(업종 9곳 중 9위)는 확인할 지점",
    "parts": [
     {
      "key": "axis:stable",
@@ -95,7 +95,7 @@
      "key": "div_yield",
      "label": "배당수익률",
      "weight": 0.25,
-     "score": 75,
+     "score": 62,
      "best": "div_yield",
      "worst": "div_yield"
     },
@@ -120,9 +120,9 @@
   "neutral": {
    "label": "위험중립형",
    "focus": "수익성과 가격의 균형",
-   "score": 46,
+   "score": 44,
    "level": "보통",
-   "comment": "PER 5.7배(업종 9곳 중 1위)는 강점, ROA 0.5%(업종 9곳 중 9위)는 확인할 지점",
+   "comment": "PER 5.6배(업종 9곳 중 2위)는 강점, ROA 0.5%(업종 9곳 중 9위)는 확인할 지점",
    "parts": [
     {
      "key": "axis:profit",
@@ -136,9 +136,9 @@
      "key": "axis:value",
      "label": "가격 매력",
      "weight": 0.3,
-     "score": 94,
+     "score": 88,
      "best": "per",
-     "worst": "pbr"
+     "worst": "per"
     },
     {
      "key": "axis:growth",
@@ -161,7 +161,7 @@
   "active": {
    "label": "적극투자형",
    "focus": "성장과 주가 흐름",
-   "score": 35,
+   "score": 39,
    "level": "보통",
    "comment": "영업이익 증가율 121.4%(업종 9곳 중 1위)는 강점, CIR(영업이익경비율) 55.1%(업종 9곳 중 9위)는 확인할 지점 · 2023년 이후 주가 급변일 30일",
    "parts": [
@@ -177,7 +177,7 @@
      "key": "ret_1y",
      "label": "1년 시장 대비 수익률",
      "weight": 0.3,
-     "score": 38,
+     "score": 50,
      "best": "ret_1y",
      "worst": "ret_1y"
     },
@@ -302,16 +302,16 @@
   },
   "per": {
    "label": "PER",
-   "value": 5.68,
-   "text": "5.7배",
-   "pctile": 100,
-   "rank": 1,
+   "value": 5.58,
+   "text": "5.6배",
+   "pctile": 88,
+   "rank": 2,
    "n": 9,
    "higher_better": false
   },
   "pbr": {
    "label": "PBR",
-   "value": 0.383,
+   "value": 0.376,
    "text": "0.38배",
    "pctile": 88,
    "rank": 2,
@@ -320,17 +320,17 @@
   },
   "div_yield": {
    "label": "배당수익률",
-   "value": 4.516,
-   "text": "4.52%",
-   "pctile": 75,
-   "rank": 3,
+   "value": 4.596,
+   "text": "4.60%",
+   "pctile": 62,
+   "rank": 4,
    "n": 9,
    "higher_better": true
   },
   "vol_1y": {
    "label": "주가 변동성(연환산)",
-   "value": 39.06820305911924,
-   "text": "39.1%",
+   "value": 39.18155976904948,
+   "text": "39.2%",
    "pctile": 62,
    "rank": 4,
    "n": 9,
@@ -347,13 +347,13 @@
   },
   "ret_1y": {
    "label": "1년 시장 대비 수익률",
-   "value": -8.717150287828378,
-   "text": "-8.7%p",
-   "pctile": 38,
-   "rank": 6,
+   "value": -10.324500305547213,
+   "text": "-10.3%p",
+   "pctile": 50,
+   "rank": 5,
    "n": 9,
    "higher_better": true
   }
  },
- "stock_asof": "2026-11-20"
+ "stock_asof": "2026-11-23"
 }
