@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:30 KST",
+    "checked_at": "2026-11-24 17:47 KST",
     "corp_code": "01009789",
     "reports_total": 19,
     "new_reports": [],
@@ -15,61 +15,61 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:30 KST",
-    "rows": 948,
-    "last_date": "2026-11-23",
-    "last_close": 285000,
+    "checked_at": "2026-11-24 17:47 KST",
+    "rows": 949,
+    "last_date": "2026-11-24",
+    "last_close": 291500,
     "source": "Yahoo Finance 192820.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:31 KST",
+    "checked_at": "2026-11-24 17:47 KST",
     "spike_days": 40,
     "with_major_disclosure": 15,
-    "news_total": 600,
+    "news_total": 665,
     "disclosures_total": 351,
     "disclosures_new": 0,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:30 KST",
-    "rows": 408,
+    "checked_at": "2026-11-24 17:47 KST",
+    "rows": 410,
     "groups": [
       "코스맥스",
       "한국콜마"
     ],
-    "last_period": "2026-11-16",
+    "last_period": "2026-11-23",
     "source": "NAVER API HUB 검색어 트렌드 (주 단위, 상대 비율)"
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:31 KST",
-    "new": 0,
-    "total": 600,
+    "checked_at": "2026-11-24 17:47 KST",
+    "new": 65,
+    "total": 665,
     "first": "2026-10-14 09:16",
-    "pages": 2,
+    "pages": 3,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:30 KST",
+    "checked_at": "2026-11-24 17:47 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:31 KST",
-    "rows": 894,
-    "as_of": "2026-11-23",
-    "per": 14.84,
-    "pbr": 5.064
+    "checked_at": "2026-11-24 17:47 KST",
+    "rows": 895,
+    "as_of": "2026-11-24",
+    "per": 15.18,
+    "pbr": 5.18
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:30 KST",
+    "checked_at": "2026-11-24 17:47 KST",
     "matched": 56,
     "total": 56,
     "message": ""

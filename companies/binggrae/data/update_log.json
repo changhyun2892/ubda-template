@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:30 KST",
+    "checked_at": "2026-11-24 17:47 KST",
     "corp_code": "00124726",
     "reports_total": 16,
     "new_reports": [],
@@ -15,16 +15,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:30 KST",
-    "rows": 948,
-    "last_date": "2026-11-23",
-    "last_close": 75300,
+    "checked_at": "2026-11-24 17:47 KST",
+    "rows": 949,
+    "last_date": "2026-11-24",
+    "last_close": 77000,
     "source": "Yahoo Finance 005180.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:30 KST",
+    "checked_at": "2026-11-24 17:47 KST",
     "spike_days": 37,
     "with_major_disclosure": 9,
     "news_total": 613,
@@ -34,19 +34,19 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:30 KST",
-    "rows": 609,
+    "checked_at": "2026-11-24 17:47 KST",
+    "rows": 612,
     "groups": [
       "빙그레",
       "롯데웰푸드",
       "해태제과"
     ],
-    "last_period": "2026-11-16",
+    "last_period": "2026-11-23",
     "source": "NAVER API HUB 검색어 트렌드 (주 단위, 상대 비율)"
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:30 KST",
+    "checked_at": "2026-11-24 17:47 KST",
     "new": 0,
     "total": 613,
     "first": "2026-10-13 10:04",
@@ -55,22 +55,22 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:30 KST",
+    "checked_at": "2026-11-24 17:47 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:30 KST",
-    "rows": 899,
-    "as_of": "2026-11-23",
-    "per": 7.64,
-    "pbr": 0.807
+    "checked_at": "2026-11-24 17:47 KST",
+    "rows": 900,
+    "as_of": "2026-11-24",
+    "per": 7.81,
+    "pbr": 0.825
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:30 KST",
+    "checked_at": "2026-11-24 17:47 KST",
     "matched": 56,
     "total": 56,
     "message": ""

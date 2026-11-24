@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:31 KST",
+    "checked_at": "2026-11-24 17:47 KST",
     "corp_code": "00111704",
     "reports_total": 21,
     "new_reports": [],
@@ -15,62 +15,62 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:31 KST",
-    "rows": 948,
-    "last_date": "2026-11-23",
-    "last_close": 39900,
+    "checked_at": "2026-11-24 17:47 KST",
+    "rows": 949,
+    "last_date": "2026-11-24",
+    "last_close": 43200,
     "source": "Yahoo Finance 042660.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:31 KST",
+    "checked_at": "2026-11-24 17:47 KST",
     "spike_days": 40,
     "with_major_disclosure": 16,
-    "news_total": 466,
+    "news_total": 497,
     "disclosures_total": 768,
     "disclosures_new": 0,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:31 KST",
-    "rows": 605,
+    "checked_at": "2026-11-24 17:47 KST",
+    "rows": 608,
     "groups": [
       "한화오션",
       "HD현대중공업",
       "삼성중공업"
     ],
-    "last_period": "2026-11-16",
+    "last_period": "2026-11-23",
     "source": "NAVER API HUB 검색어 트렌드 (주 단위, 상대 비율)"
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:31 KST",
-    "new": 2,
-    "total": 466,
+    "checked_at": "2026-11-24 17:47 KST",
+    "new": 31,
+    "total": 497,
     "first": "2026-11-03 15:29",
-    "pages": 10,
+    "pages": 5,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:31 KST",
+    "checked_at": "2026-11-24 17:47 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:31 KST",
-    "rows": 901,
-    "as_of": "2026-11-23",
-    "per": 6.27,
-    "pbr": 1.646
+    "checked_at": "2026-11-24 17:47 KST",
+    "rows": 902,
+    "as_of": "2026-11-24",
+    "per": 6.79,
+    "pbr": 1.782
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:31 KST",
+    "checked_at": "2026-11-24 17:47 KST",
     "matched": 55,
     "total": 55,
     "message": ""
