@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:29 KST",
+    "checked_at": "2026-11-24 17:46 KST",
     "corp_code": "00982023",
     "reports_total": 18,
     "new_reports": [],
@@ -15,16 +15,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:29 KST",
-    "rows": 948,
-    "last_date": "2026-11-23",
-    "last_close": 23700,
+    "checked_at": "2026-11-24 17:46 KST",
+    "rows": 949,
+    "last_date": "2026-11-24",
+    "last_close": 25800,
     "source": "Yahoo Finance 257720.KQ 일봉 (분할 반영 종가)",
     "index": "^KQ11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:30 KST",
+    "checked_at": "2026-11-24 17:46 KST",
     "spike_days": 40,
     "with_major_disclosure": 13,
     "news_total": 187,
@@ -34,19 +34,19 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:29 KST",
-    "rows": 612,
+    "checked_at": "2026-11-24 17:46 KST",
+    "rows": 615,
     "groups": [
       "실리콘투",
       "아모레퍼시픽",
       "LG생활건강"
     ],
-    "last_period": "2026-11-16",
+    "last_period": "2026-11-23",
     "source": "NAVER API HUB 검색어 트렌드 (주 단위, 상대 비율)"
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:29 KST",
+    "checked_at": "2026-11-24 17:46 KST",
     "new": 0,
     "total": 187,
     "first": "2026-08-25 00:46",
@@ -55,22 +55,22 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:29 KST",
+    "checked_at": "2026-11-24 17:46 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:30 KST",
-    "rows": 894,
-    "as_of": "2026-11-23",
-    "per": 9.98,
-    "pbr": 2.382
+    "checked_at": "2026-11-24 17:46 KST",
+    "rows": 895,
+    "as_of": "2026-11-24",
+    "per": 10.86,
+    "pbr": 2.593
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:29 KST",
+    "checked_at": "2026-11-24 17:46 KST",
     "matched": 56,
     "total": 56,
     "message": ""
