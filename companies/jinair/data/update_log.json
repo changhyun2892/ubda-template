@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:28 KST",
+    "checked_at": "2026-11-24 17:48 KST",
     "corp_code": "00653024",
     "reports_total": 16,
     "new_reports": [],
@@ -9,7 +9,7 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:28 KST",
+    "checked_at": "2026-11-24 17:48 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
@@ -22,54 +22,54 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:28 KST",
-    "rows": 948,
-    "last_date": "2026-11-23",
-    "last_close": 7360,
+    "checked_at": "2026-11-24 17:48 KST",
+    "rows": 949,
+    "last_date": "2026-11-24",
+    "last_close": 7530,
     "source": "Yahoo Finance 272450.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:28 KST",
-    "rows": 408,
+    "checked_at": "2026-11-24 17:48 KST",
+    "rows": 410,
     "groups": [
       "진에어",
       "제주항공"
     ],
-    "last_period": "2026-11-16",
+    "last_period": "2026-11-23",
     "source": "NAVER API HUB 검색어 트렌드 (주 단위, 상대 비율)"
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:28 KST",
-    "new": 1,
-    "total": 558,
+    "checked_at": "2026-11-24 17:48 KST",
+    "new": 34,
+    "total": 592,
     "first": "2026-10-27 10:16",
     "pages": 4,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:28 KST",
+    "checked_at": "2026-11-24 17:48 KST",
     "spike_days": 32,
     "with_major_disclosure": 5,
-    "news_total": 558,
+    "news_total": 592,
     "disclosures_total": 204,
     "disclosures_new": 0,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:28 KST",
-    "rows": 900,
-    "as_of": "2026-11-23",
+    "checked_at": "2026-11-24 17:48 KST",
+    "rows": 901,
+    "as_of": "2026-11-24",
     "per": null,
-    "pbr": 1.814
+    "pbr": 1.856
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-23 19:28 KST",
+    "checked_at": "2026-11-24 17:48 KST",
     "matched": 56,
     "total": 56,
     "message": ""
