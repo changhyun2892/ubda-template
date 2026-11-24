@@ -143,6 +143,18 @@ a.lb.company:hover{color:#fff;background:rgba(255,255,255,.09)}
 #toast.show{opacity:1}
 #nogl{display:none;position:fixed;inset:0;align-items:center;justify-content:center;color:var(--dim);font:13px var(--mono)}
 
+/* ---------- 기업 추가 요청 (2026-11-24) ---------- */
+.req{position:fixed;left:50%;bottom:62px;transform:translateX(-50%);z-index:4;display:flex;align-items:center;gap:6px;height:32px;padding:0 4px 0 12px;
+  background:var(--panel);border:1px solid var(--line2);border-radius:8px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.req label{font:500 9.5px var(--mono);letter-spacing:.12em;color:var(--dim);white-space:nowrap}
+.req input{width:180px;height:24px;border:0;background:transparent;color:var(--text);font-size:12px;outline:none}
+.req input::placeholder{color:var(--faint)}
+.req button{height:24px;padding:0 11px;white-space:nowrap;flex:none;border-radius:6px;border:1px solid var(--line2);background:rgba(233,220,192,.1);color:var(--accent);font-size:11.5px;cursor:pointer}
+.req button:hover{background:rgba(233,220,192,.2)}.req button:disabled{opacity:.45;cursor:default}
+.req .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.req-msg{position:fixed;left:50%;bottom:100px;transform:translateX(-50%);z-index:4;font-size:11.5px;color:var(--soft);white-space:nowrap;display:none}
+.req-msg a{color:var(--accent);text-decoration:underline;pointer-events:auto}
+
 @media (max-width:860px){
   .legend{display:none}
   .tools{left:12px;right:12px;flex-wrap:wrap}
@@ -150,6 +162,7 @@ a.lb.company:hover{color:#fff;background:rgba(255,255,255,.09)}
   .brand{display:none}
   .panel{left:12px;right:12px;width:auto;top:auto;bottom:12px;max-height:52vh;transform:translateY(calc(100% + 30px))}
   .hint,.stats{display:none}
+  .req{bottom:14px;max-width:calc(100% - 24px)}.req input{width:150px}.req label{display:none}.req-msg{bottom:52px}
 }
 </style>
 </head>
@@ -194,6 +207,13 @@ a.lb.company:hover{color:#fff;background:rgba(255,255,255,.09)}
   <div class="k">DRAG 회전 · WHEEL 확대 · 기업 CLICK → 대시보드 · <kbd>←→</kbd>이웃 <kbd>↑↓</kbd>상·하위 · <kbd>ESC</kbd> 처음으로</div>
   <div class="d">수업용 경영분석이며 투자 추천이 아닙니다 · 재무: 금융감독원 OpenDART · 주가: Yahoo Finance</div>
 </div>
+<form class="req" id="reqForm" autocomplete="off" aria-label="기업 추가 요청">
+  <label for="reqName">추가 희망 기업</label>
+  <input id="reqName" type="text" maxlength="40" placeholder="기업명을 입력하세요" required>
+  <input class="hp" id="reqHp" type="text" tabindex="-1" aria-hidden="true">
+  <button type="submit" id="reqBtn">요청</button>
+</form>
+<div class="req-msg" id="reqMsg" role="status"></div>
 <div id="tip"></div>
 <div id="toast"></div>
 <div id="nogl">이 브라우저에서는 3D 그래픽(WebGL)을 쓸 수 없습니다.</div>
@@ -868,6 +888,40 @@ function frame(now){
   requestAnimationFrame(frame);
 }
 placeCamera(); requestAnimationFrame(frame);
+})();
+</script>
+<script>
+/* 기업 추가 요청 (2026-11-24 사용자 요청) — 구글 설문지로 전송, 개인정보는 받지 않음 */
+(()=>{
+const FORM='https://docs.google.com/forms/d/e/1FAIpQLSeIXT8IL2PP0ljkmX03GITebypxNk7UeVMij8GXHwjt_3YTjg/formResponse';
+const F_NAME='entry.847576569', F_REASON='entry.522687009', KEY='ubda:req:last', GAP=60000;
+const f=document.getElementById('reqForm'), inp=document.getElementById('reqName'), hp=document.getElementById('reqHp'),
+      btn=document.getElementById('reqBtn'), msg=document.getElementById('reqMsg');
+inp.addEventListener('keydown',e=>e.stopPropagation());       // 그래프 방향키·ESC 단축키와 겹치지 않게
+let list=[];
+fetch('companies/index.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(j=>{ if(j&&j.companies) list=j.companies; }).catch(()=>{});
+const norm=v=>String(v||'').toLowerCase().replace(/\(주\)|㈜|주식회사|\s|[.,·-]/g,'');
+const esc=v=>String(v).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let mt; const say=(h,ms=4500)=>{ msg.innerHTML=h; msg.style.display='block'; clearTimeout(mt); mt=setTimeout(()=>msg.style.display='none',ms); };
+const find=q=>{ const n=norm(q); if(!n) return null;
+  return list.find(c=>[c.name,c.name_en,c.stock_code].concat(c.aliases||[]).some(v=>v&&norm(v)===n)) || null; };
+f.addEventListener('submit',e=>{
+  e.preventDefault();
+  const name=inp.value.trim();
+  if(!name) return;
+  if(hp.value) return;                                       // 봇이 채운 숨은 칸
+  const hit=find(name);
+  if(hit){ const url=hit.dashboard_path||('dashboard.html?c='+hit.slug);
+    say(`<b>${esc(hit.name)}</b>은(는) 이미 있어요 → <a href="${esc(url)}">바로 가기</a>`,7000); return; }
+  let last=0; try{ last=+localStorage.getItem(KEY)||0; }catch(_){}
+  if(Date.now()-last<GAP){ say('요청은 1분에 한 번만 보낼 수 있어요. 잠시 후 다시 시도해 주세요.'); return; }
+  btn.disabled=true;
+  const body=new URLSearchParams(); body.append(F_NAME,name.slice(0,40)); body.append(F_REASON,'사이트 그래프 화면에서 요청');
+  fetch(FORM,{method:'POST',mode:'no-cors',body}).then(()=>{
+    try{ localStorage.setItem(KEY,String(Date.now())); }catch(_){}
+    inp.value=''; say(`<b>${esc(name)}</b> 추가 요청을 보냈어요. 감사합니다!`);
+  }).catch(()=>say('전송하지 못했어요. 잠시 후 다시 시도해 주세요.')).finally(()=>{ btn.disabled=false; });
+});
 })();
 </script>
 </body>
