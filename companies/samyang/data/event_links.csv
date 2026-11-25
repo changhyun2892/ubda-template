@@ -25,39 +25,15 @@ date,rcept_dt,category,major,report_nm,flr_nm,rcept_no,viewer_url
 2026-03-11,20260311,기타,,주주총회소집공고,삼양식품,20260311004079,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004079
 2026-03-11,20260311,기타,,의결권대리행사권유참고서류,삼양식품,20260311004113,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004113
 2026-05-14,20260513,정기보고서,Y,분기보고서 (2026.03),삼양식품,20260513000571,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260513000571
-2026-11-16,20261116,정기보고서,Y,분기보고서 (2026.09),삼양식품,20261116001082,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116001082
-2026-11-16,20261116,기타,,주식등의대량보유상황보고서(일반),삼양라운드스퀘어,20261116001289,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116001289
-2026-11-16,20261113,보도,,"삼양식품, 40년 만에 '라면 1등' 탈환할까",news.bizwatch.co.kr,,https://n.news.naver.com/mnews/article/648/0000052587?sid=101
-2026-11-16,20261113,보도,,"[포토] “벌써 크리스마스야∼”… 삼양식품, ‘페포’와 함께 특별한 ...",segye.com,,https://n.news.naver.com/mnews/article/022/0004174856?sid=101
-2026-11-16,20261113,보도,,"삼양식품, 베트남에 2186억 공장…‘불닭 3각 생산’ 완성",dnews.co.kr,,https://www.dnews.co.kr/uhtml/view.jsp?idxno=202611121047073880755
-2026-11-16,20261113,보도,,"중국은 내수, 베트남은 수출…삼양식품, 2186억 들여 해외 생산기지 '투...",newsquest.co.kr,,https://www.newsquest.co.kr/news/articleView.html?idxno=304969
-2026-11-16,20261113,보도,,"'불닭' 신화 이을 새 도전 '탱글'···삼양식품, 글로벌 '또' 홀렸다",enewstoday.co.kr,,http://www.enewstoday.co.kr/news/articleView.html?idxno=2492171
-2026-11-16,20261113,보도,,삼양식품 웃고 농심 울었다… K-라면 3분기 실적 희비,the-biz.co.kr,,http://www.the-biz.co.kr/news/articleView.html?idxno=731351
-2026-11-16,20261113,보도,,"삼양식품, 불닭 캐릭터 ‘페포’ 띄운다…명동사옥 대형 조형물 설치",donga.com,,https://n.news.naver.com/mnews/article/020/0003762370?sid=101
-2026-11-16,20261113,보도,,'원주 K-매운맛' 불닭볶음면 요리하는 삼양식품 직원들,newsis.com,,https://n.news.naver.com/mnews/article/003/0014321613?sid=102
-2026-11-16,20261114,보도,,"삼양식품, 베트남에 2186억원 투자…불닭 신화 동남아 넘어 유럽까지 겨...",pinpointnews.co.kr,,https://www.pinpointnews.co.kr/news/articleView.html?idxno=503602
-2026-11-16,20261114,보도,,삼양식품 하락했는데 중소형 식품株는 웃었다…엇갈린 K푸드,pinpointnews.co.kr,,https://www.pinpointnews.co.kr/news/articleView.html?idxno=504026
-2026-11-16,20261115,보도,,"해외 매출 '8할' 넘긴 불닭…삼양식품, 韓·中·베트남 생산벨트 구축",news1.kr,,https://n.news.naver.com/mnews/article/421/0009289329?sid=101
-2026-11-16,20261115,보도,,"김용선 처장, K-브랜드 정부인증 제1호 참여기업 삼양식품 현장방문",newsis.com,,https://n.news.naver.com/mnews/article/003/0014322607?sid=101
-2026-11-16,20261115,보도,,김용선 지식재산처장 삼양식품 방문 K-브랜드 인증 확산 논의,news1.kr,,https://n.news.naver.com/mnews/article/421/0009289437?sid=102
-2026-11-16,20261115,보도,,"김용선 지식재산처장, K-브랜드 정부인증 참여기업 삼양식품 현장방문",yna.co.kr,,https://n.news.naver.com/mnews/article/001/0016442251?sid=101
-2026-11-16,20261115,보도,,"지식재산처, 삼양식품 K-브랜드 정부인증제도 1호 참여기업 선정",kukinews.com,,https://www.kukinews.com/article/view/kuk202611150012
-2026-11-16,20261115,보도,,"삼양식품, 'K-브랜드 정부인증' 1호 기업 영예",paxetv.com,,http://www.paxetv.com/news/articleView.html?idxno=286953
-2026-11-16,20261115,보도,,"김용선 지시개산처 처장, K-브랜드 정부인증 제1호 참여기업 '삼양식품...",bizwnews.com,,http://www.bizwnews.com/news/articleView.html?idxno=151933
-2026-11-16,20261115,보도,,"김용선 지식재산처장, K-브랜드 정부인증 1호 기업 삼양식품 방문",delighti.co.kr,,https://www.delighti.co.kr/news/articleView.html?idxno=124967
-2026-11-16,20261116,보도,,[Who Is ?] 김정수 삼양식품 대표이사 회장,businesspost.co.kr,,https://www.businesspost.co.kr/BP?command=article_view&num=451896
-2026-11-16,20261116,보도,,"키움증권 ""불닭 세계화에 생산지도 바뀐다…삼양식품, 최대 8개 라인 구...",pinpointnews.co.kr,,https://www.pinpointnews.co.kr/news/articleView.html?idxno=504313
-2026-11-16,20261116,보도,,"""이빨이 아파"" 불닭 미국·유럽 확장…삼양식품 장 초반 5% 강세[핫종목...",news1.kr,,https://n.news.naver.com/mnews/article/421/0009290618?sid=101
-2026-11-16,20261116,보도,,[특징주] 매출 3조 돌파 전망·해외 성장…삼양식품 4%대 강세,etoday.co.kr,,https://www.etoday.co.kr/news/view/2648513
-2026-11-16,20261116,보도,,"불닭, 내년엔 더 많이 판다…삼양식품 5%대 강세[종목 NOW]",fnnews.com,,https://n.news.naver.com/mnews/article/014/0005604668?sid=101
-2026-11-16,20261116,보도,,불닭볶음면 내년엔 3.7조 팔린다…삼양식품 주가 5% ‘쑤욱’ [줍줍 리포...,sedaily.com,,https://n.news.naver.com/mnews/article/011/0004682563?sid=101
-2026-11-16,20261116,보도,,"[특징주] 삼양식품, 中 신공장 가동 등 성장 기대감.. '강세'",g-enews.com,,https://www.g-enews.com/view.php?ud=20261116102526903744093b5d4e_1
-2026-11-16,20261116,보도,,"삼양식품, 글로벌 생산기지 확장 승부수..4000억 투자 회수는 안갯속",kpenews.com,,https://kpenews.com/View.aspx?No=4313911
-2026-11-16,20261116,보도,,"[특징주] 삼양식품, 해외 판매 확대 기대…장 초반 6%대 상승",ajunews.com,,https://www.ajunews.com/view/20261116111554893
-2026-11-16,20261116,보도,,K-푸드 열풍에 음식료주 뜨겁다… 삼양식품·롯데웰푸드 상승 주도,pinpointnews.co.kr,,https://www.pinpointnews.co.kr/news/articleView.html?idxno=504508
-2026-11-16,20261116,보도,,삼양식품 주가 6%대 강세…코스피·코스닥 동반 급락 속 '다른 흐름' 눈...,cbci.co.kr,,https://www.cbci.co.kr/news/articleView.html?idxno=627339
-2026-11-16,20261116,보도,,"삼양식품, 장중 6.20% 상승…불닭 브랜드 해외 성장 점검",job-post.co.kr,,https://www.job-post.co.kr/news/articleView.html?idxno=238653
-2026-11-16,20261116,보도,,"[특징주]삼양식품, 외국인 순매수에 6.20% 상승마감…중국 신공장 성장...",namdonews.com,,https://www.namdonews.com/news/articleView.html?idxno=929378
-2026-11-16,20261116,보도,,"삼양식품, 3분기 매출·영업익 역대 최대…해외 매출 29.4%↑",etoday.co.kr,,https://www.etoday.co.kr/news/view/2648801
-2026-11-16,20261116,보도,,"삼양식품 주가, 11월 16일 애프터마켓 1,276,000원 5.45% 상승",joongangenews.com,,https://www.joongangenews.com/news/articleView.html?idxno=564243
-2026-11-16,20261116,보도,,삼양식품 영업익 50% 뛸 때 풀무원·오뚜기·농심 뒷걸음…차이는,zdnet.co.kr,,https://n.news.naver.com/mnews/article/092/0002445544?sid=103
+2026-11-25,20261124,보도,,"오리온 수요 대응, 삼양식품 생산 재편… 중국 공장 키우는 이유",the-biz.co.kr,,http://www.the-biz.co.kr/news/articleView.html?idxno=731954
+2026-11-25,20261124,보도,,"전병우 삼양식품 COO, 체중감량·혈당관리로 헬스케어 사업 영역 넓힌다",insightkorea.co.kr,,https://www.insightkorea.co.kr/news/articleView.html?idxno=259652
+2026-11-25,20261124,보도,,"농심·삼양식품·오뚜기, 나란히 해외 매출 증가…K-라면 수출 상승세",ceoscoredaily.com,,https://www.ceoscoredaily.com/page/view/2026112416234466403
+2026-11-25,20261125,보도,,"'메이드 인 코리아' 넘어…'면비디아' 삼양식품, 글로벌 생산지도 바꾼...",ebn.co.kr,,https://www.ebn.co.kr/news/articleView.html?idxno=1732885
+2026-11-25,20261125,보도,,[도쿄 리포트] 日 일상 파고드는 삼양식품…9개월 만에 판매점포 4만860...,pointe.co.kr,,https://www.pointe.co.kr/news/articleView.html?idxno=88015
+2026-11-25,20261125,보도,,삼양식품·농심 '불꽃 질주'에 식품 대형주까지 꿈틀…K-푸드 훈풍 어디...,pinpointnews.co.kr,,https://www.pinpointnews.co.kr/news/articleView.html?idxno=507810
+2026-11-25,20261125,보도,,"[단독] 삼양식품, 캐나다 판매법인 세우고 토론토 인력 채용 … ‘불닭...",biz.newdaily.co.kr,,https://biz.newdaily.co.kr/site/data/html/2026/11/25/2026112550055.html
+2026-11-25,20261125,보도,,삼양식품 131만3000원…장중 고가에 8000원 차,job-post.co.kr,,https://www.job-post.co.kr/news/articleView.html?idxno=240883
+2026-11-25,20261125,보도,,삼양식품 장중 117만원대 찍고 131만원대 반등,vegannews.co.kr,,https://www.vegannews.co.kr/news/article.html?no=411014
+2026-11-25,20261125,보도,,삼양식품·CJ제일제당 동반 급등…K-푸드 수출 훈풍에 식품주 달아올랐...,pinpointnews.co.kr,,https://www.pinpointnews.co.kr/news/articleView.html?idxno=508000
+2026-11-25,20261125,보도,,[거래소 기관] 아모레퍼시픽·삼양식품 '왕성한 식욕'... K뷰티·K푸드 다...,pinpointnews.co.kr,,https://www.pinpointnews.co.kr/news/articleView.html?idxno=508010
+2026-11-25,20261125,보도,,"삼양식품, 캐나다 법인 설립 이어 현지 인력 채용…북미 공략 확대",etoday.co.kr,,https://www.etoday.co.kr/news/view/2652943
