@@ -867,3 +867,4 @@ rcept_no,rcept_dt,report_nm,flr_nm,rm,category,viewer_url
 20261113001344,20261113,분기보고서 (2026.09),카카오,,정기보고서,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001344
 20261119000011,20261119,주식등의대량보유상황보고서(약식),막시모피티이엘티디,,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119000011
 20261123800003,20261123,소송등의제기ㆍ신청(일정금액이상의청구),카카오,유,소송·제재,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123800003
+20261125000540,20261125,대규모기업집단현황공시[분기별공시(대표회사용)],카카오,공,기타,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261125000540
