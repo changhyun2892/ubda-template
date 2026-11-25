@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:47 KST",
+    "checked_at": "2026-11-25 17:53 KST",
     "corp_code": "00164830",
     "reports_total": 16,
     "new_reports": [],
@@ -15,26 +15,26 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:47 KST",
-    "rows": 949,
-    "last_date": "2026-11-24",
-    "last_close": 225000,
+    "checked_at": "2026-11-25 17:53 KST",
+    "rows": 950,
+    "last_date": "2026-11-25",
+    "last_close": 221000,
     "source": "Yahoo Finance 009540.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:48 KST",
+    "checked_at": "2026-11-25 17:53 KST",
     "spike_days": 35,
     "with_major_disclosure": 18,
-    "news_total": 196,
+    "news_total": 198,
     "disclosures_total": 683,
-    "disclosures_new": 3,
+    "disclosures_new": 0,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:47 KST",
+    "checked_at": "2026-11-25 17:53 KST",
     "rows": 805,
     "groups": [
       "HD한국조선해양",
@@ -47,31 +47,31 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:47 KST",
+    "checked_at": "2026-11-25 17:53 KST",
     "new": 2,
-    "total": 196,
+    "total": 198,
     "first": "2026-10-28 15:40",
     "pages": 10,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:47 KST",
+    "checked_at": "2026-11-25 17:53 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:48 KST",
-    "rows": 897,
-    "as_of": "2026-11-24",
-    "per": 4.63,
-    "pbr": 1.068
+    "checked_at": "2026-11-25 17:53 KST",
+    "rows": 898,
+    "as_of": "2026-11-25",
+    "per": 4.54,
+    "pbr": 1.049
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:47 KST",
+    "checked_at": "2026-11-25 17:53 KST",
     "matched": 56,
     "total": 56,
     "message": ""

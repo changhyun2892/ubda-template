@@ -19,7 +19,6 @@ date,rcept_dt,category,major,report_nm,flr_nm,rcept_no,viewer_url
 2025-08-06,20250806,기타,,주식등의대량보유상황보고서(약식),MORGANSTANLEY&COINTLPLC,20250806000284,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250806000284
 2025-08-06,20250806,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),에이피알,20250806800043,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250806800043
 2025-11-06,20251106,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),에이피알,20251106800081,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251106800081
-2026-05-08,20260507,실적,Y,연결재무제표기준영업(잠정)실적(공정공시),에이피알,20260507800150,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260507800150
 2026-10-16,20261016,기타,,결산실적공시예고(안내공시),에이피알,20261016800235,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016800235
 2026-10-16,20261016,기타,,기업설명회(IR)개최(안내공시),에이피알,20261016800236,https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016800236
 2026-11-23,20261120,보도,,비누 창업에 건물도 같은 에이피알·토리든…창업주 행보·자금 조달서...,news.tf.co.kr,,https://n.news.naver.com/mnews/article/629/0000553843?sid=101
@@ -36,3 +35,47 @@ date,rcept_dt,category,major,report_nm,flr_nm,rcept_no,viewer_url
 2026-11-23,20261123,보도,,[코스피 지수선물 옵션] 삼성전자·SK하이닉스 동반 하락…에이피알·두...,pinpointnews.co.kr,,https://www.pinpointnews.co.kr/news/articleView.html?idxno=507177
 2026-11-23,20261123,보도,,"하나증권 ""한한령 해제 최대 수혜는 여행주? 호텔신라·에이피알까지 투...",pinpointnews.co.kr,,https://www.pinpointnews.co.kr/news/articleView.html?idxno=507185
 2026-11-23,20261123,보도,,주가로 읽는 K-뷰티 대형주: 수급·주가 괴리 심화...에이피알 -24%,thebk.co.kr,,https://www.thebk.co.kr/news/articleView.html?idxno=312982
+2026-11-25,20261124,보도,,중국 시장 다시 열린다… 에이피알·LG생활건강 화장품주에 올라타라,pinpointnews.co.kr,,https://www.pinpointnews.co.kr/news/articleView.html?idxno=507260
+2026-11-25,20261124,보도,,[핀포인트] [에이피알] 해외 판로 확대에 재고 부담…현금흐름 '경고등...,news.dealsitetv.com,,https://news.dealsitetv.com/articles/178982
+2026-11-25,20261124,보도,,[핀포인트] [에이피알] 김병훈 대표 경영에 흠집…외환거래 제재에 공시...,news.dealsitetv.com,,https://news.dealsitetv.com/articles/178877
+2026-11-25,20261124,보도,,"에이피알 메디큐브, 美 틱톡 제휴 홍보 논란 진화 나서…""콘텐츠 관리 ...",theguru.co.kr,,https://www.theguru.co.kr/news/article.html?no=110118
+2026-11-25,20261124,보도,,"에이피알, 메디큐브 콜라겐 스킨케어 글로벌 누적 판매 1억개 돌파",gokorea.kr,,https://www.gokorea.kr/news/articleView.html?idxno=887023
+2026-11-25,20261124,보도,,"에이피알, 메디큐브 콜라겐 스킨케어 글로벌 누적 판매 1억 개 돌파",cstimes.com,,https://www.cstimes.com/news/articleView.html?idxno=729140
+2026-11-25,20261124,보도,,"에이피알 메디큐브, 콜라겐 스킨케어 글로벌 1억개 판매…해외 비중 80%...",gosiweek.com,,https://www.gosiweek.com/article/1065576057149101
+2026-11-25,20261124,보도,,"에이피알, 메디큐브 콜라겐 스킨케어 글로벌 누적 판매 1억 개 돌파",sentv.co.kr,,https://www.sentv.co.kr/article/view/sentv202611240075
+2026-11-25,20261124,보도,,"에이피알 '메디큐브', 콜라겐 스킨케어 누적 판매 1억 개 돌파",apparelnews.co.kr,,http://www.apparelnews.co.kr/news/news_view/?idx=229207
+2026-11-25,20261124,보도,,"에이피알 메디큐브, 콜라겐 라인 누적 판매 1억개...해외 비중 80% 넘어",globalepic.co.kr,,https://www.globalepic.co.kr/view.php?ud=2026112410121368789aeda69934_29
+2026-11-25,20261124,보도,,"에이피알 메디큐브, 콜라겐 스킨케어 1억개 판매...미국·일본·유럽서 ...",hinews.co.kr,,https://www.hinews.co.kr/view.php?ud=2026112410143136159aeda69934_48
+2026-11-25,20261124,보도,,"에이피알 메디큐브, 콜라겐 스킨케어 글로벌 누적 판매량 1억 개 돌파",ksilbo.co.kr,,https://www.ksilbo.co.kr/news/articleView.html?idxno=1073418
+2026-11-25,20261124,보도,,"에이피알, 메디큐브 콜라겐 제품 글로벌 누적판매 1억개 달성",koreastocknews.com,,http://www.koreastocknews.com/news/articleView.html?idxno=122451
+2026-11-25,20261124,보도,,"에이피알, 메디큐브 콜라겐 스킨케어 글로벌 누적 판매 1억 개 돌파",segyebiz.com,,http://www.segyebiz.com/newsView/20261124507056?OutUrl=naver
+2026-11-25,20261124,보도,,"에이피알, 메디큐브 콜라겐 스킨케어 글로벌 누적 판매 1억 개 돌파",sportsseoul.com,,https://n.news.naver.com/mnews/article/468/0001283081?sid=103
+2026-11-25,20261124,보도,,[뉴스 TOP5] 에이피알·에코글로우·셀리드·삼성SDS,news.dealsitetv.com,,https://news.dealsitetv.com/articles/179082
+2026-11-25,20261124,보도,,"[K뷰티 세계정복] 에이피알, 북미·유럽 넘어 세계로 영토 넓힌다",etnews.com,,https://n.news.naver.com/mnews/article/030/0003489161?sid=101
+2026-11-25,20261124,보도,,코스피 급락에도 화장품 '1조 클럽' 1년새 7개→8개 확대...에이피알 '후...,thebk.co.kr,,https://www.thebk.co.kr/news/articleView.html?idxno=313002
+2026-11-25,20261124,보도,,"에이피알, 브랜드501 인수 협상…기업가치 조율이 관건",mk.co.kr,,https://n.news.naver.com/mnews/article/009/0005768273?sid=101
+2026-11-25,20261124,보도,,"에이피알 메디큐브, 미국서 인종차별 마케팅 논란에 '시끌'",1conomynews.co.kr,,https://www.1conomynews.co.kr/news/articleView.html?idxno=51540
+2026-11-25,20261125,보도,,"뷰티 디바이스 선두 에이피알 ""경쟁사 잠식 더이상 안돼""",pointdaily.co.kr,,https://www.pointdaily.co.kr/news/articleView.html?idxno=327201
+2026-11-25,20261125,보도,,"에이피알, 공급업체에 산림 보호 요구…팜유 조달 실적은 공개 공백",ekn.kr,,https://www.ekn.kr/web/view.php?key=20261125026074293
+2026-11-25,20261125,보도,,"다올證 ""에이피알, 4분기 실적 기대치 상회 전망…목표가 50만원""",ajunews.com,,https://www.ajunews.com/view/20261125080153898
+2026-11-25,20261125,보도,,"다올證 “에이피알, 4분기 성수기·해외 실적 호조 예상… 목표가 50만원...",biz.chosun.com,,https://n.news.naver.com/mnews/article/366/0001207119?sid=101
+2026-11-25,20261125,보도,,"""에이피알, 목표가 50만…4Q 아마존·틱톡 판매호조""-다올",mt.co.kr,,https://n.news.naver.com/mnews/article/008/0005445980?sid=101
+2026-11-25,20261125,보도,,"""주가 90% 상승 여력""…에이피알 목표가 50만원으로 상향",fnnews.com,,https://n.news.naver.com/mnews/article/014/0005609294?sid=101
+2026-11-25,20261125,보도,,에이피알·파마리서치 웃고 휴젤·클래시스 하락…미용기기주 엇갈린 행...,pinpointnews.co.kr,,https://www.pinpointnews.co.kr/news/articleView.html?idxno=507779
+2026-11-25,20261125,보도,,"에이피알 주가, 11월 25일 장중 287,000원 8.92% 상승",joongangenews.com,,https://www.joongangenews.com/news/articleView.html?idxno=566413
+2026-11-25,20261125,보도,,"[특징주] ""4분기 호실적 전망""⋯에이피알 8%대↑",inews24.com,,https://n.news.naver.com/mnews/article/031/0001078184?sid=101
+2026-11-25,20261125,보도,,"[특징주] 실리콘투, 뷰티스킨·에이피알과 화장품 테마 동반 랠리…거래...",widedaily.com,,https://www.widedaily.com/news/articleView.html?idxno=304639
+2026-11-25,20261125,보도,,실리콘투 13%·에이피알 10%↑…급락장서 K뷰티주 강세 [종목NOW],fnnews.com,,https://n.news.naver.com/mnews/article/014/0005609408?sid=101
+2026-11-25,20261125,보도,,"[특징주] 에이피알, 증권가 목표가 50만원 상향에 11%대 급등…시총 11조...",widedaily.com,,https://www.widedaily.com/news/articleView.html?idxno=304652
+2026-11-25,20261125,보도,,"에이피알 주가, 11월 25일 장중 290,000원 10.06% 상승",topstarnews.net,,https://www.topstarnews.net/news/articleView.html?idxno=16285682
+2026-11-25,20261125,보도,,"""에이피알 50만원 갑니다"" '블프' 매출 기대감에 목표가 상향…""알테오...",fnnews.com,,https://n.news.naver.com/mnews/article/014/0005609481?sid=101
+2026-11-25,20261125,보도,,"에이피알 주가 장중 11%대 올라, 한국 중국 관계 개선 기대에 화장품주...",businesspost.co.kr,,https://www.businesspost.co.kr/BP?command=article_view&num=452878
+2026-11-25,20261125,보도,,[특징주] 증권사 핑크빛 전망…'화장품주' 코스맥스·에이피알 급등,newsdream.kr,,http://www.newsdream.kr/news/articleView.html?idxno=122993
+2026-11-25,20261125,보도,,"[특징주] 에이피알, 4분기 호실적 전망.. 11%대 '급등'",g-enews.com,,https://www.g-enews.com/view.php?ud=20261125102404159144093b5d4e_1
+2026-11-25,20261125,보도,,30만원선 다가간 에이피알…장중 10.63% 상승,job-post.co.kr,,https://www.job-post.co.kr/news/articleView.html?idxno=240829
+2026-11-25,20261125,보도,,성장세는 탐나는데 몸값은 부담…에이피알의 '닥터멜락신' 인수 딜레마,ebn.co.kr,,https://www.ebn.co.kr/news/articleView.html?idxno=1732959
+2026-11-25,20261125,보도,,"구다이글로벌, 비교기업서 에이피알 제외…‘K뷰티 대장주’ 승부수",mk.co.kr,,https://n.news.naver.com/mnews/article/009/0005768798?sid=101
+2026-11-25,20261125,보도,,"[핫스톡 현미경] 에이피알, 3거래일간 24% 반등… 증권가 목표주가 엇갈...",the-biz.co.kr,,http://www.the-biz.co.kr/news/articleView.html?idxno=732125
+2026-11-25,20261125,보도,,"에이피알 의료기기 초음파·고주파 투트랙으로 간다, 김병훈 '화장대' 넘...",businesspost.co.kr,,https://www.businesspost.co.kr/BP?command=article_view&num=452898
+2026-11-25,20261125,보도,,삼성전자·SK하이닉스 급락에 인버스 ETF 폭등…에이피알·코스맥스 웃었...,pinpointnews.co.kr,,https://www.pinpointnews.co.kr/news/articleView.html?idxno=508038
+2026-11-25,20261125,보도,,급락장 뚫고 … 에이피알 나홀로 웃었다,mk.co.kr,,https://n.news.naver.com/mnews/article/009/0005768956?sid=101
