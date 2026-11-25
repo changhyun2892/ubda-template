@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:46 KST",
+    "checked_at": "2026-11-25 17:51 KST",
     "corp_code": "00231372",
     "reports_total": 17,
     "new_reports": [],
@@ -9,7 +9,7 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:46 KST",
+    "checked_at": "2026-11-25 17:51 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
@@ -22,16 +22,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:46 KST",
-    "rows": 949,
-    "last_date": "2026-11-24",
-    "last_close": 10060,
+    "checked_at": "2026-11-25 17:51 KST",
+    "rows": 950,
+    "last_date": "2026-11-25",
+    "last_close": 10570,
     "source": "Yahoo Finance 032350.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:46 KST",
+    "checked_at": "2026-11-25 17:51 KST",
     "rows": 410,
     "groups": [
       "롯데관광개발",
@@ -42,34 +42,34 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:46 KST",
-    "new": 7,
-    "total": 518,
+    "checked_at": "2026-11-25 17:51 KST",
+    "new": 12,
+    "total": 530,
     "first": "2026-06-16 16:52",
     "pages": 1,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:46 KST",
+    "checked_at": "2026-11-25 17:51 KST",
     "spike_days": 37,
     "with_major_disclosure": 8,
-    "news_total": 518,
+    "news_total": 530,
     "disclosures_total": 344,
     "disclosures_new": 0,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:46 KST",
-    "rows": 899,
-    "as_of": "2026-11-24",
-    "per": 18.09,
-    "pbr": 2.147
+    "checked_at": "2026-11-25 17:51 KST",
+    "rows": 900,
+    "as_of": "2026-11-25",
+    "per": 19.01,
+    "pbr": 2.256
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:46 KST",
+    "checked_at": "2026-11-25 17:51 KST",
     "matched": 52,
     "total": 52,
     "message": ""

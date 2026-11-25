@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:47 KST",
+    "checked_at": "2026-11-25 17:52 KST",
     "corp_code": "00382199",
     "reports_total": 19,
     "new_reports": [],
@@ -15,26 +15,26 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:47 KST",
-    "rows": 949,
-    "last_date": "2026-11-24",
-    "last_close": 86600,
+    "checked_at": "2026-11-25 17:52 KST",
+    "rows": 950,
+    "last_date": "2026-11-25",
+    "last_close": 85100,
     "source": "Yahoo Finance 055550.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:47 KST",
+    "checked_at": "2026-11-25 17:53 KST",
     "spike_days": 26,
     "with_major_disclosure": 5,
     "news_total": 36,
     "disclosures_total": 842,
-    "disclosures_new": 2,
+    "disclosures_new": 0,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:47 KST",
+    "checked_at": "2026-11-25 17:52 KST",
     "rows": 820,
     "groups": [
       "신한지주",
@@ -47,8 +47,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:47 KST",
-    "new": 2,
+    "checked_at": "2026-11-25 17:52 KST",
+    "new": 0,
     "total": 36,
     "first": "2026-10-27 20:22",
     "pages": 10,
@@ -56,22 +56,22 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:47 KST",
+    "checked_at": "2026-11-25 17:52 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:47 KST",
-    "rows": 736,
-    "as_of": "2026-11-24",
-    "per": 7.34,
-    "pbr": 0.681
+    "checked_at": "2026-11-25 17:53 KST",
+    "rows": 737,
+    "as_of": "2026-11-25",
+    "per": 7.21,
+    "pbr": 0.669
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:47 KST",
+    "checked_at": "2026-11-25 17:52 KST",
     "matched": 48,
     "total": 48,
     "message": ""

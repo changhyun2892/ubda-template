@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:49 KST",
+    "checked_at": "2026-11-25 17:55 KST",
     "corp_code": "00161125",
     "reports_total": 19,
     "new_reports": [],
@@ -15,26 +15,26 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:49 KST",
-    "rows": 949,
-    "last_date": "2026-11-24",
-    "last_close": 3120,
+    "checked_at": "2026-11-25 17:55 KST",
+    "rows": 950,
+    "last_date": "2026-11-25",
+    "last_close": 3125,
     "source": "Yahoo Finance 018880.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:49 KST",
+    "checked_at": "2026-11-25 17:55 KST",
     "spike_days": 36,
     "with_major_disclosure": 15,
-    "news_total": 311,
+    "news_total": 313,
     "disclosures_total": 353,
     "disclosures_new": 0,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:49 KST",
+    "checked_at": "2026-11-25 17:55 KST",
     "rows": 615,
     "groups": [
       "한온시스템",
@@ -46,31 +46,31 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:49 KST",
-    "new": 1,
-    "total": 311,
+    "checked_at": "2026-11-25 17:55 KST",
+    "new": 2,
+    "total": 313,
     "first": "2026-08-29 09:52",
     "pages": 1,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:49 KST",
+    "checked_at": "2026-11-25 17:55 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:49 KST",
-    "rows": 896,
-    "as_of": "2026-11-24",
+    "checked_at": "2026-11-25 17:55 KST",
+    "rows": 897,
+    "as_of": "2026-11-25",
     "per": null,
-    "pbr": 0.901
+    "pbr": 0.903
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:49 KST",
+    "checked_at": "2026-11-25 17:55 KST",
     "matched": 56,
     "total": 56,
     "message": ""

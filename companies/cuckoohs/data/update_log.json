@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:48 KST",
+    "checked_at": "2026-11-25 17:54 KST",
     "corp_code": "01267684",
     "reports_total": 19,
     "new_reports": [],
@@ -9,7 +9,7 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:48 KST",
+    "checked_at": "2026-11-25 17:54 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
@@ -22,16 +22,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:48 KST",
-    "rows": 949,
-    "last_date": "2026-11-24",
-    "last_close": 21750,
+    "checked_at": "2026-11-25 17:54 KST",
+    "rows": 950,
+    "last_date": "2026-11-25",
+    "last_close": 21450,
     "source": "Yahoo Finance 284740.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:48 KST",
+    "checked_at": "2026-11-25 17:54 KST",
     "rows": 410,
     "groups": [
       "쿠쿠홈시스",
@@ -42,7 +42,7 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:48 KST",
+    "checked_at": "2026-11-25 17:54 KST",
     "new": 0,
     "total": 71,
     "first": "2025-09-10 10:46",
@@ -51,7 +51,7 @@
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:49 KST",
+    "checked_at": "2026-11-25 17:54 KST",
     "spike_days": 22,
     "with_major_disclosure": 4,
     "news_total": 71,
@@ -61,15 +61,15 @@
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:49 KST",
-    "rows": 897,
-    "as_of": "2026-11-24",
-    "per": 3.84,
-    "pbr": 0.43
+    "checked_at": "2026-11-25 17:54 KST",
+    "rows": 898,
+    "as_of": "2026-11-25",
+    "per": 3.79,
+    "pbr": 0.424
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-24 17:48 KST",
+    "checked_at": "2026-11-25 17:54 KST",
     "matched": 54,
     "total": 54,
     "message": ""
