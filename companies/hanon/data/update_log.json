@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-25 17:55 KST",
+    "checked_at": "2026-11-26 17:49 KST",
     "corp_code": "00161125",
     "reports_total": 19,
     "new_reports": [],
@@ -15,16 +15,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-25 17:55 KST",
-    "rows": 950,
-    "last_date": "2026-11-25",
-    "last_close": 3125,
+    "checked_at": "2026-11-26 17:49 KST",
+    "rows": 951,
+    "last_date": "2026-11-26",
+    "last_close": 3040,
     "source": "Yahoo Finance 018880.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-25 17:55 KST",
+    "checked_at": "2026-11-26 17:49 KST",
     "spike_days": 36,
     "with_major_disclosure": 15,
     "news_total": 313,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-25 17:55 KST",
+    "checked_at": "2026-11-26 17:49 KST",
     "rows": 615,
     "groups": [
       "한온시스템",
@@ -46,8 +46,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-25 17:55 KST",
-    "new": 2,
+    "checked_at": "2026-11-26 17:49 KST",
+    "new": 0,
     "total": 313,
     "first": "2026-08-29 09:52",
     "pages": 1,
@@ -55,22 +55,22 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-25 17:55 KST",
+    "checked_at": "2026-11-26 17:49 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-25 17:55 KST",
-    "rows": 897,
-    "as_of": "2026-11-25",
+    "checked_at": "2026-11-26 17:49 KST",
+    "rows": 898,
+    "as_of": "2026-11-26",
     "per": null,
-    "pbr": 0.903
+    "pbr": 0.878
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-25 17:55 KST",
+    "checked_at": "2026-11-26 17:49 KST",
     "matched": 56,
     "total": 56,
     "message": ""

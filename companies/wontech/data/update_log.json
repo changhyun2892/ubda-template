@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-25 17:53 KST",
+    "checked_at": "2026-11-26 17:48 KST",
     "corp_code": "01407909",
     "reports_total": 24,
     "new_reports": [],
@@ -15,16 +15,16 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-25 17:53 KST",
-    "rows": 950,
-    "last_date": "2026-11-25",
-    "last_close": 3280,
+    "checked_at": "2026-11-26 17:48 KST",
+    "rows": 951,
+    "last_date": "2026-11-26",
+    "last_close": 3240,
     "source": "Yahoo Finance 336570.KQ 일봉 (분할 반영 종가)",
     "index": "^KQ11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-25 17:53 KST",
+    "checked_at": "2026-11-26 17:48 KST",
     "spike_days": 40,
     "with_major_disclosure": 11,
     "news_total": 507,
@@ -34,7 +34,7 @@
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-25 17:53 KST",
+    "checked_at": "2026-11-26 17:48 KST",
     "rows": 410,
     "groups": [
       "원텍",
@@ -45,8 +45,8 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-25 17:53 KST",
-    "new": 3,
+    "checked_at": "2026-11-26 17:48 KST",
+    "new": 0,
     "total": 507,
     "first": "2026-01-26 15:26",
     "pages": 8,
@@ -54,22 +54,22 @@
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-25 17:53 KST",
+    "checked_at": "2026-11-26 17:48 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-25 17:53 KST",
-    "rows": 900,
-    "as_of": "2026-11-25",
-    "per": 9.87,
-    "pbr": 1.754
+    "checked_at": "2026-11-26 17:48 KST",
+    "rows": 901,
+    "as_of": "2026-11-26",
+    "per": 9.75,
+    "pbr": 1.733
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-25 17:53 KST",
+    "checked_at": "2026-11-26 17:48 KST",
     "matched": 56,
     "total": 56,
     "message": ""
