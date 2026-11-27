@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
+    "checked_at": "2026-11-27 17:51 KST",
     "corp_code": "00401731",
     "reports_total": 17,
     "new_reports": [],
@@ -15,26 +15,26 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
-    "rows": 951,
-    "last_date": "2026-11-26",
-    "last_close": 135200,
+    "checked_at": "2026-11-27 17:51 KST",
+    "rows": 952,
+    "last_date": "2026-11-27",
+    "last_close": 144800,
     "source": "Yahoo Finance 066570.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
+    "checked_at": "2026-11-27 17:51 KST",
     "spike_days": 32,
     "with_major_disclosure": 7,
-    "news_total": 1752,
+    "news_total": 1795,
     "disclosures_total": 350,
     "disclosures_new": 0,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
+    "checked_at": "2026-11-27 17:51 KST",
     "rows": 615,
     "groups": [
       "LG전자",
@@ -46,31 +46,31 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
-    "new": 115,
-    "total": 1752,
+    "checked_at": "2026-11-27 17:51 KST",
+    "new": 43,
+    "total": 1795,
     "first": "2026-11-09 17:02",
-    "pages": 5,
+    "pages": 4,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
+    "checked_at": "2026-11-27 17:51 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
-    "rows": 900,
-    "as_of": "2026-11-26",
-    "per": 18.39,
-    "pbr": 0.982
+    "checked_at": "2026-11-27 17:51 KST",
+    "rows": 901,
+    "as_of": "2026-11-27",
+    "per": 19.69,
+    "pbr": 1.051
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
+    "checked_at": "2026-11-27 17:51 KST",
     "matched": 56,
     "total": 56,
     "message": ""

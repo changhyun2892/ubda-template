@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
+    "checked_at": "2026-11-27 17:51 KST",
     "corp_code": "00106641",
     "reports_total": 19,
     "new_reports": [],
@@ -15,26 +15,26 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
-    "rows": 951,
-    "last_date": "2026-11-26",
-    "last_close": 93700,
+    "checked_at": "2026-11-27 17:51 KST",
+    "rows": 952,
+    "last_date": "2026-11-27",
+    "last_close": 94700,
     "source": "Yahoo Finance 000270.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
+    "checked_at": "2026-11-27 17:51 KST",
     "spike_days": 27,
     "with_major_disclosure": 6,
-    "news_total": 985,
-    "disclosures_total": 1122,
-    "disclosures_new": 0,
+    "news_total": 1165,
+    "disclosures_total": 1123,
+    "disclosures_new": 1,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
+    "checked_at": "2026-11-27 17:51 KST",
     "rows": 615,
     "groups": [
       "기아",
@@ -46,31 +46,31 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
-    "new": 115,
-    "total": 985,
+    "checked_at": "2026-11-27 17:51 KST",
+    "new": 180,
+    "total": 1165,
     "first": "2026-11-10 16:08",
     "pages": 10,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
+    "checked_at": "2026-11-27 17:51 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
-    "rows": 906,
-    "as_of": "2026-11-26",
-    "per": 5.26,
-    "pbr": 0.585
+    "checked_at": "2026-11-27 17:51 KST",
+    "rows": 907,
+    "as_of": "2026-11-27",
+    "per": 5.32,
+    "pbr": 0.591
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
+    "checked_at": "2026-11-27 17:51 KST",
     "matched": 56,
     "total": 56,
     "message": ""
