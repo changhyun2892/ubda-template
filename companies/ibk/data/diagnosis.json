@@ -1,5 +1,5 @@
 {
- "built_at": "2026-11-26 17:51 KST",
+ "built_at": "2026-11-27 17:53 KST",
  "method": "같은 산업 기업 사이 백분위(0~100, 50 = 가운데) · 성향별 가중치는 UBDA가 임의로 정한 기준 · 투자 권유 아님",
  "weights": {
   "stable": {
@@ -68,7 +68,7 @@
   },
   "value": {
    "label": "가격 매력",
-   "score": 82,
+   "score": 88,
    "factors": [
     "per",
     "pbr"
@@ -120,9 +120,9 @@
   "neutral": {
    "label": "위험중립형",
    "focus": "수익성과 가격의 균형",
-   "score": 47,
+   "score": 48,
    "level": "보통",
-   "comment": "PER 5.6배(업종 9곳 중 2위)는 강점, 매출 증가율 -1.8%(업종 9곳 중 9위)는 확인할 지점",
+   "comment": "PER 5.6배(업종 9곳 중 1위)는 강점, 매출 증가율 -1.8%(업종 9곳 중 9위)는 확인할 지점",
    "parts": [
     {
      "key": "axis:profit",
@@ -136,7 +136,7 @@
      "key": "axis:value",
      "label": "가격 매력",
      "weight": 0.3,
-     "score": 82,
+     "score": 88,
      "best": "per",
      "worst": "pbr"
     },
@@ -302,16 +302,16 @@
   },
   "per": {
    "label": "PER",
-   "value": 5.58,
+   "value": 5.57,
    "text": "5.6배",
-   "pctile": 88,
-   "rank": 2,
+   "pctile": 100,
+   "rank": 1,
    "n": 9,
    "higher_better": false
   },
   "pbr": {
    "label": "PBR",
-   "value": 0.394,
+   "value": 0.393,
    "text": "0.39배",
    "pctile": 75,
    "rank": 3,
@@ -320,7 +320,7 @@
   },
   "div_yield": {
    "label": "배당수익률",
-   "value": 5.628,
+   "value": 5.631,
    "text": "5.63%",
    "pctile": 88,
    "rank": 2,
@@ -329,7 +329,7 @@
   },
   "vol_1y": {
    "label": "주가 변동성(연환산)",
-   "value": 29.7928385451612,
+   "value": 29.78355317929372,
    "text": "29.8%",
    "pctile": 100,
    "rank": 1,
@@ -338,7 +338,7 @@
   },
   "mdd_1y": {
    "label": "1년 최대 낙폭",
-   "value": -32.28598871902353,
+   "value": -32.28601380209588,
    "text": "-32.3%",
    "pctile": 25,
    "rank": 7,
@@ -347,13 +347,13 @@
   },
   "ret_1y": {
    "label": "1년 시장 대비 수익률",
-   "value": -22.650789213923705,
-   "text": "-22.7%p",
+   "value": -26.343052118228293,
+   "text": "-26.3%p",
    "pctile": 12,
    "rank": 8,
    "n": 9,
    "higher_better": true
   }
  },
- "stock_asof": "2026-11-26"
+ "stock_asof": "2026-11-27"
 }

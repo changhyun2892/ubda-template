@@ -1,5 +1,5 @@
 {
- "built_at": "2026-11-26 17:51 KST",
+ "built_at": "2026-11-27 17:53 KST",
  "method": "같은 산업 기업 사이 백분위(0~100, 50 = 가운데) · 성향별 가중치는 UBDA가 임의로 정한 기준 · 투자 권유 아님",
  "weights": {
   "stable": {
@@ -68,7 +68,7 @@
   },
   "value": {
    "label": "가격 매력",
-   "score": 70,
+   "score": 90,
    "factors": [
     "per",
     "pbr"
@@ -81,7 +81,7 @@
    "focus": "재무 안정·배당·주가 변동",
    "score": 88,
    "level": "높음",
-   "comment": "배당수익률 7.26%(업종 5곳 중 1위) 등 이 성향이 보는 지표가 업종 중간 이상",
+   "comment": "배당수익률 7.18%(업종 5곳 중 1위) 등 이 성향이 보는 지표가 업종 중간 이상",
    "parts": [
     {
      "key": "axis:stable",
@@ -120,9 +120,9 @@
   "neutral": {
    "label": "위험중립형",
    "focus": "수익성과 가격의 균형",
-   "score": 67,
+   "score": 73,
    "level": "높음",
-   "comment": "PER 5.3배(업종 4곳 중 1위)는 강점, 매출 증가율 6.2%(업종 6곳 중 6위)는 확인할 지점",
+   "comment": "영업이익률 8.0%(업종 6곳 중 1위)는 강점, 매출 증가율 6.2%(업종 6곳 중 6위)는 확인할 지점",
    "parts": [
     {
      "key": "axis:profit",
@@ -136,7 +136,7 @@
      "key": "axis:value",
      "label": "가격 매력",
      "weight": 0.3,
-     "score": 70,
+     "score": 90,
      "best": "per",
      "worst": "pbr"
     },
@@ -302,7 +302,7 @@
   },
   "per": {
    "label": "PER",
-   "value": 5.26,
+   "value": 5.32,
    "text": "5.3배",
    "pctile": 100,
    "rank": 1,
@@ -311,17 +311,17 @@
   },
   "pbr": {
    "label": "PBR",
-   "value": 0.585,
-   "text": "0.58배",
-   "pctile": 40,
-   "rank": 4,
+   "value": 0.591,
+   "text": "0.59배",
+   "pctile": 80,
+   "rank": 2,
    "n": 6,
    "higher_better": false
   },
   "div_yield": {
    "label": "배당수익률",
-   "value": 7.257,
-   "text": "7.26%",
+   "value": 7.181,
+   "text": "7.18%",
    "pctile": 100,
    "rank": 1,
    "n": 5,
@@ -329,7 +329,7 @@
   },
   "vol_1y": {
    "label": "주가 변동성(연환산)",
-   "value": 58.27318729121478,
+   "value": 58.27875253228615,
    "text": "58.3%",
    "pctile": 80,
    "rank": 2,
@@ -347,13 +347,13 @@
   },
   "ret_1y": {
    "label": "1년 시장 대비 수익률",
-   "value": -32.53625342812935,
-   "text": "-32.5%p",
+   "value": -36.5785897692247,
+   "text": "-36.6%p",
    "pctile": 60,
    "rank": 3,
    "n": 6,
    "higher_better": true
   }
  },
- "stock_asof": "2026-11-26"
+ "stock_asof": "2026-11-27"
 }
