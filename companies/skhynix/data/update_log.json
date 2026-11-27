@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:48 KST",
+    "checked_at": "2026-11-27 17:48 KST",
     "corp_code": "00164779",
     "reports_total": 16,
     "new_reports": [],
@@ -15,26 +15,26 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:48 KST",
-    "rows": 951,
-    "last_date": "2026-11-26",
-    "last_close": 1053000,
+    "checked_at": "2026-11-27 17:48 KST",
+    "rows": 952,
+    "last_date": "2026-11-27",
+    "last_close": 1110000,
     "source": "Yahoo Finance 000660.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:48 KST",
+    "checked_at": "2026-11-27 17:49 KST",
     "spike_days": 26,
     "with_major_disclosure": 8,
-    "news_total": 1163,
-    "disclosures_total": 1417,
-    "disclosures_new": 0,
+    "news_total": 1241,
+    "disclosures_total": 1420,
+    "disclosures_new": 3,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:48 KST",
+    "checked_at": "2026-11-27 17:48 KST",
     "rows": 615,
     "groups": [
       "SK하이닉스",
@@ -46,31 +46,31 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:48 KST",
-    "new": 98,
-    "total": 1163,
+    "checked_at": "2026-11-27 17:48 KST",
+    "new": 78,
+    "total": 1241,
     "first": "2026-11-13 07:40",
     "pages": 10,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:48 KST",
+    "checked_at": "2026-11-27 17:48 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:49 KST",
-    "rows": 898,
-    "as_of": "2026-11-26",
-    "per": 3.96,
-    "pbr": 2.427
+    "checked_at": "2026-11-27 17:49 KST",
+    "rows": 899,
+    "as_of": "2026-11-27",
+    "per": 4.18,
+    "pbr": 2.559
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:48 KST",
+    "checked_at": "2026-11-27 17:48 KST",
     "matched": 56,
     "total": 56,
     "message": ""
