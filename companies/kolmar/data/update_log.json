@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
+    "checked_at": "2026-11-27 17:53 KST",
     "corp_code": "00939331",
     "reports_total": 18,
     "new_reports": [],
@@ -15,26 +15,26 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
-    "rows": 951,
-    "last_date": "2026-11-26",
-    "last_close": 131200,
+    "checked_at": "2026-11-27 17:53 KST",
+    "rows": 952,
+    "last_date": "2026-11-27",
+    "last_close": 129100,
     "source": "Yahoo Finance 161890.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
+    "checked_at": "2026-11-27 17:53 KST",
     "spike_days": 39,
     "with_major_disclosure": 14,
-    "news_total": 775,
+    "news_total": 788,
     "disclosures_total": 459,
-    "disclosures_new": 2,
+    "disclosures_new": 0,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
+    "checked_at": "2026-11-27 17:53 KST",
     "rows": 410,
     "groups": [
       "한국콜마",
@@ -45,31 +45,31 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
-    "new": 77,
-    "total": 775,
+    "checked_at": "2026-11-27 17:53 KST",
+    "new": 13,
+    "total": 788,
     "first": "2026-10-26 11:23",
-    "pages": 4,
+    "pages": 2,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
+    "checked_at": "2026-11-27 17:53 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
-    "rows": 898,
-    "as_of": "2026-11-26",
-    "per": 15.99,
-    "pbr": 2.975
+    "checked_at": "2026-11-27 17:53 KST",
+    "rows": 899,
+    "as_of": "2026-11-27",
+    "per": 15.74,
+    "pbr": 2.927
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
+    "checked_at": "2026-11-27 17:53 KST",
     "matched": 56,
     "total": 56,
     "message": ""

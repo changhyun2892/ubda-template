@@ -1,7 +1,7 @@
 {
   "dart": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
+    "checked_at": "2026-11-27 17:52 KST",
     "corp_code": "01133217",
     "reports_total": 21,
     "new_reports": [],
@@ -15,26 +15,26 @@
   },
   "stock": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
-    "rows": 951,
-    "last_date": "2026-11-26",
-    "last_close": 22100,
+    "checked_at": "2026-11-27 17:52 KST",
+    "rows": 952,
+    "last_date": "2026-11-27",
+    "last_close": 22500,
     "source": "Yahoo Finance 323410.KS 일봉 (분할 반영 종가)",
     "index": "^KS11"
   },
   "events": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
+    "checked_at": "2026-11-27 17:53 KST",
     "spike_days": 32,
     "with_major_disclosure": 6,
-    "news_total": 950,
+    "news_total": 971,
     "disclosures_total": 370,
     "disclosures_new": 0,
     "rule": "시장 대비 = 등락률 − 베타×시장지수 등락률(베타는 직전 250거래일, 수정주가). |시장 대비| ≥ 평소 변동폭의 2.5배 또는 ≥ 5.0%, 연도별 상위 10일"
   },
   "search": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
+    "checked_at": "2026-11-27 17:52 KST",
     "rows": 615,
     "groups": [
       "카카오뱅크",
@@ -46,31 +46,31 @@
   },
   "news": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
-    "new": 23,
-    "total": 950,
+    "checked_at": "2026-11-27 17:52 KST",
+    "new": 21,
+    "total": 971,
     "first": "2026-11-04 18:16",
-    "pages": 9,
+    "pages": 10,
     "source": "NAVER API HUB 뉴스 검색 (제목에 회사명 포함 기사만)"
   },
   "shares": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
+    "checked_at": "2026-11-27 17:52 KST",
     "new_share_reports": 0,
     "new_dividend_reports": 0,
     "new_owner_reports": 0
   },
   "valuation": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
-    "rows": 653,
-    "as_of": "2026-11-26",
-    "per": 18.32,
-    "pbr": 1.559
+    "checked_at": "2026-11-27 17:53 KST",
+    "rows": 654,
+    "as_of": "2026-11-27",
+    "per": 18.65,
+    "pbr": 1.588
   },
   "fincheck": {
     "status": "성공",
-    "checked_at": "2026-11-26 17:50 KST",
+    "checked_at": "2026-11-27 17:52 KST",
     "matched": 45,
     "total": 45,
     "message": ""
